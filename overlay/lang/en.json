@@ -1,0 +1,72 @@
+{
+    "UIStrings":
+    {
+        "ScoreLabel": "Score: ",
+        "CurrentlyActiveLabel": "Pomanders Currently Active",
+        "FloorLabel": "Floor",
+        "SetLabel": "Set",
+        "TotalLabel": "Total",
+        "MonstersLabel": "Monsters",
+        "MimicsLabel": "Mimics",
+        "TrapsLabel": "Traps",
+        "ChestsLabel": "Chests",
+        "EnchantmentsLabel": "Enchantments",
+        "RareMonstersLabel": "Rare Monsters",
+        "SpeedRunsLabel": "Speed Runs",
+        "CurrentTargetLabel": "Current Target",
+        "HPPLabel": "Hp %",
+        "DangerLabel": "Danger Level",
+        "AggroLabel" : "Aggro Type",
+        "NoTargetLabel": "No Target"
+    },
+    "BossNames":
+    [
+        "Mojabune" , "Beccho",  "Hiruko", "Bhima", "Gozu", "Suikazura", "Kenko", "Kajigakaka", "Onra",
+        "Palace Deathgaze", "Spurge", "Ningishzida", "Ixtab", "Edda Blackbosom", "The Black Rider", "Yaquaru", "Gudanna", "The Godmother", "Nybeth Obdilord",
+        "Alicanto", "Kirtimukha", "Alfard", "Ah Puch", "Tisiphone", "Todesritter", "Yulunggu", "Dendainsonne", "The Godfather"
+    ],
+    "RareMonsterNames":
+    [
+        "Flame Commander",  "Bloated Conjurer", "Bloated Archer", "Bloated Pugilist", "Sword-Swinging Adventurer", "Staff-Spinning Adventurer", "Spear-Shaking Adventurer",
+        "Roughspun Ruffian", "Frenzied Freebooter", "Ishgardian Pikeman", "Duskwight Lancer", "Mortifying Magnate", "Insistent Inquisitor", "Moldering Merchant", "Emaciated Engineer",
+        "Jaundiced Tribunus", "Flyblown Praefectus", "Half-Cracked Captain", "Sunken Captain", "Putrid Plutocrat", "Gangrenous Gigant", "Corrupted Centurion", "Necrose Knight", "Blackening Marketeer",
+        "Immortal Flame"
+    ],
+    "EnchantmentNames":
+    [
+        "Auto-Heal Penalty",  "Blind", "Damage Down", "Hp & Mp Boost", "Hp Penalty", "Inability", "Item Penalty", "Knockback Penalty", "Sprint Penalty", "Haste",
+        "Sprint", "Unmagicked", "No Items", "Amnesia"
+    ],
+    "ParseStrings":
+    {
+        "CurrentInstancePOTD": "Palace of the Dead",
+        "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceFloorsPOTD": "Palace of the Dead (Floors",
+        "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "QuiveringCoffer": "Quivering Coffer",
+        "Mimic": "Mimic",
+        "Korrigan": "Korrigan",
+        "Mandragora": "Mandragora",
+        "Pygmioi": "Pygmioi",
+        "Trap": "Trap",
+        "WeaponEnhancement": "Weapon Enhancement",
+        "GearEnhancement": "Gear Enhancement",
+        "Detonator": "Detonator",
+        "Pomander": "Pomander",
+        "PomanderOfSafety": "Pomander Of Safety",
+        "PomanderOfSight": "Pomander Of Sight",
+        "PomanderOfAffluence": "Pomander Of Affluence",
+        "PomanderOfAlteration": "Pomander of Alteration",
+        "PomanderOfFlight": "Pomander Of Flight",
+        "PomanderOfSerenity": "Pomander Of Serenity",
+        "PomanderOfRaising": "Pomander Of Raising",
+        "BaresItsFangs": "...bares its fangs!",
+        "EmpyreanAetherpool": "Your empyrean aetherpool",
+        "Magicite": "magicite",
+        "Obtain": "obtain",
+        "30MinutesRemaining": "30 minutes remaining",
+        "Gloom": "The gathering gloom",
+        "PhoenixDown": "phoenix down. You already possess one.",
+        "Transference": "Transference initiated!"        
+    }
+}

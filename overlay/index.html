@@ -1,0 +1,373 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            font-family: "Meiryo";
+            font-size: 12px;
+        }
+
+        body, html {
+            margin: 0;
+        }
+        body
+        {
+            border: 3px solid rgb(204, 204, 204);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom:0;
+            left: 0;
+            overflow: auto;
+            padding: 2;
+        }   
+
+        html {
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(0, 0, 100, 0.50);
+        }
+
+        #header{
+            display: inline;
+        }
+        #statistics th,
+        #statistics td,
+        #targetinfo th,
+        #targetinfo td{
+            width: 25%;
+            border: 1px solid darkgrey;
+            padding-left: 3px;
+            padding-right: 3px
+        }
+        #targetinfo td{
+            text-align: center;
+        }
+
+        #score,
+        #statistics,
+        #targetinfo,
+        #header{
+            color: lightgray;
+            font-weight: bold;
+            
+        }
+
+        #statistics,
+        #targetinfo{
+            width: 100%;
+            border-style: solid;
+            border-width: 2px;
+            border-color: lightgray;   
+            border-collapse: collapse;
+        }
+
+        .resizeHandle {
+            background-image: url(img/handle.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }       
+    </style>
+
+    <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
+    <script src="lib/DDO.js"></script>
+    <script src="lib/Locale.js"></script>
+    <script src="lib/Beastiary.js"></script>
+
+    <script>
+
+        document.addEventListener("onOverlayStateUpdate", function (e) {
+            if (!e.detail.isLocked) {
+                displayResizeHandle();
+            } else {
+                hideResizeHandle();
+            }
+        });        
+        function displayResizeHandle() {
+            document.documentElement.classList.add("resizeHandle");
+        }
+        function hideResizeHandle() {
+            document.documentElement.classList.remove("resizeHandle");
+        } 
+
+        window.addEventListener("load", (e) => {
+            LoadData();
+        });
+        async function LoadData()
+        {
+            PopulateDataElements();
+
+            var loadedSaveFiles = await callOverlayHandler({call: "loadData", key: "DDO_Saves"}); 
+            if (loadedSaveFiles.$isNull){
+                DDO.SaveFiles = [];
+            }
+            else{
+                DDO.SaveFiles = JSON.parse(loadedSaveFiles.data);
+            }
+
+            var config = await callOverlayHandler({call: "loadData", key: "DDO_Config"});
+            if (config.$isNull){
+                await DDO.SetDefaultConfig();
+            }
+            else{
+                 DDO.Config = JSON.parse(config.data);
+            }
+           
+            console.log(DDO.Config);
+
+            await DDO.LoadConfig();
+
+            var displayOverlayLanguage;
+            displayOverlayLanguage = await callOverlayHandler({call: "getLanguage"});
+            
+            var displayOverlayLocale = 'en';
+            switch(displayOverlayLanguage)
+            {
+                case 'English':
+                    displayOverlayLocale = 'en';
+                    break;
+                default:
+                    break;
+            }
+            await DDO.LoadBeastiary(displayOverlayLocale);
+            DDO.localeInformation = new DDO.Locale(displayOverlayLocale, (e) => 
+            {
+                TranslateUI(e);
+                startOverlayEvents();
+            });
+        }
+        
+        addOverlayListener("LogLine", (e) => LogLine(e));
+        addOverlayListener("ChangeZone", (e) => ChangeZone(e));
+        addOverlayListener("PartyChanged", (e) => PartyChanged(e));
+        addOverlayListener("EnmityTargetData", (e) => EnmityTargetData(e));
+        addOverlayListener("ChangePrimaryPlayer", (e) => ChangePrimaryPlayer(e));        
+
+        function LogLine(data)
+        {
+            if (DDO.runUnderway){
+                if (DDO.ParsedLogNumbers.includes(data.line[0])){
+
+                }
+            }
+          if (data.line[0] == '25')
+          {
+            console.log(data);
+          }
+          if (data.line[0] == '03')
+            UpdatePlayerJob();
+        
+        }
+        function ChangeZone(data)
+        {
+            console.log(data);
+            DDO.currentInstance = data.zoneName;
+            if ((DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsPOTD) ||
+                DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH)) &&
+                !DDO.runUnderway && !DDO.isInGroup)
+            {
+                DDO.LoadSave();
+                DDO.runUnderway = true;
+            }
+            else if(!DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloors) &&
+                !DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloors))
+            {
+                DDO.runUnderway = false;
+            }
+        }
+        function ChangePrimaryPlayer(data)
+        {
+            DDO.playerName = data.charName;
+            UpdatePlayerJob();
+        }
+        async function UpdatePlayerJob()
+        {
+            combatants = await callOverlayHandler({ call: 'getCombatants', names: [DDO.playerName] });
+            DDO.playerJob = combatants.combatants[0].Job;
+        }
+        function PartyChanged(data)
+        {
+            console.log("Party Changed");
+            console.log(data);
+            DDO.isInGroup = data.party.length > 1;
+        }
+        function EnmityTargetData(data)
+        {
+          if (data.Target != null)
+          {
+              var target = DDO.Beastiary[data.Target.Name];
+              if(typeof(target) !== 'undefined')
+              {
+                DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
+                DDO.DataElements.TargetHPPValue.innerText = ((data.Target.CurrentHP / data.Target.MaxHP) * 100).toFixed(2) + '%';
+                DDO.DataElements.DangerLevelValue.innerHTML = '<img src="../img/'+ target.DangerLevel +'.png" />';
+                DDO.DataElements.AggroTypeValue.innerHTML = '<img src="../img/'+ target.AggroType +'.png" />';
+                if (target.Notes.length > 0)
+                {
+                    c = target.Notes;
+                }
+                else
+                {
+                    DDO.DataElements.TargetInformationValue.innerHTML = DDO.Beastiary['Nothing Notable'];
+                }
+              }
+          }
+          else
+          {
+            DDO.DataElements.TargetNameValue.innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['NoTargetLabel'];
+            DDO.DataElements.TargetHPPValue.innerText = "-";
+            DDO.DataElements.DangerLevelValue.innerText = "-";
+            DDO.DataElements.AggroTypeValue.innerText = "-";
+            DDO.DataElements.TargetInformationValue.innerHTML = "-";
+          }
+        }        
+
+        function TranslateUI()
+        {
+            var translationElements = document.getElementsByClassName("Translate");
+
+            for (var i=0; i<translationElements.length; i++){
+                translationElements[i].innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings[translationElements[i].id];
+            }
+        }
+
+        function PopulateDataElements()
+        {
+            DDO.DataElements.ScoreValue = document.getElementById("Score");
+            DDO.DataElements.MonstersFloorValue = document.getElementById("MonstersFloor");
+            DDO.DataElements.MonstersSetValue = document.getElementById("MonstersSet");
+            DDO.DataElements.MonstersTotalValue = document.getElementById("MonstersTotal");
+
+            DDO.DataElements.MimicsFloorValue = document.getElementById("MimicsFloor");
+            DDO.DataElements.MimicsSetValue = document.getElementById("MimicsSet");
+            DDO.DataElements.MimicsTotalValue = document.getElementById("MimicsTotal");
+
+            DDO.DataElements.TrapsFloorValue = document.getElementById("TrapsFloor");
+            DDO.DataElements.TrapsSetValue = document.getElementById("TrapsSet");
+            DDO.DataElements.TrapsTotalValue = document.getElementById("TrapsTotal");
+
+            DDO.DataElements.ChestsFloorValue = document.getElementById("ChestsFloor");
+            DDO.DataElements.ChestsSetValue = document.getElementById("ChestsSet");
+            DDO.DataElements.ChestsTotalValue = document.getElementById("ChestsTotal");
+
+            DDO.DataElements.EnchantmentsFloorValue = document.getElementById("EnchantmentsFloor");
+            DDO.DataElements.EnchantmentsSetValue = document.getElementById("EnchantmentsSet");
+            DDO.DataElements.EnchantmentsTotalValue = document.getElementById("EnchantmentsTotal");
+
+            DDO.DataElements.RareMonstersFloorValue = document.getElementById("RareMonstersFloor");
+            DDO.DataElements.RareMonstersSetValue = document.getElementById("RareMonstersSet");
+            DDO.DataElements.RareMonstersTotalValue = document.getElementById("RareMonstersTotal");
+
+            DDO.DataElements.SpeedRunsFloorValue = document.getElementById("SpeedRunsFloor");
+            DDO.DataElements.SpeedRunsSetValue = document.getElementById("SpeedRunsSet");
+            DDO.DataElements.SpeedRunsTotalValue = document.getElementById("SpeedRunsTotal");
+
+            DDO.DataElements.TargetNameValue = document.getElementById("TargetName");
+            DDO.DataElements.TargetHPPValue = document.getElementById("TargetHPP");
+            DDO.DataElements.DangerLevelValue = document.getElementById("DangerLevel");
+            DDO.DataElements.AggroTypeValue = document.getElementById("AggroType");
+            DDO.DataElements.TargetInformationValue = document.getElementById("TargetInformation");
+
+            DDO.DataElements.BeastiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
+            DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
+            DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
+            DDO.DataElements.ScoreCheckBoxValue = document.getElementById("CheckBoxScore");
+        }
+
+    </script>
+</head>
+<body>
+    <div id="header">
+        Deep Dungeon Overlay
+        <span id="config">
+            <input type="checkbox" id="CheckBoxBestiary" style="float:right;" onchange="DDO.EnableDisableElement(this, 'targetinfo', true)"  />
+            <input type="checkbox" id="CheckBoxStatistics" style="float:right;" onchange="DDO.EnableDisableElement(this, 'statistics', true)"  />
+            <input type="checkbox" id="CheckBoxPomanders" style="float:right;" onchange="DDO.EnableDisableElement(this, 'pomanders', true)"  />
+            <input type="checkbox" id="CheckBoxScore" style="float:right;" onchange="DDO.EnableDisableElement(this, 'score', true)"  />
+        </span>
+    </div>
+    <hr color="black">
+
+    <table id="score" style="padding-bottom:5px">
+        <tr>
+            <td id="ScoreLabel" class="Translate" style="white-space:nowrap; font-size: 25px;" width="25%">-</td>
+            <td id="Score" style="font-size: 35px; padding-left:10px;" width="75%">1,349,982</td>
+        </tr>
+    </table>
+
+    <table id="pomanders" width="100%" style="padding-bottom:5px">
+        <tr>
+            <td id="PomSafety" style="width:20%; text-align:center"><img src="../img/PomSafetyEnabled.png" /></td>
+            <td id="PomSight" style="width:20%; text-align:center"><img src="../img/PomSightDisabled.png" /> </td>
+            <td id="PomAffluence" style="width:20%; text-align:center"><img src="../img/PomAffluenceEnabled.png" /> </td>
+            <td id="PomAlteration" style="width:20%; text-align:center"><img src="../img/PomAlterationDisabled.png" /></td>
+            <td id="PomFlight" style="width:20%; text-align:center"><img src="../img/PomFlightEnabled.png" /></td>
+        </tr>
+    </table>
+
+    <table id="statistics">
+        <tr style="text-align:right;">
+            <th></th>
+            <th id="FloorLabel" class="Translate" scope="col">-</th>
+            <th id="SetLabel" class="Translate" scope="col">-</th>
+            <th id="TotalLabel" class="Translate" scope="col">-</th>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="MonstersLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="MonstersFloor">5</td>
+            <td id="MonstersSet">56</td>
+            <td id="MonstersTotal">368</td>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="MimicsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="MimicsFloor">1(0)</td>
+            <td id="MimicsSet">4(2)</td>
+            <td id="MimicsTotal">18(4)</td>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="TrapsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="TrapsFloor">0</td>
+            <td id="TrapsSet">3</td>
+            <td id="TrapsTotal">8</td>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="ChestsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="ChestsFloor">3</td>
+            <td id="ChestsSet">15</td>
+            <td id="ChestsTotal">125</td>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="EnchantmentsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="EnchantmentsFloor">2</td>
+            <td id="EnchantmentsSet">5</td>
+            <td id="EnchantmentsTotal">32</td>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="RareMonstersLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="RareMonstersFloor">1</td>
+            <td id="RareMonstersSet">0</td>
+            <td id="RareMonstersTotal">3</td>
+        </tr>
+        <tr style="text-align:right;">
+            <th id="SpeedRunsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+            <td id="SpeedRunsFloor">-</td>
+            <td id="SpeedRunsSet">-</td>
+            <td id="SpeedRunsTotal">4</td>
+        </tr>
+    </table>
+    <br>
+    <table id="targetinfo">
+        <tr>
+            <td id="TargetName" class="Beastiary">-</td>
+            <td id="TargetHPP">-</td>
+            <td id="DangerLevel">-</td>
+            <td id="AggroType">-</td>
+        </tr>
+        <tr>
+            <td id="TargetInformation" class="Beastiary" colSpan = 4 style="padding: 4px; text-align:left">-</td>
+        </tr>
+    </table>
+</body>
+</html>
