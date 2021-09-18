@@ -10,7 +10,7 @@ DDO.Snapshot = {};
 DDO.Beastiary = {};
 DDO.DataElements = {};
 
-DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', ];
+DDO.ParsedLogNumbers = ['00', '21', '22', '25', '26', '33', ];
 
 DDO.playerName = "NULL";
 DDO.playerJob = 0;
@@ -38,6 +38,8 @@ DDO.currentSaveFileIndex = 0;
 DDO.currentTargetName = "NULL";
 DDO.currentTargetID = "NULL";
 DDO.currentTargetHPP = 100;
+
+DDO.triggeredTraps = [];
 
 DDO.SetDefaultConfig = async function()
 {

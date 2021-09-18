@@ -75,6 +75,7 @@
     <script src="lib/DDO.js"></script>
     <script src="lib/Locale.js"></script>
     <script src="lib/Beastiary.js"></script>
+    <script src="lib/Parser.js"></script>
 
     <script>
 
@@ -114,8 +115,6 @@
             else{
                  DDO.Config = JSON.parse(config.data);
             }
-           
-            console.log(DDO.Config);
 
             await DDO.LoadConfig();
 
@@ -131,7 +130,9 @@
                 default:
                     break;
             }
+
             await DDO.LoadBeastiary(displayOverlayLocale);
+            
             DDO.localeInformation = new DDO.Locale(displayOverlayLocale, (e) => 
             {
                 TranslateUI(e);
@@ -147,17 +148,12 @@
 
         function LogLine(data)
         {
-            if (DDO.runUnderway){
-                if (DDO.ParsedLogNumbers.includes(data.line[0])){
 
-                }
+            if (DDO.runUnderway && DDO.ParsedLogNumbers.includes(data.line[0])){
+                DDO.ProcessLogLine(data);
             }
-          if (data.line[0] == '25')
-          {
-            console.log(data);
-          }
-          if (data.line[0] == '03')
-            UpdatePlayerJob();
+            else if (data.line[0] == '03')
+                UpdatePlayerJob();
         
         }
         function ChangeZone(data)
@@ -274,6 +270,12 @@
             DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
             DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
             DDO.DataElements.ScoreCheckBoxValue = document.getElementById("CheckBoxScore");
+
+            DDO.DataElements.PomSafetyImage = document.getElementById("PomSafety");
+            DDO.DataElements.PomSightImage = document.getElementById("PomSight");
+            DDO.DataElements.PomAffluenceImage = document.getElementById("PomAffluence");
+            DDO.DataElements.PomAlterationImage = document.getElementById("PomAlteration");
+            DDO.DataElements.PomFlightImage = document.getElementById("PomFlight");
         }
 
     </script>
