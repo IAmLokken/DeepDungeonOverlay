@@ -1,0 +1,234 @@
+'use strict'
+
+;(function(){
+
+    DDO.ScoreCalculator = {};
+
+    DDO.ScoreCalculator.firstFloorTimeOut = false; // This is likely never going to change but there is an odd score difference if you timeout or die on the first set before revealing two floors.  Not relevant for actual score runs.
+
+    DDO.ScoreCalculator.aetherpoolArm = 99; // Assuming full aetherpool
+    DDO.ScoreCalculator.aetherpoolArmor = 99; // Assuming full aetherpool 
+
+    DDO.ScoreCalculator.characterLevelScore = 0;
+    DDO.ScoreCalculator.floorScore = 0;
+    DDO.ScoreCalculator.revealedScore = 0;
+    DDO.ScoreCalculator.chestScore = 0;
+    DDO.ScoreCalculator.uniqueEnemyScore = 0;
+    DDO.ScoreCalculator.mimicScore = 0;
+    DDO.ScoreCalculator.enchantmentScore = 0;
+    DDO.ScoreCalculator.trapScore = 0;
+    DDO.ScoreCalculator.speedRunScore = 0;
+    DDO.ScoreCalculator.rezScore = 0;
+    DDO.ScoreCalculator.killScore = 0;
+
+    
+    DDO.ScoreCalculator.CalulcateCurrentScore = function(saveFile, playerLevel, dutyClearFailed)
+    {
+        if ((saveFile.deepDungeonName == "the Palace of the Dead" && saveFile.floorStartedOn != 1 && saveFile.floorStartedOn != 51) ||
+            (saveFile.deepDungeonName == "Heaven-on-High" && saveFile.floorStartedOn != 1 && saveFile.floorStartedOn != 21))
+             return -414;
+
+        let score = 0;
+
+        let floorStoppedOn = saveFile.floorStartedOn > saveFile.lastFloorCleared ? saveFile.floorStartedOn : saveFile.lastFloorCleared;
+
+        DDO.ScoreCalculator.characterLevelScore = ((DDO.ScoreCalculator.aetherpoolArm + DDO.ScoreCalculator.aetherpoolArmor) * 10) + (playerLevel * 500);
+        DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel);
+        DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
+        DDO.ScoreCalculator.chestScore = DDO.ScoreCalculator.CalculateChestScore(saveFile.currentChestCount, dutyClearFailed);
+        DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.currentSpecialKillCount, dutyClearFailed);
+        DDO.ScoreCalculator.mimicScore = DDO.ScoreCalculator.CalculateMimicKorriganScore(saveFile.currentMimicCount + saveFile.currentKorriganCount, dutyClearFailed);
+        DDO.ScoreCalculator.enchantmentScore = DDO.ScoreCalculator.CalculateEnchantmentScore(saveFile.currentEnchantmentCount, dutyClearFailed);
+        DDO.ScoreCalculator.trapScore = DDO.ScoreCalculator.CalculateTrapScore(saveFile.currentTrapsTriggered, dutyClearFailed);
+        DDO.ScoreCalculator.speedRunScore = DDO.ScoreCalculator.CalculateSpeedRunScore(saveFile.currentSpeedRunBonusCount, dutyClearFailed);
+        DDO.ScoreCalculator.rezScore = DDO.ScoreCalculator.CalculateRezScore(saveFile.currentRezCount, dutyClearFailed);
+
+        let temp = DDO.ScoreCalculator.revealedScore +
+                   DDO.ScoreCalculator.chestScore +
+                   DDO.ScoreCalculator.uniqueEnemyScore +
+                   DDO.ScoreCalculator.mimicScore +
+                   DDO.ScoreCalculator.enchantmentScore +
+                   DDO.ScoreCalculator.trapScore +
+                   DDO.ScoreCalculator.speedRunScore +
+                   DDO.ScoreCalculator.rezScore;
+
+        if (temp / dutyClearFailed > 0)
+            score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore + temp;
+        else
+            score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore;
+
+        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.deepDungeonName);
+
+        score += DDO.ScoreCalculator.killScore;
+        
+        //returnValue = String.Format("{0:n0}", score);
+        //return returnValue;
+        return score;
+    }
+
+
+    DDO.ScoreCalculator.CalculateFloorScore = function(floorStartedOn, currentFloorNumber, dutyClearFailed, playerLevel)
+    {
+        let score = 0;
+
+        score += 430 * (currentFloorNumber - floorStartedOn);
+
+        if (playerLevel > 61 && currentFloorNumber - floorStartedOn + 1 > 20)
+            score += (49 * 91);
+
+        score += (currentFloorNumber - (floorStartedOn + Math.floor((currentFloorNumber - floorStartedOn) / 10))) * 50 * 91;
+
+        score += Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250;
+
+        if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
+            score += dutyClearFailed * 250;
+
+        if (playerLevel > 61)
+        {
+            let val = Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250;
+            if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
+                val += dutyClearFailed * 250;
+            if (val / (dutyClearFailed * 250) >= (3 - Math.floor(floorStartedOn / 10)))
+                score += 450 * dutyClearFailed;
+            if (val / (dutyClearFailed * 250) >= (5 - Math.floor(floorStartedOn / 10)))
+                score += 100 * dutyClearFailed;
+        }
+        else
+        {
+            score += Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 50;
+
+            if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
+                score += dutyClearFailed * 50;
+            if (floorStartedOn == 1)
+                score -= dutyClearFailed * 50 * Math.min(Math.floor(currentFloorNumber / 10), 1);
+            if (floorStartedOn == 1)
+            {
+                if (currentFloorNumber > 30 || (currentFloorNumber == 30 && dutyClearFailed == 101))
+                    score += dutyClearFailed * 0 * 0; // Always adds nothing; this would be maybe to give extra points for floor 30 HoH boss??
+                if (currentFloorNumber > 50 || (currentFloorNumber == 50 && dutyClearFailed == 101))
+                    score += dutyClearFailed * 450;
+            }
+            if (currentFloorNumber > 100 || (currentFloorNumber == 100 && dutyClearFailed == 101))
+                score += dutyClearFailed * 450;
+            if (currentFloorNumber - floorStartedOn + 1 == 100 && dutyClearFailed == 101)
+                score += -4500;
+            if (currentFloorNumber - floorStartedOn + 1 == 50 && dutyClearFailed == 101)
+                score += -2000;
+            if (currentFloorNumber - floorStartedOn + 1 == 200 && dutyClearFailed == 101)
+                score += -4500 + 0;  //Always adds nothing; this possibly for any differences in floor 200 duty complete since its not been tested that high
+        }
+
+        if (playerLevel < 61)
+        {
+            if (currentFloorNumber > 60 || (currentFloorNumber == 60 && dutyClearFailed == 101))
+            {
+                if (floorStartedOn == 51)
+                    score += -50 * dutyClearFailed;
+                else if (currentFloorNumber < 100)
+                    score += -50 * dutyClearFailed;
+            }
+        }
+
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateFullyRevealedFloorScore = function(floorStartedOn, currentFloorNumber, fullyRevealedFloors, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            if (currentFloorNumber - floorStartedOn + 1 > 10)
+                score += dutyClearFailed * fullyRevealedFloors * 25;
+            else
+            {
+                if (dutyClearFailed == 101)
+                    score += dutyClearFailed * fullyRevealedFloors * 25;
+                else
+                    score += dutyClearFailed * (fullyRevealedFloors - 2) * 25;
+            }
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateChestScore = function(chestCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += chestCount * dutyClearFailed;
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateUniqueEnemyScore = function(uniqueCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += uniqueCount * dutyClearFailed * 20;
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateMimicKorriganScore = function(enemyCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += enemyCount * dutyClearFailed * 5;
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateEnchantmentScore = function(enchantmentCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += enchantmentCount * dutyClearFailed * 5;
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateTrapScore = function(trapCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += -trapCount * dutyClearFailed * 2;
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateSpeedRunScore = function(currentSpeedRunBonusCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += currentSpeedRunBonusCount * dutyClearFailed * 150;
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateRezScore = function(rezCount, dutyClearFailed){
+        let score = 0;
+        if (!DDO.ScoreCalculator.firstFloorTimeOut)
+        {
+            score += -rezCount * dutyClearFailed * 50;
+        }
+        return score;
+    }
+    
+    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, deepDungeonName){
+        let score = 0;
+
+        if (deepDungeonName == 'Heaven-on-High'){
+            for(var i = 0; i < 10; i++){
+                let multiplier = (i + 1) % 2 == 0 ? 191 : 100;
+                score += (multiplier + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
+            }            
+        }
+        else
+        {
+            for (var i = 0; i < 20; i++)
+            {
+                score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
+            }
+        }
+        return score;
+    }
+
+})()

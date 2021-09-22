@@ -1,81 +1,15 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <style>
-        * {
-            font-family: "Meiryo";
-            font-size: 12px;
-        }
-
-        body, html {
-            margin: 0;
-        }
-        body
-        {
-            border: 3px solid rgb(204, 204, 204);
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom:0;
-            left: 0;
-            overflow: auto;
-            padding: 2;
-        }   
-
-        html {
-            height: 100%;
-            overflow: hidden;
-            background-color: rgba(0, 0, 100, 0.50);
-        }
-
-        #header{
-            display: inline;
-        }
-        #statistics th,
-        #statistics td,
-        #targetinfo th,
-        #targetinfo td{
-            width: 25%;
-            border: 1px solid darkgrey;
-            padding-left: 3px;
-            padding-right: 3px
-        }
-        #targetinfo td{
-            text-align: center;
-        }
-
-        #score,
-        #statistics,
-        #targetinfo,
-        #header{
-            color: lightgray;
-            font-weight: bold;
-            
-        }
-
-        #statistics,
-        #targetinfo{
-            width: 100%;
-            border-style: solid;
-            border-width: 2px;
-            border-color: lightgray;   
-            border-collapse: collapse;
-        }
-
-        .resizeHandle {
-            background-image: url(img/handle.png);
-            background-position: bottom right;
-            background-repeat: no-repeat;
-            box-sizing: border-box;
-        }       
-    </style>
+    <title>Deep Dungeon Overlay</title>
+    <link rel="stylesheet" href="css/display.css" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
     <script src="lib/DDO.js"></script>
     <script src="lib/Locale.js"></script>
     <script src="lib/Beastiary.js"></script>
     <script src="lib/Parser.js"></script>
+    <script src="lib/Calculator.js"></script>
 
     <script>
 
@@ -101,22 +35,17 @@
             PopulateDataElements();
 
             var loadedSaveFiles = await callOverlayHandler({call: "loadData", key: "DDO_Saves"}); 
-            if (loadedSaveFiles.$isNull){
-                DDO.SaveFiles = [];
-            }
-            else{
+            if (loadedSaveFiles && !loadedSaveFiles.$isNull){
                 DDO.SaveFiles = JSON.parse(loadedSaveFiles.data);
             }
 
             var config = await callOverlayHandler({call: "loadData", key: "DDO_Config"});
-            if (config.$isNull){
+            if (config && config.$isNull){
                 await DDO.SetDefaultConfig();
             }
             else{
                  DDO.Config = JSON.parse(config.data);
-            }
-
-            await DDO.LoadConfig();
+            }            
 
             var displayOverlayLanguage;
             displayOverlayLanguage = await callOverlayHandler({call: "getLanguage"});
@@ -135,7 +64,8 @@
             
             DDO.localeInformation = new DDO.Locale(displayOverlayLocale, (e) => 
             {
-                TranslateUI(e);
+                DDO.TranslateUI(e);
+                DDO.LoadConfig(DDO.currentInstance);
                 startOverlayEvents();
             });
         }
@@ -148,40 +78,34 @@
 
         function LogLine(data)
         {
-
-            if (DDO.runUnderway && DDO.ParsedLogNumbers.includes(data.line[0])){
+            if (DDO.soloRunUnderway && 
+                !DDO.inbetweenArea && 
+                DDO.ParsedLogNumbers.includes(data.line[0]))
+            {
                 DDO.ProcessLogLine(data);
             }
-            else if (data.line[0] == '03')
-                UpdatePlayerJob();
-        
+            else if(DDO.groupRunUnderway && 
+                    !DDO.inbetweenArea && 
+                    data.line[0] == '00' &&
+                    data.rawLine.includes(DDO.localeInformation.Languages[localeInformation.CurrentLanguage].ParseStrings['Transference']))
+            {
+                DDO.currentFloor++;
+            }
+            else if ((data.line[0] == '03' || data.line[0] == '12') && 
+                    data.rawLine.includes(DDO.playerName))
+            {
+                DDO.UpdatePlayerInfo();
+            }
         }
         function ChangeZone(data)
         {
             console.log(data);
-            DDO.currentInstance = data.zoneName;
-            if ((DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsPOTD) ||
-                DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH)) &&
-                !DDO.runUnderway && !DDO.isInGroup)
-            {
-                DDO.LoadSave();
-                DDO.runUnderway = true;
-            }
-            else if(!DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloors) &&
-                !DDO.currentInstance.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloors))
-            {
-                DDO.runUnderway = false;
-            }
+            DDO.LoadConfig(data.zoneName);
         }
         function ChangePrimaryPlayer(data)
         {
             DDO.playerName = data.charName;
-            UpdatePlayerJob();
-        }
-        async function UpdatePlayerJob()
-        {
-            combatants = await callOverlayHandler({ call: 'getCombatants', names: [DDO.playerName] });
-            DDO.playerJob = combatants.combatants[0].Job;
+            DDO.UpdatePlayerInfo();
         }
         function PartyChanged(data)
         {
@@ -191,46 +115,19 @@
         }
         function EnmityTargetData(data)
         {
-          if (data.Target != null)
-          {
-              var target = DDO.Beastiary[data.Target.Name];
-              if(typeof(target) !== 'undefined')
-              {
-                DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
-                DDO.DataElements.TargetHPPValue.innerText = ((data.Target.CurrentHP / data.Target.MaxHP) * 100).toFixed(2) + '%';
-                DDO.DataElements.DangerLevelValue.innerHTML = '<img src="../img/'+ target.DangerLevel +'.png" />';
-                DDO.DataElements.AggroTypeValue.innerHTML = '<img src="../img/'+ target.AggroType +'.png" />';
-                if (target.Notes.length > 0)
-                {
-                    c = target.Notes;
-                }
-                else
-                {
-                    DDO.DataElements.TargetInformationValue.innerHTML = DDO.Beastiary['Nothing Notable'];
-                }
-              }
-          }
-          else
-          {
-            DDO.DataElements.TargetNameValue.innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['NoTargetLabel'];
-            DDO.DataElements.TargetHPPValue.innerText = "-";
-            DDO.DataElements.DangerLevelValue.innerText = "-";
-            DDO.DataElements.AggroTypeValue.innerText = "-";
-            DDO.DataElements.TargetInformationValue.innerHTML = "-";
-          }
-        }        
-
-        function TranslateUI()
-        {
-            var translationElements = document.getElementsByClassName("Translate");
-
-            for (var i=0; i<translationElements.length; i++){
-                translationElements[i].innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings[translationElements[i].id];
+            if (data.Target != null && (DDO.currentInstance == 'the Palace of the Dead' || DDO.currentInstance == 'Heaven-on-High') && !DDO.inbetweenArea){
+                DDO.DisplayTargetInfo(data);
             }
-        }
+            else{
+                DDO.ClearTargetInfo();
+            }
+        } 
 
         function PopulateDataElements()
         {
+            DDO.DataElements.POTDButton = document.getElementById("POTDButton");
+            DDO.DataElements.HOHButton = document.getElementById("HOHButton");
+
             DDO.DataElements.ScoreValue = document.getElementById("Score");
             DDO.DataElements.MonstersFloorValue = document.getElementById("MonstersFloor");
             DDO.DataElements.MonstersSetValue = document.getElementById("MonstersSet");
@@ -262,36 +159,52 @@
 
             DDO.DataElements.TargetNameValue = document.getElementById("TargetName");
             DDO.DataElements.TargetHPPValue = document.getElementById("TargetHPP");
-            DDO.DataElements.DangerLevelValue = document.getElementById("DangerLevel");
-            DDO.DataElements.AggroTypeValue = document.getElementById("AggroType");
-            DDO.DataElements.TargetInformationValue = document.getElementById("TargetInformation");
+            DDO.DataElements.DangerEasyImage = document.getElementById("DangerEasy");
+            DDO.DataElements.DangerCautionImage = document.getElementById("DangerCaution");
+            DDO.DataElements.DangerScaryImage = document.getElementById("DangerScary");
+            DDO.DataElements.DangerImpossibleImage = document.getElementById("DangerImpossible");
+            DDO.DataElements.AggroSightImage = document.getElementById("AggroSight");
+            DDO.DataElements.AggroSoundImage = document.getElementById("AggroSound");
+            DDO.DataElements.AggroProximityImage = document.getElementById("AggroProximity");
 
             DDO.DataElements.BeastiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
             DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
             DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
             DDO.DataElements.ScoreCheckBoxValue = document.getElementById("CheckBoxScore");
 
-            DDO.DataElements.PomSafetyImage = document.getElementById("PomSafety");
-            DDO.DataElements.PomSightImage = document.getElementById("PomSight");
-            DDO.DataElements.PomAffluenceImage = document.getElementById("PomAffluence");
-            DDO.DataElements.PomAlterationImage = document.getElementById("PomAlteration");
-            DDO.DataElements.PomFlightImage = document.getElementById("PomFlight");
+            DDO.DataElements.PomSafetyDisabledImage = document.getElementById("PomSafetyDisabled");
+            DDO.DataElements.PomSightDisabledImage = document.getElementById("PomSightDisabled");
+            DDO.DataElements.PomAffluenceDisabledImage = document.getElementById("PomAffluenceDisabled");
+            DDO.DataElements.PomAlterationDisabledImage = document.getElementById("PomAlterationDisabled");
+            DDO.DataElements.PomFlightDisabledImage = document.getElementById("PomFlightDisabled");
+
+            DDO.DataElements.PomSafetyEnabledImage = document.getElementById("PomSafetyEnabled");
+            DDO.DataElements.PomSightEnabledImage = document.getElementById("PomSightEnabled");
+            DDO.DataElements.PomAffluenceEnabledImage = document.getElementById("PomAffluenceEnabled");
+            DDO.DataElements.PomAlterationEnabledImage = document.getElementById("PomAlterationEnabled");
+            DDO.DataElements.PomFlightEnabledImage = document.getElementById("PomFlightEnabled");            
         }
 
     </script>
 </head>
 <body>
+    <div id="mainBody">
     <div id="header">
         Deep Dungeon Overlay
         <span id="config">
-            <input type="checkbox" id="CheckBoxBestiary" style="float:right;" onchange="DDO.EnableDisableElement(this, 'targetinfo', true)"  />
-            <input type="checkbox" id="CheckBoxStatistics" style="float:right;" onchange="DDO.EnableDisableElement(this, 'statistics', true)"  />
-            <input type="checkbox" id="CheckBoxPomanders" style="float:right;" onchange="DDO.EnableDisableElement(this, 'pomanders', true)"  />
-            <input type="checkbox" id="CheckBoxScore" style="float:right;" onchange="DDO.EnableDisableElement(this, 'score', true)"  />
+            <input type="checkbox" id="CheckBoxBestiary" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'targetinfo', true)"  />
+            <input type="checkbox" id="CheckBoxStatistics" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'statistics', true)"  />
+            <input type="checkbox" id="CheckBoxPomanders" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'pomanders', true)"  />
+            <input type="checkbox" id="CheckBoxScore" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'score', true)"  />
         </span>
     </div>
     <hr color="black">
-
+    
+    <div id="saveManager">
+        <button type="button" id="POTDButton" class="Translate" onclick="DDO.ClearPOTDSaves()"></button>
+        <button type="button" id="HOHButton" class="Translate" onclick="DDO.ClearHOHSaves()"></button>
+    </div>
+    
     <table id="score" style="padding-bottom:5px">
         <tr>
             <td id="ScoreLabel" class="Translate" style="white-space:nowrap; font-size: 25px;" width="25%">-</td>
@@ -301,11 +214,11 @@
 
     <table id="pomanders" width="100%" style="padding-bottom:5px">
         <tr>
-            <td id="PomSafety" style="width:20%; text-align:center"><img src="../img/PomSafetyEnabled.png" /></td>
-            <td id="PomSight" style="width:20%; text-align:center"><img src="../img/PomSightDisabled.png" /> </td>
-            <td id="PomAffluence" style="width:20%; text-align:center"><img src="../img/PomAffluenceEnabled.png" /> </td>
-            <td id="PomAlteration" style="width:20%; text-align:center"><img src="../img/PomAlterationDisabled.png" /></td>
-            <td id="PomFlight" style="width:20%; text-align:center"><img src="../img/PomFlightEnabled.png" /></td>
+            <td id="PomSafety" style="width:20%; text-align:center"><img id="PomSafetyDisabled" src="../img/PomSafetyDisabled.png" /><img id="PomSafetyEnabled" style = "display:none;" src="../img/PomSafetyEnabled.png" /></td>
+            <td id="PomSight" style="width:20%; text-align:center"><img id="PomSightDisabled" src="../img/PomSightDisabled.png" /><img id="PomSightEnabled" style = "display:none;" src="../img/PomSightEnabled.png" /></td>
+            <td id="PomAffluence" style="width:20%; text-align:center"><img id="PomAffluenceDisabled" src="../img/PomAffluenceDisabled.png" /><img id="PomAffluenceEnabled" style = "display:none;" src="../img/PomAffluenceEnabled.png" /></td>
+            <td id="PomAlteration" style="width:20%; text-align:center"><img id="PomAlterationDisabled" src="../img/PomAlterationDisabled.png" /><img id="PomAlterationEnabled" style = "display:none;" src="../img/PomAlterationEnabled.png" /></td>
+            <td id="PomFlight" style="width:20%; text-align:center"><img id="PomFlightDisabled"src="../img/PomFlightDisabled.png" /><img id="PomFlightEnabled" style = "display:none;" src="../img/PomFlightEnabled.png" /></td>
         </tr>
     </table>
 
@@ -364,12 +277,19 @@
         <tr>
             <td id="TargetName" class="Beastiary">-</td>
             <td id="TargetHPP">-</td>
-            <td id="DangerLevel">-</td>
-            <td id="AggroType">-</td>
+            <td id="DangerLevel"><img id = "DangerEasy" style="display: none;" src="../img/Easy.png" /><img id = "DangerCaution" style="display: none;" src="../img/Caution.png" /><img id = "DangerScary" style="display: none;" src="../img/Scary.png" /><img id = "DangerImpossible" style="display: none;" src="../img/Impossible.png" /></td>
+            <td id="AggroType"><img id = "AggroSight" style="display: none;" src="../img/Sight.png" /><img id = "AggroSound" style="display: none;" src="../img/Sound.png" /><img id = "AggroProximity" style="display: none;" src="../img/Proximity.png" /></td>
         </tr>
         <tr>
-            <td id="TargetInformation" class="Beastiary" colSpan = 4 style="padding: 4px; text-align:left">-</td>
+            <td id="TargetInformation" class="Beastiary" colSpan = 4 style="padding: 4px; text-align:left; background:rgb(0, 0, 70);">-</td>
         </tr>
     </table>
+
+    <div id="scoreDebug">
+        <button type="button" id="scoreDebugButton" onclick="DDO.CalculateScoreNoRoomReveal()">Calculate Score</button>
+        <br/>
+        <span id="debugScore" style="color: seashell;">-</span>
+    </div>
+</div>
 </body>
 </html>

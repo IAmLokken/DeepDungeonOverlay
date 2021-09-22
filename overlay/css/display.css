@@ -1,0 +1,99 @@
+* {
+    font-family: "Franklin Gothic Medium";
+    font-size: 12px;
+}
+
+body, html {
+    margin: 5px 5px 5px 5px;
+    padding: 0;
+    border: 0;
+}
+
+body
+{            
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;        
+}
+
+html {            
+    overflow: hidden;            
+}
+
+#mainBody{
+    border: 3px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
+    background-color: rgba(40, 40, 150, 0.5);
+    padding: 5px;
+    height: 95%;
+    width: 95%;  
+}
+
+#header{
+    display: inline;
+}
+#statistics th,
+#statistics td,
+#targetinfo th,
+#targetinfo td{
+    width: 25%;
+    border: 1px solid rgb(124, 124, 124);
+    padding-left: 3px;
+    padding-right: 3px
+}
+#targetinfo td{
+    text-align: center;
+}
+
+#score,
+#statistics,
+#targetinfo,
+#header{
+    color: lightgray;
+    font-weight: bold;            
+}
+
+#statistics,
+#targetinfo{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;   
+    border-collapse: collapse;
+}
+th,
+#ScoreLabel,
+#TargetName{
+    color: rgb(255, 191, 0)
+}
+
+#saveManager{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: rgb(43, 114, 40);
+    color:white;
+    border: 2px solid white;
+    padding: 4px 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+button:hover{
+    background-color: white;
+    color:rgb(43, 114, 40);
+}
+
+.resizeHandle {
+    background-image: url(img/handle.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+}       

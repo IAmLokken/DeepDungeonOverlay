@@ -17,7 +17,9 @@
         "HPPLabel": "Hp %",
         "DangerLabel": "Danger Level",
         "AggroLabel" : "Aggro Type",
-        "NoTargetLabel": "No Target"
+        "NoTargetLabel": "No Target",
+        "POTDButton": "Clear PotD Saves",
+        "HOHButton": "Clear HoH Saves"
     },
     "BossNames":
     [
@@ -39,7 +41,7 @@
     ],
     "ParseStrings":
     {
-        "CurrentInstancePOTD": "Palace of the Dead",
+        "CurrentInstancePOTD": "The Palace of the Dead",
         "CurrentInstanceHOH": "Heaven-on-High",
         "CurrentInstanceFloorsPOTD": "Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
@@ -56,7 +58,7 @@
         "PomanderOfSafety": "Pomander Of Safety",
         "PomanderOfSight": "Pomander Of Sight",
         "PomanderOfAffluence": "Pomander Of Affluence",
-        "PomanderOfAlteration": "Pomander of Alteration",
+        "PomanderOfAlteration": "Pomander Of Alteration",
         "PomanderOfFlight": "Pomander Of Flight",
         "PomanderOfSerenity": "Pomander Of Serenity",
         "PomanderOfRaising": "Pomander Of Raising",
@@ -64,7 +66,7 @@
         "EmpyreanAetherpool": "Your empyrean aetherpool",
         "Magicite": "magicite",
         "Obtain": "obtain",
-        "30MinutesRemaining": "30 minutes remaining",
+        "ThirtyMinutesRemaining": "30 minutes remaining",
         "Gloom": "The gathering gloom",
         "PhoenixDown": "phoenix down. You already possess one.",
         "Transference": "Transference initiated!"        
