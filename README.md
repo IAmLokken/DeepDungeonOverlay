@@ -15,22 +15,22 @@ Installation of DDO
 
 Current Features
 
-- Score (Estimate)
--- The overlay will give you a real-time estimate on your current score.  Please see the In Development section for caveats.
+* Score (Estimate)
+	* The overlay will give you a real-time estimate on your current score.  Please see the In Development section for caveats.
 
-- For the current floor, floor set, and run:
-* Monster kills
-* Mimic (Korrigan) kills
-* Traps triggered 
-* Floor enchantments applied (using a Serenity will decrement this count)
-* Total floor sets completed in 30 minutes or less
+* Satistics:
+	* Monster kills
+	* Mimic (Korrigan) kills
+	* Traps triggered 
+	* Floor enchantments applied (using a Serenity will decrement this count)
+	* Total floor sets completed in 30 minutes or less
 
-- For the current floor:
--- Safety (Enabled if one was used this floor)
--- Sight (Enabled if one was used this floor)
--- Affluence (Enabled if one was used last floor and currently active)
--- Alteration (Enabled if one was used last floor and currently active)
--- Flight (Enabled if one was used last floor and currently active)
+* Pomanders:
+	* Safety (Enabled if one was used this floor)
+	* Sight (Enabled if one was used this floor)
+	* Affluence (Enabled if one was used last floor and currently active)
+	* Alteration (Enabled if one was used last floor and currently active)
+	* Flight (Enabled if one was used last floor and currently active)
 
 - Beastiary Information:
 -- Enemy Name
