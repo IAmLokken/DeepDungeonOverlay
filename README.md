@@ -70,8 +70,8 @@ Since the overlay does not know when you delete a save file in game there are tw
 # In Development
 
 The score will only be an estimate for a few reasons:
-	*Magicite can kill monsters that are so far away that they were not loaded on the client and as a result no death message is received for them from the server.
-	*The client currently does not receive a discernable notification that the current floor's map has been fully revealed so the only way to know if a map is 100% revealed is if a Sight pomander is used.
-	*The overlay can discern when a room is revealed on the map so an average point value is added when a room is revealed.  This value depends on the dungeon and is determined by the max number of rooms a floor can have (8 in PotD, 12 in HoH).
+	* Magicite can kill monsters that are so far away that they were not loaded on the client and as a result no death message is received for them from the server.
+	* The client currently does not receive a discernable notification that the current floor's map has been fully revealed so the only way to know if a map is 100% revealed is if a Sight pomander is used.
+	* The overlay can discern when a room is revealed on the map so an average point value is added when a room is revealed.  This value depends on the dungeon and is determined by the max number of rooms a floor can have (8 in PotD, 12 in HoH).
 
 
