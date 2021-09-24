@@ -10,15 +10,15 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 Installation of DDO
 
--Within the OverlayPlugin create a new min-parse overlay
--Set the url to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
+- Within the OverlayPlugin create a new min-parse overlay
+- Set the url to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
 
 Current Features
 
--Score (Estimate)
+- Score (Estimate)
 -- The overlay will give you a real-time estimate on your current score.  Please see the In Development section for caveats.
 
--For the current floor, floor set, and run:
+- For the current floor, floor set, and run:
 -- Monster kills
 -- Mimic (Korrigan) kills
 -- Traps triggered 
