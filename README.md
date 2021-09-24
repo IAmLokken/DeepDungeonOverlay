@@ -18,6 +18,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 * Score (Estimate)
 	* The overlay will give you a real-time estimate on your current score.  Please see the Score Caveats section for more information.
 	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
+	
 * Satistics:
 	* Monster kills
 	* Mimic (Korrigan) kills
@@ -25,14 +26,14 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 	* Floor enchantments applied (using a Serenity will decrement this count)
 	* Rare monsters (PotD only)
 	* Total floor sets completed in 30 minutes or less
-	* 
+	 
 * Pomanders:
 	* Safety (Enabled if one was used this floor)
 	* Sight (Enabled if one was used this floor)
 	* Affluence (Enabled if one was used last floor and currently active)
 	* Alteration (Enabled if one was used last floor and currently active)
 	* Flight (Enabled if one was used last floor and currently active)
-	* 
+	
 * Beastiary Information:
     * Enemy Name
 	* Enemy Current Health Percentage
