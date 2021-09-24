@@ -19,11 +19,11 @@ Current Features
 -- The overlay will give you a real-time estimate on your current score.  Please see the In Development section for caveats.
 
 - For the current floor, floor set, and run:
--- Monster kills
--- Mimic (Korrigan) kills
--- Traps triggered 
--- Floor enchantments applied (using a Serenity will decrement this count)
--- Total floor sets completed in 30 minutes or less
+* Monster kills
+* Mimic (Korrigan) kills
+* Traps triggered 
+* Floor enchantments applied (using a Serenity will decrement this count)
+* Total floor sets completed in 30 minutes or less
 
 - For the current floor:
 -- Safety (Enabled if one was used this floor)
