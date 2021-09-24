@@ -249,7 +249,7 @@
             let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
             if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
                 if (!DDO.sightActive){
-                    if (parseStrings[CurrentInstanceFloorsPOTD].includes(DDO.currentInstance) &&
+                    if (parseStrings.CurrentInstanceFloorsPOTD.includes(DDO.currentInstance) &&
                        (DDO.currentFloorStats.roomRevealCount == 6 || (DDO.currentFloor < 10 && DDO.currentFLoorStats.roomRevealCount == 2)))
                     {
                         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
@@ -257,7 +257,7 @@
                         DDO.currentFloorStats.roomRevealCount = 0;
                         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
                     }
-                    else if (parseStrings[CurrentInstanceFloorsHOH].includes(DDO.currentInstance) && 
+                    else if (parseStrings.CurrentInstanceFloorsHOH.includes(DDO.currentInstance) && 
                              DDO.currentFloorStats.roomRevealCount == 10)
                     {
                         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
