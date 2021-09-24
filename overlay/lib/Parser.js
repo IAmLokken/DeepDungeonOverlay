@@ -246,11 +246,30 @@
 
     DDO.ParseChestsAndMap = function(data){
         if(data[2].includes('8003')){
-            if(data[3] == '10000004'){
+            let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
+            if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
                 if (!DDO.sightActive){
-                    DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
-                    DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                    if (parseStrings[CurrentInstanceFloorsPOTD].includes(DDO.currentInstance) &&
+                       (DDO.currentFloorStats.roomRevealCount == 6 || (DDO.currentFloor < 10 && DDO.currentFLoorStats.roomRevealCount == 2)))
+                    {
+                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                        DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                        DDO.currentFloorStats.roomRevealCount = 0;
+                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
+                    }
+                    else if (parseStrings[CurrentInstanceFloorsHOH].includes(DDO.currentInstance) && 
+                             DDO.currentFloorStats.roomRevealCount == 10)
+                    {
+                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                        DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                        DDO.currentFloorStats.roomRevealCount = 0;
+                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
+                    }
+                    else{
+                        DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
+                        DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
+                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                    }
                     DDO.UpdateScore();
                 }
             }
@@ -294,9 +313,7 @@
         }
         else if (data[4].includes(parseStrings.Transference)){
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
-            console.log('Left floor ' + DDO.currentFloor);
             DDO.currentFloor++;           
-            console.log('Arrived on floor ' + DDO.currentFloor);
 
             DDO.DataElements.PomSafetyDisabledImage.style.display = "";
             DDO.DataElements.PomSafetyEnabledImage.style.display = "none";

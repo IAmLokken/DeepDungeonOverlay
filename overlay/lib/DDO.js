@@ -278,13 +278,12 @@
 
     DDO.UpdateScore = function()
     {
-        console.log('Calculating Score');
         let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
         let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, DDO.playerLevel, 101);
 
         let roomRevealAddition = currentSave.deepDungeonName == "the Palace of the Dead" ? 
-                                 currentSave.currentRoomRevealCount * 631 : 
-                                 currentSave.currentRoomRevealCount * 421;
+                                 currentSave.currentRoomRevealCount * 721 : 
+                                 currentSave.currentRoomRevealCount * 459;
         score += roomRevealAddition;
 
         DDO.DataElements.ScoreValue.innerText = score.toLocaleString();
