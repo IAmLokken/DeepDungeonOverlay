@@ -1,19 +1,19 @@
-#Introduction
+# Introduction
 
 Deep Dungeon Overlay is an in-development OverlayPlugin skin intended to give you relevant information during solo excursions into FFXIV Deep Dungeons.
 
-#Requirements to use DDT
+# Requirements to use DDT
 
 DDO requires the Advanced Combat Tracker (ACT) software.  Additionally it requires the FFXIV_ACT_Plugin as well as the OverlayPlugin library to be installed in ACT.
 Instructions for installing ACT as well as FFXIV_ACT_Plugin can be found in written form here: https://github.com/FFXIV-ACT/setup-guide
 Additionally Desperius FFXIV has a good video tutorial (current as of April 2021) here: https://www.youtube.com/watch?v=urZTrF864x8&t=0s
 
-#Installation of DDO
+# Installation of DDO
 
 - Within the OverlayPlugin create a new min-parse overlay
 - Set the url to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
 
-#Current Features
+# Current Features
 
 * Score (Estimate)
 	* The overlay will give you a real-time estimate on your current score.  Please see the In Development section for caveats.
@@ -49,7 +49,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 The Score, Pomander, Statistics, and Beastiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay.
 
-#Save Files
+# Save Files
 
 DDO saves relevant information about the current run to the OverlayPlugin config file.
 
@@ -67,7 +67,7 @@ This is only an issue if you leave the dungeon instance with both save slots at 
 
 Since the overlay does not know when you delete a save file in game there are two buttons to clear its save files of any saves.  This is good to use when you plan on attempting a clear run that you want to make sure are properly tracked.
 
-#In Development
+# In Development
 
 The score will only be an estimate for a few reasons:
 	*Magicite can kill monsters that are so far away that they were not loaded on the client and as a result no death message is received for them from the server.
