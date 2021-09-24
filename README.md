@@ -16,7 +16,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 # Current Features
 
 * Score (Estimate)
-	* The overlay will give you a real-time estimate on your current score.  Please see the In Development section for caveats.
+	* The overlay will give you a real-time estimate on your current score.  Please see the Score Caveats section for more information.
 
 * Satistics:
 	* Monster kills
@@ -40,7 +40,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 	* Enemy Aggro Level (Sight, Sound, Proximity)
 	* Enemy Info (Things to know about the enemy, if relevant)
 
-	*All beastiary information is pulled from Maygi's DD Handbooks with permission.
+	* __All beastiary information is pulled from Maygi's DD Handbooks with permission.__
 	* https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub
 	* https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit
 	* https://www.twitch.tv/maygii
