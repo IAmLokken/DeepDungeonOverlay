@@ -23,6 +23,7 @@ Current Features
 	* Mimic (Korrigan) kills
 	* Traps triggered 
 	* Floor enchantments applied (using a Serenity will decrement this count)
+	* Rare monsters (PotD only)
 	* Total floor sets completed in 30 minutes or less
 
 * Pomanders:
@@ -32,17 +33,17 @@ Current Features
 	* Alteration (Enabled if one was used last floor and currently active)
 	* Flight (Enabled if one was used last floor and currently active)
 
-- Beastiary Information:
--- Enemy Name
--- Enemy Health Point %
--- Enemy Danger Level (Easy, Caution, Scary, Impossible)
--- Enemy Aggro Level (Sight, Sound, Proximity)
--- Enemy Info (Things to know about the enemy, if relevant)
+* Beastiary Information:
+	* Enemy Name
+	* Enemy Health Point %
+	* Enemy Danger Level (Easy, Caution, Scary, Impossible)
+	* Enemy Aggro Level (Sight, Sound, Proximity)
+	* Enemy Info (Things to know about the enemy, if relevant)
 
 All beastiary information is pulled from Maygi's DD Handbooks with permission.
--- https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub
--- https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit
--- https://www.twitch.tv/maygii
+	* https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub
+	* https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit
+	* https://www.twitch.tv/maygii
 
 NOTE: Beastiary information is the only section availble during group runs.
 
