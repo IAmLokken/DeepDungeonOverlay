@@ -30,9 +30,10 @@
         window.addEventListener("load", (e) => {
             LoadData();
         });
+
         async function LoadData()
         {
-            PopulateDataElements();
+            DDO.AssignDataElements();
 
             var loadedSaveFiles = await callOverlayHandler({call: "loadData", key: "DDO_Saves"}); 
             if (loadedSaveFiles && !loadedSaveFiles.$isNull){
@@ -123,69 +124,8 @@
             }
         } 
 
-        function PopulateDataElements()
-        {
-            DDO.DataElements.POTDButton = document.getElementById("POTDButton");
-            DDO.DataElements.HOHButton = document.getElementById("HOHButton");
-
-            DDO.DataElements.ScoreValue = document.getElementById("Score");
-            DDO.DataElements.MonstersFloorValue = document.getElementById("MonstersFloor");
-            DDO.DataElements.MonstersSetValue = document.getElementById("MonstersSet");
-            DDO.DataElements.MonstersTotalValue = document.getElementById("MonstersTotal");
-
-            DDO.DataElements.MimicsFloorValue = document.getElementById("MimicsFloor");
-            DDO.DataElements.MimicsSetValue = document.getElementById("MimicsSet");
-            DDO.DataElements.MimicsTotalValue = document.getElementById("MimicsTotal");
-
-            DDO.DataElements.TrapsFloorValue = document.getElementById("TrapsFloor");
-            DDO.DataElements.TrapsSetValue = document.getElementById("TrapsSet");
-            DDO.DataElements.TrapsTotalValue = document.getElementById("TrapsTotal");
-
-            DDO.DataElements.ChestsFloorValue = document.getElementById("ChestsFloor");
-            DDO.DataElements.ChestsSetValue = document.getElementById("ChestsSet");
-            DDO.DataElements.ChestsTotalValue = document.getElementById("ChestsTotal");
-
-            DDO.DataElements.EnchantmentsFloorValue = document.getElementById("EnchantmentsFloor");
-            DDO.DataElements.EnchantmentsSetValue = document.getElementById("EnchantmentsSet");
-            DDO.DataElements.EnchantmentsTotalValue = document.getElementById("EnchantmentsTotal");
-
-            DDO.DataElements.RareMonstersFloorValue = document.getElementById("RareMonstersFloor");
-            DDO.DataElements.RareMonstersSetValue = document.getElementById("RareMonstersSet");
-            DDO.DataElements.RareMonstersTotalValue = document.getElementById("RareMonstersTotal");
-
-            DDO.DataElements.SpeedRunsFloorValue = document.getElementById("SpeedRunsFloor");
-            DDO.DataElements.SpeedRunsSetValue = document.getElementById("SpeedRunsSet");
-            DDO.DataElements.SpeedRunsTotalValue = document.getElementById("SpeedRunsTotal");
-
-            DDO.DataElements.TargetNameValue = document.getElementById("TargetName");
-            DDO.DataElements.TargetHPPValue = document.getElementById("TargetHPP");
-            DDO.DataElements.DangerEasyImage = document.getElementById("DangerEasy");
-            DDO.DataElements.DangerCautionImage = document.getElementById("DangerCaution");
-            DDO.DataElements.DangerScaryImage = document.getElementById("DangerScary");
-            DDO.DataElements.DangerImpossibleImage = document.getElementById("DangerImpossible");
-            DDO.DataElements.AggroSightImage = document.getElementById("AggroSight");
-            DDO.DataElements.AggroSoundImage = document.getElementById("AggroSound");
-            DDO.DataElements.AggroProximityImage = document.getElementById("AggroProximity");
-
-            DDO.DataElements.BeastiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
-            DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
-            DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
-            DDO.DataElements.ScoreCheckBoxValue = document.getElementById("CheckBoxScore");
-
-            DDO.DataElements.PomSafetyDisabledImage = document.getElementById("PomSafetyDisabled");
-            DDO.DataElements.PomSightDisabledImage = document.getElementById("PomSightDisabled");
-            DDO.DataElements.PomAffluenceDisabledImage = document.getElementById("PomAffluenceDisabled");
-            DDO.DataElements.PomAlterationDisabledImage = document.getElementById("PomAlterationDisabled");
-            DDO.DataElements.PomFlightDisabledImage = document.getElementById("PomFlightDisabled");
-
-            DDO.DataElements.PomSafetyEnabledImage = document.getElementById("PomSafetyEnabled");
-            DDO.DataElements.PomSightEnabledImage = document.getElementById("PomSightEnabled");
-            DDO.DataElements.PomAffluenceEnabledImage = document.getElementById("PomAffluenceEnabled");
-            DDO.DataElements.PomAlterationEnabledImage = document.getElementById("PomAlterationEnabled");
-            DDO.DataElements.PomFlightEnabledImage = document.getElementById("PomFlightEnabled");            
-        }
-
     </script>
+
 </head>
 <body>
     <div id="mainBody">
@@ -208,7 +148,7 @@
     <table id="score" style="padding-bottom:5px">
         <tr>
             <td id="ScoreLabel" class="Translate" style="white-space:nowrap; font-size: 25px;" width="25%">-</td>
-            <td id="Score" style="font-size: 35px; padding-left:10px;" width="75%">1,349,982</td>
+            <td id="Score" style="font-size: 35px; padding-left:10px;" width="75%">-</td>
         </tr>
     </table>
 
@@ -231,45 +171,45 @@
         </tr>
         <tr style="text-align:right;">
             <th id="MonstersLabel" class="Translate" scope="row" style="text-align:left;">-</th>
-            <td id="MonstersFloor">5</td>
-            <td id="MonstersSet">56</td>
-            <td id="MonstersTotal">368</td>
+            <td id="MonstersFloor">-</td>
+            <td id="MonstersSet">-</td>
+            <td id="MonstersTotal">-</td>
         </tr>
         <tr style="text-align:right;">
             <th id="MimicsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
-            <td id="MimicsFloor">1(0)</td>
-            <td id="MimicsSet">4(2)</td>
-            <td id="MimicsTotal">18(4)</td>
+            <td id="MimicsFloor">-</td>
+            <td id="MimicsSet">-</td>
+            <td id="MimicsTotal">-</td>
         </tr>
         <tr style="text-align:right;">
             <th id="TrapsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
-            <td id="TrapsFloor">0</td>
-            <td id="TrapsSet">3</td>
-            <td id="TrapsTotal">8</td>
+            <td id="TrapsFloor">-</td>
+            <td id="TrapsSet">-</td>
+            <td id="TrapsTotal">-</td>
         </tr>
         <tr style="text-align:right;">
             <th id="ChestsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
-            <td id="ChestsFloor">3</td>
-            <td id="ChestsSet">15</td>
-            <td id="ChestsTotal">125</td>
+            <td id="ChestsFloor">-</td>
+            <td id="ChestsSet">-</td>
+            <td id="ChestsTotal">-</td>
         </tr>
         <tr style="text-align:right;">
             <th id="EnchantmentsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
-            <td id="EnchantmentsFloor">2</td>
-            <td id="EnchantmentsSet">5</td>
-            <td id="EnchantmentsTotal">32</td>
+            <td id="EnchantmentsFloor">-</td>
+            <td id="EnchantmentsSet">-</td>
+            <td id="EnchantmentsTotal">-</td>
         </tr>
         <tr style="text-align:right;">
             <th id="RareMonstersLabel" class="Translate" scope="row" style="text-align:left;">-</th>
-            <td id="RareMonstersFloor">1</td>
-            <td id="RareMonstersSet">0</td>
-            <td id="RareMonstersTotal">3</td>
+            <td id="RareMonstersFloor">-</td>
+            <td id="RareMonstersSet">-</td>
+            <td id="RareMonstersTotal">-</td>
         </tr>
         <tr style="text-align:right;">
             <th id="SpeedRunsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
             <td id="SpeedRunsFloor">-</td>
             <td id="SpeedRunsSet">-</td>
-            <td id="SpeedRunsTotal">4</td>
+            <td id="SpeedRunsTotal">-</td>
         </tr>
     </table>
     <br>
@@ -284,12 +224,13 @@
             <td id="TargetInformation" class="Beastiary" colSpan = 4 style="padding: 4px; text-align:left; background:rgb(0, 0, 70);">-</td>
         </tr>
     </table>
-
+<!--
     <div id="scoreDebug">
         <button type="button" id="scoreDebugButton" onclick="DDO.CalculateScoreNoRoomReveal()">Calculate Score</button>
         <br/>
         <span id="debugScore" style="color: seashell;">-</span>
     </div>
+    -->
 </div>
 </body>
 </html>

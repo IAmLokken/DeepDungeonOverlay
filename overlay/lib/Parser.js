@@ -7,19 +7,15 @@
         let lineType = data.line[0];
         if(lineType == '25'){
             DDO.ParseKill(data.line);
-            DDO.UpdateScore();
         }
         else if (lineType == '21' || lineType == '22'){
             DDO.ParsePomsAndTraps(data.line);
-            DDO.UpdateScore();
         }
         else if (lineType == '26'){
             DDO.ParseEnchantments(data.line);
-            DDO.UpdateScore();
         }
         else if (lineType == '33'){
             DDO.ParseChestsAndMap(data.line);
-            DDO.UpdateScore();
         }
         else if (lineType == '00'){
             DDO.ParseLogLine(data.line);
@@ -50,6 +46,7 @@
             DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
             DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
             DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+            DDO.UpdateScore();
         }
         // Check for korrigan
         else if (nameOfMob == parseStrings.Korrigan || nameOfMob == parseStrings.Mandragora || nameOfMob == parseStrings.Pygmaioi){
@@ -69,6 +66,7 @@
             DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
             DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
             DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+            DDO.UpdateScore();
         }
         // Check for rare mob
         else if (DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].RareMonsterNames.includes(nameOfMob)){
@@ -79,18 +77,21 @@
             DDO.DataElements.RareMonstersFloorValue.innerText = DDO.currentFloorStats.rareKillCount;
             DDO.DataElements.RareMonstersSetValue.innerText = DDO.currentFloorSetStats.rareKillCount;
             DDO.DataElements.RareMonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpecialKillCount;
+            DDO.UpdateScore();
         }
         // Check for player death
         else if (nameOfMob == DDO.playerName){
             if (DDO.raisingActive){
                 DDO.raisingActive = false;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRezCount++;
+                DDO.UpdateScore();
             }
             else{                
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex] = JSON.parse(JSON.stringify(DDO.Snapshot));
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKOCount++;
                 DDO.SaveRuns();
             }
+            return;
         }
         // Check for normal kill or boss kill
         else{
@@ -104,6 +105,7 @@
                 DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
                 DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
                 DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+                DDO.UpdateScore();
             }
             // Kills on boss floor
             else{
@@ -138,8 +140,12 @@
                     DDO.sightActive = false;
                     DDO.raisingActive = false;
 
+                    DDO.UpdateScore();
+
                     // Save the run
                     DDO.SaveRuns();
+
+                    DDO.currentFloor++;
                 }
             }
         }
@@ -159,6 +165,7 @@
                 DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
                 DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
                 DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
+                DDO.UpdateScore();
             }
             else{
                 var trapID = data[0];
@@ -172,6 +179,7 @@
                     DDO.DataElements.TrapsFloorValue.innerText = DDO.currentFloorStats.trapsTriggered;
                     DDO.DataElements.TrapsSetValue.innerText = DDO.currentFloorSetStats.trapsTriggered;
                     DDO.DataElements.TrapsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentTrapsTriggered;
+                    DDO.UpdateScore();
                 }
             }
         }
@@ -189,6 +197,7 @@
                     DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                 }
                 DDO.currentFloorStats.roomRevealCount = 0;
+                DDO.UpdateScore();
             }
             else if(pomTrapName == parseStrings.PomanderOfSafety && !DDO.safetyActive){
                 DDO.DataElements.PomSafetyDisabledImage.style.display = "none";
@@ -212,6 +221,7 @@
                 DDO.DataElements.EnchantmentsFloorValue.innerText = DDO.currentFloorStats.enchantmentCount;
                 DDO.DataElements.EnchantmentsSetValue.innerText = DDO.currentFloorSetStats.enchantmentCount;
                 DDO.DataElements.EnchantmentsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount;
+                DDO.UpdateScore();
             }
             else if (pomTrapName == parseStrings.PomanderOfRaising){
                 DDO.raisingActive = true;
@@ -229,7 +239,8 @@
 
             DDO.DataElements.EnchantmentsFloorValue.innerText = DDO.currentFloorStats.enchantmentCount;
             DDO.DataElements.EnchantmentsSetValue.innerText = DDO.currentFloorSetStats.enchantmentCount;
-            DDO.DataElements.EnchantmentsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount;            
+            DDO.DataElements.EnchantmentsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount;      
+            DDO.UpdateScore();      
         }
     }
 
@@ -240,6 +251,7 @@
                     DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                     DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
                     DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                    DDO.UpdateScore();
                 }
             }
             else if (data[3] == '10000007' && data[6] == 'FF'){
@@ -249,8 +261,8 @@
                 
                 DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
                 DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
-                DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;     
-
+                DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
+                DDO.UpdateScore();
             }
         }
     }
@@ -281,7 +293,10 @@
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
         else if (data[4].includes(parseStrings.Transference)){
-            DDO.currentFloor++;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
+            console.log('Left floor ' + DDO.currentFloor);
+            DDO.currentFloor++;           
+            console.log('Arrived on floor ' + DDO.currentFloor);
 
             DDO.DataElements.PomSafetyDisabledImage.style.display = "";
             DDO.DataElements.PomSafetyEnabledImage.style.display = "none";

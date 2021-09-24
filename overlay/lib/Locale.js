@@ -49,4 +49,20 @@
     }
 
     window.DDO.Locale = Locale;
+
+    DDO.TranslateUI = function()
+    {
+        var translationElements = document.getElementsByClassName("Translate");
+
+        for (var i=0; i<translationElements.length; i++)
+        {
+            translationElements[i].innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings[translationElements[i].id];
+        }
+
+        if (DDO.SaveFiles['the Palace of the Dead'].length > 0)
+            DDO.DataElements.POTDButton.innerText += ` (${DDO.SaveFiles['the Palace of the Dead'].length})`;
+        if (DDO.SaveFiles['Heaven-on-High'].length > 0)
+            DDO.DataElements.HOHButton.innerText += ` (${DDO.SaveFiles['Heaven-on-High'].length})`;
+    }
+
 })()
