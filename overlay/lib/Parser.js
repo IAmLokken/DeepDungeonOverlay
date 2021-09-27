@@ -248,28 +248,11 @@
         if(data[2].includes('8003')){
             let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
             if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
-                if (!DDO.sightActive){
-                    if (parseStrings.CurrentInstanceFloorsPOTD.includes(DDO.currentInstance) &&
-                       (DDO.currentFloorStats.roomRevealCount == 6 || (DDO.currentFloor < 10 && DDO.currentFLoorStats.roomRevealCount == 2)))
-                    {
-                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                        DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                        DDO.currentFloorStats.roomRevealCount = 0;
-                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
-                    }
-                    else if (parseStrings.CurrentInstanceFloorsHOH.includes(DDO.currentInstance) && 
-                             DDO.currentFloorStats.roomRevealCount == 10)
-                    {
-                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                        DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                        DDO.currentFloorStats.roomRevealCount = 0;
-                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
-                    }
-                    else{
-                        DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
-                        DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
-                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
-                    }
+                if (!DDO.sightActive){                
+                    DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
+                    DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
+                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                    
                     DDO.UpdateScore();
                 }
             }
@@ -313,7 +296,30 @@
         }
         else if (data[4].includes(parseStrings.Transference)){
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
-            DDO.currentFloor++;           
+            DDO.currentFloor++; 
+            
+            if (!DDO.sightActive){
+                // If we are in POTD and on floor 1-9 and at room reveal count 4 its a full clear
+                // Or if we have 12 rooms revealed we are in a big room in HOH so full clear
+                // Or if we have 8 rooms revealed we are in a normal max room floor and award full clear (Not always 100% accurate in HoH)
+                if ( (parseStrings.CurrentInstanceFloorsPOTD.includes(DDO.currentInstance) && DDO.currentFloor < 10 && DDO.currentFLoorStats.roomRevealCount == 4) ||
+                    DDO.currentFloorStats.roomRevealCount == 12 ||
+                    DDO.currentFloorStats.roomRevealCount == 8 )
+                {
+                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                    DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                    DDO.currentFloorStats.roomRevealCount = 0;
+                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
+                }
+                // If we have revealed less than 3 rooms or more than 8 but not 12 we know its not a full clear
+                else if (DDO.currentFloorStats.roomRevealCount < 3 ||
+                        DDO.currentFloorStats.roomRevealCount > 8)
+                {
+                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                    DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+                    DDO.currentFloorStats.roomRevealCount = 0;
+                }
+            }
 
             DDO.DataElements.PomSafetyDisabledImage.style.display = "";
             DDO.DataElements.PomSafetyEnabledImage.style.display = "none";
@@ -352,6 +358,14 @@
             DDO.triggeredTraps = [];
             DDO.enchantmentsApplied = [];
             DDO.currentFloorStats = {};
+
+            //Give credit for spawn room.
+            if (DDO.currentFloor % 10 > 0){
+                DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
+                DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+            }
+
 
             DDO.DataElements.MonstersFloorValue.innerText = 0;
             DDO.DataElements.MimicsFloorValue.innerText = 0;
