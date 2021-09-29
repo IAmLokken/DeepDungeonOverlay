@@ -2,6 +2,8 @@
 
 Deep Dungeon Overlay is an in-development OverlayPlugin skin intended to give you relevant information during solo excursions into FFXIV Deep Dungeons.
 
+![DDO](overlay/docs/DetailsFull01.png?raw=true)
+
 # Requirements to use DDO
 
 DDO requires the Advanced Combat Tracker (ACT) software.  Additionally it requires the FFXIV_ACT_Plugin as well as the OverlayPlugin library to be installed in ACT.
@@ -46,7 +48,9 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 		* [Maygi's twitch stream](https://www.twitch.tv/maygii)
 	* **NOTE**: Beastiary information is the only section availble during group runs.
 
-The Score, Pomander, Statistics, and Beastiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay.
+The Score, Pomander, Statistics, and Beastiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:
+
+![DDOS01](overlay/docs/DetailsSimple01.png?raw=true) ![DDOS02](overlay/docs/DetailsSimple02.png?raw=true)
 
 # Save Files
 
@@ -63,7 +67,11 @@ There are some caveats to be aware of when doing runs you want to track and havi
 An example case of this is if you like to build two save files up to the same floor (i.e. two save files at floor 171 for RDM on the same character).  
 When selecting the save slot in game the overlay does not have a way to know _which_ save file you clicked on and will just pick the first one it finds in its own save file that matches on dungeon, character, job, and floor.  Since there are two it may not pick the right one and the tracked data will be innacurate.
 This is only an issue if you leave the dungeon instance with both save slots at the same floor.  If you continue one save slot past where another is currently at the overlay will not have an issue.
-Since the overlay does not know when you delete a save file in game there are two buttons to clear its save files of any saves.  This is good to use when you plan on attempting a clear run that you want to make sure are properly tracked.
+
+Since the overlay does not know when you delete a save file in game there are two buttons to clear its save files of any saves when not in a deep dungeon.  This is good to use when you plan on attempting a clear run that you want to make sure are properly tracked.
+
+![DDOSM](overlay/docs/SaveManager.png?raw=true)
+
 # Scoring Caveats
 
 * The score will only be an estimate for a few reasons:
