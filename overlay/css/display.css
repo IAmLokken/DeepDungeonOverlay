@@ -1,16 +1,16 @@
 * {
     font-family: "Franklin Gothic Medium";
     font-size: 12px;
+    box-sizing: border-box;
 }
 
 body, html {
-    margin: 5px 5px 5px 5px;
+    margin: 0;
     padding: 0;
     border: 0;
 }
 
-body
-{            
+body{            
     position: absolute;
     top: 0;
     right: 0;
@@ -23,18 +23,38 @@ html {
 }
 
 #mainBody{
-    border: 3px solid rgb(185, 185, 185);
+    border: 3px ridge rgb(185, 185, 185);
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
     background-color: rgba(40, 40, 150, 0.5);
     padding: 5px;
-    height: 95%;
-    width: 95%;  
+    height: 100%;
+    width: 100%;  
 }
 
 #header{
     display: inline;
 }
+
+#config input{
+    float:right;
+}
+
+#ScoreLabel{
+    white-space:nowrap;
+    font-size: 25px;
+}
+
+#Score{
+    font-size: 35px;
+    padding-left:10px;
+}
+
+#pomanders td{
+    width:20%;
+    text-align:center;
+}
+
 #statistics th,
 #statistics td,
 #targetinfo th,
@@ -43,9 +63,6 @@ html {
     border: 1px solid rgb(124, 124, 124);
     padding-left: 3px;
     padding-right: 3px
-}
-#targetinfo td{
-    text-align: center;
 }
 
 #score,
@@ -64,12 +81,40 @@ html {
     border-color: lightgray;   
     border-collapse: collapse;
 }
+
+#statistics tr{
+    text-align:right;
+}
+
+#targetinfo td{
+    text-align: center;
+}
+
+#TargetInformation {
+    padding: 4px;
+    text-align:left;
+    background:rgb(0, 0, 70);
+}
+
+table{
+    padding-bottom:5px;
+}
+
+th{
+    text-align:left;
+}
+
 th,
 #ScoreLabel,
 #TargetName{
-    color: rgb(255, 191, 0)
+    color: rgb(247, 160, 0)
 }
 
+#ButtonInfo{
+    color:lightgray;
+    background-color: rgb(0, 0, 70);
+    padding: 5px;
+}
 #saveManager{
     display:flex;
     align-items: center;
@@ -79,20 +124,21 @@ th,
 }
 
 button{
-    background-color: rgb(43, 114, 40);
+    background-color: rgb(0, 0, 70);
     color:white;
     border: 2px solid white;
     padding: 4px 4px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     text-align: center;
 }
+
 button:hover{
     background-color: white;
-    color:rgb(43, 114, 40);
+    color:rgb(0, 0, 70);
 }
 
 .resizeHandle {
-    background-image: url(../img/handle.png);
+    /*background-image: url(../img/handle.png);*/
     background-position: bottom right;
     background-repeat: no-repeat;
     box-sizing: content-box;

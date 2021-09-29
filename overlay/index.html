@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css" />    
+    <link rel="stylesheet" href="css/display.css?v=0.1.2" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
     <script src="lib/DDO.js?v=0.1.2"></script>
@@ -131,81 +131,85 @@
     <div id="header">
         Deep Dungeon Overlay
         <span id="config">
-            <input type="checkbox" id="CheckBoxBestiary" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'targetinfo', true)"  />
-            <input type="checkbox" id="CheckBoxStatistics" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'statistics', true)"  />
-            <input type="checkbox" id="CheckBoxPomanders" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'pomanders', true)"  />
-            <input type="checkbox" id="CheckBoxScore" style="float:right;" onchange="DDO.EnableDisableElement(checked, 'score', true)"  />
+            <input type="checkbox" id="CheckBoxBestiary" onchange="DDO.EnableDisableElement(checked, 'targetinfo', true)"  />
+            <input type="checkbox" id="CheckBoxStatistics" onchange="DDO.EnableDisableElement(checked, 'statistics', true)"  />
+            <input type="checkbox" id="CheckBoxPomanders" onchange="DDO.EnableDisableElement(checked, 'pomanders', true)"  />
+            <input type="checkbox" id="CheckBoxScore" onchange="DDO.EnableDisableElement(checked, 'score', true)"  />
         </span>
     </div>
     <hr color="black">
     
+    <div id="ButtonInfo" class=Translate >-</div>
+    <br />
+    <hr color="lightgrey" width="50%">
+    <br />
     <div id="saveManager">
         <button type="button" id="POTDButton" class="Translate" onclick="DDO.ClearPOTDSaves()"></button>
         <button type="button" id="HOHButton" class="Translate" onclick="DDO.ClearHOHSaves()"></button>
     </div>
     
-    <table id="score" style="padding-bottom:5px">
+    <table id="score">
         <tr>
-            <td id="ScoreLabel" class="Translate" style="white-space:nowrap; font-size: 25px;" width="25%">-</td>
-            <td id="Score" style="font-size: 35px; padding-left:10px;" width="75%">-</td>
+            <td id="ScoreLabel" class="Translate" width="25%">-</td>
+            <td id="Score" width="75%">-</td>
         </tr>
     </table>
 
-    <table id="pomanders" width="100%" style="padding-bottom:5px">
+    <table id="pomanders" width="100%">
         <tr>
-            <td id="PomSafety" style="width:20%; text-align:center"><img id="PomSafetyDisabled" src="img/PomSafetyDisabled.png" /><img id="PomSafetyEnabled" style = "display:none;" src="img/PomSafetyEnabled.png" /></td>
-            <td id="PomSight" style="width:20%; text-align:center"><img id="PomSightDisabled" src="img/PomSightDisabled.png" /><img id="PomSightEnabled" style = "display:none;" src="img/PomSightEnabled.png" /></td>
-            <td id="PomAffluence" style="width:20%; text-align:center"><img id="PomAffluenceDisabled" src="img/PomAffluenceDisabled.png" /><img id="PomAffluenceEnabled" style = "display:none;" src="img/PomAffluenceEnabled.png" /></td>
-            <td id="PomAlteration" style="width:20%; text-align:center"><img id="PomAlterationDisabled" src="img/PomAlterationDisabled.png" /><img id="PomAlterationEnabled" style = "display:none;" src="img/PomAlterationEnabled.png" /></td>
-            <td id="PomFlight" style="width:20%; text-align:center"><img id="PomFlightDisabled" src="img/PomFlightDisabled.png" /><img id="PomFlightEnabled" style = "display:none;" src="img/PomFlightEnabled.png" /></td>
+            <td id="PomSafety"><img id="PomSafetyDisabled" src="img/PomSafetyDisabled.png" /><img id="PomSafetyEnabled" style = "display:none;" src="img/PomSafetyEnabled.png" /></td>
+            <td id="PomSight"><img id="PomSightDisabled" src="img/PomSightDisabled.png" /><img id="PomSightEnabled" style = "display:none;" src="img/PomSightEnabled.png" /></td>
+            <td id="PomAffluence"><img id="PomAffluenceDisabled" src="img/PomAffluenceDisabled.png" /><img id="PomAffluenceEnabled" style = "display:none;" src="img/PomAffluenceEnabled.png" /></td>
+            <td id="PomAlteration"><img id="PomAlterationDisabled" src="img/PomAlterationDisabled.png" /><img id="PomAlterationEnabled" style = "display:none;" src="img/PomAlterationEnabled.png" /></td>
+            <td id="PomFlight"><img id="PomFlightDisabled" src="img/PomFlightDisabled.png" /><img id="PomFlightEnabled" style = "display:none;" src="img/PomFlightEnabled.png" /></td>
         </tr>
     </table>
 
     <table id="statistics">
-        <tr style="text-align:right;">
+        <tr>
             <th></th>
             <th id="FloorLabel" class="Translate" scope="col">-</th>
             <th id="SetLabel" class="Translate" scope="col">-</th>
             <th id="TotalLabel" class="Translate" scope="col">-</th>
         </tr>
-        <tr style="text-align:right;">
-            <th id="MonstersLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="MonstersLabel" class="Translate" scope="row">-</th>
             <td id="MonstersFloor">-</td>
             <td id="MonstersSet">-</td>
             <td id="MonstersTotal">-</td>
         </tr>
-        <tr style="text-align:right;">
-            <th id="MimicsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="MimicsLabel" class="Translate" scope="row">-</th>
             <td id="MimicsFloor">-</td>
             <td id="MimicsSet">-</td>
             <td id="MimicsTotal">-</td>
         </tr>
-        <tr style="text-align:right;">
-            <th id="TrapsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="TrapsLabel" class="Translate" scope="row">-</th>
             <td id="TrapsFloor">-</td>
             <td id="TrapsSet">-</td>
             <td id="TrapsTotal">-</td>
         </tr>
-        <tr style="text-align:right;">
-            <th id="ChestsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="ChestsLabel" class="Translate" scope="row">-</th>
             <td id="ChestsFloor">-</td>
             <td id="ChestsSet">-</td>
             <td id="ChestsTotal">-</td>
         </tr>
-        <tr style="text-align:right;">
-            <th id="EnchantmentsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="EnchantmentsLabel" class="Translate" scope="row">-</th>
             <td id="EnchantmentsFloor">-</td>
             <td id="EnchantmentsSet">-</td>
             <td id="EnchantmentsTotal">-</td>
         </tr>
-        <tr style="text-align:right;">
-            <th id="RareMonstersLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="RareMonstersLabel" class="Translate" scope="row">-</th>
             <td id="RareMonstersFloor">-</td>
             <td id="RareMonstersSet">-</td>
             <td id="RareMonstersTotal">-</td>
         </tr>
-        <tr style="text-align:right;">
-            <th id="SpeedRunsLabel" class="Translate" scope="row" style="text-align:left;">-</th>
+        <tr>
+            <th id="SpeedRunsLabel" class="Translate" scope="row">-</th>
             <td id="SpeedRunsFloor">-</td>
             <td id="SpeedRunsSet">-</td>
             <td id="SpeedRunsTotal">-</td>
@@ -220,7 +224,7 @@
             <td id="AggroType"><img id = "AggroSight" style="display: none;" src="img/Sight.png" /><img id = "AggroSound" style="display: none;" src="img/Sound.png" /><img id = "AggroProximity" style="display: none;" src="img/Proximity.png" /></td>
         </tr>
         <tr>
-            <td id="TargetInformation" class="Beastiary" colSpan = 4 style="padding: 4px; text-align:left; background:rgb(0, 0, 70);">-</td>
+            <td id="TargetInformation" class="Beastiary" colSpan = 4>-</td>
         </tr>
     </table>
 <!--

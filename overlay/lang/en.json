@@ -19,7 +19,8 @@
         "AggroLabel" : "Aggro Type",
         "NoTargetLabel": "No Target",
         "POTDButton": "Clear PotD Saves",
-        "HOHButton": "Clear HoH Saves"
+        "HOHButton": "Clear HoH Saves",
+        "ButtonInfo": "This window will display Deep Dungeon information while in a Deep Dungeon run.  While not in a Deep Dungeon run you can use the below buttons to clear save information stored by this overlay."
     },
     "BossNames":
     [
