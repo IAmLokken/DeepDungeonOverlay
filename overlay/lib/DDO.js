@@ -79,7 +79,9 @@
                 DDO.soloRunUnderway = true;
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
-                DDO.LoadSave();                    
+                DDO.LoadSave();
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor + 9;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;                 
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
                 DDO.LoadPartyConfig();
                 DDO.groupRunUnderway = true;
@@ -127,6 +129,7 @@
         DDO.EnableDisableElement(DDO.DataElements.BeastiaryCheckBoxValue.checked, 'targetinfo', false);
 
         DDO.EnableDisableElement(false, 'saveManager', false);
+        DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(true, 'config', false);
     }
 
@@ -142,12 +145,14 @@
         DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
         DDO.EnableDisableElement(DDO.DataElements.BeastiaryCheckBoxValue.checked, 'targetinfo', false);
 
+        DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
     }
 
     DDO.LoadNonRunConfig = function()
     {
         DDO.EnableDisableElement(false, 'config', false);
+        DDO.EnableDisableElement(true, 'ButtonInfo', false);
         DDO.EnableDisableElement(true, 'saveManager', false);
         DDO.EnableDisableElement(false, 'score', false);
         DDO.EnableDisableElement(false, 'pomanders', false);
@@ -282,8 +287,8 @@
         let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, DDO.playerLevel, 101);
 
         let roomRevealAddition = currentSave.deepDungeonName == "the Palace of the Dead" ? 
-                                 currentSave.currentRoomRevealCount * 721 : 
-                                 currentSave.currentRoomRevealCount * 459;
+                                 currentSave.currentRoomRevealCount * 316 : 
+                                 currentSave.currentRoomRevealCount * 316;
         score += roomRevealAddition;
 
         DDO.DataElements.ScoreValue.innerText = score.toLocaleString();

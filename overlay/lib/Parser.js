@@ -119,11 +119,7 @@
                     DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
                     DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
 
-                    // Check for speed run bonus and apply
-                    if(DDO.speedRunBonus){
-                        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;
-                        DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
-                    }
+                    DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
 
                     // Update the last floor cleared
                     DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
@@ -273,6 +269,8 @@
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
         if (data[4].includes(parseStrings.ThirtyMinutesRemaining)){
             DDO.speedRunBonus = false;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount--;
+            DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
             DDO.UpdateScore();
         }
         else if (data[4].includes(parseStrings.Gloom)){
@@ -295,7 +293,7 @@
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
         else if (data[4].includes(parseStrings.Transference)){
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
+            //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
             DDO.currentFloor++; 
             
             if (!DDO.sightActive){
