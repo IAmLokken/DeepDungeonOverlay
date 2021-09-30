@@ -11,15 +11,13 @@ body, html {
 }
 
 body{            
-    position: absolute;
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
     top: 0;
     right: 0;
     bottom:0;
     left: 0;        
-}
-
-html {            
-    overflow: hidden;            
 }
 
 #mainBody{
@@ -28,8 +26,9 @@ html {
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
     background-color: rgba(40, 40, 150, 0.5);
     padding: 5px;
-    height: 100%;
-    width: 100%;  
+    /*height: 100%;
+    width: 100%;  */
+
 }
 
 #header{
@@ -43,6 +42,7 @@ html {
 #ScoreLabel{
     white-space:nowrap;
     font-size: 25px;
+    text-align: left;
 }
 
 #Score{
@@ -53,6 +53,12 @@ html {
 #pomanders td{
     width:20%;
     text-align:center;
+}
+
+#FloorLabel,
+#SetLabel,
+#TotalLabel{
+    text-align: right;
 }
 
 #statistics th,
@@ -80,10 +86,15 @@ html {
     border-width: 2px;
     border-color: lightgray;   
     border-collapse: collapse;
+    margin-bottom: 5px;
 }
 
 #statistics tr{
     text-align:right;
+}
+
+#targetinfo{
+    margin-top: 10px;
 }
 
 #targetinfo td{
@@ -117,12 +128,14 @@ th,
     margin-bottom: 10px;
     border-bottom: 2px solid;
 }
+
 #saveManager{
     display:flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
+    padding-bottom:5px;
 }
 
 button{
