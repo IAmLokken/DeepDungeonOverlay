@@ -20,7 +20,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 # Current Features
 
 * Score (Estimate)
-	* The overlay will give you a real-time estimate on your current score.  Please see the Score Caveats section for more information.
+	* The overlay will give you a real-time estimate on your current score.  Please see the Score Details section for more information.
 	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
 	
 * Satistics:
@@ -74,12 +74,14 @@ Since the overlay does not know when you delete a save file in game there are tw
 
 ![DDOSM](overlay/docs/SaveManager.png?raw=true)
 
-# Scoring Caveats
+# Scoring Details
 
 * The score will only be an estimate for a few reasons:
     * Magicite can kill monsters that are so far away that they were not loaded on the client and as a result no death message is received for them from the server.
     * The client currently does not receive a discernable notification that the current floor's map has been fully revealed so the only way to know if a map is 100% revealed is if a Sight pomander is used.
     * The overlay can discern when a room is revealed on the map so an average point value is added when a room is revealed.  This value depends on the dungeon and is determined by the max number of rooms a floor can have (8 in PotD, 12 in HoH).
+
+* The score displayed assumes a successful completion of the current floorset. This is done because the point total jumps significantly retroactively upon set completion so much so that the estimate is practically useless until that happens.  Including this from the start allows the estimate to reflect the runner's score as accurately as possible during the run and not just at the end of the floorset.
 
 # In Development
 
