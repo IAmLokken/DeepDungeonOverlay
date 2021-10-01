@@ -292,6 +292,28 @@
             DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
+        else if (data[4].includes(parseStrings.EmpyreanReliquary) || data[4].includes(parseStrings.GlassPumpkin) || data[4].includes(parseStrings.Firecrest)){
+            DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
+            // Update the last floor cleared
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
+
+            // Reset pomander settings
+            DDO.speedRunBonus = true;
+            DDO.triggerAffluence = false;
+            DDO.triggerAlteration = false;
+            DDO.triggerFlight = false;
+            DDO.safetyActive = false;
+            DDO.affluenceActive = false;
+            DDO.alterationActive = false;
+            DDO.flightActive = false;
+            DDO.sightActive = false;
+            DDO.raisingActive = false;
+
+            DDO.UpdateScore();
+
+            // Save the run
+            DDO.SaveRuns();
+        }
         else if (data[4].includes(parseStrings.Transference)){
             //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
             DDO.currentFloor++; 

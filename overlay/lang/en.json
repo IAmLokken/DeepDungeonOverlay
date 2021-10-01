@@ -70,6 +70,9 @@
         "ThirtyMinutesRemaining": "30 minutes remaining",
         "Gloom": "The gathering gloom",
         "PhoenixDown": "phoenix down. You already possess one.",
-        "Transference": "Transference initiated!"        
+        "Transference": "Transference initiated!",
+        "EmpyreanReliquary": "empyrean reliquary",
+        "GlassPumpkin": "glass pumpkin",
+        "Firecrest": "firecrest"        
     }
 }
