@@ -22,7 +22,14 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 * Score (Estimate)
 	* The overlay will give you a real-time estimate on your current score.  Please see the Score Details section for more information.
 	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
-	
+	 
+* Pomanders:
+	* Safety (Enabled if one was used this floor)
+	* Sight (Enabled if one was used this floor)
+	* Affluence (Enabled if one was used last floor and currently active)
+	* Alteration (Enabled if one was used last floor and currently active)
+	* Flight (Enabled if one was used last floor and currently active)
+
 * Satistics:
 	* Monster kills
 	* Mimic (Korrigan) kills
@@ -31,15 +38,8 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 	* Floor enchantments applied (using a Serenity will decrement this count)
 	* Rare monsters (PotD only)
 	* Total floor sets completed in 30 minutes or less
-	 
-* Pomanders:
-	* Safety (Enabled if one was used this floor)
-	* Sight (Enabled if one was used this floor)
-	* Affluence (Enabled if one was used last floor and currently active)
-	* Alteration (Enabled if one was used last floor and currently active)
-	* Flight (Enabled if one was used last floor and currently active)
 	
-* Beastiary Information:
+* Bestiary Information:
     * Enemy Name
 	* Enemy Current Health Percentage
 	* Enemy Danger Levels:
@@ -54,13 +54,13 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 		:-: | :-: | :-:
 		![Sight](overlay/img/Sight.png) | ![Sound](overlay/img/Sound.png) | ![Proximity](overlay/img/Proximity.png)
 	* Enemy Info (Things to know about the enemy, if relevant.)
-	* __All beastiary information is pulled from Maygi's DD Handbooks with permission__.
+	* __All bestiary information is pulled from Maygi's DD Handbooks with permission__.
 		* [PotD Handbook](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbook](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
 		* [Maygi's twitch stream](https://www.twitch.tv/maygii)
-	* **NOTE**: Beastiary information is the only section availble during group runs.
+	* **NOTE**: Bestiary information is the only section availble during group runs.
 
-The Score, Pomander, Statistics, and Beastiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:
+The Score, Pomander, Statistics, and Bestiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:
 
 ![DDOS01](overlay/docs/DetailsSimple01.png?raw=true) ![DDOS02](overlay/docs/DetailsSimple02.png?raw=true)
 
