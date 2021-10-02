@@ -56,6 +56,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 		* [HoH Handbook](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
 		* [Maygi's twitch stream](https://www.twitch.tv/maygii)
 	* **NOTE**: Bestiary information is the only section availble during group runs.
+	* **NOTE**: If any bestiary information is incorrect (or missing) please [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/issues).
 
 The Score, Pomander, Statistics, and Bestiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:
 
