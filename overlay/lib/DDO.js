@@ -16,6 +16,7 @@
     DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33'];
 
     DDO.playerName = "NULL";
+    DDO.playerWorld = "NULL";
     DDO.playerJob = 0;
     DDO.playerLevel = 1;
 
@@ -172,6 +173,7 @@
         {
             if (DDO.SaveFiles[DDO.currentInstance][i].playerName == DDO.playerName &&
                 DDO.SaveFiles[DDO.currentInstance][i].playerJob == DDO.playerJob &&
+                DDO.SaveFiles[DDO.currentInstance][i].playerWorld == DDO.playerWorld &&
                 DDO.SaveFiles[DDO.currentInstance][i].lastFloorCleared == DDO.currentFloor - 1)
             {
                 DDO.currentSaveFileIndex = i;
@@ -183,6 +185,7 @@
             var newSave = {};
             newSave.playerName = DDO.playerName;
             newSave.playerJob = DDO.playerJob;
+            newSave.playerWorld = DDO.playerWorld;
             newSave.deepDungeonName = DDO.currentInstance;
             newSave.lastFloorCleared = DDO.currentFloor - 1;
             newSave.floorStartedOn = DDO.currentFloor;
@@ -260,8 +263,10 @@
     {
         var combatants = await window.callOverlayHandler({ call: 'getCombatants', names: [DDO.playerName] });
         if (combatants.combatants.length > 0){
+            console.log(combatants);
             DDO.playerJob = combatants.combatants[0].Job;
             DDO.playerLevel = combatants.combatants[0].Level;
+            DDO.playerWorld = combatants.combatants[0].WorldName;
             if (DDO.soloRunUnderway && !DDO.inbetweenArea)
                 DDO.UpdateScore();
         }
