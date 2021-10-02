@@ -43,13 +43,10 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
     * Enemy Name
 	* Enemy Current Health Percentage
 	* Enemy Danger Levels:
-
 		Easy | Caution | Scary | Impossible
 		:-: | :-: | :-: | :-: 
 		![Easy](overlay/img/Easy.png) | ![Caution](overlay/img/Caution.png) | ![Scary](overlay/img/Scary.png) | ![Impossible](overlay/img/Impossible.png)
-
-	* Enemy Aggro Types:
-	
+	* Enemy Aggro Types:	
 		Sight | Sound | Proximity
 		:-: | :-: | :-:
 		![Sight](overlay/img/Sight.png) | ![Sound](overlay/img/Sound.png) | ![Proximity](overlay/img/Proximity.png)
