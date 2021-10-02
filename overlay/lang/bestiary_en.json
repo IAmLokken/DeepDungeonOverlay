@@ -15,7 +15,7 @@
     "Palace Hippocerf": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Palace Beetle": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Hornet": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts Final Sting if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
-    "Palace Yarzon": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "Palace Yarzon": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Palace Dung Beetle": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Lost Goblin": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Deathgaze": 
@@ -238,7 +238,7 @@
     "Deep Palace Gaelicat": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Doblyn": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Ziz": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Deep Palace Yarzon": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "Deep Palace Yarzon": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Deep Palace Squirrel": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Stag": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Sprite": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
