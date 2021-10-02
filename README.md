@@ -26,8 +26,8 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 * Satistics:
 	* Monster kills
 	* Mimic (Korrigan) kills
-	* Chests opened
 	* Traps triggered 
+	* Chests opened
 	* Floor enchantments applied (using a Serenity will decrement this count)
 	* Rare monsters (PotD only)
 	* Total floor sets completed in 30 minutes or less
