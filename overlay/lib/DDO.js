@@ -119,6 +119,10 @@
 
     DDO.LoadSoloConfig = function()
     {
+        DDO.EnableDisableElement(false, 'saveManager', false);
+        DDO.EnableDisableElement(false, 'ButtonInfo', false);
+        DDO.EnableDisableElement(true, 'config', false);   
+
         DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
         DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
         DDO.DataElements.StatisticsCheckBoxValue.checked = DDO.Config.statsVisible;
@@ -127,27 +131,18 @@
         DDO.EnableDisableElement(DDO.DataElements.ScoreCheckBoxValue.checked, 'score', false);
         DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
         DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
-        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
-
-        DDO.EnableDisableElement(false, 'saveManager', false);
-        DDO.EnableDisableElement(false, 'ButtonInfo', false);
-        DDO.EnableDisableElement(true, 'config', false);
+        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);             
     }
 
     DDO.LoadPartyConfig = function()
     {
-        DDO.DataElements.ScoreCheckBoxValue.checked = false;
-        DDO.DataElements.PomandersCheckBoxValue.checked = false;
-        DDO.DataElements.StatisticsCheckBoxValue.checked = false;
-        DDO.DataElements.BestiaryCheckBoxValue.checked = true;
-
-        DDO.EnableDisableElement(DDO.DataElements.ScoreCheckBoxValue.checked, 'score', false);
-        DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
-        DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
-        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
-
+        DDO.EnableDisableElement(false, 'config', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
+        DDO.EnableDisableElement(false, 'score', false);
+        DDO.EnableDisableElement(false, 'pomanders', false);
+        DDO.EnableDisableElement(false, 'statistics', false);
+        DDO.EnableDisableElement(true, 'targetinfo', false);
     }
 
     DDO.LoadNonRunConfig = function()

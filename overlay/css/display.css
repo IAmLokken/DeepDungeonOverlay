@@ -14,6 +14,8 @@ body{
     position: relative;
     height: auto;
     min-height: 100% !important;
+    width: auto;
+    max-width: 300px !important;
     top: 0;
     right: 0;
     bottom:0;
@@ -122,7 +124,7 @@ th,
 }
 
 #ButtonInfo{
-    color:lightgray;
+    color:white;
     background-color: rgb(0, 0, 70);
     padding: 5px;
     margin-bottom: 10px;
