@@ -7,7 +7,7 @@
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
     <script src="lib/DDO.js?v=0.1.4"></script>
     <script src="lib/Locale.js?v=0.1.4"></script>
-    <script src="lib/Beastiary.js?v=0.1.4"></script>
+    <script src="lib/Bestiary.js?v=0.1.4"></script>
     <script src="lib/Parser.js?v=0.1.4"></script>
     <script src="lib/Calculator.js?v=0.1.4"></script>
 
@@ -61,7 +61,7 @@
                     break;
             }
 
-            await DDO.LoadBeastiary(displayOverlayLocale);
+            await DDO.LoadBestiary(displayOverlayLocale);
             
             DDO.localeInformation = new DDO.Locale(displayOverlayLocale, (e) => 
             {
@@ -216,13 +216,13 @@
 
     <table id="targetinfo">
         <tr>
-            <td id="TargetName" class="Beastiary">-</td>
+            <td id="TargetName" class="Bestiary">-</td>
             <td id="TargetHPP">-</td>
             <td id="DangerLevel"><img id = "DangerEasy" style="display: none;" src="img/Easy.png" /><img id = "DangerCaution" style="display: none;" src="img/Caution.png" /><img id = "DangerScary" style="display: none;" src="img/Scary.png" /><img id = "DangerImpossible" style="display: none;" src="img/Impossible.png" /></td>
             <td id="AggroType"><img id = "AggroSight" style="display: none;" src="img/Sight.png" /><img id = "AggroSound" style="display: none;" src="img/Sound.png" /><img id = "AggroProximity" style="display: none;" src="img/Proximity.png" /></td>
         </tr>
         <tr>
-            <td id="TargetInformation" class="Beastiary" colSpan = 4>-</td>
+            <td id="TargetInformation" class="Bestiary" colSpan = 4>-</td>
         </tr>
     </table>
 <!--

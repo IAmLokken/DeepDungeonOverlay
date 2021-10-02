@@ -4,14 +4,14 @@
 {
     const PATH = 'lang/';
 
-    function LoadBeastiary(language, callback)
+    function LoadBestiary(language, callback)
     {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = () => 
         {
             if(xhttp.status == 404 && language == 'en')
             {
-                console.log("ERROR: Cannot find beastiary file for: " + language);
+                console.log("ERROR: Cannot find bestiary file for: " + language);
                 return;
             }
             if(xhttp.status === 404)
@@ -30,16 +30,16 @@
                 {
                     return;
                 }
-                DDO.Beastiary = json;
+                DDO.Bestiary = json;
                 if (callback) callback();
             }
         };
     
-        xhttp.open('GET', PATH + 'beastiary_' + language + '.json', true);
+        xhttp.open('GET', PATH + 'bestiary_' + language + '.json', true);
         xhttp.send();
     }
 
-    window.DDO.LoadBeastiary = LoadBeastiary;
+    window.DDO.LoadBestiary = LoadBestiary;
 
     DDO.ClearTargetInfo = function()
     {
@@ -52,8 +52,8 @@
     DDO.DisplayTargetInfo = function(data)
     {
         let targetName = data.Target.Name
-        let beastiaryIndex = DDO.currentFloor % 10 > 0 ? Math.floor(DDO.currentFloor / 10) : Math.floor(DDO.currentFloor / 10 - 1);
-        var target = DDO.Beastiary[DDO.currentInstance][beastiaryIndex][targetName];
+        let bestiaryIndex = DDO.currentFloor % 10 > 0 ? Math.floor(DDO.currentFloor / 10) : Math.floor(DDO.currentFloor / 10 - 1);
+        var target = DDO.Bestiary[DDO.currentInstance][bestiaryIndex][targetName];
         if(typeof(target) !== 'undefined'){
             
             DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
@@ -74,7 +74,7 @@
                 DDO.DataElements.TargetInformationValue.innerHTML = target.Notes;
             }
             else{
-                DDO.DataElements.TargetInformationValue.innerHTML = DDO.Beastiary['Nothing Notable'];
+                DDO.DataElements.TargetInformationValue.innerHTML = DDO.Bestiary['Nothing Notable'];
             }
         }
         else{

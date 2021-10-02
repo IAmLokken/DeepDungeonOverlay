@@ -10,7 +10,7 @@
                         "Heaven-on-High": []
                     };
     DDO.Snapshot = {};
-    DDO.Beastiary = {};
+    DDO.Bestiary = {};
     DDO.DataElements = {};
 
     DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33'];
@@ -50,7 +50,7 @@
         DDO.Config.scoreVisible = true;
         DDO.Config.pomandersVisible = true;
         DDO.Config.statsVisible = true;
-        DDO.Config.beastiaryVisible = true;
+        DDO.Config.bestiaryVisible = true;
         await callOverlayHandler({call: "saveData", key: "DDO_Config", data: JSON.stringify(DDO.Config)}); 
     }
 
@@ -59,7 +59,7 @@
         DDO.Config.scoreVisible = DDO.DataElements.ScoreCheckBoxValue.checked;
         DDO.Config.pomandersVisible = DDO.DataElements.PomandersCheckBoxValue.checked;
         DDO.Config.statsVisible = DDO.DataElements.StatisticsCheckBoxValue.checked;
-        DDO.Config.beastiaryVisible = DDO.DataElements.BeastiaryCheckBoxValue.checked;
+        DDO.Config.bestiaryVisible = DDO.DataElements.BestiaryCheckBoxValue.checked;
         await callOverlayHandler({call: "saveData", key: "DDO_Config", data: JSON.stringify(DDO.Config)}); 
     }
 
@@ -121,12 +121,12 @@
         DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
         DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
         DDO.DataElements.StatisticsCheckBoxValue.checked = DDO.Config.statsVisible;
-        DDO.DataElements.BeastiaryCheckBoxValue.checked = DDO.Config.beastiaryVisible;
+        DDO.DataElements.BestiaryCheckBoxValue.checked = DDO.Config.bestiaryVisible;
 
         DDO.EnableDisableElement(DDO.DataElements.ScoreCheckBoxValue.checked, 'score', false);
         DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
         DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
-        DDO.EnableDisableElement(DDO.DataElements.BeastiaryCheckBoxValue.checked, 'targetinfo', false);
+        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
 
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
@@ -138,12 +138,12 @@
         DDO.DataElements.ScoreCheckBoxValue.checked = false;
         DDO.DataElements.PomandersCheckBoxValue.checked = false;
         DDO.DataElements.StatisticsCheckBoxValue.checked = false;
-        DDO.DataElements.BeastiaryCheckBoxValue.checked = true;
+        DDO.DataElements.BestiaryCheckBoxValue.checked = true;
 
         DDO.EnableDisableElement(DDO.DataElements.ScoreCheckBoxValue.checked, 'score', false);
         DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
         DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
-        DDO.EnableDisableElement(DDO.DataElements.BeastiaryCheckBoxValue.checked, 'targetinfo', false);
+        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
 
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
@@ -339,7 +339,7 @@
         DDO.DataElements.AggroProximityImage = document.getElementById("AggroProximity");
         DDO.DataElements.TargetInformationValue = document.getElementById("TargetInformation");
 
-        DDO.DataElements.BeastiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
+        DDO.DataElements.BestiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
         DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
         DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
         DDO.DataElements.ScoreCheckBoxValue = document.getElementById("CheckBoxScore");
