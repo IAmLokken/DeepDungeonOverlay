@@ -42,14 +42,16 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
     * Enemy Name
 	* Enemy Current Health Percentage
 	* Enemy Danger Levels:
-		* Easy ![Easy](overlay/img/Easy.png)
-		* Caution ![Caution](overlay/img/Caution.png)
-		* Scary ![Scary](overlay/img/Scary.png)
-		* Impossible ![Impossible](overlay/img/Impossible.png)
+
+		Easy | Caution | Scary | Impossible
+		:-: | :-: | :-: | :-: 
+		![Easy](overlay/img/Easy.png) | ![Caution](overlay/img/Caution.png) | ![Scary](overlay/img/Scary.png) | ![Impossible](overlay/img/Impossible.png)
+
 	* Enemy Aggro Types:
-		* Sight ![Sight](overlay/img/Sight.png)
-		* Sound ![Sound](overlay/img/Sound.png)
-		* Proximity ![Proximity](overlay/img/Proximity.png)
+	
+		Sight | Sound | Proximity
+		:-: | :-: | :-:
+		![Sight](overlay/img/Sight.png) | ![Sound](overlay/img/Sound.png) | ![Proximity](overlay/img/Proximity.png)
 	* Enemy Info (Things to know about the enemy, if relevant.)
 	* __All beastiary information is pulled from Maygi's DD Handbooks with permission__.
 		* [PotD Handbook](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
