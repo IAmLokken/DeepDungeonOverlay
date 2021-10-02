@@ -14,7 +14,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 # Installation of DDO
 
-- Within the OverlayPlugin create a new min-parse overlay
+- Within the OverlayPlugin create a new overlay using the Custom preset and MiniParse type.  You can name it whatever you want.
 - Set the url to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
 
 # Current Features
