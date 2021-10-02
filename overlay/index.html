@@ -97,7 +97,6 @@
             {
                 DDO.UpdatePlayerInfo();
             }
-            console.log('width: ' + document.width + ', height: ' + document.height);
         }
         function ChangeZone(data)
         {
@@ -110,8 +109,6 @@
         }
         function PartyChanged(data)
         {
-            console.log("Party Changed");
-            console.log(data);
             DDO.isInGroup = data.party.length > 1;
         }
         function EnmityTargetData(data)
