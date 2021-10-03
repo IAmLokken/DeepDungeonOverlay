@@ -332,7 +332,7 @@
     "Deep Palace Manticore": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will buff itself with a physical damage buff, and use <b>Ripper Claw</b>, a non-telegraphed frontal AOE that can hit quite hard. Walk away or behind it to avoid this."},
     "Deep Palace Persona": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Deep Palace Knight": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "Onyx Dragon": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "Onyx Dragon": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Wraith": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however."},
     "Deep Palace Keeper": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Tisiphone": 
