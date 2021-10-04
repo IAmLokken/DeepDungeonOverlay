@@ -314,18 +314,16 @@
             // Save the run
             DDO.SaveRuns();
         }
-        else if (data[4].includes(parseStrings.Transference)){
-            //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
-            DDO.currentFloor++; 
-            
+        else if (data[4].includes(parseStrings.Transference)){ 
             if (!DDO.sightActive){
                 // If we are in POTD and on floor 1-9 and at room reveal count 4 its a full clear
                 // Or if we have 12 rooms revealed we are in a big room in HOH so full clear
                 // Or if we have 8 rooms revealed we are in a normal max room floor and award full clear (Not always 100% accurate in HoH)
-                if ( (parseStrings.CurrentInstanceFloorsPOTD.includes(DDO.currentInstance) && DDO.currentFloor < 10 && DDO.currentFLoorStats.roomRevealCount == 4) ||
+                if ( (parseStrings.CurrentInstanceFloorsPOTD.includes(DDO.currentInstance) && DDO.currentFloor < 10 && DDO.currentFloorStats.roomRevealCount == 4) ||
                     DDO.currentFloorStats.roomRevealCount == 12 ||
                     DDO.currentFloorStats.roomRevealCount == 8 )
                 {
+                    console.log("We are on floor " + DDO.currentFloor + " of dungeon " + DDO.currentInstance);
                     DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                     DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                     DDO.currentFloorStats.roomRevealCount = 0;
@@ -340,6 +338,7 @@
                     DDO.currentFloorStats.roomRevealCount = 0;
                 }
             }
+            DDO.currentFloor++; 
 
             DDO.DataElements.PomSafetyDisabledImage.style.display = "";
             DDO.DataElements.PomSafetyEnabledImage.style.display = "none";
