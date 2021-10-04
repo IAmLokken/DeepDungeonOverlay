@@ -357,7 +357,7 @@
     "Deep Palace Taurus": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Marolith": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
     "Deep Palace Arch Demon": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Totesritter": 
+    "Todesritter": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
