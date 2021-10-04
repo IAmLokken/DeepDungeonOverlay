@@ -51,45 +51,38 @@
 
     DDO.DisplayTargetInfo = function(data)
     {
-        let targetName = data.Target.Name
-        if (DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].RareMonsterNames.includes(targetName))
-        {
+        let targetName = data.Target.Name;
+        let bestiaryIndex = DDO.currentFloor % 10 > 0 ? Math.floor(DDO.currentFloor / 10) : Math.floor(DDO.currentFloor / 10 - 1);
+        var target = DDO.Bestiary[DDO.currentInstance][bestiaryIndex][targetName];
+        if(typeof(target) !== 'undefined'){
+            
             DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
             DDO.DataElements.TargetHPPValue.innerText = ((data.Target.CurrentHP / data.Target.MaxHP) * 100).toFixed(2) + '%';
             DDO.TurnTargetImagesOff();
-            DDO.DataElements.DangerCautionImage.style = "";
-            DDO.DataElements.AggroProximityImage.style = "";
-            DDO.DataElements.TargetInformationValue.innerHTML = DDO.Bestiary['Rare Monster'];
-        }
-        else{
-            let bestiaryIndex = DDO.currentFloor % 10 > 0 ? Math.floor(DDO.currentFloor / 10) : Math.floor(DDO.currentFloor / 10 - 1);
-            var target = DDO.Bestiary[DDO.currentInstance][bestiaryIndex][targetName];
-            if(typeof(target) !== 'undefined'){
-                
-                DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
-                DDO.DataElements.TargetHPPValue.innerText = ((data.Target.CurrentHP / data.Target.MaxHP) * 100).toFixed(2) + '%';
-                DDO.TurnTargetImagesOff();
 
-                if(target.DangerLevel == 'Easy') DDO.DataElements.DangerEasyImage.style = "";
-                else if(target.DangerLevel == 'Caution') DDO.DataElements.DangerCautionImage.style = "";
-                else if(target.DangerLevel == 'Scary') DDO.DataElements.DangerScaryImage.style = "";
-                else if(target.DangerLevel == 'Impossible') DDO.DataElements.DangerImpossibleImage.style = "";
+            if(target.DangerLevel == 'Easy') DDO.DataElements.DangerEasyImage.style = "";
+            else if(target.DangerLevel == 'Caution') DDO.DataElements.DangerCautionImage.style = "";
+            else if(target.DangerLevel == 'Scary') DDO.DataElements.DangerScaryImage.style = "";
+            else if(target.DangerLevel == 'Impossible') DDO.DataElements.DangerImpossibleImage.style = "";
 
-                if(target.AggroType == 'Sight') DDO.DataElements.AggroSightImage.style = "";
-                else if(target.AggroType == 'Sound') DDO.DataElements.AggroSoundImage.style = "";
-                else if(target.AggroType == 'Proximity') DDO.DataElements.AggroProximityImage.style = "";
-                
-                if (target.Notes.length > 0){
+            if(target.AggroType == 'Sight') DDO.DataElements.AggroSightImage.style = "";
+            else if(target.AggroType == 'Sound') DDO.DataElements.AggroSoundImage.style = "";
+            else if(target.AggroType == 'Proximity') DDO.DataElements.AggroProximityImage.style = "";
+            
+            if (target.Notes.length > 0){
+                if (target.Notes.startsWith('*')){
+                    let notes = target.Notes.replace('*', '').trim();
+                    DDO.DataElements.TargetInformationValue.innerHTML = DDO.Bestiary[notes];
+                }
+                else
                     DDO.DataElements.TargetInformationValue.innerHTML = target.Notes;
-                }
-                else{
-                    DDO.DataElements.TargetInformationValue.innerHTML = DDO.Bestiary['Nothing Notable'];
-                }
             }
             else{
-                DDO.ClearTargetInfo();
+                DDO.DataElements.TargetInformationValue.innerHTML = DDO.Bestiary['Nothing Notable'];
             }
-        } 
+        }
+        else{
+            DDO.ClearTargetInfo();
+        }         
     }
-
 })()
