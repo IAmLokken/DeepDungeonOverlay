@@ -258,7 +258,6 @@
     {
         var combatants = await window.callOverlayHandler({ call: 'getCombatants', names: [DDO.playerName] });
         if (combatants.combatants.length > 0){
-            console.log(combatants);
             DDO.playerJob = combatants.combatants[0].Job;
             DDO.playerLevel = combatants.combatants[0].Level;
             DDO.playerWorld = combatants.combatants[0].WorldName;
