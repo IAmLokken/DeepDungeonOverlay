@@ -323,7 +323,6 @@
                     DDO.currentFloorStats.roomRevealCount == 12 ||
                     DDO.currentFloorStats.roomRevealCount == 8 )
                 {
-                    console.log("We are on floor " + DDO.currentFloor + " of dungeon " + DDO.currentInstance);
                     DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                     DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                     DDO.currentFloorStats.roomRevealCount = 0;
