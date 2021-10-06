@@ -24,6 +24,17 @@
             DDO.UpdatePlayerInfo(); 
         }        
     }
+
+    DDO.AddKill = function(floorSet){
+        DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
+        DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
+        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
+        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[floorSet]++;
+
+        DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
+        DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
+        DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+    }
     
     DDO.ParseKill = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
@@ -38,14 +49,7 @@
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount} (${DDO.currentFloorSetStats.korriganCount || 0})`;
             DDO.DataElements.MimicsTotalValue.innerText = `${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount} (${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount})`;
 
-            DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
-            DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[Math.floor(DDO.currentFloor / 10)]++;
-
-            DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
-            DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
-            DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10));
             DDO.UpdateScore();
         }
         // Check for korrigan
@@ -58,14 +62,7 @@
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount || 0} (${DDO.currentFloorSetStats.korriganCount})`;
             DDO.DataElements.MimicsTotalValue.innerText = `${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount} (${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount})`;
 
-            DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
-            DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[Math.floor(DDO.currentFloor / 10)]++;
-
-            DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
-            DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
-            DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10));
             DDO.UpdateScore();
         }
         // Check for rare mob
@@ -77,6 +74,8 @@
             DDO.DataElements.RareMonstersFloorValue.innerText = DDO.currentFloorStats.rareKillCount;
             DDO.DataElements.RareMonstersSetValue.innerText = DDO.currentFloorSetStats.rareKillCount;
             DDO.DataElements.RareMonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpecialKillCount;
+
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10));
             DDO.UpdateScore();
         }
         // Check for player death
@@ -97,28 +96,15 @@
         else{
             // Kills on non-boss floors
             if(DDO.currentFloor % 10 != 0){
-                DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
-                DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[Math.floor(DDO.currentFloor / 10)]++;
-
-                DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
-                DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
-                DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+                DDO.AddKill(Math.floor(DDO.currentFloor / 10));
                 DDO.UpdateScore();
             }
             // Kills on boss floor
             else{
                 if (DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].BossNames.includes(nameOfMob)){
-                    DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
-                    DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount ++;
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[Math.floor(DDO.currentFloor / 10) - 1]++;
-
-                    DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
-                    DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
-                    DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
-
+                    
+                    DDO.AddKill(Math.floor(DDO.currentFloor / 10) - 1);
+                    
                     DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
 
                     // Update the last floor cleared
