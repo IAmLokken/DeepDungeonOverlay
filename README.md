@@ -1,6 +1,6 @@
 # Introduction
 
-Deep Dungeon Overlay is an in-development OverlayPlugin skin intended to give you relevant information during solo excursions into FFXIV Deep Dungeons.
+Deep Dungeon Overlay is an in-development OverlayPlugin skin intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
 ![DDO](overlay/docs/DetailsFull01.png?raw=true)
 
