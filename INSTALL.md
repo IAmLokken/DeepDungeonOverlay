@@ -20,3 +20,5 @@
 	![Setup](overlay/docs/Resize01.png?raw=true) 
 	
 	Installation Complete.
+	
+	Return to [README](README.md)
