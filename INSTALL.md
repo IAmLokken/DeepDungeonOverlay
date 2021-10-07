@@ -1,6 +1,6 @@
 # Installation of DDO
 
-1. Within the OverlayPlugin create a new overlay by pressing the 'New' Button above the output log.
+1. Within the OverlayPlugin create a new overlay by pressing the 'New' Button.
 2. Name the overlay.  You can name it anything you like.
 3. Select 'Custom' from the Preset dropdown.
 4. Select 'Miniparse' from the Type dropdown.
