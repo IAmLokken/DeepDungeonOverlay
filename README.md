@@ -19,7 +19,7 @@ Please see [Installation Instructions](INSTALL.md).
 # Current Features
 
 * Score (Estimate)
-	* The overlay will give you a real-time estimate on your current score.  Please see the Score Details section for more information.
+	* The overlay will give you a real-time estimate on your current score.  Please see the [Score Details](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) section for more information.
 	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
 	 
 * Pomanders:
