@@ -16,6 +16,11 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 - Within the OverlayPlugin create a new overlay using the Custom preset and MiniParse type.  You can name it whatever you want.
 - Set the url to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
+- Upon initial installation it is suggested resize the overaly as displayed below in order to accomodate overlay resize depending on the enemy selected.  To do so enable 'Force white background' in the OverlayPlugin located beneath the URL setting mentioned above.  _**Once re-sized un-check 'Force white background'**_.
+
+	![Setup2](overlay/docs/Resize02.png?raw=true)
+	
+	![Setup](overlay/docs/Resize01.png?raw=true) 
 
 # Current Features
 
