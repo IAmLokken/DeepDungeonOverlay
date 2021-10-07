@@ -7,7 +7,7 @@
 5. Press OK.
 6. Set the url to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
 
-	<img src="overlay/docs/Install01.png" width="450">
+	<img src="overlay/docs/Install01.png">
 	
 - Upon initial installation it is suggested to re-size the overaly as displayed below in order to accomodate the size of the overlay changing depending on the enemy selected.
 	- Check 'Force white background' in the OverlayPlugin located beneath the URL setting.
