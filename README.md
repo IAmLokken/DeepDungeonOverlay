@@ -85,12 +85,12 @@ Since the overlay does not know when you delete a save file in game there are tw
 
 * The score will only be an estimate for a few reasons:
     * Magicite can kill monsters that are so far away that they were not loaded on the client and as a result no death message is received for them from the server.
-    * The client currently does not receive a discernable notification that the current floor's map has been fully revealed so the only way to know if a map is 100% revealed is if a Sight pomander is used.
+    * The client does not receive a discernable notification that the current floor's map has been fully revealed so the only way to know if a map is 100% revealed is if a Sight pomander is used.
     * The overlay can discern when a room is revealed on the map so an average point value is added when a room is revealed.  This value depends on the dungeon and is determined by the max number of rooms a floor can have (8 in PotD, 12 in HoH).
 
 * The score displayed assumes a successful completion of the current floorset. This is done because the point total jumps significantly retroactively upon set completion so much so that the estimate is practically useless until that happens.  Including this from the start allows the estimate to reflect the runner's score as accurately as possible during the run and not just at the end of the floorset.
 
 # In Development
 
-* An upgrade to the UI/UX is currently being worked on to improve readability and streamline the current implementation.
+* An upgrade to the UI/UX is being worked on to improve readability and streamline the current implementation.
 * The scoring algorithm is continuously being tweaked and tested.
