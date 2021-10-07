@@ -10,6 +10,7 @@ body, html {
     border: 0;
 
     max-width: 300px !important;   
+    min-width: 300px !important;
     overflow:hidden;
     width:100vw;
     height:100vh;
