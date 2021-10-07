@@ -14,7 +14,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 # Installation of DDO
 
-Please see <a href="INSTALL.md" target="_blank">Installation Instructions</a>
+Please see [Installation Instructions](Install.md).
 
 # Current Features
 
