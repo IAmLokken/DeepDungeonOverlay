@@ -41,7 +41,7 @@
             }
 
             var config = await callOverlayHandler({call: "loadData", key: "DDO_Config"});
-            if (config && config.$isNull){
+            if (!config || config.$isNull){
                 await DDO.SetDefaultConfig();
             }
             else{

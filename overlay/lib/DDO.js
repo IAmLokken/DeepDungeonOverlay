@@ -286,14 +286,22 @@
     DDO.UpdateScore = function()
     {
         let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
-        let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, DDO.playerLevel, 101);
+        if (currentSave.floorStartedOn == 1 ||
+            (currentSave.floorStartedOn == 21 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsHOH'].includes(currentSave.deepDungeonName)) ||
+            (currentSave.floorStartedOn == 51 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsPOTD'].includes(currentSave.deepDungeonName))
+            ){
+                let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, DDO.playerLevel, 101);
 
-        let roomRevealAddition = currentSave.deepDungeonName == "the Palace of the Dead" ? 
-                                 currentSave.currentRoomRevealCount * 316 : 
-                                 currentSave.currentRoomRevealCount * 316;
-        score += roomRevealAddition;
+                let roomRevealAddition = currentSave.deepDungeonName == "the Palace of the Dead" ? 
+                                        currentSave.currentRoomRevealCount * 316 : 
+                                        currentSave.currentRoomRevealCount * 316;
+                score += roomRevealAddition;
 
-        DDO.DataElements.ScoreValue.innerText = score.toLocaleString();
+                DDO.DataElements.ScoreValue.innerText = score.toLocaleString();
+            }
+            else{
+                DDO.DataElements.ScoreValue.innerText = '414';
+            }
     }
 
     DDO.AssignDataElements = function()
