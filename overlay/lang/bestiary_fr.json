@@ -6,8 +6,8 @@
 "the Palace of the Dead":
 [
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
 
     "Palace Deathmouse": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Antelope": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -21,7 +21,7 @@
     "Palace Yarzon": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Palace Dung Beetle": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Lost Goblin": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Palace Deathgaze": 
+    "MORTALIS DU PALAIS": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -29,11 +29,11 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Spear-shaking Adventurer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Staff-spinning Adventurer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Sword-swinging Adventurer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "AVENTURIER LANCIER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "AVENTURIER ÉLÉMENTALISTE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "AVENTURIER GLADIATEUR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Uragnite": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Toad": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -46,7 +46,7 @@
     "Palace Seedling": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Palace Morbol": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Palace Cobra": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "If you step on a toad trap, the cobra will use a special skill “Devour”, one-shotting the toad. Like with slimes, do not move around in rooms as you fight."},
-    "Spurge": 
+    "EUPHORBE": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -54,11 +54,11 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Frenzied Freebooter": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Ishgardian Pikeman": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Roughspun Ruffian": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MARAUDEUR DES MERS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MAÎTRE D'HAST ISHGARDAIS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MARAUDEUR DÉPRAVÉ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Puk": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Drake": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -72,7 +72,7 @@
     "Palace Centaur": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Palace Minotaur": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
     "Palace Skatene": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
-    "Ningishzida": 
+    "NINGISHZIDA": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -80,9 +80,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Immortal Flame": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "GLADIATEUR ULDIEN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Nightmare Monk": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Nightmare Dahak": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -97,7 +97,7 @@
     "Nightmare Troubadour": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Nightmare Gnat": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Nightmare Succubus": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Dark Mist</b> followed by <b>Void Fire II</b>. Dark Mist is a point blank AOE which will cause terror if it hits, so make sure you stay out of the telegraphs."},
-    "Ixtab": 
+    "IXTAB": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -105,9 +105,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Duskwight Lancer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MAÎTRE D'HAST CRÉPUSCULAIRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Nightmare Gravekeeper": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Nightmare Bloodguard": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -121,7 +121,7 @@
     "Nightmare Gnat": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Nightmare Bhoot": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
     "Nightmare Persona": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
-    "Edda Blackbosom": 
+    "EDDA CŒUR-NOIR": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -129,10 +129,10 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Moldering Merchant": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Blackening Marketeer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MARCHAND PATIBULAIRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MARCHAND MYSTÉRIEUX": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Imp": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Gremlin": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -145,7 +145,7 @@
     "Palace Pudding": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Palace Soulflayer": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Pot": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "The Black Rider": 
+    "CAVALIER NOIR": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -153,9 +153,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Bloated Pugilist": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PUGILISTE IMMÉMORÉ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Tyrannosaur": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Mylodon": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -168,7 +168,7 @@
     "Palace Sarcosuchus": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Triceratops": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Palace Raptor": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Yaquaru": 
+    "YAQUARU": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -176,10 +176,10 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     "Emaciated Engineer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Putrid Plutocrat": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "RICHE BARONNE ÉLÉZENNE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Bear": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Coeurl": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -192,7 +192,7 @@
     "Palace Anzu": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Aurochs": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Bird of the Palace": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "Gudanna": 
+    "GUDANNA": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -200,10 +200,10 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Insentient Inquisitor": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "Necrose Knight": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PSEUDO-INQUISITEUR ISHGARDAIS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "JEUNE NOBLE ISHGARDAIS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Eruca": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Palace Gallimimus": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -216,7 +216,7 @@
     "Palace Vinegaroon": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Wamoura": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Hapalit": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "The Godmother": 
+    "MAMIE BOMBO": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -224,9 +224,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Mortifying Magnate": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MAGNAT LALAFELL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Palace Hippocerf": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Palace Gourmand": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -239,7 +239,7 @@
     "Palace Roselet": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Palace Knight": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Palace Gravekeeper": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "Nybeth Obdilord": 
+    "NYBETH OBDILORD": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -247,9 +247,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Corrupted Centurion": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PILOTE IMPÉRIAL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Deep Palace Hornet": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
     "Deep Palace Ladybug": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -263,7 +263,7 @@
     "Deep Palace Stag": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Sprite": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Goblin Adventurer": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Alicanto": 
+    "ALICANTO": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -271,8 +271,8 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
     "Deep Palace Leech": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Morbol": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
@@ -286,7 +286,7 @@
     "Deep Palace Ochu": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Deep Palace Pudding": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Deep Palace Nanka": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "Kirtimukha": 
+    "KIRTIMUKHA": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -294,9 +294,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Gangrenous Giant": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "GIGAS MINEUR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Deep Palace Dullahan": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Deep Palace Effigy": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -310,7 +310,7 @@
     "Deep Palace Pteroc": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Minotaur": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
     "Deep Palace Skatene": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
-    "Alfard": 
+    "ALFARD": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -318,9 +318,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Half-Cracked Captain": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "CAPITAINE PIRATE DIFFORME": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Deep Palace Guard": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Hecteyes": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -334,7 +334,7 @@
     "Deep Palace Ogre": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Monk": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Deep Palace Ahriman": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Level 5 Petrify</b>, a non-telegraphed conal AOE. This causes 15 seconds of petrification, which is unremovable, and can easily lead to death when solo."},
-    "Ah Puch": 
+    "AH PUCH": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -342,8 +342,8 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
     "Deep Palace Ked": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Hellhound": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -357,7 +357,7 @@
     "Onyx Dragon": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Wraith": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however."},
     "Deep Palace Keeper": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "Tisiphone": 
+    "TISIPHONE": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -365,9 +365,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Sunken Captain": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "CAPITAINE DE NAVIRE LIMSÉEN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Deep Palace Gremlin": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Devilet": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable."},
@@ -380,7 +380,7 @@
     "Deep Palace Taurus": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Marolith": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
     "Deep Palace Arch Demon": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "Todesritter": 
+    "TODESRITTER": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -388,9 +388,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Flyblown Praefectus": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "OFFICIER IMPÉRIAL EN ARMURE NOIRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Deep Palace Mylodon": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Pteranodon": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -403,7 +403,7 @@
     "Deep Palace Triceratops": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
     "Deep Palace Tursus": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Sarcosuchus": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Yulunggu": 
+    "YULUNGGU": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
@@ -411,8 +411,8 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
     "Deep Palace Bear": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Black Coeurl": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -425,7 +425,7 @@
     "Bird of the Deep Palace": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These do a reasonable amount of damage with their cleaves, but you need to watch out for their <b>Revelation</b> ability which is an AOE that applies confusion.<br/>After fighting these for a little while, they will cast <b>Tropical Wind</b>, granting them a huge haste and damage buff. During this time, they will spam <b>Revelation</b> exclusively (you may still get autoattacked in melee range), where each one is pretty much a guaranteed one shot. You can stun the buff or remove the haste with a slow effect."},
     "Deep Palace Wisent": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "While these are easy to kill, they have a DPS check where if not killed in time (3o seconds), they will suck everyone in, apply a HUGE heavy debuff (like 95-99% slow), and do a stomp that will deal around 90% of a DPS’s health and apply Paralysis. Be careful if you pull multiple at the same time.<br/>The suction can be avoided with <b>Surecast/Arms Length</b>, and the enrage cast be <b>interrupted</b> or slept."},
     "Deep Palace Snowclops": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has 2 one-shot skills with no telegraph - <b>Glower</b> and <b>100-tonze swing</b>. Glower is a frontal line AOE which is cast almost immediately after being pulled, and 100-tonze swing is a point-blank AOE (so, walk away from it). These can be stunned."},
-    "Dendainsonne": 
+    "DENDAINSONNE": 
         {
             "DangerLevel": "Scary",
             "AggroType": "Proximity",
@@ -433,9 +433,9 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
-    "Jaundiced Tribunus": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "OFFICIER IMPÉRIAL EN ARMURE BLANCHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "Deep Palace Grenade": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Sprite": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Don’t pull on ranged DPS/no sustain casters."},
@@ -448,7 +448,7 @@
     "Deep Palace Vindthurs": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Flood Dragon": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "These have an instant circular AOE burst attack that inflicts a very potent DoT, similar to crawlers. Get Esuna/Erase ready, and spread out so multiple people don’t get hit.<br/>Solo: Don’t pull this."},
     "Deep Palace Garm": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Aggros by proximity, and has an arsenal of one-shot abilities. The two main skills are <b>“The Ram’s Voice”</b> and <b>“The Dragon’s Voice”</b>. Ram is a point-blank AOE, and Dragon is a ~3/4 room sized AOE with a safe spot in the middle. So, when you see Ram being channeled, run away, and then if you see Dragon, run inside. These can be silenced. Note that in my experience, people get hit by Ram 10x more often than Dragon, as Ram casts faster.<br/>If you are proficient with dodging these mechanics, these are actually the easiest mobs to kill when solo from 187-189. But, DO NOTE that they can autoattack crit for 10K damage!"},
-    "The Godfather": 
+    "PARRAIN BOMBO": 
         {
             "DangerLevel": "Scary",
             "AggroType": "Proximity",
@@ -456,8 +456,8 @@
         }
     },
     {
-    "Mimic": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "Pygmaioi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
     "Deep Palace Iron Corse": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
     "Deep Palace Keeper": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
@@ -475,8 +475,8 @@
 "Heaven-on-High":
 [
     {
-        "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Naked Yumemi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Mutsu": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -491,7 +491,7 @@
         "Heavenly Ango": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Matamata": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Yumemi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "Mojabune": 
+        "MÔJABUNE": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -499,8 +499,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Korpokkur": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Shizuku": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -515,7 +515,7 @@
         "Heavenly Amagoi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Shioname": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Aomino": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "Beccho": 
+        "BECCHÔ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -523,8 +523,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Dhruva": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "Heavenly Halgai": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -539,7 +539,7 @@
         "Heavenly Tengu": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Yuki": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "Heavenly Wanyudo": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "Hiruko": 
+        "HIRUKO": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -547,8 +547,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Gedan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Hornbill": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -562,7 +562,7 @@
         "Heavenly Mokin": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Ashigaru": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Dogu": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "Bhima": 
+        "BHIMA": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -570,8 +570,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Dhara": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Ganseki": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -583,7 +583,7 @@
         "Heavenly Aka-ishi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Iseki": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Monoiwa": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "Gozu": 
+        "GOZU": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -591,8 +591,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Kamakiri": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
         "Heavenly Naga": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
@@ -607,7 +607,7 @@
         "Heavenly Gowan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Karakuri": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Rachimonai": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Does random AOE damage across rooms (instant, nontelegraphed). If there are some in the rooms near you, make sure you kill them first or avoid them - they can do a lot of unexpected, random damage!"},
-        "Suikazura": 
+        "SUIKAZURA": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -615,8 +615,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Onryo": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
         "Heavenly Wakakusa": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
@@ -631,7 +631,7 @@
         "Heavenly Chizakura": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "Heavenly Penghou": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
         "Heavenly Hashiri-dokoro": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
-        "Kenko": 
+        "KENKO": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -639,8 +639,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Ichijama": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
         "Heavenly Shikubi": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -655,7 +655,7 @@
         "Heavenly Tofu": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Don’t let them buff (Magic Tongue) or they will really hurt, especially for lower aetherpool levels. Note that these can still autoattack, so being in melee range means you essentially take double damage. You can <b>line of sight</b> the Blizzard casts, but note you will still take autos if they’re close."},
         "Heavenly Yuki-otoko": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a really big, but <b>stunnable</b>, AOE that can be LoSed (<b>Northerlies</b>). Also has a quick (and large) conal attack, so don’t kite too far."},
         "Heavenly Yak": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They only autoattack for a while, and then after 30 seconds they will enrage, pulling everyone in (and applying a heavy) and then stomping on them for lethal damage."},
-        "Kajigakaka": 
+        "KAJIGAKAKA": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -663,8 +663,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Garula": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
         "Heavenly Rowan": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
@@ -679,7 +679,7 @@
         "Heavenly Koki": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "A few telegraphs, and then a roomwide unavoidable (?) vuln stack + light damage. Easy kill."},
         "Heavenly Enko": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
         "Heavenly Araragi": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "AOE stacking poison. Can be LoSed with good timing."},
-        "Onra": 
+        "ONRA": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
@@ -687,8 +687,8 @@
         }
     },
     {
-        "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
     
         "Heavenly Gozu": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
         "Heavenly Jaki": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},

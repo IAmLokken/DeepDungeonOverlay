@@ -53,7 +53,7 @@
     {
         let targetName = data.Target.Name;
         let bestiaryIndex = DDO.currentFloor % 10 > 0 ? Math.floor(DDO.currentFloor / 10) : Math.floor(DDO.currentFloor / 10 - 1);
-        var target = DDO.Bestiary[DDO.currentInstance][bestiaryIndex][targetName];
+        var target = DDO.Bestiary[DDO.currentInstance][bestiaryIndex][targetName.toUpperCase()];
         if(typeof(target) !== 'undefined'){
             
             DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
