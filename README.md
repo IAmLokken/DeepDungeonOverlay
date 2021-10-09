@@ -91,6 +91,8 @@ Since the overlay does not know when you delete a save file in game there are tw
 
 * The score displayed assumes a successful completion of the current floorset. This is done because the point total jumps significantly retroactively upon set completion so much so that the estimate is practically useless until that happens.  Including this from the start allows the estimate to reflect the runner's score as accurately as possible during the run and not just at the end of the floorset.
 
+* The score will display '414' if the run did not start on 1, 21 (HoH) or 51 (Potd).
+
 # In Development
 
 * An upgrade to the UI/UX is being worked on to improve readability and streamline the current implementation.
