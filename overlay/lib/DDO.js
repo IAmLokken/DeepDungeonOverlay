@@ -14,6 +14,7 @@
     DDO.DataElements = {};
 
     DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33'];
+    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60c', '445', '60d'];
 
     DDO.playerName = "NULL";
     DDO.playerWorld = "NULL";

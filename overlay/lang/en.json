@@ -24,21 +24,21 @@
     },
     "BossNames":
     [
-        "Mojabune" , "Beccho",  "Hiruko", "Bhima", "Gozu", "Suikazura", "Kenko", "Kajigakaka", "Onra",
-        "Palace Deathgaze", "Spurge", "Ningishzida", "Ixtab", "Edda Blackbosom", "The Black Rider", "Yaquaru", "Gudanna", "The Godmother", "Nybeth Obdilord",
-        "Alicanto", "Kirtimukha", "Alfard", "Ah Puch", "Tisiphone", "Todesritter", "Yulunggu", "Dendainsonne", "The Godfather"
+        "MOJABUNE", "BECCHO", "HIRUKO", "BHIMA", "GOZU", "SUIKAZURA", "KENKO", "KAJIGAKAKA", "ONRA",
+        "PALACE DEATHGAZE", "SPURGE", "NINGISHZIDA", "IXTAB", "EDDA BLACKBOSOM", "THE BLACK RIDER", "YAQUARU", "GUDANNA", "THE GODMOTHER", "NYBETH OBDILORD",
+        "ALICANTO", "KIRTIMUKHA", "ALFARD", "AH PUCH", "TISIPHONE", "TODESRITTER", "YULUNGGU", "DENDAINSONNE", "THE GODFATHER"
     ],
     "RareMonsterNames":
     [
-        "Flame Commander",  "Bloated Conjurer", "Bloated Archer", "Bloated Pugilist", "Sword-Swinging Adventurer", "Staff-Spinning Adventurer", "Spear-Shaking Adventurer",
-        "Roughspun Ruffian", "Frenzied Freebooter", "Ishgardian Pikeman", "Duskwight Lancer", "Mortifying Magnate", "Insistent Inquisitor", "Moldering Merchant", "Emaciated Engineer",
-        "Jaundiced Tribunus", "Flyblown Praefectus", "Half-Cracked Captain", "Sunken Captain", "Putrid Plutocrat", "Gangrenous Gigant", "Corrupted Centurion", "Necrose Knight", "Blackening Marketeer",
-        "Immortal Flame"
+        "BLOATED CONJURER", "BLOATED ARCHER", "BLOATED PUGILIST", "SWORD-SWINGING ADVENTURER", "STAFF-SPINNING ADVENTURER", "SPEAR-SHAKING ADVENTURER", 
+        "ROUGHSPUN RUFFIAN", "FRENZIED FREEBOOTER", "ISHGARDIAN PIKEMAN", "DUSKWIGHT LANCER", "MORTIFYING MAGNATE", "INSENTIENT INQUISITOR", "MOLDERING MERCHANT",
+        "EMACIATED ENGINEER", "JAUNDICED TRIBUNUS", "FLYBLOWN PRAEFECTUS", "HALF-CRACKED CAPTAIN", "SUNKEN CAPTAIN", "PUTRID PLUTOCRAT", "GANGRENOUS GIGANT",
+        "CORRUPTED CENTURION", "NECROSE KNIGHT", "BLACKENING MARKETEER", "IMMORTAL FLAME"
     ],
     "EnchantmentNames":
     [
-        "Auto-Heal Penalty",  "Blind", "Damage Down", "Hp & Mp Boost", "Hp Penalty", "Inability", "Item Penalty", "Knockback Penalty", "Sprint Penalty", "Haste",
-        "Sprint", "Unmagicked", "No Items", "Amnesia"
+        "AUTO-HEAL PENALTY", "BLIND", "DAMAGE DOWN", "HP &amp; MP BOOST", "HP PENALTY", "INABILITY", "ITEM PENALTY", "KNOCKBACK PENALTY", "SPRINT PENALTY",
+        "HASTE", "SPRINT", "UNMAGICKED", "NO ITEMS", "AMNESIA"
     ],
     "ParseStrings":
     {
@@ -46,33 +46,33 @@
         "CurrentInstanceHOH": "Heaven-on-High",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
-        "QuiveringCoffer": "Quivering Coffer",
-        "Mimic": "Mimic",
-        "Korrigan": "Korrigan",
-        "Mandragora": "Mandragora",
-        "Pygmaioi": "Pygmaioi",
-        "Trap": "Trap",
-        "WeaponEnhancement": "Weapon Enhancement",
-        "GearEnhancement": "Gear Enhancement",
-        "Detonator": "Detonator",
-        "Pomander": "Pomander",
-        "PomanderOfSafety": "Pomander Of Safety",
-        "PomanderOfSight": "Pomander Of Sight",
-        "PomanderOfAffluence": "Pomander Of Affluence",
-        "PomanderOfAlteration": "Pomander Of Alteration",
-        "PomanderOfFlight": "Pomander Of Flight",
-        "PomanderOfSerenity": "Pomander Of Serenity",
-        "PomanderOfRaising": "Pomander Of Raising",
-        "BaresItsFangs": "...bares its fangs!",
-        "EmpyreanAetherpool": "Your empyrean aetherpool",
-        "Magicite": "magicite",
-        "Obtain": "obtain",
-        "ThirtyMinutesRemaining": "30 minutes remaining",
-        "Gloom": "The gathering gloom",
-        "PhoenixDown": "phoenix down. You already possess one.",
-        "Transference": "Transference initiated!",
-        "EmpyreanReliquary": "empyrean reliquary",
-        "GlassPumpkin": "glass pumpkin",
-        "Firecrest": "firecrest"        
+        "QuiveringCoffer": "QUIVERING COFFER",
+        "Mimic": "MIMC",
+        "Korrigan": "KORRIGAN",
+        "Mandragora": "MANDRAGORA",
+        "Pygmaioi": "PYGMAIOI",
+        "Trap": "TRAP",
+        "WeaponEnhancement": "WEAPON ENHANCEMENT",
+        "GearEnhancement": "GEAR ENHANCEMENT",
+        "Detonator": "DETONATOR",
+        "POMANDER": "POMANDER",
+        "POMANDEROfSafety": "POMANDER Of SAFETY",
+        "POMANDEROfSight": "POMANDER Of SIGHT",
+        "POMANDEROfAffluence": "POMANDER Of AFFLUENCE",
+        "POMANDEROfAlteration": "POMANDER Of ALTERATION",
+        "POMANDEROfFlight": "POMANDER Of FLIGHT",
+        "POMANDEROfSerenity": "POMANDER Of SERENITY",
+        "POMANDEROfRaising": "POMANDER Of RAISING",
+        "BaresItsFangs": "...BARES ITS FANGS!",
+        "EmpyreanAetherpool": "YOUR EMPYREAN AETHERPOOL",
+        "Magicite": "MAGICITE",
+        "Obtain": "OBTAIN",
+        "ThirtyMinutesRemaining": "30 MINUTES REMAINING",
+        "Gloom": "THE GATHERING GLOOM",
+        "PhoenixDown": "PHOENIX DOWN. YOU ALREADY POSSESS ONE.",
+        "Transference": "TRANSFERENCE INITIATED!",
+        "EmpyreanReliquary": "EMPYREAN RELIQUARY",
+        "GlassPumpkin": "GLASS PUMPKIN",
+        "Firecrest": "FIRECREST"        
     }
 }
