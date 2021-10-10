@@ -12,6 +12,16 @@ Instructions for installing ACT as well as FFXIV_ACT_Plugin can be found in writ
 
 Additionally Desperius FFXIV has a good video tutorial (current as of April 2021) here: [Video Guide](https://www.youtube.com/watch?v=urZTrF864x8&t=0s)
 
+# Localization
+
+Currently DDO supports Enlgish and French languages. 
+* French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
+* Japanese translation and support provided by [Chiela](https://twitter.com/certa). They also [stream](https://www.twitch.tv/hurricanechiela)!
+
+
+
+ _Please note:_ To use a supported locale both the game client *and* the FFXIV plugin setting *Game Language* must be set to the appropriate locale.
+
 # Installation of DDO
 
 Please see [Installation Instructions](INSTALL.md).
@@ -51,9 +61,9 @@ Please see [Installation Instructions](INSTALL.md).
 		![Sight](overlay/img/Sight.png) | ![Sound](overlay/img/Sound.png) | ![Proximity](overlay/img/Proximity.png)
 	* Enemy Info (Things to know about the enemy, if relevant.)
 	* __All bestiary information is pulled from Maygi's DD Handbooks with permission__.
+	 	* Follow Maygi on [Twitch](https://www.twitch.tv/maygii), [Twitter](https://twitter.com/MaybeMaygi), and [Youtube](https://www.youtube.com/c/Maygi).
 		* [PotD Handbook](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbook](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
-		* [Maygi's twitch stream](https://www.twitch.tv/maygii)
 		* Additional mob aggro types tested with the help of Cloudburst's status spreadsheets [PotD](https://docs.google.com/spreadsheets/d/1nKI0-AApj-aiuUimrPkuQUJaa4DU8Ox7KqdC_ibme8E/edit#gid=12879293), [HoH](https://docs.google.com/spreadsheets/d/1aDlsiN3At6Fvfj_gg5weucDYqjQawQxGHFhJvzEUrek/edit#gid=375717345)
 	* **NOTE**: Bestiary information is the only section availble during group runs.
 	* **NOTE**: If any bestiary information is incorrect (or missing) please [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/issues).
@@ -95,5 +105,6 @@ Since the overlay does not know when you delete a save file in game there are tw
 
 # In Development
 
+* Support for Japanese and German languages.
 * An upgrade to the UI/UX is being worked on to improve readability and streamline the current implementation.
 * The scoring algorithm is continuously being tweaked and tested.
