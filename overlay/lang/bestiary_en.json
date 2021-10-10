@@ -300,7 +300,7 @@
     
     "Deep Palace Dullahan": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "Deep Palace Effigy": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "Deep Palace Centuar": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "Deep Palace Centaur": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "Deep Palace Basilisk": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Biast": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "Deep Palace Adamantoise": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
