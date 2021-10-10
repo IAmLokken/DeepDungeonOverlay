@@ -92,7 +92,7 @@
     "ALBTRAUM-HEKTOKULUS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "ALBTRAUM-AUGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ALBTRAUM-GOURMET": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ALBTRAUM-SUKKUBUS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-MUMIE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ALBTRAUM-HAAGENTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ALBTRAUM-TROUBADOUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ALBTRAUM-SCHNAKE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -480,7 +480,7 @@
     
         "HIMMELSSÄULEN-NACKT-YUMEMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HIMMELSSÄULEN-MUTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HIMMELSSÄULEN-MUTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-IGELBOMBER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HIMMELSSÄULEN-ONRYO": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "HIMMELSSÄULEN-HAI": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Jaws hurt. Like, they REALLY hurt. (you can’t LoS it either)."},
         "HIMMELSSÄULEN-AMIKIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},

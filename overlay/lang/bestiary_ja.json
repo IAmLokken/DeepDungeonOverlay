@@ -253,7 +253,7 @@
     
     "ディープパレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
     "ディープパレス・レディバグ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・レディバグ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ディープパレス・ヒッポグリフ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・ダングビートル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・ゲイラキャット": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "ディープパレス・ドブラン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -354,7 +354,7 @@
     "ディープパレス・マンティコア": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will buff itself with a physical damage buff, and use <b>Ripper Claw</b>, a non-telegraphed frontal AOE that can hit quite hard. Walk away or behind it to avoid this."},
     "ディープパレス・ペルソナ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・ナイト": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ナイト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however."},
     "ディープパレス・キーパー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "ティーシポネー": 
@@ -468,7 +468,7 @@
     "ディープパレス・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・アイストラップ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "ディープパレス・ナイト": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "These do crazy damage - you want to avoid them when solo if possible. They will also cast a doughnut-shaped AOE <b>Death Spiral</b>, dealing around 20K damage to anybody not standing next to it. <b>NEVER PULL THESE WHEN A WRAITH IS NEARBY.</b><br/>They do have an “enrage” cast that <b>doubles</b> their damage output for a short amount of time, while giving them a defense buff. This means their buster will hit for 9.5k with steel, non-crit."},
-    "ディープパレス・ナイト": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Note that, unlike any other dragon, the ones on this set aggro by movement. Their Evil Eye (red eye mechanic) is a one shot, so make sure to look away."},
+    "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Note that, unlike any other dragon, the ones on this set aggro by movement. Their Evil Eye (red eye mechanic) is a one shot, so make sure to look away."},
     "ディープパレス・ファハン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Similar to Ahrimans from 130s, these have a no-telegraph conal AOE, except instead of <b>Level 5 Petrify</b>, they cast <b>Level 5 Death</b>. From the name, it’s pretty obvious what happens if you get hit."}
     }
 ],
