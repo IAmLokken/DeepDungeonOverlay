@@ -2,25 +2,25 @@
     "UIStrings":
     {
         "ScoreLabel": "Score: ",
-        "CurrentlyActiveLabel": "Pomanders actuellement actifs",
+        "CurrentlyActiveLabel": "Poteries magiques actives",
         "FloorLabel": "Étage",
-        "SetLabel": "Régler",
+        "SetLabel": "Set",
         "TotalLabel": "Total",
         "MonstersLabel": "Monstres",
         "MimicsLabel": "Mimics",
         "TrapsLabel": "Pièges",
         "ChestsLabel": "Coffres",
-        "EnchantmentsLabel": "Enchantments",
+        "EnchantmentsLabel": "Enchantements",
         "RareMonstersLabel": "Monstres rares",
-        "SpeedRunsLabel": "Courses de vitesse",
+        "SpeedRunsLabel": "Speed runs",
         "CurrentTargetLabel": "Cible actuelle",
-        "HPPLabel": "Hp %",
+        "HPPLabel": "% PV",
         "DangerLabel": "Niveau de danger",
         "AggroLabel" : "Type d'aggro",
         "NoTargetLabel": "Pas de cible",
-        "POTDButton": "Effacer PotD Saves",
-        "HOHButton": "Effacer HoH Saves",
-        "ButtonInfo": "Cette fenêtre affichera les informations de Deep Dungeon lors d'une exécution de Deep Dungeon. Lorsque vous n'êtes pas dans une exécution Deep Dungeon, vous pouvez utiliser les boutons ci-dessous pour effacer les informations de sauvegarde stockées par cette superposition."
+        "POTDButton": "Effacer les sauvegardes du PdM",
+        "HOHButton": "Effacer les sauvegardes du PdC",
+        "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon."
     },
     "BossNames":
     [
