@@ -1,4 +1,12 @@
-# Installation of DDO
+# Notice Before Installation
+
+The FFXIV ACT plugin option for _Hide Chat Log (for privacy)_ cannot be enabled due to the overlay needing to read a number of select log lines to funciton.
+
+It is located under the *FFXIV Settings* Tab under the *Options* group.
+
+<img src="overlay/docs/Install02.png">
+
+# Installing the Overlay
 
 1. Within the OverlayPlugin create a new overlay by pressing the 'New' Button.
 2. Name the overlay.  You can name it anything you like.
