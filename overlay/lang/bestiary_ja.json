@@ -7,7 +7,7 @@
 [
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
 
     "パレス・デスマウス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・アンテロープ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -30,7 +30,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "冒険者風の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "冒険者風の幻術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "冒険者風の剣術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -55,7 +55,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "海賊風の斧術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "イシュガルド風の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "外道風の斧術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -81,7 +81,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "不滅隊風の剣術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ナイトメア・モンク": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -106,7 +106,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "シェーダー族の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ナイトメア・グレイブキーパー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -130,7 +130,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "悪党風の商人": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "闇商人風の老人": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -154,7 +154,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "古株風の格闘士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "パレス・ティラノサウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -177,7 +177,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "アラミゴ風の技術兵": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "富豪風のエレゼン族": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -201,7 +201,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "審問官風の法術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "名家風の騎士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -225,7 +225,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "豪商風のララフェル族": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "パレス・ヒッポセルフ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -248,7 +248,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "操縦士風の帝国兵": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ディープパレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
@@ -272,7 +272,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "ディープパレス・リーチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・モルボル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
@@ -295,7 +295,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "鉱夫風の巨人族": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ディープパレス・デュラハン": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -319,7 +319,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "異形の船長": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ディープパレス・ガード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -343,7 +343,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "ディープパレス・ケッド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・ヘルハウンド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -366,7 +366,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "黒渦団風の船長": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ディープパレス・グレムリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -389,7 +389,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "黒き鎧の帝国将校": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ディープパレス・ミロドン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -412,7 +412,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "ディープパレス・ホワイトベアー": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・ブラッククァール": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -434,7 +434,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "白き鎧の帝国将校": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "ディープパレス・グレネード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -457,7 +457,7 @@
     },
     {
     "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "ディープパレス・アイアンコース": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
     "ディープパレス・キーパー": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
@@ -476,7 +476,7 @@
 [
     {
         "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・カラナシユメミ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ムツ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -500,7 +500,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・コロポックル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・シズク": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -524,7 +524,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・ドルヴァ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "アメノ・ハルガイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -548,7 +548,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・ガーダン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ベニツノ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -571,7 +571,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・ダラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ガンセキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -592,7 +592,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・カマキリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
         "アメノ・ナーガ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
@@ -616,7 +616,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・オンリョウ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
         "アメノ・ワカクサ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
@@ -640,7 +640,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・イチジャマ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
         "アメノ・シクビ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -664,7 +664,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・ガルラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
         "アメノ・ロウエン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
@@ -688,7 +688,7 @@
     },
     {
         "Quivering Coffer": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "Korrigan": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
         "アメノ・ジャキ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},

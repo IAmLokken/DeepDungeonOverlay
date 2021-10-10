@@ -7,7 +7,7 @@
 [
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
 
     "PALACE DEATHMOUSE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALACE ANTELOPE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -30,7 +30,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "SPEAR-SHAKING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "STAFF-SPINNING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "SWORD-SWINGING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -55,7 +55,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "FRENZIED FREEBOOTER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "ISHGARDIAN PIKEMAN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "ROUGHSPUN RUFFIAN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -81,7 +81,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "IMMORTAL FLAME": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "NIGHTMARE MONK": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -106,7 +106,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "DUSKWIGHT LANCER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "NIGHTMARE GRAVEKEEPER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -130,7 +130,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "MOLDERING MERCHANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "BLACKENING MARKETEER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -154,7 +154,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "BLOATED PUGILIST": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
 
     "PALACE TYRANNOSAUR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -177,7 +177,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "EMACIATED ENGINEER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "PUTRID PLUTOCRAT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -201,7 +201,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "INSENTIENT INQUISITOR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "NECROSE KNIGHT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -225,7 +225,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "MORTIFYING MAGNATE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "PALACE HIPPOCERF": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -248,7 +248,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "CORRUPTED CENTURION": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DEEP PALACE HORNET": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
@@ -272,7 +272,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "DEEP PALACE LEECH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "DEEP PALACE MORBOL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
@@ -295,7 +295,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "GANGRENOUS GIGANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DEEP PALACE DULLAHAN": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -319,7 +319,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "HALF-CRACKED CAPTAIN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DEEP PALACE GUARD": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -343,7 +343,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "DEEP PALACE KED": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "DEEP PALACE HELLHOUND": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -366,7 +366,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "SUNKEN CAPTAIN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DEEP PALACE GREMLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -389,7 +389,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "FLYBLOWN PRAEFECTUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DEEP PALACE MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -412,7 +412,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "DEEP PALACE BEAR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "DEEP PALACE BLACK COEURL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -434,7 +434,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "JAUNDICED TRIBUNUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DEEP PALACE GRENADE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -457,7 +457,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "DEEP PALACE IRON CORSE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
     "DEEP PALACE KEEPER": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
@@ -476,7 +476,7 @@
 [
     {
         "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY NAKED YUMEMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY MUTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -500,7 +500,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY KORPOKKUR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY SHIZUKU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -524,7 +524,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY DHRUVA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "HEAVENLY HALGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -548,7 +548,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY GEDAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY HORNBILL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -571,7 +571,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY DHARA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY GANSEKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -592,7 +592,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY KAMAKIRI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
         "HEAVENLY NAGA": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
@@ -616,7 +616,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY ONRYO": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
         "HEAVENLY WAKAKUSA": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
@@ -640,7 +640,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY ICHIJAMA": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
         "HEAVENLY SHIKUBI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -664,7 +664,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY GARULA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
         "HEAVENLY ROWAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
@@ -688,7 +688,7 @@
     },
     {
         "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "HEAVENLY GOZU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
         "HEAVENLY JAKI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},
