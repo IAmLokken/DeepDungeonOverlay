@@ -69,9 +69,20 @@
         if (instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsPOTD) ||
             instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH))
         {
-            if(DDO.soloRunUnderway || DDO.groupRunUnderway){
+            if((DDO.soloRunUnderway || DDO.groupRunUnderway) && !DDO.inbetweenArea){
                 // At the end of cutscenes a new zone change message is received.  This is so we dont lose our current dungeon
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+            }
+            // we just continued a run
+            else if (DDO.soloRunUnderway && DDO.inbetweenArea){
+                DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
+                DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor + 9;           
+                DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
+                DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;     
+                DDO.StartFloorSetUI();                
             }
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
                 DDO.LoadSoloConfig();
@@ -86,6 +97,7 @@
                 DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                DDO.StartFloorSetUI();
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
                 DDO.LoadPartyConfig();
                 DDO.groupRunUnderway = true;
@@ -205,7 +217,10 @@
             DDO.SaveFiles[DDO.currentInstance].push(newSave);        
             DDO.Snapshot = JSON.parse(JSON.stringify(newSave));
         }    
+    }
 
+    DDO.StartFloorSetUI = function()
+    {
         let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
         DDO.DataElements.MonstersFloorValue.innerText = 0;
         DDO.DataElements.MonstersSetValue.innerText = 0;

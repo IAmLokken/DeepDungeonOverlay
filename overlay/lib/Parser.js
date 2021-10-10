@@ -126,8 +126,7 @@
 
                     // Save the run
                     DDO.SaveRuns();
-
-                    DDO.currentFloor++;
+                    DDO.Snapshot = JSON.parse(JSON.stringify(DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex]));
                 }
             }
         }
@@ -140,8 +139,8 @@
         if (data[3] == parseStrings.Trap && pomTrapName != parseStrings.WeaponEnhancement && pomTrapName != parseStrings.GearEnhancement){
             if (pomTrapName == parseStrings.Detonator)
             {
-                DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || 0;
-                DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || 0;
+                DDO.currentFloorStats.chestCount = Math.max(0, (DDO.currentFloorStats.chestCount - 1) || 0);
+                DDO.currentFloorSetStats.chestCount = Math.max(0, (DDO.currentFloorSetStats.chestCount - 1) || 0);
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = Math.max(0, DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1);
                 
                 DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
