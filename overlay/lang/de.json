@@ -1,0 +1,69 @@
+{
+    "UIStrings":
+    {
+        "ScoreLabel": "Score: ",
+        "CurrentlyActiveLabel": "Pomanders Currently Active",
+        "FloorLabel": "Floor",
+        "SetLabel": "Set",
+        "TotalLabel": "Total",
+        "MonstersLabel": "Monsters",
+        "MimicsLabel": "Mimics",
+        "TrapsLabel": "Traps",
+        "ChestsLabel": "Chests",
+        "EnchantmentsLabel": "Enchantments",
+        "RareMonstersLabel": "Rare Monsters",
+        "SpeedRunsLabel": "Speed Runs",
+        "CurrentTargetLabel": "Current Target",
+        "HPPLabel": "Hp %",
+        "DangerLabel": "Danger Level",
+        "AggroLabel" : "Aggro Type",
+        "NoTargetLabel": "No Target",
+        "POTDButton": "Clear PotD Saves",
+        "HOHButton": "Clear HoH Saves",
+        "ButtonInfo": "This window will display Deep Dungeon information while in a Deep Dungeon run.  While not in a Deep Dungeon run you can use the below buttons to clear save information stored by this overlay."
+    },
+    "BossNames":
+    [
+        "MOJABUNE", "BECCHO", "HIRUKO", "BHIMA", "GOZU", "SUIKAZURA", "KENKO", "KAJIGAKAKA", "ONRA",
+		"PALAST-THANATOS", "EUPHORBIA", "NINGISHZIDA", "IXTAB", "EDDA SCHWARZHERZ", "SCHWARZ REITER", "YAQUARU", "GUDANNA", "MUTTER ALLER BOMBEN", "NYBETH OBDILORD",
+		"ALICANTO", "KIRTIMUKHA", "ALFARD", "AH PUCH", "TISIPHONE", "TODESRITTER", "YULUNGGU", "DENDAINSONNE", "VATER ALLER BOMBEN"
+    ],
+    "RareMonsterNames":
+    [
+        "AUFGEBLÄHT DRUIDE", "AUFGEBLÄHT WALDLÄUFER", "AUFGEBLÄHT FAUSTKÄMPFER", "SCHWERTSCHWINGEND ABENTEURER", "STABWEDELND ABENTEURER", "LANZENTRAGEND ABENTEURER",
+		"GEIFERND GROBIANN", "FIEBERHAFT FREIBEUTER", "PIKENIER IN ISHGARDER KLEIDUNG", "DUNKELALBEN-PIKENIER", "MOKANT MAGNAT", "INFAM INQUISITOR", "MUFFIG HÄNDLER",
+		"MHIGISCH TECHNIKER", "VERBITTERT LEGATUS", "MODRIG PRAEFECTUS", "ENTSTELLT PIRATENKAPITÄN", "GESUNKEN KAPITÄN", "BLASIERT BARONESSE", "GRIMMIG GIGAS",
+		"PILOT DES KAISERREICHS", "RUHELOS RITTER", "SCHWÄRZLICH HÄNDLER", "UL'DHISCH GLADIATOR"
+    ],
+    "EnchantmentNames":
+    [
+        "LP-REGENERATION UNWIRKSAM", "BLIND", "SCHADEN -", "LP-/MP-BONUS", "LP-MALUS", "UNFÄHIGKEIT", "GEGENSTÄNDE VERBOTEN", "RÜCKSTOSS UNWIRKSAM", "SPRINT VERBOTEN",
+		"HAST", "SPRINT", "ENTZAUBERT", "NO ITEMS", "AMNESIE"
+    ],
+    "ParseStrings":
+    {
+        "CurrentInstancePOTD": "The Palace of the Dead",
+        "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
+        "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "QuiveringCoffer": "ZUCKEND SCHNAPPTRUHE",
+        "Mimic": "MIMIK",
+        "Korrigan": "KORRIGANE",
+        "Mandragora": "MANDRAGORA",
+        "Pygmaioi": "PYGMAIOI",
+        "Trap": "FALLE",
+        "Detonator": "DETONATOR",
+        "Pomander": "TONGEFÄSS",
+        "BaresItsFangsPOTD": "...bares its fangs!",
+        "BaresItsFangsHOH": "...bares its fangs!",
+        "Magicite": "ZAUBERSTEIN",
+        "Obtain": "ERHALTEN",
+        "ThirtyMinutesRemaining": "30 minutes remaining",
+        "Gloom": "The gathering gloom",
+        "PhoenixDown": "PHÖNIXFEDER",
+        "Transference": "Transference initiated!",
+        "EmpyreanReliquary": "EMPYREISCHES RELIKT",
+        "GlassPumpkin": "GLASKÜRBIS",
+        "Firecrest": "FEUERWAPPEN"        
+    }
+}

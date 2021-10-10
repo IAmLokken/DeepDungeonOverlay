@@ -71,7 +71,7 @@
             
             if (target.Notes.length > 0){
                 if (target.Notes.startsWith('*')){
-                    let notes = target.Notes.replace('*', '').trim();
+                    let notes = target.Notes.replace(/\*/g, '').trim();
                     DDO.DataElements.TargetInformationValue.innerHTML = DDO.Bestiary[notes];
                 }
                 else

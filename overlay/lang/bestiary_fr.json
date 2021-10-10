@@ -7,7 +7,7 @@
 [
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
 
     "SOURIS MEURTRIÈRE DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ANTILOPE DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -30,7 +30,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "AVENTURIER LANCIER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "AVENTURIER ÉLÉMENTALISTE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "AVENTURIER GLADIATEUR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -55,7 +55,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "MARAUDEUR DES MERS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "MAÎTRE D'HAST ISHGARDAIS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "MARAUDEUR DÉPRAVÉ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -81,7 +81,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "GLADIATEUR ULDIEN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "MOINE DU CAUCHEMAR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -106,7 +106,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "MAÎTRE D'HAST CRÉPUSCULAIRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "GARDIEN DE TOMBEAU DU CAUCHEMAR": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -130,7 +130,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "MARCHAND PATIBULAIRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "MARCHAND MYSTÉRIEUX": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -154,7 +154,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "PUGILISTE IMMÉMORÉ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "TYRANNOSAURE DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -177,7 +177,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "Emaciated Engineer": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "RICHE BARONNE ÉLÉZENNE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -201,7 +201,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "PSEUDO-INQUISITEUR ISHGARDAIS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "JEUNE NOBLE ISHGARDAIS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -225,7 +225,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "MAGNAT LALAFELL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "HIPPOCERF DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -248,7 +248,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "PILOTE IMPÉRIAL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "FRELON DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
@@ -272,7 +272,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "SANGSUE DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "MORBOL DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
@@ -295,7 +295,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "GIGAS MINEUR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "DULLAHAN DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -306,7 +306,7 @@
     "ADAMANKHÉLONE DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "UROLITHE DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "WIVRE DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "SPRIGGAN DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "SPRIGGAN DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PTÉROC DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "MINOTAURE DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
     "SKATE'NE DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
@@ -319,7 +319,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "CAPITAINE PIRATE DIFFORME": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "GARDE DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -343,7 +343,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "POU DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "LIMIER DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -366,7 +366,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "CAPITAINE DE NAVIRE LIMSÉEN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "GREMLIN DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -389,15 +389,15 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "OFFICIER IMPÉRIAL EN ARMURE NOIRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "MYLODON DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PTÉRANODON DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "LINDWURM DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "CROCO BARYTON DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
+    "CROCO BARYTON DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleave/double autoattacks and are very bursty."},
     "DIPLOCAULUS DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ARCHÉOSAURE DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to."},
+    "ARCHÉOSAURE DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
     "WIVRE DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
     "VINAIGRIER DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "TRICÉRATOPS DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
@@ -412,7 +412,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "OURS BLANC DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "COEURL NOIR DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -434,7 +434,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "OFFICIER IMPÉRIAL EN ARMURE BLANCHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "GRENADO DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -444,7 +444,7 @@
     "ARCHÉOSAURE DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to."},
     "VER DES EAUX DES PROFONDEURS": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Randomly hits people within half a room with an instant AOE that deals a fair amount of damage. Has a double-auto, and a DPS check (around 30 seconds) where it will suck everyone in and shortly afterwards, deal 20K damage to people in range. It is possible to tank this and then heal through it as a healer/RDM with Steel, but with crits, you will be dead. You can also stagger the mob and kite it to outrange the suction at 30 second (very large AOE). <b>Knockback immunity does not work</b>. After getting sucked in, you can quickly use a displacement skill to back away from the worm before the big damage AOE.<br/>These aggro by sound, so you can toggle walk to avoid them."},
     "WAMOURA DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "WAMOURACAMPA DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to."},
+    "WAMOURACAMPA DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
     "VINDTHURS DES PROFONDEURS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "DRAGON DES EAUX": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "These have an instant circular AOE burst attack that inflicts a very potent DoT, similar to crawlers. Get Esuna/Erase ready, and spread out so multiple people don’t get hit.<br/>Solo: Don’t pull this."},
     "GARM DES PROFONDEURS": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Aggros by proximity, and has an arsenal of one-shot abilities. The two main skills are <b>“The Ram’s Voice”</b> and <b>“The Dragon’s Voice”</b>. Ram is a point-blank AOE, and Dragon is a ~3/4 room sized AOE with a safe spot in the middle. So, when you see Ram being channeled, run away, and then if you see Dragon, run inside. These can be silenced. Note that in my experience, people get hit by Ram 10x more often than Dragon, as Ram casts faster.<br/>If you are proficient with dodging these mechanics, these are actually the easiest mobs to kill when solo from 187-189. But, DO NOTE that they can autoattack crit for 10K damage!"},
@@ -457,7 +457,7 @@
     },
     {
     "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "CORS DE FER DES PROFONDEURS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
     "GARDIEN DES PROFONDEURS": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
@@ -476,7 +476,7 @@
 [
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "YUMEMI NU DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "MUTSU DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -500,7 +500,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "KORPOKKUR DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "SHIZUKU DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -524,7 +524,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "DHRUVA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "HALGAI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -548,7 +548,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "GEDAN DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "BUCORVE DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -571,7 +571,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "DHARA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "GANSEKI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -592,7 +592,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "KAMAKIRI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
         "NAGA DES CIEUX": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
@@ -616,7 +616,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "ONRYÔ DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
         "WAKAKUSA DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
@@ -640,7 +640,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "ICHIJAMA DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
         "SHIKUBI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -664,7 +664,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "GARULA DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
         "RÔEN DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
@@ -688,7 +688,7 @@
     },
     {
         "COFFRE GIGOTANT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "GOZU DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
         "JAKI DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},

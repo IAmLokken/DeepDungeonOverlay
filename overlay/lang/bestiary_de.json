@@ -1,0 +1,707 @@
+{
+"Nothing Notable": "Nothing notable.",
+"Rare Monster": "<b>NOT AFFECTED BY WITCHING</b><br/>This is a unique enemy and is a rare spawn.  Be cautious as they only have auto attacks that hit relatively hard.",
+"Congratulations": "Congratulations.",
+"Good Luck": "Good Luck.",
+"the Palace of the Dead":
+[
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+
+    "PALAST-TODESMAUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-ANTILOPE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-EXERGON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-ZIZ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-KOBALOS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-FLEDERMAUS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-HIPPOCERF": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-KÄFER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-HORNISSE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts Final Sting if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
+    "PALAST-YARZON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-MISTKÄFER": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "VERIRRT GOBLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-THANATOS": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "This boss is very easy, but damage should not be underestimated when solo (consider popping a potion during the fight) <br/> General tactic - Lust on lower floors deals insane damage, as the potency of Void Fire II is much higher than low level skills. If your class can kite, you can run circles around the room and take literally 0 autoattack damage aside from the Whipcrack."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "LANZENTRAGEND ABENTEURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "STABWEDELND ABENTEURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "SCHWERTSCHWINGEND ABENTEURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALAST-URAGNIT": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-KRÖTE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-SCHLEIM": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Will explode and kill anybody within a large radius if not killed in time. When solo, DO NOT MOVE AROUND IN A ROOM AS YOU FIGHT THESE. If you step on a toad trap, you will most likely wipe (it is possible to kite and have a second to use witching after the toad wears out, but…)"},
+    "PALAST-NANKA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-NINKI NANKA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-OCHU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-BILOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-KEIMLING": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-MORBOL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-KOBRA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "If you step on a toad trap, the cobra will use a special skill “Devour”, one-shotting the toad. Like with slimes, do not move around in rooms as you fight."},
+    "EUPHORBIA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "A simple boss, very similar to the floor 10 boss with its order of attacks. However, do not underestimate the damage of its cleave, <b>Bloody Caress</b>. The order of skills will be Bloody Caress (cleave), followed by two telegraphed AOEs and then a global AOE. After the global AOE, it will go to the top of the room and summon two hornets. These must be killed or they will cast an unavoidable final sting that will kill someone. Meanwhile, the boss will spam a line telegraph <b>Rotten Stench</b> that will deal a very high amount of damage.<br/>General tactic - Use Lust to kill it, and the bees, quickly (stack on it when it summons the bees so you can hit them all with the AOE). However, consider popping a <b>Sustaining Potion</b> before you do so when solo, as the cleave damage is quite high."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "FIEBERHAFT FREIBEUTER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "PIKENIER IN ISHGARDER KLEIDUNG": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "GEIFERND GROBIANN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALAST-PUK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-DRAKON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-ADAMAN-TAIMAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-DULLAHAN": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-WIVRE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-PEISTE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-SPRIGGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-BILDNIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-MAROLITH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-ZENTAUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-MINOTAURUS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
+    "PALAST-SKATENE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
+    "NINGISHZIDA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Tl;dr - start on the side, fire, ice, fire, ice, and then run to the center.<br/>This boss, aside from having a basic cleave, will create lingering AOEs on random players in the following pattern - fire, ice, fire, ice. Because these AOEs linger on the floor, don’t stand in the center to start out, because you don’t want the goop in the center when you have to run there. After the second ice ball, it will run to the center of the room and cast <b>Fear Itself</b>. To avoid this attack, which does high damage and inflicts terror, run to the center with it."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "UL'DHISCH GLADIATOR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "ALBTRAUM-MÖNCH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-DAHAK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-CATBLEPUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-OGER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-SPUKGESPENST": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "ALBTRAUM-HEKTOKULUS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "ALBTRAUM-AUGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-GOURMET": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-SUKKUBUS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-HAAGENTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-TROUBADOUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-SCHNAKE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-SUKKUBUS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Dark Mist</b> followed by <b>Void Fire II</b>. Dark Mist is a point blank AOE which will cause terror if it hits, so make sure you stay out of the telegraphs."},
+    "IXTAB": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Tl;dr - kill the adds<br/>This boss will cast 4 lingering AOEs, and then summon two <b>Nightmare Bloots</b>. These must be killed as fast as possible (all while avoiding the AOE telegraphs cast by the boss), or else when the boss uses its global AOE <b>Scream</b>, you will get targeted by prey and the adds will use <b>Tornado</b>, which will most likely one shot you, especially when coupled with the <b>Shadow Flare</b> global AOE which is cast right after Scream."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "DUNKELALBEN-PIKENIER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "ALBTRAUM-GRABWÄCHTER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "ALBTRAUM-BLUTWÄCHTER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-DRACHE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-GEIST": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-RITTER": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ALBTRAUM-MANTICORE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-HÖLLENHUND": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-GARGOYLE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-DÄMON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-SCHNAKE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALBTRAUM-BHUT": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
+    "ALBTRAUM-PERSONA": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
+    "EDDA SCHWARZHERZ": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Tl;dr - stay close to the boss to easily avoid the <b>In Health</b> telegraphs.<br/>This boss is pretty easy if you avoid her mechanics properly. She will use <b>In Health</b> in two patterns - one will require you to run away from her, and one will cover the whole map except a small area next to her. As such, stay close to her to avoid this. Aside from doing damage, each person hit by this skill will light up a rune on the floor, which increases the damage of the global AoE <b>Black Honeymoon</b>. Aside from that, she will occasionally cast <b>In Sickness</b>, which instantly inflicts Disease on a target, but with the timing on her skills, you never have to worry about the slow from Disease making it hard to avoid a cast of <b>In Health</b>."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MUFFIG HÄNDLER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "SCHWÄRZLICH HÄNDLER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALAST-IMP": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-GREMLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-TOTEM": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-VODORIGA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-ERZDÄMON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-GLOTZAUGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-ANUBIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-TAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-SEELENSCHINDER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-MANATOPF": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "SCHWARZ REITER": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "In a nutshell - Make sure you don’t get knocked back into one of the exploding balls on the side."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "AUFGEBLÄHT FAUSTKÄMPFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALAST-TYRANNOSAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-PTERANODON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-ELBST": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-WIVRE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-GATOR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-DIPLOCAULUS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-KLINGENGEISSELSKORPION": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-SARCOSUCHUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-TRICERATOPS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-RAPTOR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "YAQUARU": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "In a nutshell - when it casts <b>Douse</b>, walk away such that the boss is completely out of the AOE so it doesn’t get buffed with Haste."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MHIGISCH TECHNIKER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "BLASIERT BARONESSE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALASTBÄR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-COEURL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-BANDERSNATCH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALASTWOLF": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-DHALMEL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALASTLÖWE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-ZYKLOP": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-SASQUATCH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-ANZU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-AUEROCHSE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALASTVOGEL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "GUDANNA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "In a nutshell - stay away from the tornados, because they will pulse with an AOE larger than the tornados themselves, pulling you in. When it runs to the edge, run close to it, as it will use <b>Trounce</b>, a huge conal AOE that applies vulnerability. Burn it at 17% as it will use <b>Ecliptic Meteor</b>, which deals 80% of your max health as damage."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "INFAM INQUISITOR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "RUHELOS RITTER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALAST-ERUCA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-GALLIMIMUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-LEHMSKORPION": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALASTWURM": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-BOMBER": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will cast <b>Self Destruct</b> if not killed in time. Be careful when mass pulling these in a party, and do not walk inside rooms in the event of toad/silence traps for solo."},
+    "PALAST-CHIMÄRA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "FLAMMENDRACHE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-WAMOURACAMPA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALAST-GEISSELSKORPION": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-WAMOURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-HAPALIT": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "MUTTER ALLER BOMBEN": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "Tl;dr - kill orange bombs when they spawn, push blue bomb into the boss (all skills will knock it back) when it spawns.<br/>This boss is a bit more tricky than the previous ones. It will sometimes spawn a Lava Bomb in the middle of a bunch of untargetable little bombs that will explode over time, and you must kill the <b>Lava Bomb</b> before it explodes. It can also summon a <b>Giddy Bomb</b> while channeling <b>Massive Burst</b>. The Giddy Bomb must be pushed into the boss with any skill before it blows up. If it does, and you have to tank Massive Burst, get the heals ready, because it does 99% of everybody’s max HP (so, unaffected by any damage reduction - don’t you dare use tank LB!)."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MOKANT MAGNAT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "PALAST-HIPPOCERF": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALAST-GOURMET": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-GEIST": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-RIESENLEICHNAM": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-EISENLEICHNAM": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "DUNKELDRACHE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "PALASTSCHWARM": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALASTMUMIE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-RÖSLING": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "PALASTRITTER": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "PALAST-GRABWÄCHTER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "NYBETH OBDILORD": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "Use strength, steel, and then <b>Sustaining Potion</b> and lust. Spam Void Fire II for the entire duration - don’t worry, it will melt the adds as they spawn/respawn.<br/>As soon as the transformation wears off, use another Sustaining Potion and use Resolution. Then you can spam <b>Heavenly Judge</b> for a decent amount of damage for the entire duration, while removing all those corpses from the ground."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "PILOT DES KAISERREICHS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "KATAKOMBEN-HORNISSE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
+    "KATAKOMBEN-MARIENKÄFER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-HIPPOGRYPH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-MISTKÄFER": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-GEIRA-KATZE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-DOBALOS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-ZIZ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-YARZON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-BAUMHÖRNCHEN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-ANTILOPENBOCK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-EXERGON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "GOBLIN-ABENTEURER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ALICANTO": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "This boss is similar to the 1-10 boss mechanically, it just hits a little harder. Just tank and spank!"
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+    "ATAKOMBEN-EGEL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-MORBOL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
+    "KATAKOMBEN-KARPFENKRÖTE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Sticky Tongue</b> followed by <b>Labored Leap</b>, which can do over 6K damage. The Sticky Tongue will <b>STUN</b> you for 5 seconds if you are <b>NOT FACING THE TOAD</b>. Be very careful with these with solo, especially if you have other mobs around."},
+    "KATAKOMBEN-BILOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-KOBRA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Same as the cobras from 11-20, except these will poison you with <b>Regorge</b> for a considerable amount of damage. Beware the toad trap + cobra combo!"},
+    "KATAKOMBEN-BIFERICERAS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-KEIMLING": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-SCHLEIM": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These Slimes will inflict a stacking physical vulnerability debuff (note that they attack with magic, though). They can still explode, like the slimes on 11-20, but it takes a much longer time."},
+    "KATAKOMBEN-SALAMANDER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-OCHU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-NANKA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KIRTIMUKHA": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "Tl;dr - avoid AOEs, kill bees.<br/>This boss is mechanically similar to that of floor 20. <b>Rotten Stench</b> will now be a one-shot, so make sure you avoid those telegraphed AOEs. The easiest way to deal with the bee adds is to stack on the boss and have somebody spam Lust autoattacks."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "GRIMMIG GIGAS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "KATAKOMBEN-DULLAHAN": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-BILDNIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-ZENTAUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-BASILISK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-SMEI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-ADAMAN-TAIMAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "ATAKOMBEN-UROLITH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-WIVRE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-SPRIGGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-PTEROSAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-MINOTAURUS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
+    "KATAKOMBEN-SKATENE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
+    "ALFARD": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "Tl;dr - stand on side, fire, ice, fire, ice, then run to center.<br/>Similar to the F30 boss, except this time it casts <b>Fear Itself</b> way faster. Run to the center immediately after the second ice ball, and make sure nobody is standing in the center prior to that, so you don’t get goop there."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "ENTSTELLT PIRATENKAPITÄN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "KATAKOMBEN-WACHE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-HEKTOKULUS": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-GOURMET": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-CATBLEPUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-DAHAK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-TAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-TROUBADOUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-SEELE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-MUMIE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-OGER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-MÖNCH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-AHRIMAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Level 5 Petrify</b>, a non-telegraphed conal AOE. This causes 15 seconds of petrification, which is unremovable, and can easily lead to death when solo."},
+    "AH PUCH": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "<b>Pomander of Resolution<b/>’s Heavenly Judge skill will deal 30K damage (with Strength) to this boss. If solo, recommended to use Strength + Steel + Resolution. You don’t have to use Steel, but it makes it a lot safer, and if you don’t Steel you may have to leave mid-transformation to pop a quick sustain potion before popping another Resolution."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+    "KATAKOMBEN-DÄMONENFLIEGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-HÖLLENHUND": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-GARGOYLE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Deals a high amount of DPS with its poison and cleave attack. Not easy to engage solo without sustain potion and/or Steel."},
+    "KATAKOMBEN-BHUT": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-DÄMON": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Charybdis</b> if not killed in time, which will bring your party to 1% HP."},
+    "KATAKOMBEN-SUKKUBUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-MANTICORE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will buff itself with a physical damage buff, and use <b>Ripper Claw</b>, a non-telegraphed frontal AOE that can hit quite hard. Walk away or behind it to avoid this."},
+    "KATAKOMBEN-PERSONA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-RITTER": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "ONYXDRACHE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-GEIST": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however."},
+    "KATAKOMBEN-WÄCHTER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "TISIPHONE": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "This boss can be quite difficult for melee, but a lot easier for ranged classes.<br/>Tl;dr - kite and kill zombie adds (don’t let them touch you), succubus add is optional (dotting it is worth it though)."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "GESUNKEN KAPITÄN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "KATAKOMBEN-GREMLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-EUFEL": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable."},
+    "KATAKOMBEN-GLOTZAUGE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "KATAKOMBEN-ABAIA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-SEELENSCHINDER": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Double auto that heals them for the amount of damage they deal. Very annoying to fight."},
+    "KATAKOMBEN-PUDDING": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "KATAKOMBEN-SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-MANATOPF": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "KATAKOMBEN-TAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-MAROLITH": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "KATAKOMBEN-ERZDÄMON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "TODESRITTER": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "While mechanically similar to the F60 boss, this one can hit like a truck. While you can solo it without steel (on RDM at least), I really, really would recommend using steel for this boss and beyond."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "MODRIG PRAEFECTUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "KATAKOMBEN-MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-PTERANODON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-LINDWURM": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-BARITOGATOR": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleave/double autoattacks and are very bursty."},
+    "KATAKOMBEN-DIPLOCAULUS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-ARCHAEOSAURUS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
+    "KATAKOMBEN-WIVRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
+    "KATAKOMBEN-GEISSELSKORPION": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-TRICERATOPS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
+    "KATAKOMBEN-TURSUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-SARCOSUCHUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "YULUNGGU": 
+        {
+            "DangerLevel": "Caution",
+            "AggroType": "Proximity",
+            "Notes": "This boss is similar to the F70 boss, except the water puddle from <b>Douse</b> will buff it with haste and physical damage up. The tank should pull this boss slowly in a circle around the map, making sure to move it out of every <b>Douse</b> puddle it creates.<br/>Save sprint/backstep abilities for the first <b>Heavy</b> effect applied with diminishing returns, as you will need it to avoid the upcoming <b>Electrogenesis</b> AOE. (sprint when the Heavy has around 7 seconds left)."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+    "KATAKOMBEN-WEISSBÄR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-COEURL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-BANDERSNATCH": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleaves/double autos. Be careful when solo."},
+    "KATAKOMBEN-ANZU": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "Has a cleave that applies a DOT, and spams <b>Flying Frenzy</b>, which targets a random party member, dealing huge damage, stun, and applying vulnerability in an AOE around that member. Spread out. Don’t even try to fight this solo.<br/>MCH can burst these with cooldowns, Strength & Steel, however. Because MCH."},
+    "KATAKOMBEN-DHALMEL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBENLÖWE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleaves/double autos. Be careful when solo."},
+    "KATAKOMBENWOLF": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cleave that applies Frostbite, a powerful DOT. Get Esuna/Erase ready to remove this from whoever gets hit by it.<br/>Don’t touch them on casters. Ranged DPS can take them on without any items."},
+    "KATAKOMBEN-SASQUATCH": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These aggro by proximity, and have two skills that they cast when not in combat - <b>Ripe Banana</b> and <b>Chest Thump</b>. Ripe Banana will give it a huge physical damage buff, and then it will proceed to cast Chest Thump many times, dealing AOE damage to anybody within a one room radius while applying stacks of physical vulnerability. As such, do not fight mobs near rooms with Sasquatches in them. <b>NEVER pull a Sasquatch that is buffed</b>, or else you will be one shot - always wait for the buff to wear out.<br/>Highly recommended to use Steel if solo, as a Browbeat crit will do 13K, 1 shotting you if paired with an autoattack."},
+    "KATAKOMBENVOGEL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These do a reasonable amount of damage with their cleaves, but you need to watch out for their <b>Revelation</b> ability which is an AOE that applies confusion.<br/>After fighting these for a little while, they will cast <b>Tropical Wind</b>, granting them a huge haste and damage buff. During this time, they will spam <b>Revelation</b> exclusively (you may still get autoattacked in melee range), where each one is pretty much a guaranteed one shot. You can stun the buff or remove the haste with a slow effect."},
+    "KATAKOMBEN-WISENT": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "While these are easy to kill, they have a DPS check where if not killed in time (3o seconds), they will suck everyone in, apply a HUGE heavy debuff (like 95-99% slow), and do a stomp that will deal around 90% of a DPS’s health and apply Paralysis. Be careful if you pull multiple at the same time.<br/>The suction can be avoided with <b>Surecast/Arms Length</b>, and the enrage cast be <b>interrupted</b> or slept."},
+    "KATAKOMBEN-SCHNEEZYKLOP": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has 2 one-shot skills with no telegraph - <b>Glower</b> and <b>100-tonze swing</b>. Glower is a frontal line AOE which is cast almost immediately after being pulled, and 100-tonze swing is a point-blank AOE (so, walk away from it). These can be stunned."},
+    "DENDAINSONNE": 
+        {
+            "DangerLevel": "Scary",
+            "AggroType": "Proximity",
+            "Notes": "Lust at ~20-21%, and then slow push into 15%. After the boss is 15%, use autoattacks or a couple weak abilities to push it from like 15.9% to as close to 15.0% as possible (you can’t actually see this number, so you need to play it a bit safe). Wait for the boss to use a skill (commonly wait for the double Charybdis cast after Trounce), then use your burst rotation. Healers and RDM have this easy, but other classes need to have their heals (Second Wind, Super Potion, Bloodbath, etc) ready and the burst rotation on-point."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    "VERBITTERT LEGATUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    
+    "KATAKOMBEN-GRANATE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-EXERGON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Don’t pull on ranged DPS/no sustain casters."},
+    "KATAKOMBEN-LEHMSKORPION": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Will suck in a random member and stab them for a decent amount of damage. Also has a targeted AOE <b>Tail Screw</b> that deals damage and applies slow. It is killable solo by a healer/RDM if you use Steel.<br/><b>Knockback immunity does not work on the suction</b>."},
+    "KATAKOMBEN-KRIECHER": {"DangerLevel": "Impossible", "AggroType": "Sound", "Notes": "These have an instant conal AOE burst attack that deals 7K damage (on top of their 5K autoattack) and applies a strong slow effect. Additionally, they have an instant conal AOE poison attack that ticks for 3K damage a tick. Spread out when you fight these, and get that Esuna ready.<br/>These aggro by sound, so you can toggle walk to avoid them."},
+    "KATAKOMBEN-ARCHAEOSAURUS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to."},
+    "KATAKOMBEN-FLUTWURM": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Randomly hits people within half a room with an instant AOE that deals a fair amount of damage. Has a double-auto, and a DPS check (around 30 seconds) where it will suck everyone in and shortly afterwards, deal 20K damage to people in range. It is possible to tank this and then heal through it as a healer/RDM with Steel, but with crits, you will be dead. You can also stagger the mob and kite it to outrange the suction at 30 second (very large AOE). <b>Knockback immunity does not work</b>. After getting sucked in, you can quickly use a displacement skill to back away from the worm before the big damage AOE.<br/>These aggro by sound, so you can toggle walk to avoid them."},
+    "KATAKOMBEN-WAMOURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "KATAKOMBEN-WAMOURACAMPA": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
+    "KATAKOMBEN-VINDTHUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "FLUTDRACHE": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "These have an instant circular AOE burst attack that inflicts a very potent DoT, similar to crawlers. Get Esuna/Erase ready, and spread out so multiple people don’t get hit.<br/>Solo: Don’t pull this."},
+    "KATAKOMBEN-GARM": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Aggros by proximity, and has an arsenal of one-shot abilities. The two main skills are <b>“The Ram’s Voice”</b> and <b>“The Dragon’s Voice”</b>. Ram is a point-blank AOE, and Dragon is a ~3/4 room sized AOE with a safe spot in the middle. So, when you see Ram being channeled, run away, and then if you see Dragon, run inside. These can be silenced. Note that in my experience, people get hit by Ram 10x more often than Dragon, as Ram casts faster.<br/>If you are proficient with dodging these mechanics, these are actually the easiest mobs to kill when solo from 187-189. But, DO NOTE that they can autoattack crit for 10K damage!"},
+    "VATER ALLER BOMBEN": 
+        {
+            "DangerLevel": "Scary",
+            "AggroType": "Proximity",
+            "Notes": "<b>DO NOT OPEN WITH LUST</b>. The boss will cleave right away and you may die before you get the stacks off. There is a window in the boss’s rotation where he will cast 3 Saps in a row (during Remedy Bomb cycle) - this is a good time to lust. See the solo video for reference. Another option (that requires a bit of planning) is to take advantage of the static spawns to position the boss on top of where the Remedy Bomb spawns, and use Lust to kill the bomb while getting stacks on the boss. The boss will be casting Saps during this time, so you should be able to survive."
+        }
+    },
+    {
+    "MIMIK": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+    "KATAKOMBEN-EISENLEICHNAM": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
+    "KATAKOMBEN-WÄCHTER": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
+    "KATAKOMBEN-HIPPOGRYPH": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
+    "KATAKOMBEN-GOURMET": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
+    "KATAKOMBEN-DOPPELKOPF": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
+    "KATAKOMBEN-GEIST": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part). NEVER pull a knight when one of these is around, because their AOE <b>Accursed Pox</b> will fill in the <b>Death Spiral</b> doughnut, leaving you with nowhere to run."},
+    "KATAKOMBEN-MUMIE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+    "KATAKOMBEN-EISFALLE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+    "KATAKOMBEN-RITTER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "These do crazy damage - you want to avoid them when solo if possible. They will also cast a doughnut-shaped AOE <b>Death Spiral</b>, dealing around 20K damage to anybody not standing next to it. <b>NEVER PULL THESE WHEN A WRAITH IS NEARBY.</b><br/>They do have an “enrage” cast that <b>doubles</b> their damage output for a short amount of time, while giving them a defense buff. This means their buster will hit for 9.5k with steel, non-crit."},
+    "ONYXDRACHE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Note that, unlike any other dragon, the ones on this set aggro by movement. Their Evil Eye (red eye mechanic) is a one shot, so make sure to look away."},
+    "KATAKOMBEN-FACHAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Similar to Ahrimans from 130s, these have a no-telegraph conal AOE, except instead of <b>Level 5 Petrify</b>, they cast <b>Level 5 Death</b>. From the name, it’s pretty obvious what happens if you get hit."}
+    }
+],
+"Heaven-on-High":
+[
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-NACKT-YUMEMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MUTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MUTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-ONRYO": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-HAI": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Jaws hurt. Like, they REALLY hurt. (you can’t LoS it either)."},
+        "HIMMELSSÄULEN-AMIKIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-KORALLENSCHALE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Untelegraphed frontal AOE sleep."},
+        "HIMMELSSÄULEN-GYUKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-BLOBKRAKE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-UWABAMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-ANGO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MATAMATA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-YUMEMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "MOJABUNE": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Walks to the center and uses a global knockback (cannot be Surecasted), followed by a half-roomwide AOE."
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "IMMELSSÄULEN-KORPOKKUR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SHIZUKU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-NAMAZUO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SHIOMUSHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-HIKAGIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-APA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-UNKIU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-HAND": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a roomwide (or larger?) enrage wipe."},
+        "HIMMELSSÄULEN-OTOKAGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-TATSUNOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-AMAGOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SHIONAME": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-AOMINO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "BECCHO": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Will attempt to do a fear mechanic, while summoning butterflies around the edges of the arena. They explode (untelegraphed), and the fear will make you walk into the walls, so make sure to avoid it!"
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-DHRUVA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-HALGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-KATASHARIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SAI-TAISUI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-ONIBI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-HATAMOTO": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Uses Midare, and it hurts (15K). Tenga Goken is also a nontelegraphed cone knockback."},
+        "HIMMELSSÄULEN-KEUGEGEN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-TENAGA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MENREIKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-KOJA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-TENGU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-YUKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-WANYUDO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIRUKO": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Summons clouds that explode after a while, and casts a proximity AOE in the center. Run to the side and don’t get clipped by multiple clouds. If you get knocked up into a cloud, the cloud will disappear. Also has a half-room AOE, so save a gap closer or don’t kite too far."
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-GEDAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-HORNRABE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-ONMITSU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a <b>self destruct</b> with a long cast bar (used below 10%)."},
+        "HIMMELSSÄULEN-HARAKIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a <b>self destruct</b> with a long cast bar cast at low health (below 20%)"},
+        "HIMMELSSÄULEN-HANNYA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Cleaves every other auto attack. Be careful at lower Aetherpool levels."},
+        "HIMMELSSÄULEN-VANARA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a frontal AOE cleave with <b>no telegraph or cast bar</b>."},
+        "HIMMELSSÄULEN-KIYOFUSA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a stack marker that can be LoSed. It only does like 7K damage, however."},
+        "HIMMELSSÄULEN-SHISHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MOKIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-ASHIGARU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-DOGU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "BHIMA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Attempts to use a knockback as things spawn on the edge and he walks to the center. The knockback pushes everyone away from him - don’t get pushed into one of those things! <b>Surecast/Arms length do NOT work</b>."
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-DHARA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-GANSEKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-SAIKORO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-KURO-USAGI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SEKIBAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have an enrage, and attacks quickly."},
+        "HIMMELSSÄULEN-SEKIZO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MIZUMIMIZU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
+        "HIMMELSSÄULEN-AKA-ISHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-ISEKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MONOIWA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "GOZU": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Has a non-telegraphed, no cast bar swipe and line attack. When you see him suspiciously turn away from the tank, make sure to get out of the way!<br/>He also has a fear mechanic, and summons pulsing bombs on the floor alongside a proximity AOE. When solo, the fear will lead to a <b>100% death</b>, so don’t be greedy!"
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-KAMAKIRI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
+        "IMMELSSÄULEN-NAGA": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-TOKAGEKIBA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-KAMANARI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+        "HIMMELSSÄULEN-KONGOREI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a self-destruct enrage that’s instant. When solo, avoid running into rooms with one of these on you, in the event you get Ottered (which usually leads to death anyway)"},
+        "HIMMELSSÄULEN-TESSO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-TETSU-KYOJIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MARUISHI": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Spams big line aoes but doesn’t bother autoattacking. These hit for 40K+, one shotting DPS/healers, so be very careful."},
+        "HIMMELSSÄULEN-SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-DOKYU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-GOWAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-KARAKURI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-RACHIMONAI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Does random AOE damage across rooms (instant, nontelegraphed). If there are some in the rooms near you, make sure you kill them first or avoid them - they can do a lot of unexpected, random damage!"},
+        "SUIKAZURA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Telegraphs. Telegraphs everywhere. Lines, doughnuts, circles, you name it! Just dodge them and you’ll be fine. Every now and then he will cast a global AOE, followed by line AOEs coming out of every staff.<br/>The middle is always a safespot, for the staff doughnuts before the global AOE, but remember to bait the Fire II somewhere else before running there. Staying in the middle makes an easy pattern to dodge out of the lines as well."
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-ONRYO": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
+        "HIMMELSSÄULEN-WAKAKUSA": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
+        "HIMMELSSÄULEN-JUBOKKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MANNENSO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-IWAMUSHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-QUALLE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-DOGUZERI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+        "HIMMELSSÄULEN-KOSODEGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SHITAIBANA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MORBOL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-CHIZAKURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-PENGHOU": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
+        "HIMMELSSÄULEN-HASHIRI-DOKORO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
+        "KENKO": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Every once in a while, creates a puddle on a player with the Innerspace ability. This puddle applies the Minimum debuff, which you need to dodge the line targeted AOE Hound out of hell. If you do not have the minimum debuff, you will get one shot. Make sure to also get out of the the minimum debuff after the Devour skill goes off, or it will hurt.<br/>Be careful of the non-telegraphed frontal cleave, which is the first skill he will use in the rotation."
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-ICHIJAMA": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
+        "HIMMELSSÄULEN-SHIKUBI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-NOYAGI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-HYOGA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a large roomwide frontal cone that 1 shots, and a fear"},
+        "HIMMELSSÄULEN-OKAMI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They have a double auto with a nasty DOT. They’re really not fun to fight solo, steel is pretty much required on RDM (strength recommended as well)."},
+        "HIMMELSSÄULEN-YUKI-TOKAGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-HYOZAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-MAMMUT": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Deals half-roomwide damage when not in combat (around 7K).<br/>After pulling people in with <b>Wooly Inspiration</b>, uses an instant conal attack that one-shots anyone in front of it."},
+        "HIMMELSSÄULEN-JUJISHI": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Has a double auto that hurts quite a bit, and a <b>VERY FAST-CASTING ENRAGE “Winds of Winter”</b> that is likely to kill everyone it hits (it also applies a DOT and gives the griffin a haste buff). This can be avoided through <b>Line of Sight</b>, so fight it behind a corner and seek cover when it goes off.<br/>The enrage happens after <b>30 seconds</b>. It is <b>stunnable</b>."},
+        "HIMMELSSÄULEN-SHIRO-JISHI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Large stunnable AOE and double autoattack. Due to the double auto, I wouldn’t fight this solo without <b>Steel</b>."},
+        "HIMMELSSÄULEN-TOFU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Don’t let them buff (Magic Tongue) or they will really hurt, especially for lower aetherpool levels. Note that these can still autoattack, so being in melee range means you essentially take double damage. You can <b>line of sight</b> the Blizzard casts, but note you will still take autos if they’re close."},
+        "HIMMELSSÄULEN-YUKI-OTOKO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a really big, but <b>stunnable</b>, AOE that can be LoSed (<b>Northerlies</b>). Also has a quick (and large) conal attack, so don’t kite too far."},
+        "HIMMELSSÄULEN-YAK": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They only autoattack for a while, and then after 30 seconds they will enrage, pulling everyone in (and applying a heavy) and then stomping on them for lethal damage."},
+        "KAJIGAKAKA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "Summons balls of ice that explode, untelegraphed, after a period of time. An icicle will also appear, shooting through the middle of the room. <b>Any balls hit by the icicle will explode, and any balls hit by exploding balls will also explode (domino effect)</b>. When in doubt, <b>STAY AWAY FROM THE ICE BALLS AS THE ICICLE RESOLVES</b>. Make sure you are also away from the remaining balls when the <b>Lunar Cry</b> skill finishes, or you will receive deep freeze and die if solo. After Lunar Cry, he will randomly jumps to targets and bites them for 8K damage (1 shot if frozen). Not too hard besides that!"
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-GARULA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
+        "HIMMELSSÄULEN-ROWAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
+        "HIMMELSSÄULEN-MATANGA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Can crit for 90% HP at start, get heals ready, and afterwards it’s not so bad (16K auto/24K crit)."},
+        "HIMMELSSÄULEN-MUKAI-INU": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "The <b>Dragon’s voice = run inside, and Ram’s voice = run away</b>."},
+        "HIMMELSSÄULEN-GOZU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Untelegraphed attack on a random player (XX-tonze swipe), which is a HUGE cone (can be LoSed). Also has a fear."},
+        "HIMMELSSÄULEN-RYUKOTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-RYUJIN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
+        "HIMMELSSÄULEN-SHINZEI": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Double AA that does heavy damage and applies a DOT. Targeted Thunder II that does AOE damage 4x on a target (only 8K per hit) and applies another DOT."},
+        "HIMMELSSÄULEN-HITOTSUME": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "100 tonze swing (untelegraphed point blank AOE), and glower (untelegraphed line AOE in front)"},
+        "HIMMELSSÄULEN-RAKSHASA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charges, buffs itself with damage up, and has an untelegraphed frontal swipe <b>“Ripper Claw”</b>.<br/>When buffed, can auto for 30K crits. Be very careful, and kite well."},
+        "HIMMELSSÄULEN-KOKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "A few telegraphs, and then a roomwide unavoidable (?) vuln stack + light damage. Easy kill."},
+        "HIMMELSSÄULEN-ENKO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
+        "HIMMELSSÄULEN-ARARAGI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "AOE stacking poison. Can be LoSed with good timing."},
+        "ONRA": 
+        {
+            "DangerLevel": "Easy",
+            "AggroType": "Proximity",
+            "Notes": "There will <b>always</b> be a safespot in the north-eastern corner. As such, stand slightly north of 3’o’clock and let him auto you once after dropping casting <b>Ancient Quaga</b>. He will cast <b>Meteor Impact</b> - stay closeby for a bit as you bait the line, and move up near 12’o’clock to get away from the Meteor damage. After the meteor resolves, you can move back to 3’o’clock in preparation for the next rotation."
+        }
+    },
+    {
+        "ZUCKEND SCHNAPPTRUHE": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
+        "KORRIGANE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*."},
+    
+        "HIMMELSSÄULEN-GOZU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
+        "HIMMELSSÄULEN-JAKI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},
+        "HIMMELSSÄULEN-NUPPEPPO": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "WAR: <b>Impossible</b><br/>MNK: Caution. Buffs itself with haste, and eventually does a double-auto that applies a DOT.<br/>WHM: Caution. WHM Nuppeppos are still scary for solo. 24K stone crits! Note that you CAN LoS the stone casts, but you need to time it well. "},
+        "HIMMELSSÄULEN-MIFUNE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Autos cleave for around 20K without steel (no double auto). The targeted line AOE does 55K damage to non-tanks. <b>Can be LoSed</b>."},
+        "HIMMELSSÄULEN-KUBINASHI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a lifesteal effect that it uses shortly after entering combat, as well as an instant frontal cleave that deals ~25K damage. Constantly gains a stacking damage up buff. Upon reaching 3 stacks, uses <b>Black Nebula</b>, a roomwide enrage one shot."},
+        "HIMMELSSÄULEN-KYOZO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Buffs itself with defense up. Funnily enough, this overlaps the <b>Gloom</b> defense buff, and when it wears off, so does the real Gloom defense buff!"},
+        "HIMMELSSÄULEN-ZENKI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-JINBA": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a permanently stacking damage buff, and a MASSIVE AOE (like, bigger than Wraith “Scream” AOEs). Also has a fear."},
+        "HIMMELSSÄULEN-TENMA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a nontelegraphed line AOE used on a random player, as well as a huge AOE (Wraith-sized). Also has a double-auto."},
+        "HIMMELSSÄULEN-KURO-KISHI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
+        "HIMMELSSÄULEN-DODO": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "*Good Luck*"}
+    }
+]
+}

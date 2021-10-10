@@ -134,22 +134,23 @@
 
     DDO.ParsePomsAndTraps = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
-        var pomTrapName = data[5].toUpperCase();
+        let pomTrapName = data[5].toUpperCase();
+        let pomTrapID = data[4];
         // Check for traps
-        if (data[3].toUpperCase() == parseStrings.Trap && pomTrapName != parseStrings.WeaponEnhancement && pomTrapName != parseStrings.GearEnhancement){
-            if (pomTrapName == parseStrings.Detonator)
+        if (data[3].toUpperCase() == parseStrings.Trap && pomTrapID != DDO.TrapInfo.WeaponEnhancementTrapId && pomTrapID != DDO.TrapInfo.GearEnhancementTrapId){
+            if (pomTrapID == DDO.TrapInfo.DetonatorTrapId)
             {
-                DDO.currentFloorStats.chestCount = Math.max(0, (DDO.currentFloorStats.chestCount - 1) || 0);
-                DDO.currentFloorSetStats.chestCount = Math.max(0, (DDO.currentFloorSetStats.chestCount - 1) || 0);
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = Math.max(0, DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1);
+                DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || -1;
+                DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || -1;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1;
                 
-                DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
-                DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
-                DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
+                DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
+                DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
+                DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
                 DDO.UpdateScore();
             }
             else{
-                var trapID = data[0];
+                var trapID = data[2];
                 if (!DDO.triggeredTraps.includes(trapID)){
                     DDO.triggeredTraps.push(trapID);
 
@@ -166,7 +167,7 @@
         }
         // Check for Pomanders
         else if (pomTrapName.includes(parseStrings.Pomander)){
-            if (pomTrapName == parseStrings.PomanderOfSight && !DDO.sightActive){
+            if (pomTrapID == DDO.PomanderInfo.PomanderOfSight && !DDO.sightActive){
                 DDO.sightActive = true;
                 DDO.DataElements.PomSightDisabledImage.style.display = "none";
                 DDO.DataElements.PomSightEnabledImage.style.display = "";
@@ -180,21 +181,21 @@
                 DDO.currentFloorStats.roomRevealCount = 0;
                 DDO.UpdateScore();
             }
-            else if(pomTrapName == parseStrings.PomanderOfSafety && !DDO.safetyActive){
+            else if(pomTrapID == DDO.PomanderInfo.PomanderOfSafety && !DDO.safetyActive){
                 DDO.DataElements.PomSafetyDisabledImage.style.display = "none";
                 DDO.DataElements.PomSafetyEnabledImage.style.display = "";
             }
-            else if (pomTrapName == parseStrings.PomanderOfAffluence){
+            else if (pomTrapID == DDO.PomanderInfo.PomanderOfAffluence){
                 DDO.affluenceActive = true;
             }
-            else if (pomTrapName == parseStrings.PomanderOfAlteration){
+            else if (pomTrapID == DDO.PomanderInfo.PomanderOfAlteration){
                 DDO.alterationActive = true;
             }
-            else if (pomTrapName == parseStrings.PomanderOfFlight){
+            else if (pomTrapID == DDO.PomanderInfo.PomanderOfFlight){
                 DDO.flightActive = true;
             }
             // If a Serenity is used we decrement enchantment counts, assuming we have any
-            else if (pomTrapName == parseStrings.PomanderOfSerenity && DDO.currentFloorStats.enchantmentCount){
+            else if (pomTrapID == DDO.PomanderInfo.PomanderOfSerenity && DDO.currentFloorStats.enchantmentCount){
                 DDO.currentFloorSetStats.enchantmentCount -= DDO.currentFloorStats.enchantmentCount;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount -= DDO.currentFloorStats.enchantmentCount;
                 DDO.currentFloorStats.enchantmentCount = 0;
@@ -204,7 +205,7 @@
                 DDO.DataElements.EnchantmentsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount;
                 DDO.UpdateScore();
             }
-            else if (pomTrapName == parseStrings.PomanderOfRaising){
+            else if (pomTrapID == DDO.PomanderInfo.PomanderOfRaising){
                 DDO.raisingActive = true;
             }
         }
@@ -269,14 +270,14 @@
             DDO.DataElements.EnchantmentsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount;
             DDO.UpdateScore();
         }
-        else if (logMessage.includes(parseStrings.BaresItsFangs)){
-            DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || 0;
-            DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || 0;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = Math.max(0, DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1);
+        else if (logMessage.includes(parseStrings.BaresItsFangsPOTD) || logMessage.includes(parseStrings.BaresItsFangsHOH)){
+            DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || -1;
+            DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || -1;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1;
             
-            DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
-            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
-            DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
+            DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
+            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0? 0 : DDO.currentFloorSetStats.chestCount;
+            DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
             DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;

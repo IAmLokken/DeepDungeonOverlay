@@ -1,0 +1,69 @@
+{
+    "UIStrings":
+    {
+        "ScoreLabel": "Score: ",
+        "CurrentlyActiveLabel": "Pomanders Currently Active",
+        "FloorLabel": "Floor",
+        "SetLabel": "Set",
+        "TotalLabel": "Total",
+        "MonstersLabel": "Monsters",
+        "MimicsLabel": "Mimics",
+        "TrapsLabel": "Traps",
+        "ChestsLabel": "Chests",
+        "EnchantmentsLabel": "Enchantments",
+        "RareMonstersLabel": "Rare Monsters",
+        "SpeedRunsLabel": "Speed Runs",
+        "CurrentTargetLabel": "Current Target",
+        "HPPLabel": "Hp %",
+        "DangerLabel": "Danger Level",
+        "AggroLabel" : "Aggro Type",
+        "NoTargetLabel": "No Target",
+        "POTDButton": "Clear PotD Saves",
+        "HOHButton": "Clear HoH Saves",
+        "ButtonInfo": "This window will display Deep Dungeon information while in a Deep Dungeon run.  While not in a Deep Dungeon run you can use the below buttons to clear save information stored by this overlay."
+    },
+    "BossNames":
+    [
+        "モウジャブネ" , "ベッチョウ",  "ヒルコ", "ビーマ", "ゴズ", "スイカズラ", "ケンコ", "カジガカカ", "オンラ",
+        "パレス・デスゲイズ", "スパージ", "ニンギジッダ", "イシュタム", "漆黒のエッダ", "ブラックライダー", "ヤクアル", "グアンナ", "ビッグマザーボム", "屍術師ニバス",
+        "アリカント", "キールティムカ", "アルファルド", "ア・プチ", "ティーシポネー", "トーリスリッター", "ユルング", "デンダインゾネ", "ゴッドファザーボム"
+    ],
+    "RareMonsterNames":
+    [
+        "古株風の幻術士", "古株風の弓術士", "古株風の格闘士", "冒険者風の剣術士", "冒険者風の幻術士", "冒険者風の槍術士",
+        "外道風の斧術士", "海賊風の斧術士", "イシュガルド風の槍術士", "シェーダー族の槍術士", "豪商風のララフェル族", "審問官風の法術士", "悪党風の商人",
+		"アラミゴ風の技術兵", "白き鎧の帝国将校", "黒き鎧の帝国将校", "異形の船長", "黒渦団風の船長", "富豪風のエレゼン族", "鉱夫風の巨人族",
+		"操縦士風の帝国兵", "名家風の騎士", "闇商人風の老人", "不滅隊風の剣術士"
+    ],
+    "EnchantmentNames":
+    [
+        "ＨＰ自然回復無効",  "暗闇", "ダメージ低下", "最大ＨＰアップ＆最大ＭＰアップ", "最大ＨＰダウン", "能力がない", "アイテム禁止", "ノックバック無効", "スプリント禁止", "ヘイスト",
+        "スプリント", "魔石使用禁止", "No Items", "アビリティ不可"
+    ],
+    "ParseStrings":
+    {
+        "CurrentInstancePOTD": "The Palace of the Dead",
+        "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
+        "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "QuiveringCoffer": "うごめく宝箱",
+        "Mimic": "ミミック",
+        "Korrigan": "コリガン",
+        "Mandragora": "マンドラゴラ",
+        "Pygmaioi": "ピグマイオイ",
+        "Trap": "罠起動",
+        "Detonator": "大爆発",
+        "Pomander": "魔土器",
+        "BaresItsFangsPOTD": "...bares its fangs!",
+        "BaresItsFangsHOH": "...bares its fangs!",
+        "Magicite": "魔石",
+        "Obtain": "obtain",
+        "ThirtyMinutesRemaining": "30 minutes remaining",
+        "Gloom": "The gathering gloom",
+        "PhoenixDown": "フェニックスの尾",
+        "Transference": "Transference initiated!",
+        "EmpyreanReliquary": "天之聖遺物",
+        "GlassPumpkin": "ガラスのカボチャ",
+        "Firecrest": "ファイアクレスト"        
+    }
+}
