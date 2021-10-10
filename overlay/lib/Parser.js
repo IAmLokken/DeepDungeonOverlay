@@ -38,7 +38,7 @@
     
     DDO.ParseKill = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
-        let nameOfMob = data[3];
+        let nameOfMob = data[3].toUpperCase();
         // Check for mimic
         if (nameOfMob == parseStrings.QuiveringCoffer || nameOfMob == parseStrings.Mimic){
             DDO.currentFloorStats.mimicCount = (DDO.currentFloorStats.mimicCount + 1) || 1;
@@ -79,7 +79,7 @@
             DDO.UpdateScore();
         }
         // Check for player death
-        else if (nameOfMob == DDO.playerName){
+        else if (nameOfMob == DDO.playerName.toUpperCase()){
             if (DDO.raisingActive){
                 DDO.raisingActive = false;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRezCount++;
@@ -134,9 +134,9 @@
 
     DDO.ParsePomsAndTraps = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
-        var pomTrapName = data[5];
+        var pomTrapName = data[5].toUpperCase();
         // Check for traps
-        if (data[3] == parseStrings.Trap && pomTrapName != parseStrings.WeaponEnhancement && pomTrapName != parseStrings.GearEnhancement){
+        if (data[3].toUpperCase() == parseStrings.Trap && pomTrapName != parseStrings.WeaponEnhancement && pomTrapName != parseStrings.GearEnhancement){
             if (pomTrapName == parseStrings.Detonator)
             {
                 DDO.currentFloorStats.chestCount = Math.max(0, (DDO.currentFloorStats.chestCount - 1) || 0);
@@ -211,7 +211,7 @@
     }
 
     DDO.ParseEnchantments = function(data){
-        if(!DDO.enchantmentsApplied.includes(data[2]) && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].EnchantmentNames.includes(data[3]) && data[5] == 'E0000000'){
+        if(!DDO.enchantmentsApplied.includes(data[2]) && DDO.EnchantmentIds.includes(data[2]) && data[5] == 'E0000000'){
             DDO.enchantmentsApplied.push(data[2]);
 
             DDO.currentFloorStats.enchantmentCount = (DDO.currentFloorStats.enchantmentCount + 1) || 1;
@@ -227,7 +227,6 @@
 
     DDO.ParseChestsAndMap = function(data){
         if(data[2].includes('8003')){
-            let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
             if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
                 if (!DDO.sightActive){                
                     DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
@@ -252,13 +251,15 @@
 
     DDO.ParseLogLine = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
-        if (data[4].includes(parseStrings.ThirtyMinutesRemaining)){
+        let logMessage = data[4].toUpperCase();
+        if (logMessage.includes(parseStrings.ThirtyMinutesRemaining)){
             DDO.speedRunBonus = false;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount--;
             DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
             DDO.UpdateScore();
         }
-        else if (data[4].includes(parseStrings.Gloom)){
+        else if (logMessage.includes(parseStrings.Gloom)){
+            
             DDO.currentFloorStats.enchantmentCount = (DDO.currentFloorStats.enchantmentCount + 1) || 1;
             DDO.currentFloorSetStats.enchantmentCount = (DDO.currentFloorSetStats.enchantmentCount + 1) || 1;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount++;
@@ -268,7 +269,7 @@
             DDO.DataElements.EnchantmentsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount;
             DDO.UpdateScore();
         }
-        else if (data[4].includes(parseStrings.BaresItsFangs)){
+        else if (logMessage.includes(parseStrings.BaresItsFangs)){
             DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || 0;
             DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || 0;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = Math.max(0, DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1);
@@ -277,7 +278,7 @@
             DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
-        else if (data[4].includes(parseStrings.EmpyreanReliquary) || data[4].includes(parseStrings.GlassPumpkin) || data[4].includes(parseStrings.Firecrest)){
+        else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
             DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
             // Update the last floor cleared
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor;
@@ -299,7 +300,7 @@
             // Save the run
             DDO.SaveRuns();
         }
-        else if (data[4].includes(parseStrings.Transference)){ 
+        else if (logMessage.includes(parseStrings.Transference)){ 
             if (!DDO.sightActive){
                 // If we are in POTD and on floor 1-9 and at room reveal count 4 its a full clear
                 // Or if we have 12 rooms revealed we are in a big room in HOH so full clear

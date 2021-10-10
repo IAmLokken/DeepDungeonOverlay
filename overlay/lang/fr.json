@@ -1,0 +1,78 @@
+{
+    "UIStrings":
+    {
+        "ScoreLabel": "Score: ",
+        "CurrentlyActiveLabel": "Poteries magiques actives",
+        "FloorLabel": "Étage",
+        "SetLabel": "Set",
+        "TotalLabel": "Total",
+        "MonstersLabel": "Monstres",
+        "MimicsLabel": "Mimics",
+        "TrapsLabel": "Pièges",
+        "ChestsLabel": "Coffres",
+        "EnchantmentsLabel": "Enchantements",
+        "RareMonstersLabel": "Monstres rares",
+        "SpeedRunsLabel": "Speed runs",
+        "CurrentTargetLabel": "Cible actuelle",
+        "HPPLabel": "% PV",
+        "DangerLabel": "Niveau de danger",
+        "AggroLabel" : "Type d'aggro",
+        "NoTargetLabel": "Pas de cible",
+        "POTDButton": "Effacer les sauvegardes du PdM",
+        "HOHButton": "Effacer les sauvegardes du PdC",
+        "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon."
+    },
+    "BossNames":
+    [
+        "MÔJABUNE", "BECCHÔ", "HIRUKO", "BHIMA", "GOZU", "SUIKAZURA", "KENKO", "KAJIGAKAKA", "ONRA",
+        "MORTALIS DU PALAIS", "EUPHORBE", "NINGISHZIDA", "IXTAB", "EDDA CŒUR-NOIR", "CAVALIER NOIR", "YAQUARU", "GUDANNA", "MAMIE BOMBO", "NYBETH OBDILORD",
+        "ALICANTO", "KIRTIMUKHA", "ALFARD", "AH PUCH", "TISIPHONE", "TODESRITTER", "YULUNGGU", "DENDAINSONNE", "PARRAIN BOMBO"
+    ],
+    "RareMonsterNames":
+    [
+        "ÉLÉMENTALISTE VAGUEMENT FAMILIÈRE", "ARCHER QUASIMENT OUBLIÉ", "PUGILISTE IMMÉMORÉ", "AVENTURIER GLADIATEUR", "AVENTURIER ÉLÉMENTALISTE", "AVENTURIER LANCIER",
+        "MARAUDEUR DÉPRAVÉ", "MARAUDEUR DES MERS", "MAÎTRE D'HAST ISHGARDAIS", "MAÎTRE D'HAST CRÉPUSCULAIRE", "MAGNAT LALAFELL", "PSEUDO-INQUISITEUR ISHGARDAIS",
+        "MARCHAND PATIBULAIRE", "TECHNICIEN MHIGOIS", "OFFICIER IMPÉRIAL EN ARMURE BLANCHE", "OFFICIER IMPÉRIAL EN ARMURE NOIRE", "CAPITAINE PIRATE DIFFORME",
+        "CAPITAINE DE NAVIRE LIMSÉEN", "RICHE BARONNE ÉLÉZENNE", "GIGAS MINEUR", "PILOTE IMPÉRIAL", "JEUNE NOBLE ISHGARDAIS", "MARCHAND MYSTÉRIEUX", "GLADIATEUR ULDIEN"
+    ],
+    "EnchantmentNames":
+    [
+        "AUTO-RÉCUPÉRATION DES PV DÉSACTIVÉE", "CÉCITÉ", "MALUS DE DÉGÂTS", "BONUS DE PV ET PM", "PV MAXIMUMS RÉDUITS", "INCAPACITÉ", "OBJETS DÉSACTIVÉS",
+        "RÉSISTANCE AUX PROJECTIONS/ATTRACTIONS", "SPRINT DÉSACTIVÉ", "HÂTE", "SPRINT", "MAGILITHES INUTILISABLES", "NO ITEMS", "AMNÉSIE"
+    ],
+    "ParseStrings":
+    {
+        "CurrentInstancePOTD": "The Palace of the Dead",
+        "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
+        "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "QuiveringCoffer": "COFFRE GIGOTANT",
+        "Mimic": "MIMIC",
+        "Korrigan": "KORRIGAN",
+        "Mandragora": "MANDRAGORA",
+        "Pygmaioi": "PYGMAIOI",
+        "Trap": "PIÈGE",
+        "WeaponEnhancement": "ARME RENFORCÉE",
+        "GearEnhancement": "ARMURE RENFORCÉE",
+        "Detonator": "EXPLOSER",
+        "Pomander": "POTERIE MAGIQUE",
+        "PomanderOfSafety": "POTERIE MAGIQUE DE DÉSAMORÇAGE",
+        "PomanderOfSight": "POTERIE MAGIQUE DE LOCALISATION",
+        "PomanderOfAffluence": "POTERIE MAGIQUE DE DÉCÈLEMENT",
+        "PomanderOfAlteration": "POTERIE MAGIQUE D'AFFAIBLISSEMENT",
+        "PomanderOfFlight": "POTERIE MAGIQUE DE SÉCURISATION",
+        "PomanderOfSerenity": "POTERIE MAGIQUE DE DISSIPATION",
+        "PomanderOfRaising": "POTERIE MAGIQUE DE RÉSURRECTION",
+        "BaresItsFangs": "RÉALITÉ UN COFFRE GIGOTANT!`",
+        "EmpyreanAetherpool": "LE SUBSTRAT",
+        "Magicite": "PIERRES MAGIQUES",
+        "Obtain": "OBTENIR",
+        "ThirtyMinutesRemaining": "IL RESTE 30 MINUTES AVANT",
+        "Gloom": "QUI REND LES ENNEMIS PLUS PUISSANTS.",
+        "PhoenixDown": "QUEUE DE PHÉNIX. VOUS EN POSSÉDEZ DÉJÀ UNE",
+        "Transference": "TÉLÉPORTATION VERS L'ÉTAGE SUIVANT!",
+        "EmpyreanReliquary": "RELIQUE SACRÉE EMPYRÉENNE",
+        "GlassPumpkin": "CITROUILLE DE VERRE",
+        "Firecrest": "CIMIER DE FEU"        
+    }
+}

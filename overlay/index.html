@@ -52,10 +52,19 @@
             displayOverlayLanguage = await callOverlayHandler({call: "getLanguage"});
             
             var displayOverlayLocale = 'en';
-            switch(displayOverlayLanguage)
+            switch(displayOverlayLanguage.language)
             {
                 case 'English':
                     displayOverlayLocale = 'en';
+                    break;
+                case 'French':
+                    displayOverlayLocale = 'fr';
+                    break;
+                case 'Japanese':
+                    displayOverlayLanguage = 'en'; //ja
+                    break;
+                case 'German':
+                    displayOverlayLanguage = 'en'; //de
                     break;
                 default:
                     break;
@@ -88,7 +97,7 @@
             else if(DDO.groupRunUnderway && 
                     !DDO.inbetweenArea && 
                     data.line[0] == '00' &&
-                    data.rawLine.includes(DDO.localeInformation.Languages[localeInformation.CurrentLanguage].ParseStrings['Transference']))
+                    data.rawLine.toUpperCase().includes(DDO.localeInformation.Languages[localeInformation.CurrentLanguage].ParseStrings['Transference']))
             {
                 DDO.currentFloor++;
             }
