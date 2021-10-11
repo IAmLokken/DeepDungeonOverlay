@@ -14,7 +14,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 # Localization
 
-Currently DDO supports Enlgish and French languages. 
+Currently DDO supports Enlgish and French languages.  _This excludes most enemy notes. (English only, currently)_ 
 * French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
 * Japanese translation and support provided by [Chiela](https://twitter.com/certa). They also [stream](https://www.twitch.tv/hurricanechiela)!
 
