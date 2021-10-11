@@ -97,7 +97,7 @@
             else if(DDO.groupRunUnderway && 
                     !DDO.inbetweenArea && 
                     data.line[0] == '00' &&
-                    data.rawLine.toUpperCase().includes(DDO.localeInformation.Languages[localeInformation.CurrentLanguage].ParseStrings['Transference']))
+                    data.rawLine.toUpperCase().includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['Transference']))
             {
                 DDO.currentFloor++;
             }
@@ -118,7 +118,7 @@
         }
         function PartyChanged(data)
         {
-            DDO.isInGroup = data.party.length > 1;
+            DDO.isInGroup = data.party.length > 0;
         }
         function EnmityTargetData(data)
         {
