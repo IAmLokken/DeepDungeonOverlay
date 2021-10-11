@@ -35,6 +35,7 @@
     "冒険者風の幻術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "冒険者風の剣術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
+    "リビング・ウェルク": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・ウラグナイト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・トード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・プリン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},

@@ -35,6 +35,7 @@
     "AVENTURIER ÉLÉMENTALISTE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "AVENTURIER GLADIATEUR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
+    "SANGSUE DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "URAGNITE DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "CRAPAUD DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PUDDING DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},

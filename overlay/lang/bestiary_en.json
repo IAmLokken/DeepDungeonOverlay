@@ -35,6 +35,7 @@
     "STAFF-SPINNING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "SWORD-SWINGING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
+    "LIVING WHELK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALACE URAGNITE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALACE TOAD": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALACE PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},

@@ -35,6 +35,7 @@
     "STABWEDELND ABENTEURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "SCHWERTSCHWINGEND ABENTEURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
+    "BELEBT OBDELLA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALAST-URAGNIT": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALAST-KRÖTE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALAST-PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
