@@ -140,6 +140,7 @@
         if (data[3].toUpperCase() == parseStrings.Trap && pomTrapID != DDO.TrapInfo.WeaponEnhancementTrapId && pomTrapID != DDO.TrapInfo.GearEnhancementTrapId){
             if (pomTrapID == DDO.TrapInfo.DetonatorTrapId)
             {
+                console.log("Detonator hit!");
                 DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || -1;
                 DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || -1;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1;
@@ -241,6 +242,7 @@
                 DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount + 1) || 1;
                 DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount + 1) || 1;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount++;
+                console.log("incremented chests: " + DDO.currentFloorStats.chestCount);
                 
                 DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
                 DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
@@ -260,10 +262,11 @@
             DDO.UpdateScore();
         }
         else if (logMessage.includes(parseStrings.Gloom)){
-            
+            console.log("Gloomed");
             DDO.currentFloorStats.enchantmentCount = (DDO.currentFloorStats.enchantmentCount + 1) || 1;
             DDO.currentFloorSetStats.enchantmentCount = (DDO.currentFloorSetStats.enchantmentCount + 1) || 1;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount++;
+            console.log("decremented chests: " + DDO.currentFloorStats.chestCount);
 
             DDO.DataElements.EnchantmentsFloorValue.innerText = DDO.currentFloorStats.enchantmentCount;
             DDO.DataElements.EnchantmentsSetValue.innerText = DDO.currentFloorSetStats.enchantmentCount;
@@ -271,12 +274,13 @@
             DDO.UpdateScore();
         }
         else if (logMessage.includes(parseStrings.BaresItsFangsPOTD) || logMessage.includes(parseStrings.BaresItsFangsHOH)){
+            console.log("Mimic fangs");
             DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || -1;
             DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || -1;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1;
             
             DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
-            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0? 0 : DDO.currentFloorSetStats.chestCount;
+            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
