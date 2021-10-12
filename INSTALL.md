@@ -17,7 +17,7 @@ It is located under the *FFXIV Settings* Tab under the *Options* group.
 
 	<img src="overlay/docs/Install01.png">
 	
-- Upon initial installation it is suggested to re-size the overaly as displayed below in order to accomodate the size of the overlay changing depending on the enemy selected.
+- Upon initial installation it is suggested to re-size the overaly as displayed below in order to accomodate the size of the overlay changing depending on the enemy selected. Feel free to adjust the size to your preferences however.
 	- Check 'Force white background' in the OverlayPlugin located beneath the URL setting.
 	- Resize the window to roughly match the ratio of the image below.
 	- Un-check 'Force white background'.
