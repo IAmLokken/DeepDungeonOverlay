@@ -14,7 +14,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 # Localization
 
-Currently DDO supports Enlgish and French languages.  _This excludes most enemy notes. (English only, currently)_ 
+Currently DDO supports Enlgish, French, and Japanese languages.  _This excludes most enemy notes. (English only, currently)_ 
 * French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
 * Japanese translation and support provided by [Chiela](https://twitter.com/certa). They also [stream](https://www.twitch.tv/hurricanechiela)!
 
@@ -25,6 +25,7 @@ Currently DDO supports Enlgish and French languages.  _This excludes most enemy 
 # Installation of DDO
 
 Please see [Installation Instructions](INSTALL.md).
+* [Français](overlay/docs/INSTALL_FR.md)
 
 # Current Features
 
@@ -105,6 +106,6 @@ Since the overlay does not know when you delete a save file in game there are tw
 
 # In Development
 
-* Support for Japanese and German languages.
+* Support for German language.
 * An upgrade to the UI/UX is being worked on to improve readability and streamline the current implementation.
 * The scoring algorithm is continuously being tweaked and tested.
