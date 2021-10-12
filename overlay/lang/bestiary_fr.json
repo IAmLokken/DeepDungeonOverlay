@@ -595,8 +595,8 @@
         "COFFRE GIGOTANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
-        "KAMAKIRI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
-        "NAGA DES CIEUX": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
+        "KAMAKIRI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+        "NAGA DES CIEUX": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
         "TOKAGEKIBA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "KAMANARI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
         "KONGÔREI DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a self-destruct enrage that’s instant. When solo, avoid running into rooms with one of these on you, in the event you get Ottered (which usually leads to death anyway)"},

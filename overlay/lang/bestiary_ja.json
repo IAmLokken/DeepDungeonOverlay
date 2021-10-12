@@ -595,8 +595,8 @@
         "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
-        "アメノ・カマキリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
-        "アメノ・ナーガ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": ""},
+        "アメノ・カマキリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
+        "アメノ・ナーガ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
         "アメノ・トカゲキバ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・カマナリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
         "アメノ・コンゴウレイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a self-destruct enrage that’s instant. When solo, avoid running into rooms with one of these on you, in the event you get Ottered (which usually leads to death anyway)"},
