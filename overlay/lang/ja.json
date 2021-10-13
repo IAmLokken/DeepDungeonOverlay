@@ -3,8 +3,8 @@
     {
         "ScoreLabel": "スコア: ",
         "CurrentlyActiveLabel": "効果中の魔土器",
-        "FloorLabel": "現在階層",
-        "SetLabel": "現在階層セット",
+        "FloorLabel": "現在の階層",
+        "SetLabel": "現在の階層セット",
         "TotalLabel": "合計",
         "MonstersLabel": "討伐数",
         "MimicsLabel": "ミミック",
@@ -12,7 +12,7 @@
         "ChestsLabel": "宝箱",
         "EnchantmentsLabel": "魔法効果",
         "RareMonstersLabel": "レアなモンスター",
-        "SpeedRunsLabel": "30分内階層セット",
+        "SpeedRunsLabel": "30分以内の階層セット",
         "CurrentTargetLabel": "現在のターゲット",
         "HPPLabel": "HP %",
         "DangerLabel": "危険度",
@@ -20,7 +20,7 @@
         "NoTargetLabel": "ターゲットがありません",
         "POTDButton": "死者の宮殿のセーブデータをリセットする",
         "HOHButton": "アメノミハシラのセーブデータをリセットする",
-        "ButtonInfo": "ディープダンジョンの中にいると、この画面はDDについて情報が現れます。ディープダンジョン以外いる際には、以下のボタンはこのアプリのセーブデータがリセットできます。"
+        "ButtonInfo": "ディープダンジョンの中にいると、この画面はDDについての情報を表示します。ディープダンジョン以外にいる際には、以下のボタンでこのアプリのセーブデータがリセットできます。"
     },
     "BossNames":
     [
