@@ -72,7 +72,8 @@ body, html {
 #score,
 #statistics,
 #targetinfo,
-#header{
+#header,
+label{
     color: lightgray;
     font-weight: bold;            
 }
@@ -134,7 +135,25 @@ th,
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
-    padding-bottom:5px;
+    padding-bottom:10px;
+    color:white;
+    border-bottom: 2px solid;
+}
+
+#settings{
+    background-color: rgb(0, 0, 70);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom:5px;
+    color:white;
 }
 
 button{

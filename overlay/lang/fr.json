@@ -20,7 +20,8 @@
         "NoTargetLabel": "Pas de cible",
         "POTDButton": "Effacer les sauvegardes du PdM",
         "HOHButton": "Effacer les sauvegardes du PdC",
-        "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon."
+        "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon.",
+        "MapSettingInfo": "Check here if you want the score calculation to assume full map clears during your run."
     },
     "BossNames":
     [

@@ -2,14 +2,14 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Cactuar-1.1" />    
+    <link rel="stylesheet" href="css/display.css?v=Cactuar-1.2" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Cactuar-1.1"></script>
-    <script src="lib/Locale.js?v=Cactuar-1.1"></script>
-    <script src="lib/Bestiary.js?v=Cactuar-1.1"></script>
-    <script src="lib/Parser.js?v=Cactuar-1.1"></script>
-    <script src="lib/Calculator.js?v=Cactuar-1.1"></script>
+    <script src="lib/DDO.js?v=Cactuar-1.2"></script>
+    <script src="lib/Locale.js?v=Cactuar-1.2"></script>
+    <script src="lib/Bestiary.js?v=Cactuar-1.2"></script>
+    <script src="lib/Parser.js?v=Cactuar-1.2"></script>
+    <script src="lib/Calculator.js?v=Cactuar-1.2"></script>
 
     <script>
 
@@ -42,11 +42,12 @@
 
             var config = await callOverlayHandler({call: "loadData", key: "DDO_Config"});
             if (!config || config.$isNull){
-                await DDO.SetDefaultConfig();
+                await DDO.SetDefaultConfig();                
             }
             else{
                  DDO.Config = JSON.parse(config.data);
-            }            
+            }
+            DDO.InitializeConfig();            
 
             var displayOverlayLanguage;
             displayOverlayLanguage = await callOverlayHandler({call: "getLanguage"});
@@ -151,6 +152,11 @@
     <div id="saveManager">
         <button type="button" id="POTDButton" class="Translate" onclick="DDO.ClearPOTDSaves()"></button>
         <button type="button" id="HOHButton" class="Translate" onclick="DDO.ClearHOHSaves()"></button>
+    </div>
+
+    <div id="settings">
+        <input type="checkbox" id="MapClearCheckBox" name="MapClearCheckBox" onchange="DDO.EnableDisableSetting(checked, 'assumeFullMapClear', true)" />
+        <label for="MapClearCheckBox" id="MapSettingInfo" class="Translate">-</label>
     </div>
     
     <table id="score">

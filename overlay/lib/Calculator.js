@@ -30,7 +30,7 @@
 
         let score = 0;
 
-        let floorStoppedOn = saveFile.floorStartedOn > saveFile.lastFloorCleared ? saveFile.floorStartedOn : saveFile.lastFloorCleared;
+        let floorStoppedOn = saveFile.floorStartedOn > saveFile.floorMaxScore ? saveFile.floorStartedOn : saveFile.floorMaxScore;
 
         DDO.ScoreCalculator.characterLevelScore = ((DDO.ScoreCalculator.aetherpoolArm + DDO.ScoreCalculator.aetherpoolArmor) * 10) + (playerLevel * 500);
         DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel);
@@ -57,7 +57,7 @@
         else
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore;
 
-        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.deepDungeonName);
+        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.deepDungeonName);
 
         score += DDO.ScoreCalculator.killScore;
         
@@ -74,7 +74,7 @@
         score += 430 * (currentFloorNumber - floorStartedOn);
 
         if (playerLevel > 61 && currentFloorNumber - floorStartedOn + 1 > 20)
-            score += (49 * 91);
+            score += (49 * dutyClearFailed);
 
         score += (currentFloorNumber - (floorStartedOn + Math.floor((currentFloorNumber - floorStartedOn) / 10))) * 50 * 91;
 
@@ -92,6 +92,11 @@
                 score += 450 * dutyClearFailed;
             if (val / (dutyClearFailed * 250) >= (5 - Math.floor(floorStartedOn / 10)))
                 score += 100 * dutyClearFailed;
+
+            if (currentFloorNumber - floorStartedOn + 1 == 30 && dutyClearFailed == 101)
+                score += -1000;
+            if (currentFloorNumber - floorStartedOn + 1 == 100 && dutyClearFailed == 101)
+                score += -4500 + 400000;
         }
         else
         {
@@ -104,7 +109,7 @@
             if (floorStartedOn == 1)
             {
                 if (currentFloorNumber > 30 || (currentFloorNumber == 30 && dutyClearFailed == 101))
-                    score += dutyClearFailed * 0 * 0; // Always adds nothing; this would be maybe to give extra points for floor 30 HoH boss??
+                    score += dutyClearFailed * 0 * 0; 
                 if (currentFloorNumber > 50 || (currentFloorNumber == 50 && dutyClearFailed == 101))
                     score += dutyClearFailed * 450;
             }
@@ -115,7 +120,7 @@
             if (currentFloorNumber - floorStartedOn + 1 == 50 && dutyClearFailed == 101)
                 score += -2000;
             if (currentFloorNumber - floorStartedOn + 1 == 200 && dutyClearFailed == 101)
-                score += -4500 + 0;  //Always adds nothing; this possibly for any differences in floor 200 duty complete since its not been tested that high
+                score += -4500 + 500000;  
         }
 
         if (playerLevel < 61)
@@ -212,23 +217,68 @@
         return score;
     }
     
-    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, deepDungeonName){
+    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, mimicKills, deepDungeonName){
         let score = 0;
 
+        // On odd floor sets mobs are worth bonus points (except mimics and korrigans)
         if (deepDungeonName == 'Heaven-on-High'){
             for(var i = 0; i < 10; i++){
-                let multiplier = (i + 1) % 2 == 0 ? 191 : 100;
-                score += (multiplier + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
+                let oddSet = (i + 1) % 2 != 0 ? true : false;
+                if (oddSet){
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
+                }
+                else{
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * mimicKills[i];
+                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - mimicKills[i]);
+                }
             }            
         }
+        // Above floor 100 mobs are worth bonus points (except mimics and korrigans)
         else
         {
             for (var i = 0; i < 20; i++)
             {
-                score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
+                if (i < 10){
+                    score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
+                }
+                else{
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * mimicKills[i];
+                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - mimicKills[i]);
+                }
             }
         }
         return score;
+    }
+
+    DDO.ScoreCalculator.CalculateRoomRevealEstimate = function(roomRevealCounts, deepDungeonName){
+        let score = 0;
+
+        let floorSetIndex = Math.floor(DDO.currentFloor / 10);
+        if (deepDungeonName == 'Heaven-on-High'){
+            let range = DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
+            for (var i = 0; i < 10; i++){
+                score += roomRevealCounts[i] * range[2];
+            }
+        }
+        else
+        {
+            let range = DDO.RoomRangesPOTD[floorSetIndex].split(':').map(Number);
+            for (var i = 0; i < 20; i++){
+                score += roomRevealCounts[i] * range[2];
+            }  
+        }
+        return score;
+    }
+
+    DDO.ScoreCalculator.CalculateMaxRoomReveal = function(currentSave, dutyClearFailed){
+        let score = 0;
+        let mapRevealsEarned = currentSave.currentMapRevealCount;
+        let totalPossibleMapReveals = (DDO.currentFloor - currentSave.floorStartedOn + 1) - (Math.floor((DDO.currentFloor - currentSave.floorStartedOn + 1) / 10));
+
+        let mapRevealsToAdd = totalPossibleMapReveals - mapRevealsEarned;
+
+        return  dutyClearFailed * mapRevealsToAdd * 25;
+
     }
 
 })()

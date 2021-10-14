@@ -30,6 +30,9 @@
         PomanderOfRaising: "1AD4"
     };
 
+    DDO.RoomRangesPOTD = ['4:4:0', '3:6:421', '3:6:421', '3:6:421', '4:6:421', '3:6:421', '3:6:421', '3:6:421', '3:6:421', '4:6:421', '5:7:361', '5:7:361', '5:7:361', '5:7:361', '5:7:361', '5:8:316', '5:8:316', '5:8:316', '5:8:316', '5:8:316'];
+    DDO.RoomRangesHOH  = ['3:6:421', '3:6:421', '3:6:421', '5:7:361', '5:7:361', '5:8:316', '5:8:316', '5:8:316', '5:8:316', '5:8:316'];
+
     DDO.playerName = "NULL";
     DDO.playerWorld = "NULL";
     DDO.playerJob = 0;
@@ -67,6 +70,8 @@
         DDO.Config.pomandersVisible = true;
         DDO.Config.statsVisible = true;
         DDO.Config.bestiaryVisible = true;
+        DDO.Config.assumeFullMapClear = false;        
+
         await callOverlayHandler({call: "saveData", key: "DDO_Config", data: JSON.stringify(DDO.Config)}); 
     }
 
@@ -76,7 +81,17 @@
         DDO.Config.pomandersVisible = DDO.DataElements.PomandersCheckBoxValue.checked;
         DDO.Config.statsVisible = DDO.DataElements.StatisticsCheckBoxValue.checked;
         DDO.Config.bestiaryVisible = DDO.DataElements.BestiaryCheckBoxValue.checked;
+        DDO.Config.assumeFullMapClear = DDO.DataElements.MapClearCheckBoxValue.checked;
         await callOverlayHandler({call: "saveData", key: "DDO_Config", data: JSON.stringify(DDO.Config)}); 
+    }
+
+    DDO.InitializeConfig = function()
+    {
+        DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
+        DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
+        DDO.DataElements.StatisticsCheckBoxValue.checked = DDO.Config.statsVisible;
+        DDO.DataElements.BestiaryCheckBoxValue.checked = DDO.Config.bestiaryVisible;
+        DDO.DataElements.MapClearCheckBoxValue.checked = DDO.Config.assumeFullMapClear;
     }
 
     DDO.LoadConfig = function(instanceName)
@@ -92,10 +107,10 @@
             else if (DDO.soloRunUnderway && DDO.inbetweenArea){
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor + 9;           
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();           
                 DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[0]++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;     
                 DDO.StartFloorSetUI();                
             }
@@ -107,11 +122,10 @@
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
                 DDO.LoadSave();
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].lastFloorCleared = DDO.currentFloor + 9;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;                 
                 DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
                 DDO.StartFloorSetUI();
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
                 DDO.LoadPartyConfig();
@@ -151,6 +165,7 @@
     {
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
+        DDO.EnableDisableElement(false, 'settings', false);
         DDO.EnableDisableElement(true, 'config', false);   
 
         DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
@@ -169,6 +184,7 @@
         DDO.EnableDisableElement(false, 'config', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
+        DDO.EnableDisableElement(false, 'settings', false);
         DDO.EnableDisableElement(false, 'score', false);
         DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
@@ -180,6 +196,7 @@
         DDO.EnableDisableElement(false, 'config', false);
         DDO.EnableDisableElement(true, 'ButtonInfo', false);
         DDO.EnableDisableElement(true, 'saveManager', false);
+        DDO.EnableDisableElement(true, 'settings', false);
         DDO.EnableDisableElement(false, 'score', false);
         DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
@@ -189,6 +206,8 @@
             DDO.DataElements.POTDButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['POTDButton']} (${DDO.SaveFiles['the Palace of the Dead'].length})`;
         if (DDO.SaveFiles['Heaven-on-High'].length > 0 )
             DDO.DataElements.HOHButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['HOHButton']} (${DDO.SaveFiles['Heaven-on-High'].length})`;
+
+        DDO.DataElements.MapClearCheckBoxValue.checked = DDO.Config.assumeFullMapClear;
     }
 
     DDO.LoadSave = function()
@@ -202,6 +221,11 @@
                 DDO.SaveFiles[DDO.currentInstance][i].lastFloorCleared == DDO.currentFloor - 1)
             {
                 DDO.currentSaveFileIndex = i;
+                // This if statement is to include items in the save file that may not have existed when a run was started
+                if(!DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts || DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts){
+                    DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts = new Array(20).fill(0);
+                    DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts = new Array(20).fill(0);
+                }
                 DDO.Snapshot = JSON.parse(JSON.stringify(DDO.SaveFiles[DDO.currentInstance][i]));
                 saveFound = true;
             }
@@ -214,8 +238,11 @@
             newSave.deepDungeonName = DDO.currentInstance;
             newSave.lastFloorCleared = DDO.currentFloor - 1;
             newSave.floorStartedOn = DDO.currentFloor;
+            newSave.floorMaxScore = 0;
             newSave.totalKillCount = 0;
             newSave.floorKillCounts = new Array(20).fill(0);
+            newSave.roomRevealCounts = new Array(20).fill(0);
+            newSave.mimicKillCounts = new Array(20).fill(0);
             newSave.currentSpecialKillCount = 0;
             newSave.currentTrapsTriggered = 0;
             newSave.currentMimicCount = 0;
@@ -276,6 +303,12 @@
             DDO.SaveConfig();
     }
 
+    DDO.EnableDisableSetting = function(enabled, setting, saveConfig){
+        DDO.Config[setting] = enabled;
+        if (saveConfig)
+            DDO.SaveConfig();
+    }
+
     DDO.TurnTargetImagesOff = function()
     {
         DDO.DataElements.DangerEasyImage.style.display = "none";
@@ -320,18 +353,30 @@
             (currentSave.floorStartedOn == 21 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsHOH'].includes(currentSave.deepDungeonName)) ||
             (currentSave.floorStartedOn == 51 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsPOTD'].includes(currentSave.deepDungeonName))
             ){
-                let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, DDO.playerLevel, 101);
+                let playerLevel = DDO.currentInstance == 'Heaven-on-High' ? 70 : 60;
+                let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, playerLevel, 101);
 
-                let roomRevealAddition = currentSave.deepDungeonName == "the Palace of the Dead" ? 
-                                        currentSave.currentRoomRevealCount * 316 : 
-                                        currentSave.currentRoomRevealCount * 316;
-                score += roomRevealAddition;
+                if (DDO.Config.assumeFullMapClear){
+                    score += DDO.ScoreCalculator.CalculateMaxRoomReveal(currentSave, 101);
+                }
+                else{
+                    score += DDO.ScoreCalculator.CalculateRoomRevealEstimate(currentSave.roomRevealCounts, currentSave.deepDungeonName);
+                }
 
                 DDO.DataElements.ScoreValue.innerText = score.toLocaleString();
-            }
-            else{
-                DDO.DataElements.ScoreValue.innerText = '414';
-            }
+        }
+        else{
+            DDO.DataElements.ScoreValue.innerText = '414';
+        }
+    }
+
+    DDO.GetMaxFloorScore = function(){
+        if (DDO.currentInstance == 'Heaven-on-High'){
+            return DDO.currentFloor <= 30 ? 30 : 100;
+        }
+        else{
+            return DDO.currentFloor <= 100 ? 100 : 200;
+        }
     }
 
     DDO.AssignDataElements = function()
@@ -383,6 +428,7 @@
         DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
         DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
         DDO.DataElements.ScoreCheckBoxValue = document.getElementById("CheckBoxScore");
+        DDO.DataElements.MapClearCheckBoxValue = document.getElementById("MapClearCheckBox");
 
         DDO.DataElements.PomSafetyDisabledImage = document.getElementById("PomSafetyDisabled");
         DDO.DataElements.PomSightDisabledImage = document.getElementById("PomSightDisabled");
@@ -396,43 +442,4 @@
         DDO.DataElements.PomAlterationEnabledImage = document.getElementById("PomAlterationEnabled");
         DDO.DataElements.PomFlightEnabledImage = document.getElementById("PomFlightEnabled");            
     }
-
-    DDO.CalculateScoreNoRoomReveal = async function()
-    {
-        let file = "DDT_TEST-HoH.DDT";
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = () => 
-        {
-            if(xhttp.status == 404)
-            {
-                console.log("ERROR: Cannot find save file");
-                return;
-            }
-            if(xhttp.status === 404)
-            {
-                console.log("ERROR: Cannot find save file");
-                return;
-            }
-            if (xhttp.readyState === 4 && xhttp.status === 200) 
-            {
-                var json;
-                try
-                {
-                    json = JSON.parse(xhttp.responseText);     
-                    console.log(json[0]);                       
-                }
-                catch(e)
-                {
-                    return;
-                }
-
-                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json[0], 68, 101);
-                document.getElementById("debugScore").innerText = score.toLocaleString();
-            }
-        };
-
-        xhttp.open('GET', file, true);
-        xhttp.send();    
-    }
-
 })()

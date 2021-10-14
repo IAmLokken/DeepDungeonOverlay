@@ -24,17 +24,6 @@
             DDO.UpdatePlayerInfo(); 
         }        
     }
-
-    DDO.AddKill = function(floorSet){
-        DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
-        DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
-        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
-        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[floorSet]++;
-
-        DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
-        DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
-        DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
-    }
     
     DDO.ParseKill = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
@@ -49,7 +38,7 @@
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount} (${DDO.currentFloorSetStats.korriganCount || 0})`;
             DDO.DataElements.MimicsTotalValue.innerText = `${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount} (${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount})`;
 
-            DDO.AddKill(Math.floor(DDO.currentFloor / 10));
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10), true);
             DDO.UpdateScore();
         }
         // Check for korrigan
@@ -62,7 +51,7 @@
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount || 0} (${DDO.currentFloorSetStats.korriganCount})`;
             DDO.DataElements.MimicsTotalValue.innerText = `${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount} (${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount})`;
 
-            DDO.AddKill(Math.floor(DDO.currentFloor / 10));
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10), true);
             DDO.UpdateScore();
         }
         // Check for rare mob
@@ -75,7 +64,7 @@
             DDO.DataElements.RareMonstersSetValue.innerText = DDO.currentFloorSetStats.rareKillCount;
             DDO.DataElements.RareMonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpecialKillCount;
 
-            DDO.AddKill(Math.floor(DDO.currentFloor / 10));
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10), false);
             DDO.UpdateScore();
         }
         // Check for player death
@@ -96,14 +85,14 @@
         else{
             // Kills on non-boss floors
             if(DDO.currentFloor % 10 != 0){
-                DDO.AddKill(Math.floor(DDO.currentFloor / 10));
+                DDO.AddKill(Math.floor(DDO.currentFloor / 10), false);
                 DDO.UpdateScore();
             }
             // Kills on boss floor
             else{
                 if (DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].BossNames.includes(nameOfMob)){
                     
-                    DDO.AddKill(Math.floor(DDO.currentFloor / 10) - 1);
+                    DDO.AddKill(Math.floor(DDO.currentFloor / 10) - 1, false);
                     
                     DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
 
@@ -172,11 +161,11 @@
                 DDO.sightActive = true;
                 DDO.DataElements.PomSightDisabledImage.style.display = "none";
                 DDO.DataElements.PomSightEnabledImage.style.display = "";
+                
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
 
                 // Remove any revealed room credit for this floor since player will get full score for revealing map
                 if(DDO.currentFloorStats.roomRevealCount){
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                     DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
                 }
                 DDO.currentFloorStats.roomRevealCount = 0;
@@ -233,7 +222,7 @@
                 if (!DDO.sightActive){                
                     DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                     DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                    DDO.EvaluateMap(false);
                     
                     DDO.UpdateScore();
                 }
@@ -304,26 +293,7 @@
         }
         else if (logMessage.includes(parseStrings.Transference)){ 
             if (!DDO.sightActive){
-                // If we are in POTD and on floor 1-9 and at room reveal count 4 its a full clear
-                // Or if we have 12 rooms revealed we are in a big room in HOH so full clear
-                // Or if we have 8 rooms revealed we are in a normal max room floor and award full clear (Not always 100% accurate in HoH)
-                if ( (parseStrings.CurrentInstanceFloorsPOTD.includes(DDO.currentInstance) && DDO.currentFloor < 10 && DDO.currentFloorStats.roomRevealCount == 4) ||
-                    DDO.currentFloorStats.roomRevealCount == 12 ||
-                    DDO.currentFloorStats.roomRevealCount == 8 )
-                {
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                    DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                    DDO.currentFloorStats.roomRevealCount = 0;
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
-                }
-                // If we have revealed less than 3 rooms or more than 8 but not 12 we know its not a full clear
-                else if (DDO.currentFloorStats.roomRevealCount < 3 ||
-                        DDO.currentFloorStats.roomRevealCount > 8)
-                {
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                    DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
-                    DDO.currentFloorStats.roomRevealCount = 0;
-                }
+                DDO.EvaluateMap(true);
             }
             DDO.currentFloor++; 
 
@@ -369,7 +339,7 @@
             if (DDO.currentFloor % 10 > 0){
                 DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRoomRevealCount++;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[Math.floor(DDO.currentFloor / 10)]
             }
 
 
@@ -381,6 +351,48 @@
             DDO.DataElements.RareMonstersFloorValue.innerText = 0;
 
             DDO.UpdateScore();
+        }
+    }
+
+    DDO.AddKill = function(floorSet, isMimic){
+        DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
+        DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
+        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
+        DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[floorSet]++;
+        if (isMimic)
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].mimicKillCounts[floorSet]++;
+
+        DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
+        DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
+        DDO.DataElements.MonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount;
+    }
+
+    DDO.EvaluateMap = function(evaluateMin){
+        if (DDO.currentFloorStats.roomRevealCount == 0 || DDO.sightActive) return; // this function shouldnt be called if these conditions are true but just in case
+
+        let floorSetIndex = Math.floor(DDO.currentFloor / 10);
+        let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
+
+        let range = currentSave.deepDungeonName == 'the Palace of the Dead' ? DDO.RoomRangesPOTD[floorSetIndex].split(':').map(Number) : DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
+        if (!evaluateMin)
+            console.log('We have a map reveal with range: ' + range);
+        else
+            console.log('We have completed the floor with range: ' + range);
+        
+        if (DDO.currentFloorStats.roomRevealCount == range[1] || DDO.currentFloorStats.roomRevealCount == 12){
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[floorSetIndex] = Math.max(0, currentSave.roomRevealCounts[floorSetIndex] - DDO.currentFloorStats.roomRevealCount);
+            DDO.currentFloorSetStats.roomRevealCount -= DDO.currentFloorStats.roomRevealCount;
+            DDO.currentFloorStats.roomRevealCount = 0;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMapRevealCount++;
+        }
+        // Only pass evaluateMin as true when we are transfering and we know we will not uncover anymore rooms on the current floor
+        else if (evaluateMin){
+            if (DDO.currentFloorStats.roomRevealCount < range[0] || DDO.currentFloorStats.roomRevealCount > 8){
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[floorSetIndex] = Math.max(0, currentSave.roomRevealCounts[floorSetIndex] - DDO.currentFloorStats.roomRevealCount);
+            }
+            else {
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[floorSetIndex] += DDO.currentFloorStats.roomRevealCount;
+            }
         }
     }
 
