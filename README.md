@@ -96,14 +96,23 @@ Since the overlay does not know when you delete a save file in game there are tw
 
 # Scoring Details
 
-* The score will only be an estimate for a few reasons:
-    * Magicite can kill monsters that are so far away that they were not loaded on the client and as a result no death message is received for them from the server.
-    * The client does not receive a discernable notification that the current floor's map has been fully revealed so the only way to know if a map is 100% revealed is if a Sight pomander is used.
-    * The overlay can discern when a room is revealed on the map so an average point value is added when a room is revealed.  This value depends on the dungeon and is determined by the max number of rooms a floor can have (8 in PotD, 12 in HoH).
+The score estimate you see when you start a run proactively assumes a few things in order to keep the displayed score as accurate as possible:
+* You have max aetherpool (99/99).
+* You are max level (60/70).
+* You will successfully complete the current run to the next scorecard (30/100/200).
+	
+Speed run bonus is credited at the start of a floorset and removed if the '30 minutes remaining' message is detected.
 
-* The score displayed assumes a successful completion of the current floorset. This is done because the point total jumps significantly retroactively upon set completion so much so that the estimate is practically useless until that happens.  Including this from the start allows the estimate to reflect the runner's score as accurately as possible during the run and not just at the end of the floorset.
+Full points for floor reveal are credited at the start of a floor (if the 'assume full map clear' option is enabled).
 
-* The score will display '414' if the run did not start on 1, 21 (HoH) or 51 (Potd).
+A point estimate depending on the dungeon/floorset is added per room revealed (if the 'assume full map clear' option is disabled) unless:
+* A Pomander of Sight is used. Full points are awarded.
+* Total number of revealed rooms equals the maximum possible rooms for the current dungeon/floorset. Full points are awarded.
+* Total number of revealed rooms is less than the minimum possible rooms for the current dungeon/floorset.  No points are awarded.
+
+Magicite can kill monsters that are so far away from the player that they have not been loaded on their machine.  This means when they die no death notification is sent.  As a result the killcount will be innacurate.
+
+The score will display '414' if the run did not start on 1, 21 (HoH) or 51 (PotD).
 
 # In Development
 
