@@ -222,7 +222,7 @@
             {
                 DDO.currentSaveFileIndex = i;
                 // This if statement is to include items in the save file that may not have existed when a run was started
-                if(!DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts || DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts){
+                if(!DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts || !DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts){
                     DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts = new Array(20).fill(0);
                     DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts = new Array(20).fill(0);
                 }
