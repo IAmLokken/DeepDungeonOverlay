@@ -1,4 +1,4 @@
-# For Streamers
+# Setup For Streamers
 
 If you stream using 'Display Capture' then you do not need to take any additional steps for the overlay to appear on stream.
 
