@@ -28,6 +28,10 @@ Please see [Installation Instructions](INSTALL.md).
 * [Instructions d'installation](overlay/docs/INSTALL_FR.md)  
 * [インストールマニュアル](overlay/docs/INSTALL_JA.md)
 
+# Setup For Streamers
+
+Please see Setup For Streamers [Instructions](overlay/docs/STREAMER.md).
+
 # Current Features
 
 * Score (Estimate)
