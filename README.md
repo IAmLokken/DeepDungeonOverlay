@@ -25,7 +25,8 @@ Currently DDO supports Enlgish, French, and Japanese languages.  _This excludes 
 # Installation of DDO
 
 Please see [Installation Instructions](INSTALL.md).
-* [Français](overlay/docs/INSTALL_FR.md)
+* [Instructions d'installation](overlay/docs/INSTALL_FR.md)  
+* [インストールマニュアル](overlay/docs/INSTALL_JA.md)
 
 # Current Features
 
