@@ -114,7 +114,7 @@ A point estimate depending on the dungeon/floorset is added per room revealed (i
 * Total number of revealed rooms equals the maximum possible rooms for the current dungeon/floorset. Full points are awarded.
 * Total number of revealed rooms is less than the minimum possible rooms for the current dungeon/floorset.  No points are awarded.
 
-Magicite can kill monsters that are so far away from the player that they have not been loaded on their machine.  This means when they die no death notification is received.  As a result the killcount will be innacurate.
+Magicite can kill monsters that are so far away from the player that they have not been loaded on their machine.  This means when they die no death notification is received.  As a result the kill count will be innacurate.
 
 The score will display '414' if the run did not start on 1, 21 (HoH) or 51 (PotD).
 
