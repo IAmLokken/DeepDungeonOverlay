@@ -2,7 +2,7 @@
 
 このプラグインを使用するために色々な詳細を読む必要がありますからHide Chat Log (for privacy)というFFXIV ACTのプラグインオプションはオンにできません。
 
-It is located under the *FFXIV Settings* Tab under the *Options* group.
+*FFXIV Settings*の中にあって、*Options*の部分にあります。
 
 <img src="Install02.png">
 
