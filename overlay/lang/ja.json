@@ -21,7 +21,7 @@
         "POTDButton": "死者の宮殿のセーブデータをリセットする",
         "HOHButton": "アメノミハシラのセーブデータをリセットする",
         "ButtonInfo": "ディープダンジョンの中にいると、この画面はDDについての情報を表示します。ディープダンジョン以外にいる際には、以下のボタンでこのアプリのセーブデータがリセットできます。",
-        "MapSettingInfo": "Check here if you want the score calculation to assume full map clears during your run."
+        "MapSettingInfo": "スコアの計算に関して、完全現れたマップスコアを数えたかったら、ここで押してください。"
     },
     "BossNames":
     [
