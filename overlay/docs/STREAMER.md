@@ -16,3 +16,5 @@ If you stream using 'Game Capture' and want to display the overlay on stream ple
 ![Streamer1](StreamerSetup02.png?raw=true)
 
 Setup complete.
+
+Return to [README](../../README.md).
