@@ -29,6 +29,6 @@
 	
 	インストールの完了
 	
-	[README](README.md)に戻る
+	[README](../README.md)に戻る
   
   [Chiela](https://twitter.com/certa)による翻訳しました。
