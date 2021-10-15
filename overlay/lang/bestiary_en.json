@@ -373,7 +373,7 @@
     "DEEP PALACE GREMLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "DEEP PALACE DEVILET": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable."},
     "DEEP PALACE DEEPEYE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
-    "DEEP PALACE ABAIA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "DEEP PALACE ABAIA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has an enrage that grants a minor damage up if left alive long enough."},
     "DEEP PALACE SOULFLAYER": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Double auto that heals them for the amount of damage they deal. Very annoying to fight."},
     "DEEP PALACE PUDDING": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
     "DEEP PALACE SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
