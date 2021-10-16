@@ -14,9 +14,10 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 # Localization
 
-Currently DDO supports English, French, and Japanese languages.  _This excludes most enemy notes. (English only, currently)_ 
+Currently DDO supports English, French, Japanese, and German languages.  _This excludes most enemy notes. (English and Japanese only)_ 
 * French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
 * Japanese translation and support provided by [Chiela](https://twitter.com/certa). They also [stream](https://www.twitch.tv/hurricanechiela)!
+* German translation and support provided by [Tancred](https://twitter.com/Tancred423). 
 
 
 
@@ -120,6 +121,5 @@ The score will display '414' if the run did not start on 1, 21 (HoH) or 51 (PotD
 
 # In Development
 
-* Support for German language.
 * An upgrade to the UI/UX is being worked on to improve readability and streamline the current implementation.
 * The scoring algorithm is continuously being tweaked and tested.
