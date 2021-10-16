@@ -6,7 +6,7 @@
 "the Palace of the Dead":
 [
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
 
     "パレス・デスマウス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -17,7 +17,7 @@
     "パレス・バット": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "パレス・ヒッポセルフ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "パレス・ビートル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts Final Sting if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
+    "パレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "一定時間内に倒せないと、大ダメージの<b>ファイナルスピア</b>を詠唱。ある程度離れればこの攻撃は回避できます。"},
     "パレス・ヤーゾン": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "パレス・ダングビートル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ロストゴブリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -25,11 +25,11 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "This boss is very easy, but damage should not be underestimated when solo (consider popping a potion during the fight) <br/> General tactic - Lust on lower floors deals insane damage, as the potency of Void Fire II is much higher than low level skills. If your class can kite, you can run circles around the room and take literally 0 autoattack damage aside from the Whipcrack."
+            "Notes": "非常に簡単なボスですが、ソロでは被ダメージを甘く見ないこと。（ポーション類の使用も検討）<br/> ヴォイド・ファイラの方が低レベルで使えるスキルより威力が高いので、サキュバス化を使うと敵に大ダメージを与えることができます。 引き撃ちできる職であれば、部屋をぐるぐる回っていればウィップクラック以外一切のAAダメージを受けないまま倒せます。"
         }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "冒険者風の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "冒険者風の幻術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -39,23 +39,23 @@
     "パレス・ウラグナイト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・トード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・プリン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・スライム": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Will explode and kill anybody within a large radius if not killed in time. When solo, DO NOT MOVE AROUND IN A ROOM AS YOU FIGHT THESE. If you step on a toad trap, you will most likely wipe (it is possible to kite and have a second to use witching after the toad wears out, but…)"},
+    "パレス・スライム": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "一定時間内に倒せないと爆発して広範囲に即死。ソロでは戦いながらうろうろしないこと。 トードトラップを踏むとほぼ失敗になります。"},
     "パレス・ナンカ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "パレス・ニンキナンカ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "パレス・オチュー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "パレス・ビロコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・シードリング": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "パレス・モルボル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・コブラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "If you step on a toad trap, the cobra will use a special skill “Devour”, one-shotting the toad. Like with slimes, do not move around in rooms as you fight."},
+    "パレス・コブラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "トードトラップを踏むと、特殊スキル「捕食」を使用（即死）。 スライムと同様、戦いながら部屋内で移動しないこと。"},
     "スパージ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "A simple boss, very similar to the floor 10 boss with its order of attacks. However, do not underestimate the damage of its cleave, <b>Bloody Caress</b>. The order of skills will be Bloody Caress (cleave), followed by two telegraphed AOEs and then a global AOE. After the global AOE, it will go to the top of the room and summon two hornets. These must be killed or they will cast an unavoidable final sting that will kill someone. Meanwhile, the boss will spam a line telegraph <b>Rotten Stench</b> that will deal a very high amount of damage.<br/>General tactic - Use Lust to kill it, and the bees, quickly (stack on it when it summons the bees so you can hit them all with the AOE). However, consider popping a <b>Sustaining Potion</b> before you do so when solo, as the cleave damage is quite high."
+            "Notes": "10階のボスと同様に、攻撃パターンはかなり単純です。ただしWSの<b>ブラッディカレス</b>はかなり痛いので気を付けましょう。ブラッディカレス→AoE2回→全体攻撃→中央に移動+蜂2匹召喚。の順に使用してきます。蜂は一定時間内に倒せないとファイナルスピアを詠唱。同時にボスが直線大ダメージ範囲の<b>ロトンステンチ</b>を連打してきます。<br/>ソロではサキュバス化でボスと雑魚をまとめて焼きましょう。ただしWSのダメージが痛いのでサキュバス化する前に<b>生者の秘薬</b>を使った方が良いです。"
         }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "海賊風の斧術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     "イシュガルド風の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -71,17 +71,17 @@
     "パレス・クレイビースト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・マロリス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "パレス・セントール": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ミノタウロス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
-    "パレス・スカネテ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
+    "パレス・ミノタウロス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>111トンズ・スイング</b>を詠唱。大ダメージ+ノックバックの敵中心範囲攻撃。スタンで中断可能。"},
+    "パレス・スカネテ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "<b>チャープ</b>で15秒睡眠。ソロではすぐに叩き起こされますが、他mobの範囲攻撃と重ならないように注意。"},
     "ニンギジッダ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Tl;dr - start on the side, fire, ice, fire, ice, and then run to the center.<br/>This boss, aside from having a basic cleave, will create lingering AOEs on random players in the following pattern - fire, ice, fire, ice. Because these AOEs linger on the floor, don’t stand in the center to start out, because you don’t want the goop in the center when you have to run there. After the second ice ball, it will run to the center of the room and cast <b>Fear Itself</b>. To avoid this attack, which does high damage and inflicts terror, run to the center with it."
+            "Notes": "ボス： ニンギジッダ<br/>まとめ - 外周で開始、火、氷、火、氷、中央に走る。<br/>WS以外には、火→氷→火→氷の順でAoEを撃ってきます。床に残るので中央には出さないこと。2回目の氷の後に中央で<b>フィアーミスト</b>（高ダメージ+恐怖）を詠唱するので、ボスと一緒に中央まで走りましょう。"
         }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
+    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "不滅隊風の剣術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
@@ -97,12 +97,12 @@
     "ナイトメア・ハーゲンティ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ナイトメア・トルバドゥール": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ナイトメア・ナット": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・サキュバス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Dark Mist</b> followed by <b>Void Fire II</b>. Dark Mist is a point blank AOE which will cause terror if it hits, so make sure you stay out of the telegraphs."},
+    "ナイトメア・サキュバス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>ダークミスト→ヴォイド・ファイラ</b>を詠唱。 ダークミストは当たると恐怖になるので範囲外に出ること。"},
     "イシュタム": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Tl;dr - kill the adds<br/>This boss will cast 4 lingering AOEs, and then summon two <b>Nightmare Bloots</b>. These must be killed as fast as possible (all while avoiding the AOE telegraphs cast by the boss), or else when the boss uses its global AOE <b>Scream</b>, you will get targeted by prey and the adds will use <b>Tornado</b>, which will most likely one shot you, especially when coupled with the <b>Shadow Flare</b> global AOE which is cast right after Scream."
+            "Notes": "まとめ - 雑魚処理する <br/>意識してレベル上げをしていない場合、ソロでは結構大変です。 フィールドに残るAoEを4回詠唱した後、2匹の<b>ナイトメア・ブフート</b>を召喚します。ボスの範囲攻撃を避けながらすぐに倒す必要があります。 ボスが全体攻撃の<b>スクリーム</b>を詠唱するまでに倒しきれないと、雑魚が<b>トルネド</b>を使ってきて、ボスがスクリーム直後に使ってくるシャドウフレアのダメージと合わさり死にます。"
         }
     },
     {
@@ -126,7 +126,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Tl;dr - stay close to the boss to easily avoid the <b>In Health</b> telegraphs.<br/>This boss is pretty easy if you avoid her mechanics properly. She will use <b>In Health</b> in two patterns - one will require you to run away from her, and one will cover the whole map except a small area next to her. As such, stay close to her to avoid this. Aside from doing damage, each person hit by this skill will light up a rune on the floor, which increases the damage of the global AoE <b>Black Honeymoon</b>. Aside from that, she will occasionally cast <b>In Sickness</b>, which instantly inflicts Disease on a target, but with the timing on her skills, you never have to worry about the slow from Disease making it hard to avoid a cast of <b>In Health</b>."
+            "Notes": "まとめ - ボスの近くで戦って<b>インヘルス</b>を避ける<br/>ギミックを適切に避ければ簡単なボスです。<b>インヘルス</b>は2パターンあり、片方はボスから離れ、もう片方はボスの足元の狭いエリアで回避します。そのためボスの近くにいた方が避けやすいです。インヘルスに当たると床の文字が光り、全体範囲の<b>ブラックハネムーン</b>のダメージが上がります。病気のデバフを付与する<b>インシックネス</b>を時々使用してきますが、インヘルスを使ってくる前に効果が切れるので、これによる移動速度低下は気にしなくて大丈夫です。"
         }
     },
     {
@@ -150,7 +150,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "In a nutshell - Make sure you don’t get knocked back into one of the exploding balls on the side."
+            "Notes": "ノックバックされる時に外周の爆発する玉に被らないように気をつけましょう。"
         }
     },
     {
@@ -173,7 +173,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "In a nutshell - when it casts <b>Douse</b>, walk away such that the boss is completely out of the AOE so it doesn’t get buffed with Haste."
+            "Notes": "<b>ハイドレーション</b>を詠唱したら、離れてボスが水から完全に出るように誘導し、ヘイストがかからないようにしましょう。"
         }
     },
     {
@@ -197,7 +197,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "In a nutshell - stay away from the tornados, because they will pulse with an AOE larger than the tornados themselves, pulling you in. When it runs to the edge, run close to it, as it will use <b>Trounce</b>, a huge conal AOE that applies vulnerability. Burn it at 17% as it will use <b>Ecliptic Meteor</b>, which deals 80% of your max health as damage."
+            "Notes": "竜巻は見た目よりも広い吸引付きの範囲攻撃をしてくるので近寄らないこと。ボスが外周に移動したら巨大な前方範囲攻撃の<b>トラウンス</b>を使用してくるので、ボスの足元に走っていきましょう。残りHP17%から最大HPの80%のダメージを与えてくる<b>エクリプスメテオ</b>を詠唱してきます。"
         }
     },
     {
@@ -210,7 +210,7 @@
     "パレス・ガッリミムス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・クレイクロウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・ウォーム": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ボム": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will cast <b>Self Destruct</b> if not killed in time. Be careful when mass pulling these in a party, and do not walk inside rooms in the event of toad/silence traps for solo."},
+    "パレス・ボム": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "一定時間内に倒せないと<b>自爆</b>を詠唱。ソロではトードや沈黙のトラップを踏まないよう、部屋の外から釣ること。"},
     "パレス・キマイラ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "フレイムドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・ワモーラカンパ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
@@ -221,7 +221,7 @@
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "Tl;dr - kill orange bombs when they spawn, push blue bomb into the boss (all skills will knock it back) when it spawns.<br/>This boss is a bit more tricky than the previous ones. It will sometimes spawn a Lava Bomb in the middle of a bunch of untargetable little bombs that will explode over time, and you must kill the <b>Lava Bomb</b> before it explodes. It can also summon a <b>Giddy Bomb</b> while channeling <b>Massive Burst</b>. The Giddy Bomb must be pushed into the boss with any skill before it blows up. If it does, and you have to tank Massive Burst, get the heals ready, because it does 99% of everybody’s max HP (so, unaffected by any damage reduction - don’t you dare use tank LB!)."
+            "Notes": "まとめ - 赤いボムが出たら倒す、青いボムが出たらボスに押し込む（全スキルでノックバックする）<br/>タゲれない多数の小さいボムの中に赤いペイニー・ボムが沸いたら、爆発する前に倒します。青い<b>ギディ・ボム</b>が沸くとボスが<b>特大爆発</b>を詠唱するので、ボスの足元に雑魚を飛ばし詠唱を停止させます。失敗した場合は最大HPの99%のダメージを受けるので、ヒールの準備を。（タンクLB含む全軽減無効）"
         }
     },
     {
@@ -244,7 +244,7 @@
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "Use strength, steel, and then <b>Sustaining Potion</b> and lust. Spam Void Fire II for the entire duration - don’t worry, it will melt the adds as they spawn/respawn.<br/>As soon as the transformation wears off, use another Sustaining Potion and use Resolution. Then you can spam <b>Heavenly Judge</b> for a decent amount of damage for the entire duration, while removing all those corpses from the ground."
+            "Notes": "ソロでは自己強化+防御強化+<b>生者の秘薬</b>を使ったら、サキュバス化を使います。効果時間が切れるまでヴォイド・ファイラを連打、雑魚もそのままファイラで焼きます。変身が切れたら、もう一度生者の秘薬を使用し、次はクリブ化を使います。そのままずっとヘヴンリージャッジを連打し、ボスと雑魚の死体を焼きます。"
         }
     },
     {
@@ -252,7 +252,7 @@
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "操縦士風の帝国兵": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
-    "ディープパレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
+    "ディープパレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "一定時間内に倒せないと、大ダメージの<b>ファイナルスピア</b>を詠唱。ある程度離れればこの攻撃は回避できます。"},
     "ディープパレス・レディバグ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・ヒッポグリフ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・ダングビートル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -268,7 +268,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "This boss is similar to the 1-10 boss mechanically, it just hits a little harder. Just tank and spank!"
+            "Notes": "パターンは10階のボスと同じで、攻撃が痛くなっているだけです。"
         }
     },
     {
@@ -276,13 +276,13 @@
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
     "ディープパレス・リーチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・モルボル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
-    "ディープパレス・ギガントード": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Sticky Tongue</b> followed by <b>Labored Leap</b>, which can do over 6K damage. The Sticky Tongue will <b>STUN</b> you for 5 seconds if you are <b>NOT FACING THE TOAD</b>. Be very careful with these with solo, especially if you have other mobs around."},
+    "ディープパレス・モルボル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "戦闘開始後すぐに睡眠+スロウの前方扇型範囲、次にくさい息を使用してきます。近寄っておくことで、①睡眠が切れた時にくさい息を避けやすくなり、②睡眠時にAAで起こしてもらえます。"},
+    "ディープパレス・ギガントード": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>スティッキータン→レイバードリープ</b>で6000以上のダメージを受けることがあります。スティッキータンは離れていると5秒間のスタン効果を受けます。他のmobが近くにいる時は注意。"},
     "ディープパレス・ビロコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・コブラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Same as the cobras from 11-20, except these will poison you with <b>Regorge</b> for a considerable amount of damage. Beware the toad trap + cobra combo!"},
+    "ディープパレス・コブラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "1-10階のコブラと同様、トードトラップを踏まないよう注意。毒を付与してくる<b>リゴ</b>ージのスキルが追加されています。"},
     "ディープパレス・ビフェリケラス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・シードリング": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・スライム": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These Slimes will inflict a stacking physical vulnerability debuff (note that they attack with magic, though). They can still explode, like the slimes on 11-20, but it takes a much longer time."},
+    "ディープパレス・スライム": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "スタックする物理被ダメアップのデバフを付与してきます。（スライム自身の攻撃は魔法攻撃）一定時間内に倒さないと自爆しますが、11-20階のスライムよりも猶予時間はかなり長め。"},
     "ディープパレス・サラマンダー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "ディープパレス・オチュー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・プリン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
@@ -291,7 +291,7 @@
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "Tl;dr - avoid AOEs, kill bees.<br/>This boss is mechanically similar to that of floor 20. <b>Rotten Stench</b> will now be a one-shot, so make sure you avoid those telegraphed AOEs. The easiest way to deal with the bee adds is to stack on the boss and have somebody spam Lust autoattacks."
+            "Notes": "まとめ - 範囲を避ける、蜂を倒す。<br/>20階のボスとパターンは同じです。<b>ロトンステンチ</b>は当たると即死するようになっているので、しっかり避けること。"
         }
     },
     {
@@ -309,13 +309,13 @@
     "ディープパレス・ウィヴル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・スプリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・テロック": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ミノタウルス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
-    "ディープパレス・スカネテ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
+    "ディープパレス・ミノタウルス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>111トンズ・スイング</b>を詠唱。大ダメージ+ノックバックの敵中心範囲攻撃。スタンで中断可能。"},
+    "ディープパレス・スカネテ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "<b>チャープ</b>で15秒睡眠。ソロではすぐに叩き起こされますが、他mobの範囲攻撃と重ならないように注意。"},
     "アルファルド": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "Tl;dr - stand on side, fire, ice, fire, ice, then run to center.<br/>Similar to the F30 boss, except this time it casts <b>Fear Itself</b> way faster. Run to the center immediately after the second ice ball, and make sure nobody is standing in the center prior to that, so you don’t get goop there."
+            "Notes": "まとめ - 外周で開始、火、氷、火、氷、中央に走る。<br/>30階のボスと同様ですが、<b>フィアーミスト</b>の詠唱がかなり速くなっているので、2回目の氷を見たらすぐに中央に移動すること。ただし中央に沼を被せないように、それまでは外周にいましょう。"
         }
     },
     {
@@ -334,12 +334,12 @@
     "ディープパレス・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・オーガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・モンク": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・アーリマン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Level 5 Petrify</b>, a non-telegraphed conal AOE. This causes 15 seconds of petrification, which is unremovable, and can easily lead to death when solo."},
+    "ディープパレス・アーリマン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>レベル5石化</b>を詠唱。不可視の前方扇形範囲で、当たると15秒間石化します。解除不可で、ソロでは簡単に死に繋がります。"},
     "ア・プチ": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "<b>Pomander of Resolution<b/>’s Heavenly Judge skill will deal 30K damage (with Strength) to this boss. If solo, recommended to use Strength + Steel + Resolution. You don’t have to use Steel, but it makes it a lot safer, and if you don’t Steel you may have to leave mid-transformation to pop a quick sustain potion before popping another Resolution."
+            "Notes": "<b>クリブ化</b>のヘヴンリージャッジは自己強化有りで1発3万ダメージを与えられます。 ソロでは 自己強化+防御強化+クリブ化 推奨。防御強化がなくても倒せますが、使うことでずっと安全になり、無い場合は途中で変身を解除して生者の秘薬を叩いてからクリブ化を再使用しないといけなくなります。"
         }
     },
     {
@@ -348,21 +348,21 @@
     
     "ディープパレス・ケッド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・ヘルハウンド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ガーゴイル": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Deals a high amount of DPS with its poison and cleave attack. Not easy to engage solo without sustain potion and/or Steel."},
+    "ディープパレス・ガーゴイル": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "毒とWSのダメージでDPSが高く、ソロでは生者の秘薬か防御強化がないと厳しいです。"},
     "ディープパレス・ブフート": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・デーモン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Charybdis</b> if not killed in time, which will bring your party to 1% HP."},
+    "ディープパレス・デーモン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "一定時間内に倒さないとミー<b>ルストーム</b>を使用し、HP1%にされます。"},
     "ディープパレス・サキュバス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・マンティコア": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will buff itself with a physical damage buff, and use <b>Ripper Claw</b>, a non-telegraphed frontal AOE that can hit quite hard. Walk away or behind it to avoid this."},
+    "ディープパレス・マンティコア": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "物理ダメージ上昇の自己バフを使用してきます。<b>リッパークロウ</b>は不可視の前方範囲で、当たるとかなり痛いです。離れるか背面に移動することで回避可能。"},
     "ディープパレス・ペルソナ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・ナイト": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however."},
+    "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "41階～と91階～のレイスと使用スキルは同じですが（広範囲の<b>スクリーム</b>）、倒すのに時間がかかるようになり問題となってきます。範囲を避けるために部屋に入らないといけないことがあり、他のmobを釣ったり罠を踏んだりするおそれがあります。"},
     "ディープパレス・キーパー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "ティーシポネー": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "This boss can be quite difficult for melee, but a lot easier for ranged classes.<br/>Tl;dr - kite and kill zombie adds (don’t let them touch you), succubus add is optional (dotting it is worth it though)."
+            "Notes": "まとめ - 雑魚のゾンビーには触られないように処理。雑魚サキュバスは倒さなくてもOK。"
         }
     },
     {
@@ -372,20 +372,20 @@
     
     "ディープパレス・グレムリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・デビレット": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable."},
-    "ディープパレス・ディープアイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "ディープパレス・ディープアイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
     "ディープパレス・アバイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has an enrage that grants a minor damage up if left alive long enough."},
     "ディープパレス・ソウルフレア": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Double auto that heals them for the amount of damage they deal. Very annoying to fight."},
-    "ディープパレス・プリン": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "ディープパレス・プリン": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
     "ディープパレス・シュワブチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・マナポット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "ディープパレス・マナポット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
     "ディープパレス・タウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・マロリス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
+    "ディープパレス・マロリス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
     "ディープパレス・アークデーモン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "トーリスリッター": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "While mechanically similar to the F60 boss, this one can hit like a truck. While you can solo it without steel (on RDM at least), I really, really would recommend using steel for this boss and beyond."
+            "Notes": "ギミック的には60階ボスと同じですが、かなり痛くなっています。赤なら防御強化なしでも倒せないことはないですが、使用を強く推奨します。"
         }
     },
     {
@@ -396,19 +396,19 @@
     "ディープパレス・ミロドン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・プテラノドン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・リンドヴルム": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・バリトンダイル": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleave/double autoattacks and are very bursty."},
+    "ディープパレス・バリトンダイル": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いので注意。"},
     "ディープパレス・ディプロカウルス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・アルケオダイノス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
-    "ディープパレス・ウィヴル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
+    "ディープパレス・アルケオダイノス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。"},
+    "ディープパレス・ウィヴル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛く、ウィヴルとバリトンダイルは接近感知なので背後/歩いてスルーすることができません。"},
     "ディープパレス・ビネガロン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・トリケラトプス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
+    "ディープパレス・トリケラトプス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛く、ウィヴルとバリトンダイルは接近感知なので背後/歩いてスルーすることができません。"},
     "ディープパレス・トゥルスス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・サルコスクス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ユルング": 
         {
             "DangerLevel": "Caution",
             "AggroType": "Proximity",
-            "Notes": "This boss is similar to the F70 boss, except the water puddle from <b>Douse</b> will buff it with haste and physical damage up. The tank should pull this boss slowly in a circle around the map, making sure to move it out of every <b>Douse</b> puddle it creates.<br/>Save sprint/backstep abilities for the first <b>Heavy</b> effect applied with diminishing returns, as you will need it to avoid the upcoming <b>Electrogenesis</b> AOE. (sprint when the Heavy has around 7 seconds left)."
+            "Notes": "<b>ハイドレーション</b>の水溜まりは、ヘイストに加えて物理ダメージ上昇がボスに付くようになっています。スプリント/バックステップ系のアビリティは、へヴィ中に<b>エレクトロジェネシス</b>を避ける時のために取っておきます。（へヴィ残り約7秒でスプリントを使用）"
         }
     },
     {
@@ -417,15 +417,15 @@
     
     "ディープパレス・ホワイトベアー": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・ブラッククァール": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・バンダースナッチ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleaves/double autos. Be careful when solo."},
-    "ディープパレス・アンズー": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "Has a cleave that applies a DOT, and spams <b>Flying Frenzy</b>, which targets a random party member, dealing huge damage, stun, and applying vulnerability in an AOE around that member. Spread out. Don’t even try to fight this solo.<br/>MCH can burst these with cooldowns, Strength & Steel, however. Because MCH."},
+    "ディープパレス・バンダースナッチ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いので注意。"},
+    "ディープパレス・アンズー": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "DoT付きのWSを使用し、大ダメージ+スタン+被ダメ上昇付き範囲攻撃の<b>狂乱</b>を連発してきます。ソロでは絶対に戦わないこと。"},
     "ディープパレス・ダルメル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ライオン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleaves/double autos. Be careful when solo."},
-    "ディープパレス・ホワイトウルフ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cleave that applies Frostbite, a powerful DOT. Get Esuna/Erase ready to remove this from whoever gets hit by it.<br/>Don’t touch them on casters. Ranged DPS can take them on without any items."},
-    "ディープパレス・サスカッチ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These aggro by proximity, and have two skills that they cast when not in combat - <b>Ripe Banana</b> and <b>Chest Thump</b>. Ripe Banana will give it a huge physical damage buff, and then it will proceed to cast Chest Thump many times, dealing AOE damage to anybody within a one room radius while applying stacks of physical vulnerability. As such, do not fight mobs near rooms with Sasquatches in them. <b>NEVER pull a Sasquatch that is buffed</b>, or else you will be one shot - always wait for the buff to wear out.<br/>Highly recommended to use Steel if solo, as a Browbeat crit will do 13K, 1 shotting you if paired with an autoattack."},
-    "バード・オブ・ディープパレス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These do a reasonable amount of damage with their cleaves, but you need to watch out for their <b>Revelation</b> ability which is an AOE that applies confusion.<br/>After fighting these for a little while, they will cast <b>Tropical Wind</b>, granting them a huge haste and damage buff. During this time, they will spam <b>Revelation</b> exclusively (you may still get autoattacked in melee range), where each one is pretty much a guaranteed one shot. You can stun the buff or remove the haste with a slow effect."},
-    "ディープパレス・ウィセント": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "While these are easy to kill, they have a DPS check where if not killed in time (3o seconds), they will suck everyone in, apply a HUGE heavy debuff (like 95-99% slow), and do a stomp that will deal around 90% of a DPS’s health and apply Paralysis. Be careful if you pull multiple at the same time.<br/>The suction can be avoided with <b>Surecast/Arms Length</b>, and the enrage cast be <b>interrupted</b> or slept."},
-    "ディープパレス・スノウクロプス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has 2 one-shot skills with no telegraph - <b>Glower</b> and <b>100-tonze swing</b>. Glower is a frontal line AOE which is cast almost immediately after being pulled, and 100-tonze swing is a point-blank AOE (so, walk away from it). These can be stunned."},
+    "ディープパレス・ライオン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いので注意。"},
+    "ディープパレス・ホワイトウルフ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "WSで凍傷（強力なDoT）を付与してきます。 赤ではテザーを使ってバインドを繰り返し、ヒールする時間を稼ぎながら倒すこともできますが、できるだけ釣らないようにしましょう。"},
+    "ディープパレス・サスカッチ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "非戦闘時に<b>バナナ喰いとドラミング</b>の2種類のスキルを使用します。バナナ喰いは自身に強い物理ダメ上昇のバフを付与し、その後ドラミングを複数回繰り返します。ドラミングは1部屋分の距離の範囲攻撃で、スタックする被ダメ上昇のデバフを付与してきます。そのため、サスカッチのいる部屋の近くでは絶対に戦わないこと。即死するので、<b>バフが付いた状態のサスカッチを絶対に釣らない</b>こと。必ずバフが切れてからにしましょう。<br/>防御強化なしのソロでは、殴打はクリティカルで13000ダメージで、AAと合わさると即死します。"},
+    "バード・オブ・ディープパレス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WSも痛いですが、混乱を付与する範囲攻撃の<b>リヴァレーション</b>にも注意。<br/>しばらく経つと<b>極楽の風</b>を使用し、強力なヘイストと与ダメ上昇のバフが付きます。この最中は<b>リヴァレーション</b>のみ連発してきます。1発でほぼ即死なので、スタンでバフの詠唱を止めるか、スロウでヘイストを上書きします。"},
+    "ディープパレス・ウィセント": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "倒しやすいmobではありますが、DPSチェックがあります。一定時間内に倒せないと、引き寄せて強力なヘヴィ（95-99%くらい遅くなる）を使用し、HP90%くらいのダメージ+麻痺の攻撃をしてきます。"},
+    "ディープパレス・スノウクロプス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "2種類の不可視範囲の即死スキルがあります。<b>グラワ</b>ーは前方直線範囲攻撃で、戦闘開始後すぐに使用してきます。<b>100トンズ・スイング</b>は敵中心の円形範囲です。両方ともスタンで中断可能。"},
     "デンダインゾネ": 
         {
             "DangerLevel": "Scary",
@@ -440,37 +440,37 @@
     
     "ディープパレス・グレネード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "ディープパレス・スプライト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Don’t pull on ranged DPS/no sustain casters."},
-    "ディープパレス・クレイクロウ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Will suck in a random member and stab them for a decent amount of damage. Also has a targeted AOE <b>Tail Screw</b> that deals damage and applies slow. It is killable solo by a healer/RDM if you use Steel.<br/><b>Knockback immunity does not work on the suction</b>."},
-    "ディープパレス・クロウラー": {"DangerLevel": "Impossible", "AggroType": "Sound", "Notes": "These have an instant conal AOE burst attack that deals 7K damage (on top of their 5K autoattack) and applies a strong slow effect. Additionally, they have an instant conal AOE poison attack that ticks for 3K damage a tick. Spread out when you fight these, and get that Esuna ready.<br/>These aggro by sound, so you can toggle walk to avoid them."},
-    "ディープパレス・アルケオダイノス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to."},
-    "ディープパレス・フラッドウォーム": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Randomly hits people within half a room with an instant AOE that deals a fair amount of damage. Has a double-auto, and a DPS check (around 30 seconds) where it will suck everyone in and shortly afterwards, deal 20K damage to people in range. It is possible to tank this and then heal through it as a healer/RDM with Steel, but with crits, you will be dead. You can also stagger the mob and kite it to outrange the suction at 30 second (very large AOE). <b>Knockback immunity does not work</b>. After getting sucked in, you can quickly use a displacement skill to back away from the worm before the big damage AOE.<br/>These aggro by sound, so you can toggle walk to avoid them."},
+    "ディープパレス・クレイクロウ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "ランタゲ対象を引き寄せた後、大ダメージの<b>串刺し</b>。ランタゲ対象に範囲攻撃+スロウの<b>テイルスクリュ</b>ーも有り。ヒラ/赤なら防御強化があればソロ可能。"},
+    "ディープパレス・クロウラー": {"DangerLevel": "Impossible", "AggroType": "Sound", "Notes": "7000ダメ+強力なスロウ付きの詠唱なしの前方範囲攻撃を使用（+AAで5000ダメ）。詠唱なしの前方範囲毒攻撃もあり、DoTは1判定ごとに3000ダメ食らいます。エスナ可能。<br/>聴覚感知なので歩いてスルーできます。"},
+    "ディープパレス・アルケオダイノス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。ワモーラカンパは聴覚感知なのでスルー可能で、戦う場合も引き撃ちすれば一応なんとかなります。アルケオダイノスはできるだけ釣らない方がいいです。"},
+    "ディープパレス・フラッドウォーム": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "部屋の半径と同程度の即時発動範囲攻撃を使用。WSも痛く、約30秒のDPSチェックもあります（吸引後に2万ダメ）。ヒラ/赤なら防御強化ありで生き残ることは可能ですが、クリったら死にます。<br/>聴覚感知なので歩いてスルーできます。"},
     "ディープパレス・ワモーラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ワモーラカンパ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
+    "ディープパレス・ワモーラカンパ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。"},
     "ディープパレス・ヴィンドスルス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "フラッドドラゴン": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "These have an instant circular AOE burst attack that inflicts a very potent DoT, similar to crawlers. Get Esuna/Erase ready, and spread out so multiple people don’t get hit.<br/>Solo: Don’t pull this."},
-    "ディープパレス・ガルム": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Aggros by proximity, and has an arsenal of one-shot abilities. The two main skills are <b>“The Ram’s Voice”</b> and <b>“The Dragon’s Voice”</b>. Ram is a point-blank AOE, and Dragon is a ~3/4 room sized AOE with a safe spot in the middle. So, when you see Ram being channeled, run away, and then if you see Dragon, run inside. These can be silenced. Note that in my experience, people get hit by Ram 10x more often than Dragon, as Ram casts faster.<br/>If you are proficient with dodging these mechanics, these are actually the easiest mobs to kill when solo from 187-189. But, DO NOTE that they can autoattack crit for 10K damage!"},
+    "フラッドドラゴン": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "ランタゲ対象に強力なDoTを付与する詠唱なしの円形範囲攻撃を使用してきます。エスナ可能。"},
+    "ディープパレス・ガルム": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "接近感知で、即死攻撃だらけです。<b>氷結の咆哮</b>は敵中心範囲なので離れ、<b>雷電の咆哮</b>はドーナツ型範囲なので近寄りましょう。沈黙で詠唱中断可能。氷結の方が詠唱が速いので当たりやすいです。<br/>避けるのに慣れれば、ソロでは187-189階で一番倒しやすいmobです。ただしAAがクリると1万ダメージ受けることを忘れずに。"},
     "ゴッドファザーボム": 
         {
             "DangerLevel": "Scary",
             "AggroType": "Proximity",
-            "Notes": "<b>DO NOT OPEN WITH LUST</b>. The boss will cleave right away and you may die before you get the stacks off. There is a window in the boss’s rotation where he will cast 3 Saps in a row (during Remedy Bomb cycle) - this is a good time to lust. See the solo video for reference. Another option (that requires a bit of planning) is to take advantage of the static spawns to position the boss on top of where the Remedy Bomb spawns, and use Lust to kill the bomb while getting stacks on the boss. The boss will be casting Saps during this time, so you should be able to survive."
+            "Notes": "<b>サキュバス化</b>が3つある場合、全て使用すれば<b>防御強化</b>は1つだけで済みます。しかし<b>開幕でサキュバス化しない</b>こと。ボスは開幕に即フレイムペンペンを使ってくるため、デバフを5スタック付与できる前に殺されてしまう可能性が高いです。ボスのパターンで2連続でサップを詠唱するタイミングがあるのでここに合わせてサキュバス化を使用します。上記のソロ動画を参照。"
         }
     },
     {
     "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
-    "ディープパレス・アイアンコース": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
+    "ディープパレス・アイアンコース": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
     "ディープパレス・キーパー": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
-    "ディープパレス・ヒッポグリフ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "ディープパレス・グルマン": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "ディープパレス・ダブルヘッド": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part). NEVER pull a knight when one of these is around, because their AOE <b>Accursed Pox</b> will fill in the <b>Death Spiral</b> doughnut, leaving you with nowhere to run."},
+    "ディープパレス・ヒッポグリフ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
+    "ディープパレス・グルマン": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
+    "ディープパレス・ダブルヘッド": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
+    "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "最もDPSが高いmobということ以外には特筆すべき点はありません。ソロなら歩きによるスルー推奨。"},
     "ディープパレス・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
     "ディープパレス・アイストラップ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・ナイト": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "These do crazy damage - you want to avoid them when solo if possible. They will also cast a doughnut-shaped AOE <b>Death Spiral</b>, dealing around 20K damage to anybody not standing next to it. <b>NEVER PULL THESE WHEN A WRAITH IS NEARBY.</b><br/>They do have an “enrage” cast that <b>doubles</b> their damage output for a short amount of time, while giving them a defense buff. This means their buster will hit for 9.5k with steel, non-crit."},
-    "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Note that, unlike any other dragon, the ones on this set aggro by movement. Their Evil Eye (red eye mechanic) is a one shot, so make sure to look away."},
-    "ディープパレス・ファハン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Similar to Ahrimans from 130s, these have a no-telegraph conal AOE, except instead of <b>Level 5 Petrify</b>, they cast <b>Level 5 Death</b>. From the name, it’s pretty obvious what happens if you get hit."}
+    "ディープパレス・ナイト": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "攻撃力が高すぎるので、ソロでは戦いたくありません。当たると約2万ダメのドーナツ型範囲の<b>デススパイラル</b>も使用してきます。レイスが近くにいる場合は絶対に釣らないこと。"},
+    "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "他のドラゴンと違い、接近感知な点に注意。<b>イビルアイ</b>は即死するので確実に避けましょう（後ろを向く）。"},
+    "ディープパレス・ファハン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "131階～のアーリマンと同様に見えない前方範囲攻撃を詠唱しますが、レベル5石化の代わりに<b>レベル5デス</b>になっています。当たった場合の効果は名前の通りです。"}
     }
 ],
 "Heaven-on-High":
@@ -483,9 +483,9 @@
         "アメノ・ムツ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ハリセンボム": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・オンリョウ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・トビザメ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Jaws hurt. Like, they REALLY hurt. (you can’t LoS it either)."},
+        "アメノ・トビザメ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "前方不可視範囲で睡眠。"},
         "アメノ・アミキリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・サンゴセオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Untelegraphed frontal AOE sleep."},
+        "アメノ・サンゴセオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "ジョーズはかなり痛く、視線切り不可。 本気で危ないです。"},
         "アメノ・ギュウキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・タコニュウドウ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "アメノ・ウワバミ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -496,7 +496,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Walks to the center and uses a global knockback (cannot be Surecasted), followed by a half-roomwide AOE."
+            "Notes": "中央に移動し全体ノックバック（堅実魔不可）を使用した後に、部屋半分の範囲攻撃を使用してきます。"
         }
     },
     {
@@ -510,7 +510,7 @@
         "アメノ・ヒカギリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・アーパス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "アメノ・ウンキウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ミギテ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a roomwide (or larger?) enrage wipe."},
+        "アメノ・ミギテ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "時間切れで一部屋分の広さの範囲攻撃<b>ウォッシュアウェイ</b>を使用してきます。"},
         "アメノ・オオトカゲ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・タツノコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・アマゴイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -520,7 +520,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Will attempt to do a fear mechanic, while summoning butterflies around the edges of the arena. They explode (untelegraphed), and the fear will make you walk into the walls, so make sure to avoid it!"
+            "Notes": "混乱を付与する視線攻撃と、外周に蝶を召喚します。 混乱が付くと壁際の蝶の爆発（不可視範囲）に当たってしまうので、視線はちゃんと避けること。"
         }
     },
     {
@@ -532,7 +532,7 @@
         "アメノ・カタシャリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・サイタイサイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・オニビ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ハタモト": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Uses Midare, and it hurts (15K). Tenga Goken is also a nontelegraphed cone knockback."},
+        "アメノ・ハタモト": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "乱れ雪月花は約15000ダメージ。 天下五剣は前方扇型の不可視範囲、当たるとノックバック。"},
         "アメノ・ケウケゲン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・テナガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・メンレイキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -544,7 +544,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Summons clouds that explode after a while, and casts a proximity AOE in the center. Run to the side and don’t get clipped by multiple clouds. If you get knocked up into a cloud, the cloud will disappear. Also has a half-room AOE, so save a gap closer or don’t kite too far."
+            "Notes": "一定時間後に爆発する雲を召喚し、同時に距離減衰攻撃を使用してきます。脇に離れて、複数の雲に当たらないよう注意。打ち上げられて雲に当たると、雲は消滅します。 180度の範囲攻撃も使用してくるので、接近用のスキルを残しておくか、離れすぎないよう注意しましょう。"
         }
     },
     {
@@ -553,12 +553,12 @@
     
         "アメノ・ガーダン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ベニツノ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・オンミツ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a <b>self destruct</b> with a long cast bar (used below 10%)."},
-        "アメノ・ハラキリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a <b>self destruct</b> with a long cast bar cast at low health (below 20%)"},
+        "アメノ・オンミツ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "HP10%未満で<b>ハラキリ</b>を詠唱。詠唱時間は長め。"},
+        "アメノ・ハラキリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "HP20%未満で<b>ハラキリ</b>を詠唱。詠唱時間は長め。"},
         "アメノ・ハンニャ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・モウコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Cleaves every other auto attack. Be careful at lower Aetherpool levels."},
-        "アメノ・ヴァナラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a frontal AOE cleave with <b>no telegraph or cast bar</b>."},
-        "アメノ・キヨフサ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a stack marker that can be LoSed. It only does like 7K damage, however."},
+        "アメノ・モウコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "S使用の頻度が多いので、装備の強化値が低い場合は注意。"},
+        "アメノ・ヴァナラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>詠唱バー・範囲予兆無し</b>の前方範囲攻撃あり。"},
+        "アメノ・キヨフサ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "頭割りマーカーは視線切り可能ですが、当たっても7000ダメージほどです。"},
         "アメノ・シシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・モウキン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・アシガル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -567,7 +567,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Attempts to use a knockback as things spawn on the edge and he walks to the center. The knockback pushes everyone away from him - don’t get pushed into one of those things! <b>Surecast/Arms length do NOT work</b>."
+            "Notes": "外周に緑の竜巻が沸くと、ボスが中央でノックバック攻撃を使用してきます。飛ばされた先で竜巻で当たらないように位置取りましょう。<b>堅実魔/アームズレングスは無効</b>です。"
         }
     },
     {
@@ -578,9 +578,9 @@
         "アメノ・ガンセキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "アメノ・サイコロ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・クロウサギ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・セキバン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have an enrage, and attacks quickly."},
+        "アメノ・セキバン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "攻撃が速く、時間切れ攻撃あり。"},
         "アメノ・セキゾウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ミズミミズ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
+        "アメノ・ミズミミズ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "死者の宮殿181-189階のウォームと同様に、約30秒以内に倒さないと吸引後に即死級ダメージ。"},
         "アメノ・アカイシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・イセキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・モノイワ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -588,7 +588,7 @@
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Has a non-telegraphed, no cast bar swipe and line attack. When you see him suspiciously turn away from the tank, make sure to get out of the way!<br/>He also has a fear mechanic, and summons pulsing bombs on the floor alongside a proximity AOE. When solo, the fear will lead to a <b>100% death</b>, so don’t be greedy!"
+            "Notes": "無詠唱・不可視範囲の前方スワイプと前方直線攻撃があります。<br/>混乱付きの視線<b>フィア</b>ーも使用し、その後に距離減衰の範囲攻撃と爆弾設置をしてきます。ソロではフィアーに当たると<b>100%死ぬ</b>ので欲張らないこと。"
         }
     },
     {
@@ -596,31 +596,31 @@
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
         "アメノ・カマキリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "アメノ・ナーガ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
+        "アメノ・ナーガ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "扇型範囲の石化に当たるとAA1発で即死します。HP20%未満で25000ダメージの<b>ベイルフルロア</b>を使用。詠唱はかなり速いですが、スタンで中断可能です。<br/>*低強化値の場合。高強化値であれば敵はすぐ溶けます。"},
         "アメノ・トカゲキバ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・カマナリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "アメノ・コンゴウレイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a self-destruct enrage that’s instant. When solo, avoid running into rooms with one of these on you, in the event you get Ottered (which usually leads to death anyway)"},
+        "アメノ・コンゴウレイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "時間切れで無詠唱の自爆即死攻撃があります。タゲを持ちながらウソウソを踏まないよう、部屋に突っ込まないこと。"},
         "アメノ・テッソウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・テツキョジン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・マルイシ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Spams big line aoes but doesn’t bother autoattacking. These hit for 40K+, one shotting DPS/healers, so be very careful."},
+        "アメノ・マルイシ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "広範囲の直線範囲攻撃を連打してきます。DPS/ヒラでは当たると4万以上のダメージで即死です。AAは撃ってきません。"},
         "アメノ・シュワブチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ドキュウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ゴウワン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・カラクリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ラチモナイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Does random AOE damage across rooms (instant, nontelegraphed). If there are some in the rooms near you, make sure you kill them first or avoid them - they can do a lot of unexpected, random damage!"},
+        "アメノ・ラチモナイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "敵視のない状態で、壁を越えて予兆なしで範囲攻撃を撃ってきます。近くの部屋にいる場合は先に倒すか離れましょう。"},
         "スイカズラ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Telegraphs. Telegraphs everywhere. Lines, doughnuts, circles, you name it! Just dodge them and you’ll be fine. Every now and then he will cast a global AOE, followed by line AOEs coming out of every staff.<br/>The middle is always a safespot, for the staff doughnuts before the global AOE, but remember to bait the Fire II somewhere else before running there. Staying in the middle makes an easy pattern to dodge out of the lines as well."
+            "Notes": "範囲攻撃のオンパレードです。きちんと避ければ問題ありません。<br/>杖のドーナツ範囲はフィールドの中央が常に安置ですが、中央に行く前に<b>ファイラ</b>を他の場所に誘導することを忘れずに。中央にいれば線形範囲も避けやすいです。"
         }
     },
     {
         "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
-        "アメノ・オンリョウ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
-        "アメノ・ワカクサ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
+        "アメノ・オンリョウ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "間火力が高く、DoTもかなり痛いです。"},
+        "アメノ・ワカクサ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "毒は30秒残り、スタックしていくので、ソロではDoTダメージを甘く見ないこと。"},
         "アメノ・ジュボッコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・マンネンソウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・イワムシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
@@ -630,13 +630,13 @@
         "アメノ・シタイバナ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・モルボル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・チザクラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ホウコウ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
-        "アメノ・ハシリドコロ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
+        "アメノ・ホウコウ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "WSと強力な毒を付与してきます。毒は離れることで回避可能。"},
+        "アメノ・ハシリドコロ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ドーナツ範囲と、誘惑付きの視線攻撃があります。それ以外はそこまで強くありません。"},
         "ケンコ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Every once in a while, creates a puddle on a player with the Innerspace ability. This puddle applies the Minimum debuff, which you need to dodge the line targeted AOE Hound out of hell. If you do not have the minimum debuff, you will get one shot. Make sure to also get out of the the minimum debuff after the Devour skill goes off, or it will hurt.<br/>Be careful of the non-telegraphed frontal cleave, which is the first skill he will use in the rotation."
+            "Notes": "ミニマムを踏んで突進攻撃を受けます。捕食後はすぐに降りること。予兆無しの前方範囲のプレデタークローは背後に回ることで回避できます。"
         }
     },
     {
@@ -646,61 +646,61 @@
         "アメノ・イチジャマ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
         "アメノ・シクビ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ノヤギ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ヒョウガ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a large roomwide frontal cone that 1 shots, and a fear"},
-        "アメノ・オオカミ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They have a double auto with a nasty DOT. They’re really not fun to fight solo, steel is pretty much required on RDM (strength recommended as well)."},
+        "アメノ・ヒョウガ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "前方扇型攻撃は広範囲で、当たると即死します。視線攻撃もあります。"},
+        "アメノ・オオカミ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "死者の宮殿171階+のオオカミと同じで、WSで強力なDoTを付与してきます。防御強化に加えてできれば自己強化も欲しいです。"},
         "アメノ・ユキトカゲ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ヒョウザン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・マンモス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Deals half-roomwide damage when not in combat (around 7K).<br/>After pulling people in with <b>Wooly Inspiration</b>, uses an instant conal attack that one-shots anyone in front of it."},
-        "アメノ・ジュジシ": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Has a double auto that hurts quite a bit, and a <b>VERY FAST-CASTING ENRAGE “Winds of Winter”</b> that is likely to kill everyone it hits (it also applies a DOT and gives the griffin a haste buff). This can be avoided through <b>Line of Sight</b>, so fight it behind a corner and seek cover when it goes off.<br/>The enrage happens after <b>30 seconds</b>. It is <b>stunnable</b>."},
-        "アメノ・シロジシ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Large stunnable AOE and double autoattack. Due to the double auto, I wouldn’t fight this solo without <b>Steel</b>."},
-        "アメノ・トウフ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Don’t let them buff (Magic Tongue) or they will really hurt, especially for lower aetherpool levels. Note that these can still autoattack, so being in melee range means you essentially take double damage. You can <b>line of sight</b> the Blizzard casts, but note you will still take autos if they’re close."},
-        "アメノ・ユキオトコ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a really big, but <b>stunnable</b>, AOE that can be LoSed (<b>Northerlies</b>). Also has a quick (and large) conal attack, so don’t kite too far."},
-        "アメノ・ヤク": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They only autoattack for a while, and then after 30 seconds they will enrage, pulling everyone in (and applying a heavy) and then stomping on them for lethal damage."},
+        "アメノ・マンモス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "非戦闘時に部屋の半分程度の範囲攻撃を使用してきます。約7000ダメージ。<br/><b>ウーリーインスピレーション</b>で吸引後、そのまま前方に即死ダメの扇型範囲を撃ってきます。"},
+        "アメノ・ジュジシ": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "WS+AAが痛いです。戦闘開始から30秒経過後に非常に詠唱の速い<b>ウィンターウィンド</b>を使用してきます。スタン/視線切りで防げます。"},
+        "アメノ・シロジシ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "スタン可能な広い範囲攻撃と、強力なWSを撃ってきます。WSが痛いので<b>防御強化</b>なしでは触らない方がいいです。"},
+        "アメノ・トウフ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ゴールデンタンのバフを付けさせないこと。バフ付きではものすごく痛いです。ちなみにAAも撃ってくるので、近接攻撃範囲内にいると魔法に加えてAAも被弾することになります。"},
+        "アメノ・ユキオトコ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "非常に広い円形範囲攻撃の猛吹雪があります。スタン/視線切り可能です。詠唱の速い前方範囲もあるので、離れすぎないこと。"},
+        "アメノ・ヤク": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "しばらくAAしかせず、時間切れになると吸引+強力なへヴィ→即死級の踏みつけ攻撃を使用してきます。"},
         "カジガカカ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "Summons balls of ice that explode, untelegraphed, after a period of time. An icicle will also appear, shooting through the middle of the room. <b>Any balls hit by the icicle will explode, and any balls hit by exploding balls will also explode (domino effect)</b>. When in doubt, <b>STAY AWAY FROM THE ICE BALLS AS THE ICICLE RESOLVES</b>. Make sure you are also away from the remaining balls when the <b>Lunar Cry</b> skill finishes, or you will receive deep freeze and die if solo. After Lunar Cry, he will randomly jumps to targets and bites them for 8K damage (1 shot if frozen). Not too hard besides that!"
+            "Notes": "氷の玉に氷柱が当たると爆発し、連鎖して範囲内の玉も爆発します。不安なら氷柱が飛ぶ時は玉から離れておくこと。残った玉は<b>ルナークライ</b>で爆発するので、その時にもしっかり離れましょう。当たると凍結してソロでは死にます。ルナークライの後には飛び掛りで8000ダメージを受けます。"
         }
     },
     {
         "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
-        "アメノ・ガルラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
-        "アメノ・ロウエン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
-        "アメノ・マタンガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Can crit for 90% HP at start, get heals ready, and afterwards it’s not so bad (16K auto/24K crit)."},
-        "アメノ・ムカイイヌ": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "The <b>Dragon’s voice = run inside, and Ram’s voice = run away</b>."},
-        "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Untelegraphed attack on a random player (XX-tonze swipe), which is a HUGE cone (can be LoSed). Also has a fear."},
+        "アメノ・ガルラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "広範囲の各種攻撃を避けるための逃げ場所を考えておくこと。ソロでは開幕は近くに立ち、突進後のヒールを準備しておきます。突進は視線の通る場所でまっすぐ受けないと、追加でAAを受けて死にます。"},
+        "アメノ・ロウエン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "自己強化バフの後、広範囲攻撃のドラミングをしてきます。視線切り可能です。ドラミングに当たるとバニシュが解除されるので注意。"},
+        "アメノ・マタンガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "開幕バーストしてきて、それ以降は範囲攻撃を多用してきます。ソロではクリると開幕でHPを9割持っていかれるので、ヒールを準備しておくこと（AA16000、WS24000ダメージ）。それ以降は簡単です。"},
+        "アメノ・ムカイイヌ": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "<b>氷結の咆哮＝離れる　雷電の咆哮＝近寄る</b>"},
+        "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "スワイプの扇形範囲はものすごく広いので注意。視線切り可能です。視線攻撃のヘックスもあり。"},
         "アメノ・リュウコツ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・リュウジン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
-        "アメノ・シンゼイ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Double AA that does heavy damage and applies a DOT. Targeted Thunder II that does AOE damage 4x on a target (only 8K per hit) and applies another DOT."},
-        "アメノ・ヒトツメ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "100 tonze swing (untelegraphed point blank AOE), and glower (untelegraphed line AOE in front)"},
-        "アメノ・ラセツ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charges, buffs itself with damage up, and has an untelegraphed frontal swipe <b>“Ripper Claw”</b>.<br/>When buffed, can auto for 30K crits. Be very careful, and kite well."},
-        "アメノ・コウキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "A few telegraphs, and then a roomwide unavoidable (?) vuln stack + light damage. Easy kill."},
-        "アメノ・エンコウ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
-        "アメノ・アララギ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "AOE stacking poison. Can be LoSed with good timing."},
+        "アメノ・リュウジン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "モンスターが向いている方向の真後ろに<b>エルボードロップ</b>。ソロではWSが痛く、一定時間後に与ダメアップのバフも付きます。"},
+        "アメノ・シンゼイ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "高威力+DoTのWSあり。サンダラは8000ダメ×4連。"},
+        "アメノ・ヒトツメ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "100トンズ・スイング（敵中心/不可視）、グラワー（前方線形/不可視）"},
+        "アメノ・ラセツ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "自身に与ダメアップのバフを付与し、範囲予兆なしの前方攻撃<b>リッパークロウ</b>を使用します。<br/>バフが入っているとAAクリで3万ダメージ受けるので、回復に特に気を付けて、しっかり引き撃ちしましょう。"},
+        "アメノ・コウキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "範囲攻撃数種類の後に、被ダメアップをスタックしてくる全体攻撃を使用します。倒しやすいです。"},
+        "アメノ・エンコウ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "モンスターが向いている方向の真後ろに<b>エルボードロップ</b>。ソロではWSが痛く、一定時間後に与ダメアップのバフも付きます。"},
+        "アメノ・アララギ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "スタックする範囲毒攻撃を使用。タイミングよく動けば視線切り可能です。"},
         "オンラ": 
         {
             "DangerLevel": "Easy",
             "AggroType": "Proximity",
-            "Notes": "There will <b>always</b> be a safespot in the north-eastern corner. As such, stand slightly north of 3’o’clock and let him auto you once after dropping casting <b>Ancient Quaga</b>. He will cast <b>Meteor Impact</b> - stay closeby for a bit as you bait the line, and move up near 12’o’clock to get away from the Meteor damage. After the meteor resolves, you can move back to 3’o’clock in preparation for the next rotation."
+            "Notes": "砂玉は<b>北東の角</b>に必ず安置があります。そのため、南西でボスのタゲを持ち、<b>エンシェントクエイガ</b>の詠唱が見えたら北東に走れば、玉に当たることなく、メテオは中央付近に落ちて1万ほどのダメージで済みます。"
         }
     },
     {
         "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
-        "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
-        "アメノ・ジャキ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},
+        "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "初撃突進で2万ダメ→WS→前方スワイプ→周囲スイング。"},
+        "アメノ・ジャキ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ミールストームはスタン/視線切り可能です。無詠唱の魔法攻撃があります。"},
         "アメノ・ヌツヘツホウ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "WAR: <b>Impossible</b><br/>MNK: Caution. Buffs itself with haste, and eventually does a double-auto that applies a DOT.<br/>WHM: Caution. WHM Nuppeppos are still scary for solo. 24K stone crits! Note that you CAN LoS the stone casts, but you need to time it well. "},
-        "アメノ・ミフネ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Autos cleave for around 20K without steel (no double auto). The targeted line AOE does 55K damage to non-tanks. <b>Can be LoSed</b>."},
-        "アメノ・クビナシ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a lifesteal effect that it uses shortly after entering combat, as well as an instant frontal cleave that deals ~25K damage. Constantly gains a stacking damage up buff. Upon reaching 3 stacks, uses <b>Black Nebula</b>, a roomwide enrage one shot."},
-        "アメノ・キョウゾウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Buffs itself with defense up. Funnily enough, this overlaps the <b>Gloom</b> defense buff, and when it wears off, so does the real Gloom defense buff!"},
+        "アメノ・ミフネ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WSはありませんが、防御強化なしではAAはクリで約2万ダメージです。線形範囲攻撃はタンク以外では約55000ダメージで、視線切りで回避できます。"},
+        "アメノ・クビナシ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "HP吸収攻撃と25000ダメの無詠唱前方範囲を使用してきます。与ダメアップのバフを自身に付与し、3スタックになると部屋全体即死攻撃の<b>ブラックネビュラ</b>を詠唱します。"},
+        "アメノ・キョウゾウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "自身に防御アップのバフを付与しますが、フロアに<b>妖霧</b>が入っていると、このバフが切れたときに妖霧によるバフも切れます。"},
         "アメノ・ゼンキ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": ""},
         "アメノ・シュワブチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ジンバ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a permanently stacking damage buff, and a MASSIVE AOE (like, bigger than Wraith “Scream” AOEs). Also has a fear."},
-        "アメノ・テンマ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a nontelegraphed line AOE used on a random player, as well as a huge AOE (Wraith-sized). Also has a double-auto."},
+        "アメノ・ジンバ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "スタックする永続の与ダメアップのバフがあり、ものすごく広い範囲の攻撃を使用してきます。恐怖になる視線攻撃もあります。"},
+        "アメノ・テンマ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "強WSと、広範囲の攻撃があります。"},
         "アメノ・クロキシ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
         "アメノ・ドードー": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "*Good Luck*"}
     }
