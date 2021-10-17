@@ -20,7 +20,7 @@
     "PALAST-HORNISSE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts Final Sting if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
     "PALAST-YARZON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
     "PALAST-MISTKÄFER": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "VERIRRT GOBLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+    "VERIRRTER GOBLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALAST-THANATOS": 
         {
             "DangerLevel": "Easy",
