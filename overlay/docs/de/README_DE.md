@@ -18,7 +18,7 @@ Siehe [Installationsanleitung](INSTALL_DE.md).
 
 # Einrichtung für Streamer
 
-Please see Setup For Streamers [Instructions](STREAMER.md).
+Please see Setup For Streamers [Instructions](STREAMER_DE.md).
 
 # Aktuelle Features
 
