@@ -23,7 +23,7 @@ Please see Setup For Streamers [Instructions](STREAMER.md).
 # Aktuelle Features
 
 * Punktzahl (Schätzung)
-	* Das Overlay wird die eine Echtzeitschätzung deines Punktestands geben. Siehe [Details zur Punkteberechnung](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) für mehr Informationen.
+	* Das Overlay wird die eine Echtzeitschätzung deines Punktestands geben. Siehe [Details zur Punkteberechnung](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/de/README_DE.md#details-zur-punkteberechnung) für mehr Informationen.
 	* Der Algorithmus zur Punkteberechnung basiert auf Alphas Nachforschungen: [Erklärung zur Punkteberechnung](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
 	 
 * Tongefäße:
