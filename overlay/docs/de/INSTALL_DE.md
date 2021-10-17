@@ -29,4 +29,4 @@ Dies befindet sich im "FFXIV Settings"-Tab unter "Options".
 	
 	Die Installation ist abgeschlossen.
 	
-	Zurück zur [README](../../../README.md)
+	Zurück zur [README](README_DE.md)
