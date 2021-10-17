@@ -29,7 +29,7 @@ Cette option se trouve dans l'onglet *FFXIV Settings*, dans le groupe *Options*.
 	
 	Fin de l'installation.
 	
-	Retour au [README](../../README.md).
+	Retour au [README](../../../README.md).
   
   
   Traduction par [Coccis77](https://twitter.com/Coccis77).
