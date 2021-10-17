@@ -29,4 +29,4 @@ It is located under the *FFXIV Settings* Tab under the *Options* group.
 	
 	Installation Complete.
 	
-	Return to [README](README.md)
+	Return to [README](../../../README.md)
