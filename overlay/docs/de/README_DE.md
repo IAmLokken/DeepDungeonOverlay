@@ -105,8 +105,3 @@ Sofern die "Gehe von vollständiger Aufdeckung der Karte aus"-Option deaktiviert
 Zaubersteine können Monster töten, die so weit vom Spieler entfernt wird, dass dessen Computer diese nicht Mal geladen hat. Das bedeutet, dass für deren Tod keine Todesbenachrichtigung erhalten werden kann und daraus resultiert, dass die Anzahl besiegter Monster verfälscht sein wird.
 
 Die Punktzahl '414' wird angezeigt, falls der Lauf nicht auf Ebene 1 gestartet wurde, sondern auf 21 (HoH), bzw. 51 (PotD).
-
-# In Development
-
-* An upgrade to the UI/UX is being worked on to improve readability and streamline the current implementation.
-* The scoring algorithm is continuously being tweaked and tested.
