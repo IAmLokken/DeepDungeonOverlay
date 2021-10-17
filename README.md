@@ -2,7 +2,7 @@
 
 Deep Dungeon Overlay is an in-development OverlayPlugin skin intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
-![DDO](overlay/docs/DetailsFull01.png?raw=true)
+![DDO](overlay/docs/en/DetailsFull01.png?raw=true)
 
 # Requirements to use DDO
 
@@ -26,12 +26,12 @@ Currently DDO supports English, French, Japanese, and German languages.  _This e
 # Installation of DDO
 
 Please see [Installation Instructions](INSTALL.md).
-* [Instructions d'installation](overlay/docs/INSTALL_FR.md)  
-* [インストールマニュアル](overlay/docs/INSTALL_JA.md)
+* [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md)  
+* [インストールマニュアル](overlay/docs/ja/INSTALL_JA.md)
 
 # Setup For Streamers
 
-Please see Setup For Streamers [Instructions](overlay/docs/STREAMER.md).
+Please see Setup For Streamers [Instructions](overlay/docs/en/STREAMER.md).
 
 # Current Features
 
@@ -77,7 +77,7 @@ Please see Setup For Streamers [Instructions](overlay/docs/STREAMER.md).
 
 The Score, Pomander, Statistics, and Bestiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:
 
-![DDOS01](overlay/docs/DetailsSimple01.png?raw=true) ![DDOS02](overlay/docs/DetailsSimple02.png?raw=true)
+![DDOS01](overlay/docs/en/DetailsSimple01.png?raw=true) ![DDOS02](overlay/docs/en/DetailsSimple02.png?raw=true)
 
 # Save Files
 
@@ -97,7 +97,7 @@ This is only an issue if you leave the dungeon instance with both save slots at 
 
 Since the overlay does not know when you delete a save file in game there are two buttons to clear its save files of any saves when not in a deep dungeon.  This is good to use when you plan on attempting a run that you want to make sure is properly tracked.
 
-![DDOSM](overlay/docs/SaveManager.png?raw=true)
+![DDOSM](overlay/docs/en/SaveManager.png?raw=true)
 
 # Scoring Details
 

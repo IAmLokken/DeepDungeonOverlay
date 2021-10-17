@@ -4,7 +4,7 @@ The FFXIV ACT plugin option for _Hide Chat Log (for privacy)_ cannot be enabled 
 
 It is located under the *FFXIV Settings* Tab under the *Options* group.
 
-<img src="overlay/docs/Install02.png">
+<img src="Install02.png">
 
 # Installing the Overlay
 
@@ -15,7 +15,7 @@ It is located under the *FFXIV Settings* Tab under the *Options* group.
 5. Press OK.
 6. Set the URL to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
 
-	<img src="overlay/docs/Install01.png">
+	<img src="Install01.png">
 	
 - Upon initial installation it is suggested to re-size the overaly as displayed below in order to accomodate the size of the overlay changing depending on the enemy selected. Feel free to adjust the size to your preferences however.
 	- Check 'Force white background' in the OverlayPlugin located beneath the URL setting.
@@ -23,9 +23,9 @@ It is located under the *FFXIV Settings* Tab under the *Options* group.
 	- Un-check 'Force white background'.
 
 	
-	![Setup2](overlay/docs/Resize02.png?raw=true)
+	![Setup2](Resize02.png?raw=true)
 	
-	![Setup](overlay/docs/Resize01.png?raw=true) 
+	![Setup](Resize01.png?raw=true) 
 	
 	Installation Complete.
 	
