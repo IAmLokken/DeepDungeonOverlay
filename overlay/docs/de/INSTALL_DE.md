@@ -6,7 +6,7 @@ Dies befindet sich im "FFXIV Settings"-Tab unter "Options".
 
 <img src="Install02.png">
 
-# Overlay installieren
+# Overlay Installieren
 
 1. Erstelle über die Schaltfläche "New" ein neues Overlay im "OverlayPlugin"-Tab.
 2. Gebe dem Overlay einen beliebigen Namen.
