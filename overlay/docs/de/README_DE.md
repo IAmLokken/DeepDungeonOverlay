@@ -18,20 +18,20 @@ Siehe [Installationsanleitung](INSTALL_DE.md).
 
 # Einrichtung für Streamer
 
-Please see Setup For Streamers [Instructions](STREAMER_DE.md).
+Siehe [Anweisungen](STREAMER_DE.md) zur Einrichtung für Streamer.
 
 # Aktuelle Features
 
 * Punktzahl (Schätzung)
-	* Das Overlay wird die eine Echtzeitschätzung deines Punktestands geben. Siehe [Details zur Punkteberechnung](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/de/README_DE.md#details-zur-punkteberechnung) für mehr Informationen.
+	* Das Overlay wird dir eine Echtzeitschätzung deines Punktestands geben. Siehe [Details zur Punkteberechnung](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/de/README_DE.md#details-zur-punkteberechnung) für mehr Informationen.
 	* Der Algorithmus zur Punkteberechnung basiert auf Alphas Nachforschungen: [Erklärung zur Punkteberechnung](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
 	 
 * Tongefäße:
-	* Tongefäß des Siegelbruchs (Enabled if one was used this floor)
-	* Tongefäß der Sicht (Enabled if one was used this floor)
-	* Tongefäß der Schätze (Enabled if one was used last floor and currently active)
-	* Tongefäß der Feindwandlung (Enabled if one was used last floor and currently active)
-	* Tongefäß des Feindtods (Enabled if one was used last floor and currently active)
+	* Tongefäß des Siegelbruchs (Aktiviert, wenn eins auf der aktuellen Ebene benutzt wurde)
+	* Tongefäß der Sicht (Aktiviert, wenn eins auf der aktuellen Ebene benutzt wurde)
+	* Tongefäß der Schätze (Aktiviert, wenn eins auf der vorherigen Ebene benutzt wurde und nun aktiv ist)
+	* Tongefäß der Feindwandlung (Aktiviert, wenn eins auf der vorherigen Ebene benutzt wurde und nun aktiv ist)
+	* Tongefäß des Feindtods (Aktiviert, wenn eins auf der vorherigen Ebene benutzt wurde und nun aktiv ist)
 
 * Statistiken:
 	* Besiegte Gegner
@@ -46,11 +46,11 @@ Please see Setup For Streamers [Instructions](STREAMER_DE.md).
   * Name des Gegners
 	* Prozentuale Lebenspunkteanzeige des Gegners
 	* Gefahrenstufe des Gegners:
-		Einfach | Vorsicht | Gruselig | Unmöglich
+		Einfach | Vorsicht | Gefährlich | Unmöglich
 		:-: | :-: | :-: | :-: 
 		![Easy](../../img/Easy.png) | ![Caution](../../img/Caution.png) | ![Scary](../../img/Scary.png) | ![Impossible](../../img/Impossible.png)
 	* Aggrotypen der Gegner:	
-		Sichtweite | Geräusch | Näherung
+		Sichtfeld | Geräusch | Näherung
 		:-: | :-: | :-:
 		![Sight](../../img/Sight.png) | ![Sound](../../img/Sound.png) | ![Proximity](../../img/Proximity.png)
 	* Gegnerinformationen (Dinge, die man über den Gegner wissen sollte, falls relevant).
@@ -59,8 +59,8 @@ Please see Setup For Streamers [Instructions](STREAMER_DE.md).
 		* [PotD Handbuch](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbuch](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
 		* Weitere Aggrotypen von Gegnern wurden mit Hilfe von Cloudbursts Status-Spreadsheets getestet. [PotD](https://docs.google.com/spreadsheets/d/1nKI0-AApj-aiuUimrPkuQUJaa4DU8Ox7KqdC_ibme8E/edit#gid=12879293), [HoH](https://docs.google.com/spreadsheets/d/1aDlsiN3At6Fvfj_gg5weucDYqjQawQxGHFhJvzEUrek/edit#gid=375717345)
-	* **VERMERK**: Das Bestiarium ist die einzige verfügbare Kategorie in Gruppenläufen.
-	* **VERMERK**: Falls ein Eintrag im Bestiarium fehlen oder inkorrekt sein sollte, bitte [lege ein neues Issue an](https://github.com/IAmLokken/DeepDungeonOverlay/issues).
+	* **BEACHTE**: Das Bestiarium ist die einzig verfügbare Kategorie in Gruppenläufen.
+	* **BEACHTE**: Falls ein Eintrag im Bestiarium fehlen oder inkorrekt sein sollte, bitte [lege ein neues Issue an](https://github.com/IAmLokken/DeepDungeonOverlay/issues).
 
 Die Punktzahl, Tongefäße, Statistiken und Bestiarium des Overlays können mit den Checkboxen in der Titelleiste ein- bzw. ausgeblendet werden.
 
@@ -70,7 +70,7 @@ Die Punktzahl, Tongefäße, Statistiken und Bestiarium des Overlays können mit 
 
 DDO speichert alle relevanten Informationen zum aktuellen Lauf in der OverlayPlugin Config-Datei.
 
-Wenn du Läufe verfolgen und speichern willst gibt es ein paar Vorbehalte zu beachten:
+Wenn du Läufe verfolgen und speichern willst, gibt es ein paar Vorbehalte zu beachten:
 * DDO kann, sobald man die Tiefen Gewölbe verlassen, FFXIV oder ACT geschlossen hat, keine identischen Speicherdaten mehr unterscheiden.
 * Zwei Speicherdaten sind identisch, falls:
 	* Beide zu den gleichen Tiefen Gewölben gehören.
@@ -79,8 +79,8 @@ Wenn du Läufe verfolgen und speichern willst gibt es ein paar Vorbehalte zu bea
 	* Beide auf der gleichen Ebene sind.
 
 Ein Fallbeispiel wäre, dass du zwei Speicherdaten zur gleichen Ebene spielst, d.h. beispielsweise zwei Speicherstände auf Ebene 171 als RDM auf dem gleichen Charakter. 
-Wenn du im Spiel einen Speicherstand auswählst, hat das Overlay keine Möglichkeiten nachzuvollziehen _welchen_ Speicherstand du angeklickst hast und wird einfach den ersten nehmen, der in der eigenen Speicherdatei per Tiefes Gewölbe, Charakter, Job und Ebene gefunden wird. Da dort nun zwei Ergebnisse gefunden werden, könnte das Overlay den falschen Eintrag auswählen und deine Daten wären verfälscht.
-Dies passiert nur, falls du das Tiefe Gewölbe verlässt während beide Speicherdaten auf der gleichen Ebene sind. Falls du einen Speicherstand weiter spielst als den anderen, wird das Overlay keine Probleme haben.
+Wenn du im Spiel einen Speicherstand auswählst, hat das Overlay keine Möglichkeiten nachzuvollziehen _welchen_ Speicherstand du angeklickst hast und wird einfach den ersten nehmen, der in der eigenen Speicherdatei via Tiefes Gewölbe, Charakter, Job und Ebene gefunden wird. Da dort nun zwei Speicherstände gefunden werden, könnte das Overlay den falschen Eintrag auswählen und deine Daten wären verfälscht.
+Dies passiert nur, falls du das Tiefe Gewölbe verlässt, während beide Speicherdaten auf der gleichen Ebene sind. Falls du einen Speicherstand weiter spielst als den anderen, wird das Overlay keine Probleme haben.
 
 Da das Overlay nicht mitbekommt wenn du einen Speicherstand löschst, gibt es zwei Schaltflächen, um die gespeicherten Informationen des Overlays zu löschen. Dies ist sinnvoll, falls du planst einen Lauf zu starten, der korrekt verfolgt werden soll. 
 
@@ -99,9 +99,9 @@ Sofern die "Gehe von vollständiger Aufdeckung der Karte aus"-Option aktiviert i
 
 Sofern die "Gehe von vollständiger Aufdeckung der Karte aus"-Option deaktiviert ist, wird am Anfang einer Ebene eine geschätze Punktzahl, basierend auf das Tiefe Gewölbe und der Ebene, dafür angerechnet, außer:
 * Ein Tongefäß der Sicht wurde benutzt. Volle Punktzahl wird angerechnet.
-* Die Gesamtmenge der aufgedeckten Räume entspricht der maximal möglichen Anzahl an Räumen für das aktuelle Tiefe Gewölbe und Ebene. Volle Punktzahl wird angerechnet.
-* Die Gesamtmenge der aufgedeckten Räume ist kleiner als die minimale Anzahl an Räumen für das aktuelle Tiefe Gewölbe und Ebene. Keine Punkte werden angerechnet.
+* Die Gesamtmenge aufgedeckter Räume entspricht der maximal möglichen Anzahl an Räumen für das aktuelle Tiefe Gewölbe und Ebene. Volle Punktzahl wird angerechnet.
+* Die Gesamtmenge aufgedeckter Räume ist kleiner als die minimale Anzahl an Räumen für das aktuelle Tiefe Gewölbe und Ebene. Keine Punkte werden angerechnet.
 
-Zaubersteine können Monster töten, die so weit vom Spieler entfernt wird, dass dessen Computer diese nicht Mal geladen hat. Das bedeutet, dass für deren Tod keine Todesbenachrichtigung erhalten werden kann und daraus resultiert, dass die Anzahl besiegter Monster verfälscht sein wird.
+Zaubersteine können Monster töten, die so weit vom Spieler entfernt sind, dass dessen Computer diese nicht geladen hat. Das bedeutet, dass für deren Tod keine Todesbenachrichtigung erhalten werden kann und daraus resultiert, dass die Anzahl besiegter Monster verfälscht sein wird.
 
-Die Punktzahl '414' wird angezeigt, falls der Lauf nicht auf Ebene 1 gestartet wurde, sondern auf 21 (HoH), bzw. 51 (PotD).
+Die Punktzahl "414" wird angezeigt, falls der Lauf nicht auf Ebene 1, sondern auf 21 (HoH), bzw. 51 (PotD) gestartet wurde.
