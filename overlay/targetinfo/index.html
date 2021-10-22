@@ -1,0 +1,188 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Deep Dungeon Overlay</title>
+    <link rel="stylesheet" href="../css/targetinfo.css?v=Cactuar-1.5" />    
+
+    <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
+    <script> window.DDO = {};</script>
+    <script src="../lib/Locale.js?v=Cactuar-1.5"></script>
+    <script src="../lib/Bestiary.js?v=Cactuar-1.5"></script>
+
+    <script>
+
+        document.addEventListener("onOverlayStateUpdate", function (e) {
+            if (!e.detail.isLocked) {
+                displayResizeHandle();
+            } else {
+                hideResizeHandle();
+            }
+        });        
+        function displayResizeHandle() {
+            document.documentElement.classList.add("resizeHandle");
+        }
+        function hideResizeHandle() {
+            document.documentElement.classList.remove("resizeHandle");
+        } 
+
+        window.addEventListener("load", (e) => {
+            LoadData();
+        });
+
+        async function LoadData()
+        {
+            DDO.AssignDataElements();
+
+            var displayOverlayLanguage;
+            displayOverlayLanguage = await callOverlayHandler({call: "getLanguage"});
+            
+            var displayOverlayLocale = 'en';
+            switch(displayOverlayLanguage.language)
+            {
+                case 'English':
+                    displayOverlayLocale = 'en';
+                    break;
+                case 'French':
+                    displayOverlayLocale = 'fr';
+                    break;
+                case 'Japanese':
+                    displayOverlayLocale = 'ja'; 
+                    break;
+                case 'German':
+                    displayOverlayLocale = 'de'; 
+                    break;
+                default:
+                    break;
+            }
+            document.documentElement.setAttribute('lang', displayOverlayLocale);
+
+            DDO.Bestiary = {};
+            await DDO.LoadBestiary('../lang/', displayOverlayLocale);
+            
+            DDO.localeInformation = new DDO.Locale('../lang/',displayOverlayLocale, (e) => 
+            {
+                startOverlayEvents();
+            });
+        }
+        
+        addOverlayListener("ChangeZone", (e) => ChangeZone(e));
+        addOverlayListener("EnmityTargetData", (e) => EnmityTargetData(e));
+        addOverlayListener("LogLine", (e) => LogLine(e));
+        addOverlayListener("ChangePrimaryPlayer", (e) => ChangePrimaryPlayer(e));
+
+        function LogLine(data)
+        {
+            if ((data.line[0] == '03' || data.line[0] == '12') && 
+                    data.rawLine.includes(DDO.playerName))
+            {
+                DDO.UpdatePlayerInfo();
+            }
+        }
+        function ChangePrimaryPlayer(data)
+        {
+            DDO.playerName = data.charName;
+            DDO.UpdatePlayerInfo();
+        }
+
+        function ChangeZone(data)
+        {            
+            instanceName = data.zoneName;
+            DDO.currentInstance = instanceName;
+            if (instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsPOTD) ||
+            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH)){
+                DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
+                DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+            }
+            else{
+                DDO.DataElements.MainBody.style.display = "none";
+            }
+        }
+        function EnmityTargetData(data)
+        {
+            if (data.Target != null && (DDO.currentInstance == 'the Palace of the Dead' || DDO.currentInstance == 'Heaven-on-High')){
+                DDO.DisplayTargetInfo(data);
+            }
+            else{
+                DDO.DataElements.MainBody.style.display = "none";
+            }
+        } 
+
+        DDO.AssignDataElements = function(){
+            DDO.DataElements = {};
+            DDO.DataElements.MainBody = document.getElementById("mainBody");
+            DDO.DataElements.TargetHPPValue = document.getElementById("TargetHPP");
+            DDO.DataElements.DangerEasyImage = document.getElementById("DangerEasy");
+            DDO.DataElements.DangerCautionImage = document.getElementById("DangerCaution");
+            DDO.DataElements.DangerScaryImage = document.getElementById("DangerScary");
+            DDO.DataElements.DangerImpossibleImage = document.getElementById("DangerImpossible");
+            DDO.DataElements.AggroSightImage = document.getElementById("AggroSight");
+            DDO.DataElements.AggroSoundImage = document.getElementById("AggroSound");
+            DDO.DataElements.AggroProximityImage = document.getElementById("AggroProximity");
+            DDO.DataElements.StunImage = document.getElementById("Stun");
+            DDO.DataElements.SleepImage = document.getElementById("Sleep");
+            DDO.DataElements.SlowImage = document.getElementById("Slow");
+            DDO.DataElements.HeavyImage = document.getElementById("Heavy");
+            DDO.DataElements.BindImage = document.getElementById("Bind");
+            DDO.DataElements.ResolutionImage = document.getElementById("Resolution");
+            DDO.DataElements.StunDisabledImage = document.getElementById("StunDisabled");
+            DDO.DataElements.SleepDisabledImage = document.getElementById("SleepDisabled");
+            DDO.DataElements.SlowDisabledImage = document.getElementById("SlowDisabled");
+            DDO.DataElements.HeavyDisabledImage = document.getElementById("HeavyDisabled");
+            DDO.DataElements.BindDisabledImage = document.getElementById("BindDisabled");
+            DDO.DataElements.ResolutionDisabledImage = document.getElementById("ResolutionDisabled");
+
+            DDO.DataElements.TargetNameValue = {};
+            DDO.DataElements.TargetInformationValue = {};
+        }
+
+        DDO.TurnTargetImagesOff = function()
+        {   
+            DDO.DataElements.DangerEasyImage.style.display = "none";
+            DDO.DataElements.DangerCautionImage.style.display = "none";
+            DDO.DataElements.DangerScaryImage.style.display = "none";
+            DDO.DataElements.DangerImpossibleImage.style.display = "none";
+            DDO.DataElements.AggroSightImage.style.display = "none";
+            DDO.DataElements.AggroSoundImage.style.display = "none";
+            DDO.DataElements.AggroProximityImage.style.display = "none";         
+        }
+
+        DDO.UpdatePlayerInfo = async function()
+        {
+            var combatants = await window.callOverlayHandler({ call: 'getCombatants', names: [DDO.playerName] });
+            if (combatants.combatants.length > 0){
+                DDO.playerJob = combatants.combatants[0].Job;
+                DDO.playerLevel = combatants.combatants[0].Level;
+                DDO.playerWorld = combatants.combatants[0].WorldName;
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="mainBody">
+    <table id="targetinfo">
+        <tr>
+            <td id="TargetHPP" >-</td>
+            <td id="DangerLevel" ><img id = "DangerEasy" style="display: none;" src="../img/Easy.png" /><img id = "DangerCaution" style="display: none;" src="../img/Caution.png" /><img id = "DangerScary" style="display: none;" src="../img/Scary.png" /><img id = "DangerImpossible" style="display: none;" src="../img/Impossible.png" /></td>
+            <td id="AggroType" > <img id = "AggroSight" style="display: none;" src="../img/Sight.png" /><img id = "AggroSound" style="display: none;" src="../img/Sound.png" /><img id = "AggroProximity" style="display: none;" src="../img/Proximity.png" /></td>           
+            <td id = "CCTD">
+            <img id = "Stun"  style="display: none;" src="../img/Stun.png" /><img id = "StunDisabled" src="../img/StunDisabled.png" />              
+            <img id = "Sleep" style="display: none;" src="../img/Sleep.png" /><img id = "SleepDisabled" src="../img/SleepDisabled.png" />          
+            <img id = "Slow" style="display: none;" src="../img/Slow.png" /><img id = "SlowDisabled" src="../img/SlowDisabled.png" />              
+            <img id = "Heavy" style="display: none;" src="../img/Heavy.png" /><img id = "HeavyDisabled" src="../img/HeavyDisabled.png" />
+            <img id = "Bind" style="display: none;" src="../img/Bind.png" /><img id = "BindDisabled" src="../img/BindDisabled.png" />
+            <img id = "Resolution" style="display: none;" src="../img/Resolution.png" /><img id = "ResolutionDisabled" src="../img/ResolutionDisabled.png" />
+        </td>
+        </tr>
+    </table>
+<!--
+    <div id="scoreDebug">
+        <button type="button" id="scoreDebugButton" onclick="DDO.CalculateScoreNoRoomReveal()">Calculate Score</button>
+        <br/>
+        <span id="debugScore" style="color: seashell;">-</span>
+    </div>
+    -->
+</div>
+</body>
+</html>
