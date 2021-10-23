@@ -580,7 +580,7 @@
         "HEAVENLY KURO-USAGI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY SEKIBAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have an enrage, and attacks quickly."},
         "HEAVENLY SEKIZO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MIZUMIMIZU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
+        "HEAVENLY MIZUMIMIZU": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
         "HEAVENLY AKA-ISHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY ISEKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY MONOIWA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},

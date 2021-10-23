@@ -580,7 +580,7 @@
         "KURO-USAGI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "SEKIBAN DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have an enrage, and attacks quickly."},
         "SEKIZÔ DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "MIZUMIMIZU DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
+        "MIZUMIMIZU DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
         "AKA-ISHI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "ISEKI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "MONO-IWA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},

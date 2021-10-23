@@ -580,7 +580,7 @@
         "アメノ・クロウサギ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・セキバン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "攻撃が速く、時間切れ攻撃あり。"},
         "アメノ・セキゾウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ミズミミズ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "死者の宮殿181-189階のウォームと同様に、約30秒以内に倒さないと吸引後に即死級ダメージ。"},
+        "アメノ・ミズミミズ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "死者の宮殿181-189階のウォームと同様に、約30秒以内に倒さないと吸引後に即死級ダメージ。"},
         "アメノ・アカイシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・イセキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・モノイワ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
