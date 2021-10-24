@@ -157,6 +157,8 @@
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "古株風の格闘士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "古株風の弓術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "古株風の幻術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "パレス・ティラノサウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "パレス・ミロドン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},

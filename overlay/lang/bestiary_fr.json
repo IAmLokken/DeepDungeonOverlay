@@ -157,6 +157,8 @@
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
     "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "PUGILISTE IMMÉMORÉ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "ARCHER QUASIMENT OUBLIÉ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "ÉLÉMENTALISTE VAGUEMENT FAMILIÈRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "TYRANNOSAURE DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "MYLODON DU PALAIS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},

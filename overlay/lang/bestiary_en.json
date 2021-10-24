@@ -157,6 +157,8 @@
     "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
     "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "BLOATED PUGILIST": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "BLOATED ARCHER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "BLOATED CONJURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
 
     "PALACE TYRANNOSAUR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALACE MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},

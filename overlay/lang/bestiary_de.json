@@ -157,6 +157,8 @@
     "MIMIK": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
     "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "AUFGEBLÄHT FAUSTKÄMPFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "AUFGEBLÄHT WALDLÄUFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
+    "AUFGEBLÄHT DRUIDE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
     
     "PALAST-TYRANNOSAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
     "PALAST-MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
