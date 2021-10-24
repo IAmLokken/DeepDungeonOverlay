@@ -627,10 +627,10 @@
         "HEAVENLY JELLYFISH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY DOGUZERI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
         "HEAVENLY KOSODEGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SHITAIBANA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HEAVENLY SHITAIBANA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
         "HEAVENLY MORBOL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HEAVENLY CHIZAKURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY PENGHOU": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
+        "HEAVENLY PENGHOU": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": ""},
         "HEAVENLY HASHIRI-DOKORO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
         "KENKO": 
         {

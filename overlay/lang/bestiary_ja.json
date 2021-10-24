@@ -627,10 +627,10 @@
         "アメノ・イソクラゲ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・ドグゼリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
         "アメノ・コソデガイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・シタイバナ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "アメノ・シタイバナ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "WSと強力な毒を付与してきます。毒は離れることで回避可能。"},
         "アメノ・モルボル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "アメノ・チザクラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ホウコウ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "WSと強力な毒を付与してきます。毒は離れることで回避可能。"},
+        "アメノ・ホウコウ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": ""},
         "アメノ・ハシリドコロ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ドーナツ範囲と、誘惑付きの視線攻撃があります。それ以外はそこまで強くありません。"},
         "ケンコ": 
         {

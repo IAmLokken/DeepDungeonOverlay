@@ -627,10 +627,10 @@
         "HIMMELSSÄULEN-QUALLE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HIMMELSSÄULEN-DOGUZERI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
         "HIMMELSSÄULEN-KOSODEGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HIMMELSSÄULEN-SHITAIBANA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "HIMMELSSÄULEN-SHITAIBANA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
         "HIMMELSSÄULEN-MORBOL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "HIMMELSSÄULEN-CHIZAKURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HIMMELSSÄULEN-PENGHOU": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
+        "HIMMELSSÄULEN-PENGHOU": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": ""},
         "HIMMELSSÄULEN-HASHIRI-DOKORO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
         "KENKO": 
         {

@@ -627,10 +627,10 @@
         "MÉDUSE CÔTIÈRE DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "DOGUZERI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
         "KOSODEGAI DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "SHITAIBANA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
+        "SHITAIBANA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
         "MORBOL DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
         "CHIZAKURA DES CIEUX": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "PENGHOU DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
+        "PENGHOU DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": ""},
         "HASHIDOKORO DES CIEUX": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
         "KENKO": 
         {
