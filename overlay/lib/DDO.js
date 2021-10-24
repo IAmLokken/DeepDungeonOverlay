@@ -112,7 +112,8 @@
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[0]++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;     
-                DDO.StartFloorSetUI();                
+                DDO.StartFloorSetUI();
+                DDO.ResetVariables();          
             }
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
                 DDO.LoadSoloConfig();
@@ -127,6 +128,7 @@
                 DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
                 DDO.StartFloorSetUI();
+                DDO.ResetVariables();
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
                 DDO.LoadPartyConfig();
                 DDO.groupRunUnderway = true;
@@ -285,6 +287,20 @@
         DDO.DataElements.SpeedRunsFloorValue.innerText = 0;
         DDO.DataElements.SpeedRunsSetValue.innerText = 0;
         DDO.DataElements.SpeedRunsTotalValue.innerText = currentSave.currentSpeedRunBonusCount;
+    }
+
+    DDO.ResetVariables = function(){
+        DDO.triggerAffluence = false;
+        DDO.triggerAlteration = false;
+        DDO.triggerFlight = false;
+        DDO.safetyActive = false;
+        DDO.affluenceActive = false;
+        DDO.alterationActive = false;
+        DDO.flightActive = false;
+        DDO.sightActive = false;
+        DDO.raisingActive = false;
+        DDO.currentFloorStats = {};
+        DDO.currentFloorSetStats = {};
     }
 
     DDO.SaveRuns = function()

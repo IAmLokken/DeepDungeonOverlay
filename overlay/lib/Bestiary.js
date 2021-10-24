@@ -110,54 +110,54 @@
             else if(targetInfo.AggroType == 'Proximity') DDO.DataElements.AggroProximityImage.style = "";
 
             if (DDO.DataElements.StunImage){
-                if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Stun"]){
+                //if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Stun"]){
                     DDO.DataElements.StunImage.style.display = targetInfo.Stun ? "" : "none";
                     DDO.DataElements.StunDisabledImage.style.display = targetInfo.Stun ? "none" : "";
-                }
-                else{
-                    DDO.DataElements.StunImage.style.display = "none";
-                    DDO.DataElements.StunDisabledImage.style.display = "none";
-                }
+                //}
+                //else{
+                //    DDO.DataElements.StunImage.style.display = "none";
+                //    DDO.DataElements.StunDisabledImage.style.display = "none";
+                //}
             }
             if (DDO.DataElements.SleepImage){
-                if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Sleep"]){
+                //if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Sleep"]){
                     DDO.DataElements.SleepImage.style.display = targetInfo.Sleep ? "" : "none";
                     DDO.DataElements.SleepDisabledImage.style.display = targetInfo.Sleep ? "none" : "";
-                }
-                else{
-                    DDO.DataElements.SleepImage.style.display = "none";
-                    DDO.DataElements.SleepDisabledImage.style.display = "none";
-                }
+                //}
+                //else{
+                //    DDO.DataElements.SleepImage.style.display = "none";
+                //    DDO.DataElements.SleepDisabledImage.style.display = "none";
+                //}
             }
             if (DDO.DataElements.SlowImage){
-                if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Slow"]){
+                //if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Slow"]){
                     DDO.DataElements.SlowImage.style.display = targetInfo.Slow ? "" : "none";
                     DDO.DataElements.SlowDisabledImage.style.display = targetInfo.Slow ? "none" : "";
-                }
-                else{
-                    DDO.DataElements.SlowImage.style.display = "none";
-                    DDO.DataElements.SlowDisabledImage.style.display = "none";
-                }
+                //}
+                //else{
+                //    DDO.DataElements.SlowImage.style.display = "none";
+                //    DDO.DataElements.SlowDisabledImage.style.display = "none";
+                //}
             }
             if (DDO.DataElements.HeavyImage){
-                if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Heavy"]){
+                //if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Heavy"]){
                     DDO.DataElements.HeavyImage.style.display = targetInfo.Heavy ? "" : "none";
                     DDO.DataElements.HeavyDisabledImage.style.display = targetInfo.Heavy ? "none" : "";
-                }
-                else{
-                    DDO.DataElements.HeavyImage.style.display = "none";
-                    DDO.DataElements.HeavyDisabledImage.style.display = "none";
-                }
+                //}
+                //else{
+                //    DDO.DataElements.HeavyImage.style.display = "none";
+                //    DDO.DataElements.HeavyDisabledImage.style.display = "none";
+                //}
             }
             if (DDO.DataElements.BindImage){
-                if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Heavy"]){
+                //if (DDO.Bestiary.Info["JobCC"][DDO.playerJob]["Heavy"]){
                     DDO.DataElements.BindImage.style.display = targetInfo.Bind ? "" : "none";
                     DDO.DataElements.BindDisabledImage.style.display = targetInfo.Bind ? "none" : "";
-                }
-                else{
-                    DDO.DataElements.BindImage.style.display = "none";
-                    DDO.DataElements.BindDisabledImage.style.display = "none";
-                }
+                //}
+                //else{
+                //    DDO.DataElements.BindImage.style.display = "none";
+                //    DDO.DataElements.BindDisabledImage.style.display = "none";
+                //}
             }
             if (DDO.DataElements.ResolutionImage){
                 if (DDO.currentInstance.includes('Heaven-on-High')){
