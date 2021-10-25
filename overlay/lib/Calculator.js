@@ -242,8 +242,8 @@
                     score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * mimicKills[i];
-                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - mimicKills[i]);
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * mimicKills[i];
+                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (floorKills[i] - mimicKills[i]);
                 }
             }
         }
