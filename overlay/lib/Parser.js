@@ -334,7 +334,7 @@
             }
             DDO.triggeredTraps = [];
             DDO.enchantmentsApplied = [];
-            DDO.currentFloorStats = {};
+            DDO.ClearFloorValues();
 
             //Give credit for spawn room.
             if (DDO.currentFloor % 10 > 0){

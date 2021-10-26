@@ -116,8 +116,8 @@
             }
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
                 DDO.LoadSoloConfig();
-                DDO.currentFloorStats = {};
-                DDO.currentFloorSetStats = {};
+                DDO.ClearFloorValues();
+                DDO.ClearFloorSetValues();
                 DDO.soloRunUnderway = true;
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
@@ -148,8 +148,8 @@
                 // Otherwise they just finished a set and we proceed like normal
                 DDO.inbetweenArea = true;
                 DDO.currentInstance = instanceName;
-                DDO.currentFloorStats = {};
-                DDO.currentFloorSetStats = {};
+                DDO.ClearFloorValues();
+                DDO.ClearFloorSetValues();
             }
         }
         else {
@@ -269,7 +269,7 @@
         DDO.DataElements.MonstersTotalValue.innerText = currentSave.totalKillCount;
         DDO.DataElements.MimicsFloorValue.innerText = 0;
         DDO.DataElements.MimicsSetValue.innerText = 0;
-        DDO.DataElements.MimicsTotalValue.innerText = currentSave.currentMimicCount;
+        DDO.DataElements.MimicsTotalValue.innerText = `${currentSave.currentMimicCount} (${currentSave.currentKorriganCount})`;
         DDO.DataElements.TrapsFloorValue.innerText = 0;
         DDO.DataElements.TrapsSetValue.innerText = 0;
         DDO.DataElements.TrapsTotalValue.innerText = currentSave.currentTrapsTriggered;
@@ -285,6 +285,32 @@
         DDO.DataElements.SpeedRunsFloorValue.innerText = 0;
         DDO.DataElements.SpeedRunsSetValue.innerText = 0;
         DDO.DataElements.SpeedRunsTotalValue.innerText = currentSave.currentSpeedRunBonusCount;
+    }
+
+    DDO.ClearFloorValues = function()
+    {
+        DDO.currentFloorStats = {};
+        DDO.currentFloorStats.killCount = 0;
+        DDO.currentFloorStats.trapsTriggered = 0;
+        DDO.currentFloorStats.mimicCount = 0;
+        DDO.currentFloorStats.korriganCount = 0;
+        DDO.currentFloorStats.chestCount = 0;
+        DDO.currentFloorStats.magiciteUsed = 0;
+        DDO.currentFloorStats.enchantmentCount = 0;
+        DDO.currentFloorStats.roomRevealCount = 0;
+
+    }
+    DDO.ClearFloorSetValues = function()
+    {
+        DDO.currentFloorSetStats = {};
+        DDO.currentFloorStats.killCount = 0;
+        DDO.currentFloorStats.trapsTriggered = 0;
+        DDO.currentFloorStats.mimicCount = 0;
+        DDO.currentFloorStats.korriganCount = 0;
+        DDO.currentFloorStats.chestCount = 0;
+        DDO.currentFloorStats.magiciteUsed = 0;
+        DDO.currentFloorStats.enchantmentCount = 0;
+        DDO.currentFloorStats.roomRevealCount = 0;
     }
 
     DDO.SaveRuns = function()
