@@ -30,9 +30,9 @@
         let nameOfMob = data[3].toUpperCase();
         // Check for mimic
         if (nameOfMob == parseStrings.QuiveringCoffer || nameOfMob == parseStrings.Mimic){
-            DDO.currentFloorStats.mimicCount = (DDO.currentFloorStats.mimicCount + 1) || 1;
-            DDO.currentFloorSetStats.mimicCount = (DDO.currentFloorSetStats.mimicCount + 1) || 1;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount ++;
+            DDO.currentFloorStats.mimicCount++;
+            DDO.currentFloorSetStats.mimicCount++;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount++;
 
             DDO.DataElements.MimicsFloorValue.innerText = `${DDO.currentFloorStats.mimicCount} (${DDO.currentFloorStats.korriganCount || 0})`;
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount} (${DDO.currentFloorSetStats.korriganCount || 0})`;
@@ -43,9 +43,9 @@
         }
         // Check for korrigan
         else if (nameOfMob == parseStrings.Korrigan || nameOfMob == parseStrings.Mandragora || nameOfMob == parseStrings.Pygmaioi){
-            DDO.currentFloorStats.korriganCount = (DDO.currentFloorStats.korriganCount + 1) || 1;
-            DDO.currentFloorSetStats.korriganCount = (DDO.currentFloorSetStats.korriganCount + 1) || 1;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount ++;
+            DDO.currentFloorStats.korriganCount++;
+            DDO.currentFloorSetStats.korriganCount++;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount++;
 
             DDO.DataElements.MimicsFloorValue.innerText = `${DDO.currentFloorStats.mimicCount || 0} (${DDO.currentFloorStats.korriganCount})`;
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount || 0} (${DDO.currentFloorSetStats.korriganCount})`;
@@ -56,9 +56,9 @@
         }
         // Check for rare mob
         else if (DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].RareMonsterNames.includes(nameOfMob)){
-            DDO.currentFloorStats.rareKillCount = (DDO.currentFloorStats.rareKillCount + 1) || 1;
-            DDO.currentFloorSetStats.rareKillCount = (DDO.currentFloorSetStats.rareKillCount + 1) || 1;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpecialKillCount ++;
+            DDO.currentFloorStats.rareKillCount++;
+            DDO.currentFloorSetStats.rareKillCount++;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpecialKillCount++;
 
             DDO.DataElements.RareMonstersFloorValue.innerText = DDO.currentFloorStats.rareKillCount;
             DDO.DataElements.RareMonstersSetValue.innerText = DDO.currentFloorSetStats.rareKillCount;
@@ -130,9 +130,9 @@
         if (data[3].toUpperCase() == parseStrings.Trap && pomTrapID != DDO.TrapInfo.WeaponEnhancementTrapId && pomTrapID != DDO.TrapInfo.GearEnhancementTrapId){
             if (pomTrapID == DDO.TrapInfo.DetonatorTrapId)
             {
-                DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || -1;
-                DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || -1;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1;
+                DDO.currentFloorStats.chestCount--;
+                DDO.currentFloorSetStats.chestCount--;
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
                 console.log("Trapped chests give and take no points." + DDO.currentFloorStats.chestCount);
                 
                 DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
@@ -145,9 +145,9 @@
                 if (!DDO.triggeredTraps.includes(trapID)){
                     DDO.triggeredTraps.push(trapID);
 
-                    DDO.currentFloorStats.trapsTriggered = (DDO.currentFloorStats.trapsTriggered + 1) || 1;
-                    DDO.currentFloorSetStats.trapsTriggered = (DDO.currentFloorSetStats.trapsTriggered + 1) || 1;
-                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentTrapsTriggered ++;
+                    DDO.currentFloorStats.trapsTriggered++;
+                    DDO.currentFloorSetStats.trapsTriggered++;
+                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentTrapsTriggered++;
 
                     DDO.DataElements.TrapsFloorValue.innerText = DDO.currentFloorStats.trapsTriggered;
                     DDO.DataElements.TrapsSetValue.innerText = DDO.currentFloorSetStats.trapsTriggered;
@@ -206,8 +206,8 @@
         if(!DDO.enchantmentsApplied.includes(data[2]) && DDO.EnchantmentIds.includes(data[2]) && data[5] == 'E0000000'){
             DDO.enchantmentsApplied.push(data[2]);
 
-            DDO.currentFloorStats.enchantmentCount = (DDO.currentFloorStats.enchantmentCount + 1) || 1;
-            DDO.currentFloorSetStats.enchantmentCount = (DDO.currentFloorSetStats.enchantmentCount + 1) || 1;
+            DDO.currentFloorStats.enchantmentCount++;
+            DDO.currentFloorSetStats.enchantmentCount++;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount++;
 
             DDO.DataElements.EnchantmentsFloorValue.innerText = DDO.currentFloorStats.enchantmentCount;
@@ -221,16 +221,16 @@
         if(data[2].includes('8003')){
             if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
                 if (!DDO.sightActive){                
-                    DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
-                    DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
+                    DDO.currentFloorStats.roomRevealCount++;
+                    DDO.currentFloorSetStats.roomRevealCount++;
                     DDO.EvaluateMap(false);
                     
                     DDO.UpdateScore();
                 }
             }
             else if (data[3] == '10000007' && data[6] == 'FF'){
-                DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount + 1) || 1;
-                DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount + 1) || 1;
+                DDO.currentFloorStats.chestCount++;
+                DDO.currentFloorSetStats.chestCount++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount++;
                 console.log('Open chest.' + DDO.currentFloorStats.chestCount);
                 
@@ -252,8 +252,8 @@
             DDO.UpdateScore();
         }
         else if (logMessage.includes(parseStrings.Gloom)){
-            DDO.currentFloorStats.enchantmentCount = (DDO.currentFloorStats.enchantmentCount + 1) || 1;
-            DDO.currentFloorSetStats.enchantmentCount = (DDO.currentFloorSetStats.enchantmentCount + 1) || 1;
+            DDO.currentFloorStats.enchantmentCount++;
+            DDO.currentFloorSetStats.enchantmentCount++;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentEnchantmentCount++;
 
             DDO.DataElements.EnchantmentsFloorValue.innerText = DDO.currentFloorStats.enchantmentCount;
@@ -262,9 +262,9 @@
             DDO.UpdateScore();
         }
         else if (logMessage.includes(parseStrings.BaresItsFangsPOTD) || logMessage.includes(parseStrings.BaresItsFangsHOH)){
-            DDO.currentFloorStats.chestCount = (DDO.currentFloorStats.chestCount - 1) || -1;
-            DDO.currentFloorSetStats.chestCount = (DDO.currentFloorSetStats.chestCount - 1) || -1;
-            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount - 1;
+            DDO.currentFloorStats.chestCount--;
+            DDO.currentFloorSetStats.chestCount--;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
             console.log("Mimics don't count as chests." + DDO.currentFloorStats.chestCount);
             
             DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
@@ -339,8 +339,8 @@
 
             //Give credit for spawn room.
             if (DDO.currentFloor % 10 > 0){
-                DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
-                DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
+                DDO.currentFloorStats.roomRevealCount++;
+                DDO.currentFloorSetStats.roomRevealCount++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[Math.floor(DDO.currentFloor / 10)]
             }
 
@@ -357,8 +357,8 @@
     }
 
     DDO.AddKill = function(floorSet, isMimic){
-        DDO.currentFloorStats.killCount = (DDO.currentFloorStats.killCount + 1) || 1;
-        DDO.currentFloorSetStats.killCount = (DDO.currentFloorSetStats.killCount + 1) || 1;
+        DDO.currentFloorStats.killCount++;
+        DDO.currentFloorSetStats.killCount++;
         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[floorSet]++;
         if (isMimic)
