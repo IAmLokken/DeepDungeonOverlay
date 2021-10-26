@@ -3,708 +3,1940 @@
 "Rare Monster": "<b>NOT AFFECTED BY WITCHING</b><br/>This is a unique enemy and is a rare spawn.  Be cautious as they only have auto attacks that hit relatively hard.",
 "Congratulations": "Congratulations.",
 "Good Luck": "Good Luck.",
-"the Palace of the Dead":
-[
+"the Palace of the Dead":[
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-
-    "PALACE DEATHMOUSE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE ANTELOPE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE SPRITE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE ZIZ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE COBLYN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE BAT": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE HIPPOCERF": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE BEETLE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE HORNET": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts Final Sting if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
-    "PALACE YARZON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE DUNG BEETLE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "LOST GOBLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE DEATHGAZE": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "This boss is very easy, but damage should not be underestimated when solo (consider popping a potion during the fight) <br/> General tactic - Lust on lower floors deals insane damage, as the potency of Void Fire II is much higher than low level skills. If your class can kite, you can run circles around the room and take literally 0 autoattack damage aside from the Whipcrack."
-        }
+       "MIMIC":{
+          "Notes":"These can spawn at a much higher level than the player.  Good Luck.",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "PALACE DEATHMOUSE":{
+          "Notes":"",
+          "EnglishName":"PALACE DEATHMOUSE"
+       },
+       "PALACE ANTELOPE":{
+          "Notes":"",
+          "EnglishName":"PALACE ANTELOPE"
+       },
+       "PALACE SPRITE":{
+          "Notes":"",
+          "EnglishName":"PALACE SPRITE"
+       },
+       "PALACE ZIZ":{
+          "Notes":"",
+          "EnglishName":"PALACE ZIZ"
+       },
+       "PALACE COBLYN":{
+          "Notes":"",
+          "EnglishName":"PALACE COBLYN"
+       },
+       "PALACE BAT":{
+          "Notes":"",
+          "EnglishName":"PALACE BAT"
+       },
+       "PALACE HIPPOCERF":{
+          "Notes":"",
+          "EnglishName":"PALACE HIPPOCERF"
+       },
+       "PALACE BEETLE":{
+          "Notes":"",
+          "EnglishName":"PALACE BEETLE"
+       },
+       "PALACE HORNET":{
+          "Notes":"Casts Final Sting if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack.",
+          "EnglishName":"PALACE HORNET"
+       },
+       "PALACE YARZON":{
+          "Notes":"",
+          "EnglishName":"PALACE YARZON"
+       },
+       "PALACE DUNG BEETLE":{
+          "Notes":"",
+          "EnglishName":"PALACE DUNG BEETLE"
+       },
+       "LOST GOBLIN":{
+          "Notes":"",
+          "EnglishName":"LOST GOBLIN"
+       },
+       "PALACE DEATHGAZE":{
+          "Notes":"This boss is very easy, but damage should not be underestimated when solo (consider popping a potion during the fight) <br/> General tactic - Lust on lower floors deals insane damage, as the potency of Void Fire II is much higher than low level skills. If your class can kite, you can run circles around the room and take literally 0 autoattack damage aside from the Whipcrack.",
+          "EnglishName":"PALACE DEATHGAZE"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "SPEAR-SHAKING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "STAFF-SPINNING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "SWORD-SWINGING ADVENTURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "LIVING WHELK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE URAGNITE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE TOAD": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE SLIME": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Will explode and kill anybody within a large radius if not killed in time. When solo, DO NOT MOVE AROUND IN A ROOM AS YOU FIGHT THESE. If you step on a toad trap, you will most likely wipe (it is possible to kite and have a second to use witching after the toad wears out, but…)"},
-    "PALACE NANKA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE NINKI NANKA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE OCHU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE BILOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE SEEDLING": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE MORBOL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE COBRA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "If you step on a toad trap, the cobra will use a special skill “Devour”, one-shotting the toad. Like with slimes, do not move around in rooms as you fight."},
-    "SPURGE": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "A simple boss, very similar to the floor 10 boss with its order of attacks. However, do not underestimate the damage of its cleave, <b>Bloody Caress</b>. The order of skills will be Bloody Caress (cleave), followed by two telegraphed AOEs and then a global AOE. After the global AOE, it will go to the top of the room and summon two hornets. These must be killed or they will cast an unavoidable final sting that will kill someone. Meanwhile, the boss will spam a line telegraph <b>Rotten Stench</b> that will deal a very high amount of damage.<br/>General tactic - Use Lust to kill it, and the bees, quickly (stack on it when it summons the bees so you can hit them all with the AOE). However, consider popping a <b>Sustaining Potion</b> before you do so when solo, as the cleave damage is quite high."
-        }
+       "MIMIC":{
+          "Notes":"These can spawn at a much higher level than the player.  Good Luck.",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "SPEAR-SHAKING ADVENTURER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"SPEAR-SHAKING ADVENTURER"
+       },
+       "STAFF-SPINNING ADVENTURER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"STAFF-SPINNING ADVENTURER"
+       },
+       "SWORD-SWINGING ADVENTURER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"SWORD-SWINGING ADVENTURER"
+       },
+       "LIVING WHELK":{
+          "Notes":"",
+          "EnglishName":"LIVING WHELK"
+       },
+       "PALACE URAGNITE":{
+          "Notes":"",
+          "EnglishName":"PALACE URAGNITE"
+       },
+       "PALACE TOAD":{
+          "Notes":"",
+          "EnglishName":"PALACE TOAD"
+       },
+       "PALACE PUDDING":{
+          "Notes":"",
+          "EnglishName":"PALACE PUDDING"
+       },
+       "PALACE SLIME":{
+          "Notes":"Will explode and kill anybody within a large radius if not killed in time. When solo, DO NOT MOVE AROUND IN A ROOM AS YOU FIGHT THESE. If you step on a toad trap, you will most likely wipe (it is possible to kite and have a second to use witching after the toad wears out, but…)",
+          "EnglishName":"PALACE SLIME"
+       },
+       "PALACE NANKA":{
+          "Notes":"",
+          "EnglishName":"PALACE NANKA"
+       },
+       "PALACE NINKI NANKA":{
+          "Notes":"",
+          "EnglishName":"PALACE NINKI NANKA"
+       },
+       "PALACE OCHU":{
+          "Notes":"",
+          "EnglishName":"PALACE OCHU"
+       },
+       "PALACE BILOKO":{
+          "Notes":"",
+          "EnglishName":"PALACE BILOKO"
+       },
+       "PALACE SEEDLING":{
+          "Notes":"",
+          "EnglishName":"PALACE SEEDLING"
+       },
+       "PALACE MORBOL":{
+          "Notes":"",
+          "EnglishName":"PALACE MORBOL"
+       },
+       "PALACE COBRA":{
+          "Notes":"If you step on a toad trap, the cobra will use a special skill “Devour”, one-shotting the toad. Like with slimes, do not move around in rooms as you fight.",
+          "EnglishName":"PALACE COBRA"
+       },
+       "SPURGE":{
+          "Notes":"A simple boss, very similar to the floor 10 boss with its order of attacks. However, do not underestimate the damage of its cleave, <b>Bloody Caress</b>. The order of skills will be Bloody Caress (cleave), followed by two telegraphed AOEs and then a global AOE. After the global AOE, it will go to the top of the room and summon two hornets. These must be killed or they will cast an unavoidable final sting that will kill someone. Meanwhile, the boss will spam a line telegraph <b>Rotten Stench</b> that will deal a very high amount of damage.<br/>General tactic - Use Lust to kill it, and the bees, quickly (stack on it when it summons the bees so you can hit them all with the AOE). However, consider popping a <b>Sustaining Potion</b> before you do so when solo, as the cleave damage is quite high.",
+          "EnglishName":"SPURGE"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "FRENZIED FREEBOOTER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "ISHGARDIAN PIKEMAN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "ROUGHSPUN RUFFIAN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "PALACE PUK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE DRAKE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE ADAMANTOISE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE DULLAHAN": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE WIVRE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE PEISTE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE SPRIGGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE EFFIGY": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE MAROLITH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE CENTAUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE MINOTAUR": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
-    "PALACE SKATENE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
-    "NINGISHZIDA": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Tl;dr - start on the side, fire, ice, fire, ice, and then run to the center.<br/>This boss, aside from having a basic cleave, will create lingering AOEs on random players in the following pattern - fire, ice, fire, ice. Because these AOEs linger on the floor, don’t stand in the center to start out, because you don’t want the goop in the center when you have to run there. After the second ice ball, it will run to the center of the room and cast <b>Fear Itself</b>. To avoid this attack, which does high damage and inflicts terror, run to the center with it."
-        }
+       "MIMIC":{
+          "Notes":"These can spawn at a much higher level than the player.  Good Luck.",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "FRENZIED FREEBOOTER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"FRENZIED FREEBOOTER"
+       },
+       "ISHGARDIAN PIKEMAN":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"ISHGARDIAN PIKEMAN"
+       },
+       "ROUGHSPUN RUFFIAN":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"ROUGHSPUN RUFFIAN"
+       },
+       "PALACE PUK":{
+          "Notes":"",
+          "EnglishName":"PALACE PUK"
+       },
+       "PALACE DRAKE":{
+          "Notes":"",
+          "EnglishName":"PALACE DRAKE"
+       },
+       "PALACE ADAMANTOISE":{
+          "Notes":"",
+          "EnglishName":"PALACE ADAMANTOISE"
+       },
+       "PALACE DULLAHAN":{
+          "Notes":"",
+          "EnglishName":"PALACE DULLAHAN"
+       },
+       "PALACE WIVRE":{
+          "Notes":"",
+          "EnglishName":"PALACE WIVRE"
+       },
+       "PALACE PEISTE":{
+          "Notes":"",
+          "EnglishName":"PALACE PEISTE"
+       },
+       "PALACE SPRIGGAN":{
+          "Notes":"",
+          "EnglishName":"PALACE SPRIGGAN"
+       },
+       "PALACE EFFIGY":{
+          "Notes":"",
+          "EnglishName":"PALACE EFFIGY"
+       },
+       "PALACE MAROLITH":{
+          "Notes":"",
+          "EnglishName":"PALACE MAROLITH"
+       },
+       "PALACE CENTAUR":{
+          "Notes":"",
+          "EnglishName":"PALACE CENTAUR"
+       },
+       "PALACE MINOTAUR":{
+          "Notes":"Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned.",
+          "EnglishName":"PALACE MINOTAUR"
+       },
+       "PALACE SKATENE":{
+          "Notes":"Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills.",
+          "EnglishName":"PALACE SKATENE"
+       },
+       "NINGISHZIDA":{
+          "Notes":"Tl;dr - start on the side, fire, ice, fire, ice, and then run to the center.<br/>This boss, aside from having a basic cleave, will create lingering AOEs on random players in the following pattern - fire, ice, fire, ice. Because these AOEs linger on the floor, don’t stand in the center to start out, because you don’t want the goop in the center when you have to run there. After the second ice ball, it will run to the center of the room and cast <b>Fear Itself</b>. To avoid this attack, which does high damage and inflicts terror, run to the center with it.",
+          "EnglishName":"NINGISHZIDA"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These can spawn at a much higher level than the player.  Good Luck."},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "IMMORTAL FLAME": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "NIGHTMARE MONK": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "NIGHTMARE DAHAK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE CATOBLEPAS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE OGRE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE BOGY": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "NIGHTMARE HECTEYES": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "NIGHTMARE EYE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE GOURMAND": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "NIGHTMARE MUMMY": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "NIGHTMARE HAAGENTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE TROUBADOUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "NIGHTMARE GNAT": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE SUCCUBUS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Dark Mist</b> followed by <b>Void Fire II</b>. Dark Mist is a point blank AOE which will cause terror if it hits, so make sure you stay out of the telegraphs."},
-    "IXTAB": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Tl;dr - kill the adds<br/>This boss will cast 4 lingering AOEs, and then summon two <b>Nightmare Bloots</b>. These must be killed as fast as possible (all while avoiding the AOE telegraphs cast by the boss), or else when the boss uses its global AOE <b>Scream</b>, you will get targeted by prey and the adds will use <b>Tornado</b>, which will most likely one shot you, especially when coupled with the <b>Shadow Flare</b> global AOE which is cast right after Scream."
-        }
+       "MIMIC":{
+          "Notes":"These can spawn at a much higher level than the player.  Good Luck.",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "IMMORTAL FLAME":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"IMMORTAL FLAME"
+       },
+       "NIGHTMARE MONK":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MONK"
+       },
+       "NIGHTMARE DAHAK":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DAHAK"
+       },
+       "NIGHTMARE CATOBLEPAS":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE CATOBLEPAS"
+       },
+       "NIGHTMARE OGRE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE OGRE"
+       },
+       "NIGHTMARE BOGY":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE BOGY"
+       },
+       "NIGHTMARE HECTEYES":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HECTEYES"
+       },
+       "NIGHTMARE EYE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE EYE"
+       },
+       "NIGHTMARE GOURMAND":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GOURMAND"
+       },
+       "NIGHTMARE MUMMY":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MUMMY"
+       },
+       "NIGHTMARE HAAGENTI":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HAAGENTI"
+       },
+       "NIGHTMARE TROUBADOUR":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE TROUBADOUR"
+       },
+       "NIGHTMARE GNAT":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GNAT"
+       },
+       "NIGHTMARE SUCCUBUS":{
+          "Notes":"Casts <b>Dark Mist</b> followed by <b>Void Fire II</b>. Dark Mist is a point blank AOE which will cause terror if it hits, so make sure you stay out of the telegraphs.",
+          "EnglishName":"NIGHTMARE SUCCUBUS"
+       },
+       "IXTAB":{
+          "Notes":"Tl;dr - kill the adds<br/>This boss will cast 4 lingering AOEs, and then summon two <b>Nightmare Bloots</b>. These must be killed as fast as possible (all while avoiding the AOE telegraphs cast by the boss), or else when the boss uses its global AOE <b>Scream</b>, you will get targeted by prey and the adds will use <b>Tornado</b>, which will most likely one shot you, especially when coupled with the <b>Shadow Flare</b> global AOE which is cast right after Scream.",
+          "EnglishName":"IXTAB"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "DUSKWIGHT LANCER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "NIGHTMARE GRAVEKEEPER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "NIGHTMARE BLOODGUARD": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE DRAGON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE WRAITH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "NIGHTMARE KNIGHT": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "NIGHTMARE MANTICORE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE HELLHOUND": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE GARGOYLE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE DEMON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE GNAT": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "NIGHTMARE BHOOT": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
-    "NIGHTMARE PERSONA": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
-    "EDDA BLACKBOSOM": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Tl;dr - stay close to the boss to easily avoid the <b>In Health</b> telegraphs.<br/>This boss is pretty easy if you avoid her mechanics properly. She will use <b>In Health</b> in two patterns - one will require you to run away from her, and one will cover the whole map except a small area next to her. As such, stay close to her to avoid this. Aside from doing damage, each person hit by this skill will light up a rune on the floor, which increases the damage of the global AoE <b>Black Honeymoon</b>. Aside from that, she will occasionally cast <b>In Sickness</b>, which instantly inflicts Disease on a target, but with the timing on her skills, you never have to worry about the slow from Disease making it hard to avoid a cast of <b>In Health</b>."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DUSKWIGHT LANCER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"DUSKWIGHT LANCER"
+       },
+       "NIGHTMARE GRAVEKEEPER":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GRAVEKEEPER"
+       },
+       "NIGHTMARE BLOODGUARD":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE BLOODGUARD"
+       },
+       "NIGHTMARE DRAGON":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DRAGON"
+       },
+       "NIGHTMARE WRAITH":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE WRAITH"
+       },
+       "NIGHTMARE KNIGHT":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE KNIGHT"
+       },
+       "NIGHTMARE MANTICORE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MANTICORE"
+       },
+       "NIGHTMARE HELLHOUND":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HELLHOUND"
+       },
+       "NIGHTMARE GARGOYLE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GARGOYLE"
+       },
+       "NIGHTMARE DEMON":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DEMON"
+       },
+       "NIGHTMARE GNAT":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GNAT"
+       },
+       "NIGHTMARE BHOOT":{
+          "Notes":"These cast paralyze, so take caution if you’re doing floor-wide pulls.",
+          "EnglishName":"NIGHTMARE BHOOT"
+       },
+       "NIGHTMARE PERSONA":{
+          "Notes":"These cast paralyze, so take caution if you’re doing floor-wide pulls.",
+          "EnglishName":"NIGHTMARE PERSONA"
+       },
+       "EDDA BLACKBOSOM":{
+          "Notes":"Tl;dr - stay close to the boss to easily avoid the <b>In Health</b> telegraphs.<br/>This boss is pretty easy if you avoid her mechanics properly. She will use <b>In Health</b> in two patterns - one will require you to run away from her, and one will cover the whole map except a small area next to her. As such, stay close to her to avoid this. Aside from doing damage, each person hit by this skill will light up a rune on the floor, which increases the damage of the global AoE <b>Black Honeymoon</b>. Aside from that, she will occasionally cast <b>In Sickness</b>, which instantly inflicts Disease on a target, but with the timing on her skills, you never have to worry about the slow from Disease making it hard to avoid a cast of <b>In Health</b>.",
+          "EnglishName":"EDDA BLACKBOSOM"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "MOLDERING MERCHANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "BLACKENING MARKETEER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "PALACE IMP": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE GREMLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE IDOL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE VODORIGA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE ARCH DEMON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE DEEPEYE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE ANUBYS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE TAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE SOULFLAYER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE POT": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "THE BLACK RIDER": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "In a nutshell - Make sure you don’t get knocked back into one of the exploding balls on the side."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "MOLDERING MERCHANT":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"MOLDERING MERCHANT"
+       },
+       "BLACKENING MARKETEER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"BLACKENING MARKETEER"
+       },
+       "PALACE IMP":{
+          "Notes":"",
+          "EnglishName":"PALACE IMP"
+       },
+       "PALACE GREMLIN":{
+          "Notes":"",
+          "EnglishName":"PALACE GREMLIN"
+       },
+       "PALACE IDOL":{
+          "Notes":"",
+          "EnglishName":"PALACE IDOL"
+       },
+       "PALACE VODORIGA":{
+          "Notes":"",
+          "EnglishName":"PALACE VODORIGA"
+       },
+       "PALACE ARCH DEMON":{
+          "Notes":"",
+          "EnglishName":"PALACE ARCH DEMON"
+       },
+       "PALACE DEEPEYE":{
+          "Notes":"",
+          "EnglishName":"PALACE DEEPEYE"
+       },
+       "PALACE ANUBYS":{
+          "Notes":"",
+          "EnglishName":"PALACE ANUBYS"
+       },
+       "PALACE TAURUS":{
+          "Notes":"",
+          "EnglishName":"PALACE TAURUS"
+       },
+       "PALACE PUDDING":{
+          "Notes":"",
+          "EnglishName":"PALACE PUDDING"
+       },
+       "PALACE SOULFLAYER":{
+          "Notes":"",
+          "EnglishName":"PALACE SOULFLAYER"
+       },
+       "PALACE POT":{
+          "Notes":"",
+          "EnglishName":"PALACE POT"
+       },
+       "THE BLACK RIDER":{
+          "Notes":"In a nutshell - Make sure you don’t get knocked back into one of the exploding balls on the side.",
+          "EnglishName":"THE BLACK RIDER"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "BLOATED PUGILIST": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "BLOATED ARCHER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "BLOATED CONJURER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-
-    "PALACE TYRANNOSAUR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE PTERANODON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE ELBST": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE WIVRE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE CROC": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE DIPLOCAULUS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE BLADE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE SARCOSUCHUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE TRICERATOPS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE RAPTOR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "YAQUARU": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "In a nutshell - when it casts <b>Douse</b>, walk away such that the boss is completely out of the AOE so it doesn’t get buffed with Haste."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "BLOATED PUGILIST":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"BLOATED PUGILIST"
+       },
+       "BLOATED ARCHER":{
+         "Notes":"*Rare Monster*",
+         "EnglishName":"BLOATED ARCHER"
+       },
+       "BLOATED CONJURER":{
+         "Notes":"*Rare Monster*",
+         "EnglishName":"BLOATED CONJURER"
+      },
+       "PALACE TYRANNOSAUR":{
+          "Notes":"",
+          "EnglishName":"PALACE TYRANNOSAUR"
+       },
+       "PALACE MYLODON":{
+          "Notes":"",
+          "EnglishName":"PALACE MYLODON"
+       },
+       "PALACE PTERANODON":{
+          "Notes":"",
+          "EnglishName":"PALACE PTERANODON"
+       },
+       "PALACE ELBST":{
+          "Notes":"",
+          "EnglishName":"PALACE ELBST"
+       },
+       "PALACE WIVRE":{
+          "Notes":"",
+          "EnglishName":"PALACE WIVRE"
+       },
+       "PALACE CROC":{
+          "Notes":"",
+          "EnglishName":"PALACE CROC"
+       },
+       "PALACE DIPLOCAULUS":{
+          "Notes":"",
+          "EnglishName":"PALACE DIPLOCAULUS"
+       },
+       "PALACE BLADE":{
+          "Notes":"",
+          "EnglishName":"PALACE BLADE"
+       },
+       "PALACE SARCOSUCHUS":{
+          "Notes":"",
+          "EnglishName":"PALACE SARCOSUCHUS"
+       },
+       "PALACE TRICERATOPS":{
+          "Notes":"",
+          "EnglishName":"PALACE TRICERATOPS"
+       },
+       "PALACE RAPTOR":{
+          "Notes":"",
+          "EnglishName":"PALACE RAPTOR"
+       },
+       "YAQUARU":{
+          "Notes":"In a nutshell - when it casts <b>Douse</b>, walk away such that the boss is completely out of the AOE so it doesn’t get buffed with Haste.",
+          "EnglishName":"YAQUARU"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "EMACIATED ENGINEER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "PUTRID PLUTOCRAT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "PALACE BEAR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE COEURL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE BANDERSNATCH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE WOLF": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE DHALMEL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE LION": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE CYCLOPS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE SASQUATCH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE ANZU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE AUROCHS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "BIRD OF THE PALACE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "GUDANNA": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "In a nutshell - stay away from the tornados, because they will pulse with an AOE larger than the tornados themselves, pulling you in. When it runs to the edge, run close to it, as it will use <b>Trounce</b>, a huge conal AOE that applies vulnerability. Burn it at 17% as it will use <b>Ecliptic Meteor</b>, which deals 80% of your max health as damage."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "EMACIATED ENGINEER":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"EMACIATED ENGINEER"
+       },
+       "PUTRID PLUTOCRAT":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"PUTRID PLUTOCRAT"
+       },
+       "PALACE BEAR":{
+          "Notes":"",
+          "EnglishName":"PALACE BEAR"
+       },
+       "PALACE COEURL":{
+          "Notes":"",
+          "EnglishName":"PALACE COEURL"
+       },
+       "PALACE BANDERSNATCH":{
+          "Notes":"",
+          "EnglishName":"PALACE BANDERSNATCH"
+       },
+       "PALACE WOLF":{
+          "Notes":"",
+          "EnglishName":"PALACE WOLF"
+       },
+       "PALACE DHALMEL":{
+          "Notes":"",
+          "EnglishName":"PALACE DHALMEL"
+       },
+       "PALACE LION":{
+          "Notes":"",
+          "EnglishName":"PALACE LION"
+       },
+       "PALACE CYCLOPS":{
+          "Notes":"",
+          "EnglishName":"PALACE CYCLOPS"
+       },
+       "PALACE SASQUATCH":{
+          "Notes":"",
+          "EnglishName":"PALACE SASQUATCH"
+       },
+       "PALACE ANZU":{
+          "Notes":"",
+          "EnglishName":"PALACE ANZU"
+       },
+       "PALACE AUROCHS":{
+          "Notes":"",
+          "EnglishName":"PALACE AUROCHS"
+       },
+       "BIRD OF THE PALACE":{
+          "Notes":"",
+          "EnglishName":"BIRD OF THE PALACE"
+       },
+       "GUDANNA":{
+          "Notes":"In a nutshell - stay away from the tornados, because they will pulse with an AOE larger than the tornados themselves, pulling you in. When it runs to the edge, run close to it, as it will use <b>Trounce</b>, a huge conal AOE that applies vulnerability. Burn it at 17% as it will use <b>Ecliptic Meteor</b>, which deals 80% of your max health as damage.",
+          "EnglishName":"GUDANNA"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "INSENTIENT INQUISITOR": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "NECROSE KNIGHT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "PALACE ERUCA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE GALLIMIMUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE CLAW": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE WORM": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE BOMB": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will cast <b>Self Destruct</b> if not killed in time. Be careful when mass pulling these in a party, and do not walk inside rooms in the event of toad/silence traps for solo."},
-    "PALACE CHIMERA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "FLAME DRAGON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE WAMOURACAMPA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE VINEGAROON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE WAMOURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE HAPALIT": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "THE GODMOTHE": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "Tl;dr - kill orange bombs when they spawn, push blue bomb into the boss (all skills will knock it back) when it spawns.<br/>This boss is a bit more tricky than the previous ones. It will sometimes spawn a Lava Bomb in the middle of a bunch of untargetable little bombs that will explode over time, and you must kill the <b>Lava Bomb</b> before it explodes. It can also summon a <b>Giddy Bomb</b> while channeling <b>Massive Burst</b>. The Giddy Bomb must be pushed into the boss with any skill before it blows up. If it does, and you have to tank Massive Burst, get the heals ready, because it does 99% of everybody’s max HP (so, unaffected by any damage reduction - don’t you dare use tank LB!)."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "INSENTIENT INQUISITOR":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"INSENTIENT INQUISITOR"
+       },
+       "NECROSE KNIGHT":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"NECROSE KNIGHT"
+       },
+       "PALACE ERUCA":{
+          "Notes":"",
+          "EnglishName":"PALACE ERUCA"
+       },
+       "PALACE GALLIMIMUS":{
+          "Notes":"",
+          "EnglishName":"PALACE GALLIMIMUS"
+       },
+       "PALACE CLAW":{
+          "Notes":"",
+          "EnglishName":"PALACE CLAW"
+       },
+       "PALACE WORM":{
+          "Notes":"",
+          "EnglishName":"PALACE WORM"
+       },
+       "PALACE BOMB":{
+          "Notes":"Will cast <b>Self Destruct</b> if not killed in time. Be careful when mass pulling these in a party, and do not walk inside rooms in the event of toad/silence traps for solo.",
+          "EnglishName":"PALACE BOMB"
+       },
+       "PALACE CHIMERA":{
+          "Notes":"",
+          "EnglishName":"PALACE CHIMERA"
+       },
+       "FLAME DRAGON":{
+          "Notes":"",
+          "EnglishName":"FLAME DRAGON"
+       },
+       "PALACE WAMOURACAMPA":{
+          "Notes":"",
+          "EnglishName":"PALACE WAMOURACAMPA"
+       },
+       "PALACE VINEGAROON":{
+          "Notes":"",
+          "EnglishName":"PALACE VINEGAROON"
+       },
+       "PALACE WAMOURA":{
+          "Notes":"",
+          "EnglishName":"PALACE WAMOURA"
+       },
+       "PALACE HAPALIT":{
+          "Notes":"",
+          "EnglishName":"PALACE HAPALIT"
+       },
+       "THE GODMOTHER":{
+          "Notes":"Tl;dr - kill orange bombs when they spawn, push blue bomb into the boss (all skills will knock it back) when it spawns.<br/>This boss is a bit more tricky than the previous ones. It will sometimes spawn a Lava Bomb in the middle of a bunch of untargetable little bombs that will explode over time, and you must kill the <b>Lava Bomb</b> before it explodes. It can also summon a <b>Giddy Bomb</b> while channeling <b>Massive Burst</b>. The Giddy Bomb must be pushed into the boss with any skill before it blows up. If it does, and you have to tank Massive Burst, get the heals ready, because it does 99% of everybody’s max HP (so, unaffected by any damage reduction - don’t you dare use tank LB!).",
+          "EnglishName":"THE GODMOTHER"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "MORTIFYING MAGNATE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "PALACE HIPPOCERF": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE GOURMAND": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE WRAITH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE CORSE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE IRON CORSE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DARK DRAGON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "PALACE SWARM": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE MUMMY": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE ROSELET": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "PALACE KNIGHT": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "PALACE GRAVEKEEPER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "NYBETH OBDILORD": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "Use strength, steel, and then <b>Sustaining Potion</b> and lust. Spam Void Fire II for the entire duration - don’t worry, it will melt the adds as they spawn/respawn.<br/>As soon as the transformation wears off, use another Sustaining Potion and use Resolution. Then you can spam <b>Heavenly Judge</b> for a decent amount of damage for the entire duration, while removing all those corpses from the ground."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "MORTIFYING MAGNATE":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"MORTIFYING MAGNATE"
+       },
+       "PALACE HIPPOCERF":{
+          "Notes":"",
+          "EnglishName":"PALACE HIPPOCERF"
+       },
+       "PALACE GOURMAND":{
+          "Notes":"",
+          "EnglishName":"PALACE GOURMAND"
+       },
+       "PALACE WRAITH":{
+          "Notes":"",
+          "EnglishName":"PALACE WRAITH"
+       },
+       "PALACE CORSE":{
+          "Notes":"",
+          "EnglishName":"PALACE CORSE"
+       },
+       "PALACE IRON CORSE":{
+          "Notes":"",
+          "EnglishName":"PALACE IRON CORSE"
+       },
+       "DARK DRAGON":{
+          "Notes":"",
+          "EnglishName":"DARK DRAGON"
+       },
+       "PALACE SWARM":{
+          "Notes":"",
+          "EnglishName":"PALACE SWARM"
+       },
+       "PALACE MUMMY":{
+          "Notes":"",
+          "EnglishName":"PALACE MUMMY"
+       },
+       "PALACE ROSELET":{
+          "Notes":"",
+          "EnglishName":"PALACE ROSELET"
+       },
+       "PALACE KNIGHT":{
+          "Notes":"",
+          "EnglishName":"PALACE KNIGHT"
+       },
+       "PALACE GRAVEKEEPER":{
+          "Notes":"",
+          "EnglishName":"PALACE GRAVEKEEPER"
+       },
+       "NYBETH OBDILORD":{
+          "Notes":"Use strength, steel, and then <b>Sustaining Potion</b> and lust. Spam Void Fire II for the entire duration - don’t worry, it will melt the adds as they spawn/respawn.<br/>As soon as the transformation wears off, use another Sustaining Potion and use Resolution. Then you can spam <b>Heavenly Judge</b> for a decent amount of damage for the entire duration, while removing all those corpses from the ground.",
+          "EnglishName":"NYBETH OBDILORD"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "CORRUPTED CENTURION": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "DEEP PALACE HORNET": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack."},
-    "DEEP PALACE LADYBUG": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE HIPPOGRYPH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE DUNG BEETLE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE GAELICAT": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE DOBLYN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE ZIZ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE YARZON": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE SQUIRREL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE STAG": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE SPRITE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "GOBLIN ADVENTURER": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ALICANTO": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "This boss is similar to the 1-10 boss mechanically, it just hits a little harder. Just tank and spank!"
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "CORRUPTED CENTURION":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"CORRUPTED CENTURION"
+       },
+       "DEEP PALACE HORNET":{
+          "Notes":"Casts <b>Final Sting</b> if not killed in time, dealing a high amount of damage. You can walk away from the hornet during this time to avoid the attack.",
+          "EnglishName":"DEEP PALACE HORNET"
+       },
+       "DEEP PALACE LADYBUG":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LADYBUG"
+       },
+       "DEEP PALACE HIPPOGRYPH":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HIPPOGRYPH"
+       },
+       "DEEP PALACE DUNG BEETLE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DUNG BEETLE"
+       },
+       "DEEP PALACE GAELICAT":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GAELICAT"
+       },
+       "DEEP PALACE DOBLYN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DOBLYN"
+       },
+       "DEEP PALACE ZIZ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ZIZ"
+       },
+       "DEEP PALACE YARZON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE YARZON"
+       },
+       "DEEP PALACE SQUIRREL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SQUIRREL"
+       },
+       "DEEP PALACE STAG":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE STAG"
+       },
+       "DEEP PALACE SPRITE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SPRITE"
+       },
+       "GOBLIN ADVENTURER":{
+          "Notes":"",
+          "EnglishName":"GOBLIN ADVENTURER"
+       },
+       "ALICANTO":{
+          "Notes":"This boss is similar to the 1-10 boss mechanically, it just hits a little harder. Just tank and spank!",
+          "EnglishName":"ALICANTO"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "DEEP PALACE LEECH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE MORBOL": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep."},
-    "DEEP PALACE GIGANTOAD": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Sticky Tongue</b> followed by <b>Labored Leap</b>, which can do over 6K damage. The Sticky Tongue will <b>STUN</b> you for 5 seconds if you are <b>NOT FACING THE TOAD</b>. Be very careful with these with solo, especially if you have other mobs around."},
-    "DEEP PALACE BILOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE COBRA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Same as the cobras from 11-20, except these will poison you with <b>Regorge</b> for a considerable amount of damage. Beware the toad trap + cobra combo!"},
-    "DEEP PALACE BIFERICERAS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE SEEDLING": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE SLIME": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These Slimes will inflict a stacking physical vulnerability debuff (note that they attack with magic, though). They can still explode, like the slimes on 11-20, but it takes a much longer time."},
-    "DEEP PALACE SALAMANDER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE OCHU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE PUDDING": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE NANKA": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "KIRTIMUKHA": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "Tl;dr - avoid AOEs, kill bees.<br/>This boss is mechanically similar to that of floor 20. <b>Rotten Stench</b> will now be a one-shot, so make sure you avoid those telegraphed AOEs. The easiest way to deal with the bee adds is to stack on the boss and have somebody spam Lust autoattacks."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE LEECH":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LEECH"
+       },
+       "DEEP PALACE MORBOL":{
+          "Notes":"Starts off the fight with an instant conal AOE that inflicts sleep and slow, followed by <b>Bad Breath</b>. Recommended to stand in melee range so 1) it’s easier to walk out of the breath after the sleep is gone and 2) so it can slap you with an auto to wake you up from sleep.",
+          "EnglishName":"DEEP PALACE MORBOL"
+       },
+       "DEEP PALACE GIGANTOAD":{
+          "Notes":"Casts <b>Sticky Tongue</b> followed by <b>Labored Leap</b>, which can do over 6K damage. The Sticky Tongue will <b>STUN</b> you for 5 seconds if you are <b>NOT FACING THE TOAD</b>. Be very careful with these with solo, especially if you have other mobs around.",
+          "EnglishName":"DEEP PALACE GIGANTOAD"
+       },
+       "DEEP PALACE BILOKO":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BILOKO"
+       },
+       "DEEP PALACE COBRA":{
+          "Notes":"Same as the cobras from 11-20, except these will poison you with <b>Regorge</b> for a considerable amount of damage. Beware the toad trap + cobra combo!",
+          "EnglishName":"DEEP PALACE COBRA"
+       },
+       "DEEP PALACE BIFERICERAS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BIFERICERAS"
+       },
+       "DEEP PALACE SEEDLING":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SEEDLING"
+       },
+       "DEEP PALACE SLIME":{
+          "Notes":"These Slimes will inflict a stacking physical vulnerability debuff (note that they attack with magic, though). They can still explode, like the slimes on 11-20, but it takes a much longer time.",
+          "EnglishName":"DEEP PALACE SLIME"
+       },
+       "DEEP PALACE SALAMANDER":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SALAMANDER"
+       },
+       "DEEP PALACE OCHU":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE OCHU"
+       },
+       "DEEP PALACE PUDDING":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PUDDING"
+       },
+       "DEEP PALACE NANKA":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE NANKA"
+       },
+       "KIRTIMUKHA":{
+          "Notes":"Tl;dr - avoid AOEs, kill bees.<br/>This boss is mechanically similar to that of floor 20. <b>Rotten Stench</b> will now be a one-shot, so make sure you avoid those telegraphed AOEs. The easiest way to deal with the bee adds is to stack on the boss and have somebody spam Lust autoattacks.",
+          "EnglishName":"KIRTIMUKHA"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "GANGRENOUS GIGANT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "DEEP PALACE DULLAHAN": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE EFFIGY": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE CENTAUR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE BASILISK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE BIAST": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE ADAMANTOISE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE UROLITH": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE WIVRE": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE SPRIGGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE PTEROC": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE MINOTAUR": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned."},
-    "DEEP PALACE SKATENE": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills."},
-    "ALFARD": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "Tl;dr - stand on side, fire, ice, fire, ice, then run to center.<br/>Similar to the F30 boss, except this time it casts <b>Fear Itself</b> way faster. Run to the center immediately after the second ice ball, and make sure nobody is standing in the center prior to that, so you don’t get goop there."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "GANGRENOUS GIGANT":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"GANGRENOUS GIGANT"
+       },
+       "DEEP PALACE DULLAHAN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DULLAHAN"
+       },
+       "DEEP PALACE EFFIGY":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE EFFIGY"
+       },
+       "DEEP PALACE CENTAUR":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE CENTAUR"
+       },
+       "DEEP PALACE BASILISK":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BASILISK"
+       },
+       "DEEP PALACE BIAST":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BIAST"
+       },
+       "DEEP PALACE ADAMANTOISE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ADAMANTOISE"
+       },
+       "DEEP PALACE UROLITH":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE UROLITH"
+       },
+       "DEEP PALACE WIVRE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE WIVRE"
+       },
+       "DEEP PALACE SPRIGGAN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SPRIGGAN"
+       },
+       "DEEP PALACE PTEROC":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PTEROC"
+       },
+       "DEEP PALACE MINOTAUR":{
+          "Notes":"Casts <b>111-Tonze Swing</b>, a non-telegraphed point-blank AOE that deals a fair amount of damage and knockback. Can be stunned.",
+          "EnglishName":"DEEP PALACE MINOTAUR"
+       },
+       "DEEP PALACE SKATENE":{
+          "Notes":"Easy but noteworthy. Will cast <b>Chirp</b>, which puts everyone to sleep for 15s. Easier to deal with solo, because it’ll slap you back awake, but beware of getting slept as other monsters are casting their AOE skills.",
+          "EnglishName":"DEEP PALACE SKATENE"
+       },
+       "ALFARD":{
+          "Notes":"Tl;dr - stand on side, fire, ice, fire, ice, then run to center.<br/>Similar to the F30 boss, except this time it casts <b>Fear Itself</b> way faster. Run to the center immediately after the second ice ball, and make sure nobody is standing in the center prior to that, so you don’t get goop there.",
+          "EnglishName":"ALFARD"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "HALF-CRACKED CAPTAIN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "DEEP PALACE GUARD": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE HECTEYES": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE GOURMAND": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE CATOBLEPAS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE DAHAK": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE TAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE TROUBADOR": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE SOUL": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE MUMMY": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE OGRE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE MONK": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE AHRIMAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Level 5 Petrify</b>, a non-telegraphed conal AOE. This causes 15 seconds of petrification, which is unremovable, and can easily lead to death when solo."},
-    "AH PUCH": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "<b>Pomander of Resolution<b/>’s Heavenly Judge skill will deal 30K damage (with Strength) to this boss. If solo, recommended to use Strength + Steel + Resolution. You don’t have to use Steel, but it makes it a lot safer, and if you don’t Steel you may have to leave mid-transformation to pop a quick sustain potion before popping another Resolution."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "HALF-CRACKED CAPTAIN":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"HALF-CRACKED CAPTAIN"
+       },
+       "DEEP PALACE GUARD":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GUARD"
+       },
+       "DEEP PALACE HECTEYES":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HECTEYES"
+       },
+       "DEEP PALACE GOURMAND":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GOURMAND"
+       },
+       "DEEP PALACE CATOBLEPAS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE CATOBLEPAS"
+       },
+       "DEEP PALACE DAHAK":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DAHAK"
+       },
+       "DEEP PALACE TAURUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TAURUS"
+       },
+       "DEEP PALACE TROUBADOR":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TROUBADOR"
+       },
+       "DEEP PALACE SOUL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SOUL"
+       },
+       "DEEP PALACE MUMMY":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MUMMY"
+       },
+       "DEEP PALACE OGRE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE OGRE"
+       },
+       "DEEP PALACE MONK":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MONK"
+       },
+       "DEEP PALACE AHRIMAN":{
+          "Notes":"Casts <b>Level 5 Petrify</b>, a non-telegraphed conal AOE. This causes 15 seconds of petrification, which is unremovable, and can easily lead to death when solo.",
+          "EnglishName":"DEEP PALACE AHRIMAN"
+       },
+       "AH PUCH":{
+          "Notes":"<b>Pomander of Resolution<b/>’s Heavenly Judge skill will deal 30K damage (with Strength) to this boss. If solo, recommended to use Strength + Steel + Resolution. You don’t have to use Steel, but it makes it a lot safer, and if you don’t Steel you may have to leave mid-transformation to pop a quick sustain potion before popping another Resolution.",
+          "EnglishName":"AH PUCH"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "DEEP PALACE KED": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE HELLHOUND": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE GARGOYLE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Deals a high amount of DPS with its poison and cleave attack. Not easy to engage solo without sustain potion and/or Steel."},
-    "DEEP PALACE BHOOT": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE DEMON": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Charybdis</b> if not killed in time, which will bring your party to 1% HP."},
-    "DEEP PALACE SUCCUBUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE MANTICORE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Will buff itself with a physical damage buff, and use <b>Ripper Claw</b>, a non-telegraphed frontal AOE that can hit quite hard. Walk away or behind it to avoid this."},
-    "DEEP PALACE PERSONA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE KNIGHT": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ONYX DRAGON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE WRAITH": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however."},
-    "DEEP PALACE KEEPER": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "TISIPHONE": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "This boss can be quite difficult for melee, but a lot easier for ranged classes.<br/>Tl;dr - kite and kill zombie adds (don’t let them touch you), succubus add is optional (dotting it is worth it though)."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE KED":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KED"
+       },
+       "DEEP PALACE HELLHOUND":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HELLHOUND"
+       },
+       "DEEP PALACE GARGOYLE":{
+          "Notes":"Deals a high amount of DPS with its poison and cleave attack. Not easy to engage solo without sustain potion and/or Steel.",
+          "EnglishName":"DEEP PALACE GARGOYLE"
+       },
+       "DEEP PALACE BHOOT":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BHOOT"
+       },
+       "DEEP PALACE DEMON":{
+          "Notes":"Casts <b>Charybdis</b> if not killed in time, which will bring your party to 1% HP.",
+          "EnglishName":"DEEP PALACE DEMON"
+       },
+       "DEEP PALACE SUCCUBUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SUCCUBUS"
+       },
+       "DEEP PALACE MANTICORE":{
+          "Notes":"Will buff itself with a physical damage buff, and use <b>Ripper Claw</b>, a non-telegraphed frontal AOE that can hit quite hard. Walk away or behind it to avoid this.",
+          "EnglishName":"DEEP PALACE MANTICORE"
+       },
+       "DEEP PALACE PERSONA":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PERSONA"
+       },
+       "DEEP PALACE KNIGHT":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KNIGHT"
+       },
+       "ONYX DRAGON":{
+          "Notes":"",
+          "EnglishName":"ONYX DRAGON"
+       },
+       "DEEP PALACE WRAITH":{
+          "Notes":"Cast a huge AOE, <b>Scream</b>, this can spell trouble by forcing you to walk into rooms to avoid the AOE, where you might aggro other mobs or step on a trap. You can stun or silence them, however.",
+          "EnglishName":"DEEP PALACE WRAITH"
+       },
+       "DEEP PALACE KEEPER":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KEEPER"
+       },
+       "TISIPHONE":{
+          "Notes":"This boss can be quite difficult for melee, but a lot easier for ranged classes.<br/>Tl;dr - kite and kill zombie adds (don’t let them touch you), succubus add is optional (dotting it is worth it though).",
+          "EnglishName":"TISIPHONE"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "SUNKEN CAPTAIN": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "DEEP PALACE GREMLIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE DEVILET": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable."},
-    "DEEP PALACE DEEPEYE": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
-    "DEEP PALACE ABAIA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has an enrage that grants a minor damage up if left alive long enough."},
-    "DEEP PALACE SOULFLAYER": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Double auto that heals them for the amount of damage they deal. Very annoying to fight."},
-    "DEEP PALACE PUDDING": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
-    "DEEP PALACE SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE POT": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
-    "DEEP PALACE TAURUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE MAROLITH": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary."},
-    "DEEP PALACE ARCH DEMON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "TODESRITTER": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "While mechanically similar to the F60 boss, this one can hit like a truck. While you can solo it without steel (on RDM at least), I really, really would recommend using steel for this boss and beyond."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "SUNKEN CAPTAIN":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"SUNKEN CAPTAIN"
+       },
+       "DEEP PALACE GREMLIN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GREMLIN"
+       },
+       "DEEP PALACE DEVILET":{
+          "Notes":"Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable.",
+          "EnglishName":"DEEP PALACE DEVILET"
+       },
+       "DEEP PALACE DEEPEYE":{
+          "Notes":"Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary.",
+          "EnglishName":"DEEP PALACE DEEPEYE"
+       },
+       "DEEP PALACE ABAIA":{
+          "Notes":"Has an enrage that grants a minor damage up if left alive long enough.",
+          "EnglishName":"DEEP PALACE ABAIA"
+       },
+       "DEEP PALACE SOULFLAYER":{
+          "Notes":"Double auto that heals them for the amount of damage they deal. Very annoying to fight.",
+          "EnglishName":"DEEP PALACE SOULFLAYER"
+       },
+       "DEEP PALACE PUDDING":{
+          "Notes":"Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary.",
+          "EnglishName":"DEEP PALACE PUDDING"
+       },
+       "DEEP PALACE SHABTI":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SHABTI"
+       },
+       "DEEP PALACE POT":{
+          "Notes":"Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary.",
+          "EnglishName":"DEEP PALACE POT"
+       },
+       "DEEP PALACE TAURUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TAURUS"
+       },
+       "DEEP PALACE MAROLITH":{
+          "Notes":"Has a cleave/double autoattack. Be careful with their burst damage, and use sustain potions if necessary.",
+          "EnglishName":"DEEP PALACE MAROLITH"
+       },
+       "DEEP PALACE ARCH DEMON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ARCH DEMON"
+       },
+       "TODESRITTER":{
+          "Notes":"While mechanically similar to the F60 boss, this one can hit like a truck. While you can solo it without steel (on RDM at least), I really, really would recommend using steel for this boss and beyond.",
+          "EnglishName":"TODESRITTER"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "FLYBLOWN PRAEFECTUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "DEEP PALACE MYLODON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE PTERANODON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE LINDWURM": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE CROC": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleave/double autoattacks and are very bursty."},
-    "DEEP PALACE DIPLOCAULUS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE ARCHAEOSAUR": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
-    "DEEP PALACE WIVRE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
-    "DEEP PALACE VINEGAROON": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE TRICERATOPS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them."},
-    "DEEP PALACE TURSUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE SARCOSUCHUS": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "YULUNGGU": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "This boss is similar to the F70 boss, except the water puddle from <b>Douse</b> will buff it with haste and physical damage up. The tank should pull this boss slowly in a circle around the map, making sure to move it out of every <b>Douse</b> puddle it creates.<br/>Save sprint/backstep abilities for the first <b>Heavy</b> effect applied with diminishing returns, as you will need it to avoid the upcoming <b>Electrogenesis</b> AOE. (sprint when the Heavy has around 7 seconds left)."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "FLYBLOWN PRAEFECTUS":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"FLYBLOWN PRAEFECTUS"
+       },
+       "DEEP PALACE MYLODON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MYLODON"
+       },
+       "DEEP PALACE PTERANODON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PTERANODON"
+       },
+       "DEEP PALACE LINDWURM":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LINDWURM"
+       },
+       "DEEP PALACE CROC":{
+          "Notes":"These have cleave/double autoattacks and are very bursty.",
+          "EnglishName":"DEEP PALACE CROC"
+       },
+       "DEEP PALACE DIPLOCAULUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DIPLOCAULUS"
+       },
+       "DEEP PALACE ARCHAEOSAUR":{
+          "Notes":"Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel.",
+          "EnglishName":"DEEP PALACE ARCHAEOSAUR"
+       },
+       "DEEP PALACE WIVRE":{
+          "Notes":"These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them.",
+          "EnglishName":"DEEP PALACE WIVRE"
+       },
+       "DEEP PALACE VINEGAROON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE VINEGAROON"
+       },
+       "DEEP PALACE TRICERATOPS":{
+          "Notes":"These have cleave/double autoattacks and are very bursty. Additionally, Wivres and Triceratops <b>aggro by proximity</b>, so you cannot sneak behind them.",
+          "EnglishName":"DEEP PALACE TRICERATOPS"
+       },
+       "DEEP PALACE TURSUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TURSUS"
+       },
+       "DEEP PALACE SARCOSUCHUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SARCOSUCHUS"
+       },
+       "YULUNGGU":{
+          "Notes":"This boss is similar to the F70 boss, except the water puddle from <b>Douse</b> will buff it with haste and physical damage up. The tank should pull this boss slowly in a circle around the map, making sure to move it out of every <b>Douse</b> puddle it creates.<br/>Save sprint/backstep abilities for the first <b>Heavy</b> effect applied with diminishing returns, as you will need it to avoid the upcoming <b>Electrogenesis</b> AOE. (sprint when the Heavy has around 7 seconds left).",
+          "EnglishName":"YULUNGGU"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "DEEP PALACE BEAR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE BLACK COEURL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE BANDERSNATCH": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleaves/double autos. Be careful when solo."},
-    "DEEP PALACE ANZU": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "Has a cleave that applies a DOT, and spams <b>Flying Frenzy</b>, which targets a random party member, dealing huge damage, stun, and applying vulnerability in an AOE around that member. Spread out. Don’t even try to fight this solo.<br/>MCH can burst these with cooldowns, Strength & Steel, however. Because MCH."},
-    "DEEP PALACE DHALMEL": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE LION": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These have cleaves/double autos. Be careful when solo."},
-    "DEEP PALACE WOLF": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cleave that applies Frostbite, a powerful DOT. Get Esuna/Erase ready to remove this from whoever gets hit by it.<br/>Don’t touch them on casters. Ranged DPS can take them on without any items."},
-    "DEEP PALACE SASQUATCH": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These aggro by proximity, and have two skills that they cast when not in combat - <b>Ripe Banana</b> and <b>Chest Thump</b>. Ripe Banana will give it a huge physical damage buff, and then it will proceed to cast Chest Thump many times, dealing AOE damage to anybody within a one room radius while applying stacks of physical vulnerability. As such, do not fight mobs near rooms with Sasquatches in them. <b>NEVER pull a Sasquatch that is buffed</b>, or else you will be one shot - always wait for the buff to wear out.<br/>Highly recommended to use Steel if solo, as a Browbeat crit will do 13K, 1 shotting you if paired with an autoattack."},
-    "BIRD OF THE DEEP PALACE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These do a reasonable amount of damage with their cleaves, but you need to watch out for their <b>Revelation</b> ability which is an AOE that applies confusion.<br/>After fighting these for a little while, they will cast <b>Tropical Wind</b>, granting them a huge haste and damage buff. During this time, they will spam <b>Revelation</b> exclusively (you may still get autoattacked in melee range), where each one is pretty much a guaranteed one shot. You can stun the buff or remove the haste with a slow effect."},
-    "DEEP PALACE WISENT": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "While these are easy to kill, they have a DPS check where if not killed in time (3o seconds), they will suck everyone in, apply a HUGE heavy debuff (like 95-99% slow), and do a stomp that will deal around 90% of a DPS’s health and apply Paralysis. Be careful if you pull multiple at the same time.<br/>The suction can be avoided with <b>Surecast/Arms Length</b>, and the enrage cast be <b>interrupted</b> or slept."},
-    "DEEP PALACE SNOWCLOPS": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has 2 one-shot skills with no telegraph - <b>Glower</b> and <b>100-tonze swing</b>. Glower is a frontal line AOE which is cast almost immediately after being pulled, and 100-tonze swing is a point-blank AOE (so, walk away from it). These can be stunned."},
-    "DENDAINSONNE": 
-        {
-            "DangerLevel": "Scary",
-            "AggroType": "Proximity",
-            "Notes": "Lust at ~20-21%, and then slow push into 15%. After the boss is 15%, use autoattacks or a couple weak abilities to push it from like 15.9% to as close to 15.0% as possible (you can’t actually see this number, so you need to play it a bit safe). Wait for the boss to use a skill (commonly wait for the double Charybdis cast after Trounce), then use your burst rotation. Healers and RDM have this easy, but other classes need to have their heals (Second Wind, Super Potion, Bloodbath, etc) ready and the burst rotation on-point."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE BEAR":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BEAR"
+       },
+       "DEEP PALACE BLACK COEURL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BLACK COEURL"
+       },
+       "DEEP PALACE BANDERSNATCH":{
+          "Notes":"These have cleaves/double autos. Be careful when solo.",
+          "EnglishName":"DEEP PALACE BANDERSNATCH"
+       },
+       "DEEP PALACE ANZU":{
+          "Notes":"Has a cleave that applies a DOT, and spams <b>Flying Frenzy</b>, which targets a random party member, dealing huge damage, stun, and applying vulnerability in an AOE around that member. Spread out. Don’t even try to fight this solo.<br/>MCH can burst these with cooldowns, Strength & Steel, however. Because MCH.",
+          "EnglishName":"DEEP PALACE ANZU"
+       },
+       "DEEP PALACE DHALMEL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DHALMEL"
+       },
+       "DEEP PALACE LION":{
+          "Notes":"These have cleaves/double autos. Be careful when solo.",
+          "EnglishName":"DEEP PALACE LION"
+       },
+       "DEEP PALACE WOLF":{
+          "Notes":"Has a cleave that applies Frostbite, a powerful DOT. Get Esuna/Erase ready to remove this from whoever gets hit by it.<br/>Don’t touch them on casters. Ranged DPS can take them on without any items.",
+          "EnglishName":"DEEP PALACE WOLF"
+       },
+       "DEEP PALACE SASQUATCH":{
+          "Notes":"These aggro by proximity, and have two skills that they cast when not in combat - <b>Ripe Banana</b> and <b>Chest Thump</b>. Ripe Banana will give it a huge physical damage buff, and then it will proceed to cast Chest Thump many times, dealing AOE damage to anybody within a one room radius while applying stacks of physical vulnerability. As such, do not fight mobs near rooms with Sasquatches in them. <b>NEVER pull a Sasquatch that is buffed</b>, or else you will be one shot - always wait for the buff to wear out.<br/>Highly recommended to use Steel if solo, as a Browbeat crit will do 13K, 1 shotting you if paired with an autoattack.",
+          "EnglishName":"DEEP PALACE SASQUATCH"
+       },
+       "BIRD OF THE DEEP PALACE":{
+          "Notes":"These do a reasonable amount of damage with their cleaves, but you need to watch out for their <b>Revelation</b> ability which is an AOE that applies confusion.<br/>After fighting these for a little while, they will cast <b>Tropical Wind</b>, granting them a huge haste and damage buff. During this time, they will spam <b>Revelation</b> exclusively (you may still get autoattacked in melee range), where each one is pretty much a guaranteed one shot. You can stun the buff or remove the haste with a slow effect.",
+          "EnglishName":"BIRD OF THE DEEP PALACE"
+       },
+       "DEEP PALACE WISENT":{
+          "Notes":"While these are easy to kill, they have a DPS check where if not killed in time (3o seconds), they will suck everyone in, apply a HUGE heavy debuff (like 95-99% slow), and do a stomp that will deal around 90% of a DPS’s health and apply Paralysis. Be careful if you pull multiple at the same time.<br/>The suction can be avoided with <b>Surecast/Arms Length</b>, and the enrage cast be <b>interrupted</b> or slept.",
+          "EnglishName":"DEEP PALACE WISENT"
+       },
+       "DEEP PALACE SNOWCLOPS":{
+          "Notes":"Has 2 one-shot skills with no telegraph - <b>Glower</b> and <b>100-tonze swing</b>. Glower is a frontal line AOE which is cast almost immediately after being pulled, and 100-tonze swing is a point-blank AOE (so, walk away from it). These can be stunned.",
+          "EnglishName":"DEEP PALACE SNOWCLOPS"
+       },
+       "DENDAINSONNE":{
+          "Notes":"Lust at ~20-21%, and then slow push into 15%. After the boss is 15%, use autoattacks or a couple weak abilities to push it from like 15.9% to as close to 15.0% as possible (you can’t actually see this number, so you need to play it a bit safe). Wait for the boss to use a skill (commonly wait for the double Charybdis cast after Trounce), then use your burst rotation. Healers and RDM have this easy, but other classes need to have their heals (Second Wind, Super Potion, Bloodbath, etc) ready and the burst rotation on-point.",
+          "EnglishName":"DENDAINSONNE"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "JAUNDICED TRIBUNUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "DEEP PALACE GRENADE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE SPRITE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Don’t pull on ranged DPS/no sustain casters."},
-    "DEEP PALACE CLAW": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Will suck in a random member and stab them for a decent amount of damage. Also has a targeted AOE <b>Tail Screw</b> that deals damage and applies slow. It is killable solo by a healer/RDM if you use Steel.<br/><b>Knockback immunity does not work on the suction</b>."},
-    "DEEP PALACE CRAWLER": {"DangerLevel": "Impossible", "AggroType": "Sound", "Notes": "These have an instant conal AOE burst attack that deals 7K damage (on top of their 5K autoattack) and applies a strong slow effect. Additionally, they have an instant conal AOE poison attack that ticks for 3K damage a tick. Spread out when you fight these, and get that Esuna ready.<br/>These aggro by sound, so you can toggle walk to avoid them."},
-    "DEEP PALACE ARCHAEOSAUR": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to."},
-    "DEEP PALACE WORM": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Randomly hits people within half a room with an instant AOE that deals a fair amount of damage. Has a double-auto, and a DPS check (around 30 seconds) where it will suck everyone in and shortly afterwards, deal 20K damage to people in range. It is possible to tank this and then heal through it as a healer/RDM with Steel, but with crits, you will be dead. You can also stagger the mob and kite it to outrange the suction at 30 second (very large AOE). <b>Knockback immunity does not work</b>. After getting sucked in, you can quickly use a displacement skill to back away from the worm before the big damage AOE.<br/>These aggro by sound, so you can toggle walk to avoid them."},
-    "DEEP PALACE WAMOURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "DEEP PALACE WAMOURACAMPA": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel."},
-    "DEEP PALACE VINDTHURS": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "FLOOD DRAGON": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "These have an instant circular AOE burst attack that inflicts a very potent DoT, similar to crawlers. Get Esuna/Erase ready, and spread out so multiple people don’t get hit.<br/>Solo: Don’t pull this."},
-    "DEEP PALACE GARM": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Aggros by proximity, and has an arsenal of one-shot abilities. The two main skills are <b>“The Ram’s Voice”</b> and <b>“The Dragon’s Voice”</b>. Ram is a point-blank AOE, and Dragon is a ~3/4 room sized AOE with a safe spot in the middle. So, when you see Ram being channeled, run away, and then if you see Dragon, run inside. These can be silenced. Note that in my experience, people get hit by Ram 10x more often than Dragon, as Ram casts faster.<br/>If you are proficient with dodging these mechanics, these are actually the easiest mobs to kill when solo from 187-189. But, DO NOTE that they can autoattack crit for 10K damage!"},
-    "THE GODFATHER": 
-        {
-            "DangerLevel": "Scary",
-            "AggroType": "Proximity",
-            "Notes": "<b>DO NOT OPEN WITH LUST</b>. The boss will cleave right away and you may die before you get the stacks off. There is a window in the boss’s rotation where he will cast 3 Saps in a row (during Remedy Bomb cycle) - this is a good time to lust. See the solo video for reference. Another option (that requires a bit of planning) is to take advantage of the static spawns to position the boss on top of where the Remedy Bomb spawns, and use Lust to kill the bomb while getting stacks on the boss. The boss will be casting Saps during this time, so you should be able to survive."
-        }
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "JAUNDICED TRIBUNUS":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"JAUNDICED TRIBUNUS"
+       },
+       "DEEP PALACE GRENADE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GRENADE"
+       },
+       "DEEP PALACE SPRITE":{
+          "Notes":"Don’t pull on ranged DPS/no sustain casters.",
+          "EnglishName":"DEEP PALACE SPRITE"
+       },
+       "DEEP PALACE CLAW":{
+          "Notes":"Will suck in a random member and stab them for a decent amount of damage. Also has a targeted AOE <b>Tail Screw</b> that deals damage and applies slow. It is killable solo by a healer/RDM if you use Steel.<br/><b>Knockback immunity does not work on the suction</b>.",
+          "EnglishName":"DEEP PALACE CLAW"
+       },
+       "DEEP PALACE CRAWLER":{
+          "Notes":"These have an instant conal AOE burst attack that deals 7K damage (on top of their 5K autoattack) and applies a strong slow effect. Additionally, they have an instant conal AOE poison attack that ticks for 3K damage a tick. Spread out when you fight these, and get that Esuna ready.<br/>These aggro by sound, so you can toggle walk to avoid them.",
+          "EnglishName":"DEEP PALACE CRAWLER"
+       },
+       "DEEP PALACE ARCHAEOSAUR":{
+          "Notes":"Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel. Wamouracampas aggro by sound and are blind, so you can walk to avoid them. When kited, aren’t that bad, but I would try not to pull an archeosaur unless you have to.",
+          "EnglishName":"DEEP PALACE ARCHAEOSAUR"
+       },
+       "DEEP PALACE WORM":{
+          "Notes":"Randomly hits people within half a room with an instant AOE that deals a fair amount of damage. Has a double-auto, and a DPS check (around 30 seconds) where it will suck everyone in and shortly afterwards, deal 20K damage to people in range. It is possible to tank this and then heal through it as a healer/RDM with Steel, but with crits, you will be dead. You can also stagger the mob and kite it to outrange the suction at 30 second (very large AOE). <b>Knockback immunity does not work</b>. After getting sucked in, you can quickly use a displacement skill to back away from the worm before the big damage AOE.<br/>These aggro by sound, so you can toggle walk to avoid them.",
+          "EnglishName":"DEEP PALACE WORM"
+       },
+       "DEEP PALACE WAMOURA":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE WAMOURA"
+       },
+       "DEEP PALACE WAMOURACAMPA":{
+          "Notes":"Has a cleave or double autoattack. Can kill a non-tank with crits, even with on-point healing + sustain potion. Be very cautious and consider using Steel.",
+          "EnglishName":"DEEP PALACE WAMOURACAMPA"
+       },
+       "DEEP PALACE VINDTHURS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE VINDTHURS"
+       },
+       "FLOOD DRAGON":{
+          "Notes":"These have an instant circular AOE burst attack that inflicts a very potent DoT, similar to crawlers. Get Esuna/Erase ready, and spread out so multiple people don’t get hit.<br/>Solo: Don’t pull this.",
+          "EnglishName":"FLOOD DRAGON"
+       },
+       "DEEP PALACE GARM":{
+          "Notes":"Aggros by proximity, and has an arsenal of one-shot abilities. The two main skills are <b>“The Ram’s Voice”</b> and <b>“The Dragon’s Voice”</b>. Ram is a point-blank AOE, and Dragon is a ~3/4 room sized AOE with a safe spot in the middle. So, when you see Ram being channeled, run away, and then if you see Dragon, run inside. These can be silenced. Note that in my experience, people get hit by Ram 10x more often than Dragon, as Ram casts faster.<br/>If you are proficient with dodging these mechanics, these are actually the easiest mobs to kill when solo from 187-189. But, DO NOTE that they can autoattack crit for 10K damage!",
+          "EnglishName":"DEEP PALACE GARM"
+       },
+       "THE GODFATHER":{
+          "Notes":"<b>DO NOT OPEN WITH LUST</b>. The boss will cleave right away and you may die before you get the stacks off. There is a window in the boss’s rotation where he will cast 3 Saps in a row (during Remedy Bomb cycle) - this is a good time to lust. See the solo video for reference. Another option (that requires a bit of planning) is to take advantage of the static spawns to position the boss on top of where the Remedy Bomb spawns, and use Lust to kill the bomb while getting stacks on the boss. The boss will be casting Saps during this time, so you should be able to survive.",
+          "EnglishName":"THE GODFATHER"
+       }
     },
     {
-    "MIMIC": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "PYGMAIOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "DEEP PALACE IRON CORSE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "DEEP PALACE KEEPER": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
-    "DEEP PALACE HIPPOGRYPH": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "DEEP PALACE GOURMAND": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "DEEP PALACE BICEPHALUS": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel."},
-    "DEEP PALACE WRAITH": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part). NEVER pull a knight when one of these is around, because their AOE <b>Accursed Pox</b> will fill in the <b>Death Spiral</b> doughnut, leaving you with nowhere to run."},
-    "DEEP PALACE MUMMY": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "DEEP PALACE TRAP": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "DEEP PALACE KNIGHT": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "These do crazy damage - you want to avoid them when solo if possible. They will also cast a doughnut-shaped AOE <b>Death Spiral</b>, dealing around 20K damage to anybody not standing next to it. <b>NEVER PULL THESE WHEN A WRAITH IS NEARBY.</b><br/>They do have an “enrage” cast that <b>doubles</b> their damage output for a short amount of time, while giving them a defense buff. This means their buster will hit for 9.5k with steel, non-crit."},
-    "ONYX DRAGON": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "Note that, unlike any other dragon, the ones on this set aggro by movement. Their Evil Eye (red eye mechanic) is a one shot, so make sure to look away."},
-    "DEEP PALACE FACHAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Similar to Ahrimans from 130s, these have a no-telegraph conal AOE, except instead of <b>Level 5 Petrify</b>, they cast <b>Level 5 Death</b>. From the name, it’s pretty obvious what happens if you get hit."}
+       "MIMIC":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE IRON CORSE":{
+          "Notes":"These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel.",
+          "EnglishName":"DEEP PALACE IRON CORSE"
+       },
+       "DEEP PALACE KEEPER":{
+          "Notes":"Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby.",
+          "EnglishName":"DEEP PALACE KEEPER"
+       },
+       "DEEP PALACE HIPPOGRYPH":{
+          "Notes":"These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel.",
+          "EnglishName":"DEEP PALACE HIPPOGRYPH"
+       },
+       "DEEP PALACE GOURMAND":{
+          "Notes":"These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel.",
+          "EnglishName":"DEEP PALACE GOURMAND"
+       },
+       "DEEP PALACE BICEPHALUS":{
+          "Notes":"These hit really hard with their cleave/double autoattacks. Don’t try to fight them solo without Steel.",
+          "EnglishName":"DEEP PALACE BICEPHALUS"
+       },
+       "DEEP PALACE WRAITH":{
+          "Notes":"These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part). NEVER pull a knight when one of these is around, because their AOE <b>Accursed Pox</b> will fill in the <b>Death Spiral</b> doughnut, leaving you with nowhere to run.",
+          "EnglishName":"DEEP PALACE WRAITH"
+       },
+       "DEEP PALACE MUMMY":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MUMMY"
+       },
+       "DEEP PALACE TRAP":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TRAP"
+       },
+       "DEEP PALACE KNIGHT":{
+          "Notes":"These do crazy damage - you want to avoid them when solo if possible. They will also cast a doughnut-shaped AOE <b>Death Spiral</b>, dealing around 20K damage to anybody not standing next to it. <b>NEVER PULL THESE WHEN A WRAITH IS NEARBY.</b><br/>They do have an “enrage” cast that <b>doubles</b> their damage output for a short amount of time, while giving them a defense buff. This means their buster will hit for 9.5k with steel, non-crit.",
+          "EnglishName":"DEEP PALACE KNIGHT"
+       },
+       "ONYX DRAGON":{
+          "Notes":"Note that, unlike any other dragon, the ones on this set aggro by movement. Their Evil Eye (red eye mechanic) is a one shot, so make sure to look away.",
+          "EnglishName":"ONYX DRAGON"
+       },
+       "DEEP PALACE FACHAN":{
+          "Notes":"Similar to Ahrimans from 130s, these have a no-telegraph conal AOE, except instead of <b>Level 5 Petrify</b>, they cast <b>Level 5 Death</b>. From the name, it’s pretty obvious what happens if you get hit.",
+          "EnglishName":"DEEP PALACE FACHAN"
+       }
     }
-],
-"Heaven-on-High":
-[
+ ],
+ "Heaven-on-High":[
     {
-        "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY NAKED YUMEMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MUTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY BOMBFISH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY ONRYO": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY SHARK": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Jaws hurt. Like, they REALLY hurt. (you can’t LoS it either)."},
-        "HEAVENLY AMIKIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY CORALSHELL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Untelegraphed frontal AOE sleep."},
-        "HEAVENLY GYUKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY KRAKEN": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY UWABAMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY ANGO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MATAMATA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY YUMEMI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "MOJABUNE": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Walks to the center and uses a global knockback (cannot be Surecasted), followed by a half-roomwide AOE."
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY NAKED YUMEMI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NAKED YUMEMI"
+       },
+       "HEAVENLY MUTSU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MUTSU"
+       },
+       "HEAVENLY BOMBFISH":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY BOMBFISH"
+       },
+       "HEAVENLY ONRYO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ONRYO"
+       },
+       "HEAVENLY SHARK":{
+          "Notes":"Jaws hurt. Like, they REALLY hurt. (you can’t LoS it either).",
+          "EnglishName":"HEAVENLY SHARK"
+       },
+       "HEAVENLY AMIKIRI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AMIKIRI"
+       },
+       "HEAVENLY CORALSHELL":{
+          "Notes":"Untelegraphed frontal AOE sleep.",
+          "EnglishName":"HEAVENLY CORALSHELL"
+       },
+       "HEAVENLY GYUKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GYUKI"
+       },
+       "HEAVENLY KRAKEN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KRAKEN"
+       },
+       "HEAVENLY UWABAMI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY UWABAMI"
+       },
+       "HEAVENLY ANGO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ANGO"
+       },
+       "HEAVENLY MATAMATA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MATAMATA"
+       },
+       "HEAVENLY YUMEMI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUMEMI"
+       },
+       "MOJABUNE":{
+          "Notes":"Walks to the center and uses a global knockback (cannot be Surecasted), followed by a half-roomwide AOE.",
+          "EnglishName":"MOJABUNE"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY KORPOKKUR": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SHIZUKU": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY NAMAZU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SHIOMUSHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY HAKAGIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY APA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY UNKIU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY HAND": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a roomwide (or larger?) enrage wipe."},
-        "HEAVENLY OTOKAGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY TATSUNOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY AMAGOI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SHIONAME": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY AOMINO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "BECCHO": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Will attempt to do a fear mechanic, while summoning butterflies around the edges of the arena. They explode (untelegraphed), and the fear will make you walk into the walls, so make sure to avoid it!"
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY KORPOKKUR":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KORPOKKUR"
+       },
+       "HEAVENLY SHIZUKU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIZUKU"
+       },
+       "HEAVENLY NAMAZU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NAMAZU"
+       },
+       "HEAVENLY SHIOMUSHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIOMUSHI"
+       },
+       "HEAVENLY HAKAGIRI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HAKAGIRI"
+       },
+       "HEAVENLY APA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY APA"
+       },
+       "HEAVENLY UNKIU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY UNKIU"
+       },
+       "HEAVENLY HAND":{
+          "Notes":"Have a roomwide (or larger?) enrage wipe.",
+          "EnglishName":"HEAVENLY HAND"
+       },
+       "HEAVENLY OTOKAGE":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY OTOKAGE"
+       },
+       "HEAVENLY TATSUNOKO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TATSUNOKO"
+       },
+       "HEAVENLY AMAGOI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AMAGOI"
+       },
+       "HEAVENLY SHIONAME":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIONAME"
+       },
+       "HEAVENLY AOMINO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AOMINO"
+       },
+       "BECCHO":{
+          "Notes":"Will attempt to do a fear mechanic, while summoning butterflies around the edges of the arena. They explode (untelegraphed), and the fear will make you walk into the walls, so make sure to avoid it!",
+          "EnglishName":"BECCHO"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY DHRUVA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY HALGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY KATASHARIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SAI TAISUI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY ONIBI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY HATAMOTO": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Uses Midare, and it hurts (15K). Tenga Goken is also a nontelegraphed cone knockback."},
-        "HEAVENLY KEUKEGEN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY TENAGA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MENREIKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY KOJA": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY TENGU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY YUKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY WANYUDO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HIRUKO": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Summons clouds that explode after a while, and casts a proximity AOE in the center. Run to the side and don’t get clipped by multiple clouds. If you get knocked up into a cloud, the cloud will disappear. Also has a half-room AOE, so save a gap closer or don’t kite too far."
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY DHRUVA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DHRUVA"
+       },
+       "HEAVENLY HALGAI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HALGAI"
+       },
+       "HEAVENLY KATASHARIN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KATASHARIN"
+       },
+       "HEAVENLY SAI TAISUI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SAI TAISUI"
+       },
+       "HEAVENLY ONIBI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ONIBI"
+       },
+       "HEAVENLY HATAMOTO":{
+          "Notes":"Uses Midare, and it hurts (15K). Tenga Goken is also a nontelegraphed cone knockback.",
+          "EnglishName":"HEAVENLY HATAMOTO"
+       },
+       "HEAVENLY KEUKEGEN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KEUKEGEN"
+       },
+       "HEAVENLY TENAGA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TENAGA"
+       },
+       "HEAVENLY MENREIKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MENREIKI"
+       },
+       "HEAVENLY KOJA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KOJA"
+       },
+       "HEAVENLY TENGU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TENGU"
+       },
+       "HEAVENLY YUKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUKI"
+       },
+       "HEAVENLY WANYUDO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY WANYUDO"
+       },
+       "HIRUKO":{
+          "Notes":"Summons clouds that explode after a while, and casts a proximity AOE in the center. Run to the side and don’t get clipped by multiple clouds. If you get knocked up into a cloud, the cloud will disappear. Also has a half-room AOE, so save a gap closer or don’t kite too far.",
+          "EnglishName":"HIRUKO"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY GEDAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY HORNBILL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY ONMITSU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a <b>self destruct</b> with a long cast bar (used below 10%)."},
-        "HEAVENLY HARAKIRI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a <b>self destruct</b> with a long cast bar cast at low health (below 20%)"},
-        "HEAVENLY HANYA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MOKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Cleaves every other auto attack. Be careful at lower Aetherpool levels."},
-        "HEAVENLY VANARA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a frontal AOE cleave with <b>no telegraph or cast bar</b>."},
-        "HEAVENLY KIYOFUSA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a stack marker that can be LoSed. It only does like 7K damage, however."},
-        "HEAVENLY SHISHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MOKIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY ASHIGARU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY DOGU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "BHIMA": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Attempts to use a knockback as things spawn on the edge and he walks to the center. The knockback pushes everyone away from him - don’t get pushed into one of those things! <b>Surecast/Arms length do NOT work</b>."
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY GEDAN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GEDAN"
+       },
+       "HEAVENLY HORNBILL":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HORNBILL"
+       },
+       "HEAVENLY ONMITSU":{
+          "Notes":"Has a <b>self destruct</b> with a long cast bar (used below 10%).",
+          "EnglishName":"HEAVENLY ONMITSU"
+       },
+       "HEAVENLY HARAKIRI":{
+          "Notes":"Has a <b>self destruct</b> with a long cast bar cast at low health (below 20%)",
+          "EnglishName":"HEAVENLY HARAKIRI"
+       },
+       "HEAVENLY HANYA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HANYA"
+       },
+       "HEAVENLY MOKO":{
+          "Notes":"Cleaves every other auto attack. Be careful at lower Aetherpool levels.",
+          "EnglishName":"HEAVENLY MOKO"
+       },
+       "HEAVENLY VANARA":{
+          "Notes":"Has a frontal AOE cleave with <b>no telegraph or cast bar</b>.",
+          "EnglishName":"HEAVENLY VANARA"
+       },
+       "HEAVENLY KIYOFUSA":{
+          "Notes":"Has a stack marker that can be LoSed. It only does like 7K damage, however.",
+          "EnglishName":"HEAVENLY KIYOFUSA"
+       },
+       "HEAVENLY SHISHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHISHI"
+       },
+       "HEAVENLY MOKIN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MOKIN"
+       },
+       "HEAVENLY ASHIGARU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ASHIGARU"
+       },
+       "HEAVENLY DOGU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOGU"
+       },
+       "BHIMA":{
+          "Notes":"Attempts to use a knockback as things spawn on the edge and he walks to the center. The knockback pushes everyone away from him - don’t get pushed into one of those things! <b>Surecast/Arms length do NOT work</b>.",
+          "EnglishName":"BHIMA"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY DHARA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY GANSEKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY SAIKORO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY KURO-USAGI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SEKIBAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have an enrage, and attacks quickly."},
-        "HEAVENLY SEKIZO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MIZUMIMIZU": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s)."},
-        "HEAVENLY AKA-ISHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY ISEKI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MONOIWA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "GOZU": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Has a non-telegraphed, no cast bar swipe and line attack. When you see him suspiciously turn away from the tank, make sure to get out of the way!<br/>He also has a fear mechanic, and summons pulsing bombs on the floor alongside a proximity AOE. When solo, the fear will lead to a <b>100% death</b>, so don’t be greedy!"
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY DHARA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DHARA"
+       },
+       "HEAVENLY GANSEKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GANSEKI"
+       },
+       "HEAVENLY SAIKORO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SAIKORO"
+       },
+       "HEAVENLY KURO-USAGI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KURO-USAGI"
+       },
+       "HEAVENLY SEKIBAN":{
+          "Notes":"Have an enrage, and attacks quickly.",
+          "EnglishName":"HEAVENLY SEKIBAN"
+       },
+       "HEAVENLY SEKIZO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SEKIZO"
+       },
+       "HEAVENLY MIZUMIMIZU":{
+          "Notes":"Similar to the worms in POTD 181-189. They will enrage and kill suck people in for a huge attack that will most likely one shot them if not killed in time (~30s).",
+          "EnglishName":"HEAVENLY MIZUMIMIZU"
+       },
+       "HEAVENLY AKA-ISHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AKA-ISHI"
+       },
+       "HEAVENLY ISEKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ISEKI"
+       },
+       "HEAVENLY MONOIWA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MONOIWA"
+       },
+       "GOZU":{
+          "Notes":"Has a non-telegraphed, no cast bar swipe and line attack. When you see him suspiciously turn away from the tank, make sure to get out of the way!<br/>He also has a fear mechanic, and summons pulsing bombs on the floor alongside a proximity AOE. When solo, the fear will lead to a <b>100% death</b>, so don’t be greedy!",
+          "EnglishName":"GOZU"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY KAMAKIRI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "HEAVENLY NAGA": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE."},
-        "HEAVENLY TOKAGEKIBA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY KAMANARI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "HEAVENLY KONGOREI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Have a self-destruct enrage that’s instant. When solo, avoid running into rooms with one of these on you, in the event you get Ottered (which usually leads to death anyway)"},
-        "HEAVENLY TESSO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY TETSU-KYOJIN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MARUISHI": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Spams big line aoes but doesn’t bother autoattacking. These hit for 40K+, one shotting DPS/healers, so be very careful."},
-        "HEAVENLY SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY DOKYU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY GOWAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY KARAKURI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY RACHIMONAI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Does random AOE damage across rooms (instant, nontelegraphed). If there are some in the rooms near you, make sure you kill them first or avoid them - they can do a lot of unexpected, random damage!"},
-        "SUIKAZURA": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Telegraphs. Telegraphs everywhere. Lines, doughnuts, circles, you name it! Just dodge them and you’ll be fine. Every now and then he will cast a global AOE, followed by line AOEs coming out of every staff.<br/>The middle is always a safespot, for the staff doughnuts before the global AOE, but remember to bait the Fire II somewhere else before running there. Staying in the middle makes an easy pattern to dodge out of the lines as well."
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY KAMAKIRI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KAMAKIRI"
+       },
+       "HEAVENLY NAGA":{
+          "Notes":"Has a cone aoe fear that applies stone curse, which is a petrify that can lead to an instant death.<br/>Also has an <b>enrage</b> that deals 25K AOE damage, with a <b>VERY FAST CAST TIME</b>!<br/>It is STUNNABLE.",
+          "EnglishName":"HEAVENLY NAGA"
+       },
+       "HEAVENLY TOKAGEKIBA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TOKAGEKIBA"
+       },
+       "HEAVENLY KAMANARI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KAMANARI"
+       },
+       "HEAVENLY KONGOREI":{
+          "Notes":"Have a self-destruct enrage that’s instant. When solo, avoid running into rooms with one of these on you, in the event you get Ottered (which usually leads to death anyway)",
+          "EnglishName":"HEAVENLY KONGOREI"
+       },
+       "HEAVENLY TESSO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TESSO"
+       },
+       "HEAVENLY TETSU-KYOJIN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TETSU-KYOJIN"
+       },
+       "HEAVENLY MARUISHI":{
+          "Notes":"Spams big line aoes but doesn’t bother autoattacking. These hit for 40K+, one shotting DPS/healers, so be very careful.",
+          "EnglishName":"HEAVENLY MARUISHI"
+       },
+       "HEAVENLY SHABTI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHABTI"
+       },
+       "HEAVENLY DOKYU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOKYU"
+       },
+       "HEAVENLY GOWAN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GOWAN"
+       },
+       "HEAVENLY KARAKURI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KARAKURI"
+       },
+       "HEAVENLY RACHIMONAI":{
+          "Notes":"Does random AOE damage across rooms (instant, nontelegraphed). If there are some in the rooms near you, make sure you kill them first or avoid them - they can do a lot of unexpected, random damage!",
+          "EnglishName":"HEAVENLY RACHIMONAI"
+       },
+       "SUIKAZURA":{
+          "Notes":"Telegraphs. Telegraphs everywhere. Lines, doughnuts, circles, you name it! Just dodge them and you’ll be fine. Every now and then he will cast a global AOE, followed by line AOEs coming out of every staff.<br/>The middle is always a safespot, for the staff doughnuts before the global AOE, but remember to bait the Fire II somewhere else before running there. Staying in the middle makes an easy pattern to dodge out of the lines as well.",
+          "EnglishName":"SUIKAZURA"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY ONRYO": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Has a very high damage bleed burst."},
-        "HEAVENLY WAKAKUSA": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party."},
-        "HEAVENLY JUBOKKO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MANNENSO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY IWAMUSHI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY JELLYFISH": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY DOGUZERI": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "HEAVENLY KOSODEGAI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SHITAIBANA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range."},
-        "HEAVENLY MORBOL": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY CHIZAKURA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY PENGHOU": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": ""},
-        "HEAVENLY HASHIRI-DOKORO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong."},
-        "KENKO": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Every once in a while, creates a puddle on a player with the Innerspace ability. This puddle applies the Minimum debuff, which you need to dodge the line targeted AOE Hound out of hell. If you do not have the minimum debuff, you will get one shot. Make sure to also get out of the the minimum debuff after the Devour skill goes off, or it will hurt.<br/>Be careful of the non-telegraphed frontal cleave, which is the first skill he will use in the rotation."
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY ONRYO":{
+          "Notes":"Has a very high damage bleed burst.",
+          "EnglishName":"HEAVENLY ONRYO"
+       },
+       "HEAVENLY WAKAKUSA":{
+          "Notes":"Don’t underestimate the stacking poison - it lasts for 30s. Can hurt quite a bit solo, not so much in a party.",
+          "EnglishName":"HEAVENLY WAKAKUSA"
+       },
+       "HEAVENLY JUBOKKO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY JUBOKKO"
+       },
+       "HEAVENLY MANNENSO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MANNENSO"
+       },
+       "HEAVENLY IWAMUSHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY IWAMUSHI"
+       },
+       "HEAVENLY JELLYFISH":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY JELLYFISH"
+       },
+       "HEAVENLY DOGUZERI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOGUZERI"
+       },
+       "HEAVENLY KOSODEGAI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KOSODEGAI"
+       },
+       "HEAVENLY SHITAIBANA":{
+          "Notes":"Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range.",
+          "EnglishName":"HEAVENLY SHITAIBANA"
+       },
+       "HEAVENLY MORBOL":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MORBOL"
+       },
+       "HEAVENLY CHIZAKURA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY CHIZAKURA"
+       },
+       "HEAVENLY PENGHOU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY PENGHOU"
+       },
+       "HEAVENLY HASHIRI-DOKORO":{
+          "Notes":"Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong.",
+          "EnglishName":"HEAVENLY HASHIRI-DOKORO"
+       },
+       "KENKO":{
+          "Notes":"Every once in a while, creates a puddle on a player with the Innerspace ability. This puddle applies the Minimum debuff, which you need to dodge the line targeted AOE Hound out of hell. If you do not have the minimum debuff, you will get one shot. Make sure to also get out of the the minimum debuff after the Devour skill goes off, or it will hurt.<br/>Be careful of the non-telegraphed frontal cleave, which is the first skill he will use in the rotation.",
+          "EnglishName":"KENKO"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY ICHIJAMA": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
-        "HEAVENLY SHIKUBI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY NOYAGI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY HYOGA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a large roomwide frontal cone that 1 shots, and a fear"},
-        "HEAVENLY OKAMI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They have a double auto with a nasty DOT. They’re really not fun to fight solo, steel is pretty much required on RDM (strength recommended as well)."},
-        "HEAVENLY YUKI-TOKAGE": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY HYOZAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY MAMMOTH": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Deals half-roomwide damage when not in combat (around 7K).<br/>After pulling people in with <b>Wooly Inspiration</b>, uses an instant conal attack that one-shots anyone in front of it."},
-        "HEAVENLY JUJISHI": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "Has a double auto that hurts quite a bit, and a <b>VERY FAST-CASTING ENRAGE “Winds of Winter”</b> that is likely to kill everyone it hits (it also applies a DOT and gives the griffin a haste buff). This can be avoided through <b>Line of Sight</b>, so fight it behind a corner and seek cover when it goes off.<br/>The enrage happens after <b>30 seconds</b>. It is <b>stunnable</b>."},
-        "HEAVENLY SHIRO-JISHI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Large stunnable AOE and double autoattack. Due to the double auto, I wouldn’t fight this solo without <b>Steel</b>."},
-        "HEAVENLY TOFU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Don’t let them buff (Magic Tongue) or they will really hurt, especially for lower aetherpool levels. Note that these can still autoattack, so being in melee range means you essentially take double damage. You can <b>line of sight</b> the Blizzard casts, but note you will still take autos if they’re close."},
-        "HEAVENLY YUKI-OTOKO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a really big, but <b>stunnable</b>, AOE that can be LoSed (<b>Northerlies</b>). Also has a quick (and large) conal attack, so don’t kite too far."},
-        "HEAVENLY YAK": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "They only autoattack for a while, and then after 30 seconds they will enrage, pulling everyone in (and applying a heavy) and then stomping on them for lethal damage."},
-        "KAJIGAKAKA": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "Summons balls of ice that explode, untelegraphed, after a period of time. An icicle will also appear, shooting through the middle of the room. <b>Any balls hit by the icicle will explode, and any balls hit by exploding balls will also explode (domino effect)</b>. When in doubt, <b>STAY AWAY FROM THE ICE BALLS AS THE ICICLE RESOLVES</b>. Make sure you are also away from the remaining balls when the <b>Lunar Cry</b> skill finishes, or you will receive deep freeze and die if solo. After Lunar Cry, he will randomly jumps to targets and bites them for 8K damage (1 shot if frozen). Not too hard besides that!"
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY ICHIJAMA":{
+          "Notes":"These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part).",
+          "EnglishName":"HEAVENLY ICHIJAMA"
+       },
+       "HEAVENLY SHIKUBI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIKUBI"
+       },
+       "HEAVENLY NOYAGI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NOYAGI"
+       },
+       "HEAVENLY HYOGA":{
+          "Notes":"Has a large roomwide frontal cone that 1 shots, and a fear",
+          "EnglishName":"HEAVENLY HYOGA"
+       },
+       "HEAVENLY OKAMI":{
+          "Notes":"They have a double auto with a nasty DOT. They’re really not fun to fight solo, steel is pretty much required on RDM (strength recommended as well).",
+          "EnglishName":"HEAVENLY OKAMI"
+       },
+       "HEAVENLY YUKI-TOKAGE":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUKI-TOKAGE"
+       },
+       "HEAVENLY HYOZAN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HYOZAN"
+       },
+       "HEAVENLY MAMMOTH":{
+          "Notes":"Deals half-roomwide damage when not in combat (around 7K).<br/>After pulling people in with <b>Wooly Inspiration</b>, uses an instant conal attack that one-shots anyone in front of it.",
+          "EnglishName":"HEAVENLY MAMMOTH"
+       },
+       "HEAVENLY JUJISHI":{
+          "Notes":"Has a double auto that hurts quite a bit, and a <b>VERY FAST-CASTING ENRAGE “Winds of Winter”</b> that is likely to kill everyone it hits (it also applies a DOT and gives the griffin a haste buff). This can be avoided through <b>Line of Sight</b>, so fight it behind a corner and seek cover when it goes off.<br/>The enrage happens after <b>30 seconds</b>. It is <b>stunnable</b>.",
+          "EnglishName":"HEAVENLY JUJISHI"
+       },
+       "HEAVENLY SHIRO-JISHI":{
+          "Notes":"Large stunnable AOE and double autoattack. Due to the double auto, I wouldn’t fight this solo without <b>Steel</b>.",
+          "EnglishName":"HEAVENLY SHIRO-JISHI"
+       },
+       "HEAVENLY TOFU":{
+          "Notes":"Don’t let them buff (Magic Tongue) or they will really hurt, especially for lower aetherpool levels. Note that these can still autoattack, so being in melee range means you essentially take double damage. You can <b>line of sight</b> the Blizzard casts, but note you will still take autos if they’re close.",
+          "EnglishName":"HEAVENLY TOFU"
+       },
+       "HEAVENLY YUKI-OTOKO":{
+          "Notes":"Has a really big, but <b>stunnable</b>, AOE that can be LoSed (<b>Northerlies</b>). Also has a quick (and large) conal attack, so don’t kite too far.",
+          "EnglishName":"HEAVENLY YUKI-OTOKO"
+       },
+       "HEAVENLY YAK":{
+          "Notes":"They only autoattack for a while, and then after 30 seconds they will enrage, pulling everyone in (and applying a heavy) and then stomping on them for lethal damage.",
+          "EnglishName":"HEAVENLY YAK"
+       },
+       "KAJIGAKAKA":{
+          "Notes":"Summons balls of ice that explode, untelegraphed, after a period of time. An icicle will also appear, shooting through the middle of the room. <b>Any balls hit by the icicle will explode, and any balls hit by exploding balls will also explode (domino effect)</b>. When in doubt, <b>STAY AWAY FROM THE ICE BALLS AS THE ICICLE RESOLVES</b>. Make sure you are also away from the remaining balls when the <b>Lunar Cry</b> skill finishes, or you will receive deep freeze and die if solo. After Lunar Cry, he will randomly jumps to targets and bites them for 8K damage (1 shot if frozen). Not too hard besides that!",
+          "EnglishName":"KAJIGAKAKA"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY GARULA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>."},
-        "HEAVENLY ROWAN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment."},
-        "HEAVENLY MATANGA": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Can crit for 90% HP at start, get heals ready, and afterwards it’s not so bad (16K auto/24K crit)."},
-        "HEAVENLY MUKAI-INU": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "The <b>Dragon’s voice = run inside, and Ram’s voice = run away</b>."},
-        "HEAVENLY GOZU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Untelegraphed attack on a random player (XX-tonze swipe), which is a HUGE cone (can be LoSed). Also has a fear."},
-        "HEAVENLY RYUKOTSU": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY RYUJIN": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
-        "HEAVENLY SHINZEI": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Double AA that does heavy damage and applies a DOT. Targeted Thunder II that does AOE damage 4x on a target (only 8K per hit) and applies another DOT."},
-        "HEAVENLY HITOTSUME": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "100 tonze swing (untelegraphed point blank AOE), and glower (untelegraphed line AOE in front)"},
-        "HEAVENLY RAKSHASA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charges, buffs itself with damage up, and has an untelegraphed frontal swipe <b>“Ripper Claw”</b>.<br/>When buffed, can auto for 30K crits. Be very careful, and kite well."},
-        "HEAVENLY KOKI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "A few telegraphs, and then a roomwide unavoidable (?) vuln stack + light damage. Easy kill."},
-        "HEAVENLY ENKO": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff."},
-        "HEAVENLY ARARAGI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "AOE stacking poison. Can be LoSed with good timing."},
-        "ONRA": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "There will <b>always</b> be a safespot in the north-eastern corner. As such, stand slightly north of 3’o’clock and let him auto you once after dropping casting <b>Ancient Quaga</b>. He will cast <b>Meteor Impact</b> - stay closeby for a bit as you bait the line, and move up near 12’o’clock to get away from the Meteor damage. After the meteor resolves, you can move back to 3’o’clock in preparation for the next rotation."
-        }
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY GARULA":{
+          "Notes":"Has a huge conal aoe, then circular aoe, and then raidwide damage. Be very careful about where you fight these, as you need space to run to avoid its large AOE attacks.<br/>You can avoid earthquake damage through <b>line of sight</b>.",
+          "EnglishName":"HEAVENLY GARULA"
+       },
+       "HEAVENLY ROWAN":{
+          "Notes":"Buffs itself, and then pounds its chest for roomwide AOEs. Can be LoSed. Be careful as these AOES will remove your concealment.",
+          "EnglishName":"HEAVENLY ROWAN"
+       },
+       "HEAVENLY MATANGA":{
+          "Notes":"Can crit for 90% HP at start, get heals ready, and afterwards it’s not so bad (16K auto/24K crit).",
+          "EnglishName":"HEAVENLY MATANGA"
+       },
+       "HEAVENLY MUKAI-INU":{
+          "Notes":"The <b>Dragon’s voice = run inside, and Ram’s voice = run away</b>.",
+          "EnglishName":"HEAVENLY MUKAI-INU"
+       },
+       "HEAVENLY GOZU":{
+          "Notes":"Untelegraphed attack on a random player (XX-tonze swipe), which is a HUGE cone (can be LoSed). Also has a fear.",
+          "EnglishName":"HEAVENLY GOZU"
+       },
+       "HEAVENLY RYUKOTSU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY RYUKOTSU"
+       },
+       "HEAVENLY RYUJIN":{
+          "Notes":"Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff.",
+          "EnglishName":"HEAVENLY RYUJIN"
+       },
+       "HEAVENLY SHINZEI":{
+          "Notes":"Double AA that does heavy damage and applies a DOT. Targeted Thunder II that does AOE damage 4x on a target (only 8K per hit) and applies another DOT.",
+          "EnglishName":"HEAVENLY SHINZEI"
+       },
+       "HEAVENLY HITOTSUME":{
+          "Notes":"100 tonze swing (untelegraphed point blank AOE), and glower (untelegraphed line AOE in front)",
+          "EnglishName":"HEAVENLY HITOTSUME"
+       },
+       "HEAVENLY RAKSHASA":{
+          "Notes":"Charges, buffs itself with damage up, and has an untelegraphed frontal swipe <b>“Ripper Claw”</b>.<br/>When buffed, can auto for 30K crits. Be very careful, and kite well.",
+          "EnglishName":"HEAVENLY RAKSHASA"
+       },
+       "HEAVENLY KOKI":{
+          "Notes":"A few telegraphs, and then a roomwide unavoidable (?) vuln stack + light damage. Easy kill.",
+          "EnglishName":"HEAVENLY KOKI"
+       },
+       "HEAVENLY ENKO":{
+          "Notes":"Uses <b>Elbow Drop</b>, an incredibly deceiving attack with no telegraph that attacks directly <b>BEHIND</b> where the monster is facing.<br/>Also has a tank buster - do not underestimate the damage from these when solo. Enkos also have an “enrage” damage buff.",
+          "EnglishName":"HEAVENLY ENKO"
+       },
+       "HEAVENLY ARARAGI":{
+          "Notes":"AOE stacking poison. Can be LoSed with good timing.",
+          "EnglishName":"HEAVENLY ARARAGI"
+       },
+       "ONRA":{
+          "Notes":"There will <b>always</b> be a safespot in the north-eastern corner. As such, stand slightly north of 3’o’clock and let him auto you once after dropping casting <b>Ancient Quaga</b>. He will cast <b>Meteor Impact</b> - stay closeby for a bit as you bait the line, and move up near 12’o’clock to get away from the Meteor damage. After the meteor resolves, you can move back to 3’o’clock in preparation for the next rotation.",
+          "EnglishName":"ONRA"
+       }
     },
     {
-        "QUIVERING COFFER": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "KORRIGAN": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "HEAVENLY GOZU": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after."},
-        "HEAVENLY JAKI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe."},
-        "HEAVENLY NUPPEPPO": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "WAR: <b>Impossible</b><br/>MNK: Caution. Buffs itself with haste, and eventually does a double-auto that applies a DOT.<br/>WHM: Caution. WHM Nuppeppos are still scary for solo. 24K stone crits! Note that you CAN LoS the stone casts, but you need to time it well. "},
-        "HEAVENLY MIFUNE": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "Autos cleave for around 20K without steel (no double auto). The targeted line AOE does 55K damage to non-tanks. <b>Can be LoSed</b>."},
-        "HEAVENLY KUBINASHI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a lifesteal effect that it uses shortly after entering combat, as well as an instant frontal cleave that deals ~25K damage. Constantly gains a stacking damage up buff. Upon reaching 3 stacks, uses <b>Black Nebula</b>, a roomwide enrage one shot."},
-        "HEAVENLY KYOZO": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Buffs itself with defense up. Funnily enough, this overlaps the <b>Gloom</b> defense buff, and when it wears off, so does the real Gloom defense buff!"},
-        "HEAVENLY ZENKI": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY SHABTI": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "HEAVENLY JINBA": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "Has a permanently stacking damage buff, and a MASSIVE AOE (like, bigger than Wraith “Scream” AOEs). Also has a fear."},
-        "HEAVENLY TENMA": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Has a nontelegraphed line AOE used on a random player, as well as a huge AOE (Wraith-sized). Also has a double-auto."},
-        "HEAVENLY KURO-KISHI": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "HEAVENLY DODO": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "*Good Luck*"}
+       "QUIVERING COFFER":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY GOZU":{
+          "Notes":"Has an instant cleave (~20K damage), then non-telegraphed frontal swipe (XX-tonze-swipe), and then non-telegraphed AOE (128-tonze swing).<Br/>On pull, charges to target and then double autoattacks shortly after.",
+          "EnglishName":"HEAVENLY GOZU"
+       },
+       "HEAVENLY JAKI":{
+          "Notes":"Charybdis targeted aoe. Can be LoSed and stunned. Has a “double-auto” magic aoe.",
+          "EnglishName":"HEAVENLY JAKI"
+       },
+       "HEAVENLY NUPPEPPO":{
+          "Notes":"WAR: <b>Impossible</b><br/>MNK: Caution. Buffs itself with haste, and eventually does a double-auto that applies a DOT.<br/>WHM: Caution. WHM Nuppeppos are still scary for solo. 24K stone crits! Note that you CAN LoS the stone casts, but you need to time it well. ",
+          "EnglishName":"HEAVENLY NUPPEPPO"
+       },
+       "HEAVENLY MIFUNE":{
+          "Notes":"Autos cleave for around 20K without steel (no double auto). The targeted line AOE does 55K damage to non-tanks. <b>Can be LoSed</b>.",
+          "EnglishName":"HEAVENLY MIFUNE"
+       },
+       "HEAVENLY KUBINASHI":{
+          "Notes":"Has a lifesteal effect that it uses shortly after entering combat, as well as an instant frontal cleave that deals ~25K damage. Constantly gains a stacking damage up buff. Upon reaching 3 stacks, uses <b>Black Nebula</b>, a roomwide enrage one shot.",
+          "EnglishName":"HEAVENLY KUBINASHI"
+       },
+       "HEAVENLY KYOZO":{
+          "Notes":"Buffs itself with defense up. Funnily enough, this overlaps the <b>Gloom</b> defense buff, and when it wears off, so does the real Gloom defense buff!",
+          "EnglishName":"HEAVENLY KYOZO"
+       },
+       "HEAVENLY ZENKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ZENKI"
+       },
+       "HEAVENLY SHABTI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHABTI"
+       },
+       "HEAVENLY JINBA":{
+          "Notes":"Has a permanently stacking damage buff, and a MASSIVE AOE (like, bigger than Wraith “Scream” AOEs). Also has a fear.",
+          "EnglishName":"HEAVENLY JINBA"
+       },
+       "HEAVENLY TENMA":{
+          "Notes":"Has a nontelegraphed line AOE used on a random player, as well as a huge AOE (Wraith-sized). Also has a double-auto.",
+          "EnglishName":"HEAVENLY TENMA"
+       },
+       "HEAVENLY KURO-KISHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KURO-KISHI"
+       },
+       "HEAVENLY DODO":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"HEAVENLY DODO"
+       }
     }
-]
+ ]
 }

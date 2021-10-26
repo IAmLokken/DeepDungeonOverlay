@@ -72,9 +72,9 @@
             }
             document.documentElement.setAttribute('lang', displayOverlayLocale);
 
-            await DDO.LoadBestiary(displayOverlayLocale);
+            await DDO.LoadBestiary('lang/', displayOverlayLocale);
             
-            DDO.localeInformation = new DDO.Locale(displayOverlayLocale, (e) => 
+            DDO.localeInformation = new DDO.Locale('lang/', displayOverlayLocale, (e) => 
             {
                 DDO.TranslateUI(e);
                 DDO.LoadConfig(DDO.currentInstance);

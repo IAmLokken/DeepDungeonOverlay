@@ -6,14 +6,14 @@
 
     class Locale
     {
-        constructor(language, callback)
+        constructor(path, language, callback)
         {
             this.Languages = {}
             this.CurrentLanguage = language || 'en'
-            this.LoadLanguage(language, callback);
+            this.LoadLanguage(path, language, callback);
         }
 
-        LoadLanguage(language, callback)
+        LoadLanguage(path, language, callback)
         {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = ()=> 
@@ -43,7 +43,7 @@
                     if (callback) callback();
                 }
             };
-            xhttp.open('GET', PATH + language + '.json', true);
+            xhttp.open('GET', path + language + '.json', true);
             xhttp.send();
         }
     }

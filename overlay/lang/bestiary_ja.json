@@ -3,157 +3,421 @@
 "Rare Monster": "気をつけて！<b>形態変化は効果がありません！</b><br/>これはレアなモンスターですから、普段のモンスターより攻撃力が強いです。",
 "Congratulations": "おめでとうございます！",
 "Good Luck": "応援しています！",
-"the Palace of the Dead":
-[
+"the Palace of the Dead":[
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-
-    "パレス・デスマウス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・アンテロープ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・スプライト": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ジズ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・コブラン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・バット": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ヒッポセルフ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ビートル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "一定時間内に倒せないと、大ダメージの<b>ファイナルスピア</b>を詠唱。ある程度離れればこの攻撃は回避できます。"},
-    "パレス・ヤーゾン": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ダングビートル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ロストゴブリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・デスゲイズ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "非常に簡単なボスですが、ソロでは被ダメージを甘く見ないこと。（ポーション類の使用も検討）<br/> ヴォイド・ファイラの方が低レベルで使えるスキルより威力が高いので、サキュバス化を使うと敵に大ダメージを与えることができます。 引き撃ちできる職であれば、部屋をぐるぐる回っていればウィップクラック以外一切のAAダメージを受けないまま倒せます。"
-        }
+       "ミミック":{
+          "Notes":"これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "パレス・デスマウス":{
+          "Notes":"",
+          "EnglishName":"PALACE DEATHMOUSE"
+       },
+       "パレス・アンテロープ":{
+          "Notes":"",
+          "EnglishName":"PALACE ANTELOPE"
+       },
+       "パレス・スプライト":{
+          "Notes":"",
+          "EnglishName":"PALACE SPRITE"
+       },
+       "パレス・ジズ":{
+          "Notes":"",
+          "EnglishName":"PALACE ZIZ"
+       },
+       "パレス・コブラン":{
+          "Notes":"",
+          "EnglishName":"PALACE COBLYN"
+       },
+       "パレス・バット":{
+          "Notes":"",
+          "EnglishName":"PALACE BAT"
+       },
+       "パレス・ヒッポセルフ":{
+          "Notes":"",
+          "EnglishName":"PALACE HIPPOCERF"
+       },
+       "パレス・ビートル":{
+          "Notes":"",
+          "EnglishName":"PALACE BEETLE"
+       },
+       "パレス・ホーネット":{
+          "Notes":"一定時間内に倒せないと、大ダメージの<b>ファイナルスピア</b>を詠唱。ある程度離れればこの攻撃は回避できます。",
+          "EnglishName":"PALACE HORNET"
+       },
+       "パレス・ヤーゾン":{
+          "Notes":"",
+          "EnglishName":"PALACE YARZON"
+       },
+       "パレス・ダングビートル":{
+          "Notes":"",
+          "EnglishName":"PALACE DUNG BEETLE"
+       },
+       "ロストゴブリン":{
+          "Notes":"",
+          "EnglishName":"LOST GOBLIN"
+       },
+       "パレス・デスゲイズ":{
+          "Notes":"非常に簡単なボスですが、ソロでは被ダメージを甘く見ないこと。（ポーション類の使用も検討）<br/> ヴォイド・ファイラの方が低レベルで使えるスキルより威力が高いので、サキュバス化を使うと敵に大ダメージを与えることができます。 引き撃ちできる職であれば、部屋をぐるぐる回っていればウィップクラック以外一切のAAダメージを受けないまま倒せます。",
+          "EnglishName":"PALACE DEATHGAZE"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "冒険者風の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "冒険者風の幻術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "冒険者風の剣術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "リビング・ウェルク": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ウラグナイト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・トード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・プリン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・スライム": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "一定時間内に倒せないと爆発して広範囲に即死。ソロでは戦いながらうろうろしないこと。 トードトラップを踏むとほぼ失敗になります。"},
-    "パレス・ナンカ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ニンキナンカ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・オチュー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ビロコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・シードリング": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・モルボル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・コブラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "トードトラップを踏むと、特殊スキル「捕食」を使用（即死）。 スライムと同様、戦いながら部屋内で移動しないこと。"},
-    "スパージ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "10階のボスと同様に、攻撃パターンはかなり単純です。ただしWSの<b>ブラッディカレス</b>はかなり痛いので気を付けましょう。ブラッディカレス→AoE2回→全体攻撃→中央に移動+蜂2匹召喚。の順に使用してきます。蜂は一定時間内に倒せないとファイナルスピアを詠唱。同時にボスが直線大ダメージ範囲の<b>ロトンステンチ</b>を連打してきます。<br/>ソロではサキュバス化でボスと雑魚をまとめて焼きましょう。ただしWSのダメージが痛いのでサキュバス化する前に<b>生者の秘薬</b>を使った方が良いです。"
-        }
+       "ミミック":{
+          "Notes":"これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "冒険者風の槍術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"SPEAR-SHAKING ADVENTURER"
+       },
+       "冒険者風の幻術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"STAFF-SPINNING ADVENTURER"
+       },
+       "冒険者風の剣術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"SWORD-SWINGING ADVENTURER"
+       },
+       "リビング・ウェルク":{
+          "Notes":"",
+          "EnglishName":"LIVING WHELK"
+       },
+       "パレス・ウラグナイト":{
+          "Notes":"",
+          "EnglishName":"PALACE URAGNITE"
+       },
+       "パレス・トード":{
+          "Notes":"",
+          "EnglishName":"PALACE TOAD"
+       },
+       "パレス・プリン":{
+          "Notes":"",
+          "EnglishName":"PALACE PUDDING"
+       },
+       "パレス・スライム":{
+          "Notes":"一定時間内に倒せないと爆発して広範囲に即死。ソロでは戦いながらうろうろしないこと。 トードトラップを踏むとほぼ失敗になります。",
+          "EnglishName":"PALACE SLIME"
+       },
+       "パレス・ナンカ":{
+          "Notes":"",
+          "EnglishName":"PALACE NANKA"
+       },
+       "パレス・ニンキナンカ":{
+          "Notes":"",
+          "EnglishName":"PALACE NINKI NANKA"
+       },
+       "パレス・オチュー":{
+          "Notes":"",
+          "EnglishName":"PALACE OCHU"
+       },
+       "パレス・ビロコ":{
+          "Notes":"",
+          "EnglishName":"PALACE BILOKO"
+       },
+       "パレス・シードリング":{
+          "Notes":"",
+          "EnglishName":"PALACE SEEDLING"
+       },
+       "パレス・モルボル":{
+          "Notes":"",
+          "EnglishName":"PALACE MORBOL"
+       },
+       "パレス・コブラ":{
+          "Notes":"トードトラップを踏むと、特殊スキル「捕食」を使用（即死）。 スライムと同様、戦いながら部屋内で移動しないこと。",
+          "EnglishName":"PALACE COBRA"
+       },
+       "スパージ":{
+          "Notes":"10階のボスと同様に、攻撃パターンはかなり単純です。ただしWSの<b>ブラッディカレス</b>はかなり痛いので気を付けましょう。ブラッディカレス→AoE2回→全体攻撃→中央に移動+蜂2匹召喚。の順に使用してきます。蜂は一定時間内に倒せないとファイナルスピアを詠唱。同時にボスが直線大ダメージ範囲の<b>ロトンステンチ</b>を連打してきます。<br/>ソロではサキュバス化でボスと雑魚をまとめて焼きましょう。ただしWSのダメージが痛いのでサキュバス化する前に<b>生者の秘薬</b>を使った方が良いです。",
+          "EnglishName":"SPURGE"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "海賊風の斧術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "イシュガルド風の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "外道風の斧術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "パレス・プーク": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ドレイク": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・アダマンタス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・デュラハン": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ウィヴル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ペイスト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・スプリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・クレイビースト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・マロリス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・セントール": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ミノタウロス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>111トンズ・スイング</b>を詠唱。大ダメージ+ノックバックの敵中心範囲攻撃。スタンで中断可能。"},
-    "パレス・スカネテ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "<b>チャープ</b>で15秒睡眠。ソロではすぐに叩き起こされますが、他mobの範囲攻撃と重ならないように注意。"},
-    "ニンギジッダ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "ボス： ニンギジッダ<br/>まとめ - 外周で開始、火、氷、火、氷、中央に走る。<br/>WS以外には、火→氷→火→氷の順でAoEを撃ってきます。床に残るので中央には出さないこと。2回目の氷の後に中央で<b>フィアーミスト</b>（高ダメージ+恐怖）を詠唱するので、ボスと一緒に中央まで走りましょう。"
-        }
+       "ミミック":{
+          "Notes":"これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "海賊風の斧術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"FRENZIED FREEBOOTER"
+       },
+       "イシュガルド風の槍術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"ISHGARDIAN PIKEMAN"
+       },
+       "外道風の斧術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"ROUGHSPUN RUFFIAN"
+       },
+       "パレス・プーク":{
+          "Notes":"",
+          "EnglishName":"PALACE PUK"
+       },
+       "パレス・ドレイク":{
+          "Notes":"",
+          "EnglishName":"PALACE DRAKE"
+       },
+       "パレス・アダマンタス":{
+          "Notes":"",
+          "EnglishName":"PALACE ADAMANTOISE"
+       },
+       "パレス・デュラハン":{
+          "Notes":"",
+          "EnglishName":"PALACE DULLAHAN"
+       },
+       "パレス・ウィヴル":{
+          "Notes":"",
+          "EnglishName":"PALACE WIVRE"
+       },
+       "パレス・ペイスト":{
+          "Notes":"",
+          "EnglishName":"PALACE PEISTE"
+       },
+       "パレス・スプリガン":{
+          "Notes":"",
+          "EnglishName":"PALACE SPRIGGAN"
+       },
+       "パレス・クレイビースト":{
+          "Notes":"",
+          "EnglishName":"PALACE EFFIGY"
+       },
+       "パレス・マロリス":{
+          "Notes":"",
+          "EnglishName":"PALACE MAROLITH"
+       },
+       "パレス・セントール":{
+          "Notes":"",
+          "EnglishName":"PALACE CENTAUR"
+       },
+       "パレス・ミノタウロス":{
+          "Notes":"<b>111トンズ・スイング</b>を詠唱。大ダメージ+ノックバックの敵中心範囲攻撃。スタンで中断可能。",
+          "EnglishName":"PALACE MINOTAUR"
+       },
+       "パレス・スカネテ":{
+          "Notes":"<b>チャープ</b>で15秒睡眠。ソロではすぐに叩き起こされますが、他mobの範囲攻撃と重ならないように注意。",
+          "EnglishName":"PALACE SKATENE"
+       },
+       "ニンギジッダ":{
+          "Notes":"ボス： ニンギジッダ<br/>まとめ - 外周で開始、火、氷、火、氷、中央に走る。<br/>WS以外には、火→氷→火→氷の順でAoEを撃ってきます。床に残るので中央には出さないこと。2回目の氷の後に中央で<b>フィアーミスト</b>（高ダメージ+恐怖）を詠唱するので、ボスと一緒に中央まで走りましょう。",
+          "EnglishName":"NINGISHZIDA"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "不滅隊風の剣術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ナイトメア・モンク": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ナイトメア・ダハーカ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・カトブレパス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・オーガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・ボギー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ナイトメア・ヘクトアイズ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ナイトメア・アイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・グルマン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ナイトメア・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ナイトメア・ハーゲンティ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・トルバドゥール": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ナイトメア・ナット": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・サキュバス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>ダークミスト→ヴォイド・ファイラ</b>を詠唱。 ダークミストは当たると恐怖になるので範囲外に出ること。"},
-    "イシュタム": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "まとめ - 雑魚処理する <br/>意識してレベル上げをしていない場合、ソロでは結構大変です。 フィールドに残るAoEを4回詠唱した後、2匹の<b>ナイトメア・ブフート</b>を召喚します。ボスの範囲攻撃を避けながらすぐに倒す必要があります。 ボスが全体攻撃の<b>スクリーム</b>を詠唱するまでに倒しきれないと、雑魚が<b>トルネド</b>を使ってきて、ボスがスクリーム直後に使ってくるシャドウフレアのダメージと合わさり死にます。"
-        }
+       "ミミック":{
+          "Notes":"これらはプレイヤーよりもはるかに高いレベルでスポーンすることができます。幸運を。",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "不滅隊風の剣術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"IMMORTAL FLAME"
+       },
+       "ナイトメア・モンク":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MONK"
+       },
+       "ナイトメア・ダハーカ":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DAHAK"
+       },
+       "ナイトメア・カトブレパス":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE CATOBLEPAS"
+       },
+       "ナイトメア・オーガ":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE OGRE"
+       },
+       "ナイトメア・ボギー":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE BOGY"
+       },
+       "ナイトメア・ヘクトアイズ":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HECTEYES"
+       },
+       "ナイトメア・アイ":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE EYE"
+       },
+       "ナイトメア・グルマン":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GOURMAND"
+       },
+       "ナイトメア・マミー":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MUMMY"
+       },
+       "ナイトメア・ハーゲンティ":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HAAGENTI"
+       },
+       "ナイトメア・トルバドゥール":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE TROUBADOUR"
+       },
+       "ナイトメア・ナット":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GNAT"
+       },
+       "ナイトメア・サキュバス":{
+          "Notes":"<b>ダークミスト→ヴォイド・ファイラ</b>を詠唱。 ダークミストは当たると恐怖になるので範囲外に出ること。",
+          "EnglishName":"NIGHTMARE SUCCUBUS"
+       },
+       "イシュタム":{
+          "Notes":"まとめ - 雑魚処理する <br/>意識してレベル上げをしていない場合、ソロでは結構大変です。 フィールドに残るAoEを4回詠唱した後、2匹の<b>ナイトメア・ブフート</b>を召喚します。ボスの範囲攻撃を避けながらすぐに倒す必要があります。 ボスが全体攻撃の<b>スクリーム</b>を詠唱するまでに倒しきれないと、雑魚が<b>トルネド</b>を使ってきて、ボスがスクリーム直後に使ってくるシャドウフレアのダメージと合わさり死にます。",
+          "EnglishName":"IXTAB"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "シェーダー族の槍術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ナイトメア・グレイブキーパー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ナイトメア・ブラッドガード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・ドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・レイス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ナイトメア・ナイト": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "イトメア・マンティコア": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・ヘルハウンド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・ガーゴイル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・デーモン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・ナット": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ナイトメア・ブフート": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
-    "ナイトメア・ペルソナ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These cast paralyze, so take caution if you’re doing floor-wide pulls."},
-    "漆黒のエッダ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "まとめ - ボスの近くで戦って<b>インヘルス</b>を避ける<br/>ギミックを適切に避ければ簡単なボスです。<b>インヘルス</b>は2パターンあり、片方はボスから離れ、もう片方はボスの足元の狭いエリアで回避します。そのためボスの近くにいた方が避けやすいです。インヘルスに当たると床の文字が光り、全体範囲の<b>ブラックハネムーン</b>のダメージが上がります。病気のデバフを付与する<b>インシックネス</b>を時々使用してきますが、インヘルスを使ってくる前に効果が切れるので、これによる移動速度低下は気にしなくて大丈夫です。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "シェーダー族の槍術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"DUSKWIGHT LANCER"
+       },
+       "ナイトメア・グレイブキーパー":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GRAVEKEEPER"
+       },
+       "ナイトメア・ブラッドガード":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE BLOODGUARD"
+       },
+       "ナイトメア・ドラゴン":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DRAGON"
+       },
+       "ナイトメア・レイス":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE WRAITH"
+       },
+       "ナイトメア・ナイト":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE KNIGHT"
+       },
+       "イトメア・マンティコア":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MANTICORE"
+       },
+       "ナイトメア・ヘルハウンド":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HELLHOUND"
+       },
+       "ナイトメア・ガーゴイル":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GARGOYLE"
+       },
+       "ナイトメア・デーモン":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DEMON"
+       },
+       "ナイトメア・ナット":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GNAT"
+       },
+       "ナイトメア・ブフート":{
+          "Notes":"These cast paralyze, so take caution if you’re doing floor-wide pulls.",
+          "EnglishName":"NIGHTMARE BHOOT"
+       },
+       "ナイトメア・ペルソナ":{
+          "Notes":"These cast paralyze, so take caution if you’re doing floor-wide pulls.",
+          "EnglishName":"NIGHTMARE PERSONA"
+       },
+       "漆黒のエッダ":{
+          "Notes":"まとめ - ボスの近くで戦って<b>インヘルス</b>を避ける<br/>ギミックを適切に避ければ簡単なボスです。<b>インヘルス</b>は2パターンあり、片方はボスから離れ、もう片方はボスの足元の狭いエリアで回避します。そのためボスの近くにいた方が避けやすいです。インヘルスに当たると床の文字が光り、全体範囲の<b>ブラックハネムーン</b>のダメージが上がります。病気のデバフを付与する<b>インシックネス</b>を時々使用してきますが、インヘルスを使ってくる前に効果が切れるので、これによる移動速度低下は気にしなくて大丈夫です。",
+          "EnglishName":"EDDA BLACKBOSOM"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "悪党風の商人": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "闇商人風の老人": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "パレス・インプ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・グレムリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・マナアイドル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ヴォドリガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・アークデーモン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ディープアイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・アヌビス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・タウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・プリン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ソウルフレア": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・マナポット": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ブラックライダー": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "ノックバックされる時に外周の爆発する玉に被らないように気をつけましょう。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "悪党風の商人":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"MOLDERING MERCHANT"
+       },
+       "闇商人風の老人":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"BLACKENING MARKETEER"
+       },
+       "パレス・インプ":{
+          "Notes":"",
+          "EnglishName":"PALACE IMP"
+       },
+       "パレス・グレムリン":{
+          "Notes":"",
+          "EnglishName":"PALACE GREMLIN"
+       },
+       "パレス・マナアイドル":{
+          "Notes":"",
+          "EnglishName":"PALACE IDOL"
+       },
+       "パレス・ヴォドリガ":{
+          "Notes":"",
+          "EnglishName":"PALACE VODORIGA"
+       },
+       "パレス・アークデーモン":{
+          "Notes":"",
+          "EnglishName":"PALACE ARCH DEMON"
+       },
+       "パレス・ディープアイ":{
+          "Notes":"",
+          "EnglishName":"PALACE DEEPEYE"
+       },
+       "パレス・アヌビス":{
+          "Notes":"",
+          "EnglishName":"PALACE ANUBYS"
+       },
+       "パレス・タウルス":{
+          "Notes":"",
+          "EnglishName":"PALACE TAURUS"
+       },
+       "パレス・プリン":{
+          "Notes":"",
+          "EnglishName":"PALACE PUDDING"
+       },
+       "パレス・ソウルフレア":{
+          "Notes":"",
+          "EnglishName":"PALACE SOULFLAYER"
+       },
+       "パレス・マナポット":{
+          "Notes":"",
+          "EnglishName":"PALACE POT"
+       },
+       "ブラックライダー":{
+          "Notes":"ノックバックされる時に外周の爆発する玉に被らないように気をつけましょう。",
+          "EnglishName":"THE BLACK RIDER"
+       }
     },
     {
+<<<<<<< HEAD
     "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
     "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     "古株風の格闘士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
@@ -177,402 +441,1155 @@
             "AggroType": "Proximity",
             "Notes": "<b>ハイドレーション</b>を詠唱したら、離れてボスが水から完全に出るように誘導し、ヘイストがかからないようにしましょう。"
         }
+=======
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "古株風の格闘士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"BLOATED PUGILIST"
+       },
+       "古株風の弓術士":{
+        "Notes":"*Rare Monster*",
+        "EnglishName":"BLOATED ARCHER"
+       },
+       "古株風の幻術士":{
+        "Notes":"*Rare Monster*",
+        "EnglishName":"BLOATED CONJURER"
+       },
+       "パレス・ティラノサウルス":{
+          "Notes":"",
+          "EnglishName":"PALACE TYRANNOSAUR"
+       },
+       "パレス・ミロドン":{
+          "Notes":"",
+          "EnglishName":"PALACE MYLODON"
+       },
+       "パレス・プテラノドン":{
+          "Notes":"",
+          "EnglishName":"PALACE PTERANODON"
+       },
+       "パレス・エルブスト":{
+          "Notes":"",
+          "EnglishName":"PALACE ELBST"
+       },
+       "パレス・ウィヴル":{
+          "Notes":"",
+          "EnglishName":"PALACE WIVRE"
+       },
+       "パレス・ワイルドダイル":{
+          "Notes":"",
+          "EnglishName":"PALACE CROC"
+       },
+       "パレス・ディプロカウルス":{
+          "Notes":"",
+          "EnglishName":"PALACE DIPLOCAULUS"
+       },
+       "パレス・ブレードビネガロン":{
+          "Notes":"",
+          "EnglishName":"PALACE BLADE"
+       },
+       "パレス・サルコスクス":{
+          "Notes":"",
+          "EnglishName":"PALACE SARCOSUCHUS"
+       },
+       "パレス・トリケラトプス":{
+          "Notes":"",
+          "EnglishName":"PALACE TRICERATOPS"
+       },
+       "パレス・ラプトル":{
+          "Notes":"",
+          "EnglishName":"PALACE RAPTOR"
+       },
+       "ヤクアル":{
+          "Notes":"<b>ハイドレーション</b>を詠唱したら、離れてボスが水から完全に出るように誘導し、ヘイストがかからないようにしましょう。",
+          "EnglishName":"YAQUARU"
+       }
+>>>>>>> DDOTI
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "アラミゴ風の技術兵": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "富豪風のエレゼン族": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "パレス・ベアー": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・クァール": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・バンダースナッチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ウルフ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ダルメル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ライオン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・サイクロプス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・サスカッチ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・アンズー": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・オーロックス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "バード・オブ・パレス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "グアンナ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "竜巻は見た目よりも広い吸引付きの範囲攻撃をしてくるので近寄らないこと。ボスが外周に移動したら巨大な前方範囲攻撃の<b>トラウンス</b>を使用してくるので、ボスの足元に走っていきましょう。残りHP17%から最大HPの80%のダメージを与えてくる<b>エクリプスメテオ</b>を詠唱してきます。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "アラミゴ風の技術兵":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"EMACIATED ENGINEER"
+       },
+       "富豪風のエレゼン族":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"PUTRID PLUTOCRAT"
+       },
+       "パレス・ベアー":{
+          "Notes":"",
+          "EnglishName":"PALACE BEAR"
+       },
+       "パレス・クァール":{
+          "Notes":"",
+          "EnglishName":"PALACE COEURL"
+       },
+       "パレス・バンダースナッチ":{
+          "Notes":"",
+          "EnglishName":"PALACE BANDERSNATCH"
+       },
+       "パレス・ウルフ":{
+          "Notes":"",
+          "EnglishName":"PALACE WOLF"
+       },
+       "パレス・ダルメル":{
+          "Notes":"",
+          "EnglishName":"PALACE DHALMEL"
+       },
+       "パレス・ライオン":{
+          "Notes":"",
+          "EnglishName":"PALACE LION"
+       },
+       "パレス・サイクロプス":{
+          "Notes":"",
+          "EnglishName":"PALACE CYCLOPS"
+       },
+       "パレス・サスカッチ":{
+          "Notes":"",
+          "EnglishName":"PALACE SASQUATCH"
+       },
+       "パレス・アンズー":{
+          "Notes":"",
+          "EnglishName":"PALACE ANZU"
+       },
+       "パレス・オーロックス":{
+          "Notes":"",
+          "EnglishName":"PALACE AUROCHS"
+       },
+       "バード・オブ・パレス":{
+          "Notes":"",
+          "EnglishName":"BIRD OF THE PALACE"
+       },
+       "グアンナ":{
+          "Notes":"竜巻は見た目よりも広い吸引付きの範囲攻撃をしてくるので近寄らないこと。ボスが外周に移動したら巨大な前方範囲攻撃の<b>トラウンス</b>を使用してくるので、ボスの足元に走っていきましょう。残りHP17%から最大HPの80%のダメージを与えてくる<b>エクリプスメテオ</b>を詠唱してきます。",
+          "EnglishName":"GUDANNA"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "審問官風の法術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "名家風の騎士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "パレス・エルカ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ガッリミムス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・クレイクロウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ウォーム": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ボム": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "一定時間内に倒せないと<b>自爆</b>を詠唱。ソロではトードや沈黙のトラップを踏まないよう、部屋の外から釣ること。"},
-    "パレス・キマイラ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "フレイムドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ワモーラカンパ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ビネガロン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ワモーラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ハパリット": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ビッグマザーボム": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "まとめ - 赤いボムが出たら倒す、青いボムが出たらボスに押し込む（全スキルでノックバックする）<br/>タゲれない多数の小さいボムの中に赤いペイニー・ボムが沸いたら、爆発する前に倒します。青い<b>ギディ・ボム</b>が沸くとボスが<b>特大爆発</b>を詠唱するので、ボスの足元に雑魚を飛ばし詠唱を停止させます。失敗した場合は最大HPの99%のダメージを受けるので、ヒールの準備を。（タンクLB含む全軽減無効）"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "審問官風の法術士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"INSENTIENT INQUISITOR"
+       },
+       "名家風の騎士":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"NECROSE KNIGHT"
+       },
+       "パレス・エルカ":{
+          "Notes":"",
+          "EnglishName":"PALACE ERUCA"
+       },
+       "パレス・ガッリミムス":{
+          "Notes":"",
+          "EnglishName":"PALACE GALLIMIMUS"
+       },
+       "パレス・クレイクロウ":{
+          "Notes":"",
+          "EnglishName":"PALACE CLAW"
+       },
+       "パレス・ウォーム":{
+          "Notes":"",
+          "EnglishName":"PALACE WORM"
+       },
+       "パレス・ボム":{
+          "Notes":"一定時間内に倒せないと<b>自爆</b>を詠唱。ソロではトードや沈黙のトラップを踏まないよう、部屋の外から釣ること。",
+          "EnglishName":"PALACE BOMB"
+       },
+       "パレス・キマイラ":{
+          "Notes":"",
+          "EnglishName":"PALACE CHIMERA"
+       },
+       "フレイムドラゴン":{
+          "Notes":"",
+          "EnglishName":"FLAME DRAGON"
+       },
+       "パレス・ワモーラカンパ":{
+          "Notes":"",
+          "EnglishName":"PALACE WAMOURACAMPA"
+       },
+       "パレス・ビネガロン":{
+          "Notes":"",
+          "EnglishName":"PALACE VINEGAROON"
+       },
+       "パレス・ワモーラ":{
+          "Notes":"",
+          "EnglishName":"PALACE WAMOURA"
+       },
+       "パレス・ハパリット":{
+          "Notes":"",
+          "EnglishName":"PALACE HAPALIT"
+       },
+       "ビッグマザーボム":{
+          "Notes":"まとめ - 赤いボムが出たら倒す、青いボムが出たらボスに押し込む（全スキルでノックバックする）<br/>タゲれない多数の小さいボムの中に赤いペイニー・ボムが沸いたら、爆発する前に倒します。青い<b>ギディ・ボム</b>が沸くとボスが<b>特大爆発</b>を詠唱するので、ボスの足元に雑魚を飛ばし詠唱を停止させます。失敗した場合は最大HPの99%のダメージを受けるので、ヒールの準備を。（タンクLB含む全軽減無効）",
+          "EnglishName":"THE GODMOTHER"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "豪商風のララフェル族": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "パレス・ヒッポセルフ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・グルマン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・レイス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ジャイアントコース": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・アイアンコース": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ダークドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・スウォーム": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ローズレット": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "パレス・ナイト": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・グレイブキーパー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "屍術師ニバス": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "ソロでは自己強化+防御強化+<b>生者の秘薬</b>を使ったら、サキュバス化を使います。効果時間が切れるまでヴォイド・ファイラを連打、雑魚もそのままファイラで焼きます。変身が切れたら、もう一度生者の秘薬を使用し、次はクリブ化を使います。そのままずっとヘヴンリージャッジを連打し、ボスと雑魚の死体を焼きます。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "豪商風のララフェル族":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"MORTIFYING MAGNATE"
+       },
+       "パレス・ヒッポセルフ":{
+          "Notes":"",
+          "EnglishName":"PALACE HIPPOCERF"
+       },
+       "パレス・グルマン":{
+          "Notes":"",
+          "EnglishName":"PALACE GOURMAND"
+       },
+       "パレス・レイス":{
+          "Notes":"",
+          "EnglishName":"PALACE WRAITH"
+       },
+       "パレス・ジャイアントコース":{
+          "Notes":"",
+          "EnglishName":"PALACE CORSE"
+       },
+       "パレス・アイアンコース":{
+          "Notes":"",
+          "EnglishName":"PALACE IRON CORSE"
+       },
+       "ダークドラゴン":{
+          "Notes":"",
+          "EnglishName":"DARK DRAGON"
+       },
+       "パレス・スウォーム":{
+          "Notes":"",
+          "EnglishName":"PALACE SWARM"
+       },
+       "パレス・マミー":{
+          "Notes":"",
+          "EnglishName":"PALACE MUMMY"
+       },
+       "パレス・ローズレット":{
+          "Notes":"",
+          "EnglishName":"PALACE ROSELET"
+       },
+       "パレス・ナイト":{
+          "Notes":"",
+          "EnglishName":"PALACE KNIGHT"
+       },
+       "パレス・グレイブキーパー":{
+          "Notes":"",
+          "EnglishName":"PALACE GRAVEKEEPER"
+       },
+       "屍術師ニバス":{
+          "Notes":"ソロでは自己強化+防御強化+<b>生者の秘薬</b>を使ったら、サキュバス化を使います。効果時間が切れるまでヴォイド・ファイラを連打、雑魚もそのままファイラで焼きます。変身が切れたら、もう一度生者の秘薬を使用し、次はクリブ化を使います。そのままずっとヘヴンリージャッジを連打し、ボスと雑魚の死体を焼きます。",
+          "EnglishName":"NYBETH OBDILORD"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "操縦士風の帝国兵": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ディープパレス・ホーネット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "一定時間内に倒せないと、大ダメージの<b>ファイナルスピア</b>を詠唱。ある程度離れればこの攻撃は回避できます。"},
-    "ディープパレス・レディバグ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ヒッポグリフ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ダングビートル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ゲイラキャット": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・ドブラン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ジズ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ヤーゾン": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・スクウィレル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・スタッグ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・スプライト": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ゴブリン・アドベンチャラー": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "アリカント": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "パターンは10階のボスと同じで、攻撃が痛くなっているだけです。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "操縦士風の帝国兵":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"CORRUPTED CENTURION"
+       },
+       "ディープパレス・ホーネット":{
+          "Notes":"一定時間内に倒せないと、大ダメージの<b>ファイナルスピア</b>を詠唱。ある程度離れればこの攻撃は回避できます。",
+          "EnglishName":"DEEP PALACE HORNET"
+       },
+       "ディープパレス・レディバグ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LADYBUG"
+       },
+       "ディープパレス・ヒッポグリフ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HIPPOGRYPH"
+       },
+       "ディープパレス・ダングビートル":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DUNG BEETLE"
+       },
+       "ディープパレス・ゲイラキャット":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GAELICAT"
+       },
+       "ディープパレス・ドブラン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DOBLYN"
+       },
+       "ディープパレス・ジズ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ZIZ"
+       },
+       "ディープパレス・ヤーゾン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE YARZON"
+       },
+       "ディープパレス・スクウィレル":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SQUIRREL"
+       },
+       "ディープパレス・スタッグ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE STAG"
+       },
+       "ディープパレス・スプライト":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SPRITE"
+       },
+       "ゴブリン・アドベンチャラー":{
+          "Notes":"",
+          "EnglishName":"GOBLIN ADVENTURER"
+       },
+       "アリカント":{
+          "Notes":"パターンは10階のボスと同じで、攻撃が痛くなっているだけです。",
+          "EnglishName":"ALICANTO"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "ディープパレス・リーチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・モルボル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "戦闘開始後すぐに睡眠+スロウの前方扇型範囲、次にくさい息を使用してきます。近寄っておくことで、①睡眠が切れた時にくさい息を避けやすくなり、②睡眠時にAAで起こしてもらえます。"},
-    "ディープパレス・ギガントード": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>スティッキータン→レイバードリープ</b>で6000以上のダメージを受けることがあります。スティッキータンは離れていると5秒間のスタン効果を受けます。他のmobが近くにいる時は注意。"},
-    "ディープパレス・ビロコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・コブラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "1-10階のコブラと同様、トードトラップを踏まないよう注意。毒を付与してくる<b>リゴ</b>ージのスキルが追加されています。"},
-    "ディープパレス・ビフェリケラス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・シードリング": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・スライム": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "スタックする物理被ダメアップのデバフを付与してきます。（スライム自身の攻撃は魔法攻撃）一定時間内に倒さないと自爆しますが、11-20階のスライムよりも猶予時間はかなり長め。"},
-    "ディープパレス・サラマンダー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・オチュー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・プリン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ナンカ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "キールティムカ": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "まとめ - 範囲を避ける、蜂を倒す。<br/>20階のボスとパターンは同じです。<b>ロトンステンチ</b>は当たると即死するようになっているので、しっかり避けること。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "ディープパレス・リーチ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LEECH"
+       },
+       "ディープパレス・モルボル":{
+          "Notes":"戦闘開始後すぐに睡眠+スロウの前方扇型範囲、次にくさい息を使用してきます。近寄っておくことで、①睡眠が切れた時にくさい息を避けやすくなり、②睡眠時にAAで起こしてもらえます。",
+          "EnglishName":"DEEP PALACE MORBOL"
+       },
+       "ディープパレス・ギガントード":{
+          "Notes":"<b>スティッキータン→レイバードリープ</b>で6000以上のダメージを受けることがあります。スティッキータンは離れていると5秒間のスタン効果を受けます。他のmobが近くにいる時は注意。",
+          "EnglishName":"DEEP PALACE GIGANTOAD"
+       },
+       "ディープパレス・ビロコ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BILOKO"
+       },
+       "ディープパレス・コブラ":{
+          "Notes":"1-10階のコブラと同様、トードトラップを踏まないよう注意。毒を付与してくる<b>リゴ</b>ージのスキルが追加されています。",
+          "EnglishName":"DEEP PALACE COBRA"
+       },
+       "ディープパレス・ビフェリケラス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BIFERICERAS"
+       },
+       "ディープパレス・シードリング":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SEEDLING"
+       },
+       "ディープパレス・スライム":{
+          "Notes":"スタックする物理被ダメアップのデバフを付与してきます。（スライム自身の攻撃は魔法攻撃）一定時間内に倒さないと自爆しますが、11-20階のスライムよりも猶予時間はかなり長め。",
+          "EnglishName":"DEEP PALACE SLIME"
+       },
+       "ディープパレス・サラマンダー":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SALAMANDER"
+       },
+       "ディープパレス・オチュー":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE OCHU"
+       },
+       "ディープパレス・プリン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PUDDING"
+       },
+       "ディープパレス・ナンカ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE NANKA"
+       },
+       "キールティムカ":{
+          "Notes":"まとめ - 範囲を避ける、蜂を倒す。<br/>20階のボスとパターンは同じです。<b>ロトンステンチ</b>は当たると即死するようになっているので、しっかり避けること。",
+          "EnglishName":"KIRTIMUKHA"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "鉱夫風の巨人族": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ディープパレス・デュラハン": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・クレイビースト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・セントール": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・バジリスク": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ビアスト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・アダマンタス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ウロリス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ウィヴル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・スプリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・テロック": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ミノタウルス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>111トンズ・スイング</b>を詠唱。大ダメージ+ノックバックの敵中心範囲攻撃。スタンで中断可能。"},
-    "ディープパレス・スカネテ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "<b>チャープ</b>で15秒睡眠。ソロではすぐに叩き起こされますが、他mobの範囲攻撃と重ならないように注意。"},
-    "アルファルド": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "まとめ - 外周で開始、火、氷、火、氷、中央に走る。<br/>30階のボスと同様ですが、<b>フィアーミスト</b>の詠唱がかなり速くなっているので、2回目の氷を見たらすぐに中央に移動すること。ただし中央に沼を被せないように、それまでは外周にいましょう。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "鉱夫風の巨人族":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"GANGRENOUS GIGANT"
+       },
+       "ディープパレス・デュラハン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DULLAHAN"
+       },
+       "ディープパレス・クレイビースト":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE EFFIGY"
+       },
+       "ディープパレス・セントール":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE CENTAUR"
+       },
+       "ディープパレス・バジリスク":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BASILISK"
+       },
+       "ディープパレス・ビアスト":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BIAST"
+       },
+       "ディープパレス・アダマンタス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ADAMANTOISE"
+       },
+       "ディープパレス・ウロリス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE UROLITH"
+       },
+       "ディープパレス・ウィヴル":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE WIVRE"
+       },
+       "ディープパレス・スプリガン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SPRIGGAN"
+       },
+       "ディープパレス・テロック":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PTEROC"
+       },
+       "ディープパレス・ミノタウルス":{
+          "Notes":"<b>111トンズ・スイング</b>を詠唱。大ダメージ+ノックバックの敵中心範囲攻撃。スタンで中断可能。",
+          "EnglishName":"DEEP PALACE MINOTAUR"
+       },
+       "ディープパレス・スカネテ":{
+          "Notes":"<b>チャープ</b>で15秒睡眠。ソロではすぐに叩き起こされますが、他mobの範囲攻撃と重ならないように注意。",
+          "EnglishName":"DEEP PALACE SKATENE"
+       },
+       "アルファルド":{
+          "Notes":"まとめ - 外周で開始、火、氷、火、氷、中央に走る。<br/>30階のボスと同様ですが、<b>フィアーミスト</b>の詠唱がかなり速くなっているので、2回目の氷を見たらすぐに中央に移動すること。ただし中央に沼を被せないように、それまでは外周にいましょう。",
+          "EnglishName":"ALFARD"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "異形の船長": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ディープパレス・ガード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ヘクトアイズ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・グルマン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・カトブレパス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ダハーカ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・タウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・トルバドゥール": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ソウル": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・オーガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・モンク": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・アーリマン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>レベル5石化</b>を詠唱。不可視の前方扇形範囲で、当たると15秒間石化します。解除不可で、ソロでは簡単に死に繋がります。"},
-    "ア・プチ": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "<b>クリブ化</b>のヘヴンリージャッジは自己強化有りで1発3万ダメージを与えられます。 ソロでは 自己強化+防御強化+クリブ化 推奨。防御強化がなくても倒せますが、使うことでずっと安全になり、無い場合は途中で変身を解除して生者の秘薬を叩いてからクリブ化を再使用しないといけなくなります。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "異形の船長":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"HALF-CRACKED CAPTAIN"
+       },
+       "ディープパレス・ガード":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GUARD"
+       },
+       "ディープパレス・ヘクトアイズ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HECTEYES"
+       },
+       "ディープパレス・グルマン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GOURMAND"
+       },
+       "ディープパレス・カトブレパス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE CATOBLEPAS"
+       },
+       "ディープパレス・ダハーカ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DAHAK"
+       },
+       "ディープパレス・タウルス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TAURUS"
+       },
+       "ディープパレス・トルバドゥール":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TROUBADOR"
+       },
+       "ディープパレス・ソウル":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SOUL"
+       },
+       "ディープパレス・マミー":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MUMMY"
+       },
+       "ディープパレス・オーガ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE OGRE"
+       },
+       "ディープパレス・モンク":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MONK"
+       },
+       "ディープパレス・アーリマン":{
+          "Notes":"<b>レベル5石化</b>を詠唱。不可視の前方扇形範囲で、当たると15秒間石化します。解除不可で、ソロでは簡単に死に繋がります。",
+          "EnglishName":"DEEP PALACE AHRIMAN"
+       },
+       "ア・プチ":{
+          "Notes":"<b>クリブ化</b>のヘヴンリージャッジは自己強化有りで1発3万ダメージを与えられます。 ソロでは 自己強化+防御強化+クリブ化 推奨。防御強化がなくても倒せますが、使うことでずっと安全になり、無い場合は途中で変身を解除して生者の秘薬を叩いてからクリブ化を再使用しないといけなくなります。",
+          "EnglishName":"AH PUCH"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "ディープパレス・ケッド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ヘルハウンド": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ガーゴイル": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "毒とWSのダメージでDPSが高く、ソロでは生者の秘薬か防御強化がないと厳しいです。"},
-    "ディープパレス・ブフート": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・デーモン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "一定時間内に倒さないとミー<b>ルストーム</b>を使用し、HP1%にされます。"},
-    "ディープパレス・サキュバス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・マンティコア": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "物理ダメージ上昇の自己バフを使用してきます。<b>リッパークロウ</b>は不可視の前方範囲で、当たるとかなり痛いです。離れるか背面に移動することで回避可能。"},
-    "ディープパレス・ペルソナ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ナイト": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "41階～と91階～のレイスと使用スキルは同じですが（広範囲の<b>スクリーム</b>）、倒すのに時間がかかるようになり問題となってきます。範囲を避けるために部屋に入らないといけないことがあり、他のmobを釣ったり罠を踏んだりするおそれがあります。"},
-    "ディープパレス・キーパー": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ティーシポネー": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "まとめ - 雑魚のゾンビーには触られないように処理。雑魚サキュバスは倒さなくてもOK。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "ディープパレス・ケッド":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KED"
+       },
+       "ディープパレス・ヘルハウンド":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HELLHOUND"
+       },
+       "ディープパレス・ガーゴイル":{
+          "Notes":"毒とWSのダメージでDPSが高く、ソロでは生者の秘薬か防御強化がないと厳しいです。",
+          "EnglishName":"DEEP PALACE GARGOYLE"
+       },
+       "ディープパレス・ブフート":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BHOOT"
+       },
+       "ディープパレス・デーモン":{
+          "Notes":"一定時間内に倒さないとミー<b>ルストーム</b>を使用し、HP1%にされます。",
+          "EnglishName":"DEEP PALACE DEMON"
+       },
+       "ディープパレス・サキュバス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SUCCUBUS"
+       },
+       "ディープパレス・マンティコア":{
+          "Notes":"物理ダメージ上昇の自己バフを使用してきます。<b>リッパークロウ</b>は不可視の前方範囲で、当たるとかなり痛いです。離れるか背面に移動することで回避可能。",
+          "EnglishName":"DEEP PALACE MANTICORE"
+       },
+       "ディープパレス・ペルソナ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PERSONA"
+       },
+       "ディープパレス・ナイト":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KNIGHT"
+       },
+       "オニキスドラゴン":{
+          "Notes":"",
+          "EnglishName":"ONYX DRAGON"
+       },
+       "ディープパレス・レイス":{
+          "Notes":"41階～と91階～のレイスと使用スキルは同じですが（広範囲の<b>スクリーム</b>）、倒すのに時間がかかるようになり問題となってきます。範囲を避けるために部屋に入らないといけないことがあり、他のmobを釣ったり罠を踏んだりするおそれがあります。",
+          "EnglishName":"DEEP PALACE WRAITH"
+       },
+       "ディープパレス・キーパー":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KEEPER"
+       },
+       "ティーシポネー":{
+          "Notes":"まとめ - 雑魚のゾンビーには触られないように処理。雑魚サキュバスは倒さなくてもOK。",
+          "EnglishName":"TISIPHONE"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "黒渦団風の船長": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ディープパレス・グレムリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・デビレット": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable."},
-    "ディープパレス・ディープアイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
-    "ディープパレス・アバイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Has an enrage that grants a minor damage up if left alive long enough."},
-    "ディープパレス・ソウルフレア": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "Double auto that heals them for the amount of damage they deal. Very annoying to fight."},
-    "ディープパレス・プリン": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
-    "ディープパレス・シュワブチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・マナポット": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
-    "ディープパレス・タウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・マロリス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。"},
-    "ディープパレス・アークデーモン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "トーリスリッター": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "ギミック的には60階ボスと同じですが、かなり痛くなっています。赤なら防御強化なしでも倒せないことはないですが、使用を強く推奨します。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "黒渦団風の船長":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"SUNKEN CAPTAIN"
+       },
+       "ディープパレス・グレムリン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GREMLIN"
+       },
+       "ディープパレス・デビレット":{
+          "Notes":"Casts <b>Void Blizzard</b>, which inflicts a long slow, as well as <b>Ice Spikes</b>, which causes any autoattacks or weaponskills to deal high damage back to you. Recommended to cancel <b>Void Blizzard</b> and then click off the mob for the duration of <b>Ice Spikes</b> to prevent auto attacks if applicable.",
+          "EnglishName":"DEEP PALACE DEVILET"
+       },
+       "ディープパレス・ディープアイ":{
+          "Notes":"WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。",
+          "EnglishName":"DEEP PALACE DEEPEYE"
+       },
+       "ディープパレス・アバイ":{
+          "Notes":"Has an enrage that grants a minor damage up if left alive long enough.",
+          "EnglishName":"DEEP PALACE ABAIA"
+       },
+       "ディープパレス・ソウルフレア":{
+          "Notes":"Double auto that heals them for the amount of damage they deal. Very annoying to fight.",
+          "EnglishName":"DEEP PALACE SOULFLAYER"
+       },
+       "ディープパレス・プリン":{
+          "Notes":"WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。",
+          "EnglishName":"DEEP PALACE PUDDING"
+       },
+       "ディープパレス・シュワブチ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SHABTI"
+       },
+       "ディープパレス・マナポット":{
+          "Notes":"WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。",
+          "EnglishName":"DEEP PALACE POT"
+       },
+       "ディープパレス・タウルス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TAURUS"
+       },
+       "ディープパレス・マロリス":{
+          "Notes":"WS+AAがかなり痛いので、必要であれば生者の秘薬を使用。",
+          "EnglishName":"DEEP PALACE MAROLITH"
+       },
+       "ディープパレス・アークデーモン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ARCH DEMON"
+       },
+       "トーリスリッター":{
+          "Notes":"ギミック的には60階ボスと同じですが、かなり痛くなっています。赤なら防御強化なしでも倒せないことはないですが、使用を強く推奨します。",
+          "EnglishName":"TODESRITTER"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "黒き鎧の帝国将校": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ディープパレス・ミロドン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・プテラノドン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・リンドヴルム": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・バリトンダイル": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いので注意。"},
-    "ディープパレス・ディプロカウルス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・アルケオダイノス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。"},
-    "ディープパレス・ウィヴル": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛く、ウィヴルとバリトンダイルは接近感知なので背後/歩いてスルーすることができません。"},
-    "ディープパレス・ビネガロン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・トリケラトプス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAがかなり痛く、ウィヴルとバリトンダイルは接近感知なので背後/歩いてスルーすることができません。"},
-    "ディープパレス・トゥルスス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・サルコスクス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ユルング": 
-        {
-            "DangerLevel": "Caution",
-            "AggroType": "Proximity",
-            "Notes": "<b>ハイドレーション</b>の水溜まりは、ヘイストに加えて物理ダメージ上昇がボスに付くようになっています。スプリント/バックステップ系のアビリティは、へヴィ中に<b>エレクトロジェネシス</b>を避ける時のために取っておきます。（へヴィ残り約7秒でスプリントを使用）"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "黒き鎧の帝国将校":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"FLYBLOWN PRAEFECTUS"
+       },
+       "ディープパレス・ミロドン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MYLODON"
+       },
+       "ディープパレス・プテラノドン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PTERANODON"
+       },
+       "ディープパレス・リンドヴルム":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LINDWURM"
+       },
+       "ディープパレス・バリトンダイル":{
+          "Notes":"WS+AAのコンボが痛いので注意。",
+          "EnglishName":"DEEP PALACE CROC"
+       },
+       "ディープパレス・ディプロカウルス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DIPLOCAULUS"
+       },
+       "ディープパレス・アルケオダイノス":{
+          "Notes":"WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。",
+          "EnglishName":"DEEP PALACE ARCHAEOSAUR"
+       },
+       "ディープパレス・ウィヴル":{
+          "Notes":"WS+AAがかなり痛く、ウィヴルとバリトンダイルは接近感知なので背後/歩いてスルーすることができません。",
+          "EnglishName":"DEEP PALACE WIVRE"
+       },
+       "ディープパレス・ビネガロン":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE VINEGAROON"
+       },
+       "ディープパレス・トリケラトプス":{
+          "Notes":"WS+AAがかなり痛く、ウィヴルとバリトンダイルは接近感知なので背後/歩いてスルーすることができません。",
+          "EnglishName":"DEEP PALACE TRICERATOPS"
+       },
+       "ディープパレス・トゥルスス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TURSUS"
+       },
+       "ディープパレス・サルコスクス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SARCOSUCHUS"
+       },
+       "ユルング":{
+          "Notes":"<b>ハイドレーション</b>の水溜まりは、ヘイストに加えて物理ダメージ上昇がボスに付くようになっています。スプリント/バックステップ系のアビリティは、へヴィ中に<b>エレクトロジェネシス</b>を避ける時のために取っておきます。（へヴィ残り約7秒でスプリントを使用）",
+          "EnglishName":"YULUNGGU"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "ディープパレス・ホワイトベアー": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ブラッククァール": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・バンダースナッチ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いので注意。"},
-    "ディープパレス・アンズー": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "DoT付きのWSを使用し、大ダメージ+スタン+被ダメ上昇付き範囲攻撃の<b>狂乱</b>を連発してきます。ソロでは絶対に戦わないこと。"},
-    "ディープパレス・ダルメル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・ライオン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いので注意。"},
-    "ディープパレス・ホワイトウルフ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "WSで凍傷（強力なDoT）を付与してきます。 赤ではテザーを使ってバインドを繰り返し、ヒールする時間を稼ぎながら倒すこともできますが、できるだけ釣らないようにしましょう。"},
-    "ディープパレス・サスカッチ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "非戦闘時に<b>バナナ喰いとドラミング</b>の2種類のスキルを使用します。バナナ喰いは自身に強い物理ダメ上昇のバフを付与し、その後ドラミングを複数回繰り返します。ドラミングは1部屋分の距離の範囲攻撃で、スタックする被ダメ上昇のデバフを付与してきます。そのため、サスカッチのいる部屋の近くでは絶対に戦わないこと。即死するので、<b>バフが付いた状態のサスカッチを絶対に釣らない</b>こと。必ずバフが切れてからにしましょう。<br/>防御強化なしのソロでは、殴打はクリティカルで13000ダメージで、AAと合わさると即死します。"},
-    "バード・オブ・ディープパレス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WSも痛いですが、混乱を付与する範囲攻撃の<b>リヴァレーション</b>にも注意。<br/>しばらく経つと<b>極楽の風</b>を使用し、強力なヘイストと与ダメ上昇のバフが付きます。この最中は<b>リヴァレーション</b>のみ連発してきます。1発でほぼ即死なので、スタンでバフの詠唱を止めるか、スロウでヘイストを上書きします。"},
-    "ディープパレス・ウィセント": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "倒しやすいmobではありますが、DPSチェックがあります。一定時間内に倒せないと、引き寄せて強力なヘヴィ（95-99%くらい遅くなる）を使用し、HP90%くらいのダメージ+麻痺の攻撃をしてきます。"},
-    "ディープパレス・スノウクロプス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "2種類の不可視範囲の即死スキルがあります。<b>グラワ</b>ーは前方直線範囲攻撃で、戦闘開始後すぐに使用してきます。<b>100トンズ・スイング</b>は敵中心の円形範囲です。両方ともスタンで中断可能。"},
-    "デンダインゾネ": 
-        {
-            "DangerLevel": "Scary",
-            "AggroType": "Proximity",
-            "Notes": "Lust at ~20-21%, and then slow push into 15%. After the boss is 15%, use autoattacks or a couple weak abilities to push it from like 15.9% to as close to 15.0% as possible (you can’t actually see this number, so you need to play it a bit safe). Wait for the boss to use a skill (commonly wait for the double Charybdis cast after Trounce), then use your burst rotation. Healers and RDM have this easy, but other classes need to have their heals (Second Wind, Super Potion, Bloodbath, etc) ready and the burst rotation on-point."
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "ディープパレス・ホワイトベアー":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BEAR"
+       },
+       "ディープパレス・ブラッククァール":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BLACK COEURL"
+       },
+       "ディープパレス・バンダースナッチ":{
+          "Notes":"WS+AAのコンボが痛いので注意。",
+          "EnglishName":"DEEP PALACE BANDERSNATCH"
+       },
+       "ディープパレス・アンズー":{
+          "Notes":"DoT付きのWSを使用し、大ダメージ+スタン+被ダメ上昇付き範囲攻撃の<b>狂乱</b>を連発してきます。ソロでは絶対に戦わないこと。",
+          "EnglishName":"DEEP PALACE ANZU"
+       },
+       "ディープパレス・ダルメル":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DHALMEL"
+       },
+       "ディープパレス・ライオン":{
+          "Notes":"WS+AAのコンボが痛いので注意。",
+          "EnglishName":"DEEP PALACE LION"
+       },
+       "ディープパレス・ホワイトウルフ":{
+          "Notes":"WSで凍傷（強力なDoT）を付与してきます。 赤ではテザーを使ってバインドを繰り返し、ヒールする時間を稼ぎながら倒すこともできますが、できるだけ釣らないようにしましょう。",
+          "EnglishName":"DEEP PALACE WOLF"
+       },
+       "ディープパレス・サスカッチ":{
+          "Notes":"非戦闘時に<b>バナナ喰いとドラミング</b>の2種類のスキルを使用します。バナナ喰いは自身に強い物理ダメ上昇のバフを付与し、その後ドラミングを複数回繰り返します。ドラミングは1部屋分の距離の範囲攻撃で、スタックする被ダメ上昇のデバフを付与してきます。そのため、サスカッチのいる部屋の近くでは絶対に戦わないこと。即死するので、<b>バフが付いた状態のサスカッチを絶対に釣らない</b>こと。必ずバフが切れてからにしましょう。<br/>防御強化なしのソロでは、殴打はクリティカルで13000ダメージで、AAと合わさると即死します。",
+          "EnglishName":"DEEP PALACE SASQUATCH"
+       },
+       "バード・オブ・ディープパレス":{
+          "Notes":"WSも痛いですが、混乱を付与する範囲攻撃の<b>リヴァレーション</b>にも注意。<br/>しばらく経つと<b>極楽の風</b>を使用し、強力なヘイストと与ダメ上昇のバフが付きます。この最中は<b>リヴァレーション</b>のみ連発してきます。1発でほぼ即死なので、スタンでバフの詠唱を止めるか、スロウでヘイストを上書きします。",
+          "EnglishName":"BIRD OF THE DEEP PALACE"
+       },
+       "ディープパレス・ウィセント":{
+          "Notes":"倒しやすいmobではありますが、DPSチェックがあります。一定時間内に倒せないと、引き寄せて強力なヘヴィ（95-99%くらい遅くなる）を使用し、HP90%くらいのダメージ+麻痺の攻撃をしてきます。",
+          "EnglishName":"DEEP PALACE WISENT"
+       },
+       "ディープパレス・スノウクロプス":{
+          "Notes":"2種類の不可視範囲の即死スキルがあります。<b>グラワ</b>ーは前方直線範囲攻撃で、戦闘開始後すぐに使用してきます。<b>100トンズ・スイング</b>は敵中心の円形範囲です。両方ともスタンで中断可能。",
+          "EnglishName":"DEEP PALACE SNOWCLOPS"
+       },
+       "デンダインゾネ":{
+          "Notes":"Lust at ~20-21%, and then slow push into 15%. After the boss is 15%, use autoattacks or a couple weak abilities to push it from like 15.9% to as close to 15.0% as possible (you can’t actually see this number, so you need to play it a bit safe). Wait for the boss to use a skill (commonly wait for the double Charybdis cast after Trounce), then use your burst rotation. Healers and RDM have this easy, but other classes need to have their heals (Second Wind, Super Potion, Bloodbath, etc) ready and the burst rotation on-point.",
+          "EnglishName":"DENDAINSONNE"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "白き鎧の帝国将校": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "ディープパレス・グレネード": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・スプライト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "Don’t pull on ranged DPS/no sustain casters."},
-    "ディープパレス・クレイクロウ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "ランタゲ対象を引き寄せた後、大ダメージの<b>串刺し</b>。ランタゲ対象に範囲攻撃+スロウの<b>テイルスクリュ</b>ーも有り。ヒラ/赤なら防御強化があればソロ可能。"},
-    "ディープパレス・クロウラー": {"DangerLevel": "Impossible", "AggroType": "Sound", "Notes": "7000ダメ+強力なスロウ付きの詠唱なしの前方範囲攻撃を使用（+AAで5000ダメ）。詠唱なしの前方範囲毒攻撃もあり、DoTは1判定ごとに3000ダメ食らいます。エスナ可能。<br/>聴覚感知なので歩いてスルーできます。"},
-    "ディープパレス・アルケオダイノス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。ワモーラカンパは聴覚感知なのでスルー可能で、戦う場合も引き撃ちすれば一応なんとかなります。アルケオダイノスはできるだけ釣らない方がいいです。"},
-    "ディープパレス・フラッドウォーム": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "部屋の半径と同程度の即時発動範囲攻撃を使用。WSも痛く、約30秒のDPSチェックもあります（吸引後に2万ダメ）。ヒラ/赤なら防御強化ありで生き残ることは可能ですが、クリったら死にます。<br/>聴覚感知なので歩いてスルーできます。"},
-    "ディープパレス・ワモーラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ディープパレス・ワモーラカンパ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。"},
-    "ディープパレス・ヴィンドスルス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "フラッドドラゴン": {"DangerLevel": "Impossible", "AggroType": "Sight", "Notes": "ランタゲ対象に強力なDoTを付与する詠唱なしの円形範囲攻撃を使用してきます。エスナ可能。"},
-    "ディープパレス・ガルム": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "接近感知で、即死攻撃だらけです。<b>氷結の咆哮</b>は敵中心範囲なので離れ、<b>雷電の咆哮</b>はドーナツ型範囲なので近寄りましょう。沈黙で詠唱中断可能。氷結の方が詠唱が速いので当たりやすいです。<br/>避けるのに慣れれば、ソロでは187-189階で一番倒しやすいmobです。ただしAAがクリると1万ダメージ受けることを忘れずに。"},
-    "ゴッドファザーボム": 
-        {
-            "DangerLevel": "Scary",
-            "AggroType": "Proximity",
-            "Notes": "<b>サキュバス化</b>が3つある場合、全て使用すれば<b>防御強化</b>は1つだけで済みます。しかし<b>開幕でサキュバス化しない</b>こと。ボスは開幕に即フレイムペンペンを使ってくるため、デバフを5スタック付与できる前に殺されてしまう可能性が高いです。ボスのパターンで2連続でサップを詠唱するタイミングがあるのでここに合わせてサキュバス化を使用します。上記のソロ動画を参照。"
-        }
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "白き鎧の帝国将校":{
+          "Notes":"*Rare Monster*",
+          "EnglishName":"JAUNDICED TRIBUNUS"
+       },
+       "ディープパレス・グレネード":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GRENADE"
+       },
+       "ディープパレス・スプライト":{
+          "Notes":"Don’t pull on ranged DPS/no sustain casters.",
+          "EnglishName":"DEEP PALACE SPRITE"
+       },
+       "ディープパレス・クレイクロウ":{
+          "Notes":"ランタゲ対象を引き寄せた後、大ダメージの<b>串刺し</b>。ランタゲ対象に範囲攻撃+スロウの<b>テイルスクリュ</b>ーも有り。ヒラ/赤なら防御強化があればソロ可能。",
+          "EnglishName":"DEEP PALACE CLAW"
+       },
+       "ディープパレス・クロウラー":{
+          "Notes":"7000ダメ+強力なスロウ付きの詠唱なしの前方範囲攻撃を使用（+AAで5000ダメ）。詠唱なしの前方範囲毒攻撃もあり、DoTは1判定ごとに3000ダメ食らいます。エスナ可能。<br/>聴覚感知なので歩いてスルーできます。",
+          "EnglishName":"DEEP PALACE CRAWLER"
+       },
+       "ディープパレス・アルケオダイノス":{
+          "Notes":"WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。ワモーラカンパは聴覚感知なのでスルー可能で、戦う場合も引き撃ちすれば一応なんとかなります。アルケオダイノスはできるだけ釣らない方がいいです。",
+          "EnglishName":"DEEP PALACE ARCHAEOSAUR"
+       },
+       "ディープパレス・フラッドウォーム":{
+          "Notes":"部屋の半径と同程度の即時発動範囲攻撃を使用。WSも痛く、約30秒のDPSチェックもあります（吸引後に2万ダメ）。ヒラ/赤なら防御強化ありで生き残ることは可能ですが、クリったら死にます。<br/>聴覚感知なので歩いてスルーできます。",
+          "EnglishName":"DEEP PALACE WORM"
+       },
+       "ディープパレス・ワモーラ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE WAMOURA"
+       },
+       "ディープパレス・ワモーラカンパ":{
+          "Notes":"WS+AAのコンボが痛いです。ヒール+生者の秘薬を合わせても、防御強化なしではクリるとタンク以外即死することがあります。",
+          "EnglishName":"DEEP PALACE WAMOURACAMPA"
+       },
+       "ディープパレス・ヴィンドスルス":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE VINDTHURS"
+       },
+       "フラッドドラゴン":{
+          "Notes":"ランタゲ対象に強力なDoTを付与する詠唱なしの円形範囲攻撃を使用してきます。エスナ可能。",
+          "EnglishName":"FLOOD DRAGON"
+       },
+       "ディープパレス・ガルム":{
+          "Notes":"接近感知で、即死攻撃だらけです。<b>氷結の咆哮</b>は敵中心範囲なので離れ、<b>雷電の咆哮</b>はドーナツ型範囲なので近寄りましょう。沈黙で詠唱中断可能。氷結の方が詠唱が速いので当たりやすいです。<br/>避けるのに慣れれば、ソロでは187-189階で一番倒しやすいmobです。ただしAAがクリると1万ダメージ受けることを忘れずに。",
+          "EnglishName":"DEEP PALACE GARM"
+       },
+       "ゴッドファザーボム":{
+          "Notes":"<b>サキュバス化</b>が3つある場合、全て使用すれば<b>防御強化</b>は1つだけで済みます。しかし<b>開幕でサキュバス化しない</b>こと。ボスは開幕に即フレイムペンペンを使ってくるため、デバフを5スタック付与できる前に殺されてしまう可能性が高いです。ボスのパターンで2連続でサップを詠唱するタイミングがあるのでここに合わせてサキュバス化を使用します。上記のソロ動画を参照。",
+          "EnglishName":"THE GODFATHER"
+       }
     },
     {
-    "ミミック": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-    "ディープパレス・アイアンコース": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
-    "ディープパレス・キーパー": {"DangerLevel": "Scary", "AggroType": "Sound", "Notes": "Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby."},
-    "ディープパレス・ヒッポグリフ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
-    "ディープパレス・グルマン": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
-    "ディープパレス・ダブルヘッド": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。"},
-    "ディープパレス・レイス": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "最もDPSが高いmobということ以外には特筆すべき点はありません。ソロなら歩きによるスルー推奨。"},
-    "ディープパレス・マミー": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "ディープパレス・アイストラップ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-    "ディープパレス・ナイト": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "攻撃力が高すぎるので、ソロでは戦いたくありません。当たると約2万ダメのドーナツ型範囲の<b>デススパイラル</b>も使用してきます。レイスが近くにいる場合は絶対に釣らないこと。"},
-    "オニキスドラゴン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "他のドラゴンと違い、接近感知な点に注意。<b>イビルアイ</b>は即死するので確実に避けましょう（後ろを向く）。"},
-    "ディープパレス・ファハン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "131階～のアーリマンと同様に見えない前方範囲攻撃を詠唱しますが、レベル5石化の代わりに<b>レベル5デス</b>になっています。当たった場合の効果は名前の通りです。"}
+       "ミミック":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"MIMIC"
+       },
+       "ピグマイオイ":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "ディープパレス・アイアンコース":{
+          "Notes":"WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。",
+          "EnglishName":"DEEP PALACE IRON CORSE"
+       },
+       "ディープパレス・キーパー":{
+          "Notes":"Nothing too special about these aside from the fact that they are the highest DPS monsters in here. Spread out to avoid taking unnecessary AOE damage, or avoid them entirely by walking when they are nearby.",
+          "EnglishName":"DEEP PALACE KEEPER"
+       },
+       "ディープパレス・ヒッポグリフ":{
+          "Notes":"WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。",
+          "EnglishName":"DEEP PALACE HIPPOGRYPH"
+       },
+       "ディープパレス・グルマン":{
+          "Notes":"WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。",
+          "EnglishName":"DEEP PALACE GOURMAND"
+       },
+       "ディープパレス・ダブルヘッド":{
+          "Notes":"WS+AAが非常に痛いです。防御強化なしでソロで戦おうとしないこと。",
+          "EnglishName":"DEEP PALACE BICEPHALUS"
+       },
+       "ディープパレス・レイス":{
+          "Notes":"最もDPSが高いmobということ以外には特筆すべき点はありません。ソロなら歩きによるスルー推奨。",
+          "EnglishName":"DEEP PALACE WRAITH"
+       },
+       "ディープパレス・マミー":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MUMMY"
+       },
+       "ディープパレス・アイストラップ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TRAP"
+       },
+       "ディープパレス・ナイト":{
+          "Notes":"攻撃力が高すぎるので、ソロでは戦いたくありません。当たると約2万ダメのドーナツ型範囲の<b>デススパイラル</b>も使用してきます。レイスが近くにいる場合は絶対に釣らないこと。",
+          "EnglishName":"DEEP PALACE KNIGHT"
+       },
+       "オニキスドラゴン":{
+          "Notes":"他のドラゴンと違い、接近感知な点に注意。<b>イビルアイ</b>は即死するので確実に避けましょう（後ろを向く）。",
+          "EnglishName":"ONYX DRAGON"
+       },
+       "ディープパレス・ファハン":{
+          "Notes":"131階～のアーリマンと同様に見えない前方範囲攻撃を詠唱しますが、レベル5石化の代わりに<b>レベル5デス</b>になっています。当たった場合の効果は名前の通りです。",
+          "EnglishName":"DEEP PALACE FACHAN"
+       }
     }
-],
-"Heaven-on-High":
-[
+ ],
+ "Heaven-on-High":[
     {
-        "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・カラナシユメミ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ムツ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ハリセンボム": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・オンリョウ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・トビザメ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "前方不可視範囲で睡眠。"},
-        "アメノ・アミキリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・サンゴセオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "ジョーズはかなり痛く、視線切り不可。 本気で危ないです。"},
-        "アメノ・ギュウキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・タコニュウドウ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ウワバミ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・アンゴ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・マタマタ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ユメミ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "モウジャブネ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "中央に移動し全体ノックバック（堅実魔不可）を使用した後に、部屋半分の範囲攻撃を使用してきます。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・カラナシユメミ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NAKED YUMEMI"
+       },
+       "アメノ・ムツ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MUTSU"
+       },
+       "アメノ・ハリセンボム":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY BOMBFISH"
+       },
+       "アメノ・オンリョウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ONRYO"
+       },
+       "アメノ・トビザメ":{
+          "Notes":"前方不可視範囲で睡眠。",
+          "EnglishName":"HEAVENLY SHARK"
+       },
+       "アメノ・アミキリ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AMIKIRI"
+       },
+       "アメノ・サンゴセオイ":{
+          "Notes":"ジョーズはかなり痛く、視線切り不可。 本気で危ないです。",
+          "EnglishName":"HEAVENLY CORALSHELL"
+       },
+       "アメノ・ギュウキ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GYUKI"
+       },
+       "アメノ・タコニュウドウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KRAKEN"
+       },
+       "アメノ・ウワバミ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY UWABAMI"
+       },
+       "アメノ・アンゴ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ANGO"
+       },
+       "アメノ・マタマタ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MATAMATA"
+       },
+       "アメノ・ユメミ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUMEMI"
+       },
+       "モウジャブネ":{
+          "Notes":"中央に移動し全体ノックバック（堅実魔不可）を使用した後に、部屋半分の範囲攻撃を使用してきます。",
+          "EnglishName":"MOJABUNE"
+       }
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・コロポックル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・シズク": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ナマズオ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・シオムシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ヒカギリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・アーパス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ウンキウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ミギテ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "時間切れで一部屋分の広さの範囲攻撃<b>ウォッシュアウェイ</b>を使用してきます。"},
-        "アメノ・オオトカゲ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・タツノコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・アマゴイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・シオナメ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・アオミノ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "ベッチョウ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "混乱を付与する視線攻撃と、外周に蝶を召喚します。 混乱が付くと壁際の蝶の爆発（不可視範囲）に当たってしまうので、視線はちゃんと避けること。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・コロポックル":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KORPOKKUR"
+       },
+       "アメノ・シズク":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIZUKU"
+       },
+       "アメノ・ナマズオ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NAMAZU"
+       },
+       "アメノ・シオムシ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIOMUSHI"
+       },
+       "アメノ・ヒカギリ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HAKAGIRI"
+       },
+       "アメノ・アーパス":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY APA"
+       },
+       "アメノ・ウンキウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY UNKIU"
+       },
+       "アメノ・ミギテ":{
+          "Notes":"時間切れで一部屋分の広さの範囲攻撃<b>ウォッシュアウェイ</b>を使用してきます。",
+          "EnglishName":"HEAVENLY HAND"
+       },
+       "アメノ・オオトカゲ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY OTOKAGE"
+       },
+       "アメノ・タツノコ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TATSUNOKO"
+       },
+       "アメノ・アマゴイ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AMAGOI"
+       },
+       "アメノ・シオナメ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIONAME"
+       },
+       "アメノ・アオミノ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AOMINO"
+       },
+       "ベッチョウ":{
+          "Notes":"混乱を付与する視線攻撃と、外周に蝶を召喚します。 混乱が付くと壁際の蝶の爆発（不可視範囲）に当たってしまうので、視線はちゃんと避けること。",
+          "EnglishName":"BECCHO"
+       }
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・ドルヴァ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ハルガイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・カタシャリン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・サイタイサイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・オニビ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ハタモト": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "乱れ雪月花は約15000ダメージ。 天下五剣は前方扇型の不可視範囲、当たるとノックバック。"},
-        "アメノ・ケウケゲン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・テナガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・メンレイキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・コジャ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・カラステング": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ユウキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ワニュウドウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "ヒルコ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "一定時間後に爆発する雲を召喚し、同時に距離減衰攻撃を使用してきます。脇に離れて、複数の雲に当たらないよう注意。打ち上げられて雲に当たると、雲は消滅します。 180度の範囲攻撃も使用してくるので、接近用のスキルを残しておくか、離れすぎないよう注意しましょう。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・ドルヴァ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DHRUVA"
+       },
+       "アメノ・ハルガイ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HALGAI"
+       },
+       "アメノ・カタシャリン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KATASHARIN"
+       },
+       "アメノ・サイタイサイ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SAI TAISUI"
+       },
+       "アメノ・オニビ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ONIBI"
+       },
+       "アメノ・ハタモト":{
+          "Notes":"乱れ雪月花は約15000ダメージ。 天下五剣は前方扇型の不可視範囲、当たるとノックバック。",
+          "EnglishName":"HEAVENLY HATAMOTO"
+       },
+       "アメノ・ケウケゲン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KEUKEGEN"
+       },
+       "アメノ・テナガ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TENAGA"
+       },
+       "アメノ・メンレイキ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MENREIKI"
+       },
+       "アメノ・コジャ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KOJA"
+       },
+       "アメノ・カラステング":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TENGU"
+       },
+       "アメノ・ユウキ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUKI"
+       },
+       "アメノ・ワニュウドウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY WANYUDO"
+       },
+       "ヒルコ":{
+          "Notes":"一定時間後に爆発する雲を召喚し、同時に距離減衰攻撃を使用してきます。脇に離れて、複数の雲に当たらないよう注意。打ち上げられて雲に当たると、雲は消滅します。 180度の範囲攻撃も使用してくるので、接近用のスキルを残しておくか、離れすぎないよう注意しましょう。",
+          "EnglishName":"HIRUKO"
+       }
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・ガーダン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ベニツノ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・オンミツ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "HP10%未満で<b>ハラキリ</b>を詠唱。詠唱時間は長め。"},
-        "アメノ・ハラキリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "HP20%未満で<b>ハラキリ</b>を詠唱。詠唱時間は長め。"},
-        "アメノ・ハンニャ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・モウコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "S使用の頻度が多いので、装備の強化値が低い場合は注意。"},
-        "アメノ・ヴァナラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "<b>詠唱バー・範囲予兆無し</b>の前方範囲攻撃あり。"},
-        "アメノ・キヨフサ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "頭割りマーカーは視線切り可能ですが、当たっても7000ダメージほどです。"},
-        "アメノ・シシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・モウキン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・アシガル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ドグウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "ビーマ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "外周に緑の竜巻が沸くと、ボスが中央でノックバック攻撃を使用してきます。飛ばされた先で竜巻で当たらないように位置取りましょう。<b>堅実魔/アームズレングスは無効</b>です。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・ガーダン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GEDAN"
+       },
+       "アメノ・ベニツノ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HORNBILL"
+       },
+       "アメノ・オンミツ":{
+          "Notes":"HP10%未満で<b>ハラキリ</b>を詠唱。詠唱時間は長め。",
+          "EnglishName":"HEAVENLY ONMITSU"
+       },
+       "アメノ・ハラキリ":{
+          "Notes":"HP20%未満で<b>ハラキリ</b>を詠唱。詠唱時間は長め。",
+          "EnglishName":"HEAVENLY HARAKIRI"
+       },
+       "アメノ・ハンニャ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HANYA"
+       },
+       "アメノ・モウコ":{
+          "Notes":"S使用の頻度が多いので、装備の強化値が低い場合は注意。",
+          "EnglishName":"HEAVENLY MOKO"
+       },
+       "アメノ・ヴァナラ":{
+          "Notes":"<b>詠唱バー・範囲予兆無し</b>の前方範囲攻撃あり。",
+          "EnglishName":"HEAVENLY VANARA"
+       },
+       "アメノ・キヨフサ":{
+          "Notes":"頭割りマーカーは視線切り可能ですが、当たっても7000ダメージほどです。",
+          "EnglishName":"HEAVENLY KIYOFUSA"
+       },
+       "アメノ・シシ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHISHI"
+       },
+       "アメノ・モウキン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MOKIN"
+       },
+       "アメノ・アシガル":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ASHIGARU"
+       },
+       "アメノ・ドグウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOGU"
+       },
+       "ビーマ":{
+          "Notes":"外周に緑の竜巻が沸くと、ボスが中央でノックバック攻撃を使用してきます。飛ばされた先で竜巻で当たらないように位置取りましょう。<b>堅実魔/アームズレングスは無効</b>です。",
+          "EnglishName":"BHIMA"
+       }
     },
     {
+<<<<<<< HEAD
         "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
@@ -592,32 +1609,129 @@
             "AggroType": "Proximity",
             "Notes": "無詠唱・不可視範囲の前方スワイプと前方直線攻撃があります。<br/>混乱付きの視線<b>フィア</b>ーも使用し、その後に距離減衰の範囲攻撃と爆弾設置をしてきます。ソロではフィアーに当たると<b>100%死ぬ</b>ので欲張らないこと。"
         }
+=======
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・ダラ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DHARA"
+       },
+       "アメノ・ガンセキ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GANSEKI"
+       },
+       "アメノ・サイコロ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SAIKORO"
+       },
+       "アメノ・クロウサギ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KURO-USAGI"
+       },
+       "アメノ・セキバン":{
+          "Notes":"攻撃が速く、時間切れ攻撃あり。",
+          "EnglishName":"HEAVENLY SEKIBAN"
+       },
+       "アメノ・セキゾウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SEKIZO"
+       },
+       "アメノ・ミズミミズ":{
+          "Notes":"死者の宮殿181-189階のウォームと同様に、約30秒以内に倒さないと吸引後に即死級ダメージ。",
+          "EnglishName":"HEAVENLY MIZUMIMIZU"
+       },
+       "アメノ・アカイシ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AKA-ISHI"
+       },
+       "アメノ・イセキ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ISEKI"
+       },
+       "アメノ・モノイワ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MONOIWA"
+       },
+       "ゴズ":{
+          "Notes":"無詠唱・不可視範囲の前方スワイプと前方直線攻撃があります。<br/>混乱付きの視線<b>フィア</b>ーも使用し、その後に距離減衰の範囲攻撃と爆弾設置をしてきます。ソロではフィアーに当たると<b>100%死ぬ</b>ので欲張らないこと。",
+          "EnglishName":"GOZU"
+       }
+>>>>>>> DDOTI
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・カマキリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "アメノ・ナーガ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "扇型範囲の石化に当たるとAA1発で即死します。HP20%未満で25000ダメージの<b>ベイルフルロア</b>を使用。詠唱はかなり速いですが、スタンで中断可能です。<br/>*低強化値の場合。高強化値であれば敵はすぐ溶けます。"},
-        "アメノ・トカゲキバ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・カマナリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "アメノ・コンゴウレイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "時間切れで無詠唱の自爆即死攻撃があります。タゲを持ちながらウソウソを踏まないよう、部屋に突っ込まないこと。"},
-        "アメノ・テッソウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・テツキョジン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・マルイシ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "広範囲の直線範囲攻撃を連打してきます。DPS/ヒラでは当たると4万以上のダメージで即死です。AAは撃ってきません。"},
-        "アメノ・シュワブチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ドキュウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ゴウワン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・カラクリ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ラチモナイ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "敵視のない状態で、壁を越えて予兆なしで範囲攻撃を撃ってきます。近くの部屋にいる場合は先に倒すか離れましょう。"},
-        "スイカズラ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "範囲攻撃のオンパレードです。きちんと避ければ問題ありません。<br/>杖のドーナツ範囲はフィールドの中央が常に安置ですが、中央に行く前に<b>ファイラ</b>を他の場所に誘導することを忘れずに。中央にいれば線形範囲も避けやすいです。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・カマキリ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KAMAKIRI"
+       },
+       "アメノ・ナーガ":{
+          "Notes":"扇型範囲の石化に当たるとAA1発で即死します。HP20%未満で25000ダメージの<b>ベイルフルロア</b>を使用。詠唱はかなり速いですが、スタンで中断可能です。<br/>*低強化値の場合。高強化値であれば敵はすぐ溶けます。",
+          "EnglishName":"HEAVENLY NAGA"
+       },
+       "アメノ・トカゲキバ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TOKAGEKIBA"
+       },
+       "アメノ・カマナリ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KAMANARI"
+       },
+       "アメノ・コンゴウレイ":{
+          "Notes":"時間切れで無詠唱の自爆即死攻撃があります。タゲを持ちながらウソウソを踏まないよう、部屋に突っ込まないこと。",
+          "EnglishName":"HEAVENLY KONGOREI"
+       },
+       "アメノ・テッソウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TESSO"
+       },
+       "アメノ・テツキョジン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TETSU-KYOJIN"
+       },
+       "アメノ・マルイシ":{
+          "Notes":"広範囲の直線範囲攻撃を連打してきます。DPS/ヒラでは当たると4万以上のダメージで即死です。AAは撃ってきません。",
+          "EnglishName":"HEAVENLY MARUISHI"
+       },
+       "アメノ・シュワブチ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHABTI"
+       },
+       "アメノ・ドキュウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOKYU"
+       },
+       "アメノ・ゴウワン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GOWAN"
+       },
+       "アメノ・カラクリ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KARAKURI"
+       },
+       "アメノ・ラチモナイ":{
+          "Notes":"敵視のない状態で、壁を越えて予兆なしで範囲攻撃を撃ってきます。近くの部屋にいる場合は先に倒すか離れましょう。",
+          "EnglishName":"HEAVENLY RACHIMONAI"
+       },
+       "スイカズラ":{
+          "Notes":"範囲攻撃のオンパレードです。きちんと避ければ問題ありません。<br/>杖のドーナツ範囲はフィールドの中央が常に安置ですが、中央に行く前に<b>ファイラ</b>を他の場所に誘導することを忘れずに。中央にいれば線形範囲も避けやすいです。",
+          "EnglishName":"SUIKAZURA"
+       }
     },
     {
+<<<<<<< HEAD
         "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
         "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
     
@@ -640,71 +1754,262 @@
             "AggroType": "Proximity",
             "Notes": "ミニマムを踏んで突進攻撃を受けます。捕食後はすぐに降りること。予兆無しの前方範囲のプレデタークローは背後に回ることで回避できます。"
         }
+=======
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・オンリョウ":{
+          "Notes":"間火力が高く、DoTもかなり痛いです。",
+          "EnglishName":"HEAVENLY ONRYO"
+       },
+       "アメノ・ワカクサ":{
+          "Notes":"毒は30秒残り、スタックしていくので、ソロではDoTダメージを甘く見ないこと。",
+          "EnglishName":"HEAVENLY WAKAKUSA"
+       },
+       "アメノ・ジュボッコ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY JUBOKKO"
+       },
+       "アメノ・マンネンソウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MANNENSO"
+       },
+       "アメノ・イワムシ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY IWAMUSHI"
+       },
+       "アメノ・イソクラゲ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY JELLYFISH"
+       },
+       "アメノ・ドグゼリ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOGUZERI"
+       },
+       "アメノ・コソデガイ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KOSODEGAI"
+       },
+       "アメノ・シタイバナ":{
+          "Notes":"WSと強力な毒を付与してきます。毒は離れることで回避可能。",
+          "EnglishName":"HEAVENLY SHITAIBANA"
+       },
+       "アメノ・モルボル":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MORBOL"
+       },
+       "アメノ・チザクラ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY CHIZAKURA"
+       },
+       "アメノ・ホウコウ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY PENGHOU"
+       },
+       "アメノ・ハシリドコロ":{
+          "Notes":"ドーナツ範囲と、誘惑付きの視線攻撃があります。それ以外はそこまで強くありません。",
+          "EnglishName":"HEAVENLY HASHIRI-DOKORO"
+       },
+       "ケンコ":{
+          "Notes":"ミニマムを踏んで突進攻撃を受けます。捕食後はすぐに降りること。予兆無しの前方範囲のプレデタークローは背後に回ることで回避できます。",
+          "EnglishName":"KENKO"
+       }
+>>>>>>> DDOTI
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・イチジャマ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part)."},
-        "アメノ・シクビ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ノヤギ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ヒョウガ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "前方扇型攻撃は広範囲で、当たると即死します。視線攻撃もあります。"},
-        "アメノ・オオカミ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "死者の宮殿171階+のオオカミと同じで、WSで強力なDoTを付与してきます。防御強化に加えてできれば自己強化も欲しいです。"},
-        "アメノ・ユキトカゲ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ヒョウザン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・マンモス": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "非戦闘時に部屋の半分程度の範囲攻撃を使用してきます。約7000ダメージ。<br/><b>ウーリーインスピレーション</b>で吸引後、そのまま前方に即死ダメの扇型範囲を撃ってきます。"},
-        "アメノ・ジュジシ": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "WS+AAが痛いです。戦闘開始から30秒経過後に非常に詠唱の速い<b>ウィンターウィンド</b>を使用してきます。スタン/視線切りで防げます。"},
-        "アメノ・シロジシ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "スタン可能な広い範囲攻撃と、強力なWSを撃ってきます。WSが痛いので<b>防御強化</b>なしでは触らない方がいいです。"},
-        "アメノ・トウフ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ゴールデンタンのバフを付けさせないこと。バフ付きではものすごく痛いです。ちなみにAAも撃ってくるので、近接攻撃範囲内にいると魔法に加えてAAも被弾することになります。"},
-        "アメノ・ユキオトコ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "非常に広い円形範囲攻撃の猛吹雪があります。スタン/視線切り可能です。詠唱の速い前方範囲もあるので、離れすぎないこと。"},
-        "アメノ・ヤク": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "しばらくAAしかせず、時間切れになると吸引+強力なへヴィ→即死級の踏みつけ攻撃を使用してきます。"},
-        "カジガカカ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "氷の玉に氷柱が当たると爆発し、連鎖して範囲内の玉も爆発します。不安なら氷柱が飛ぶ時は玉から離れておくこと。残った玉は<b>ルナークライ</b>で爆発するので、その時にもしっかり離れましょう。当たると凍結してソロでは死にます。ルナークライの後には飛び掛りで8000ダメージを受けます。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・イチジャマ":{
+          "Notes":"These will cast an AOE from across rooms at you, which will one shot anybody hit (for the most part).",
+          "EnglishName":"HEAVENLY ICHIJAMA"
+       },
+       "アメノ・シクビ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIKUBI"
+       },
+       "アメノ・ノヤギ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NOYAGI"
+       },
+       "アメノ・ヒョウガ":{
+          "Notes":"前方扇型攻撃は広範囲で、当たると即死します。視線攻撃もあります。",
+          "EnglishName":"HEAVENLY HYOGA"
+       },
+       "アメノ・オオカミ":{
+          "Notes":"死者の宮殿171階+のオオカミと同じで、WSで強力なDoTを付与してきます。防御強化に加えてできれば自己強化も欲しいです。",
+          "EnglishName":"HEAVENLY OKAMI"
+       },
+       "アメノ・ユキトカゲ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUKI-TOKAGE"
+       },
+       "アメノ・ヒョウザン":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HYOZAN"
+       },
+       "アメノ・マンモス":{
+          "Notes":"非戦闘時に部屋の半分程度の範囲攻撃を使用してきます。約7000ダメージ。<br/><b>ウーリーインスピレーション</b>で吸引後、そのまま前方に即死ダメの扇型範囲を撃ってきます。",
+          "EnglishName":"HEAVENLY MAMMOTH"
+       },
+       "アメノ・ジュジシ":{
+          "Notes":"WS+AAが痛いです。戦闘開始から30秒経過後に非常に詠唱の速い<b>ウィンターウィンド</b>を使用してきます。スタン/視線切りで防げます。",
+          "EnglishName":"HEAVENLY JUJISHI"
+       },
+       "アメノ・シロジシ":{
+          "Notes":"スタン可能な広い範囲攻撃と、強力なWSを撃ってきます。WSが痛いので<b>防御強化</b>なしでは触らない方がいいです。",
+          "EnglishName":"HEAVENLY SHIRO-JISHI"
+       },
+       "アメノ・トウフ":{
+          "Notes":"ゴールデンタンのバフを付けさせないこと。バフ付きではものすごく痛いです。ちなみにAAも撃ってくるので、近接攻撃範囲内にいると魔法に加えてAAも被弾することになります。",
+          "EnglishName":"HEAVENLY TOFU"
+       },
+       "アメノ・ユキオトコ":{
+          "Notes":"非常に広い円形範囲攻撃の猛吹雪があります。スタン/視線切り可能です。詠唱の速い前方範囲もあるので、離れすぎないこと。",
+          "EnglishName":"HEAVENLY YUKI-OTOKO"
+       },
+       "アメノ・ヤク":{
+          "Notes":"しばらくAAしかせず、時間切れになると吸引+強力なへヴィ→即死級の踏みつけ攻撃を使用してきます。",
+          "EnglishName":"HEAVENLY YAK"
+       },
+       "カジガカカ":{
+          "Notes":"氷の玉に氷柱が当たると爆発し、連鎖して範囲内の玉も爆発します。不安なら氷柱が飛ぶ時は玉から離れておくこと。残った玉は<b>ルナークライ</b>で爆発するので、その時にもしっかり離れましょう。当たると凍結してソロでは死にます。ルナークライの後には飛び掛りで8000ダメージを受けます。",
+          "EnglishName":"KAJIGAKAKA"
+       }
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・ガルラ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "広範囲の各種攻撃を避けるための逃げ場所を考えておくこと。ソロでは開幕は近くに立ち、突進後のヒールを準備しておきます。突進は視線の通る場所でまっすぐ受けないと、追加でAAを受けて死にます。"},
-        "アメノ・ロウエン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "自己強化バフの後、広範囲攻撃のドラミングをしてきます。視線切り可能です。ドラミングに当たるとバニシュが解除されるので注意。"},
-        "アメノ・マタンガ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "開幕バーストしてきて、それ以降は範囲攻撃を多用してきます。ソロではクリると開幕でHPを9割持っていかれるので、ヒールを準備しておくこと（AA16000、WS24000ダメージ）。それ以降は簡単です。"},
-        "アメノ・ムカイイヌ": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "<b>氷結の咆哮＝離れる　雷電の咆哮＝近寄る</b>"},
-        "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "スワイプの扇形範囲はものすごく広いので注意。視線切り可能です。視線攻撃のヘックスもあり。"},
-        "アメノ・リュウコツ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・リュウジン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "モンスターが向いている方向の真後ろに<b>エルボードロップ</b>。ソロではWSが痛く、一定時間後に与ダメアップのバフも付きます。"},
-        "アメノ・シンゼイ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "高威力+DoTのWSあり。サンダラは8000ダメ×4連。"},
-        "アメノ・ヒトツメ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "100トンズ・スイング（敵中心/不可視）、グラワー（前方線形/不可視）"},
-        "アメノ・ラセツ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "自身に与ダメアップのバフを付与し、範囲予兆なしの前方攻撃<b>リッパークロウ</b>を使用します。<br/>バフが入っているとAAクリで3万ダメージ受けるので、回復に特に気を付けて、しっかり引き撃ちしましょう。"},
-        "アメノ・コウキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": "範囲攻撃数種類の後に、被ダメアップをスタックしてくる全体攻撃を使用します。倒しやすいです。"},
-        "アメノ・エンコウ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "モンスターが向いている方向の真後ろに<b>エルボードロップ</b>。ソロではWSが痛く、一定時間後に与ダメアップのバフも付きます。"},
-        "アメノ・アララギ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "スタックする範囲毒攻撃を使用。タイミングよく動けば視線切り可能です。"},
-        "オンラ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "砂玉は<b>北東の角</b>に必ず安置があります。そのため、南西でボスのタゲを持ち、<b>エンシェントクエイガ</b>の詠唱が見えたら北東に走れば、玉に当たることなく、メテオは中央付近に落ちて1万ほどのダメージで済みます。"
-        }
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・ガルラ":{
+          "Notes":"広範囲の各種攻撃を避けるための逃げ場所を考えておくこと。ソロでは開幕は近くに立ち、突進後のヒールを準備しておきます。突進は視線の通る場所でまっすぐ受けないと、追加でAAを受けて死にます。",
+          "EnglishName":"HEAVENLY GARULA"
+       },
+       "アメノ・ロウエン":{
+          "Notes":"自己強化バフの後、広範囲攻撃のドラミングをしてきます。視線切り可能です。ドラミングに当たるとバニシュが解除されるので注意。",
+          "EnglishName":"HEAVENLY ROWAN"
+       },
+       "アメノ・マタンガ":{
+          "Notes":"開幕バーストしてきて、それ以降は範囲攻撃を多用してきます。ソロではクリると開幕でHPを9割持っていかれるので、ヒールを準備しておくこと（AA16000、WS24000ダメージ）。それ以降は簡単です。",
+          "EnglishName":"HEAVENLY MATANGA"
+       },
+       "アメノ・ムカイイヌ":{
+          "Notes":"<b>氷結の咆哮＝離れる　雷電の咆哮＝近寄る</b>",
+          "EnglishName":"HEAVENLY MUKAI-INU"
+       },
+       "アメノ・ゴズ":{
+          "Notes":"スワイプの扇形範囲はものすごく広いので注意。視線切り可能です。視線攻撃のヘックスもあり。",
+          "EnglishName":"HEAVENLY GOZU"
+       },
+       "アメノ・リュウコツ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY RYUKOTSU"
+       },
+       "アメノ・リュウジン":{
+          "Notes":"モンスターが向いている方向の真後ろに<b>エルボードロップ</b>。ソロではWSが痛く、一定時間後に与ダメアップのバフも付きます。",
+          "EnglishName":"HEAVENLY RYUJIN"
+       },
+       "アメノ・シンゼイ":{
+          "Notes":"高威力+DoTのWSあり。サンダラは8000ダメ×4連。",
+          "EnglishName":"HEAVENLY SHINZEI"
+       },
+       "アメノ・ヒトツメ":{
+          "Notes":"100トンズ・スイング（敵中心/不可視）、グラワー（前方線形/不可視）",
+          "EnglishName":"HEAVENLY HITOTSUME"
+       },
+       "アメノ・ラセツ":{
+          "Notes":"自身に与ダメアップのバフを付与し、範囲予兆なしの前方攻撃<b>リッパークロウ</b>を使用します。<br/>バフが入っているとAAクリで3万ダメージ受けるので、回復に特に気を付けて、しっかり引き撃ちしましょう。",
+          "EnglishName":"HEAVENLY RAKSHASA"
+       },
+       "アメノ・コウキ":{
+          "Notes":"範囲攻撃数種類の後に、被ダメアップをスタックしてくる全体攻撃を使用します。倒しやすいです。",
+          "EnglishName":"HEAVENLY KOKI"
+       },
+       "アメノ・エンコウ":{
+          "Notes":"モンスターが向いている方向の真後ろに<b>エルボードロップ</b>。ソロではWSが痛く、一定時間後に与ダメアップのバフも付きます。",
+          "EnglishName":"HEAVENLY ENKO"
+       },
+       "アメノ・アララギ":{
+          "Notes":"スタックする範囲毒攻撃を使用。タイミングよく動けば視線切り可能です。",
+          "EnglishName":"HEAVENLY ARARAGI"
+       },
+       "オンラ":{
+          "Notes":"砂玉は<b>北東の角</b>に必ず安置があります。そのため、南西でボスのタゲを持ち、<b>エンシェントクエイガ</b>の詠唱が見えたら北東に走れば、玉に当たることなく、メテオは中央付近に落ちて1万ほどのダメージで済みます。",
+          "EnglishName":"ONRA"
+       }
     },
     {
-        "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・ゴズ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "初撃突進で2万ダメ→WS→前方スワイプ→周囲スイング。"},
-        "アメノ・ジャキ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ミールストームはスタン/視線切り可能です。無詠唱の魔法攻撃があります。"},
-        "アメノ・ヌツヘツホウ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "WAR: <b>Impossible</b><br/>MNK: Caution. Buffs itself with haste, and eventually does a double-auto that applies a DOT.<br/>WHM: Caution. WHM Nuppeppos are still scary for solo. 24K stone crits! Note that you CAN LoS the stone casts, but you need to time it well. "},
-        "アメノ・ミフネ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "WSはありませんが、防御強化なしではAAはクリで約2万ダメージです。線形範囲攻撃はタンク以外では約55000ダメージで、視線切りで回避できます。"},
-        "アメノ・クビナシ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "HP吸収攻撃と25000ダメの無詠唱前方範囲を使用してきます。与ダメアップのバフを自身に付与し、3スタックになると部屋全体即死攻撃の<b>ブラックネビュラ</b>を詠唱します。"},
-        "アメノ・キョウゾウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "自身に防御アップのバフを付与しますが、フロアに<b>妖霧</b>が入っていると、このバフが切れたときに妖霧によるバフも切れます。"},
-        "アメノ・ゼンキ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": ""},
-        "アメノ・シュワブチ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ジンバ": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "スタックする永続の与ダメアップのバフがあり、ものすごく広い範囲の攻撃を使用してきます。恐怖になる視線攻撃もあります。"},
-        "アメノ・テンマ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "強WSと、広範囲の攻撃があります。"},
-        "アメノ・クロキシ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・ドードー": {"DangerLevel": "Scary", "AggroType": "Sight", "Notes": "*Good Luck*"}
+       "うごめく宝箱":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "コリガン":{
+          "Notes":"*Congratulations*",
+          "EnglishName":"KORRIGAN"
+       },
+       "アメノ・ゴズ":{
+          "Notes":"初撃突進で2万ダメ→WS→前方スワイプ→周囲スイング。",
+          "EnglishName":"HEAVENLY GOZU"
+       },
+       "アメノ・ジャキ":{
+          "Notes":"ミールストームはスタン/視線切り可能です。無詠唱の魔法攻撃があります。",
+          "EnglishName":"HEAVENLY JAKI"
+       },
+       "アメノ・ヌツヘツホウ":{
+          "Notes":"WAR: <b>Impossible</b><br/>MNK: Caution. Buffs itself with haste, and eventually does a double-auto that applies a DOT.<br/>WHM: Caution. WHM Nuppeppos are still scary for solo. 24K stone crits! Note that you CAN LoS the stone casts, but you need to time it well. ",
+          "EnglishName":"HEAVENLY NUPPEPPO"
+       },
+       "アメノ・ミフネ":{
+          "Notes":"WSはありませんが、防御強化なしではAAはクリで約2万ダメージです。線形範囲攻撃はタンク以外では約55000ダメージで、視線切りで回避できます。",
+          "EnglishName":"HEAVENLY MIFUNE"
+       },
+       "アメノ・クビナシ":{
+          "Notes":"HP吸収攻撃と25000ダメの無詠唱前方範囲を使用してきます。与ダメアップのバフを自身に付与し、3スタックになると部屋全体即死攻撃の<b>ブラックネビュラ</b>を詠唱します。",
+          "EnglishName":"HEAVENLY KUBINASHI"
+       },
+       "アメノ・キョウゾウ":{
+          "Notes":"自身に防御アップのバフを付与しますが、フロアに<b>妖霧</b>が入っていると、このバフが切れたときに妖霧によるバフも切れます。",
+          "EnglishName":"HEAVENLY KYOZO"
+       },
+       "アメノ・ゼンキ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ZENKI"
+       },
+       "アメノ・シュワブチ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHABTI"
+       },
+       "アメノ・ジンバ":{
+          "Notes":"スタックする永続の与ダメアップのバフがあり、ものすごく広い範囲の攻撃を使用してきます。恐怖になる視線攻撃もあります。",
+          "EnglishName":"HEAVENLY JINBA"
+       },
+       "アメノ・テンマ":{
+          "Notes":"強WSと、広範囲の攻撃があります。",
+          "EnglishName":"HEAVENLY TENMA"
+       },
+       "アメノ・クロキシ":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KURO-KISHI"
+       },
+       "アメノ・ドードー":{
+          "Notes":"*Good Luck*",
+          "EnglishName":"HEAVENLY DODO"
+       }
     }
-]
+ ]
 }

@@ -112,7 +112,8 @@
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[0]++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;     
-                DDO.StartFloorSetUI();                
+                DDO.StartFloorSetUI();
+                DDO.ResetVariables();          
             }
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
                 DDO.LoadSoloConfig();
@@ -127,6 +128,7 @@
                 DDO.currentFloorStats.roomRevealCount = (DDO.currentFloorStats.roomRevealCount + 1) || 1;
                 DDO.currentFloorSetStats.roomRevealCount = (DDO.currentFloorSetStats.roomRevealCount + 1) || 1;
                 DDO.StartFloorSetUI();
+                DDO.ResetVariables();
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
                 DDO.LoadPartyConfig();
                 DDO.groupRunUnderway = true;
@@ -286,7 +288,6 @@
         DDO.DataElements.SpeedRunsSetValue.innerText = 0;
         DDO.DataElements.SpeedRunsTotalValue.innerText = currentSave.currentSpeedRunBonusCount;
     }
-
     DDO.ClearFloorValues = function()
     {
         DDO.currentFloorStats = {};
@@ -311,6 +312,19 @@
         DDO.currentFloorStats.magiciteUsed = 0;
         DDO.currentFloorStats.enchantmentCount = 0;
         DDO.currentFloorStats.roomRevealCount = 0;
+    }
+    DDO.ResetVariables = function(){
+        DDO.triggerAffluence = false;
+        DDO.triggerAlteration = false;
+        DDO.triggerFlight = false;
+        DDO.safetyActive = false;
+        DDO.affluenceActive = false;
+        DDO.alterationActive = false;
+        DDO.flightActive = false;
+        DDO.sightActive = false;
+        DDO.raisingActive = false;
+
+        DDO.DisablePomImages();
     }
 
     DDO.SaveRuns = function()
@@ -344,6 +358,20 @@
         DDO.DataElements.AggroSightImage.style.display = "none";
         DDO.DataElements.AggroSoundImage.style.display = "none";
         DDO.DataElements.AggroProximityImage.style.display = "none";
+    }
+    DDO.DisablePomImages = function()
+    {
+        DDO.DataElements.PomSafetyDisabledImage.style.display = "";
+        DDO.DataElements.PomSightDisabledImage.style.display = "";
+        DDO.DataElements.PomAffluenceDisabledImage.style.display = "";
+        DDO.DataElements.PomAlterationDisabledImage.style.display = "";
+        DDO.DataElements.PomFlightDisabledImage.style.display = "";
+
+        DDO.DataElements.PomSafetyEnabledImage.style.display = "none";
+        DDO.DataElements.PomSightEnabledImage.style.display = "none";
+        DDO.DataElements.PomAffluenceEnabledImage.style.display = "none";
+        DDO.DataElements.PomAlterationEnabledImage.style.display = "none";
+        DDO.DataElements.PomFlightEnabledImage.style.display = "none";
     }
 
     DDO.UpdatePlayerInfo = async function()

@@ -1,0 +1,79 @@
+:lang(en), :lang(fr), :lang(de){
+    font-family: "Franklin Gothic Medium";
+    font-size: 12px;
+    box-sizing: border-box;
+}
+:lang(ja){
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+    font-size: 10px;
+    line-height: 175%;
+    box-sizing: border-box;}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /*min-width: 300px !important; 
+    max-width: 300px !important;  
+    
+    overflow:hidden;*/
+    width:100vw;
+    height:100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+#mainBody{
+    border: 3px ridge rgb(185, 185, 185);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
+    background-color: rgba(40, 40, 150, 0.5);
+    display: inline-block;
+    /*width: 100%;
+    
+    height: 100%;
+    /*position: absolute;
+    top:0;
+    right:0;*/
+
+}
+
+#targetinfo th,
+#targetinfo td{
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-right: 4px;
+    padding-left: 4px;
+    /*overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid rgb(124, 124, 124);*/
+}
+
+#targetinfo{
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Stun, #StunDisabled,
+#Sleep, #SleepDisabled,
+#Slow, #SlowDisabled,
+#Heavy, #HeavyDisabled,
+#Bind, #BindDisabled,
+#Resolution, #ResolutionDisabled{
+    width: 30px;
+    height: 30px;
+}
+#DangerEasy, #DangerCaution, #DangerScary, #DangerImpossible{
+    width: 45px;
+    height: 45px;
+}
+
+.resizeHandle {
+    /*background-image: url(../img/handle.png);*/
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+}       
