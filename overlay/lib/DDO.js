@@ -506,4 +506,41 @@
         DDO.DataElements.PomAlterationEnabledImage = document.getElementById("PomAlterationEnabled");
         DDO.DataElements.PomFlightEnabledImage = document.getElementById("PomFlightEnabled");            
     }
+    DDO.CalculateScoreNoRoomReveal = async function()
+    {
+        let file = "DDT_TEST-HoH.DDT";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = () => 
+        {
+            if(xhttp.status == 404)
+            {
+                console.log("ERROR: Cannot find save file");
+                return;
+            }
+            if(xhttp.status === 404)
+            {
+                console.log("ERROR: Cannot find save file");
+                return;
+            }
+            if (xhttp.readyState === 4 && xhttp.status === 200) 
+            {
+                var json;
+                try
+                {
+                    json = JSON.parse(xhttp.responseText);     
+                    console.log(json);                       
+                }
+                catch(e)
+                {
+                    return;
+                }
+                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json, 70, 101);
+                score += DDO.ScoreCalculator.CalculateMaxRoomReveal(json, 101); 
+
+                document.getElementById("debugScore").innerText = score.toLocaleString();
+            }
+        };
+        xhttp.open('GET', file, true);
+        xhttp.send();    
+    }
 })()

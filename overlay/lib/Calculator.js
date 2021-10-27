@@ -34,7 +34,7 @@
 
         DDO.ScoreCalculator.characterLevelScore = ((DDO.ScoreCalculator.aetherpoolArm + DDO.ScoreCalculator.aetherpoolArmor) * 10) + (playerLevel * 500);
         DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel);
-        //DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
+        DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
         DDO.ScoreCalculator.chestScore = DDO.ScoreCalculator.CalculateChestScore(saveFile.currentChestCount, dutyClearFailed);
         DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.currentSpecialKillCount, dutyClearFailed);
         DDO.ScoreCalculator.mimicScore = DDO.ScoreCalculator.CalculateMimicKorriganScore(saveFile.currentMimicCount + saveFile.currentKorriganCount, dutyClearFailed);
@@ -56,10 +56,16 @@
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore + temp;
         else
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore;
+        
+        console.log(score);
 
         DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.deepDungeonName);
 
+        console.log(DDO.ScoreCalculator.killScore);
+
         score += DDO.ScoreCalculator.killScore;
+
+        console.log(score);
         
         //returnValue = String.Format("{0:n0}", score);
         //return returnValue;
@@ -273,7 +279,7 @@
     DDO.ScoreCalculator.CalculateMaxRoomReveal = function(currentSave, dutyClearFailed){
         let score = 0;
         let mapRevealsEarned = currentSave.currentMapRevealCount;
-        let totalPossibleMapReveals = (DDO.currentFloor - currentSave.floorStartedOn + 1) - (Math.floor((DDO.currentFloor - currentSave.floorStartedOn + 1) / 10));
+        let totalPossibleMapReveals = (currentSave.lastFloorCleared - currentSave.floorStartedOn + 1) - (Math.floor((currentSave.lastFloorCleared - currentSave.floorStartedOn + 1) / 10));
 
         let mapRevealsToAdd = totalPossibleMapReveals - mapRevealsEarned;
 
