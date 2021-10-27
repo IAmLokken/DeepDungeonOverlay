@@ -27,7 +27,7 @@ body, html {
 #mainBody{
     border: 3px ridge rgb(185, 185, 185);
     border-radius: 10px;
-    /*box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;*/
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
     background-color: rgba(40, 40, 150, 0.5);
     display: inline-block;
     /*width: 100%;
