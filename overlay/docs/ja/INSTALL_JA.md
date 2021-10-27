@@ -13,7 +13,9 @@
 3. Presetのメニューの中で、'Custom'を選択してください。
 4. Typeのメニューの中で、'Miniparse'を選択してください。
 5. OKを押す。
-6. この[URL]に設定してください。 https://iamlokken.github.io/DeepDungeonOverlay/overlay/
+6. この[URL]に設定してください。
+	* https://iamlokken.github.io/DeepDungeonOverlay/overlay/ (DDO)
+	* https://iamlokken.github.io/DeepDungeonOverlay/overlay/targetinfo/ (DDTI)
 
 	<img src="Install01.png">
 	
