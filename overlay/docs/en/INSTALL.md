@@ -13,7 +13,9 @@ It is located under the *FFXIV Settings* Tab under the *Options* group.
 3. Select 'Custom' from the Preset dropdown.
 4. Select 'Miniparse' from the Type dropdown.
 5. Press OK.
-6. Set the URL to https://iamlokken.github.io/DeepDungeonOverlay/overlay/
+6. Set the URL to 
+	* https://iamlokken.github.io/DeepDungeonOverlay/overlay/ (DDO)
+	* https://iamlokken.github.io/DeepDungeonOverlay/overlay/targetinfo/ (DDTI)
 
 	<img src="Install01.png">
 	
