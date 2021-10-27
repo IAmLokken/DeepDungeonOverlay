@@ -1,10 +1,12 @@
 # Introduction
 
-Deep Dungeon Overlay is an in-development OverlayPlugin skin intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
+Deep Dungeon Overlay (DDO) and DDO Target Info (DDOTI) are in-development OverlayPlugin skins intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
-![DDO](overlay/docs/en/DetailsFull01.png?raw=true)
+![DDOTI](overlay/docs/en/DDOTI.png?raw=true)
 
-# Requirements to use DDO
+![DDO](overlay/docs/en/DetailsFull01.png?raw=true) 
+
+# Requirements to use DDO / DDOTI
 
 DDO requires the Advanced Combat Tracker ([ACT](https://advancedcombattracker.com/)) software.  Additionally it requires the [FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin) as well as the [OverlayPlugin](https://github.com/ngld/OverlayPlugin) library to be installed in ACT.
 
@@ -23,7 +25,7 @@ Currently DDO supports English, French, Japanese, and German languages.  _This e
 
  _Please note:_ To use a supported locale both the game client *and* the FFXIV plugin setting *Game Language* must be set to the appropriate locale.
 
-# Installation of DDO
+# Installation of DDO / DDOTI
 
 Please see [Installation Instructions](overlay/docs/en/INSTALL.md).
 * [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md)  
@@ -61,7 +63,7 @@ Please see Setup For Streamers [Instructions](overlay/docs/en/STREAMER.md).
 	* Enemy Danger Levels:
 		Easy | Caution | Scary | Impossible
 		:-: | :-: | :-: | :-: 
-		![Easy](overlay/img/Easy.png) | ![Caution](overlay/img/Caution.png) | ![Scary](overlay/img/Scary.png) | ![Impossible](overlay/img/Impossible.png)
+		<img src="overlay/img/Easy.png" alt="drawing" width="40"/> | <img src="overlay/img/Caution.png" alt="drawing" width="40"/> | <img src="overlay/img/Scary.png" alt="drawing" width="40"/> | <img src="overlay/img/Impossible.png" alt="drawing" width="40"/>
 	* Enemy Aggro Types:	
 		Sight | Sound | Proximity
 		:-: | :-: | :-:
