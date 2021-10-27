@@ -34,7 +34,7 @@
 
         DDO.ScoreCalculator.characterLevelScore = ((DDO.ScoreCalculator.aetherpoolArm + DDO.ScoreCalculator.aetherpoolArmor) * 10) + (playerLevel * 500);
         DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel);
-        DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
+        //DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
         DDO.ScoreCalculator.chestScore = DDO.ScoreCalculator.CalculateChestScore(saveFile.currentChestCount, dutyClearFailed);
         DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.currentSpecialKillCount, dutyClearFailed);
         DDO.ScoreCalculator.mimicScore = DDO.ScoreCalculator.CalculateMimicKorriganScore(saveFile.currentMimicCount + saveFile.currentKorriganCount, dutyClearFailed);

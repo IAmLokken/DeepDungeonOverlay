@@ -27,7 +27,7 @@ body, html {
 #mainBody{
     border: 3px ridge rgb(185, 185, 185);
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
+    /*box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;*/
     background-color: rgba(40, 40, 150, 0.5);
     display: inline-block;
     /*width: 100%;
@@ -44,17 +44,23 @@ body, html {
     color: white;
     align-items: center;
     text-align: center;
-    padding-right: 4px;
-    padding-left: 4px;
-    /*overflow: hidden;
+    /*padding-right: 2px;
+    padding-left: 2px;
+    overflow: hidden;
     white-space: nowrap;
     border: 1px solid rgb(124, 124, 124);*/
+}
+#AggroType{
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+#TargetHPP{
+    padding-left: 5px !important;
+    padding-right: 10px !important;
 }
 
 #targetinfo{
     width: 100%;
-    padding-left: 2px;
-    padding-right: 2px;
 }
 
 #Stun, #StunDisabled,
@@ -63,12 +69,13 @@ body, html {
 #Heavy, #HeavyDisabled,
 #Bind, #BindDisabled,
 #Resolution, #ResolutionDisabled{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
+
 #DangerEasy, #DangerCaution, #DangerScary, #DangerImpossible{
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
 }
 
 .resizeHandle {

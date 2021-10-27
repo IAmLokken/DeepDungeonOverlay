@@ -116,12 +116,12 @@
                 DDO.ResetVariables();          
             }
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
+                DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
+                DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
                 DDO.LoadSoloConfig();
                 DDO.ClearFloorValues();
                 DDO.ClearFloorSetValues();
-                DDO.soloRunUnderway = true;
-                DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
-                DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+                DDO.soloRunUnderway = true;                
                 DDO.LoadSave();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;                 
@@ -178,7 +178,14 @@
         DDO.EnableDisableElement(DDO.DataElements.ScoreCheckBoxValue.checked, 'score', false);
         DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
         DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
-        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);             
+        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
+        
+        if (DDO.currentInstance.includes('Heaven-on-High')){
+            DDO.DataElements.RareMonstersRow.style.display = "none";
+        }
+        else{
+            DDO.DataElements.RareMonstersRow.style.display = "";
+        }
     }
 
     DDO.LoadPartyConfig = function()
@@ -299,19 +306,21 @@
         DDO.currentFloorStats.magiciteUsed = 0;
         DDO.currentFloorStats.enchantmentCount = 0;
         DDO.currentFloorStats.roomRevealCount = 0;
+        DDO.currentFloorStats.rareKillCount = 0;
 
     }
     DDO.ClearFloorSetValues = function()
     {
         DDO.currentFloorSetStats = {};
-        DDO.currentFloorStats.killCount = 0;
-        DDO.currentFloorStats.trapsTriggered = 0;
-        DDO.currentFloorStats.mimicCount = 0;
-        DDO.currentFloorStats.korriganCount = 0;
-        DDO.currentFloorStats.chestCount = 0;
-        DDO.currentFloorStats.magiciteUsed = 0;
-        DDO.currentFloorStats.enchantmentCount = 0;
-        DDO.currentFloorStats.roomRevealCount = 0;
+        DDO.currentFloorSetStats.killCount = 0;
+        DDO.currentFloorSetStats.trapsTriggered = 0;
+        DDO.currentFloorSetStats.mimicCount = 0;
+        DDO.currentFloorSetStats.korriganCount = 0;
+        DDO.currentFloorSetStats.chestCount = 0;
+        DDO.currentFloorSetStats.magiciteUsed = 0;
+        DDO.currentFloorSetStats.enchantmentCount = 0;
+        DDO.currentFloorSetStats.roomRevealCount = 0;
+        DDO.currentFloorSetStats.rareKillCount = 0;
     }
     DDO.ResetVariables = function(){
         DDO.triggerAffluence = false;
@@ -462,6 +471,7 @@
         DDO.DataElements.RareMonstersFloorValue = document.getElementById("RareMonstersFloor");
         DDO.DataElements.RareMonstersSetValue = document.getElementById("RareMonstersSet");
         DDO.DataElements.RareMonstersTotalValue = document.getElementById("RareMonstersTotal");
+        DDO.DataElements.RareMonstersRow = document.getElementById("RareMonstersRow");
 
         DDO.DataElements.SpeedRunsFloorValue = document.getElementById("SpeedRunsFloor");
         DDO.DataElements.SpeedRunsSetValue = document.getElementById("SpeedRunsSet");
