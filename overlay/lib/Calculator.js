@@ -56,16 +56,10 @@
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore + temp;
         else
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore;
-        
-        console.log(score);
 
         DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.deepDungeonName);
 
-        console.log(DDO.ScoreCalculator.killScore);
-
         score += DDO.ScoreCalculator.killScore;
-
-        console.log(score);
         
         //returnValue = String.Format("{0:n0}", score);
         //return returnValue;
@@ -126,7 +120,8 @@
             if (currentFloorNumber - floorStartedOn + 1 == 50 && dutyClearFailed == 101)
                 score += -2000;
             if (currentFloorNumber - floorStartedOn + 1 == 200 && dutyClearFailed == 101)
-                score += -4500 + 500000;  
+                score += 0;
+                //score += -4500 + 500000;  
         }
 
         if (playerLevel < 61)

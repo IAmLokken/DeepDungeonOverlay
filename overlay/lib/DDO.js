@@ -508,7 +508,7 @@
     }
     DDO.CalculateScoreNoRoomReveal = async function()
     {
-        let file = "DDT_TEST-HoH.DDT";
+        let file = "DDT_TEST-PotD2.DDT";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = () => 
         {
@@ -534,7 +534,7 @@
                 {
                     return;
                 }
-                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json, 70, 101);
+                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json, 60, 101);
                 score += DDO.ScoreCalculator.CalculateMaxRoomReveal(json, 101); 
 
                 document.getElementById("debugScore").innerText = score.toLocaleString();
