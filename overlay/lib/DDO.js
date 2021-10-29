@@ -508,7 +508,7 @@
     }
     DDO.CalculateScoreNoRoomReveal = async function()
     {
-        let file = "DDT_TEST-PotD2.DDT";
+        let file = "DDT_TEST-PotD_ME.DDT";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = () => 
         {
