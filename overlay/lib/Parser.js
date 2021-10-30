@@ -102,15 +102,7 @@
 
                     // Reset pomander settings
                     DDO.speedRunBonus = true;
-                    DDO.triggerAffluence = false;
-                    DDO.triggerAlteration = false;
-                    DDO.triggerFlight = false;
-                    DDO.safetyActive = false;
-                    DDO.affluenceActive = false;
-                    DDO.alterationActive = false;
-                    DDO.flightActive = false;
-                    DDO.sightActive = false;
-                    DDO.raisingActive = false;
+                    DDO.ResetVariables();
 
                     DDO.UpdateScore();
 
