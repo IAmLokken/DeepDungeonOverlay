@@ -10,7 +10,8 @@ If you stream using 'Game Capture' and want to display the overlay on stream ple
  
 ![Streamer1](StreamerSetup01.png?raw=true)
 * In your streaming software add a 'Browser Source'.
-* Set the 'URL' to https://iamlokken.github.io/DeepDungeonOverlay/overlay/?OVERLAY_WS=ws://127.0.0.1:10501/ws
+* Set the 'URL' to https://iamlokken.github.io/DeepDungeonOverlay/overlay/?OVERLAY_WS=ws://127.0.0.1:10501/ws (DDO)
+* Set the 'URL' to https://iamlokken.github.io/DeepDungeonOverlay/overlay/targetinfo/?OVERLAY_WS=ws://127.0.0.1:10501/ws (DDOTI) 
 * Example below is from OBS:
 
 ![Streamer1](StreamerSetup02.png?raw=true)
