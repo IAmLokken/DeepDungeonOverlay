@@ -2,14 +2,14 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Faerie-1.1" />    
+    <link rel="stylesheet" href="css/display.css?v=Faerie-1.2" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Faerie-1.1"></script>
-    <script src="lib/Locale.js?v=Faerie-1.1"></script>
-    <script src="lib/Bestiary.js?v=Faerie-1.1"></script>
-    <script src="lib/Parser.js?v=Faerie-1.1"></script>
-    <script src="lib/Calculator.js?v=Faerie-1.1"></script>
+    <script src="lib/DDO.js?v=Faerie-1.2"></script>
+    <script src="lib/Locale.js?v=Faerie-1.2"></script>
+    <script src="lib/Bestiary.js?v=Faerie-1.2"></script>
+    <script src="lib/Parser.js?v=Faerie-1.2"></script>
+    <script src="lib/Calculator.js?v=Faerie-1.2"></script>
 
     <script>
 
@@ -140,6 +140,7 @@
     <div id="header">
         Deep Dungeon Overlay
         <span id="config">
+            <p id="timer" style="display: none;">00:00</p>
             <input type="checkbox" id="CheckBoxBestiary" onchange="DDO.EnableDisableElement(checked, 'targetinfo', true)"  />
             <input type="checkbox" id="CheckBoxStatistics" onchange="DDO.EnableDisableElement(checked, 'statistics', true)"  />
             <input type="checkbox" id="CheckBoxPomanders" onchange="DDO.EnableDisableElement(checked, 'pomanders', true)"  />

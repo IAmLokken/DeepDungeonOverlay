@@ -38,6 +38,11 @@ body, html {
     display: inline;
 }
 
+#config p{
+    display:inline;
+    padding-left:30px;
+    vertical-align:middle;
+}
 #config input{
     float:right;
 }

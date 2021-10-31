@@ -263,6 +263,17 @@
             DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
+        else if (logMessage.includes(parseStrings.Floor) && logMessage.includes(DDO.currentFloor)){
+            let val = DDO.currentFloor % 10;
+            if (val > 0){
+                if (val == 1){
+                    DDO.InitiateTimer(0);
+                }else {
+                    DDO.InitiateTimer(-5);
+                }
+                DDO.EnableDisableElement(true, "timer", false);
+            }
+        }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
             DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
             // Update the last floor cleared
@@ -335,6 +346,9 @@
                 DDO.currentFloorSetStats.roomRevealCount++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[Math.floor(DDO.currentFloor / 10)]
             }
+            clearInterval(DDO.ticker);
+            DDO.EnableDisableElement(false, "timer", false);
+
 
 
             DDO.DataElements.MonstersFloorValue.innerText = 0;

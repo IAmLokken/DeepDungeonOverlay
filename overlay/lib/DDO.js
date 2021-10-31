@@ -30,8 +30,8 @@
         PomanderOfRaising: "1AD4"
     };
 
-    DDO.RoomRangesPOTD = ['4:4:0', '3:6:421', '3:6:421', '3:6:421', '4:6:421', '3:6:421', '3:6:421', '3:6:421', '3:6:421', '4:6:421', '5:7:361', '5:7:361', '5:7:361', '5:7:361', '5:7:361', '5:8:316', '5:8:316', '5:8:316', '5:8:316', '5:8:316'];
-    DDO.RoomRangesHOH  = ['3:6:421', '3:6:421', '3:6:421', '5:7:361', '5:7:361', '5:8:316', '5:8:316', '5:8:316', '5:8:316', '5:8:316'];
+    DDO.RoomRangesPOTD = ['4:4:0:40', '3:6:421:60', '3:6:421:60', '3:6:421:60', '4:6:421:120', '3:6:421:60', '3:6:421:60', '3:6:421:60', '3:6:421:60', '4:6:421:120', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:8:316:300', '5:8:316:300', '5:8:316:300', '5:8:316:300', '5:8:316:300'];
+    DDO.RoomRangesHOH  = ['3:6:421:60', '3:6:421:60', '3:6:421:60', '5:7:361:600', '5:7:361:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600'];
 
     DDO.playerName = "NULL";
     DDO.playerWorld = "NULL";
@@ -159,6 +159,7 @@
             DDO.groupRunUnderway = false;
             DDO.inbetweenArea = false;
             DDO.currentInstance = instanceName;
+            clearInterval(DDO.ticker);
             DDO.LoadNonRunConfig(); 
         }
     }
@@ -409,6 +410,54 @@
         DDO.SaveRuns();
     }
 
+    DDO.InitiateTimer = function(offset){
+        clearInterval(DDO.ticker);
+        DDO.DataElements.TimerValue.innerText = '00:00';
+        DDO.DataElements.TimerValue.style.color = "white";
+        
+        let floorSetIndex = Math.floor(DDO.currentFloor / 10);
+        let timerValue = -1;
+        if (DDO.currentInstance == 'Heaven-on-High'){
+            let range = DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
+            timerValue += range[3];
+        }
+        else{
+            let range = DDO.RoomRangesPOTD[floorSetIndex].split(':').map(Number);
+            timerValue += range[3];
+        }
+
+        var timeInSecs;
+
+        function startTimer(secs){
+            timeInSecs = parseInt(secs);
+            DDO.ticker = setInterval(tick, 1000);
+        }
+
+        function tick( ){
+            var secs = timeInSecs;
+            if (secs > 0) {
+                timeInSecs--; 
+                }
+            else {
+                clearInterval(DDO.ticker);
+                startTimer(timerValue); 
+            }
+
+            var mins = Math.floor(secs/60);
+            secs %= 60;
+
+            var output = ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+            if (secs < 15 && mins == 0)
+                DDO.DataElements.TimerValue.style.color = "red";
+            else
+                DDO.DataElements.TimerValue.style.color = "white";
+
+            DDO.DataElements.TimerValue.innerText = output;
+        }
+        
+        startTimer(timerValue + offset);
+    }
+
     DDO.UpdateScore = function()
     {
         let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
@@ -488,6 +537,7 @@
         DDO.DataElements.AggroProximityImage = document.getElementById("AggroProximity");
         DDO.DataElements.TargetInformationValue = document.getElementById("TargetInformation");
 
+        DDO.DataElements.TimerValue = document.getElementById("timer");
         DDO.DataElements.BestiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
         DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
         DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");
