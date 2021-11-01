@@ -1,0 +1,204 @@
+:lang(en), :lang(fr), :lang(de){
+    font-family: "Franklin Gothic Medium";
+    font-size: 12px;
+    box-sizing: border-box;
+}
+:lang(ja){
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+    font-size: 10px;
+    line-height: 175%;
+    box-sizing: border-box;}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /*max-width: 300px !important; */  
+    min-width: 300px !important;
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+#mainBody{
+    border: 2px solid rgb(0, 0, 56);
+    background-color: rgba(50, 50, 50, 0.75);
+    padding: 5px;
+    /*height: 100%;
+    width: 100%;  */
+
+}
+
+#header{
+    display: inline;
+}
+
+#config p{
+    display:inline;
+    padding-left:30px;
+    vertical-align:middle;
+}
+#config input{
+    float:right;
+}
+
+#ScoreLabel{
+    white-space:nowrap;
+    font-size: 25px;
+    text-align: left;
+}
+
+#Score{
+    font-size: 35px;
+    padding-left:10px;
+}
+
+#pomanders td{
+    width:20%;
+    text-align:center;
+}
+
+#FloorLabel,
+#SetLabel,
+#TotalLabel{
+    text-align: right;
+}
+
+#statistics th,
+#statistics td,
+#targetinfo th,
+#targetinfo td{
+    width: 25%;
+    border: 1px solid rgb(124, 124, 124);
+    padding-left: 3px;
+    padding-right: 3px
+}
+
+#score,
+#statistics,
+#targetinfo,
+#header,
+label{
+    color: lightgray;
+    font-weight: bold;            
+}
+
+#statistics,
+#targetinfo{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;   
+    border-collapse: collapse;
+    margin-bottom: 5px;
+}
+
+#statistics tr{
+    text-align:right;
+}
+
+#targetinfo{
+    margin-top: 10px;
+}
+
+#targetinfo td{
+    text-align: center;
+}
+
+#TargetInformation {
+    padding: 4px;
+    text-align:left;
+    background:rgb(25, 25, 25);
+    font-weight: normal;
+}
+
+table{
+    padding-bottom:5px;
+}
+
+th{
+    text-align:left;
+}
+
+th,
+#ScoreLabel,
+#TargetName{
+    color: rgb(247, 160, 0)
+}
+
+#ButtonInfo{
+    color:lightgray;
+    background-color: rgb(25, 25, 25);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+#saveManager{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom:10px;
+    color:lightgray;
+    border-bottom: 2px solid;
+}
+
+#settings{
+    background-color: rgb(25, 25, 25);
+    display:flex;
+    align-items: center;
+    vertical-align: top;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom:5px;
+    color:lightgray;
+    position: relative;
+}
+#MapClearCheckBox{
+    position:absolute;
+    left: 5;
+    top: 10;
+}
+#MapSettingInfo{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 25px;
+}
+
+#DangerEasy, #DangerCaution, #DangerScary, #DangerImpossible{
+    width: 45px;
+    height: 45px;
+}
+
+button{
+    background-color: rgb(25, 25, 25);
+    color:lightgray;
+    border: 2px solid white;
+    padding: 4px 4px;
+    /*border-radius: 5px;*/
+    text-align: center;
+}
+
+button:hover{
+    background-color: white;
+    color:rgb(0, 0, 70);
+}
+
+.resizeHandle {
+    /*background-image: url(../img/handle.png);*/
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+}       

@@ -2,12 +2,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="../css/targetinfo.css?v=Cactuar-1.5" />    
+    <link rel="stylesheet" href="../css/targetinfo.css?v=Faerie-1.3" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
     <script> window.DDO = {};</script>
-    <script src="../lib/Locale.js?v=Cactuar-1.5"></script>
-    <script src="../lib/Bestiary.js?v=Cactuar-1.5"></script>
+    <script src="../lib/Locale.js?v=Faerie-1.3"></script>
+    <script src="../lib/Bestiary.js?v=Faerie-1.3"></script>
 
     <script>
 
@@ -17,7 +17,16 @@
             } else {
                 hideResizeHandle();
             }
-        });        
+        });
+        window.oncontextmenu = function(){
+            let css = document.getElementsByTagName("link").item(0);
+            if (css.href.includes('Dark')){
+                css.href = "../css/targetinfo.css";
+            }
+            else{
+                css.href = "../css/targetinfoDark.css";
+            }
+        }        
         function displayResizeHandle() {
             document.documentElement.classList.add("resizeHandle");
         }
