@@ -2,9 +2,9 @@
 
 Deep Dungeon Overlay (DDO) and DDO Target Info (DDOTI) are in-development OverlayPlugin skins intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
-![DDOTI](overlay/docs/en/DDOTI.png?raw=true)
-
-![DDO](overlay/docs/en/DetailsFull01.png?raw=true) 
+|![DDOTI alt <](overlay/docs/en/DDOTI.png?raw=true) | ![DDOTI alt ><](overlay/docs/en/DDOTI_Dark.png?raw=true) |
+| :-: | :-: |
+|![DDO](overlay/docs/en/DetailsFull01.png?raw=true) | ![DDO](overlay/docs/en/DetailsFull01_Dark.png?raw=true) |
 
 # Requirements to use DDO / DDOTI
 
