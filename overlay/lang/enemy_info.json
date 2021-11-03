@@ -699,7 +699,7 @@
         "HEAVENLY SHITAIBANA":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":true, "Sleep":true, "Slow":false, "Heavy":true, "Bind":true, "Resolution":false },
         "HEAVENLY MORBOL":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":true, "Sleep":true, "Slow":false, "Heavy":true, "Bind":true, "Resolution":false },
         "HEAVENLY CHIZAKURA":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":true, "Sleep":true, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
-        "HEAVENLY PENGHOU":{ "DangerLevel":"Easy", "AggroType":"Sound", "Stun":true, "Sleep":true, "Slow":false, "Heavy":true, "Bind":true, "Resolution":false },
+        "HEAVENLY PENGHOU":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":true, "Sleep":true, "Slow":false, "Heavy":true, "Bind":true, "Resolution":false },
         "HEAVENLY HASHIRI-DOKORO":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":true, "Sleep":true, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
         "KENKO":{
             "DangerLevel":"Easy",
