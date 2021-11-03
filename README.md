@@ -2,9 +2,9 @@
 
 Deep Dungeon Overlay (DDO) and DDO Target Info (DDOTI) are in-development OverlayPlugin skins intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
-![DDOTI](overlay/docs/en/DDOTI.png?raw=true)
-
-![DDO](overlay/docs/en/DetailsFull01.png?raw=true) 
+|![DDOTI alt <](overlay/docs/en/DDOTI.png?raw=true) | ![DDOTI alt ><](overlay/docs/en/DDOTI_Dark.png?raw=true) |
+| :-: | :-: |
+|![DDO](overlay/docs/en/DetailsFull01.png?raw=true) | ![DDO](overlay/docs/en/DetailsFull01_Dark.png?raw=true) |
 
 # Requirements to use DDO / DDOTI
 
@@ -18,7 +18,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 Currently DDO supports English, French, Japanese, and German languages.  _This excludes most enemy notes. (English and Japanese only)_ 
 * French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
-* Japanese translation and support provided by [Chiela](https://twitter.com/certa). They also [stream](https://www.twitch.tv/hurricanechiela)!
+* Japanese translation and support provided by [Chiela](https://twitter.com/HurricaneChiela). They also [stream](https://www.twitch.tv/hurricanechiela)!
 * German translation and support provided by [Tancred](https://twitter.com/Tancred423). 
 
 
