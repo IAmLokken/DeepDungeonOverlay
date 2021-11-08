@@ -319,12 +319,12 @@
         "KIRTIMUKHA":{
             "DangerLevel":"Caution",
             "AggroType":"Proximity",
-            "Stun":true,
-            "Sleep":true,
-            "Slow":true,
-            "Heavy":true,
-            "Bind":true,
-            "Resolution":true
+            "Stun":false,
+            "Sleep":false,
+            "Slow":false,
+            "Heavy":false,
+            "Bind":false,
+            "Resolution":false
             }
        },
        {
@@ -346,12 +346,12 @@
         "ALFARD":{
             "DangerLevel":"Caution",
             "AggroType":"Proximity",
-            "Stun":true,
-            "Sleep":true,
-            "Slow":true,
-            "Heavy":true,
-            "Bind":true,
-            "Resolution":true
+            "Stun":false,
+            "Sleep":false,
+            "Slow":false,
+            "Heavy":false,
+            "Bind":false,
+            "Resolution":false
             }
        },
        {
@@ -600,12 +600,12 @@
         "HIRUKO":{
             "DangerLevel":"Easy",
             "AggroType":"Proximity",
-            "Stun":true,
-            "Sleep":true,
-            "Slow":true,
-            "Heavy":true,
-            "Bind":true,
-            "Resolution":true
+            "Stun":false,
+            "Sleep":false,
+            "Slow":false,
+            "Heavy":false,
+            "Bind":false,
+            "Resolution":false
             }
        },
        {
