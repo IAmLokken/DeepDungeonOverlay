@@ -1,83 +1,82 @@
-# Introduction
+# はじめに
 
-Deep Dungeon Overlay (DDO) and DDO Target Info (DDOTI) are in-development OverlayPlugin skins intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
+Deep Dungeon Overlay (DDO) と DDO Target Info (DDOTI) は開発中の OverlayPlugin スキンで、FF14 のディープダンジョンに一人でプレイしているときに、リアルタイムで情報を提供することを目的としています。
 
 |![DDOTI alt <](overlay/docs/en/DDOTI.png?raw=true) | ![DDOTI alt ><](overlay/docs/en/DDOTI_Dark.png?raw=true) |
 | :-: | :-: |
 |![DDO](overlay/docs/en/DetailsFull01.png?raw=true) | ![DDO](overlay/docs/en/DetailsFull01_Dark.png?raw=true) |
 
-# Requirements to use DDO / DDOTI
+# DDO / DDOTI使用の要件
 
-DDO requires the Advanced Combat Tracker ([ACT](https://advancedcombattracker.com/)) software.  Additionally it requires the [FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin) as well as the [OverlayPlugin](https://github.com/ngld/OverlayPlugin) library to be installed in ACT.
+DDOにはAdvanced Combat Tracker ([ACT](https://advancedcombattracker.com/)) というソフトウェアが必要です。 また、ACTには [FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin) と [OverlayPlugin](https://github.com/ngld/OverlayPlugin) のライブラリがインストールされている必要があります。
 
-Instructions for installing ACT as well as FFXIV_ACT_Plugin can be found in written form here: [Install ACT](https://github.com/FFXIV-ACT/setup-guide)
+ACTおよびFFXIV_ACT_Pluginのインストール方法は、こちらに記載されています。 [ACTのセットアップガイド](https://github.com/FFXIV-ACT/setup-guide)
 
-Additionally Desperius FFXIV has a good video tutorial (current as of April 2021) here: [Video Guide](https://www.youtube.com/watch?v=urZTrF864x8&t=0s)
+また、Desperius FFXIVには良い動画チュートリアル(英語)があります（2021年4月現在の情報です） [動画ガイド](https://www.youtube.com/watch?v=urZTrF864x8&t=0s)
 
 # Localization
 
-Currently DDO supports English, French, Japanese, and German languages.  _This excludes most enemy notes. (English and Japanese only)_ 
-* French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
-* Japanese translation and support provided by [Chiela](https://twitter.com/HurricaneChiela). They also [stream](https://www.twitch.tv/hurricanechiela)!
-* German translation and support provided by [Tancred](https://twitter.com/Tancred423). 
+現在、DDOは英語、フランス語、日本語、ドイツ語をサポートしています。  _敵情報の備考は日本語と英語のみサポートされています。_ 
+* フランス語の翻訳とサポートは [Coccis77](https://twitter.com/Coccis77)が担当しています。
+* 日本語の翻訳とサポートは [Chiela](https://twitter.com/HurricaneChiela)が担当しています。また、[配信](https://www.twitch.tv/hurricanechiela)もあります。
+* ドイツ語の翻訳とサポートは [Tancred](https://twitter.com/Tancred423)が担当しています。
 
 
 
- _Please note:_ To use a supported locale both the game client *and* the FFXIV plugin setting *Game Language* must be set to the appropriate locale.
+ _注意:_ サポートされている言語を使用するには、*ゲームクライアント*とFFXIV_ACT_Pluginの*Game Language*の両方を適切な言語に設定する必要があります。
 
-# Installation of DDO / DDOTI
-
-Please see [Installation Instructions](overlay/docs/en/INSTALL.md).
+# DDO / DDOTIのインストール
+[インストールマニュアル](overlay/docs/ja/INSTALL_JA.md)をご覧ください。
 * [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md)  
-* [インストールマニュアル](overlay/docs/ja/INSTALL_JA.md)
+* [Installation Instructions](overlay/docs/en/INSTALL.md)
 
-# Setup For Streamers
+# 配信者向けセットアップ
 
-Please see Setup For Streamers [Instructions](overlay/docs/en/STREAMER.md).
+[配信者向けインストールマニュアル(英語)](overlay/docs/en/STREAMER.md)をご覧ください。
 
-# Current Features
+# 現在の機能
 
-* Score (Estimate)
-	* The overlay will give you a real-time estimate on your current score.  Please see the [Score Details](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) section for more information.
-	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
+* スコア (推定)
+	* オーバーレイには、現在のスコアの推定値がリアルタイムで表示されます。 詳細はこちら [Score Details](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details)
+	* スコアの計算式はAlpha's scoring testingから算出しています。 [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
 	 
-* Pomanders:
-	* Safety (Enabled if one was used this floor)
-	* Sight (Enabled if one was used this floor)
-	* Affluence (Enabled if one was used last floor and currently active)
-	* Alteration (Enabled if one was used last floor and currently active)
-	* Flight (Enabled if one was used last floor and currently active)
+* 土器
+	* 呪印解除 (現在の階で使用している場合有効)
+	* サイトロ (現在の階で使用している場合有効)
+	* 宝箱増加 (直前の階で使用している場合有効)
+	* 敵変化 (直前の階で使用している場合有効)
+	* 敵排除 (直前の階で使用している場合有効)
 
-* Satistics:
-	* Monster kills
-	* Mimic (Korrigan) kills
-	* Traps triggered 
-	* Chests opened
+* 統計
+	* 敵を倒した数
+	* ミミック(コリガン)を倒した数
+	* 罠を踏んだ数
+	* 宝箱を開けた数
 	* Floor enchantments applied (using a Serenity will decrement this count)
-	* Rare monsters (PotD only)
-	* Total floor sets completed in 30 minutes or less
-	
-* Bestiary Information:
-    * Enemy Name
-	* Enemy Current Health Percentage
-	* Enemy Danger Levels:
-		Easy | Caution | Scary | Impossible
+	* レアモンスターの数(死者の宮殿のみ)
+	* 30分以内に10階層をクリアした回数
+
+* 敵情報
+    * 敵の名前
+	* 敵のHP割合
+	* 敵の危険度
+		簡単 | 注意 | 危険 | 無理
 		:-: | :-: | :-: | :-: 
 		<img src="overlay/img/Easy.png" alt="drawing" width="40"/> | <img src="overlay/img/Caution.png" alt="drawing" width="40"/> | <img src="overlay/img/Scary.png" alt="drawing" width="40"/> | <img src="overlay/img/Impossible.png" alt="drawing" width="40"/>
-	* Enemy Aggro Types:	
-		Sight | Sound | Proximity
+	* 敵の感知タイプ	
+		視覚 | 聴覚 | 接近
 		:-: | :-: | :-:
 		![Sight](overlay/img/Sight.png) | ![Sound](overlay/img/Sound.png) | ![Proximity](overlay/img/Proximity.png)
-	* Enemy Info (Things to know about the enemy, if relevant.)
-	* __All bestiary information is pulled from Maygi's DD Handbooks with permission__.
+	* 備考(敵について知っておくべきこと)
+	* __全ての敵情報はMaygiのDDハンドブックから許可を得て引用しています__.
 	 	* Follow Maygi on [Twitch](https://www.twitch.tv/maygii), [Twitter](https://twitter.com/MaybeMaygi), and [Youtube](https://www.youtube.com/c/Maygi).
 		* [PotD Handbook](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbook](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
 		* Additional mob aggro types tested with the help of Cloudburst's status spreadsheets [PotD](https://docs.google.com/spreadsheets/d/1nKI0-AApj-aiuUimrPkuQUJaa4DU8Ox7KqdC_ibme8E/edit#gid=12879293), [HoH](https://docs.google.com/spreadsheets/d/1aDlsiN3At6Fvfj_gg5weucDYqjQawQxGHFhJvzEUrek/edit#gid=375717345)
 	* **NOTE**: Bestiary information is the only section availble during group runs.
-	* **NOTE**: If any bestiary information is incorrect (or missing) please [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/issues).
+	* **NOTE**: 敵情報が無かったり、欠けている場合は [Issue](https://github.com/IAmLokken/DeepDungeonOverlay/issues)を作成してください
 
-The Score, Pomander, Statistics, and Bestiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:
+スコア、土器、統計、敵情報はオーバーレイのチェックボックスで表示・非表示を切り替えることが出来ます
 
 ![DDOS01](overlay/docs/en/DetailsSimple01.png?raw=true) ![DDOS02](overlay/docs/en/DetailsSimple02.png?raw=true)
 
