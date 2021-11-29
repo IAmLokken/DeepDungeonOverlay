@@ -417,31 +417,6 @@
        }
     },
     {
-<<<<<<< HEAD
-    "ミミック": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-    "ピグマイオイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    "古株風の格闘士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "古株風の弓術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    "古株風の幻術士": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Rare Monster*"},
-    
-    "パレス・ティラノサウルス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ミロドン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・プテラノドン": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・エルブスト": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ウィヴル": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ワイルドダイル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・ディプロカウルス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ブレードビネガロン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・サルコスクス": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "パレス・トリケラトプス": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-    "パレス・ラプトル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-    "ヤクアル": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "<b>ハイドレーション</b>を詠唱したら、離れてボスが水から完全に出るように誘導し、ヘイストがかからないようにしましょう。"
-        }
-=======
        "ミミック":{
           "Notes":"*Good Luck*",
           "EnglishName":"MIMIC"
@@ -510,7 +485,6 @@
           "Notes":"<b>ハイドレーション</b>を詠唱したら、離れてボスが水から完全に出るように誘導し、ヘイストがかからないようにしましょう。",
           "EnglishName":"YAQUARU"
        }
->>>>>>> DDOTI
     },
     {
        "ミミック":{
@@ -1589,27 +1563,6 @@
        }
     },
     {
-<<<<<<< HEAD
-        "うごめく宝箱": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・ダラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ガンセキ": {"DangerLevel": "Easy", "AggroType": "Proximity", "Notes": ""},
-        "アメノ・サイコロ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・クロウサギ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・セキバン": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "攻撃が速く、時間切れ攻撃あり。"},
-        "アメノ・セキゾウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ミズミミズ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": "死者の宮殿181-189階のウォームと同様に、約30秒以内に倒さないと吸引後に即死級ダメージ。"},
-        "アメノ・アカイシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・イセキ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・モノイワ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "ゴズ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "無詠唱・不可視範囲の前方スワイプと前方直線攻撃があります。<br/>混乱付きの視線<b>フィア</b>ーも使用し、その後に距離減衰の範囲攻撃と爆弾設置をしてきます。ソロではフィアーに当たると<b>100%死ぬ</b>ので欲張らないこと。"
-        }
-=======
        "うごめく宝箱":{
           "Notes":"*Good Luck*",
           "EnglishName":"QUIVERING COFFER"
@@ -1662,7 +1615,6 @@
           "Notes":"無詠唱・不可視範囲の前方スワイプと前方直線攻撃があります。<br/>混乱付きの視線<b>フィア</b>ーも使用し、その後に距離減衰の範囲攻撃と爆弾設置をしてきます。ソロではフィアーに当たると<b>100%死ぬ</b>ので欲張らないこと。",
           "EnglishName":"GOZU"
        }
->>>>>>> DDOTI
     },
     {
        "うごめく宝箱":{
@@ -1731,30 +1683,6 @@
        }
     },
     {
-<<<<<<< HEAD
-        "うごめく宝箱": {"DangerLevel": "Scary", "AggroType": "Proximity", "Notes": "*Good Luck*"},
-        "コリガン": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "*Congratulations*"},
-    
-        "アメノ・オンリョウ": {"DangerLevel": "Caution", "AggroType": "Proximity", "Notes": "間火力が高く、DoTもかなり痛いです。"},
-        "アメノ・ワカクサ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": "毒は30秒残り、スタックしていくので、ソロではDoTダメージを甘く見ないこと。"},
-        "アメノ・ジュボッコ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・マンネンソウ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・イワムシ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・イソクラゲ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ドグゼリ": {"DangerLevel": "Easy", "AggroType": "Sound", "Notes": ""},
-        "アメノ・コソデガイ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・シタイバナ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": "WSと強力な毒を付与してきます。毒は離れることで回避可能。"},
-        "アメノ・モルボル": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・チザクラ": {"DangerLevel": "Easy", "AggroType": "Sight", "Notes": ""},
-        "アメノ・ホウコウ": {"DangerLevel": "Caution", "AggroType": "Sound", "Notes": ""},
-        "アメノ・ハシリドコロ": {"DangerLevel": "Caution", "AggroType": "Sight", "Notes": "ドーナツ範囲と、誘惑付きの視線攻撃があります。それ以外はそこまで強くありません。"},
-        "ケンコ": 
-        {
-            "DangerLevel": "Easy",
-            "AggroType": "Proximity",
-            "Notes": "ミニマムを踏んで突進攻撃を受けます。捕食後はすぐに降りること。予兆無しの前方範囲のプレデタークローは背後に回ることで回避できます。"
-        }
-=======
        "うごめく宝箱":{
           "Notes":"*Good Luck*",
           "EnglishName":"QUIVERING COFFER"
@@ -1819,7 +1747,6 @@
           "Notes":"ミニマムを踏んで突進攻撃を受けます。捕食後はすぐに降りること。予兆無しの前方範囲のプレデタークローは背後に回ることで回避できます。",
           "EnglishName":"KENKO"
        }
->>>>>>> DDOTI
     },
     {
        "うごめく宝箱":{
