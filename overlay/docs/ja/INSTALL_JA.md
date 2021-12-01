@@ -14,8 +14,8 @@
 4. Typeのメニューの中で、'Miniparse'を選択してください。
 5. OKを押す。
 6. この[URL]に設定してください。
-	* https://iamlokken.github.io/DeepDungeonOverlay/overlay/ (DDO)
-	* https://iamlokken.github.io/DeepDungeonOverlay/overlay/targetinfo/ (DDTI)
+	* https://h1dia.github.io/DeepDungeonOverlay/overlay/ (DDO)
+	* https://h1dia.github.io/DeepDungeonOverlay/overlay/targetinfo/ (DDTI)
 
 	<img src="Install01.png">
 	
