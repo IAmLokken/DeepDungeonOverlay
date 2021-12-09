@@ -170,6 +170,10 @@
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'settings', false);
         DDO.EnableDisableElement(true, 'config', false);   
+        DDO.EnableDisableElement(true, 'CheckBoxBestiary', false);
+        DDO.EnableDisableElement(true, 'CheckBoxStatistics', false);
+        DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);
+        DDO.EnableDisableElement(true, 'CheckBoxScore', false);
 
         DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
         DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
@@ -191,7 +195,7 @@
 
     DDO.LoadPartyConfig = function()
     {
-        DDO.EnableDisableElement(false, 'config', false);
+        DDO.EnableDisableElement(true, 'config', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'settings', false);
@@ -199,6 +203,11 @@
         DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
         DDO.EnableDisableElement(true, 'targetinfo', false);
+        DDO.EnableDisableElement(false, 'CheckBoxBestiary', false);
+        DDO.EnableDisableElement(false, 'CheckBoxStatistics', false);
+        DDO.EnableDisableElement(false, 'CheckBoxPomanders', false);
+        DDO.EnableDisableElement(false, 'CheckBoxScore', false);
+        DDO.EnableDisableElement(false, 'timer', false);
     }
 
     DDO.LoadNonRunConfig = function()
