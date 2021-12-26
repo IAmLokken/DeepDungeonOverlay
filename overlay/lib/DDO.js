@@ -169,7 +169,8 @@
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'settings', false);
-        DDO.EnableDisableElement(true, 'config', false);   
+        DDO.EnableDisableElement(true, 'config', false);
+        DDO.EnableDisableElement(true, 'timer', false);   
         DDO.EnableDisableElement(true, 'CheckBoxBestiary', false);
         DDO.EnableDisableElement(true, 'CheckBoxStatistics', false);
         DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);

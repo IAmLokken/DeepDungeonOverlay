@@ -263,7 +263,7 @@
             DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
         }
-        else if (logMessage.includes(parseStrings.Floor) && logMessage.includes(DDO.currentFloor)){
+        else if ((logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && logMessage.includes(DDO.currentFloor)){
             let val = DDO.currentFloor % 10;
             if (val > 0){
                 if (val == 1){
