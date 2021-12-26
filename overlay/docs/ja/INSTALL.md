@@ -4,10 +4,10 @@
 
 *FFXIV Settings*の中にあって、*Options*の部分にあります。
 
-<img src="Install02.png">
+<img src="../en/Install02.png">
 
 # Overlayをインストールする方法
 
-<img src="Install01.png">
+<img src="../en/Install01.png">
 	
 [README](README.md)に戻る
