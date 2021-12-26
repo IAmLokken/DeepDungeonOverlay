@@ -4,7 +4,7 @@
 
 ディープダンジョンのOverlay(DDO)とディープダンジョンターゲット情報(DDOTI)はソロディープダンジョンを到達しながらリアルタイムの情報を示すOverlayPluginのスキン(開発中)です。
 
-|![DDOTI alt <](../../overlay/docs/en/DDOTI.png?raw=true) | ![DDOTI alt ><](../../overlay/docs/en/DDOTI_Dark.png?raw=true) |
+|![DDOTI](../../docs/en/DDOTI.png?raw=true) | ![DDOTI](../../docs/en/DDOTI_Dark.png?raw=true) |
 | :-: | :-: |
 |![DDO](DetailsFull01.png?raw=true) | ![DDO](DetailsFull01_Dark.png?raw=true) |
 
@@ -28,7 +28,7 @@ _注意_: サポートされている言語を使用するには、ゲームク�
 
 # ストリーマーの設定
 
-ストリーマーの設定をご覧ください。[手順](overlay/docs/en/STREAMER.md)
+ストリーマーの設定をご覧ください。[手順](STREAMER.md)
 
 # 現在の機能
 
@@ -58,11 +58,11 @@ _注意_: サポートされている言語を使用するには、ゲームク�
 	* 敵の危険度：
 		簡単 | 注意 | 怖い | 無理
 		:-: | :-: | :-: | :-: 
-		<img src="overlay/img/Easy.png" alt="drawing" width="40"/> | <img src="overlay/img/Caution.png" alt="drawing" width="40"/> | <img src="overlay/img/Scary.png" alt="drawing" width="40"/> | <img src="overlay/img/Impossible.png" alt="drawing" width="40"/>
+		<img src="../../img/Easy.png" alt="drawing" width="40"/> | <img src="../../img/Caution.png" alt="drawing" width="40"/> | <img src="../../img/Scary.png" alt="drawing" width="40"/> | <img src="../../img/Impossible.png" alt="drawing" width="40"/>
 	* 敵の感知方法のタイプ：	
 		視覚 | 音感 | 間近
 		:-: | :-: | :-:
-		![Sight](overlay/img/Sight.png) | ![Sound](overlay/img/Sound.png) | ![Proximity](overlay/img/Proximity.png)
+		![Sight](../../img/Sight.png) | ![Sound](../../img/Sound.png) | ![Proximity](../../img/Proximity.png)
 	* 敵の情報　(関係があれば、知るべき情報）
 	* __全部の魔物の情報はMaygiiさんのディープダンジョンガイドから許可を得て引用しています。__
 	 	* 是非Maygiiさんをフォローしてください！ [Twitch](https://www.twitch.tv/maygii)、[Twitter](https://twitter.com/MaybeMaygi)、[Youtube](https://www.youtube.com/c/Maygi).
