@@ -1,6 +1,6 @@
 # 紹介
 
-日本語の翻訳とサポートは[Chiela]さんが担当してくれています。[Chiela](https://twitter.com/certa)。ChielaさんもTwitchでライブ配信しています！ [stream](https://www.twitch.tv/hurricanechiela)!
+日本語の翻訳とサポートは[Chiela]さんが担当してくれています。[Chiela](https://twitter.com/hurricanechiela)。ChielaさんもTwitchでライブ配信しています！ [stream](https://www.twitch.tv/hurricanechiela)!
 
 ディープダンジョンのOverlay(DDO)とディープダンジョンターゲット情報(DDOTI)はソロディープダンジョンを到達しながらリアルタイムの情報を示すOverlayPluginのスキン(開発中)です。
 
