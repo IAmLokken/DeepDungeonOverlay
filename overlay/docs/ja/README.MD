@@ -33,7 +33,7 @@ _注意_: サポートされている言語を使用するには、ゲームク�
 # 現在の機能
 
 * スコア (推定)
-	* オーバーレイでは、現在のスコアの推定値がリアルタイムで表示されます。 詳しくは、[Score Details](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/ja/README.MD#%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AE%E8%A9%B3%E7%B4%B0)をご覧ください。
+	* オーバーレイでは、現在のスコアの推定値がリアルタイムで表示されます。 詳しくは、[スコアの詳細](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/ja/README.MD#%E3%82%B9%E3%82%B3%E3%82%A2%E3%81%AE%E8%A9%B3%E7%B4%B0)をご覧ください。
 	* 採点アルゴリズムは、Alphaさんの採点テストから構築されています。[スコアの説明](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
 	 
 * 魔土器:
