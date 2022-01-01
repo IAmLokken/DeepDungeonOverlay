@@ -21,7 +21,8 @@
         "POTDButton": "Clear PotD Saves",
         "HOHButton": "Clear HoH Saves",
         "ButtonInfo": "This window will display Deep Dungeon information while in a Deep Dungeon run.  While not in a Deep Dungeon run you can use the below buttons to clear save information stored by this overlay.",
-        "MapSettingInfo": "Check here if you want the score calculation to assume full map clears during your run."
+        "MapSettingInfo": "Check here if you want the score calculation to assume full map clears during your run.",
+        "DarkModeInfo": "To toggle between default and night mode, right click on the overlay."
     },
     "BossNames":
     [

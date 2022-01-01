@@ -21,7 +21,8 @@
         "POTDButton": "Effacer les sauvegardes du PdM",
         "HOHButton": "Effacer les sauvegardes du PdC",
         "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon.",
-        "MapSettingInfo": "En cochant cette case, le score affiché inclura le bonus de révélation complète de tous les étages que vous avez visités jusqu'ici."
+        "MapSettingInfo": "En cochant cette case, le score affiché inclura le bonus de révélation complète de tous les étages que vous avez visités jusqu'ici.",
+        "DarkModeInfo": "To toggle between default and night mode, right click on the overlay."
     },
     "BossNames":
     [

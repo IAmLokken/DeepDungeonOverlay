@@ -164,6 +164,7 @@ th,
     margin-bottom:5px;
     color:lightgray;
     position: relative;
+    display: inline-block;
 }
 #MapClearCheckBox{
     position:absolute;
@@ -175,6 +176,13 @@ th,
     vertical-align: top;
     position: relative;
     padding-left: 25px;
+}
+#DarkModeInfo{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-top: 15px;
+    padding-left: 5px;
 }
 
 #DangerEasy, #DangerCaution, #DangerScary, #DangerImpossible{
