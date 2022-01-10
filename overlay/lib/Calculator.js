@@ -120,7 +120,7 @@
             if (currentFloorNumber - floorStartedOn + 1 == 50 && dutyClearFailed == 101)
                 score += -2000;
             if (currentFloorNumber - floorStartedOn + 1 == 200 && dutyClearFailed == 101)
-                score += -4500 + 500000;  
+                score += -4500 + 320000;  
         }
 
         if (playerLevel < 61)
