@@ -184,6 +184,13 @@ th,
     padding-top: 15px;
     padding-left: 5px;
 }
+#VERSION{
+    vertical-align: top;    
+    padding-top: 1px;
+    padding-left: 5px;
+    font-size: 85%;
+    font-weight: normal;
+}
 
 #DangerEasy, #DangerCaution, #DangerScary, #DangerImpossible{
     width: 45px;

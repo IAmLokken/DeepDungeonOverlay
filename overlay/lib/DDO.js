@@ -13,7 +13,7 @@
     DDO.Bestiary = {};
     DDO.DataElements = {};
 
-    DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33'];
+    DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', '34'];
     DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60c', '445', '60d'];
     DDO.TrapInfo = {
         DetonatorTrapId: "188C",

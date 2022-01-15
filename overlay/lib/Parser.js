@@ -14,7 +14,7 @@
         else if (lineType == '26'){
             DDO.ParseEnchantments(data.line);
         }
-        else if (lineType == '33'){
+        else if (lineType == '33' || lineType == '34'){
             DDO.ParseChestsAndMap(data.line);
         }
         else if (lineType == '00'){
@@ -210,7 +210,8 @@
     }
 
     DDO.ParseChestsAndMap = function(data){
-        if(data[2].includes('8003')){
+        let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
+        if(data[2].includes('8003') && data[0] == '33'){
             if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
                 if (!DDO.sightActive){                
                     DDO.currentFloorStats.roomRevealCount++;
@@ -231,6 +232,13 @@
                 DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
                 DDO.UpdateScore();
             }
+        }
+        else if (data[0] == '34' && data[3].toUpperCase() == parseStrings.BandedCoffer)
+        {
+            DDO.currentFloorStats.chestCount--;
+            DDO.currentFloorSetStats.chestCount--;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
+            console.log("Intuition chests give no points." + DDO.currentFloorStats.chestCount);
         }
     }
 
