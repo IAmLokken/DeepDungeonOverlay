@@ -2,14 +2,14 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/displayDark.css?v=Faerie-1.5" />    
+    <link rel="stylesheet" href="css/displayDark.css?v=Faerie-1.6" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Faerie-1.5"></script>
-    <script src="lib/Locale.js?v=Faerie-1.5"></script>
-    <script src="lib/Bestiary.js?v=Faerie-1.5"></script>
-    <script src="lib/Parser.js?v=Faerie-1.5"></script>
-    <script src="lib/Calculator.js?v=Faerie-1.5"></script>
+    <script src="lib/DDO.js?v=Faerie-1.6"></script>
+    <script src="lib/Locale.js?v=Faerie-1.6"></script>
+    <script src="lib/Bestiary.js?v=Faerie-1.6"></script>
+    <script src="lib/Parser.js?v=Faerie-1.6"></script>
+    <script src="lib/Calculator.js?v=Faerie-1.6"></script>
 
     <script>
 
@@ -156,7 +156,7 @@
             <input type="checkbox" id="CheckBoxScore" onchange="DDO.EnableDisableElement(checked, 'score', true)"  />
         </span>
     </div>
-    <hr color="black">
+    <hr id="divider" color="black">
     
     <div id="ButtonInfo" class=Translate >-</div>    
 
@@ -251,7 +251,7 @@
         </tr>
     </table>
 
-    <div style="text-align: center;">
+    <div id="versiondiv" style="text-align: center;">
     <label id="VERSION">'Faerie-1.5' 2022/01/15</label>
 </div>
 <!--

@@ -175,6 +175,16 @@
         DDO.EnableDisableElement(true, 'CheckBoxStatistics', false);
         DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);
         DDO.EnableDisableElement(true, 'CheckBoxScore', false);
+        let version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
+        if (DDO.DisplayVersion()){
+            version.style.display = "";
+            divider.style.display = "";
+        }
+        else{
+            version.style.display = "none";
+            divider.style.display = "none";
+        }
 
         DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
         DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
@@ -209,6 +219,16 @@
         DDO.EnableDisableElement(false, 'CheckBoxPomanders', false);
         DDO.EnableDisableElement(false, 'CheckBoxScore', false);
         DDO.EnableDisableElement(false, 'timer', false);
+        let version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
+        if (DDO.DisplayVersion()){
+            version.style.display = "";
+            divider.style.display = "";
+        }
+        else{
+            version.style.display = "none";
+            divider.style.display = "none";
+        }
     }
 
     DDO.LoadNonRunConfig = function()
@@ -221,6 +241,11 @@
         DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
         DDO.EnableDisableElement(false, 'targetinfo', false);
+
+        let version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
+        version.style.display = "";
+        divider.style.display = "";
 
         if (DDO.SaveFiles['the Palace of the Dead'].length > 0 )
             DDO.DataElements.POTDButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['POTDButton']} (${DDO.SaveFiles['the Palace of the Dead'].length})`;
@@ -355,12 +380,28 @@
     DDO.EnableDisableElement = function(enabled, targetElement, saveConfig)
     {
         var element = document.getElementById(targetElement);
+        var version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
         if (enabled)
             element.style.display = "";
         if (!enabled)
             element.style.display = "none";
+
         if (saveConfig)
             DDO.SaveConfig();
+
+        if (DDO.DisplayVersion()){
+            version.style.display = "";
+            divider.style.display = "";
+        }
+        else{
+            version.style.display = "none";
+            divider.style.display = "none";
+        }
+    }
+    DDO.DisplayVersion = function()
+    {
+        return DDO.Config.scoreVisible || DDO.Config.pomandersVisible || DDO.Config.statsVisible || DDO.Config.bestiaryVisible;
     }
 
     DDO.EnableDisableSetting = function(enabled, setting, saveConfig){
