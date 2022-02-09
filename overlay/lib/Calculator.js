@@ -71,23 +71,29 @@
     {
         let score = 0;
 
-        score += 430 * (currentFloorNumber - floorStartedOn);
+        score += 430 * (currentFloorNumber - floorStartedOn); // Aetherpool(99/99 assumed) times floor ended on minus floor started on
 
-        if (playerLevel > 61 && currentFloorNumber - floorStartedOn + 1 > 20)
+        if (playerLevel > 61 && currentFloorNumber - floorStartedOn + 1 > 20) // HoH only (61+ only possible in HoH).  Gain 4,949 bonus at floor 30 card if you start at 1, at floor 100 card if you start at 21
             score += (49 * dutyClearFailed);
 
-        score += (currentFloorNumber - (floorStartedOn + Math.floor((currentFloorNumber - floorStartedOn) / 10))) * 50 * 91;
+        score += (currentFloorNumber - (floorStartedOn + Math.floor((currentFloorNumber - floorStartedOn) / 10))) * 50 * 91; // Score bonus for getting to each floor(minus bosses?)
+        // 409, 500 for Hoh, 819,000 for potd
 
-        score += Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250;
+        score += Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250;  //multiplier for each boss?
+        // 227,250 for HoH, 479,750 for potd
 
-        if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
+        if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)  //scorecard bonus? this is not duplicated per scorecard, applied once at current score card.
             score += dutyClearFailed * 250;
+        // 25,250 for HoH and potd
 
+        // HoH specific
         if (playerLevel > 61)
         {
-            let val = Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250;
+            let val = Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250; // boss multiplier? 227,250
+            // if we are on a boss floor (or last floor)
             if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
-                val += dutyClearFailed * 250;
+                val += dutyClearFailed * 250; // add additional 25,250 to val
+                
             if (val / (dutyClearFailed * 250) >= (3 - Math.floor(floorStartedOn / 10)))
                 score += 450 * dutyClearFailed;
             if (val / (dutyClearFailed * 250) >= (5 - Math.floor(floorStartedOn / 10)))
@@ -96,7 +102,7 @@
             if (currentFloorNumber - floorStartedOn + 1 == 30 && dutyClearFailed == 101)
                 score += -1000;
             if (currentFloorNumber - floorStartedOn + 1 == 100 && dutyClearFailed == 101)
-                score += -4500 + 400000;
+                score += -4500 + 350000;
         }
         else
         {
