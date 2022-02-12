@@ -35,10 +35,13 @@ body, html {
 #header{
     display: inline;
 }
-
+#timer{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+}
 #config p{
     display:inline;
-    padding-left:30px;
+    padding-left:20px;
     vertical-align:middle;
 }
 #config input{
