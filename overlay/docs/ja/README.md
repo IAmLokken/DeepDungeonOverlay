@@ -1,6 +1,6 @@
 # 紹介
 
-日本語の翻訳とサポートは[Chiela]さんが担当してくれています。[Chiela](https://twitter.com/hurricanechiela)。ChielaさんもTwitchでライブ配信しています！ [stream](https://www.twitch.tv/hurricanechiela)!
+日本語の翻訳とサポートは[Chiela](https://twitter.com/hurricanechiela)さんが担当してくれています。Chielaさんも [Twitchでライブ配信しています！](https://www.twitch.tv/hurricanechiela)
 
 ディープダンジョンのOverlay(DDO)とディープダンジョンターゲット情報(DDOTI)はソロディープダンジョンを到達しながらリアルタイムの情報を示すOverlayPluginのスキン(開発中)です。
 
@@ -12,7 +12,7 @@
 
 DDOはAdvanced Combat Tracker ([ACT](https://advancedcombattracker.com/))のソフトが必要です。さらに[FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin)と[OverlayPlugin](https://github.com/ngld/OverlayPlugin)を両方ACTでインストールしなければなりません。
 
-ACTのインストール方法とFFXIV_ACT_Pluginはここに書かれています:[Install ACT](https://github.com/FFXIV-ACT/setup-guide)
+ACTのインストール方法とFFXIV_ACT_Pluginはここに書かれています: [Install ACT](https://github.com/FFXIV-ACT/setup-guide)
 
 さらにここにDesperiusFFXIVが作った役に立つ情報が入っているチュートリアルがあります。 (2021年4月から): [Video Guide](https://www.youtube.com/watch?v=urZTrF864x8&t=0s)
 
