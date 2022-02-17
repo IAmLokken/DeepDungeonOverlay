@@ -20,7 +20,7 @@ Siehe [Installationsanleitung](INSTALL_DE.md).
 
 # Einrichtung für Streamer
 
-Siehe [Anweisungen](STREAMER_DE.md) zur Einrichtung für Streamer.
+Siehe [Anweisungen](STREAMER.md) zur Einrichtung für Streamer.
 
 # Aktuelle Features
 
