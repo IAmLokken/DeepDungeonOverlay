@@ -9,5 +9,7 @@
 # Overlayをインストールする方法
 
 <img src="../en/Install01.png">
+
+インストールの完了
 	
 [README](README.md)に戻る
