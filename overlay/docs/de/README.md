@@ -58,7 +58,7 @@ Siehe [Anweisungen](STREAMER.md) zur Einrichtung für Streamer.
 		:-: | :-: | :-:
 		![Sight](../../img/Sight.png) | ![Sound](../../img/Sound.png) | ![Proximity](../../img/Proximity.png)
 	* Gegnerinformationen (Dinge, die man über den Gegner wissen sollte, falls relevant).
-	* __Alle Informationen zum Bestiarium sind mit Erlaubnis Maygis Handbuch zu den Tiefen Gewölben entnommen worden.__.
+	* __Alle Informationen zum Bestiarium sind mit Erlaubnis Maygis Handbuch zu den Tiefen Gewölben entnommen worden.
 	 	* Folge Maygi auf [Twitch](https://www.twitch.tv/maygii), [Twitter](https://twitter.com/MaybeMaygi) und [Youtube](https://www.youtube.com/c/Maygi).
 		* [PotD Handbuch](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbuch](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
