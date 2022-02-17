@@ -1,8 +1,12 @@
 # Einleitung
 
+Deutsche Übersetzung und Support wird bereitgestellt von [Tancred](https://twitter.com/Tancred423)
+
 Deep Dungeon Overlay ist ein OverlayPlugin-Skin in Entwicklung, das dir Echtzeitinformationen während Sololäufen in den Tiefen Gewölben von FFXIV gibt.
 
-![DDO](DetailsFull01.png?raw=true)
+|![DDOTI](DDOTI.png?raw=true) | ![DDOTI](DDOTI_Dark.png?raw=true) |
+| :-: | :-: |
+|![DDO](DetailsFull01.png?raw=true) | ![DDO](DetailsFull01_Dark.png?raw=true) |
 
 # Voraussetzungen um DDO nutzen zu können
 
@@ -14,11 +18,11 @@ Zusätzlich hat Desperius FFXIV eine gute Videoanleitung erstellt: [Videoanleitu
 
 # Installation des DDO
 
-Siehe [Installationsanleitung](INSTALL_DE.md).
+Siehe [Installationsanleitung](INSTALL.md).
 
 # Einrichtung für Streamer
 
-Siehe [Anweisungen](STREAMER_DE.md) zur Einrichtung für Streamer.
+Siehe [Anweisungen](STREAMER.md) zur Einrichtung für Streamer.
 
 # Aktuelle Features
 
@@ -35,10 +39,10 @@ Siehe [Anweisungen](STREAMER_DE.md) zur Einrichtung für Streamer.
 
 * Statistiken:
 	* Besiegte Gegner
-	* Besiegte Mimiks (Korrigans)
+	* Besiegte Mimiks (Korrigane)
 	* Ausgelöste Fallen 
 	* Geöffnete Schatztruhen
-	* Erhaltene Ebeneneffekte (Enthexung zu benutzen, wird die Anzahl verringern)
+	* Erhaltene Ebeneneffekte (Die Anzahl wird durch Enthexung verringert.)
 	* Seltene Monster (Nur in PotD)
 	* Ebenensätze in 30 Minuten oder weniger abgeschlossen
 	
@@ -54,7 +58,7 @@ Siehe [Anweisungen](STREAMER_DE.md) zur Einrichtung für Streamer.
 		:-: | :-: | :-:
 		![Sight](../../img/Sight.png) | ![Sound](../../img/Sound.png) | ![Proximity](../../img/Proximity.png)
 	* Gegnerinformationen (Dinge, die man über den Gegner wissen sollte, falls relevant).
-	* __Alle Informationen zum Bestiarium sind mit Erlaubnis Maygis Handbuch zu den Tiefen Gewölben entnommen worden.__.
+	* __Alle Informationen zum Bestiarium sind mit Erlaubnis Maygis Handbuch zu den Tiefen Gewölben entnommen worden.__
 	 	* Folge Maygi auf [Twitch](https://www.twitch.tv/maygii), [Twitter](https://twitter.com/MaybeMaygi) und [Youtube](https://www.youtube.com/c/Maygi).
 		* [PotD Handbuch](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbuch](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)

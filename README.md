@@ -1,4 +1,4 @@
-# Introduction
+# Introduction <code>&#124;</code> [紹介](overlay/docs/ja/README.md) <code>&#124;</code> [Einleitung](overlay/docs/de/README.md)
 
 Deep Dungeon Overlay (DDO) and DDO Target Info (DDOTI) are in-development OverlayPlugin skins intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
@@ -27,9 +27,7 @@ Currently DDO supports English, French, Japanese, and German languages.  _This e
 
 # Installation of DDO / DDOTI
 
-Please see [Installation Instructions](overlay/docs/en/INSTALL.md).
-* [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md)  
-* [インストールマニュアル](overlay/docs/ja/INSTALL.md)
+Please see [Installation Instructions](overlay/docs/en/INSTALL.md). <code>&#124;</code> [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md) 
 
 # Setup For Streamers
 
@@ -40,7 +38,9 @@ Please see Setup For Streamers [Instructions](overlay/docs/en/STREAMER.md).
 * Score (Estimate)
 	* The overlay will give you a real-time estimate on your current score.  Please see the [Score Details](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) section for more information.
 	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
-	 
+
+* Monster Respawn Timer
+
 * Pomanders:
 	* Safety (Enabled if one was used this floor)
 	* Sight (Enabled if one was used this floor)
