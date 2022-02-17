@@ -1,5 +1,7 @@
 # Einleitung
 
+Deutsche Übersetzung und Support wird bereitgestellt von [Tancred](https://twitter.com/Tancred423)
+
 Deep Dungeon Overlay ist ein OverlayPlugin-Skin in Entwicklung, das dir Echtzeitinformationen während Sololäufen in den Tiefen Gewölben von FFXIV gibt.
 
 |![DDOTI](DDOTI.png?raw=true) | ![DDOTI](DDOTI_Dark.png?raw=true) |
