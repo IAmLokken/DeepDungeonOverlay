@@ -11,6 +11,3 @@ Cette option se trouve dans l'onglet *FFXIV Settings*, dans le groupe *Options*.
 <img src="../en/Install01.png">
 	
 Retour au [README](../../../README.md).
-  
-  
-Traduction par [Coccis77](https://twitter.com/Coccis77).
