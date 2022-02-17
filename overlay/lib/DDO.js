@@ -135,6 +135,11 @@
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
             }
+            else if (DDO.isInGroup && DDO.groupRunUnderway)
+            {
+                DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
+                DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+            }
             DDO.inbetweenArea = false;
         }
         else if (instanceName == DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstancePOTD ||
