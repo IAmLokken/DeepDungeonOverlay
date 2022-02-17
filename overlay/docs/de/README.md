@@ -16,7 +16,7 @@ Zusätzlich hat Desperius FFXIV eine gute Videoanleitung erstellt: [Videoanleitu
 
 # Installation des DDO
 
-Siehe [Installationsanleitung](INSTALL_DE.md).
+Siehe [Installationsanleitung](INSTALL.md).
 
 # Einrichtung für Streamer
 
