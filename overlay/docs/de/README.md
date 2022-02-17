@@ -2,7 +2,9 @@
 
 Deep Dungeon Overlay ist ein OverlayPlugin-Skin in Entwicklung, das dir Echtzeitinformationen während Sololäufen in den Tiefen Gewölben von FFXIV gibt.
 
-![DDO](DetailsFull01.png?raw=true)
+|![DDOTI](DDOTI.png?raw=true) | ![DDOTI](DDOTI_Dark.png?raw=true) |
+| :-: | :-: |
+|![DDO](DetailsFull01.png?raw=true) | ![DDO](DetailsFull01_Dark.png?raw=true) |
 
 # Voraussetzungen um DDO nutzen zu können
 
@@ -35,7 +37,7 @@ Siehe [Anweisungen](STREAMER_DE.md) zur Einrichtung für Streamer.
 
 * Statistiken:
 	* Besiegte Gegner
-	* Besiegte Mimiks (Korrigans)
+	* Besiegte Mimiks (Korrigane)
 	* Ausgelöste Fallen 
 	* Geöffnete Schatztruhen
 	* Erhaltene Ebeneneffekte (Enthexung zu benutzen, wird die Anzahl verringern)
