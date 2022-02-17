@@ -42,7 +42,7 @@ Siehe [Anweisungen](STREAMER.md) zur Einrichtung für Streamer.
 	* Besiegte Mimiks (Korrigane)
 	* Ausgelöste Fallen 
 	* Geöffnete Schatztruhen
-	* Erhaltene Ebeneneffekte (Enthexung zu benutzen, wird die Anzahl verringern)
+	* Erhaltene Ebeneneffekte (Die Anzahl wird durch Enthexung verringert.)
 	* Seltene Monster (Nur in PotD)
 	* Ebenensätze in 30 Minuten oder weniger abgeschlossen
 	
