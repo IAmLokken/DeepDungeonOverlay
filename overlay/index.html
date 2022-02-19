@@ -2,14 +2,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Faerie-1.7" />    
+    <link rel="stylesheet" href="css/display.css?v=Faerie-1.8" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Faerie-1.7"></script>
-    <script src="lib/Locale.js?v=Faerie-1.7"></script>
-    <script src="lib/Bestiary.js?v=Faerie-1.7"></script>
-    <script src="lib/Parser.js?v=Faerie-1.7"></script>
-    <script src="lib/Calculator.js?v=Faerie-1.7"></script>
+    <script src="lib/DDO.js?v=Faerie-1.8"></script>
+    <script src="lib/Locale.js?v=Faerie-1.8"></script>
+    <script src="lib/Bestiary.js?v=Faerie-1.8"></script>
+    <script src="lib/Parser.js?v=Faerie-1.8"></script>
+    <script src="lib/GroupParser.js?v=Faerie-1.8"></script>
+    <script src="lib/Calculator.js?v=Faerie-1.8"></script>
 
     <script>
 
@@ -107,10 +108,9 @@
             }
             else if(DDO.groupRunUnderway && 
                     !DDO.inbetweenArea && 
-                    data.line[0] == '00' &&
-                    data.rawLine.toUpperCase().includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['Transference']))
+                    DDO.GroupParsedLogNumbers.includes(data.line[0]))
             {
-                DDO.currentFloor++;
+                DDO.GroupProcessLogLine(data);
             }
             else if ((data.line[0] == '03' || data.line[0] == '12') && 
                     data.rawLine.includes(DDO.playerName))
@@ -252,7 +252,7 @@
     </table>
 
     <div id="versiondiv" style="text-align: center;">
-    <label id="VERSION">'Faerie-1.7' 2022/02/17</label>
+    <label id="VERSION">'Faerie-1.8' 2022/02/19</label>
 </div>
 <!--
     <div id="scoreDebug">

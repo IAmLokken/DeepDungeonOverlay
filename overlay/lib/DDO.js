@@ -14,6 +14,7 @@
     DDO.DataElements = {};
 
     DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', '34'];
+    DDO.GroupParsedLogNumbers = ['00', '12', '21', '22'];
     DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60c', '445', '60d'];
     DDO.TrapInfo = {
         DetonatorTrapId: "188C",
@@ -118,10 +119,10 @@
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+                DDO.soloRunUnderway = true;
                 DDO.LoadSoloConfig();
                 DDO.ClearFloorValues();
-                DDO.ClearFloorSetValues();
-                DDO.soloRunUnderway = true;                
+                DDO.ClearFloorSetValues();             
                 DDO.LoadSave();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;                 
@@ -130,8 +131,8 @@
                 DDO.StartFloorSetUI();
                 DDO.ResetVariables();
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
-                DDO.LoadPartyConfig();
                 DDO.groupRunUnderway = true;
+                DDO.LoadPartyConfig();
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
             }
@@ -211,19 +212,18 @@
 
     DDO.LoadPartyConfig = function()
     {
-        DDO.EnableDisableElement(true, 'config', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'settings', false);
+        DDO.EnableDisableElement(true, 'config', false);
+        DDO.EnableDisableElement(true, 'timer', false);
         DDO.EnableDisableElement(false, 'score', false);
-        DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
-        DDO.EnableDisableElement(true, 'targetinfo', false);
-        DDO.EnableDisableElement(false, 'CheckBoxBestiary', false);
-        DDO.EnableDisableElement(false, 'CheckBoxStatistics', false);
-        DDO.EnableDisableElement(false, 'CheckBoxPomanders', false);
         DDO.EnableDisableElement(false, 'CheckBoxScore', false);
-        DDO.EnableDisableElement(false, 'timer', false);
+        DDO.EnableDisableElement(false, 'CheckBoxStatistics', false);
+        DDO.EnableDisableElement(true, 'CheckBoxBestiary', false);
+        DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);
+        
         let version = document.getElementById("VERSION");
         let divider = document.getElementById("divider");
         if (DDO.DisplayVersion()){
@@ -234,6 +234,12 @@
             version.style.display = "none";
             divider.style.display = "none";
         }
+
+        DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
+        DDO.DataElements.BestiaryCheckBoxValue.checked = DDO.Config.bestiaryVisible;
+
+        DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
+        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
     }
 
     DDO.LoadNonRunConfig = function()
@@ -406,7 +412,12 @@
     }
     DDO.DisplayVersion = function()
     {
-        return DDO.Config.scoreVisible || DDO.Config.pomandersVisible || DDO.Config.statsVisible || DDO.Config.bestiaryVisible;
+        if (DDO.groupRunUnderway){
+            return DDO.Config.pomandersVisible || DDO.Config.bestiaryVisible;
+        }
+        else{
+            return DDO.Config.scoreVisible || DDO.Config.pomandersVisible || DDO.Config.statsVisible || DDO.Config.bestiaryVisible;
+        }            
     }
 
     DDO.EnableDisableSetting = function(enabled, setting, saveConfig){
