@@ -15,7 +15,7 @@
 
     DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', '34'];
     DDO.GroupParsedLogNumbers = ['00', '12', '21', '22'];
-    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60c', '445', '60d'];
+    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60C', '445', '60D'];
     DDO.TrapInfo = {
         DetonatorTrapId: "188C",
         WeaponEnhancementTrapId: "1893",
