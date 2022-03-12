@@ -20,7 +20,6 @@
     DDO.ScoreCalculator.speedRunScore = 0;
     DDO.ScoreCalculator.rezScore = 0;
     DDO.ScoreCalculator.killScore = 0;
-
     
     DDO.ScoreCalculator.CalulcateCurrentScore = function(saveFile, playerLevel, dutyClearFailed)
     {
@@ -33,7 +32,7 @@
         let floorStoppedOn = saveFile.floorStartedOn > saveFile.floorMaxScore ? saveFile.floorStartedOn : saveFile.floorMaxScore;
 
         DDO.ScoreCalculator.characterLevelScore = ((DDO.ScoreCalculator.aetherpoolArm + DDO.ScoreCalculator.aetherpoolArmor) * 10) + (playerLevel * 500);
-        DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel);
+        DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel, saveFile.deepDungeonName);
         DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
         DDO.ScoreCalculator.chestScore = DDO.ScoreCalculator.CalculateChestScore(saveFile.currentChestCount, dutyClearFailed);
         DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.currentSpecialKillCount, dutyClearFailed);
@@ -57,7 +56,7 @@
         else
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore;
 
-        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.deepDungeonName);
+        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.rareMonsterKills, saveFile.deepDungeonName);
 
         score += DDO.ScoreCalculator.killScore;
         
@@ -67,80 +66,75 @@
     }
 
 
-    DDO.ScoreCalculator.CalculateFloorScore = function(floorStartedOn, currentFloorNumber, dutyClearFailed, playerLevel)
+    DDO.ScoreCalculator.CalculateFloorScore = function(floorStartedOn, currentFloorNumber, dutyClearFailed, playerLevel, deepDungeonName)
     {
         let score = 0;
+        let floorDifference = currentFloorNumber - floorStartedOn;
+        let lastBossFloorCompleted =  Math.floor((currentFloorNumber - floorStartedOn) / 10);
 
-        score += 430 * (currentFloorNumber - floorStartedOn); // Aetherpool(99/99 assumed) times floor ended on minus floor started on
+        score += 430 * floorDifference; // Aetherpool(99/99 assumed) times floor ended on minus floor started on
 
-        if (playerLevel > 61 && currentFloorNumber - floorStartedOn + 1 > 20) // HoH only (61+ only possible in HoH).  Gain 4,949 bonus at floor 30 card if you start at 1, at floor 100 card if you start at 21
-            score += (49 * dutyClearFailed);
-
-        score += (currentFloorNumber - (floorStartedOn + Math.floor((currentFloorNumber - floorStartedOn) / 10))) * 50 * 91; // Score bonus for getting to each floor(minus bosses?)
+        score += (currentFloorNumber - (floorStartedOn + lastBossFloorCompleted)) * 50 * 91; // Score bonus for getting to each floor(minus bosses?)
         // 409, 500 for Hoh, 819,000 for potd
 
-        score += Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250;  //multiplier for each boss?
+        score += lastBossFloorCompleted * dutyClearFailed * 300;  //multiplier for each boss (minimum 300, some are worth more/less, adjusted further down)
         // 227,250 for HoH, 479,750 for potd
 
-        if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)  //scorecard bonus? this is not duplicated per scorecard, applied once at current score card.
-            score += dutyClearFailed * 250;
-        // 25,250 for HoH and potd
+        // floor 100 scoreboard bandaid; only applicable if starting at 1
+        if (floorDifference + 1 == 100 && dutyClearFailed == 101)
+        score -= 4500;
 
-        // HoH specific
-        if (playerLevel > 61)
+        if (deepDungeonName == 'Heaven-on-High')
         {
-            let val = Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 250; // boss multiplier? 227,250
-            // if we are on a boss floor (or last floor)
-            if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
-                val += dutyClearFailed * 250; // add additional 25,250 to val
-                
-            if (val / (dutyClearFailed * 250) >= (3 - Math.floor(floorStartedOn / 10)))
+            // 5050 bonus for reaching last floor (separate from completion bonus.  You get this if you timeout on last floor rip)
+            if (currentFloorNumber == 100){
+                score += 50 * dutyClearFailed;
+            }
+            
+            // adding additional 450 for floor 30 boss
+            // removing 50 for first boss (weather thats floor 10 or 30)
+            score += 400 * dutyClearFailed;
+
+            // Floor 30 scoreboard bandaid; only applicable if starting at 1
+            if (floorDifference + 1 == 30)
+                score -= 1000;
+
+            // Clear bonus
+            if (currentFloorNumber == 100)
+                score += -4500 + 3200 * dutyClearFailed;
+        }
+
+
+        if (deepDungeonName == 'the Palace of the Dead')
+        {
+            // 5050 bonus for reaching last floor (separate from completion bonus.  You get this if you timeout on last floor rip)
+            if (currentFloorNumber == 200){
+                score += 50 * dutyClearFailed;
+            }
+            
+            // removing 50 for first boss (weather thats floor 10 or 60)
+            score -= 50 * dutyClearFailed;
+
+            // Floor 50 boss bonus
+            if (floorStartedOn == 1)
                 score += 450 * dutyClearFailed;
-            if (val / (dutyClearFailed * 250) >= (5 - Math.floor(floorStartedOn / 10)))
-                score += 100 * dutyClearFailed;
+            // Floor 100 boss bonus
+            score += 450 * dutyClearFailed;
 
-            if (currentFloorNumber - floorStartedOn + 1 == 30 && dutyClearFailed == 101)
-                score += -1000;
-            if (currentFloorNumber - floorStartedOn + 1 == 100 && dutyClearFailed == 101)
-                score += -4500 + 350000;
-        }
-        else
-        {
-            score += Math.floor((currentFloorNumber - floorStartedOn) / 10) * dutyClearFailed * 50;
-
-            if (currentFloorNumber % 10 == 0 && dutyClearFailed == 101)
-                score += dutyClearFailed * 50;
-            if (floorStartedOn == 1)
-                score -= dutyClearFailed * 50 * Math.min(Math.floor(currentFloorNumber / 10), 1);
-            if (floorStartedOn == 1)
+            // 2000 point deduction for starting floor 51
+            if (floorStartedOn == 51)
+                score -= 2000;
+            
+            // Clear bonus
+            if (currentFloorNumber == 200)
             {
-                if (currentFloorNumber > 30 || (currentFloorNumber == 30 && dutyClearFailed == 101))
-                    score += dutyClearFailed * 0 * 0; 
-                if (currentFloorNumber > 50 || (currentFloorNumber == 50 && dutyClearFailed == 101))
-                    score += dutyClearFailed * 450;
+                if (floorDifference + 1 == 200)
+                    score += -9500 + 3200 * dutyClearFailed;
+                if (floorDifference + 1 == 150)
+                    score += -7000 + 3200 * dutyClearFailed;
             }
-            if (currentFloorNumber > 100 || (currentFloorNumber == 100 && dutyClearFailed == 101))
-                score += dutyClearFailed * 450;
-            if (currentFloorNumber - floorStartedOn + 1 == 100 && dutyClearFailed == 101)
-                score += -4500;
-            if (currentFloorNumber - floorStartedOn + 1 == 50 && dutyClearFailed == 101)
-                score += -2000;
-            if (currentFloorNumber - floorStartedOn + 1 == 200 && dutyClearFailed == 101)
-                score += 0;
-                //score += -4500 + 500000;  
-        }
-
-        if (playerLevel < 61)
-        {
-            if (currentFloorNumber > 60 || (currentFloorNumber == 60 && dutyClearFailed == 101))
-            {
-                if (floorStartedOn == 51)
-                    score += -50 * dutyClearFailed;
-                else if (currentFloorNumber < 100)
-                    score += -50 * dutyClearFailed;
-            }
-        }
-
+        }        
+        
         return score;
     }
 
@@ -224,24 +218,26 @@
         return score;
     }
     
-    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, mimicKills, deepDungeonName){
+    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, mimicKills, rareMonsterKills, deepDungeonName){
         let score = 0;
 
-        // On odd floor sets mobs are worth bonus points (except mimics and korrigans)
+        // HoH floor 1-30 are normal kill values
+        // HoH floor 31-100 are bonus kill values excluding mimics and bosses
         if (deepDungeonName == 'Heaven-on-High'){
             for(var i = 0; i < 10; i++){
-                let oddSet = (i + 1) % 2 != 0 ? true : false;
-                if (oddSet){
+                if (i < 3){
                     score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * mimicKills[i];
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (mimicKills[i]);
                     score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - mimicKills[i]);
                 }
             }            
         }
-        // Above floor 100 mobs are worth bonus points (except mimics and korrigans)
-        else
+        
+        // Potd floor 1-100 are normal kill values
+        // Potd floor 101-200 are bonus kill values excluding mimics, rare monsters, and bosses
+        if (deepDungeonName == 'the Palace of the Dead')
         {
             for (var i = 0; i < 20; i++)
             {
@@ -249,11 +245,12 @@
                     score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * mimicKills[i];
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (mimicKills[i]);
                     score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (floorKills[i] - mimicKills[i]);
                 }
             }
         }
+
         return score;
     }
 
