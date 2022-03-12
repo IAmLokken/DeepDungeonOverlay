@@ -17,4 +17,4 @@ Falls du eine Spielaufnahme überträgst und du das Overlay im Stream einblenden
 
 Einrichtung abgeschlossen.
 
-Zurück zur [README](README_DE.md).
+Zurück zur [README](README.md).

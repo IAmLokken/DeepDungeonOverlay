@@ -21,7 +21,8 @@
         "POTDButton": "死者の宮殿のセーブデータをリセットする",
         "HOHButton": "アメノミハシラのセーブデータをリセットする",
         "ButtonInfo": "ディープダンジョンの中にいると、この画面はDDについての情報を表示します。ディープダンジョン以外にいる際には、以下のボタンでこのアプリのセーブデータがリセットできます。",
-        "MapSettingInfo": "スコアの計算に関して、完全現れたマップスコアを数えたかったら、ここで押してください。"
+        "MapSettingInfo": "スコアの計算に関して、完全現れたマップスコアを数えたかったら、ここを押してください。",
+        "DarkModeInfo": "ナイトモードに変更したかったら、右クリックしてください"
     },
     "BossNames":
     [
@@ -47,6 +48,11 @@
         "CurrentInstanceHOH": "Heaven-on-High",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "Floor": "現在の階層",
+        "HoHFloor": "層",
+        "PotDFloor": "階",
+        "ZoneIn": "の攻略を開始した",
+        "BandedCoffer": "埋もれた財宝",
         "QuiveringCoffer": "うごめく宝箱",
         "Mimic": "ミミック",
         "Korrigan": "コリガン",

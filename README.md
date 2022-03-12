@@ -1,10 +1,10 @@
-# Introduction
+# Introduction <code>&#124;</code> [紹介](overlay/docs/ja/README.md) <code>&#124;</code> [Einleitung](overlay/docs/de/README.md)
 
 Deep Dungeon Overlay (DDO) and DDO Target Info (DDOTI) are in-development OverlayPlugin skins intended to give you real-time information during solo excursions into FFXIV Deep Dungeons.
 
-![DDOTI](overlay/docs/en/DDOTI.png?raw=true)
-
-![DDO](overlay/docs/en/DetailsFull01.png?raw=true) 
+|![DDOTI alt <](overlay/docs/en/DDOTI.png?raw=true) | ![DDOTI alt ><](overlay/docs/en/DDOTI_Dark.png?raw=true) |
+| :-: | :-: |
+|![DDO](overlay/docs/en/DetailsFull01.png?raw=true) | ![DDO](overlay/docs/en/DetailsFull01_Dark.png?raw=true) |
 
 # Requirements to use DDO / DDOTI
 
@@ -18,7 +18,7 @@ Additionally Desperius FFXIV has a good video tutorial (current as of April 2021
 
 Currently DDO supports English, French, Japanese, and German languages.  _This excludes most enemy notes. (English and Japanese only)_ 
 * French translation and support provided by [Coccis77](https://twitter.com/Coccis77). 
-* Japanese translation and support provided by [Chiela](https://twitter.com/certa). They also [stream](https://www.twitch.tv/hurricanechiela)!
+* Japanese translation and support provided by [Chiela](https://twitter.com/HurricaneChiela). They also [stream](https://www.twitch.tv/hurricanechiela)!
 * German translation and support provided by [Tancred](https://twitter.com/Tancred423). 
 
 
@@ -27,9 +27,7 @@ Currently DDO supports English, French, Japanese, and German languages.  _This e
 
 # Installation of DDO / DDOTI
 
-Please see [Installation Instructions](overlay/docs/en/INSTALL.md).
-* [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md)  
-* [インストールマニュアル](overlay/docs/ja/INSTALL_JA.md)
+Please see [Installation Instructions](overlay/docs/en/INSTALL.md). <code>&#124;</code> [Instructions d'installation](overlay/docs/fr/INSTALL_FR.md) 
 
 # Setup For Streamers
 
@@ -40,7 +38,9 @@ Please see Setup For Streamers [Instructions](overlay/docs/en/STREAMER.md).
 * Score (Estimate)
 	* The overlay will give you a real-time estimate on your current score.  Please see the [Score Details](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) section for more information.
 	* Scoring algorithm is built from Alpha's scoring testing: [Scoring explanation](https://docs.google.com/document/d/1MnR2Xtj2lol1LESgscI6yi_1xcAeP3FBwJecbD-EiwE/edit)
-	 
+
+* Monster Respawn Timer
+
 * Pomanders:
 	* Safety (Enabled if one was used this floor)
 	* Sight (Enabled if one was used this floor)
@@ -74,7 +74,7 @@ Please see Setup For Streamers [Instructions](overlay/docs/en/STREAMER.md).
 		* [PotD Handbook](https://docs.google.com/document/d/e/2PACX-1vQpzFuhmSwTXuZSmtnKLNgQ0nRhumCFaB8NvCXFXSjrBHPRT5lXY8jMR4RaCK1aNfcl_G5ph5DNNwfl/pub)
 		* [HoH Handbook](https://docs.google.com/document/d/1YVBSTOgJO-xOAB6YyKZEZRikjXFPle6Ihf_E7VdmQnI/edit)
 		* Additional mob aggro types tested with the help of Cloudburst's status spreadsheets [PotD](https://docs.google.com/spreadsheets/d/1nKI0-AApj-aiuUimrPkuQUJaa4DU8Ox7KqdC_ibme8E/edit#gid=12879293), [HoH](https://docs.google.com/spreadsheets/d/1aDlsiN3At6Fvfj_gg5weucDYqjQawQxGHFhJvzEUrek/edit#gid=375717345)
-	* **NOTE**: Bestiary information is the only section availble during group runs.
+	* **NOTE**: Score and Statistics are not tracked during group runs.
 	* **NOTE**: If any bestiary information is incorrect (or missing) please [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/issues).
 
 The Score, Pomander, Statistics, and Bestiary sections of the overlay can be hidden/shown via the checkboxes in the title bar of the overlay. Examples:

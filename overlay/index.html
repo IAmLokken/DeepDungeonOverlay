@@ -2,14 +2,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Faerie-1.0" />    
+    <link rel="stylesheet" href="css/display.css?v=Faerie-1.8.1" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Faerie-1.0"></script>
-    <script src="lib/Locale.js?v=Faerie-1.0"></script>
-    <script src="lib/Bestiary.js?v=Faerie-1.0"></script>
-    <script src="lib/Parser.js?v=Faerie-1.0"></script>
-    <script src="lib/Calculator.js?v=Faerie-1.0"></script>
+    <script src="lib/DDO.js?v=Faerie-1.8.1"></script>
+    <script src="lib/Locale.js?v=Faerie-1.8.1"></script>
+    <script src="lib/Bestiary.js?v=Faerie-1.8.1"></script>
+    <script src="lib/Parser.js?v=Faerie-1.8.1"></script>
+    <script src="lib/GroupParser.js?v=Faerie-1.8.1"></script>
+    <script src="lib/Calculator.js?v=Faerie-1.8.1"></script>
 
     <script>
 
@@ -19,7 +20,16 @@
             } else {
                 hideResizeHandle();
             }
-        });        
+        });
+        window.oncontextmenu = function(){
+            let css = document.getElementsByTagName("link").item(0);
+            if (css.href.includes('Dark')){
+                css.href = "css/display.css";
+            }
+            else{
+                css.href = "css/displayDark.css";
+            }
+        }        
         function displayResizeHandle() {
             document.documentElement.classList.add("resizeHandle");
         }
@@ -98,10 +108,9 @@
             }
             else if(DDO.groupRunUnderway && 
                     !DDO.inbetweenArea && 
-                    data.line[0] == '00' &&
-                    data.rawLine.toUpperCase().includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['Transference']))
+                    DDO.GroupParsedLogNumbers.includes(data.line[0]))
             {
-                DDO.currentFloor++;
+                DDO.GroupProcessLogLine(data);
             }
             else if ((data.line[0] == '03' || data.line[0] == '12') && 
                     data.rawLine.includes(DDO.playerName))
@@ -140,13 +149,14 @@
     <div id="header">
         Deep Dungeon Overlay
         <span id="config">
+            <p id="timer" style="display: none;">00:00</p>
             <input type="checkbox" id="CheckBoxBestiary" onchange="DDO.EnableDisableElement(checked, 'targetinfo', true)"  />
             <input type="checkbox" id="CheckBoxStatistics" onchange="DDO.EnableDisableElement(checked, 'statistics', true)"  />
             <input type="checkbox" id="CheckBoxPomanders" onchange="DDO.EnableDisableElement(checked, 'pomanders', true)"  />
             <input type="checkbox" id="CheckBoxScore" onchange="DDO.EnableDisableElement(checked, 'score', true)"  />
         </span>
     </div>
-    <hr color="black">
+    <hr id="divider" color="black">
     
     <div id="ButtonInfo" class=Translate >-</div>    
 
@@ -158,8 +168,9 @@
     <div id="settings">
         <input type="checkbox" id="MapClearCheckBox" name="MapClearCheckBox" onchange="DDO.EnableDisableSetting(checked, 'assumeFullMapClear', true)" />
         <label for="MapClearCheckBox" id="MapSettingInfo" class="Translate">-</label>
+        <label id="DarkModeInfo" class="Translate">-</label>
     </div>
-    
+   
     <table id="score">
         <tr>
             <td id="ScoreLabel" class="Translate" width="25%">-</td>
@@ -240,6 +251,13 @@
         </tr>
     </table>
 
+<<<<<<< HEAD
+=======
+    <div id="versiondiv" style="text-align: center;">
+    <label id="VERSION">'Faerie-1.8.1' 2022/03/10</label>
+</div>
+<!--
+>>>>>>> main
     <div id="scoreDebug">
         <button type="button" id="scoreDebugButton" onclick="DDO.CalculateScoreNoRoomReveal()">Calculate Score</button>
         <br/>

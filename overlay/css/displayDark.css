@@ -24,10 +24,8 @@ body, html {
 }
 
 #mainBody{
-    border: 3px ridge rgb(185, 185, 185);
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.8) inset;
-    background-color: rgba(40, 40, 150, 0.5);
+    border: 2px solid rgb(0, 0, 56);
+    background-color: rgba(28, 28, 28, 0.40);
     padding: 5px;
     /*height: 100%;
     width: 100%;  */
@@ -41,7 +39,6 @@ body, html {
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 16px !important;
 }
-
 #config p{
     display:inline;
     padding-left:20px;
@@ -117,7 +114,7 @@ label{
 #TargetInformation {
     padding: 4px;
     text-align:left;
-    background:rgb(0, 0, 70);
+    background:rgb(25, 25, 25);
     font-weight: normal;
 }
 
@@ -136,8 +133,8 @@ th,
 }
 
 #ButtonInfo{
-    color:white;
-    background-color: rgb(0, 0, 70);
+    color:lightgray;
+    background-color: rgb(25, 25, 25);
     padding: 5px;
     margin-bottom: 10px;
     border-bottom: 2px solid;
@@ -150,12 +147,12 @@ th,
     margin-left: 10px;
     margin-right: 10px;
     padding-bottom:10px;
-    color:white;
+    color:lightgray;
     border-bottom: 2px solid;
 }
 
 #settings{
-    background-color: rgb(0, 0, 70);
+    background-color: rgb(25, 25, 25);
     display:flex;
     align-items: center;
     vertical-align: top;
@@ -168,7 +165,7 @@ th,
     padding-left: 5px;
     padding-right: 5px;
     margin-bottom:5px;
-    color:white;
+    color:lightgray;
     position: relative;
     display: inline-block;
 }
@@ -191,7 +188,7 @@ th,
     padding-left: 5px;
 }
 #VERSION{
-    vertical-align: top;
+    vertical-align: top;    
     font-size: 85%;
     font-weight: normal;
 }
@@ -202,8 +199,8 @@ th,
 }
 
 button{
-    background-color: rgb(0, 0, 70);
-    color:white;
+    background-color: rgb(25, 25, 25);
+    color:lightgray;
     border: 2px solid white;
     padding: 4px 4px;
     /*border-radius: 5px;*/

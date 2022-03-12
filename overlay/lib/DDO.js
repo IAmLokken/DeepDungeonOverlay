@@ -13,8 +13,9 @@
     DDO.Bestiary = {};
     DDO.DataElements = {};
 
-    DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33'];
-    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60c', '445', '60d'];
+    DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', '34'];
+    DDO.GroupParsedLogNumbers = ['00', '12', '21', '22'];
+    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60C', '445', '60D'];
     DDO.TrapInfo = {
         DetonatorTrapId: "188C",
         WeaponEnhancementTrapId: "1893",
@@ -30,8 +31,8 @@
         PomanderOfRaising: "1AD4"
     };
 
-    DDO.RoomRangesPOTD = ['4:4:0', '3:6:421', '3:6:421', '3:6:421', '4:6:421', '3:6:421', '3:6:421', '3:6:421', '3:6:421', '4:6:421', '5:7:361', '5:7:361', '5:7:361', '5:7:361', '5:7:361', '5:8:316', '5:8:316', '5:8:316', '5:8:316', '5:8:316'];
-    DDO.RoomRangesHOH  = ['3:6:421', '3:6:421', '3:6:421', '5:7:361', '5:7:361', '5:8:316', '5:8:316', '5:8:316', '5:8:316', '5:8:316'];
+    DDO.RoomRangesPOTD = ['4:4:0:40', '3:6:421:60', '3:6:421:60', '3:6:421:60', '4:6:421:120', '3:6:421:60', '3:6:421:60', '3:6:421:60', '3:6:421:60', '4:6:421:120', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:8:316:300', '5:8:316:300', '5:8:316:300', '5:8:316:300', '5:8:316:300'];
+    DDO.RoomRangesHOH  = ['3:6:421:60', '3:6:421:60', '3:6:421:60', '5:7:361:600', '5:7:361:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600'];
 
     DDO.playerName = "NULL";
     DDO.playerWorld = "NULL";
@@ -118,10 +119,10 @@
             else if (!DDO.isInGroup && !DDO.soloRunUnderway){
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+                DDO.soloRunUnderway = true;
                 DDO.LoadSoloConfig();
                 DDO.ClearFloorValues();
-                DDO.ClearFloorSetValues();
-                DDO.soloRunUnderway = true;                
+                DDO.ClearFloorSetValues();             
                 DDO.LoadSave();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;                 
@@ -130,8 +131,13 @@
                 DDO.StartFloorSetUI();
                 DDO.ResetVariables();
             }else if (DDO.isInGroup && !DDO.groupRunUnderway){
-                DDO.LoadPartyConfig();
                 DDO.groupRunUnderway = true;
+                DDO.LoadPartyConfig();
+                DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
+                DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
+            }
+            else if (DDO.isInGroup && DDO.groupRunUnderway)
+            {
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
             }
@@ -159,6 +165,7 @@
             DDO.groupRunUnderway = false;
             DDO.inbetweenArea = false;
             DDO.currentInstance = instanceName;
+            clearInterval(DDO.ticker);
             DDO.LoadNonRunConfig(); 
         }
     }
@@ -168,7 +175,22 @@
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'settings', false);
-        DDO.EnableDisableElement(true, 'config', false);   
+        DDO.EnableDisableElement(true, 'config', false);
+        DDO.EnableDisableElement(true, 'timer', false);   
+        DDO.EnableDisableElement(true, 'CheckBoxBestiary', false);
+        DDO.EnableDisableElement(true, 'CheckBoxStatistics', false);
+        DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);
+        DDO.EnableDisableElement(true, 'CheckBoxScore', false);
+        let version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
+        if (DDO.DisplayVersion()){
+            version.style.display = "";
+            divider.style.display = "";
+        }
+        else{
+            version.style.display = "none";
+            divider.style.display = "none";
+        }
 
         DDO.DataElements.ScoreCheckBoxValue.checked = DDO.Config.scoreVisible;
         DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
@@ -190,14 +212,34 @@
 
     DDO.LoadPartyConfig = function()
     {
-        DDO.EnableDisableElement(false, 'config', false);
         DDO.EnableDisableElement(false, 'ButtonInfo', false);
         DDO.EnableDisableElement(false, 'saveManager', false);
         DDO.EnableDisableElement(false, 'settings', false);
+        DDO.EnableDisableElement(true, 'config', false);
+        DDO.EnableDisableElement(true, 'timer', false);
         DDO.EnableDisableElement(false, 'score', false);
-        DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
-        DDO.EnableDisableElement(true, 'targetinfo', false);
+        DDO.EnableDisableElement(false, 'CheckBoxScore', false);
+        DDO.EnableDisableElement(false, 'CheckBoxStatistics', false);
+        DDO.EnableDisableElement(true, 'CheckBoxBestiary', false);
+        DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);
+        
+        let version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
+        if (DDO.DisplayVersion()){
+            version.style.display = "";
+            divider.style.display = "";
+        }
+        else{
+            version.style.display = "none";
+            divider.style.display = "none";
+        }
+
+        DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
+        DDO.DataElements.BestiaryCheckBoxValue.checked = DDO.Config.bestiaryVisible;
+
+        DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
+        DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
     }
 
     DDO.LoadNonRunConfig = function()
@@ -210,6 +252,11 @@
         DDO.EnableDisableElement(false, 'pomanders', false);
         DDO.EnableDisableElement(false, 'statistics', false);
         DDO.EnableDisableElement(false, 'targetinfo', false);
+
+        let version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
+        version.style.display = "";
+        divider.style.display = "";
 
         if (DDO.SaveFiles['the Palace of the Dead'].length > 0 )
             DDO.DataElements.POTDButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['POTDButton']} (${DDO.SaveFiles['the Palace of the Dead'].length})`;
@@ -344,12 +391,33 @@
     DDO.EnableDisableElement = function(enabled, targetElement, saveConfig)
     {
         var element = document.getElementById(targetElement);
+        var version = document.getElementById("VERSION");
+        let divider = document.getElementById("divider");
         if (enabled)
             element.style.display = "";
         if (!enabled)
             element.style.display = "none";
+
         if (saveConfig)
             DDO.SaveConfig();
+
+        if (DDO.DisplayVersion()){
+            version.style.display = "";
+            divider.style.display = "";
+        }
+        else{
+            version.style.display = "none";
+            divider.style.display = "none";
+        }
+    }
+    DDO.DisplayVersion = function()
+    {
+        if (DDO.groupRunUnderway){
+            return DDO.Config.pomandersVisible || DDO.Config.bestiaryVisible;
+        }
+        else{
+            return DDO.Config.scoreVisible || DDO.Config.pomandersVisible || DDO.Config.statsVisible || DDO.Config.bestiaryVisible;
+        }            
     }
 
     DDO.EnableDisableSetting = function(enabled, setting, saveConfig){
@@ -407,6 +475,54 @@
         DDO.SaveFiles['Heaven-on-High'] = [];
         DDO.DataElements.HOHButton.innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['HOHButton'];
         DDO.SaveRuns();
+    }
+
+    DDO.InitiateTimer = function(offset){
+        clearInterval(DDO.ticker);
+        DDO.DataElements.TimerValue.innerText = '00:00';
+        DDO.DataElements.TimerValue.style.color = "white";
+        
+        let floorSetIndex = Math.floor(DDO.currentFloor / 10);
+        let timerValue = -1;
+        if (DDO.currentInstance == 'Heaven-on-High'){
+            let range = DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
+            timerValue += range[3];
+        }
+        else{
+            let range = DDO.RoomRangesPOTD[floorSetIndex].split(':').map(Number);
+            timerValue += range[3];
+        }
+
+        var timeInSecs;
+
+        function startTimer(secs){
+            timeInSecs = parseInt(secs);
+            DDO.ticker = setInterval(tick, 1000);
+        }
+
+        function tick( ){
+            var secs = timeInSecs;
+            if (secs > 0) {
+                timeInSecs--; 
+                }
+            else {
+                clearInterval(DDO.ticker);
+                startTimer(timerValue); 
+            }
+
+            var mins = Math.floor(secs/60);
+            secs %= 60;
+
+            var output = ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+            if (secs < 15 && mins == 0)
+                DDO.DataElements.TimerValue.style.color = "red";
+            else
+                DDO.DataElements.TimerValue.style.color = "white";
+
+            DDO.DataElements.TimerValue.innerText = output;
+        }
+        
+        startTimer(timerValue + offset);
     }
 
     DDO.UpdateScore = function()
@@ -488,6 +604,7 @@
         DDO.DataElements.AggroProximityImage = document.getElementById("AggroProximity");
         DDO.DataElements.TargetInformationValue = document.getElementById("TargetInformation");
 
+        DDO.DataElements.TimerValue = document.getElementById("timer");
         DDO.DataElements.BestiaryCheckBoxValue = document.getElementById("CheckBoxBestiary");
         DDO.DataElements.StatisticsCheckBoxValue = document.getElementById("CheckBoxStatistics");
         DDO.DataElements.PomandersCheckBoxValue = document.getElementById("CheckBoxPomanders");

@@ -21,7 +21,8 @@
         "POTDButton": "Lösche PotD Infos",
         "HOHButton": "Lösche HoH Infos",
         "ButtonInfo": "Sofern man sich im Tiefen Gewölbe befindet, zeigt dieses Fenster Informationen zum Tiefen Gewölbe an. Außerhalb des Tiefen Gewölbes kannst du die folgenden Schaltflächen benutzen, um gespeicherte Informationen des Overlays zu Spielständen zu löschen.",
-        "MapSettingInfo": "Kreuze dies an, falls du möchtest, dass die Berechnung deines Punktestands von einer vollständigen Aufdeckung der Karte ausgeht."
+        "MapSettingInfo": "Kreuze dies an, falls du möchtest, dass die Berechnung deines Punktestands von einer vollständigen Aufdeckung der Karte ausgeht.",
+        "DarkModeInfo": "Um zwischen Standard- und Nachtmodus umzuschalten, klicken Sie mit der rechten Maustaste auf das Overlay."
     },
     "BossNames":
     [
@@ -47,6 +48,11 @@
         "CurrentInstanceHOH": "Heaven-on-High",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "Floor": "EBENE",
+        "HoHFloor": "EBENE",
+        "PotDFloor": "EBENE",
+        "ZoneIn": "EBENE",
+        "BandedCoffer": "VERBORGENER SCHATZ",
         "QuiveringCoffer": "ZUCKENDE SCHNAPPTRUHE",
         "Mimic": "MIMIK",
         "Korrigan": "KORRIGANE",

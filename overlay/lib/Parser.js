@@ -14,7 +14,7 @@
         else if (lineType == '26'){
             DDO.ParseEnchantments(data.line);
         }
-        else if (lineType == '33'){
+        else if (lineType == '33' || lineType == '34'){
             DDO.ParseChestsAndMap(data.line);
         }
         else if (lineType == '00'){
@@ -102,15 +102,7 @@
 
                     // Reset pomander settings
                     DDO.speedRunBonus = true;
-                    DDO.triggerAffluence = false;
-                    DDO.triggerAlteration = false;
-                    DDO.triggerFlight = false;
-                    DDO.safetyActive = false;
-                    DDO.affluenceActive = false;
-                    DDO.alterationActive = false;
-                    DDO.flightActive = false;
-                    DDO.sightActive = false;
-                    DDO.raisingActive = false;
+                    DDO.ResetVariables();
 
                     DDO.UpdateScore();
 
@@ -218,7 +210,8 @@
     }
 
     DDO.ParseChestsAndMap = function(data){
-        if(data[2].includes('8003')){
+        let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
+        if(data[2].includes('8003') && data[0] == '33'){
             if(data[3] == '10000004' && DDO.currentFloor % 10 > 0){
                 if (!DDO.sightActive){                
                     DDO.currentFloorStats.roomRevealCount++;
@@ -239,6 +232,13 @@
                 DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
                 DDO.UpdateScore();
             }
+        }
+        else if (data[0] == '34' && data[3].toUpperCase() == parseStrings.BandedCoffer)
+        {
+            DDO.currentFloorStats.chestCount--;
+            DDO.currentFloorSetStats.chestCount--;
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
+            console.log("Intuition chests give no points." + DDO.currentFloorStats.chestCount);
         }
     }
 
@@ -270,6 +270,17 @@
             DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
             DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
+        }
+        else if ((logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && logMessage.includes(DDO.currentFloor)){
+            let val = DDO.currentFloor % 10;
+            if (val > 0){
+                if (val == 1){
+                    DDO.InitiateTimer(0);
+                }else {
+                    DDO.InitiateTimer(-5);
+                }
+                DDO.EnableDisableElement(true, "timer", false);
+            }
         }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
             DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
@@ -343,6 +354,9 @@
                 DDO.currentFloorSetStats.roomRevealCount++;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[Math.floor(DDO.currentFloor / 10)]
             }
+            clearInterval(DDO.ticker);
+            DDO.EnableDisableElement(false, "timer", false);
+
 
 
             DDO.DataElements.MonstersFloorValue.innerText = 0;

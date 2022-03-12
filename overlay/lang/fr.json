@@ -21,7 +21,8 @@
         "POTDButton": "Effacer les sauvegardes du PdM",
         "HOHButton": "Effacer les sauvegardes du PdC",
         "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon.",
-        "MapSettingInfo": "En cochant cette case, le score affiché inclura le bonus de révélation complète de tous les étages que vous avez visités jusqu'ici."
+        "MapSettingInfo": "En cochant cette case, le score affiché inclura le bonus de révélation complète de tous les étages que vous avez visités jusqu'ici.",
+        "DarkModeInfo": "Pour basculer entre le mode par défaut et le mode nuit, faites un clic droit sur la superposition."
     },
     "BossNames":
     [
@@ -47,6 +48,11 @@
         "CurrentInstanceHOH": "Heaven-on-High",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "Floor": "ÉTAGE",
+        "HoHFloor": "ÉTAGE",
+        "PotDFloor": "SOUS-SOL",
+        "ZoneIn": "LA MISSION",
+        "BandedCoffer": "TRÉSOR CACHÉ",
         "QuiveringCoffer": "COFFRE GIGOTANT",
         "Mimic": "MIMIC",
         "Korrigan": "KORRIGAN",
