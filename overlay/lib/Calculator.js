@@ -32,7 +32,7 @@
         let floorStoppedOn = saveFile.floorStartedOn > saveFile.floorMaxScore ? saveFile.floorStartedOn : saveFile.floorMaxScore;
 
         DDO.ScoreCalculator.characterLevelScore = ((DDO.ScoreCalculator.aetherpoolArm + DDO.ScoreCalculator.aetherpoolArmor) * 10) + (playerLevel * 500);
-        DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, playerLevel, saveFile.deepDungeonName);
+        DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, saveFile.deepDungeonName);
         DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
         DDO.ScoreCalculator.chestScore = DDO.ScoreCalculator.CalculateChestScore(saveFile.currentChestCount, dutyClearFailed);
         DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.currentSpecialKillCount, dutyClearFailed);
@@ -56,9 +56,21 @@
         else
             score += DDO.ScoreCalculator.characterLevelScore + DDO.ScoreCalculator.floorScore;
 
-        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.rareMonsterKills, saveFile.deepDungeonName);
+        DDO.ScoreCalculator.killScore = DDO.ScoreCalculator.CalculateKillScore(saveFile.floorStartedOn, floorStoppedOn, saveFile.floorKillCounts, saveFile.mimicKillCounts, saveFile.rareKillCounts, saveFile.deepDungeonName);
 
         score += DDO.ScoreCalculator.killScore;
+
+        console.log('character level score: ' + DDO.ScoreCalculator.characterLevelScore);
+        console.log('floor score: ' + DDO.ScoreCalculator.floorScore);
+        console.log('floor reveal score: ' + DDO.ScoreCalculator.revealedScore);
+        console.log('chest score: ' + DDO.ScoreCalculator.chestScore);
+        console.log('rare enemy score: ' + DDO.ScoreCalculator.uniqueEnemyScore);
+        console.log('mimic score: ' + DDO.ScoreCalculator.mimicScore);
+        console.log('enchantment score: ' + DDO.ScoreCalculator.enchantmentScore);
+        console.log('trap score: ' + DDO.ScoreCalculator.trapScore);
+        console.log('speedrun score: ' + DDO.ScoreCalculator.speedRunScore);
+        console.log('rez score: ' + DDO.ScoreCalculator.rezScore);
+        console.log('kill score: ' + DDO.ScoreCalculator.killScore);
         
         //returnValue = String.Format("{0:n0}", score);
         //return returnValue;
@@ -66,7 +78,7 @@
     }
 
 
-    DDO.ScoreCalculator.CalculateFloorScore = function(floorStartedOn, currentFloorNumber, dutyClearFailed, playerLevel, deepDungeonName)
+    DDO.ScoreCalculator.CalculateFloorScore = function(floorStartedOn, currentFloorNumber, dutyClearFailed, deepDungeonName)
     {
         let score = 0;
         let floorDifference = currentFloorNumber - floorStartedOn;
@@ -101,7 +113,7 @@
 
             // Clear bonus
             if (currentFloorNumber == 100)
-                score += -4500 + 3200 * dutyClearFailed;
+                score += 3200 * dutyClearFailed;
         }
 
 
@@ -218,19 +230,20 @@
         return score;
     }
     
-    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, mimicKills, rareMonsterKills, deepDungeonName){
+    DDO.ScoreCalculator.CalculateKillScore = function(floorStartedOn, currentFloorNumber, floorKills, mimicKills, rareKillCounts, deepDungeonName){
         let score = 0;
 
         // HoH floor 1-30 are normal kill values
         // HoH floor 31-100 are bonus kill values excluding mimics and bosses
         if (deepDungeonName == 'Heaven-on-High'){
             for(var i = 0; i < 10; i++){
+                let nonBonusMobs = i < 9 ? mimicKills[i] + 1 : mimicKills[i];
                 if (i < 3){
                     score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (mimicKills[i]);
-                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - mimicKills[i]);
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (nonBonusMobs);
+                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - nonBonusMobs);
                 }
             }            
         }
@@ -241,12 +254,14 @@
         {
             for (var i = 0; i < 20; i++)
             {
+                let nonBonusMobs = i < 19 ? mimicKills[i] + rareKillCounts[i] + 1 : mimicKills[i] + rareKillCounts[i];
+                //let nonBonusMobs = i < 19 ? mimicKills[i] + 1 : mimicKills[i];
                 if (i < 10){
                     score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (mimicKills[i]);
-                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (floorKills[i] - mimicKills[i]);
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (nonBonusMobs);
+                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (floorKills[i] - nonBonusMobs);
                 }
             }
         }
@@ -281,8 +296,9 @@
 
         let mapRevealsToAdd = totalPossibleMapReveals - mapRevealsEarned;
 
-        return  dutyClearFailed * mapRevealsToAdd * 25;
+        console.log(dutyClearFailed * mapRevealsToAdd * 25);
 
+        return  dutyClearFailed * mapRevealsToAdd * 25;
     }
 
 })()

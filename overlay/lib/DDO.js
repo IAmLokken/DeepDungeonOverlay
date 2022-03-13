@@ -278,9 +278,10 @@
             {
                 DDO.currentSaveFileIndex = i;
                 // This if statement is to include items in the save file that may not have existed when a run was started
-                if(!DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts || !DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts){
+                if(!DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts || !DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts || !DDO.SaveFiles[DDO.currentInstance][i].rareKillCounts){
                     DDO.SaveFiles[DDO.currentInstance][i].mimicKillCounts = new Array(20).fill(0);
                     DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts = new Array(20).fill(0);
+                    DDO.SaveFiles[DDO.currentInstance][i].rareKillCounts = new Array(20).fill(0);
                 }
                 DDO.Snapshot = JSON.parse(JSON.stringify(DDO.SaveFiles[DDO.currentInstance][i]));
                 saveFound = true;
@@ -299,6 +300,7 @@
             newSave.floorKillCounts = new Array(20).fill(0);
             newSave.roomRevealCounts = new Array(20).fill(0);
             newSave.mimicKillCounts = new Array(20).fill(0);
+            newSave.rareKillCounts = new Array(20).fill(0);
             newSave.currentSpecialKillCount = 0;
             newSave.currentTrapsTriggered = 0;
             newSave.currentMimicCount = 0;
@@ -623,9 +625,10 @@
         DDO.DataElements.PomAlterationEnabledImage = document.getElementById("PomAlterationEnabled");
         DDO.DataElements.PomFlightEnabledImage = document.getElementById("PomFlightEnabled");            
     }
+
     DDO.CalculateScoreNoRoomReveal = async function()
     {
-        let file = "DDT_TEST-HoH_FINH.DDT";
+        let file = "DDT_TEST-PotD_MATT.DDT";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = () => 
         {
@@ -651,7 +654,7 @@
                 {
                     return;
                 }
-                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json[0], 70, 101);
+                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json[0], 60, 101);
                 score += DDO.ScoreCalculator.CalculateMaxRoomReveal(json[0], 101); 
 
                 document.getElementById("debugScore").innerText = score.toLocaleString();

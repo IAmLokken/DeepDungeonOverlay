@@ -38,7 +38,7 @@
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount} (${DDO.currentFloorSetStats.korriganCount || 0})`;
             DDO.DataElements.MimicsTotalValue.innerText = `${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount} (${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount})`;
 
-            DDO.AddKill(Math.floor(DDO.currentFloor / 10), true);
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10), true, false);
             DDO.UpdateScore();
         }
         // Check for korrigan
@@ -51,7 +51,7 @@
             DDO.DataElements.MimicsSetValue.innerText = `${DDO.currentFloorSetStats.mimicCount || 0} (${DDO.currentFloorSetStats.korriganCount})`;
             DDO.DataElements.MimicsTotalValue.innerText = `${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentMimicCount} (${DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKorriganCount})`;
 
-            DDO.AddKill(Math.floor(DDO.currentFloor / 10), true);
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10), true, false);
             DDO.UpdateScore();
         }
         // Check for rare mob
@@ -64,7 +64,7 @@
             DDO.DataElements.RareMonstersSetValue.innerText = DDO.currentFloorSetStats.rareKillCount;
             DDO.DataElements.RareMonstersTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpecialKillCount;
 
-            DDO.AddKill(Math.floor(DDO.currentFloor / 10), false);
+            DDO.AddKill(Math.floor(DDO.currentFloor / 10), false, true);
             DDO.UpdateScore();
         }
         // Check for player death
@@ -86,14 +86,14 @@
         else{
             // Kills on non-boss floors
             if(DDO.currentFloor % 10 != 0){
-                DDO.AddKill(Math.floor(DDO.currentFloor / 10), false);
+                DDO.AddKill(Math.floor(DDO.currentFloor / 10), false, false);
                 DDO.UpdateScore();
             }
             // Kills on boss floor
             else{
                 if (DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].BossNames.includes(nameOfMob)){
                     
-                    DDO.AddKill(Math.floor(DDO.currentFloor / 10) - 1, false);
+                    DDO.AddKill(Math.floor(DDO.currentFloor / 10) - 1, false, false);
                     
                     DDO.DataElements.SpeedRunsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount;
 
@@ -370,13 +370,15 @@
         }
     }
 
-    DDO.AddKill = function(floorSet, isMimic){
+    DDO.AddKill = function(floorSet, isMimic, isRare){
         DDO.currentFloorStats.killCount++;
         DDO.currentFloorSetStats.killCount++;
         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].totalKillCount++;
         DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorKillCounts[floorSet]++;
         if (isMimic)
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].mimicKillCounts[floorSet]++;
+        if (isRare)
+            DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].rareKillCounts[floorSet]++;
 
         DDO.DataElements.MonstersFloorValue.innerText = DDO.currentFloorStats.killCount;
         DDO.DataElements.MonstersSetValue.innerText = DDO.currentFloorSetStats.killCount;
