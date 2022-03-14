@@ -19,8 +19,8 @@ We currently break down score in Deep Dungeon into 11 categories.  All categorie
 * [Floor Enchantments](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#floor-enchantments)
 * [Traps Triggered](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#traps-triggered)
 * [Speed Run Bonuses](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#speed-run-bonuses)
-* [Re-raisings Used]
-* [Monsters Killed]
+* [Re-raisings Used](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#re-raisings-used)
+* [Monsters Killed](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#monsters-killed)
 
 A common multiplier used across all calculations is ``DutyClearFailed``.  For the purposes of the overlay this is always 101 since we assume no K.O. on the file.
 
@@ -204,7 +204,7 @@ For floors 31-100 in Heaven-on-High and 101-200 in the Palace of the Dead, monst
 
 ---
 
-[DeepDungeonOverlay](https://github.com/IAmLokken/DeepDungeonOverlay).
+[DeepDungeonOverlay](https://github.com/IAmLokken/DeepDungeonOverlay)
 
 
 
