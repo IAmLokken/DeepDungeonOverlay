@@ -26,7 +26,7 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 >No.  
 
 ### Do exploding chests affect score?
->No.  Exploding chests are currently believed to be score neutral (i.e. they do not count as chests or traps)
+>No.  Exploding chests are currently believed to be score neutral (i.e. they do not count as chests or traps).
 
 ### Are luring traps good for score?
 >Yes.  Killing the three monsters spawned from a luring trap is worth more points than those lost by triggering the trap.
