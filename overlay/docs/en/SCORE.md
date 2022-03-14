@@ -10,15 +10,15 @@ _Please review [Scoring explanation](https://github.com/IAmLokken/DeepDungeonOve
 
 We currently break down score in Deep Dungeon into 11 categories.  All categories are then combined additively to arrive at the final score.
 
-* [Character Level and Aetherpool]
-* [Floors Cleared]
-* [Maps Revealed]
-* [Chests Opened]
-* [Rare Monsters Killed]
-* [Mimics and Korrigans Killed]
-* [Floor Enchantments]
-* [Traps Triggered]
-* [Speed Run Bonuses]
+* [Character Level and Aetherpool](https://github.com/IAmLokken/DeepDungeonOverlay/edit/main/overlay/docs/en/SCORE.md#character-level-and-aetherpool)
+* [Floors Cleared](https://github.com/IAmLokken/DeepDungeonOverlay/edit/main/overlay/docs/en/SCORE.md#floors-cleared)
+* [Maps Revealed](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#maps-revealed)
+* [Chests Opened](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#chests-opened)
+* [Rare Monsters Killed](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#rare-monsters-killed)
+* [Mimics and Korrigans Killed](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#mimics-and-korrigans-killed)
+* [Floor Enchantments](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#floor-enchantments)
+* [Traps Triggered](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#traps-triggered)
+* [Speed Run Bonuses](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#speed-run-bonuses)
 * [Re-raisings Used]
 * [Monsters Killed]
 
@@ -177,7 +177,7 @@ Finishing a floor set before receiving the '30 minute' warning awards bonus poin
 
 +``DutyClearFailed * NumberOfSpeedRunSets * 150``
 
-#Re-raisings Used
+# Re-raisings Used
 
 Dying and being resurrected by a Pomander of Raising reduces score.
 
