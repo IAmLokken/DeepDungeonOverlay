@@ -34,4 +34,5 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 ---
 
 Go To [DeepDungeonOverlay](https://github.com/IAmLokken/DeepDungeonOverlay)
+
 Go To [Score Deep Dive](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md)
