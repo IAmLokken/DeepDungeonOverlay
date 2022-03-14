@@ -17,19 +17,19 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 ---
 
 ### Do the buff pets in Heaven-on-High affect score?
-* No. Do note that it is believed that they take a spawn point that would have otherwise been a monster. 
+>No. Do note that it is believed that they take a spawn point that would have otherwise been a monster. 
 
 ### Does using pomanders affect score?
-* No.  Only looting pomanders via opening chests affects score.
+>No.  Only looting pomanders via opening chests affects score.
 
 ### Do Banded Coffers (intuition chests) affect score?
-* No.  
+>No.  
 
 ### Do exploding chests affect score?
-* No.  Exploding chests are currently believed to be score neutral (i.e. they do not count as chests or traps)
+>No.  Exploding chests are currently believed to be score neutral (i.e. they do not count as chests or traps)
 
 ### Are luring traps good for score?
-* Yes.  Killing the three monsters spawned from a luring trap is worth more points than those lost by triggering the trap.
+>Yes.  Killing the three monsters spawned from a luring trap is worth more points than those lost by triggering the trap.
 
 ---
 
