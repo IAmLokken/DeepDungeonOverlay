@@ -10,8 +10,8 @@ _Please review [Scoring explanation](https://github.com/IAmLokken/DeepDungeonOve
 
 We currently break down score in Deep Dungeon into 11 categories.  All categories are then combined additively to arrive at the final score.
 
-* [Character Level and Aetherpool](https://github.com/IAmLokken/DeepDungeonOverlay/edit/main/overlay/docs/en/SCORE.md#character-level-and-aetherpool)
-* [Floors Cleared](https://github.com/IAmLokken/DeepDungeonOverlay/edit/main/overlay/docs/en/SCORE.md#floors-cleared)
+* [Character Level and Aetherpool](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#character-level-and-aetherpool)
+* [Floors Cleared](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#floors-cleared)
 * [Maps Revealed](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#maps-revealed)
 * [Chests Opened](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#chests-opened)
 * [Rare Monsters Killed](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md#rare-monsters-killed)
