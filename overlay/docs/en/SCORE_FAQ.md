@@ -13,6 +13,7 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 * [Do Banded Coffers (intuition chests) affect score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#do-banded-coffers-intuition-chests-affect-score)
 * [Do exploding chests affect score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#do-exploding-chests-affect-score)
 * [Are luring traps good for score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#are-luring-traps-good-for-score)
+* Do boss adds affect score?
 
 ---
 
@@ -30,6 +31,9 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 
 ### Are luring traps good for score?
 >Yes.  Killing the three monsters spawned from a luring trap is worth more points than those lost by triggering the trap.
+
+### Do boss adds affect score?
+>No.
 
 ---
 
