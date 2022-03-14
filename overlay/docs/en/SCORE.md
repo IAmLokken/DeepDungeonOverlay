@@ -26,7 +26,7 @@ A common multiplier used across all calculations is ``DutyClearFailed``.  For th
 
 # Character Level and Aetherpool
 
->Value for aetherpool and player level
+>Value for aetherpool and player level:
 
 +`((Aetherpool Arm + Aetherpool Armor) * 10) + (Player Level * 500)`
 
@@ -49,19 +49,19 @@ Due to how the overlay works, ``CurrentFloorNumber`` will always be 30, 100, or 
 
 ### Calculations for Both Deep Dungeons
 
->Value for floors completed adjusted by aetherpool.  This is normally reduced depending on aetherpool, but the overlay assumes 99/99.
+>Value for floors completed adjusted by aetherpool (This is normally reduced depending on aetherpool, but the overlay assumes 99/99.):
 
 +`` 430 * FloorsCleared ``
 
->Value for non-boss floors player arrives on
+>Value for non-boss floors player arrives on:
 
 +`` (CurrentFloorNumber - (FloorStartedOn + NumberOfBossesKilled)) * 50 * 91 ``
 
->Value bonus for bosses.  Most are 300 but there are exceptions that are adjusted for further down
+>Value bonus for bosses (Most are 300 but there are exceptions that are adjusted for further down.):
 
 +`` NumberOfBossesKilled * DutyClearFailed * 300 ``
 
->We currently apply a 'bandaid' score reduction on floor 100 scorecards if the run starts at floor 1
+>We currently apply a 'bandaid' score reduction on floor 100 scorecards if the run starts at floor 1:
 
 +`` If FloorDifference == 100 -> -4500 ``
 
@@ -69,19 +69,19 @@ Due to how the overlay works, ``CurrentFloorNumber`` will always be 30, 100, or 
 
 ### Calculations for Heaven-on-High
 
->Bonus for reaching the last floor.  This is different from completion bonus as you keep this even if you duty fail on the last floor
+>Bonus for reaching the last floor (This is different from completion bonus as you keep this even if you duty fail on the last floor.):
 
 +`` If CurrentFloorNumber == 100 -> DutyClearFailed * 50 ``
 
->Floor 30 boss is worth an additional 450.  Additionally the first boss of the run is worth 50 less
+>Floor 30 boss is worth an additional 450 and the first boss of the run is worth 50 less:
 
 +`` DutyClearFailed * 400 ``
 
->We currently apply a 'bandaid' score reduction on floor 30 scorecards if the run starts at floor 1
+>We currently apply a 'bandaid' score reduction on floor 30 scorecards if the run starts at floor 1:
 
 +`` If FloorDifference == 30 -> -1000 ``
 
->320k bonus for duty complete
+>320k bonus for duty complete:
 
 +`` If CurrentFLoorNumber == 100 -> DutyClearFailed * 3200 ``
 
@@ -89,31 +89,31 @@ Due to how the overlay works, ``CurrentFloorNumber`` will always be 30, 100, or 
 
 ### Calculations for the Palace of the Dead
 
->Bonus for reaching the last floor.  This is different from completion bonus as you keep this even if you duty fail on the last floor
+>Bonus for reaching the last floor (This is different from completion bonus as you keep this even if you duty fail on the last floor.):
 
 +`` If CurrentFloorNumber == 200 -> DutyClearFailed * 50 ``
 
->First boss of the run is worth 50 less.
+>First boss of the run is worth 50 less:
 
 -`` DutyClearFailed * 50 ``
 
->Floor 50 and 100 bosses are worth an additional 450.
+>Floor 50 and 100 bosses are worth an additional 450:
 
 +`` If FloorStartedOn == 1 -> DutyClearFailed * 450``
 
 +`` DutyClearFailed * 450``
 
->We currently apply a 'bandaid' score reduction on runs that start at floor 51
+>We currently apply a 'bandaid' score reduction on runs that start at floor 51:
 
 +`` If FloorStartedOn == 51 -> -2000``
 
->Similar to the floor 100 bandaid above we remove 500 per boss floor
+>Similar to the floor 100 bandaid above we remove 500 per boss floor:
 
 +``If FloorDifference + 1 == 200 -> -9500``
 
 +``If FloorDifference + 1 == 150 -> -7000``
 
->320k bonus for duty complete
+>320k bonus for duty complete:
 
 +`` If CurrentFLoorNumber == 200 -> DutyClearFailed * 3200 ``
 
@@ -121,7 +121,7 @@ Due to how the overlay works, ``CurrentFloorNumber`` will always be 30, 100, or 
 
 Fully revealed floor maps give bonus points.  Since the overlay currently cannot tell if a map is fully revealed the option to assume all map reveals is assumed here.
 
-> Value for all maps revealed (excluding boss and duty complete floors)
+> Value for all maps revealed (Excluding boss and duty complete floors.):
 
 +`` DutyClearFailed * FullyRevealedFloors * 25``
 
@@ -132,7 +132,7 @@ Opened chests give points.  Exceptions are:
 * Chests that explode.
 * Intuition chests.
 
-> Value for all chests opened
+> Value for all chests opened:
 
 +`` DutyClearFailed * NumberOfChestsOpened``
 
@@ -140,7 +140,7 @@ Opened chests give points.  Exceptions are:
 
 the Palace of the Dead contains rare spawn monsters.  These are worth additional points.
 
-> Value for rare monster kills
+> Value for rare monster kills:
 
 +`` DutyClearFailed * NumberOfRareMonstersKilled * 20``
 
@@ -148,7 +148,7 @@ the Palace of the Dead contains rare spawn monsters.  These are worth additional
 
 Mimics and korrigans are worth additional points.
 
-> Value for mimic and korrigan kills
+> Value for mimic and korrigan kills:
 
 +``DutyClearFailed * NumberofMimicsAndKorrigans * 5``
 
@@ -156,7 +156,7 @@ Mimics and korrigans are worth additional points.
 
 Floor Enchantments, both detrimental and beneficial, are worth points.  These points are removed if a Pomander of Serenity is used.
 
-> Value for floor enchantments
+> Value for floor enchantments:
 
 +``DutyClearFailed * NumberOfFloorEnchantments * 5``
 
@@ -165,7 +165,7 @@ Floor Enchantments, both detrimental and beneficial, are worth points.  These po
 Stepping on traps reduces score.  Exceptions are:
 * Chests that explode.
 
-> Value for traps triggered
+> Value for traps triggered:
 
 -``DutyClearFailed * NumberOfTrapsTriggered * 2``
 
@@ -173,7 +173,7 @@ Stepping on traps reduces score.  Exceptions are:
 
 Finishing a floor set before receiving the '30 minute' warning awards bonus points.
 
->Value for speed run sets
+>Value for speed run sets:
 
 +``DutyClearFailed * NumberOfSpeedRunSets * 150``
 
@@ -181,7 +181,7 @@ Finishing a floor set before receiving the '30 minute' warning awards bonus poin
 
 Dying and being resurrected by a Pomander of Raising reduces score.
 
-> Value for re-raisings
+> Value for re-raisings:
 
 -``DutyClearFailed * NumberOfResurrections * 50``
 
@@ -194,11 +194,11 @@ For floors 31-100 in Heaven-on-High and 101-200 in the Palace of the Dead, monst
 * Rare Monsters
 * Bosses
 
-> Value for all monsters killed
+> Value for all monsters killed:
 
 +``100 + (Math.floor((CurrentFloorNumber - FloorStartedOn + 1) / 2))) * NumberOfKills``
 
-> Value for bonus floors excluding exceptions listed above
+> Value for bonus floors excluding exceptions listed above:
 
 +``201 + (Math.floor((CurrentFloorNumber - FloorStartedOn + 1) / 2))) * (NumberOfKills - NumberOfNonBonusKills)``
 
