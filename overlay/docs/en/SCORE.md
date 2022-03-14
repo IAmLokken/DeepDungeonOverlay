@@ -6,6 +6,8 @@ This document details how the overlay calculates its score estimate during a run
 
 _Please review [Scoring explanation](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) on the readme for assumptions and caveats the overlay makes when displaying its score._
 
+_Additionally please see the [Score FAQ](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md) for additional information._
+
 # Score Components
 
 We currently break down score in Deep Dungeon into 11 categories.  All categories are then combined additively to arrive at the final score.
