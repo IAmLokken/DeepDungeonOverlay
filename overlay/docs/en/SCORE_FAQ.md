@@ -18,7 +18,7 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 ---
 
 ### Do the buff pets in Heaven-on-High affect score?
->No. However, is believed that they take a spawn point that would have otherwise been a monster. 
+>No. However, it is believed that they take a spawn point that would have otherwise been a monster. 
 
 ### Does using pomanders affect score?
 >No.  Only looting pomanders via opening chests affects score.
