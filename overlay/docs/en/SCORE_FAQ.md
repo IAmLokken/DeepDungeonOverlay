@@ -8,11 +8,11 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 
 ---
 
-* Do the buff pets in Heaven-on-High affect score?
-* Does using pomanders affect score?
-* Do Banded Coffers (intuition chests) affect score?
-* Do exploding chests affect score?
-* Are luring traps good for score?
+* [Do the buff pets in Heaven-on-High affect score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#do-the-buff-pets-in-heaven-on-high-affect-score)
+* [Does using pomanders affect score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#does-using-pomanders-affect-score)
+* [Do Banded Coffers (intuition chests) affect score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#do-banded-coffers-intuition-chests-affect-score)
+* [Do exploding chests affect score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#do-exploding-chests-affect-score)
+* [Are luring traps good for score?](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md#are-luring-traps-good-for-score)
 
 ---
 
@@ -31,4 +31,7 @@ Feel free to [open an issue](https://github.com/IAmLokken/DeepDungeonOverlay/iss
 ### Are luring traps good for score?
 * Yes.  Killing the three monsters spawned from a luring trap is worth more points than those lost by triggering the trap.
 
-[DeepDungeonOverlay](https://github.com/IAmLokken/DeepDungeonOverlay)
+---
+
+Go To [DeepDungeonOverlay](https://github.com/IAmLokken/DeepDungeonOverlay)
+Go To [Score Deep Dive](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md)
