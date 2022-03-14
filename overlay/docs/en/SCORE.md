@@ -6,7 +6,7 @@ This document details how the overlay calculates its score estimate during a run
 
 _Please review [Scoring explanation](https://github.com/IAmLokken/DeepDungeonOverlay#scoring-details) on the readme for assumptions and caveats the overlay makes when displaying its score._
 
-_Additionally please see the [Score FAQ](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE.md) for additional information._
+_Additionally please see the [Score FAQ](https://github.com/IAmLokken/DeepDungeonOverlay/blob/main/overlay/docs/en/SCORE_FAQ.md) for additional information._
 
 # Score Components
 
