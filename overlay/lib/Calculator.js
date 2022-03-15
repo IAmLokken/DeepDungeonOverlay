@@ -99,6 +99,11 @@
 
         if (deepDungeonName == 'Heaven-on-High')
         {
+            // Give bonus for floor 30 boss
+            if (currentFloorNumber == 30){
+                score += dutyClearFailed * 300;
+            }
+
             // 5050 bonus for reaching last floor (separate from completion bonus.  You get this if you timeout on last floor rip)
             if (currentFloorNumber == 100){
                 score += 50 * dutyClearFailed;
@@ -120,6 +125,11 @@
 
         if (deepDungeonName == 'the Palace of the Dead')
         {
+            // Give base bonus for floor 100 boss
+            if (currentFloorNumber == 100){
+                score += dutyClearFailed * 300;
+            }
+
             // 5050 bonus for reaching last floor (separate from completion bonus.  You get this if you timeout on last floor rip)
             if (currentFloorNumber == 200){
                 score += 50 * dutyClearFailed;
@@ -243,8 +253,10 @@
                     score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (nonBonusMobs);
-                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - nonBonusMobs);
+                    if (floorKills[i] > 0){
+                        score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (nonBonusMobs);
+                        score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - nonBonusMobs);
+                    }
                 }
             }            
         }
@@ -261,12 +273,13 @@
                     score += (100 + (Math.floor((currentFloorNumber - floorStartedOn + 1) / 2))) * floorKills[i];
                 }
                 else{
-                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (nonBonusMobs);
-                    score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (floorKills[i] - nonBonusMobs);
+                    if (floorKills[i] > 0){
+                        score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (nonBonusMobs);
+                        score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2))) * (floorKills[i] - nonBonusMobs);
+                    }
                 }
             }
         }
-
         return score;
     }
 
@@ -296,8 +309,6 @@
         let totalPossibleMapReveals = (currentSave.lastFloorCleared - currentSave.floorStartedOn + 1) - (Math.floor((currentSave.lastFloorCleared - currentSave.floorStartedOn + 1) / 10));
 
         let mapRevealsToAdd = totalPossibleMapReveals - mapRevealsEarned;
-
-        console.log(dutyClearFailed * mapRevealsToAdd * 25);
 
         return  dutyClearFailed * mapRevealsToAdd * 25;
     }
