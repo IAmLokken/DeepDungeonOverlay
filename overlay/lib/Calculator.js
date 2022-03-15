@@ -60,6 +60,7 @@
 
         score += DDO.ScoreCalculator.killScore;
 
+        /*
         console.log('character level score: ' + DDO.ScoreCalculator.characterLevelScore);
         console.log('floor score: ' + DDO.ScoreCalculator.floorScore);
         console.log('floor reveal score: ' + DDO.ScoreCalculator.revealedScore);
@@ -71,7 +72,7 @@
         console.log('speedrun score: ' + DDO.ScoreCalculator.speedRunScore);
         console.log('rez score: ' + DDO.ScoreCalculator.rezScore);
         console.log('kill score: ' + DDO.ScoreCalculator.killScore);
-        
+        */
         //returnValue = String.Format("{0:n0}", score);
         //return returnValue;
         return score;
