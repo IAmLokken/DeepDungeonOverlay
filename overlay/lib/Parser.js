@@ -120,23 +120,25 @@
         let pomTrapID = data[4];
         // Check for traps
         if (data[3].toUpperCase() == parseStrings.Trap && pomTrapID != DDO.TrapInfo.WeaponEnhancementTrapId && pomTrapID != DDO.TrapInfo.GearEnhancementTrapId){
-            if (pomTrapID == DDO.TrapInfo.DetonatorTrapId)
-            {
-                DDO.currentFloorStats.chestCount--;
-                DDO.currentFloorSetStats.chestCount--;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
-                console.log("Trapped chests give and take no points." + DDO.currentFloorStats.chestCount);
-                
-                DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
-                DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
-                DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
-                DDO.UpdateScore();
-            }
-            else{
-                var trapID = data[2];
-                if (!DDO.triggeredTraps.includes(trapID)){
-                    DDO.triggeredTraps.push(trapID);
+            var trapID = data[2];
+            if (!DDO.triggeredTraps.includes(trapID)){
+                DDO.triggeredTraps.push(trapID);
 
+                // If it is a detonator we dont want to add it as a trap, just decrement the chest count since it would have been incremented by opening the chest
+                if (pomTrapID == DDO.TrapInfo.DetonatorTrapId)
+                {
+                    DDO.currentFloorStats.chestCount--;
+                    DDO.currentFloorSetStats.chestCount--;
+                    DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
+                    console.log("Trapped chests give and take no points." + DDO.currentFloorStats.chestCount);
+                    
+                    DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
+                    DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
+                    DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
+                }
+                // Its an actual trap and we want to track it as such
+                else
+                {
                     DDO.currentFloorStats.trapsTriggered++;
                     DDO.currentFloorSetStats.trapsTriggered++;
                     DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentTrapsTriggered++;
@@ -144,8 +146,9 @@
                     DDO.DataElements.TrapsFloorValue.innerText = DDO.currentFloorStats.trapsTriggered;
                     DDO.DataElements.TrapsSetValue.innerText = DDO.currentFloorSetStats.trapsTriggered;
                     DDO.DataElements.TrapsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentTrapsTriggered;
-                    DDO.UpdateScore();
-                }
+                }                
+
+                DDO.UpdateScore();
             }
         }
         // Check for Pomanders
@@ -239,6 +242,11 @@
             DDO.currentFloorSetStats.chestCount--;
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
             console.log("Intuition chests give no points." + DDO.currentFloorStats.chestCount);
+
+            DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
+            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
+            DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount; 
+            DDO.UpdateScore();
         }
     }
 
@@ -267,9 +275,10 @@
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount--;
             console.log("Mimics don't count as chests." + DDO.currentFloorStats.chestCount);
             
-            DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount < 0 ? 0 : DDO.currentFloorStats.chestCount;
-            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount < 0 ? 0 : DDO.currentFloorSetStats.chestCount;
-            DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount < 0 ? 0 : DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;  
+            DDO.DataElements.ChestsFloorValue.innerText = DDO.currentFloorStats.chestCount;
+            DDO.DataElements.ChestsSetValue.innerText = DDO.currentFloorSetStats.chestCount;
+            DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;
+            DDO.UpdateScore();
         }
         else if ((logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && logMessage.includes(DDO.currentFloor)){
             let val = DDO.currentFloor % 10;
