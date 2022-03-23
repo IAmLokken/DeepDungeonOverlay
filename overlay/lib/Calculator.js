@@ -306,7 +306,7 @@
     DDO.ScoreCalculator.CalculateMaxRoomReveal = function(currentSave, dutyClearFailed){
         let score = 0;
         let mapRevealsEarned = currentSave.currentMapRevealCount;
-        let totalPossibleMapReveals = (currentSave.lastFloorCleared - currentSave.floorStartedOn + 1) - (Math.floor((currentSave.lastFloorCleared - currentSave.floorStartedOn + 1) / 10));
+        let totalPossibleMapReveals = (currentSave.floorMaxScore - currentSave.floorStartedOn + 1) - (Math.floor((currentSave.floorMaxScore - currentSave.floorStartedOn + 1) / 10));
 
         let mapRevealsToAdd = totalPossibleMapReveals - mapRevealsEarned;
 
