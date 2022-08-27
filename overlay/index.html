@@ -2,15 +2,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Midgardsormr-1.0.3" />    
+    <link rel="stylesheet" href="css/display.css?v=Midgardsormr-1.1.0" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Midgardsormr-1.0.3"></script>
-    <script src="lib/Locale.js?v=Midgardsormr-1.0.3"></script>
-    <script src="lib/Bestiary.js?v=Midgardsormr-1.0.3"></script>
-    <script src="lib/Parser.js?v=Midgardsormr-1.0.3"></script>
-    <script src="lib/GroupParser.js?v=Midgardsormr-1.0.3"></script>
-    <script src="lib/Calculator.js?v=Midgardsormr-1.0.3"></script>
+    <script src="lib/DDO.js?v=Midgardsormr-1.1.0"></script>
+    <script src="lib/Locale.js?v=Midgardsormr-1.1.0"></script>
+    <script src="lib/Bestiary.js?v=Midgardsormr-1.1.0"></script>
+    <script src="lib/Parser.js?v=Midgardsormr-1.1.0"></script>
+    <script src="lib/GroupParser.js?v=Midgardsormr-1.1.0"></script>
+    <script src="lib/Calculator.js?v=Midgardsormr-1.1.0"></script>
 
     <script>
 
@@ -100,18 +100,19 @@
 
         function LogLine(data)
         {
-            if (DDO.soloRunUnderway && 
+            if ((DDO.soloRunUnderway || DDO.groupRunUnderway) &&
                 !DDO.inbetweenArea && 
                 DDO.ParsedLogNumbers.includes(data.line[0]))
             {
                 DDO.ProcessLogLine(data);
             }
+            /*
             else if(DDO.groupRunUnderway && 
                     !DDO.inbetweenArea && 
                     DDO.GroupParsedLogNumbers.includes(data.line[0]))
             {
                 DDO.GroupProcessLogLine(data);
-            }
+            }*/
             else if ((data.line[0] == '03' || data.line[0] == '12') && 
                     data.rawLine.includes(DDO.playerName))
             {
@@ -120,6 +121,7 @@
         }
         function ChangeZone(data)
         {
+            DDO.UpdateGroupJobs();
             DDO.LoadConfig(data.zoneName);
         }
         function ChangePrimaryPlayer(data)
@@ -130,6 +132,7 @@
         function PartyChanged(data)
         {
             DDO.isInGroup = data.party.length > 0;
+            DDO.UpdateGroupInfo(data);
         }
         function EnmityTargetData(data)
         {
@@ -252,7 +255,7 @@
     </table>
 
     <div id="versiondiv" style="text-align: center;">
-    <label id="VERSION">'Midgardsormr-1.0.3' 2022/03/22</label>
+    <label id="VERSION">'Midgardsormr-1.1.0' 2022/08/26</label>
 </div>
 <!--
     <div id="scoreDebug">

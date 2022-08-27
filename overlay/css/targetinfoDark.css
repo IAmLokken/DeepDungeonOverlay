@@ -26,7 +26,7 @@ body, html {
 
 #mainBody{
     border: 2px solid rgb(0, 0, 56);
-    background-color: rgba(28, 28, 28, 0.40);
+    background-color: rgba(28, 28, 28, 0.90);
     display: inline-block;
     /*width: 100%;
     

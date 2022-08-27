@@ -99,7 +99,7 @@
             DDO.DataElements.TargetNameValue.innerText = data.Target.Name;
             DDO.DataElements.TargetHPPValue.innerText = ((data.Target.CurrentHP / data.Target.MaxHP) * 100).toFixed(2) + '%';
             DDO.TurnTargetImagesOff();
-
+            
             if(targetInfo.DangerLevel == 'Easy') DDO.DataElements.DangerEasyImage.style = "";
             else if(targetInfo.DangerLevel == 'Caution') DDO.DataElements.DangerCautionImage.style = "";
             else if(targetInfo.DangerLevel == 'Scary') DDO.DataElements.DangerScaryImage.style = "";

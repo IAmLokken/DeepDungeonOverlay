@@ -38,6 +38,7 @@
     DDO.playerWorld = "NULL";
     DDO.playerJob = 0;
     DDO.playerLevel = 1;
+    DDO.Players = {};
 
     DDO.affluenceActive = false;
     DDO.alterationActive = false;
@@ -105,7 +106,7 @@
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
             }
             // we just continued a run
-            else if (DDO.soloRunUnderway && DDO.inbetweenArea){
+            else if ((DDO.soloRunUnderway || DDO.groupRunUnderway) && DDO.inbetweenArea){
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();           
@@ -116,13 +117,22 @@
                 DDO.StartFloorSetUI();
                 DDO.ResetVariables();          
             }
-            else if (!DDO.isInGroup && !DDO.soloRunUnderway){
+            else if (!DDO.groupRunUnderway && !DDO.soloRunUnderway){
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
-                DDO.soloRunUnderway = true;
-                DDO.LoadSoloConfig();
+                if (DDO.isInGroup)
+                {
+                    DDO.groupRunUnderway = true;
+                    DDO.soloRunUnderway = false;
+                    DDO.LoadPartyConfig();
+                }
+                else{
+                    DDO.soloRunUnderway = true;
+                    DDO.groupRunUnderway = false;
+                    DDO.LoadSoloConfig();
+                }
                 DDO.ClearFloorValues();
-                DDO.ClearFloorSetValues();             
+                DDO.ClearFloorSetValues();         
                 DDO.LoadSave();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].floorMaxScore = DDO.GetMaxFloorScore();
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount++;                 
@@ -130,7 +140,8 @@
                 DDO.currentFloorSetStats.roomRevealCount++;
                 DDO.StartFloorSetUI();
                 DDO.ResetVariables();
-            }else if (DDO.isInGroup && !DDO.groupRunUnderway){
+            }/*
+            else if (DDO.isInGroup && !DDO.groupRunUnderway){
                 DDO.groupRunUnderway = true;
                 DDO.LoadPartyConfig();
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
@@ -140,7 +151,7 @@
             {
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1, instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
-            }
+            }*/
             DDO.inbetweenArea = false;
         }
         else if (instanceName == DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstancePOTD ||
@@ -218,9 +229,9 @@
         DDO.EnableDisableElement(true, 'config', false);
         DDO.EnableDisableElement(true, 'timer', false);
         DDO.EnableDisableElement(false, 'score', false);
-        DDO.EnableDisableElement(false, 'statistics', false);
+        DDO.EnableDisableElement(false, 'statistics', true);
         DDO.EnableDisableElement(false, 'CheckBoxScore', false);
-        DDO.EnableDisableElement(false, 'CheckBoxStatistics', false);
+        DDO.EnableDisableElement(true, 'CheckBoxStatistics', false);
         DDO.EnableDisableElement(true, 'CheckBoxBestiary', false);
         DDO.EnableDisableElement(true, 'CheckBoxPomanders', false);
         
@@ -235,11 +246,20 @@
             divider.style.display = "none";
         }
 
+        DDO.DataElements.StatisticsCheckBoxValue.checked = DDO.Config.statsVisible;
         DDO.DataElements.PomandersCheckBoxValue.checked = DDO.Config.pomandersVisible;
         DDO.DataElements.BestiaryCheckBoxValue.checked = DDO.Config.bestiaryVisible;
 
+        DDO.EnableDisableElement(DDO.DataElements.StatisticsCheckBoxValue.checked, 'statistics', false);
         DDO.EnableDisableElement(DDO.DataElements.PomandersCheckBoxValue.checked, 'pomanders', false);
         DDO.EnableDisableElement(DDO.DataElements.BestiaryCheckBoxValue.checked, 'targetinfo', false);
+
+        if (DDO.currentInstance.includes('Heaven-on-High')){
+            DDO.DataElements.RareMonstersRow.style.display = "none";
+        }
+        else{
+            DDO.DataElements.RareMonstersRow.style.display = "";
+        }
     }
 
     DDO.LoadNonRunConfig = function()
@@ -271,10 +291,18 @@
         let saveFound = false;
         for (var i = 0; i < DDO.SaveFiles[DDO.currentInstance].length; i++)
         {
-            if (DDO.SaveFiles[DDO.currentInstance][i].playerName == DDO.playerName &&
+            console.log("Current Save: " + DDO.SaveFiles[DDO.currentInstance][i]);
+            if ((!DDO.isInGroup &&
+                DDO.SaveFiles[DDO.currentInstance][i].playerName == DDO.playerName &&
                 DDO.SaveFiles[DDO.currentInstance][i].playerJob == DDO.playerJob &&
                 DDO.SaveFiles[DDO.currentInstance][i].playerWorld == DDO.playerWorld &&
                 DDO.SaveFiles[DDO.currentInstance][i].lastFloorCleared == DDO.currentFloor - 1)
+                ||
+                (DDO.isInGroup &&
+                DDO.SaveFiles[DDO.currentInstance][i].Players &&
+                JSON.stringify(DDO.SaveFiles[DDO.currentInstance][i].Players) == JSON.stringify(DDO.Players) &&
+                DDO.SaveFiles[DDO.currentInstance][i].lastFloorCleared == DDO.currentFloor - 1)
+                )
             {
                 DDO.currentSaveFileIndex = i;
                 // This if statement is to include items in the save file that may not have existed when a run was started
@@ -283,8 +311,13 @@
                     DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts = new Array(20).fill(0);
                     DDO.SaveFiles[DDO.currentInstance][i].rareKillCounts = new Array(20).fill(0);
                 }
+                if(!DDO.SaveFiles[DDO.currentInstance][i].Players)
+                {
+                    DDO.SaveFiles[DDO.currentInstance][i].Players = DDO.Players;
+                }
                 DDO.Snapshot = JSON.parse(JSON.stringify(DDO.SaveFiles[DDO.currentInstance][i]));
                 saveFound = true;
+                console.log("Found Save: " + DDO.SaveFiles[DDO.currentInstance][i]);
             }
         }
         if (!saveFound){
@@ -292,6 +325,7 @@
             newSave.playerName = DDO.playerName;
             newSave.playerJob = DDO.playerJob;
             newSave.playerWorld = DDO.playerWorld;
+            newSave.Players = DDO.Players;
             newSave.deepDungeonName = DDO.currentInstance;
             newSave.lastFloorCleared = DDO.currentFloor - 1;
             newSave.floorStartedOn = DDO.currentFloor;
@@ -415,7 +449,7 @@
     DDO.DisplayVersion = function()
     {
         if (DDO.groupRunUnderway){
-            return DDO.Config.pomandersVisible || DDO.Config.bestiaryVisible;
+            return DDO.Config.pomandersVisible || DDO.Config.bestiaryVisible || DDO.Config.statsVisible;
         }
         else{
             return DDO.Config.scoreVisible || DDO.Config.pomandersVisible || DDO.Config.statsVisible || DDO.Config.bestiaryVisible;
@@ -462,6 +496,43 @@
             DDO.playerWorld = combatants.combatants[0].WorldName;
             if (DDO.soloRunUnderway && !DDO.inbetweenArea)
                 DDO.UpdateScore();
+        }
+    }
+    DDO.UpdateGroupInfo = function(data)
+    {
+        if (data.party.length > 0)
+        {            
+            let temp = JSON.stringify(data.party);
+            console.log("Party updated: " + temp);
+            DDO.Players = JSON.parse(temp);
+            DDO.Players.forEach(element => {
+                delete element.id;
+                delete element.inParty;
+                delete element.level;
+            });
+            DDO.Players.sort((a,b) => (a.name > b.name) ? 1 : -1);
+        }
+    }
+    DDO.UpdateGroupJobs = async function()
+    {
+        if (DDO.Players && DDO.Players.length > 1)
+        {
+            let playerList = [];
+            DDO.Players.forEach(element => {
+                playerList.push(element.name);
+            });
+            //console.log("Player List: " + playerList);
+            var combatants = await window.callOverlayHandler({ call: 'getCombatants', names: playerList });
+            //console.log("Combatant List: " + combatants.combatants);
+            let ourCombatants = combatants.combatants.sort((a,b) => (a.Name > b.Name) ? 1 : -1);
+            //console.log(JSON.stringify(ourCombatants));
+            if (DDO.Players.length == ourCombatants.length)
+            {
+                for (var i = 0; i < DDO.Players.length; i++)
+                {
+                    DDO.Players[i].job = ourCombatants[i].Job;
+                }
+            }
         }
     }
 
