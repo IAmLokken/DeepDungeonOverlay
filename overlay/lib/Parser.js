@@ -68,17 +68,25 @@
             DDO.UpdateScore();
         }
         // Check for player death
-        else if (nameOfMob == DDO.playerName.toUpperCase()){
+        //else if (nameOfMob == DDO.playerName.toUpperCase()){
+        else if (DDO.PlayerInGroup(nameOfMob) || nameOfMob == DDO.playerName.toUpperCase()){
             if (DDO.raisingActive){
                 DDO.raisingActive = false;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRezCount++;
                 DDO.UpdateScore();
             }
-            else{                
+            else if (DDO.soloRunUnderway){                
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex] = JSON.parse(JSON.stringify(DDO.Snapshot));
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount--;
                 DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKOCount++;
                 DDO.SaveRuns();
+                //console.log("Run is over.");
+            }
+            else if (DDO.groupRunUnderway)
+            {
+                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentRezCount++;
+                DDO.UpdateScore();
+                //console.log("Death during group run.  Increment death count but run may not be over.");
             }
             return;
         }

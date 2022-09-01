@@ -536,6 +536,16 @@
         }
     }
 
+    DDO.PlayerInGroup = function(playerName)
+    {
+        for (var i = 0; i < DDO.Players.length; i++)
+        {
+            if (DDO.Players[i].name.toUpperCase() == playerName)
+                return true;
+        }
+        return false;
+    }
+
     DDO.ClearPOTDSaves = function()
     {
         DDO.SaveFiles['the Palace of the Dead'] = [];
