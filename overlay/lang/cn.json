@@ -1,0 +1,76 @@
+{
+    "UIStrings":
+    {
+        "ScoreLabel": "分数: ",
+        "CurrentlyActiveLabel": "当前激活的魔陶器",
+        "FloorLabel": "本层",
+        "SetLabel": "本10层",
+        "TotalLabel": "总计",
+        "MonstersLabel": "怪物",
+        "MimicsLabel": "拟态怪",
+        "TrapsLabel": "陷阱",
+        "ChestsLabel": "宝箱",
+        "EnchantmentsLabel": "魔法效果",
+        "RareMonstersLabel": "稀有怪物",
+        "SpeedRunsLabel": "速通",
+        "CurrentTargetLabel": "当前目标",
+        "HPPLabel": "HP %",
+        "DangerLabel": "危险度",
+        "AggroLabel" : "感知类型",
+        "NoTargetLabel": "无目标",
+        "POTDButton": "清空死者宫殿存档",
+        "HOHButton": "清空天之御柱存档",
+        "ButtonInfo": "当你在深层迷宫中时, 此悬浮窗将显示深层迷宫的情报。 当你不在深层迷宫中时, 你可以使用下方的按钮来清除此悬浮窗储存的存档。",
+        "MapSettingInfo": "如果你想在计算分数时假设地图全清, 请勾选这里。",
+        "DarkModeInfo": "右键本悬浮窗切换默认主题与夜间主题。"
+    },
+    "BossNames":
+    [
+        "亡者船", "别蝶", "蛭子", "怖军", "牛头", "忍冬", "犬蛊", "锻冶媪", "温罗",
+        "地宫死亡凝视", "大戟花", "宁吉兹济达", "伊休妲", "漆黑的艾达", "深黑骑士", "水虎龙亚夸虏", "古丹纳", "爆弹怪教母", "死灵术士尼博斯",
+        "阿利坎托", "荣光魔花", "埃尔法德", "阿普切", "提西福涅", "非生骑士", "虹蛇", "丹代恩索涅", "爆弹怪教父"
+    ],
+    "RareMonsterNames":
+    [
+        "老练的幻术师", "老练的弓箭手", "老练的格斗家", "剑术师冒险者", "幻术师冒险者", "枪术师冒险者", 
+        "斧术师恶徒", "斧术师海盗", "伊修加德枪术师", "黑影之民枪术师", "拉拉菲尔族富商", "审问官法术师", "恶徒商人",
+        "阿拉米格技术兵", "白铠甲帝国军政官", "黑铠甲帝国阵营官", "异形船长", "黑涡团船长", "精灵族富豪", "巨人族矿工",
+        "帝国兵驾驶员", "名门骑士", "上年纪的黑市商人", "恒辉队剑术师"
+    ],
+    "EnchantmentNames":
+    [
+        "禁止体力自然恢复", "失明", "伤害降低", "最大体力魔力提升", "最大体力减少", "能力封印", "禁止使用道具", "禁止击退", "禁止冲刺",
+        "加速", "冲刺", "禁用魔石", "无", "能力封印"
+    ],
+    "ParseStrings":
+    {
+        "CurrentInstancePOTD": "死者宫殿",
+        "CurrentInstanceHOH": "天之御柱",
+        "CurrentInstanceFloorsPOTD": "死者宫殿 地下",
+        "CurrentInstanceFloorsHOH": "天之御柱",
+        "Floor": "本层",
+        "HoHFloor": "层",
+        "PotDFloor": "层",
+        "ZoneIn": "任务开始",
+        "BandedCoffer": "埋藏的宝藏",
+        "QuiveringCoffer": "抖动的宝箱",
+        "Mimic": "拟态怪",
+        "Korrigan": "柯瑞甘",
+        "Mandragora": "蔓德拉",
+        "Pygmaioi": "皮古迈欧",
+        "Trap": "陷阱",
+        "Detonator": "触发了陷阱，宝箱爆炸了",
+        "Pomander": "魔陶器",
+        "BaresItsFangsPOTD": "宝箱竟然是",
+        "BaresItsFangsHOH": "宝箱竟然是",
+        "Magicite": "魔石",
+        "Obtain": "获得了",
+        "ThirtyMinutesRemaining": "结束还有30分钟",
+        "Gloom": "四周弥漫的妖雾增强了魔物的力量",
+        "PhoenixDown": "不死鸟之尾",
+        "Transference": "成功进行了传送！",
+        "EmpyreanReliquary": "天之圣遗物",
+        "GlassPumpkin": "玻璃南瓜",
+        "Firecrest": "烈火饰章"        
+    }
+}
