@@ -10,7 +10,7 @@ Deep Dungeon Overlay ist ein OverlayPlugin-Skin in Entwicklung, das dir Echtzeit
 
 # Voraussetzungen um DDO nutzen zu können
 
-DDO erfordert Advanced Combat Tracker ([ACT](https://advancedcombattracker.com/)). Zusätzlich erfordert DDO, dass die Plugins [FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin) und [OverlayPlugin](https://github.com/ngld/OverlayPlugin) in ACT installiert sind.
+DDO erfordert Advanced Combat Tracker ([ACT](https://advancedcombattracker.com/)). Zusätzlich erfordert DDO, dass die Plugins [FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin) und [OverlayPlugin](https://github.com/OverlayPlugin/OverlayPlugin) in ACT installiert sind.
 
 Eine schriftliche Anleitung zur Installation von ACT und FFXIV_ACT_Plugin kann hier eingesehen werden: [ACT installieren](https://github.com/FFXIV-ACT/setup-guide)
 
