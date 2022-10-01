@@ -10,7 +10,7 @@
 
 # DDO/DDOTIを使うための条件
 
-DDOはAdvanced Combat Tracker ([ACT](https://advancedcombattracker.com/))のソフトが必要です。さらに[FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin)と[OverlayPlugin](https://github.com/ngld/OverlayPlugin)を両方ACTでインストールしなければなりません。
+DDOはAdvanced Combat Tracker ([ACT](https://advancedcombattracker.com/))のソフトが必要です。さらに[FFXIV_ACT_Plugin](https://github.com/ravahn/FFXIV_ACT_Plugin)と[OverlayPlugin](https://github.com/OverlayPlugin/OverlayPlugin)を両方ACTでインストールしなければなりません。
 
 ACTのインストール方法とFFXIV_ACT_Pluginはここに書かれています: [Install ACT](https://github.com/FFXIV-ACT/setup-guide)
 
