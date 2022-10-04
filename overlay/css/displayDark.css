@@ -217,4 +217,7 @@ button:hover{
     background-position: bottom right;
     background-repeat: no-repeat;
     box-sizing: content-box;
-}       
+}  
+input[type=checkbox]{
+    accent-color: rgb(102, 102, 102);
+}        
