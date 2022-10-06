@@ -280,8 +280,13 @@
 
         if (DDO.SaveFiles['the Palace of the Dead'].length > 0 )
             DDO.DataElements.POTDButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['POTDButton']} (${DDO.SaveFiles['the Palace of the Dead'].length})`;
+        else
+            DDO.DataElements.POTDButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['POTDButton']}`;
+
         if (DDO.SaveFiles['Heaven-on-High'].length > 0 )
             DDO.DataElements.HOHButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['HOHButton']} (${DDO.SaveFiles['Heaven-on-High'].length})`;
+        else
+            DDO.DataElements.HOHButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['HOHButton']}`;
 
         DDO.DataElements.MapClearCheckBoxValue.checked = DDO.Config.assumeFullMapClear;
     }
@@ -611,6 +616,7 @@
     DDO.UpdateScore = function()
     {
         let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
+        if (!currentSave) return;
         if (currentSave.floorStartedOn == 1 ||
             (currentSave.floorStartedOn == 21 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsHOH'].includes(currentSave.deepDungeonName)) ||
             (currentSave.floorStartedOn == 51 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsPOTD'].includes(currentSave.deepDungeonName))
@@ -709,8 +715,9 @@
 
     DDO.CalculateScoreNoRoomReveal = async function()
     {
-        //let file = "DDT_TEST-HoH_FINH.DDT";
-        let file = "LOKKEN-HOH-1-30.DDT";
+        //let file = "DDT_TEST-HOH_FINH.DDT";
+        let file = "DDT_TEST-POTD_FINH.DDT";
+        //let file = "LOKKEN-HOH-1-30.DDT";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = () => 
         {
@@ -736,7 +743,7 @@
                 {
                     return;
                 }
-                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json[0], 70, 101);
+                let score = DDO.ScoreCalculator.CalulcateCurrentScore(json[0], 60, 101);
                 score += DDO.ScoreCalculator.CalculateMaxRoomReveal(json[0], 101); 
 
                 document.getElementById("debugScore").innerText = score.toLocaleString();

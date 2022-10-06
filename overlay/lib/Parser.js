@@ -76,9 +76,10 @@
                 DDO.UpdateScore();
             }
             else if (DDO.soloRunUnderway){                
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex] = JSON.parse(JSON.stringify(DDO.Snapshot));
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount--;
-                DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKOCount++;
+                //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex] = JSON.parse(JSON.stringify(DDO.Snapshot));
+                //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount--;
+                //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKOCount++;
+                DDO.SaveFiles[DDO.currentInstance].splice(DDO.currentSaveFileIndex, 1);
                 DDO.SaveRuns();
                 //console.log("Run is over.");
             }
