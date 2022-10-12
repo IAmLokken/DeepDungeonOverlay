@@ -57,6 +57,7 @@
     DDO.currentFloorStats = {};
     DDO.currentFloorSetStats = {};
     DDO.currentSaveFileIndex = 0;
+    DDO.RunAbandoned = false;
 
     DDO.currentTargetName = "NULL";
     DDO.currentTargetID = "NULL";
@@ -172,6 +173,13 @@
             }
         }
         else {
+            if (DDO.RunAbandoned && DDO.SaveFiles[DDO.currentInstance].length > 0)
+            {
+                console.log("Abandoned run, removing");
+                DDO.SaveFiles[DDO.currentInstance].splice(DDO.currentSaveFileIndex, 1);
+                DDO.SaveRuns();
+                DDO.RunAbandoned = false;
+            }
             DDO.soloRunUnderway = false;
             DDO.groupRunUnderway = false;
             DDO.inbetweenArea = false;
@@ -322,7 +330,8 @@
                 }
                 DDO.Snapshot = JSON.parse(JSON.stringify(DDO.SaveFiles[DDO.currentInstance][i]));
                 saveFound = true;
-                console.log("Found Save: " + DDO.SaveFiles[DDO.currentInstance][i]);
+                DDO.RunAbandoned = true;
+                //console.log("Found Save: " + DDO.SaveFiles[DDO.currentInstance][i]);
             }
         }
         if (!saveFound){
@@ -355,6 +364,7 @@
             DDO.currentSaveFileIndex = DDO.SaveFiles[DDO.currentInstance].length;
             DDO.SaveFiles[DDO.currentInstance].push(newSave);        
             DDO.Snapshot = JSON.parse(JSON.stringify(newSave));
+            DDO.RunAbandoned = true;
         }    
     }
 
@@ -492,16 +502,25 @@
         DDO.DataElements.PomFlightEnabledImage.style.display = "none";
     }
 
-    DDO.UpdatePlayerInfo = async function()
+    DDO.UpdatePlayerInfo = async function(callback)
     {
-        var combatants = await window.callOverlayHandler({ call: 'getCombatants', names: [DDO.playerName] });
-        if (combatants.combatants.length > 0){
+        var combatants = await window.callOverlayHandler({ call: 'getCombatants' });
+        //if (combatants.combatants.length > 0){
             DDO.playerJob = combatants.combatants[0].Job;
             DDO.playerLevel = combatants.combatants[0].Level;
             DDO.playerWorld = combatants.combatants[0].WorldName;
-            if (DDO.soloRunUnderway && !DDO.inbetweenArea)
+            console.log("Current Job: " + DDO.playerJob);
+            console.log("Current Level: " +DDO.playerLevel);
+            console.log("Current World: " +DDO.playerWorld);
+            if (callback)
+            {
+                console.log(arguments[1]);
+                console.log(callback);
+                callback(arguments[1]);
+            }
+            if (DDO.soloRunUnderway && !DDO.inbetweenArea && DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex])
                 DDO.UpdateScore();
-        }
+        //}
     }
     DDO.UpdateGroupInfo = function(data)
     {
@@ -518,7 +537,7 @@
             DDO.Players.sort((a,b) => (a.name > b.name) ? 1 : -1);
         }
     }
-    DDO.UpdateGroupJobs = async function()
+    DDO.UpdateGroupJobs = async function(callback)
     {
         if (DDO.Players && DDO.Players.length > 1)
         {
@@ -537,6 +556,10 @@
                 {
                     DDO.Players[i].job = ourCombatants[i].Job;
                 }
+            }
+            if (callback)
+            {
+                callback(DDO.currentInstance);
             }
         }
     }

@@ -80,6 +80,7 @@
                 //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentSpeedRunBonusCount--;
                 //DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentKOCount++;
                 DDO.SaveFiles[DDO.currentInstance].splice(DDO.currentSaveFileIndex, 1);
+                DDO.RunAbandoned = false;
                 DDO.SaveRuns();
                 //console.log("Run is over.");
             }
@@ -117,6 +118,7 @@
 
                     // Save the run
                     DDO.SaveRuns();
+                    DDO.RunAbandoned = false;
                     DDO.Snapshot = JSON.parse(JSON.stringify(DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex]));
                 }
             }
@@ -318,6 +320,7 @@
             DDO.raisingActive = false;
 
             DDO.UpdateScore();
+            DDO.RunAbandoned = false;
 
             // Save the run
             DDO.SaveRuns();
@@ -410,10 +413,10 @@
         let currentSave = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex];
 
         let range = currentSave.deepDungeonName == 'the Palace of the Dead' ? DDO.RoomRangesPOTD[floorSetIndex].split(':').map(Number) : DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
-        if (!evaluateMin)
-            console.log('We have a map reveal with range: ' + range);
-        else
-            console.log('We have completed the floor with range: ' + range);
+        //if (!evaluateMin)
+            //console.log('We have a map reveal with range: ' + range);
+        //else
+            //console.log('We have completed the floor with range: ' + range);
         
         if (DDO.currentFloorStats.roomRevealCount == range[1] || DDO.currentFloorStats.roomRevealCount == 12){
             DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].roomRevealCounts[floorSetIndex] = Math.max(0, currentSave.roomRevealCounts[floorSetIndex] - DDO.currentFloorStats.roomRevealCount);
