@@ -514,8 +514,8 @@
             console.log("Current World: " +DDO.playerWorld);
             if (callback)
             {
-                console.log(arguments[1]);
-                console.log(callback);
+                //console.log(arguments[1]);
+                //console.log(callback);
                 callback(arguments[1]);
             }
             if (DDO.soloRunUnderway && !DDO.inbetweenArea && DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex])
@@ -557,12 +557,14 @@
                     DDO.Players[i].job = ourCombatants[i].Job;
                 }
             }
-            if (callback)
-            {
-                callback(DDO.currentInstance);
-            }
         }
-    }
+        if (callback)
+        {
+            //console.log(arguments[1]);
+            //console.log(callback);
+            callback(DDO.LoadConfig, arguments[1]);
+        }
+}
 
     DDO.PlayerInGroup = function(playerName)
     {

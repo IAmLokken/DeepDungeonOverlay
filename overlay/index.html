@@ -2,15 +2,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Midgardsormr-1.2.0" />    
+    <link rel="stylesheet" href="css/display.css?v=Midgardsormr-1.2.1" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Midgardsormr-1.2.0"></script>
-    <script src="lib/Locale.js?v=Midgardsormr-1.2.0"></script>
-    <script src="lib/Bestiary.js?v=Midgardsormr-1.2.0"></script>
-    <script src="lib/Parser.js?v=Midgardsormr-1.2.0"></script>
-    <script src="lib/GroupParser.js?v=Midgardsormr-1.2.0"></script>
-    <script src="lib/Calculator.js?v=Midgardsormr-1.2.0"></script>
+    <script src="lib/DDO.js?v=Midgardsormr-1.2.1"></script>
+    <script src="lib/Locale.js?v=Midgardsormr-1.2.1"></script>
+    <script src="lib/Bestiary.js?v=Midgardsormr-1.2.1"></script>
+    <script src="lib/Parser.js?v=Midgardsormr-1.2.1"></script>
+    <script src="lib/GroupParser.js?v=Midgardsormr-1.2.1"></script>
+    <script src="lib/Calculator.js?v=Midgardsormr-1.2.1"></script>
 
     <script>
 
@@ -124,8 +124,9 @@
         {
             console.log('Zone Change Update');
             //DDO.currentInstance = data.zoneName;
-            DDO.UpdatePlayerInfo(DDO.LoadConfig, data.zoneName);
-            DDO.UpdateGroupJobs(DDO.LoadConfig);
+            DDO.UpdateGroupJobs(DDO.UpdatePlayerInfo, data.zoneName);
+            //DDO.UpdatePlayerInfo(DDO.LoadConfig, data.zoneName);
+            //DDO.UpdateGroupJobs(DDO.LoadConfig, data.zoneName);
         }
         function ChangePrimaryPlayer(data)
         {
@@ -259,7 +260,7 @@
     </table>
 
     <div id="versiondiv" style="text-align: center;">
-    <label id="VERSION">'Midgardsormr-1.2.0' 2022/10/10</label>
+    <label id="VERSION">'Midgardsormr-1.2.1' 2022/10/20</label>
 </div>
 <!--
     <div id="scoreDebug">
