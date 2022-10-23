@@ -291,8 +291,8 @@
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;
             DDO.UpdateScore();
         }
-        else if ((logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && logMessage.includes(DDO.currentFloor)){
-            let val = DDO.currentFloor % 10;
+        else if (logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)){
+            let val = parseInt(logMessage.replace(/\D/g,' ').trim().split(' ')[0]);
             if (val > 0){
                 if (val == 1){
                     DDO.InitiateTimer(0);

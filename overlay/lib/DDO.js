@@ -505,13 +505,10 @@
     DDO.UpdatePlayerInfo = async function(callback)
     {
         var combatants = await window.callOverlayHandler({ call: 'getCombatants' });
-        //if (combatants.combatants.length > 0){
+        if (combatants.combatants.length > 0){
             DDO.playerJob = combatants.combatants[0].Job;
             DDO.playerLevel = combatants.combatants[0].Level;
             DDO.playerWorld = combatants.combatants[0].WorldName;
-            console.log("Current Job: " + DDO.playerJob);
-            console.log("Current Level: " +DDO.playerLevel);
-            console.log("Current World: " +DDO.playerWorld);
             if (callback)
             {
                 //console.log(arguments[1]);
@@ -520,7 +517,7 @@
             }
             if (DDO.soloRunUnderway && !DDO.inbetweenArea && DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex])
                 DDO.UpdateScore();
-        //}
+        }
     }
     DDO.UpdateGroupInfo = function(data)
     {

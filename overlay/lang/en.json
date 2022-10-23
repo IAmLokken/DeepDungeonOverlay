@@ -51,7 +51,7 @@
         "Floor": "FLOOR",
         "HoHFloor": "FLOOR",
         "PotDFloor": "FLOOR",
-        "ZoneIn": "FLOOR",
+        "ZoneIn": ") HAS BEGUN.",
         "BandedCoffer": "BANDED COFFER",
         "QuiveringCoffer": "QUIVERING COFFER",
         "Mimic": "MIMIC",
