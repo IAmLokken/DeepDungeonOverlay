@@ -587,12 +587,12 @@
         DDO.SaveRuns();
     }
 
-    DDO.InitiateTimer = function(offset){
+    DDO.InitiateTimer = function(offset, floor){
         clearInterval(DDO.ticker);
         DDO.DataElements.TimerValue.innerText = '00:00';
         DDO.DataElements.TimerValue.style.color = "white";
         
-        let floorSetIndex = Math.floor(DDO.currentFloor / 10);
+        let floorSetIndex = Math.floor(floor / 10);
         let timerValue = -1;
         if (DDO.currentInstance == 'Heaven-on-High'){
             let range = DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);

@@ -295,9 +295,9 @@
             let val = parseInt(logMessage.replace(/\D/g,' ').trim().split(' ')[0]);
             if (val > 0){
                 if (val == 1){
-                    DDO.InitiateTimer(0);
+                    DDO.InitiateTimer(0, val);
                 }else {
-                    DDO.InitiateTimer(-5);
+                    DDO.InitiateTimer(-5, val);
                 }
                 DDO.EnableDisableElement(true, "timer", false);
             }
