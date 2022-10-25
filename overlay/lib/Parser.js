@@ -293,8 +293,8 @@
         }
         else if (logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)){
             let val = parseInt(logMessage.replace(/\D/g,' ').trim().split(' ')[0]);
-            if (val > 0){
-                if (val == 1){
+            if (val % 10 > 0){
+                if (val % 10 == 1){
                     DDO.InitiateTimer(0, val);
                 }else {
                     DDO.InitiateTimer(-5, val);
