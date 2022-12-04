@@ -300,6 +300,7 @@
                     DDO.InitiateTimer(-5, val);
                 }
                 DDO.EnableDisableElement(true, "timer", false);
+                console.log("Timer started for floor: " + val + " log-> ( " + logMessage + ")");
             }
         }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
