@@ -46,15 +46,18 @@
     DDO.GroupParseLogLine = function(data){
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
         let logMessage = data[4].toUpperCase();
-        if ((logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && logMessage.includes(DDO.currentFloor)){
-            let val = DDO.currentFloor % 10;
-            if (val > 0){
-                if (val == 1){
-                    DDO.InitiateTimer(0);
+        if (logMessage.includes(parseStrings.ZoneIn) || 
+        ((logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && !logMessage.includes('-'))){
+        //&& /\d/.test(logMessage)){
+            let val = parseInt(logMessage.replace(/\D/g,' ').trim().split(' ')[0]);
+            if (val % 10 > 0){
+                if (val % 10 == 1){
+                    DDO.InitiateTimer(0, val);
                 }else {
-                    DDO.InitiateTimer(-5);
+                    DDO.InitiateTimer(-5, val);
                 }
                 DDO.EnableDisableElement(true, "timer", false);
+                //console.log("Timer started for floor: " + val + " log-> ( " + logMessage + ")");
             }
         }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){

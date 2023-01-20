@@ -291,7 +291,9 @@
             DDO.DataElements.ChestsTotalValue.innerText = DDO.SaveFiles[DDO.currentInstance][DDO.currentSaveFileIndex].currentChestCount;
             DDO.UpdateScore();
         }
-        else if ((logMessage.includes(parseStrings.ZoneIn) || logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && /\d/.test(logMessage)){
+        else if (logMessage.includes(parseStrings.ZoneIn) || 
+                ((logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && !logMessage.includes('-'))){
+                //&& /\d/.test(logMessage)){
             let val = parseInt(logMessage.replace(/\D/g,' ').trim().split(' ')[0]);
             if (val % 10 > 0){
                 if (val % 10 == 1){
@@ -300,7 +302,7 @@
                     DDO.InitiateTimer(-5, val);
                 }
                 DDO.EnableDisableElement(true, "timer", false);
-                console.log("Timer started for floor: " + val + " log-> ( " + logMessage + ")");
+                //console.log("Timer started for floor: " + val + " log-> ( " + logMessage + ")");
             }
         }
         else if (logMessage.includes(parseStrings.EmpyreanReliquary) || logMessage.includes(parseStrings.GlassPumpkin) || logMessage.includes(parseStrings.Firecrest)){
