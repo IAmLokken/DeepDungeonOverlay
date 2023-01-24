@@ -47,8 +47,7 @@
         let parseStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings;
         let logMessage = data[4].toUpperCase();
         if (logMessage.includes(parseStrings.ZoneIn) || 
-        ((logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && !logMessage.includes('-'))){
-        //&& /\d/.test(logMessage)){
+        ((logMessage.includes(parseStrings.PotDFloor) || logMessage.includes(parseStrings.HoHFloor)) && /\d/.test(logMessage) && !/\d-/.test(logMessage) && !/\d~/.test(logMessage))){
             let val = parseInt(logMessage.replace(/\D/g,' ').trim().split(' ')[0]);
             if (val % 10 > 0){
                 if (val % 10 == 1){
