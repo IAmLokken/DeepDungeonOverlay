@@ -467,7 +467,7 @@
                         DDO.CurrentDataBlock.SaveFileDataSet["FLOORENDED"] = "200";
                         DDO.CurrentDataBlock.SaveFileDataSet["FLOOR200SCORE"] = currentScore;
                         break;
-                    case "THINGY":
+                    case "981E":
                         DDO.Console("DATA:: Orthos Tomestone.");
                         DDO.Console("DATA:: Final floor set. 100");
                         DDO.CurrentDataBlock.SaveFileDataSet["REWARD"] = "Orthos Tomestone";
