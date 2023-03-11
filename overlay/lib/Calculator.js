@@ -356,7 +356,11 @@
 
         let mapRevealsToAdd = totalPossibleMapReveals - mapRevealsEarned;
 
-        return  dutyClearFailed * mapRevealsToAdd * 25;
+        score = dutyClearFailed * mapRevealsToAdd * 25;
+        if (currentSave.deepDungeonName == 'Eureka Orthos')
+            score -= 2525;
+
+        return score;
     }
 
 })()
