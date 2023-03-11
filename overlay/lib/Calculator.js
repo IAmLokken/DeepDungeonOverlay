@@ -125,6 +125,8 @@
 
         if (deepDungeonName == 'Eureka Orthos')
         {
+            score += dutyClearFailed * 300; // adjustment for the additional 10th boss on floor 99
+
             // Give bonus for floor 30 boss
             if (currentFloorNumber == 30){
                 score += dutyClearFailed * 300;
