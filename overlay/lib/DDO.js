@@ -5,17 +5,89 @@
 
     window.DDO = {};
 
+    DDO.debug = false;
+
     DDO.SaveFiles = {
                         "the Palace of the Dead": [],
-                        "Heaven-on-High": []
+                        "Heaven-on-High": [],
+                        "Eureka Orthos": []
                     };
     DDO.Snapshot = {};
     DDO.Bestiary = {};
+    DDO.Data = {};
     DDO.DataElements = {};
 
-    DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', '34'];
+    DDO.ParsedLogNumbers = ['00', '12', '21', '22', '25', '26', '33', '34', '41'];
     DDO.GroupParsedLogNumbers = ['00', '12', '21', '22'];
-    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60C', '445', '60D'];
+    DDO.EnchantmentIds = ['449', '440', '448', '446', '442', '443', '445', '441', '444', '447', '60C', '445', '60D', 'DA1'];
+    DDO.TrapIDs = ['1884', '1893', '1894', '1883', '188C', '1887', '1886', '1885', '2C17', '7E77'];
+    DDO.PomanderIDs = ['1873', '1874', '1876', '1877', '1878', '1879', '187A', '187B', '187C', '187D', '187E', '187F', '2C0B', '1880', '2C0C', '1AD6', '1AD4', '1AD5', '2C0D', '4000454A', '4001944A', '40004638', '4001FB18', '40002F3E','4001B237','400054A9'];
+    DDO.AnimalIDs = ['2D05', '2D04', '2D06'];
+    DDO.MagiciteIDs = ['4000454A', '4001944A', '40004638', '4001FB18'];
+    DDO.LogLineIDs = ['1C34', '1C35', '23F6', '1C4D', '1C4A', '1C4E', '1C50', '1C37', '1C6B', '1C6F', '1C56', '282E', '282D', '2830'];
+    DDO.RehabilitationID = "288";
+    DDO.AnimalMap = {
+        "2D05" : "Inugami",
+        "2D04" : "Komainu",
+        "2D06" : "Senri"
+    };
+    DDO.PomanderMap = {
+        "1873" : "Safety",
+        "1874" : "Sight",
+        "1876" : "Strength",
+        "1877" : "Steel",
+        "1878" : "Affluence",
+        "1879" : "Flight",
+        "187A" : "Alteration",
+        "187B" : "Purity",
+        "187C" : "Fortune",
+        "187D" : "Witching",
+        "187E" : "Serenity",
+        "187F" : "Rage",
+        "2C0B" : "Frailty",
+        "1880" : "Lust",
+        "2C0C" : "Concealment",
+        "1AD6" : "Intuition",
+        "1AD4" : "Raising",
+        "1AD5" : "Resolution",
+        "2C0D" : "Petrification",
+        "4000454A" : "Inferno",
+        "4001944A" : "Vortex",
+        "40004638" : "Crag",
+        "4001FB18" : "Elder",
+        "40002F3E" : "Unei",
+        "4001B237" : "Doga",
+        "400054A9" : "Onion Knight"
+    };
+    DDO.TrapMap = {
+        "1884" : "Luring",
+        "1893" : "Weapon Enhancement",
+        "1894" : "Gear Enhancement",
+        "1883" : "Landmine",
+        "188C" : "Detonator",
+        "1887" : "Toading",
+        "1886" : "Impeding",
+        "1885" : "Enfeebling",
+        "2C17" : "Odder",
+        "7E77" : "Owl"
+    };
+    DDO.EnchantmentMap = {
+        "449" : "Auto-Heal Penalty",
+        "440" : "Blind",
+        "448" : "Knockback Penalty",
+        "446" : "Item Penalty",
+        "442" : "Damage Down",
+        "443" : "Haste",
+        "445" : "Hp & Mp Boost",
+        "441" : "HP Penalty",
+        "444" : "Inability",
+        "447" : "Sprint Penalty",
+        "60C" : "Sprint",
+        "60D" : "Unmagicked",
+        "GLOOM" : "Gloom",
+        "DA1" : "Demiclone Penalty"
+    };
+
     DDO.TrapInfo = {
         DetonatorTrapId: "188C",
         WeaponEnhancementTrapId: "1893",
@@ -33,6 +105,7 @@
 
     DDO.RoomRangesPOTD = ['4:4:0:40', '3:6:421:60', '3:6:421:60', '3:6:421:60', '4:6:421:120', '3:6:421:60', '3:6:421:60', '3:6:421:60', '3:6:421:60', '4:6:421:120', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:7:361:90', '5:8:316:300', '5:8:316:300', '5:8:316:300', '5:8:316:300', '5:8:316:300'];
     DDO.RoomRangesHOH  = ['3:6:421:60', '3:6:421:60', '3:6:421:60', '5:7:361:600', '5:7:361:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600'];
+    DDO.RoomRangesEO  = ['3:6:421:60', '3:6:421:60', '3:6:421:60', '5:7:361:600', '5:7:361:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600', '5:8:316:600'];
 
     DDO.playerName = "NULL";
     DDO.playerWorld = "NULL";
@@ -52,6 +125,7 @@
     DDO.soloRunUnderway = false;
     DDO.groupRunUnderway = false;
     DDO.inbetweenArea = false;
+    DDO.keyOpen = false;
 
     DDO.currentInstance = "NULL";
     DDO.currentFloorStats = {};
@@ -64,6 +138,7 @@
     DDO.currentTargetHPP = 100;
 
     DDO.triggeredTraps = [];
+    DDO.usedPomanders = [];
     DDO.enchantmentsApplied = [];
 
     DDO.SetDefaultConfig = async function()
@@ -100,7 +175,8 @@
     DDO.LoadConfig = function(instanceName)
     {
         if (instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsPOTD) ||
-            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH))
+            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH) ||
+            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsEO))
         {
             if((DDO.soloRunUnderway || DDO.groupRunUnderway) && !DDO.inbetweenArea){
                 // At the end of cutscenes a new zone change message is received.  This is so we dont lose our current dungeon
@@ -156,7 +232,8 @@
             DDO.inbetweenArea = false;
         }
         else if (instanceName == DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstancePOTD ||
-                instanceName == DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceHOH){
+                instanceName == DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceHOH ||
+                instanceName == DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceEO){
             if (!DDO.soloRunUnderway && !DDO.groupRunUnderway){
                 // If they just logged in or reset the plugin/act treat this zone like any other zone
                 DDO.soloRunUnderway = false;
@@ -175,7 +252,7 @@
         else {
             if (DDO.RunAbandoned && DDO.SaveFiles[DDO.currentInstance].length > 0)
             {
-                console.log("Abandoned run, removing");
+                DDO.Console("Abandoned run, removing");
                 DDO.SaveFiles[DDO.currentInstance].splice(DDO.currentSaveFileIndex, 1);
                 DDO.SaveRuns();
                 DDO.RunAbandoned = false;
@@ -296,6 +373,11 @@
         else
             DDO.DataElements.HOHButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['HOHButton']}`;
 
+        if (DDO.SaveFiles['Eureka Orthos'] && DDO.SaveFiles['Eureka Orthos'].length > 0 )
+            DDO.DataElements.EOButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['EOButton']} (${DDO.SaveFiles['Eureka Orthos'].length})`;
+        else
+            DDO.DataElements.EOButton.innerText = `${DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['EOButton']}`;
+
         DDO.DataElements.MapClearCheckBoxValue.checked = DDO.Config.assumeFullMapClear;
     }
 
@@ -304,7 +386,7 @@
         let saveFound = false;
         for (var i = 0; i < DDO.SaveFiles[DDO.currentInstance].length; i++)
         {
-            console.log("Current Save: " + DDO.SaveFiles[DDO.currentInstance][i]);
+            //console.log("Current Save: " + DDO.SaveFiles[DDO.currentInstance][i]);
             if ((!DDO.isInGroup &&
                 DDO.SaveFiles[DDO.currentInstance][i].playerName == DDO.playerName &&
                 DDO.SaveFiles[DDO.currentInstance][i].playerJob == DDO.playerJob &&
@@ -324,6 +406,18 @@
                     DDO.SaveFiles[DDO.currentInstance][i].roomRevealCounts = new Array(20).fill(0);
                     DDO.SaveFiles[DDO.currentInstance][i].rareKillCounts = new Array(20).fill(0);
                 }
+                if (!DDO.SaveFiles[DDO.currentInstance][i].ID)
+                {
+                    DDO.SaveFiles[DDO.currentInstance][i].ID = DDO.GenerateUUID();
+                }
+                if (!DDO.SaveFiles[DDO.currentInstance][i].StartDate)
+                {
+                    DDO.SaveFiles[DDO.currentInstance][i].StartDate = (new Date()).toISOString();
+                }
+                if (!DDO.SaveFiles[DDO.currentInstance][i].SaveSent)
+                {
+                    DDO.SaveFiles[DDO.currentInstance][i].SaveSent = false;
+                }
                 if(!DDO.SaveFiles[DDO.currentInstance][i].Players)
                 {
                     DDO.SaveFiles[DDO.currentInstance][i].Players = DDO.Players;
@@ -336,6 +430,9 @@
         }
         if (!saveFound){
             var newSave = {};
+            newSave.ID = DDO.GenerateUUID();
+            newSave.StartDate = (new Date()).toISOString();
+            newSave.EndDate = "";
             newSave.playerName = DDO.playerName;
             newSave.playerJob = DDO.playerJob;
             newSave.playerWorld = DDO.playerWorld;
@@ -360,11 +457,13 @@
             newSave.currentRoomRevealCount = 0;
             newSave.currentRezCount = 0;
             newSave.currentKOCount = 0;
+            newSave.SaveSent = false;
 
             DDO.currentSaveFileIndex = DDO.SaveFiles[DDO.currentInstance].length;
             DDO.SaveFiles[DDO.currentInstance].push(newSave);        
             DDO.Snapshot = JSON.parse(JSON.stringify(newSave));
             DDO.RunAbandoned = true;
+            
         }    
     }
 
@@ -587,6 +686,13 @@
         DDO.SaveRuns();
     }
 
+    DDO.ClearEOSaves = function()
+    {
+        DDO.SaveFiles['Eureka Orthos'] = [];
+        DDO.DataElements.EOButton.innerText = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings['EOButton'];
+        DDO.SaveRuns();
+    }
+
     DDO.InitiateTimer = function(offset, floor){
         clearInterval(DDO.ticker);
         DDO.DataElements.TimerValue.innerText = '00:00';
@@ -594,7 +700,7 @@
         
         let floorSetIndex = Math.floor(floor / 10);
         let timerValue = -1;
-        if (DDO.currentInstance == 'Heaven-on-High'){
+        if (DDO.currentInstance == 'Heaven-on-High' || DDO.currentInstance == 'Eureka Orthos'){
             let range = DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
             timerValue += range[3];
         }
@@ -641,9 +747,10 @@
         if (!currentSave) return;
         if (currentSave.floorStartedOn == 1 ||
             (currentSave.floorStartedOn == 21 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsHOH'].includes(currentSave.deepDungeonName)) ||
-            (currentSave.floorStartedOn == 51 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsPOTD'].includes(currentSave.deepDungeonName))
+            (currentSave.floorStartedOn == 51 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsPOTD'].includes(currentSave.deepDungeonName)) ||
+            (currentSave.floorStartedOn == 21 && DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings['CurrentInstanceFloorsEO'].includes(currentSave.deepDungeonName))
             ){
-                let playerLevel = DDO.currentInstance == 'Heaven-on-High' ? 70 : 60;
+                let playerLevel = DDO.currentInstance == 'Eureka Orthos' ? 90 : DDO.currentInstance == 'Heaven-on-High' ? 70: 60;
                 let score = DDO.ScoreCalculator.CalulcateCurrentScore(currentSave, playerLevel, 101);
 
                 if (DDO.Config.assumeFullMapClear){
@@ -661,7 +768,7 @@
     }
 
     DDO.GetMaxFloorScore = function(){
-        if (DDO.currentInstance == 'Heaven-on-High'){
+        if (DDO.currentInstance == 'Heaven-on-High' || DDO.currentInstance == 'Eureka Orthos'){
             return DDO.currentFloor <= 30 ? 30 : 100;
         }
         else{
@@ -673,6 +780,7 @@
     {
         DDO.DataElements.POTDButton = document.getElementById("POTDButton");
         DDO.DataElements.HOHButton = document.getElementById("HOHButton");
+        DDO.DataElements.EOButton = document.getElementById("EOButton");
 
         DDO.DataElements.ScoreValue = document.getElementById("Score");
         DDO.DataElements.MonstersFloorValue = document.getElementById("MonstersFloor");
@@ -733,6 +841,30 @@
         DDO.DataElements.PomAffluenceEnabledImage = document.getElementById("PomAffluenceEnabled");
         DDO.DataElements.PomAlterationEnabledImage = document.getElementById("PomAlterationEnabled");
         DDO.DataElements.PomFlightEnabledImage = document.getElementById("PomFlightEnabled");            
+    }
+
+    DDO.GenerateUUID = function()
+    {
+        return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    }
+
+    DDO.Console = function(value)
+    {
+        DDO.debug ? console.log(value) : null;
+    }
+
+    DDO.ConvertMilisecondsToHoursMinutes = function(miliseconds)
+    {
+        const h = Math.floor(miliseconds / 1000 / 60 / 60);
+        const m = Math.floor((miliseconds / 1000 / 60 / 60 - h) * 60);
+        const s = Math.floor(((miliseconds / 1000 / 60 / 60 - h) * 60 - m) * 60);
+    
+        // To get time format 00:00:00
+        const seconds = s < 10 ? `0${s}` : `${s}`;
+        const minutes = m < 10 ? `0${m}` : `${m}`;
+        const hours = h < 10 ? `0${h}` : `${h}`;
+    
+        return `${minutes}:${seconds}`;
     }
 
     DDO.CalculateScoreNoRoomReveal = async function()

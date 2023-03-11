@@ -2,15 +2,16 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="css/display.css?v=Midgardsormr-1.2.9" />    
+    <link rel="stylesheet" href="css/display.css?v=Orthos-0.0.3" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
-    <script src="lib/DDO.js?v=Midgardsormr-1.2.9"></script>
-    <script src="lib/Locale.js?v=Midgardsormr-1.2.9"></script>
-    <script src="lib/Bestiary.js?v=Midgardsormr-1.2.9"></script>
-    <script src="lib/Parser.js?v=Midgardsormr-1.2.9"></script>
-    <script src="lib/GroupParser.js?v=Midgardsormr-1.2.9"></script>
-    <script src="lib/Calculator.js?v=Midgardsormr-1.2.9"></script>
+    <script src="lib/DDO.js?v=Orthos-0.0.3"></script>
+    <script src="lib/Data.js?v=Orthos-0.0.3"></script>
+    <script src="lib/Locale.js?v=Orthos-0.0.3"></script>
+    <script src="lib/Bestiary.js?v=Orthos-0.0.3"></script>
+    <script src="lib/Parser.js?v=Orthos-0.0.3"></script>
+    <script src="lib/GroupParser.js?v=Orthos-0.0.3"></script>
+    <script src="lib/Calculator.js?v=Orthos-0.0.3"></script>
 
     <script>
 
@@ -48,6 +49,8 @@
             var loadedSaveFiles = await callOverlayHandler({call: "loadData", key: "DDO_Saves"}); 
             if (loadedSaveFiles && !loadedSaveFiles.$isNull){
                 DDO.SaveFiles = JSON.parse(loadedSaveFiles.data);
+                if (!DDO.SaveFiles['Eureka Orthos'])
+                    DDO.SaveFiles['Eureka Orthos'] = [];
             }
 
             var config = await callOverlayHandler({call: "loadData", key: "DDO_Config"});
@@ -116,13 +119,13 @@
             else if ((data.line[0] == '03' || data.line[0] == '12') && 
                     data.rawLine.includes(DDO.playerName))
             {
-                console.log('Log Line Update');
+                //console.log('Log Line Update');
                 DDO.UpdatePlayerInfo();
             }
         }
         function ChangeZone(data)
         {
-            console.log('Zone Change Update');
+            //console.log('Zone Change Update');
             //DDO.currentInstance = data.zoneName;
             DDO.UpdateGroupJobs(DDO.UpdatePlayerInfo, data.zoneName);
             //DDO.UpdatePlayerInfo(DDO.LoadConfig, data.zoneName);
@@ -130,7 +133,7 @@
         }
         function ChangePrimaryPlayer(data)
         {
-            console.log('Primary Player Update');
+            //console.log('Primary Player Update');
             DDO.playerName = data.charName;
             DDO.UpdatePlayerInfo();
         }
@@ -141,7 +144,7 @@
         }
         function EnmityTargetData(data)
         {
-            if (data.Target != null && (DDO.currentInstance == 'the Palace of the Dead' || DDO.currentInstance == 'Heaven-on-High') && !DDO.inbetweenArea){
+            if (data.Target != null && (DDO.currentInstance == 'the Palace of the Dead' || DDO.currentInstance == 'Heaven-on-High' || DDO.currentInstance == 'Eureka Orthos') && !DDO.inbetweenArea){
                 DDO.DisplayTargetInfo(data);
             }
             else{
@@ -171,6 +174,7 @@
     <div id="saveManager">
         <button type="button" id="POTDButton" class="Translate" onclick="DDO.ClearPOTDSaves()"></button>
         <button type="button" id="HOHButton" class="Translate" onclick="DDO.ClearHOHSaves()"></button>
+        <button type="button" id="EOButton" class="Translate" onclick="DDO.ClearEOSaves()"></button>
     </div>
 
     <div id="settings">
@@ -260,11 +264,11 @@
     </table>
 
     <div id="versiondiv" style="text-align: center;">
-    <label id="VERSION">'Midgardsormr-1.2.9' 2023/01/23</label>
+    <label id="VERSION">'Orthos-0.0.3' 2023/03/10 - DEVELOPMENT</label>
 </div>
 <!--
     <div id="scoreDebug">
-        <button type="button" id="scoreDebugButton" onclick="DDO.CalculateScoreNoRoomReveal()">Calculate Score</button>
+        <button type="button" id="scoreDebugButton" onclick="DDO.TestAPI()">Calculate Score</button>
         <br/>
         <span id="debugScore" style="color: seashell;">-</span>
     </div>

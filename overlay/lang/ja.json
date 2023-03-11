@@ -58,20 +58,17 @@
         "Korrigan": "コリガン",
         "Mandragora": "マンドラゴラ",
         "Pygmaioi": "ピグマイオイ",
-        "Trap": "トラップ",
-        "Detonator": "トラップが起動し、宝箱が爆発した",
-        "Pomander": "魔土器",
-        "BaresItsFangsPOTD": "宝箱はミミックだった",
-        "BaresItsFangsHOH": "宝箱はうごめく宝箱だった",
-        "Magicite": "魔石",
-        "Obtain": "入手します",
+
+ 
+        "Obtain": "を手に入れた。",
         "ThirtyMinutesRemaining": "の終了まで、あと30分",
         "Gloom": "立ちこめる妖霧により、魔物の力が増しているようだ",
+        "PossessPhoenixDown": "フェニックスの尾を所持しているため、入手できませんでした。",
         "PhoenixDown": "フェニックスの尾",
-        "Transference": "転移が実行された！",
-        "EmpyreanReliquary": "天之聖遺物",
-        "GlassPumpkin": "ガラスのカボチャ",
-        "Firecrest": "ファイアクレスト"        
+        "EmpyrianPotsherd": "天之土器片",
+        "GelmorranPotsherd": "ゲルモラ土器片",
+        "Potsherd": "土器片",
+        "Potion": "ポーション"
     }
 }
 

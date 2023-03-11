@@ -20,6 +20,7 @@
         "NoTargetLabel": "No Target",
         "POTDButton": "Clear PotD Saves",
         "HOHButton": "Clear HoH Saves",
+        "EOButton" : "Clear EO Saves",
         "ButtonInfo": "This window will display Deep Dungeon information while in a Deep Dungeon run.  While not in a Deep Dungeon run you can use the below buttons to clear save information stored by this overlay.",
         "MapSettingInfo": "Check here if you want the score calculation to assume full map clears during your run.",
         "DarkModeInfo": "To toggle between default and night mode, right click on the overlay."
@@ -27,6 +28,7 @@
     "BossNames":
     [
         "MOJABUNE", "BECCHO", "HIRUKO", "BHIMA", "GOZU", "SUIKAZURA", "KENKO", "KAJIGAKAKA", "ONRA",
+        "GANCANAGH", "CLONING NODE", "TIAMAT CLONE", "TWINTANIA CLONE", "SERVOMECHANICAL CHIMERA", "SERVOMECHANICAL MINOTAUR", "AETURNA", "PROTO-KALIYA", "ADMINISTRATOR", "EXCALIBUR",
         "PALACE DEATHGAZE", "SPURGE", "NINGISHZIDA", "IXTAB", "EDDA BLACKBOSOM", "THE BLACK RIDER", "YAQUARU", "GUDANNA", "THE GODMOTHER", "NYBETH OBDILORD",
         "ALICANTO", "KIRTIMUKHA", "ALFARD", "AH PUCH", "TISIPHONE", "TODESRITTER", "YULUNGGU", "DENDAINSONNE", "THE GODFATHER"
     ],
@@ -35,22 +37,25 @@
         "BLOATED CONJURER", "BLOATED ARCHER", "BLOATED PUGILIST", "SWORD-SWINGING ADVENTURER", "STAFF-SPINNING ADVENTURER", "SPEAR-SHAKING ADVENTURER", 
         "ROUGHSPUN RUFFIAN", "FRENZIED FREEBOOTER", "ISHGARDIAN PIKEMAN", "DUSKWIGHT LANCER", "MORTIFYING MAGNATE", "INSENTIENT INQUISITOR", "MOLDERING MERCHANT",
         "EMACIATED ENGINEER", "JAUNDICED TRIBUNUS", "FLYBLOWN PRAEFECTUS", "HALF-CRACKED CAPTAIN", "SUNKEN CAPTAIN", "PUTRID PLUTOCRAT", "GANGRENOUS GIGANT",
-        "CORRUPTED CENTURION", "NECROSE KNIGHT", "BLACKENING MARKETEER", "IMMORTAL FLAME"
+        "CORRUPTED CENTURION", "NECROSE KNIGHT", "BLACKENING MARKETEER", "IMMORTAL FLAME", "MERACYDIAN CLONE", "LAMIA QUEEN", "DEMI-COCHMA"
     ],
     "EnchantmentNames":
     [
         "AUTO-HEAL PENALTY", "BLIND", "DAMAGE DOWN", "HP & MP BOOST", "HP PENALTY", "INABILITY", "ITEM PENALTY", "KNOCKBACK PENALTY", "SPRINT PENALTY",
-        "HASTE", "SPRINT", "UNMAGICKED", "NO ITEMS", "AMNESIA"
+        "HASTE", "SPRINT", "UNMAGICKED", "NO ITEMS", "AMNESIA", "DEMICLONE PENALTY"
     ],
     "ParseStrings":
     {
         "CurrentInstancePOTD": "The Palace of the Dead",
         "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceEO": "Eureka Orthos",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "CurrentInstanceFloorsEO": "Eureka Orthos (Floors",
         "Floor": "FLOOR",
         "HoHFloor": "FLOOR",
         "PotDFloor": "FLOOR",
+        "EOFloor": "FLOOR",
         "ZoneIn": ") HAS BEGUN.",
         "BandedCoffer": "BANDED COFFER",
         "QuiveringCoffer": "QUIVERING COFFER",
@@ -58,19 +63,18 @@
         "Korrigan": "KORRIGAN",
         "Mandragora": "MANDRAGORA",
         "Pygmaioi": "PYGMAIOI",
-        "Trap": "TRAP",
-        "Detonator": "DETONATOR",
-        "Pomander": "POMANDER",
-        "BaresItsFangsPOTD": "...BARES ITS FANGS!",
-        "BaresItsFangsHOH": "...BARES ITS FANGS!",
-        "Magicite": "MAGICITE",
+        "OrthosKorrigan": "ORTHOS KORRIGAN",
+
         "Obtain": "OBTAIN",
         "ThirtyMinutesRemaining": "30 MINUTES REMAINING",
         "Gloom": "THE GATHERING GLOOM",
-        "PhoenixDown": "PHOENIX DOWN. YOU ALREADY POSSESS ONE.",
-        "Transference": "TRANSFERENCE INITIATED!",
-        "EmpyreanReliquary": "EMPYREAN RELIQUARY",
-        "GlassPumpkin": "GLASS PUMPKIN",
-        "Firecrest": "FIRECREST"        
+        "PossessPhoenixDown": "PHOENIX DOWN. YOU ALREADY POSSESS ONE.",
+        "PhoenixDown": "PHOENIX DOWN",
+        "EmpyrianPotsherd": "EMPYREAN POTSHERD",
+        "GelmorranPotsherd": "GELMORRAN POTSHERD",
+        "OrthoseAetherpoolFramgent": "ORTHOS AETHERPOOL FRAGMENT",
+        "Potsherd": "POTSHERD",
+        "Potion": "POTION",
+        "Fragment": "FRAGMENT"
     }
 }

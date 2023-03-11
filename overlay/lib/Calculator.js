@@ -24,7 +24,8 @@
     DDO.ScoreCalculator.CalulcateCurrentScore = function(saveFile, playerLevel, dutyClearFailed)
     {
         if ((saveFile.deepDungeonName == "the Palace of the Dead" && saveFile.floorStartedOn != 1 && saveFile.floorStartedOn != 51) ||
-            (saveFile.deepDungeonName == "Heaven-on-High" && saveFile.floorStartedOn != 1 && saveFile.floorStartedOn != 21))
+            (saveFile.deepDungeonName == "Heaven-on-High" && saveFile.floorStartedOn != 1 && saveFile.floorStartedOn != 21) ||
+            (saveFile.deepDungeonName == "Eureka Orthos" && saveFile.floorStartedOn != 1 && saveFile.floorStartedOn != 21))
              return -414;
 
         let score = 0;
@@ -35,7 +36,7 @@
         DDO.ScoreCalculator.floorScore = DDO.ScoreCalculator.CalculateFloorScore(saveFile.floorStartedOn, floorStoppedOn, dutyClearFailed, saveFile.deepDungeonName);
         DDO.ScoreCalculator.revealedScore = DDO.ScoreCalculator.CalculateFullyRevealedFloorScore(saveFile.floorStartedOn, floorStoppedOn,  saveFile.currentMapRevealCount, dutyClearFailed);
         DDO.ScoreCalculator.chestScore = DDO.ScoreCalculator.CalculateChestScore(saveFile.currentChestCount, dutyClearFailed);
-        DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.currentSpecialKillCount, dutyClearFailed);
+        DDO.ScoreCalculator.uniqueEnemyScore = DDO.ScoreCalculator.CalculateUniqueEnemyScore(saveFile.deepDungeonName, saveFile.currentSpecialKillCount, dutyClearFailed);
         DDO.ScoreCalculator.mimicScore = DDO.ScoreCalculator.CalculateMimicKorriganScore(saveFile.currentMimicCount + saveFile.currentKorriganCount, dutyClearFailed);
         DDO.ScoreCalculator.enchantmentScore = DDO.ScoreCalculator.CalculateEnchantmentScore(saveFile.currentEnchantmentCount, dutyClearFailed);
         DDO.ScoreCalculator.trapScore = DDO.ScoreCalculator.CalculateTrapScore(saveFile.currentTrapsTriggered, dutyClearFailed);
@@ -98,6 +99,31 @@
         score -= 4500;
 
         if (deepDungeonName == 'Heaven-on-High')
+        {
+            // Give bonus for floor 30 boss
+            if (currentFloorNumber == 30){
+                score += dutyClearFailed * 300;
+            }
+
+            // 5050 bonus for reaching last floor (separate from completion bonus.  You get this if you timeout on last floor rip)
+            if (currentFloorNumber == 100){
+                score += 50 * dutyClearFailed;
+            }
+            
+            // adding additional 450 for floor 30 boss
+            // removing 50 for first boss (weather thats floor 10 or 30)
+            score += 400 * dutyClearFailed;
+
+            // Floor 30 scoreboard bandaid; only applicable if starting at 1
+            if (floorDifference + 1 == 30)
+                score -= 1000;
+
+            // Clear bonus
+            if (currentFloorNumber == 100)
+                score += 3200 * dutyClearFailed;
+        }
+
+        if (deepDungeonName == 'Eureka Orthos')
         {
             // Give bonus for floor 30 boss
             if (currentFloorNumber == 30){
@@ -187,11 +213,14 @@
         return score;
     }
 
-    DDO.ScoreCalculator.CalculateUniqueEnemyScore = function(uniqueCount, dutyClearFailed){
+    DDO.ScoreCalculator.CalculateUniqueEnemyScore = function(deepDungeonName, uniqueCount, dutyClearFailed){
         let score = 0;
         if (!DDO.ScoreCalculator.firstFloorTimeOut)
         {
-            score += uniqueCount * dutyClearFailed * 20;
+            if (deepDungeonName == 'the Palace of the Dead')
+                score += uniqueCount * dutyClearFailed * 20;
+            else if (deepDungeonName == 'Eureka Orthos')
+                score += uniqueCount * dutyClearFailed * 5;
         }
         return score;
     }
@@ -260,6 +289,23 @@
                 }
             }            
         }
+
+        // EO floor 1-30 are normal kill values
+        // EO floor 31-100 are bonus kill values excluding mimics and bosses
+        if (deepDungeonName == 'Eureka Orthos'){
+            for(var i = 0; i < 10; i++){
+                let nonBonusMobs = mimicKills[i] + rareKillCounts[i] + 1;
+                if (i < 3){
+                    score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * floorKills[i];
+                }
+                else{
+                    if (floorKills[i] > 0){
+                        score += (100 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (nonBonusMobs);
+                        score += (201 + Math.floor(((currentFloorNumber - floorStartedOn + 1) / 2)) * 2) * (floorKills[i] - nonBonusMobs);
+                    }
+                }
+            }            
+        }
         
         // Potd floor 1-100 are normal kill values
         // Potd floor 101-200 are bonus kill values excluding mimics, rare monsters, and bosses
@@ -287,7 +333,7 @@
         let score = 0;
 
         let floorSetIndex = Math.floor(DDO.currentFloor / 10);
-        if (deepDungeonName == 'Heaven-on-High'){
+        if (deepDungeonName == 'Heaven-on-High' || deepDungeonName == 'Eureka Orthos'){
             let range = DDO.RoomRangesHOH[floorSetIndex].split(':').map(Number);
             for (var i = 0; i < 10; i++){
                 score += roomRevealCounts[i] * range[2];

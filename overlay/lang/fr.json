@@ -58,19 +58,16 @@
         "Korrigan": "KORRIGAN",
         "Mandragora": "MANDRAGORA",
         "Pygmaioi": "PYGMAIOI",
-        "Trap": "PIÈGE",
-        "Detonator": "PIÈGE EXPLOSIF",
-        "Pomander": "POTERIE MAGIQUE",
-        "BaresItsFangsPOTD": "LE COFFRE AU TRÉSOR ÉTAIT EN RÉALITÉ UN MIMIC",
-        "BaresItsFangsHOH": "LE COFFRE AU TRÉSOR ÉTAIT EN RÉALITÉ UN COFFRE GIGOTANT",
-        "Magicite": "PIERRES MAGIQUES",
-        "Obtain": "OBTENIR",
+
+
+        "Obtain": "VOUS OBTENEZ",
         "ThirtyMinutesRemaining": "IL RESTE 30 MINUTES AVANT",
         "Gloom": "QUI REND LES ENNEMIS PLUS PUISSANTS.",
-        "PhoenixDown": "QUEUE DE PHÉNIX. VOUS EN POSSÉDEZ DÉJÀ UNE",
-        "Transference": "TÉLÉPORTATION VERS L'ÉTAGE SUIVANT!",
-        "EmpyreanReliquary": "RELIQUE SACRÉE EMPYRÉENNE",
-        "GlassPumpkin": "CITROUILLE DE VERRE",
-        "Firecrest": "CIMIER DE FEU"        
+        "PossessPhoenixDown": "QUEUE DE PHÉNIX. VOUS EN POSSÉDEZ DÉJÀ UNE",
+        "PhoenixDown": "QUEUE DE PHÉNIX",
+        "EmpyrianPotsherd": "TESSON DE POTERIE EMPYRÉENNE",
+        "GelmorranPotsherd": "TESSON DE POTERIE GELMORRAINE",
+        "Potsherd": "TESSON DE POTERIE",
+        "Potion": "POTION"
     }
 }

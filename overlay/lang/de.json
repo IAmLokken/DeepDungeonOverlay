@@ -58,19 +58,16 @@
         "Korrigan": "KORRIGANE",
         "Mandragora": "MANDRAGORA",
         "Pygmaioi": "PYGMAIOI",
-        "Trap": "FALLE",
-        "Detonator": "SPRENGFALLE",
-        "Pomander": "TONGEFÄSS",
-        "BaresItsFangsPOTD": "DIE SCHATZTRUHE WAR IN WIRKLICHKEIT EIN MIMIK!",
-        "BaresItsFangsHOH": "DIE SCHATZTRUHE WAR IN WIRKLICHKEIT EINE ZUCKENDE SCHNAPPTRUHE!",
-        "Magicite": "ZAUBERSTEIN",
-        "Obtain": "ERHALTEN",
+
+
+        "Obtain": "DU HAST",
         "ThirtyMinutesRemaining": "DU HAST NOCH 30 MINUTEN ZEIT",
         "Gloom": "NICHTSNEBEL SCHEINT DIE FEINDSELIGEN WESEN AUF DIESER EBENE ZU STÄRKEN",
+        "PossessPhoenixDown": "PHÖNIXFEDER IN DEINEM BESITZ HAST.",
         "PhoenixDown": "PHÖNIXFEDER",
-        "Transference": "TRANSPORT ERFOLGREICH!",
-        "EmpyreanReliquary": "EMPYREISCHES RELIKT",
-        "GlassPumpkin": "GLASKÜRBIS",
-        "Firecrest": "FEUERWAPPEN"        
+        "EmpyrianPotsherd": "EMPYREUM-SCHERBE",
+        "GelmorranPotsherd": "GELMORRA-SCHERBE",
+        "Potsherd": "SCHERBE",
+        "Potion": "TRANK"
     }
 }

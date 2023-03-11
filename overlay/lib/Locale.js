@@ -63,6 +63,8 @@
             DDO.DataElements.POTDButton.innerText += ` (${DDO.SaveFiles['the Palace of the Dead'].length})`;
         if (DDO.SaveFiles['Heaven-on-High'].length > 0)
             DDO.DataElements.HOHButton.innerText += ` (${DDO.SaveFiles['Heaven-on-High'].length})`;
+        if (DDO.SaveFiles['Eureka Orthos'] && DDO.SaveFiles['Eureka Orthos'].length > 0)
+            DDO.DataElements.EOButton.innerText += ` (${DDO.SaveFiles['Eureka Orthos'].length})`;
     }
 
 })()
