@@ -87,7 +87,7 @@
         let lastBossFloorCompleted =  Math.floor((currentFloorNumber - floorStartedOn) / 10);
         if (deepDungeonName == 'Eureka Orthos' && currentFloorNumber == 100)
         {
-            lastBossFloorCompleted = 10;
+            //lastBossFloorCompleted = 10;
         }
 
         score += 430 * floorDifference; // Aetherpool(99/99 assumed) times floor ended on minus floor started on
@@ -148,8 +148,10 @@
                 score -= 1000;
 
             // Clear bonus
-            if (currentFloorNumber == 100)
+            if (currentFloorNumber == 100){
                 score += 3200 * dutyClearFailed;
+                score += 500 * dutyClearFailed;
+            }
         }
 
 
@@ -362,7 +364,10 @@
 
         score = dutyClearFailed * mapRevealsToAdd * 25;
         if (currentSave.deepDungeonName == 'Eureka Orthos' && currentSave.floorMaxScore == 100)
-            score -= 2525;
+        {
+            //score -= 2525;
+            console.log('no credit 99');
+        }
 
         return score;
     }
