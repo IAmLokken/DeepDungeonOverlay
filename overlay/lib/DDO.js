@@ -5,7 +5,7 @@
 
     window.DDO = {};
 
-    DDO.debug = false;
+    DDO.debug = true;
 
     DDO.SaveFiles = {
                         "the Palace of the Dead": [],
@@ -302,6 +302,13 @@
             DDO.DataElements.RareMonstersRow.style.display = "none";
         }
         else{
+            let rareLabel = document.getElementById("RareMonstersLabel");
+            let UIStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings;
+            if (DDO.currentInstance.includes('the Palace of the Dead'))
+                rareLabel.innerText = UIStrings.RareMonstersLabel;
+            else
+                rareLabel.innerText = UIStrings.DreadBeastLabel;
+            
             DDO.DataElements.RareMonstersRow.style.display = "";
         }
     }
@@ -343,6 +350,13 @@
             DDO.DataElements.RareMonstersRow.style.display = "none";
         }
         else{
+            let rareLabel = document.getElementById("RareMonstersLabel");
+            let UIStrings = DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].UIStrings;
+            if (DDO.currentInstance.includes('the Palace of the Dead'))
+                rareLabel.innerText = UIStrings.RareMonstersLabel;
+            else
+                rareLabel.innerText = UIStrings.DreadBeastLabel;
+            
             DDO.DataElements.RareMonstersRow.style.display = "";
         }
     }
