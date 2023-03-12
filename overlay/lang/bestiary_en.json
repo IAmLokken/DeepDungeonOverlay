@@ -1945,7 +1945,7 @@
          "Notes":"*Good Luck*",
          "EnglishName":"MIMIC"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -1993,21 +1993,21 @@
          "Notes":"",
          "EnglishName":"ORTHOS FACHAN"
       },
-      "ORTHOS THANTOS":{
+      "ORTHOS THANATOS":{
          "Notes":"",
-         "EnglishName":"ORTHOS THANTOS"
+         "EnglishName":"ORTHOS THANATOS"
       },
-      "ORTHOS UNDEAD DRAGON":{
+      "UNDEAD ORTHOS DRAGON":{
          "Notes":"",
-         "EnglishName":"ORTHOS UNDEAD DRAGON"
+         "EnglishName":"UNDEAD ORTHOS DRAGON"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2019,13 +2019,13 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
-         "EnglishName":"QUIVERING COFFER"
+         "EnglishName":"MIMIC"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
       "ORTHOS SPIRULINA":{
          "Notes":"",
@@ -2083,9 +2083,9 @@
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2097,13 +2097,13 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
       "ORTHODEMOLISHER":{
          "Notes":"",
@@ -2161,9 +2161,9 @@
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2175,25 +2175,21 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
-      "MIRRORKNIGHT":{
+      "ORTHOS MIRRORKNIGHT":{
          "Notes":"",
-         "EnglishName":"MIRRORKNIGHT"
+         "EnglishName":"ORTHOS MIRRORKNIGHT"
       },
-      "SHABTI":{
+      "ORTHOS SHABTI":{
          "Notes":"Buggy",
-         "EnglishName":"SHABTI"
-      },
-      "ORTHOIKSALION":{
-         "Notes":"",
-         "EnglishName":"ORTHOIKSALION"
+         "EnglishName":"ORTHOS SHABTI"
       },
       "ORTHOBUG":{
          "Notes":"",
@@ -2203,9 +2199,9 @@
          "Notes":"",
          "EnglishName":"ORTHOSPIDER"
       },
-      "LAMIA":{
+      "ORTHOS LAMIA":{
          "Notes":"",
-         "EnglishName":"LAMIA"
+         "EnglishName":"ORTHOS LAMIA"
       },
       "ORTHONAGA":{
          "Notes":"",
@@ -2231,17 +2227,17 @@
          "Notes":"",
          "EnglishName":"ORTHOEMPUSE"
       },
-      "RAPTOID":{
+      "ORTHOS RAPTOID":{
          "Notes":"",
-         "EnglishName":"RAPTOID"
+         "EnglishName":"ORTHOS RAPTOID"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2253,225 +2249,225 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
-      "BERGTHURS":{
+      "ORTHOS BERGTHURS":{
          "Notes":"",
-         "EnglishName":"BERGTHURS"
+         "EnglishName":"ORTHOS BERGTHURS"
       },
-      "ABAIA":{
+      "ORTHOS ABAIA":{
          "Notes":"",
-         "EnglishName":"ABAIA"
+         "EnglishName":"ORTHOS ABAIA"
       },
-      "ACHERON":{
+      "ORTHOS ACHERON":{
          "Notes":"",
-         "EnglishName":"ACHERON"
+         "EnglishName":"ORTHOS ACHERON"
       },
-      "SPRIGGAN":{
+      "ORTHOS SPRIGGAN":{
          "Notes":"",
-         "EnglishName":"SPRIGGAN"
+         "EnglishName":"ORTHOS SPRIGGAN"
       },
-      "HEDETET":{
+      "ORTHOS HEDETET":{
          "Notes":"",
-         "EnglishName":"HEDETET"
+         "EnglishName":"ORTHOS HEDETET"
       },
-      "HUWASI":{
+      "ORTHOS KELPIE":{
          "Notes":"",
-         "EnglishName":"HUWASI"
+         "EnglishName":"ORTHOS KELPIE"
       },
-      "KELPIE":{
+      "ORTHOS GOOBBUE":{
          "Notes":"",
-         "EnglishName":"KELPIE"
+         "EnglishName":"ORTHOS GOOBBUE"
       },
-      "GOOBBUE":{
+      "ORTHOS KUKULKAN":{
          "Notes":"",
-         "EnglishName":"GOOBBUE"
+         "EnglishName":"ORTHOS KUKULKAN"
       },
-      "KUKULKAN":{
+      "ORTHOS MUDMAN":{
          "Notes":"",
-         "EnglishName":"KUKULKAN"
+         "EnglishName":"ORTHOS MUDMAN"
       },
-      "MUDMAN":{
+      "ORTHOS HOARHOUND":{
          "Notes":"",
-         "EnglishName":"MUDMAN"
+         "EnglishName":"ORTHOS HOARHOUND"
       },
-      "HOARHOUND":{
+      "ORTHOS GELATO":{
          "Notes":"",
-         "EnglishName":"HOARHOUND"
+         "EnglishName":"ORTHOS GELATO"
       },
-      "GELATO":{
+      "ORTHOS APA":{
          "Notes":"",
-         "EnglishName":"GELATO"
+         "EnglishName":"ORTHOS APA"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "SERVOMECHANICAL CHIMERA":{
+      "SERVOMECHANICAL CHIMERA 14X":{
          "Notes":"Ability name telegraphs the order of rams voice and dragons voice.  Dodge to boss's left or right to avoid the 'breathed cold'. For cold thunder move teather far enough away to stretch it for minimal damage, move towards boss afterwards for next mechanic.",
-         "EnglishName":"SERVOMECHANICAL CHIMERA"
+         "EnglishName":"SERVOMECHANICAL CHIMERA 14X"
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ICE SPRITE":{
+      "ORTHOS SPRITE":{
          "Notes":"",
-         "EnglishName":"ICE SPRITE"
+         "EnglishName":"ORTHOS SPRITE"
       },
-      "YMIR":{
+      "ORTHOS YMIR":{
          "Notes":"",
-         "EnglishName":"YMIR"
+         "EnglishName":"ORTHOS YMIR"
       },
-      "ROCKFIN":{
+      "ORTHOS ROCKFIN":{
          "Notes":"",
-         "EnglishName":"ROCKFIN"
+         "EnglishName":"ORTHOS ROCKFIN"
       },
-      "OCEANUS":{
+      "ORTHOS OCEANUS":{
          "Notes":"",
-         "EnglishName":"OCEANUS"
+         "EnglishName":"ORTHOS OCEANUS"
       },
-      "BANSHEE":{
+      "ORTHOS BANSHEE":{
          "Notes":"",
-         "EnglishName":"BANSHEE"
+         "EnglishName":"ORTHOS BANSHEE"
       },
-      "LEECH":{
+      "ORTHOS LEECH":{
          "Notes":"",
-         "EnglishName":"LEECH"
+         "EnglishName":"ORTHOS LEECH"
       },
-      "YABBY":{
+      "ORTHOS YABBY":{
          "Notes":"",
-         "EnglishName":"YABBY"
+         "EnglishName":"ORTHOS YABBY"
       },
-      "BIG CLAW":{
+      "ORTHOS BIG CLAW":{
          "Notes":"",
-         "EnglishName":"BIG CLAW"
+         "EnglishName":"ORTHOS BIG CLAW"
       },
-      "CRAKLAW":{
+      "ORTHOS CRAKLAW":{
          "Notes":"",
-         "EnglishName":"CRAKLAW"
+         "EnglishName":"ORTHOS CRAKLAW"
       },
-      "MONK":{
+      "ORTHOS MONK":{
          "Notes":"",
-         "EnglishName":"MONK"
+         "EnglishName":"ORTHOS MONK"
       },
-      "ZARATAN":{
+      "ORTHOS ZARATAN":{
          "Notes":"",
-         "EnglishName":"ZARATAN"
+         "EnglishName":"ORTHOS ZARATAN"
       },
-      "PIRANU":{
+      "ORTHOS PIRANU":{
          "Notes":"",
-         "EnglishName":"PIRANU"
+         "EnglishName":"ORTHOS PIRANU"
       },
-      "STINGRAY":{
+      "ORTHOS STINGRAY":{
          "Notes":"",
-         "EnglishName":"HEAVENLY RACHIMONAI"
+         "EnglishName":"ORTHOS STINGRAY"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "SERVOMECHANICAL MINOTAUR":{
+      "SERVOMECHANICAL MINOTAUR 16":{
          "Notes":"Octuple Swipe pay attention to order of swipes and avoid. Disorienting groan is a knockback from the boss, get close to avoid hitting the wall. Bullish swipe is a frontal cone, Bullish swing is a 360 cleave, move away to avoid.  Thundercall spawns orbs and he will do an Octuple Swipe during this but it is resolved the same way.",
-         "EnglishName":"SERVOMECHANICAL MINOTAUR"
+         "EnglishName":"SERVOMECHANICAL MINOTAUR 16"
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
-      "PTEROC":{
+      "ORTHOS PTEROC":{
          "Notes":"",
-         "EnglishName":"PTEROC"
+         "EnglishName":"ORTHOS PTEROC"
       },
-      "DIPLOCAULUS":{
+      "ORTHOS DIPLOCAULUS":{
          "Notes":"",
-         "EnglishName":"DIPLOCAULUS"
+         "EnglishName":"ORTHOS DIPLOCAULUS"
       },
-      "COBRA":{
+      "ORTHOS COBRA":{
          "Notes":"",
-         "EnglishName":"COBRA"
+         "EnglishName":"ORTHOS COBRA"
       },
-      "MATAMATA":{
+      "ORTHOS MATAMATA":{
          "Notes":"",
-         "EnglishName":"MATAMATA"
+         "EnglishName":"ORTHOS MATAMATA"
       },
       "ORTHONINJA":{
          "Notes":"",
          "EnglishName":"ORTHONINJA"
       },
-      "MONITOR":{
+      "ORTHOS MONITOR":{
          "Notes":"",
-         "EnglishName":"MONITOR"
+         "EnglishName":"ORTHOS MONITOR"
       },
-      "GOWROW":{
+      "ORTHOS GOWROW":{
          "Notes":"",
-         "EnglishName":"GOWROW"
+         "EnglishName":"ORTHOS GOWROW"
       },
-      "BASILISK":{
+      "ORTHOS BASILISK":{
          "Notes":"",
-         "EnglishName":"BASILISK"
+         "EnglishName":"ORTHOS BASILISK"
       },
-      "DRAKE":{
-         "Notes":"Has a cleave and very potent poison. Be careful when solo. The poison can be avoided by staying at long range.",
-         "EnglishName":"DRAKE"
-      },
-      "ANALA":{
+      "ORTHOS DRAKE":{
          "Notes":"",
-         "EnglishName":"ANALA"
+         "EnglishName":"ORTHOS DRAKE"
       },
-      "PALLEON":{
+      "ORTHOS ANALA":{
          "Notes":"",
-         "EnglishName":"PALLEON"
+         "EnglishName":"ORTHOS ANALA"
+      },
+      "ORTHOS PALLEON":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PALLEON"
       },
       "HAOKAH PERFECTED":{
          "Notes":"",
          "EnglishName":"HAOKAH PERFECTED"
       },
-      "FALAK":{
-         "Notes":"Has a doughnut AOE, fear, and AOE damage that kills you if you get feared. Other than that, it’s not too strong.",
-         "EnglishName":"FALAK"
+      "ORTHOS FALAK":{
+         "Notes":"",
+         "EnglishName":"ORTHOS FALAK"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2483,73 +2479,73 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
-         "EnglishName":"QUIVERING COFFER"
+         "EnglishName":"MIMIC"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
-      "COUERL":{
+      "ORTHOS COUERL":{
          "Notes":"",
-         "EnglishName":"COUERL"
+         "EnglishName":"ORTHOS COUERL"
       },
-      "PRIMELEPHAS":{
+      "ORTHOS PRIMELEPHAS":{
          "Notes":"",
-         "EnglishName":"PRIMELEPHAS"
+         "EnglishName":"ORTHOS PRIMELEPHAS"
       },
-      "UNICORN":{
+      "ORTHOS UNICORN":{
          "Notes":"",
-         "EnglishName":"UNICORN"
+         "EnglishName":"ORTHOS UNICORN"
       },
-      "TOCO TOCO":{
+      "ORTHOS TOCO TOCO":{
          "Notes":"",
-         "EnglishName":"TOCO TOCO"
+         "EnglishName":"ORTHOS TOCO TOCO"
       },
-      "ORTHOKUNOICHI":{
+      "ORTHOS ORTHOKUNOICHI":{
          "Notes":"",
-         "EnglishName":"ORTHOKUNOICHI"
+         "EnglishName":"ORTHOS ORTHOKUNOICHI"
       },
-      "GULO GULO":{
+      "ORTHOS GULO GULO":{
          "Notes":"",
-         "EnglishName":"GULO GULO"
+         "EnglishName":"ORTHOS GULO GULO"
       },
-      "KARGAS":{
+      "ORTHOS KARGAS":{
          "Notes":"",
-         "EnglishName":"KARGAS"
+         "EnglishName":"ORTHOS KARGAS"
       },
-      "WOLF":{
+      "ORTHOS WOLF":{
          "Notes":"",
-         "EnglishName":"WOLF"
+         "EnglishName":"ORTHOS WOLF"
       },
-      "THUNDERBEAST":{
+      "ORTHOS THUNDERBEAST":{
          "Notes":"",
-         "EnglishName":"THUNDERBEAST"
+         "EnglishName":"ORTHOS THUNDERBEAST"
       },
-      "SASQUATCH":{
+      "ORTHOS SASQUATCH":{
          "Notes":"EXTREMELY large OUT OF COMBAT AOE that will one shot from a room away.",
-         "EnglishName":"SASQUATCH"
+         "EnglishName":"ORTHOS SASQUATCH"
       },
       "BIRD OF ORTHOS":{
          "Notes":"",
          "EnglishName":"BIRD OF ORTHOS"
       },
-      "FLAMEBEAST":{
+      "ORTHOS FLAMEBEAST":{
          "Notes":"",
-         "EnglishName":"FLAMEBEAST"
+         "EnglishName":"ORTHOS FLAMEBEAST"
       },
-      "SKATENE":{
+      "ORTHOS SKATENE":{
          "Notes":"Chirp pacifies and follow up AOE kills you. Stunnable.",
-         "EnglishName":"SKATENE"
+         "EnglishName":"ORTHOS SKATENE"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2561,73 +2557,73 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
-         "EnglishName":"QUIVERING COFFER"
+         "EnglishName":"MIMIC"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
       "ORTHOIRON CORSE":{
          "Notes":"",
          "EnglishName":"ORTHOIRON CORSE"
       },
-      "HECTEYES":{
+      "ORTHOS HECTEYES":{
          "Notes":"",
-         "EnglishName":"HECTEYES"
+         "EnglishName":"ORTHOS HECTEYES"
       },
-      "PERSONA":{
+      "ORTHOS PERSONA":{
          "Notes":"",
-         "EnglishName":"PERSONA"
+         "EnglishName":"ORTHOS PERSONA"
       },
-      "CATOBLEPAS":{
+      "ORTHOS CATOBLEPAS":{
          "Notes":"",
-         "EnglishName":"CATOBLEPAS"
+         "EnglishName":"ORTHOS CATOBLEPAS"
       },
-      "DEEPEYE":{
+      "ORTHOS DEEPEYE":{
          "Notes":"",
-         "EnglishName":"DEEPEYE"
+         "EnglishName":"ORTHOS DEEPEYE"
       },
-      "ABYSS":{
+      "ORTHOS ABYSS":{
          "Notes":"",
-         "EnglishName":"ABYSS"
+         "EnglishName":"ORTHOS ABYSS"
       },
-      "PUDDING":{
+      "ORTHOS PUDDING":{
          "Notes":"",
-         "EnglishName":"PUDDING"
+         "EnglishName":"ORTHOS PUDDING"
       },
-      "GOURMAND":{
+      "ORTHOS GOURMAND":{
          "Notes":"",
-         "EnglishName":"GOURMAND"
+         "EnglishName":"ORTHOS GOURMAND"
       },
-      "SPARTOI":{
+      "ORTHOS SPARTOI":{
          "Notes":"",
-         "EnglishName":"SPARTOI"
+         "EnglishName":"ORTHOS SPARTOI"
       },
-      "PEGASUS":{
+      "ORTHOS PEGASUS":{
          "Notes":"",
-         "EnglishName":"PEGASUS"
+         "EnglishName":"ORTHOS PEGASUS"
       },
-      "AHRIMAN":{
+      "ORTHOS AHRIMAN":{
          "Notes":"",
-         "EnglishName":"AHRIMAN"
+         "EnglishName":"ORTHOS AHRIMAN"
       },
-      "SPECTER":{
+      "ORTHOS SPECTER":{
          "Notes":"",
-         "EnglishName":"SPECTER"
+         "EnglishName":"ORTHOS SPECTER"
       },
-      "WRAITH":{
+      "ORTHOS WRAITH":{
          "Notes":"Massive AOE untelegraphed with scream, run away when cast starts",
-         "EnglishName":"WRAITH"
+         "EnglishName":"ORTHOS WRAITH"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",
@@ -2639,13 +2635,13 @@
       }
    },
    {
-      "QUIVERING COFFER":{
+      "MIMIC":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "KORRIGAN":{
+      "ORTHOS KORRIGAN":{
          "Notes":"*Congratulations*",
-         "EnglishName":"KORRIGAN"
+         "EnglishName":"ORTHOS KORRIGAN"
       },
       "ORTHOSYSTEM γ":{
          "Notes":"",
@@ -2655,9 +2651,9 @@
          "Notes":"",
          "EnglishName":"ORTHOSYSTEM α"
       },
-      "MINING DRONE":{
+      "ORTHOS MINING DRONE":{
          "Notes":"",
-         "EnglishName":"MINING DRONE"
+         "EnglishName":"ORTHOS MINING DRONE"
       },
       "ORTHODRONE":{
          "Notes":"",
@@ -2667,45 +2663,41 @@
          "Notes":"",
          "EnglishName":"ORTHOS MOTHERBIT"
       },
-      "ORTHOTAUR":{
-         "Notes":"",
-         "EnglishName":"ORTHOTAUR"
-      },
       "ORTHOS SPHINX":{
          "Notes":"",
          "EnglishName":"ORTHOS SPHINX"
       },
-      "MITHRIDATES":{
+      "ORTHOS MITHRIDATES":{
          "Notes":"",
-         "EnglishName":"MITHRIDATES"
+         "EnglishName":"ORTHOS MITHRIDATES"
       },
-      "ORTHOCHIMERA":{
+      "SERVOMECHANICAL ORTHOCHIMERA":{
          "Notes":"",
-         "EnglishName":"ORTHOCHIMERA"
+         "EnglishName":"SERVOMECHANICAL ORTHOCHIMERA"
       },
-      "DURGA":{
+      "ORTHOS DURGA":{
          "Notes":"",
-         "EnglishName":"DURGA"
+         "EnglishName":"ORTHOS DURGA"
       },
       "ORTHONAUGHT":{
          "Notes":"",
          "EnglishName":"ORTHONAUGHT"
       },
-      "FITTER":{
+      "ORTHOS FITTER":{
          "Notes":"",
-         "EnglishName":"FITTER"
+         "EnglishName":"ORTHOS FITTER"
       },
-      "ZAGHNAL":{
+      "ORTHOS ZAGHNAL":{
          "Notes":"",
-         "EnglishName":"ZAGHNAL"
+         "EnglishName":"ORTHOS ZAGHNAL"
       },
       "MERACYDIAN CLONE":{
          "Notes":"You die.",
          "EnglishName":"MERACYDIAN CLONE"
       },
-      "LAMIA KNIGHT":{
+      "LAMIA QUEEN":{
          "Notes":"You die.",
-         "EnglishName":"LAMIA KNIGHT"
+         "EnglishName":"LAMIA QUEEN"
       },
       "DEMI-COCHMA":{
          "Notes":"You die.",

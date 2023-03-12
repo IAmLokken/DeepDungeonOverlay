@@ -85,6 +85,10 @@
         let score = 0;
         let floorDifference = currentFloorNumber - floorStartedOn;
         let lastBossFloorCompleted =  Math.floor((currentFloorNumber - floorStartedOn) / 10);
+        if (deepDungeonName == 'Eureka Orthos' && currentFloorNumber == 100)
+        {
+            lastBossFloorCompleted = 10;
+        }
 
         score += 430 * floorDifference; // Aetherpool(99/99 assumed) times floor ended on minus floor started on
 
@@ -125,8 +129,6 @@
 
         if (deepDungeonName == 'Eureka Orthos')
         {
-            score += dutyClearFailed * 300; // adjustment for the additional 10th boss on floor 99
-
             // Give bonus for floor 30 boss
             if (currentFloorNumber == 30){
                 score += dutyClearFailed * 300;
