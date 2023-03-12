@@ -1040,7 +1040,17 @@
          "HEAVENLY JINBA":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "HEAVENLY TENMA":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "HEAVENLY KURO-KISHI":{ "DangerLevel":"Easy", "AggroType":"Proximity", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
-         "HEAVENLY DODO":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false }
+         "HEAVENLY DODO":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
+         "ONRA":{
+             "DangerLevel":"Easy",
+             "AggroType":"Proximity",
+             "Stun":false,
+             "Sleep":false,
+             "Slow":false,
+             "Heavy":false,
+             "Bind":false,
+             "Resolution":false
+             }   
         }
      ],
     "JobCC":
