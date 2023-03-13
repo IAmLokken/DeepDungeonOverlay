@@ -1101,7 +1101,10 @@
             "34": {"Stun":true, "Sleep":false, "Slow": true, "Heavy":false, "Bind":false},
             "35": {"Stun":false, "Sleep":false, "Slow": false, "Heavy":false, "Bind":false},
             "37": {"Stun":true, "Sleep":false, "Slow": true, "Heavy":false, "Bind":false},
-            "38": {"Stun":false, "Sleep":false, "Slow": false, "Heavy":false, "Bind":false}
+            "38": {"Stun":false, "Sleep":false, "Slow": false, "Heavy":false, "Bind":false},
+            "39": {"Stun":true, "Sleep":false, "Slow": true, "Heavy":false, "Bind":false},
+            "40": {"Stun":false, "Sleep":true, "Slow": false, "Heavy":false, "Bind":false}
+
     
     }
  }
