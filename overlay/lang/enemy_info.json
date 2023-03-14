@@ -791,7 +791,7 @@
          "ORTHOS CLAW":{ "DangerLevel":"Easy", "AggroType":"Proximity", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS SUCCUBUS":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS DAHAK":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
-         "ORTHOS GRENADE":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
+         "ORTHOS GRENADE":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS VASSAGO":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS DEMON":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS BEHEMOTH":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
