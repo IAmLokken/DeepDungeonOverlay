@@ -1949,55 +1949,55 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS IMP":{
+      "ORTHOS-IMP":{
          "Notes":"",
          "EnglishName":"ORTHOS IMP"
       },
-      "ORTHOIRON CLAW":{
+      "ORTHOS-EISENKLAUE":{
          "Notes":"",
          "EnglishName":"ORTHOS CLAW"
       },
-      "ORTHOS SUCCUBUS":{
+      "ORTHOS-SUKKUBUS":{
          "Notes":"",
          "EnglishName":"ORTHOS SUCCUBUS"
       },
-      "ORTHOS DAHAK":{
+      "ORTHOS-DAHAK":{
          "Notes":"",
          "EnglishName":"ORTHOS DAHAK"
       },
-      "ORTHOS GRENADE":{
+      "ORTHOS-GRANATE":{
          "Notes":"Point blank Big Burst cast with late telegraph, massive damage.",
          "EnglishName":"ORTHOS GRENADE"
       },
-      "ORTHOS VASSAGO":{
+      "ORTHOS-VASSAGO":{
          "Notes":"",
          "EnglishName":"ORTHOS VASSAGO"
       },
-      "ORTHOS DEMON":{
+      "ORTHOS-DÄMON":{
          "Notes":"",
          "EnglishName":"ORTHOS DEMON"
       },
-      "ORTHOS BEHEMOTH":{
+      "ORTHOS-BEHEMOTH":{
          "Notes":"Casts ecliptic meteor, can be LOS'd.",
          "EnglishName":"ORTHOS BEHEMOTH"
       },
-      "ORTHOS BHOOT":{
+      "ORTHOS-BHUT":{
          "Notes":"",
          "EnglishName":"ORTHOS BHOOT"
       },
-      "ORTHOS WATER SPRITE":{
+      "ORTHOS-WASSER-EXERGON":{
          "Notes":"",
          "EnglishName":"ORTHOS WATER SPRITE"
       },
-      "ORTHOS FACHAN":{
+      "ORTHOS-FACHAN":{
          "Notes":"",
          "EnglishName":"ORTHOS FACHAN"
       },
-      "ORTHOS THANATOS":{
+      "ORTHOS-THANATOS":{
          "Notes":"",
          "EnglishName":"ORTHOS THANATOS"
       },
-      "UNDEAD ORTHOS DRAGON":{
+      "UNTOTER ORTHOS-DRACHE":{
          "Notes":"",
          "EnglishName":"UNDEAD ORTHOS DRAGON"
       },
@@ -2027,39 +2027,39 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS SPIRULINA":{
+      "ORTHOS-SPIRULINA":{
          "Notes":"",
          "EnglishName":"ORTHOS SPIRULINA"
       },
-      "GREAT ORTHOS MORBOL":{
+      "ORTHOS-GROßMORBOL":{
          "Notes":"",
          "EnglishName":"GREAT ORTHOS MORBOL"
       },
-      "ORTHOS NETZACH":{
+      "ORTHOS-NETZACH":{
          "Notes":"",
          "EnglishName":"ORTHOS NETZACH"
       },
-      "ORTHOS KETER":{
+      "ORTHOS-KETER":{
          "Notes":"",
          "EnglishName":"ORTHOS KETER"
       },
-      "ORTHOS MICROSYSTEM":{
+      "ORTHOMIKROYSTEM":{
          "Notes":"",
          "EnglishName":"ORTHOS MICROSYSTEM"
       },
-      "ORTHOS BELLADONNA":{
+      "ORTHOS-BELLADONNA":{
          "Notes":"",
          "EnglishName":"ORTHOS BELLADONNA"
       },
-      "ORTHOS WOOD GOLEM":{
+      "ORTHOS-HOLZGOLEM":{
          "Notes":"",
          "EnglishName":"ORTHOS WOOD GOLEM"
       },
-      "ORTHOSOLDIER":{
+      "ORTHOS-SOLDAT":{
          "Notes":"",
          "EnglishName":"ORTHOSOLDIER"
       },
-      "ORTHOS RAFFLESIA":{
+      "ORTHOS-RAFFLESIA":{
          "Notes":"",
          "EnglishName":"ORTHOS RAFFLESIA"
       },
@@ -2067,15 +2067,15 @@
          "Notes":"",
          "EnglishName":"ORTHOSYSTEM β"
       },
-      "ORTHOS GROUNDSKEEPER":{
+      "ORTHOS-ERDWÄCHTER":{
          "Notes":"",
          "EnglishName":"ORTHOS GROUNDSKEEPER"
       },
-      "ORTHOHUNTER":{
+      "ORTHOS-JÄGER":{
          "Notes":"",
          "EnglishName":"ORTHOHUNTER"
       },
-      "ORTHOS SAWTOOTH":{
+      "ORTHOS-SÄGEZAHN":{
          "Notes":"",
          "EnglishName":"ORTHOS SAWTOOTH"
       },
@@ -2091,7 +2091,7 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "CLONING NODE":{
+      "KLONMODUL":{
          "Notes":"Avoid arena wide AOE from teathered mobs by staying close to the mobs and paying attention to the order they are teathered in.",
          "EnglishName":"CLONING NODE"
       }
@@ -2105,47 +2105,47 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHODEMOLISHER":{
+      "ORTHODEMOLIERER":{
          "Notes":"Enrages under 30% HP; massive range and can be LOS'd.",
          "EnglishName":"ORTHODEMOLISHER"
       },
-      "ORTHOS WYVERN":{
+      "ORTHOS-WYVERN":{
          "Notes":"",
          "EnglishName":"ORTHOS WYVERN"
       },
-      "ORTHOS BROBINYAK":{
+      "ORTHOS-BROBINYAK":{
          "Notes":"",
          "EnglishName":"ORTHOS BROBINYAK"
       },
-      "ORTHOGIANT":{
+      "ORTHOGIGANT":{
          "Notes":"",
          "EnglishName":"ORTHOGIANT"
       },
-      "ORTHOKNIGHT":{
+      "ORTHORITTER":{
          "Notes":"Casts Electromagnetism, a large point blank AoE that pulls in and does massive damage.",
          "EnglishName":"ORTHOKNIGHT"
       },
-      "LESSER ORTHOS DRAGON":{
+      "NIEDERER ORTHOS-DRACHE":{
          "Notes":"Huge frontal conal AoE with late telegraph.",
          "EnglishName":"LESSER ORTHOS DRAGON"
       },
-      "ORTHODROID":{
+      "ORTHODROIDE":{
          "Notes":"",
          "EnglishName":"ORTHODROID"
       },
-      "ORTHOBLUE DRAGON":{
+      "BLAUER ORTHO-DRACHE":{
          "Notes":"",
          "EnglishName":"ORTHOBLUE DRAGON"
       },
-      "ORTHOS BIAST":{
+      "ORTHOS-SMEI":{
          "Notes":"",
          "EnglishName":"ORTHOS BIAST"
       },
-      "ORTHOS VOUIVRE":{
+      "ORTHOS-VIVEL":{
          "Notes":"",
          "EnglishName":"ORTHOS VOUIVRE"
       },
-      "ORTHOS VANARA":{
+      "ORTHOS-VANARA":{
          "Notes":"Dangerous point black AoE that stuns and kills; late telegraph.",
          "EnglishName":"ORTHOS VANARA"
       },
@@ -2153,7 +2153,7 @@
          "Notes":"",
          "EnglishName":"ORTHOKALIYA"
       },
-      "ORTHOSHELLED DRAGON":{
+      "ORTHOS-PANZERDRACHE":{
          "Notes":"",
          "EnglishName":"ORTHOSHELLED DRAGON"
       },
@@ -2169,7 +2169,7 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "TIAMAT CLONE":{
+      "TIAMAT-KLON":{
          "Notes":"Dragon head clones do low damage and apply vulns.  Wyrmtail is a center line AOE to avoid.  Wyrmwing is AOE lines on the outside, move to center to avoid.",
          "EnglishName":"TIAMAT CLONE"
       }
@@ -2183,55 +2183,55 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS MIRRORKNIGHT":{
+      "ORTHOS-SPEGLIDAE":{
          "Notes":"",
          "EnglishName":"ORTHOS MIRRORKNIGHT"
       },
-      "ORTHOS SHABTI":{
+      "ORTHOS-SHABTI":{
          "Notes":"Buggy",
          "EnglishName":"ORTHOS SHABTI"
       },
-      "ORTHOBUG":{
+      "ORTHOS-KÄFER":{
          "Notes":"",
          "EnglishName":"ORTHOBUG"
       },
-      "ORTHOSPIDER":{
+      "ORTHOS-SPINNE":{
          "Notes":"Late small point blank telegraph with Partical Collision.",
          "EnglishName":"ORTHOSPIDER"
       },
-      "ORTHOS LAMIA":{
+      "ORTHOS-LAMIA":{
          "Notes":"",
          "EnglishName":"ORTHOS LAMIA"
       },
-      "ORTHONAGA":{
+      "ORTHOS-NAGA":{
          "Notes":"",
          "EnglishName":"ORTHONAGA"
       },
-      "ORTHOTAUR":{
+      "ORTHOTAURUS":{
          "Notes":"111 ton swing is a big point blank AoE, 11 ton swing is a frontal conal.",
          "EnglishName":"ORTHOTAUR"
       },
-      "PHANTOM ORTHORAY":{
+      "ORTHOS-PHANTOMSCHIMMER":{
          "Notes":"Get behind when Forearming is cast. Get away from large point blank Atmospheric Displacement.",
          "EnglishName":"PHANTOM ORTHORAY"
       },
-      "ORTHOPREDATOR":{
+      "ORTHOS-PRÄDATOR":{
          "Notes":"",
          "EnglishName":"ORTHOPREDATOR"
       },
-      "ORTHOCHIMERA":{
+      "ORTHOCHIMÄRA":{
          "Notes":"Dragon's Voice means stay close, Ram's Voice means get away from point blank AoE.",
          "EnglishName":"ORTHOCHIMERA"
       },
-      "ORTHOEMPUSE":{
+      "ORTHOS-EMPUSA":{
          "Notes":"",
          "EnglishName":"ORTHOEMPUSE"
       },
-      "ORTHOS REPTOID":{
+      "ORTHOS-REPTOID":{
          "Notes":"",
          "EnglishName":"ORTHOS REPTOID"
       },
-      "ORTHOIKSALION":{
+      "ORTHOS-IKSALION":{
          "Notes":"",
          "EnglishName":"ORTHOIKSALION"
       },
@@ -2247,7 +2247,7 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "TWINTANIA CLONE":{
+      "TWINTANIA-KLON":{
          "Notes":"Avoid twister by moving when cast bar completes. Avoid AOE's as they spawn and position near Twintania for turbine to be knocked back in a path that avoids the twisters. Watch for center arena dive when Twintania flys away.",
          "EnglishName":"TWINTANIA CLONE"
       }
@@ -2261,55 +2261,55 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS BERGTHURS":{
+      "ORTHOS-JÖTUNN":{
          "Notes":"Casts a very fast Elbow Drop behind him, stay away from his back.",
          "EnglishName":"ORTHOS BERGTHURS"
       },
-      "ORTHOS ABAIA":{
+      "ORTHOS-ABAIA":{
          "Notes":"",
          "EnglishName":"ORTHOS ABAIA"
       },
-      "ORTHOS ACHERON":{
+      "ORTHOS-ACHERON":{
          "Notes":"Massive roomwide untelegraphed Quake cast; can be interrupted and LOS'd.",
          "EnglishName":"ORTHOS ACHERON"
       },
-      "ORTHOS SPRIGGAN":{
+      "ORTHOS-SPRIGGAN":{
          "Notes":"Buffs with haste, then does high damage.",
          "EnglishName":"ORTHOS SPRIGGAN"
       },
-      "ORTHOS HEDETET":{
+      "ORTHOS-HEDETET":{
          "Notes":"",
          "EnglishName":"ORTHOS HEDETET"
       },
-      "ORTHOS KELPIE":{
+      "ORTHOS-KELPIE":{
          "Notes":"Run away from large point blank AoE once it charges.",
          "EnglishName":"ORTHOS KELPIE"
       },
-      "ORTHOS HUWASI":{
+      "ORTHOS-HUWASI":{
          "Notes":"",
          "EnglishName":"ORTHOS HUWASI" 
       },
-      "ORTHOS GOOBBUE":{
+      "ORTHOS-GOOBBUE":{
          "Notes":"Get behind quickly after being sucked in, very fast frontal cast follows it.",
          "EnglishName":"ORTHOS GOOBBUE"
       },
-      "ORTHOS KUKULKAN":{
+      "ORTHOS-KUKULKAN":{
          "Notes":"",
          "EnglishName":"ORTHOS KUKULKAN"
       },
-      "ORTHOS MUDMAN":{
+      "ORTHOS-MATSCHMANN":{
          "Notes":"",
          "EnglishName":"ORTHOS MUDMAN"
       },
-      "ORTHOS HOARHOUND":{
+      "ORTHOS-HÖLLENHUND":{
          "Notes":"Need space to LOS Abyssal Cry, stuns and one shots otherwise.",
          "EnglishName":"ORTHOS HOARHOUND"
       },
-      "ORTHOS GELATO":{
+      "ORTHOS-GELATO":{
          "Notes":"Roomwide Explosion cast when under 30%; can be LOS'd.",
          "EnglishName":"ORTHOS GELATO"
       },
-      "ORTHOS APA":{
+      "ORTHOS-APA":{
          "Notes":"",
          "EnglishName":"ORTHOS APA"
       },
@@ -2325,7 +2325,7 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "SERVOMECHANICAL CHIMERA 14X":{
+      "SERVOMECHANISCHER CHIMÄRE 14X":{
          "Notes":"Ability name telegraphs the order of rams voice and dragons voice.  Dodge to boss's left or right to avoid the 'breathed cold'. For cold thunder move teather far enough away to stretch it for minimal damage, move towards boss afterwards for next mechanic.",
          "EnglishName":"SERVOMECHANICAL CHIMERA 14X"
       }
@@ -2339,59 +2339,59 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS ICE SPRITE":{
+      "ORTHOS-EIS-EXERGON":{
          "Notes":"Get away quickly once it dies; channels a point blank explosive AoE.",
          "EnglishName":"ORTHOS ICE SPRITE"
       },
-      "ORTHOS BOMBFISH":{
+      "ORTHOS-IGELBOMBER":{
          "Notes":"",
          "EnglishName":"ORTHOS BOMBFISH"
       },
-      "ORTHOS YMIR":{
+      "ORTHOS-YMIR":{
          "Notes":"Do not use melee autos/actions during Ice Spikes; will one shot.",
          "EnglishName":"ORTHOS YMIR"
       },
-      "ORTHOS ROCKFIN":{
+      "ORTHOS-FELSENFLOSSE":{
          "Notes":"Have space to LOS Aqua Spear; will die otherwise.",
          "EnglishName":"ORTHOS ROCKFIN"
       },
-      "ORTHOS OCEANUS":{
+      "ORTHOS-OKEANOS":{
          "Notes":"",
          "EnglishName":"ORTHOS OCEANUS"
       },
-      "ORTHOS BANSHEE":{
+      "ORTHOS-BANSHEE":{
          "Notes":"",
          "EnglishName":"ORTHOS BANSHEE"
       },
-      "ORTHOS LEECH":{
+      "ORTHOS-EGEL":{
          "Notes":"",
          "EnglishName":"ORTHOS LEECH"
       },
-      "ORTHOS YABBY":{
+      "ORTHOS-YABBY":{
          "Notes":"Move as soon as you get heavy to avoid telegraph circle AoE that follows.",
          "EnglishName":"ORTHOS YABBY"
       },
-      "ORTHOS BIG CLAW":{
+      "ORTHOS-MÖRDERKRABBE":{
          "Notes":"Avoid getting behind; untelegraphed Crab Dribble.",
          "EnglishName":"ORTHOS BIG CLAW"
       },
-      "ORTHOS CRAKLAW":{
+      "ORTHOS-KRAKLAW":{
          "Notes":"",
          "EnglishName":"ORTHOS CRAKLAW"
       },
-      "ORTHOS MONK":{
+      "ORTHOS-MÖNCH":{
          "Notes":"As soon as it sucks you in, walk away to avoid fast point blank AoE.",
          "EnglishName":"ORTHOS MONK"
       },
-      "ORTHOS ZARATAN":{
+      "ORTHOS-ZARATAN":{
          "Notes":"Half circle AoE, immediately move into it once it finishes as it does another in the opposite direction.",
          "EnglishName":"ORTHOS ZARATAN"
       },
-      "ORTHOS PIRANU":{
+      "ORTHOS-PIRANU":{
          "Notes":"",
          "EnglishName":"ORTHOS PIRANU"
       },
-      "ORTHOS STINGRAY":{
+      "ORTHOS-MANTA":{
          "Notes":"Jumps and inflicts big knockback jump. Get ready to stay in for doughnut, or walk away for point blank.",
          "EnglishName":"ORTHOS STINGRAY"
       },
@@ -2407,7 +2407,7 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "SERVOMECHANICAL MINOTAUR 16":{
+      "SERVOMECHANISCHER MINOTAURUS 16":{
          "Notes":"Octuple Swipe pay attention to order of swipes and avoid. Disorienting groan is a knockback from the boss, get close to avoid hitting the wall. Bullish swipe is a frontal cone, Bullish swing is a 360 cleave, move away to avoid.  Thundercall spawns orbs and he will do an Octuple Swipe during this but it is resolved the same way.",
          "EnglishName":"SERVOMECHANICAL MINOTAUR 16"
       }
@@ -2421,55 +2421,55 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS PTEROC":{
+      "ORTHOS-PTEROSAURUS":{
          "Notes":"",
          "EnglishName":"ORTHOS PTEROC"
       },
-      "ORTHOS DIPLOCAULUS":{
+      "ORTHOS-DIPLOCAULUS":{
          "Notes":"Gives other enemies a massive evasion up for a few minutes; avoid pulling multiple.",
          "EnglishName":"ORTHOS DIPLOCAULUS"
       },
-      "ORTHOS COBRA":{
+      "ORTHOS-KOBRA":{
          "Notes":"Don't get behind him. Inflicts heavy vuln upon death.",
          "EnglishName":"ORTHOS COBRA"
       },
-      "ORTHOS MATAMATA":{
+      "ORTHOS-MATAMATA":{
          "Notes":"",
          "EnglishName":"ORTHOS MATAMATA"
       },
-      "ORTHONINJA":{
+      "ORTHOS-NINJA":{
          "Notes":"Will assassinate out of combat if HP is ever under 20%",
          "EnglishName":"ORTHONINJA"
       },
-      "ORTHOS MONITOR":{
+      "ORTHOS-WARAN":{
          "Notes":"",
          "EnglishName":"ORTHOS MONITOR"
       },
-      "ORTHOS GOWROW":{
+      "ORTHOS-GOWROW":{
          "Notes":"Walk away from frontal untelegraphed claw attack. Will do an untelegraphed tail attack if behind.",
          "EnglishName":"ORTHOS GOWROW"
       },
-      "ORTHOS BASILISK":{
+      "ORTHOS-BASILISK":{
          "Notes":"",
          "EnglishName":"ORTHOS BASILISK"
       },
-      "ORTHOS DRAKE":{
+      "ORTHOS-DRAKON":{
          "Notes":"Avoid melee autos/actions during Flame Spikes; will kill otherwise.",
          "EnglishName":"ORTHOS DRAKE"
       },
-      "ORTHOS ANALA":{
+      "ORTHOS-ANALA":{
          "Notes":"",
          "EnglishName":"ORTHOS ANALA"
       },
-      "ORTHOS PALLEON":{
+      "ORTHOS-PALLEON":{
          "Notes":"Pulls in, then does a very quick point blank AoE. Get away.",
          "EnglishName":"ORTHOS PALLEON"
       },
-      "HAOKAH PERFECTED":{
+      "PERFEKTIONIERTER HAOKAH":{
          "Notes":"",
          "EnglishName":"HAOKAH PERFECTED"
       },
-      "ORTHOS FALAK":{
+      "ORTHOS-FALAK":{
          "Notes":"Stay close; casts a massive doughnut AoE otherwise.",
          "EnglishName":"ORTHOS FALAK"
       },
@@ -2499,55 +2499,55 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOS COUERL":{
+      "ORTHOS-COEURL":{
          "Notes":"Massive frontal cone AoE; has Tail Swing back conal attack if behind.",
          "EnglishName":"ORTHOS COUERL"
       },
-      "ORTHOS PRIMELEPHAS":{
+      "ORTHOS-PRIMELEPHAS":{
          "Notes":"Get away after it charges to avoid point blank AoE. Avoid stunning cast as it will queue it after.",
          "EnglishName":"ORTHOS PRIMELEPHAS"
       },
-      "ORTHOS UNICORN":{
+      "ORTHOS-EINHORN":{
          "Notes":"Pushes and knocks back multiple times; targeted AoE after.",
          "EnglishName":"ORTHOS UNICORN"
       },
-      "ORTHOS TOCO TOCO":{
+      "ORTHOS-TOKOTOKO":{
          "Notes":"Late frontal cone telegraph.",
          "EnglishName":"ORTHOS TOCO TOCO"
       },
-      "ORTHOKUNOICHI":{
+      "ORTHOS-KUNOICHI":{
          "Notes":"Will asssassinate even out of combat if HP is under 20%.",
          "EnglishName":"ORTHOKUNOICHI"
       },
-      "ORTHOS GULO GULO":{
+      "ORTHOS-GULO GULO":{
          "Notes":"The Killing Paw does a frontal swipe, then a second after. Avoid lethargy/arm's length storing the second; will lead to an instant one shot.",
          "EnglishName":"ORTHOS GULO GULO"
       },
-      "ORTHOS KARGAS":{
+      "ORTHOS-KARGAS":{
          "Notes":"Must stun or LOS Winds of Winter cast; usually after 2 Freefall casts.",
          "EnglishName":"ORTHOS KARGAS"
       },
-      "ORTHOS WOLF":{
+      "ORTHOS-WOLF":{
          "Notes":"",
          "EnglishName":"ORTHOS WOLF"
       },
-      "ORTHOS THUNDERBEAST":{
+      "ORTHOS-DONNERBESTIE":{
          "Notes":"Scythe Tail is an untelegraphed big point blank AoE, get away when it readies its animation. Will cast Spark doughnut if far away.",
          "EnglishName":"ORTHOS THUNDERBEAST"
       },
-      "ORTHOS SASQUATCH":{
+      "ORTHOS-SASQUATCH":{
          "Notes":"EXTREMELY large OUT OF COMBAT AOE that will one shot from a room away.",
          "EnglishName":"ORTHOS SASQUATCH"
       },
-      "BIRD OF ORTHOS":{
+      "ORTHOS-VOGEL":{
          "Notes":"",
          "EnglishName":"BIRD OF ORTHOS"
       },
-      "ORTHOS FLAMEBEAST":{
+      "ORTHOS-FLAMMENBESTIE":{
          "Notes":"Get behind to avoid massive frontal line AoE. Cannot LOS this cast.",
          "EnglishName":"ORTHOS FLAMEBEAST"
       },
-      "ORTHOS SKATENE":{
+      "ORTHOS-SKATENE":{
          "Notes":"Chirp pacifies and follow up AOE kills you. Stunnable. Can LOS.",
          "EnglishName":"ORTHOS SKATENE"
       },
@@ -2577,55 +2577,55 @@
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
-      "ORTHOIRON CORSE":{
+      "ORTHOS-EISENLEICHNAM":{
          "Notes":"Glass punch is a small frontal cone; easiest to just get behind.",
          "EnglishName":"ORTHOIRON CORSE"
       },
-      "ORTHOS HECTEYES":{
+      "ORTHOS-HEKTOKULUS":{
          "Notes":"Massive roomwide point blank AOE, can get out in time.",
          "EnglishName":"ORTHOS HECTEYES"
       },
-      "ORTHOS PERSONA":{
+      "ORTHOS-PERSONA":{
          "Notes":"Don't stray far for big conal AoE.",
          "EnglishName":"ORTHOS PERSONA"
       },
-      "ORTHOS CATOBLEPAS":{
+      "ORTHOS-CATBLEPUS":{
          "Notes":"Casts a roomwide petrifying eye mechanic out of combat; trivial to pull.",
          "EnglishName":"ORTHOS CATOBLEPAS"
       },
-      "ORTHOS DEEPEYE":{
+      "ORTHOS-GLOTZAUGE":{
          "Notes":"Casts an AoE vuln.",
          "EnglishName":"ORTHOS DEEPEYE"
       },
-      "ORTHOS ABYSS":{
+      "ORTHOS-ABYSSUS":{
          "Notes":"",
          "EnglishName":"ORTHOS ABYSS"
       },
-      "ORTHOS PUDDING":{
+      "ORTHOS-PUDDING":{
          "Notes":"Huge conal AoE; don't stray far.",
          "EnglishName":"ORTHOS PUDDING"
       },
-      "ORTHOS GOURMAND":{
+      "ORTHOS-GOURMET":{
          "Notes":"Quickly get behind once it pulls in; fast frontal conal cast follows.",
          "EnglishName":"ORTHOS GOURMAND"
       },
-      "ORTHOS SPARTOI":{
+      "ORTHOS-SPARTOI":{
          "Notes":"Targeted circle AoE. Fairly large frontal conal after.",
          "EnglishName":"ORTHOS SPARTOI"
       },
-      "ORTHOS PEGASUS":{
+      "SCHWARZER ORTHOS-PEGASUS":{
          "Notes":"Charges, casts large point blank AoE Nicker after.",
          "EnglishName":"ORTHOS PEGASUS"
       },
-      "ORTHOS AHRIMAN":{
+      "ORTHOS-AHRIMAN":{
          "Notes":"Big line AoE.",
          "EnglishName":"ORTHOS AHRIMAN"
       },
-      "ORTHOS SPECTER":{
+      "ORTHOS-SCHEMEN":{
          "Notes":"Ringing Burst= Stay close; Surrounding Burst= Get away; Left/Right Sweep, get to the other side quickly.",
          "EnglishName":"ORTHOS SPECTER"
       },
-      "ORTHOS WRAITH":{
+      "ORTHOS-GEIST":{
          "Notes":"Massive AOE untelegraphed with scream, run away when cast starts.",
          "EnglishName":"ORTHOS WRAITH"
       },
@@ -2663,47 +2663,47 @@
          "Notes":"Massive delayed frontal conal.",
          "EnglishName":"ORTHOSYSTEM α"
       },
-      "ORTHOS MINING DRONE":{
+      "ORTHOS-MINENDROHNE":{
          "Notes":"4 knockbacks, then large half circle AoE in front.",
          "EnglishName":"ORTHOS MINING DRONE"
       },
-      "ORTHODRONE":{
+      "ORTHODROHNE":{
          "Notes":"Quickly get away when it dies; self destructs similar to Ice Sprites on death.",
          "EnglishName":"ORTHODRONE"
       },
-      "ORTHOS MOTHERBIT":{
+      "ORTHOS-MUTTERDROHNE":{
          "Notes":"Citadel Buster is a line AoE with a late telegraph.",
          "EnglishName":"ORTHOS MOTHERBIT"
       },
-      "ORTHOS SPHINX":{
+      "ORTHOSPHINX":{
          "Notes":"Swinge is a large frontal conal. Gaze is also a frontal conal mechanic.",
          "EnglishName":"ORTHOS SPHINX"
       },
-      "ORTHOS MITHRIDATES":{
+      "ORTHOS-MITHRIDATES":{
          "Notes":"Get directly behind to avoid very wide frontal AoE; sides are not safe.",
          "EnglishName":"ORTHOS MITHRIDATES"
       },
-      "SERVOMECHANICAL ORTHOCHIMERA":{
+      "SERVOMECHANISCHER ORTHOCHIMÄRA":{
          "Notes":"Get in for Dragon's Voice, Get out for Ram's Voice. Dragon's Breath attack front left, Engulfing Ice big upper right, Scorpion Sting attacks from behind.",
          "EnglishName":"SERVOMECHANICAL ORTHOCHIMERA"
       },
-      "SERVOMECHANICAL ORTHOTAUR":{
+      "SERVOMECHANISCHER ORTHOTAURUS":{
          "Notes":"Charges and 128-tonze swing, point blank AoE to get away from. 32-tonze swing is a huge frontal conal.",
          "EnglishName":"SERVOMECHANICAL ORTHOTAUR"
       },
-      "ORTHOS DURGA":{
+      "ORTHOS-DURGA":{
          "Notes":"Telegraphed big frontal conal AoE. Get ready to run away from targeted AoE once Brainjack effect wears off.",
          "EnglishName":"ORTHOS DURGA"
       },
-      "ORTHONAUGHT":{
+      "ORTHONAUT":{
          "Notes":"Rotoswipe is a fairly big frontal conal. Can buff itself with Steam Clean.",
          "EnglishName":"ORTHONAUGHT"
       },
-      "ORTHOS FITTER":{
+      "ORTHOS-SCHLOSSER":{
          "Notes":"Dangerous roomwide AoE out of combat.",
          "EnglishName":"ORTHOS FITTER"
       },
-      "ORTHOS ZAGHNAL":{
+      "ORTHOS-ZAGHNAL":{
          "Notes":"Dangerous lethal roomwide Aoe out of combat.",
          "EnglishName":"ORTHOS ZAGHNAL"
       },
