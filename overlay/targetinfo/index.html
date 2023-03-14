@@ -2,12 +2,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Deep Dungeon Overlay</title>
-    <link rel="stylesheet" href="../css/targetinfo.css?v=Orthos-0.1.1" />    
+    <link rel="stylesheet" href="../css/targetinfo.css?v=Orthos-0.1.2" />    
 
     <script src="https://ngld.github.io/OverlayPlugin/assets/shared/common.min.js"></script>
     <script> window.DDO = {};</script>
-    <script src="../lib/Locale.js?v=Orthos-0.1.1"></script>
-    <script src="../lib/Bestiary.js?v=Orthos-0.1.1"></script>
+    <script src="../lib/Locale.js?v=Orthos-0.1.2"></script>
+    <script src="../lib/Bestiary.js?v=Orthos-0.1.2"></script>
 
     <script>
 
@@ -98,7 +98,9 @@
             instanceName = data.zoneName;
             DDO.currentInstance = instanceName;
             if (instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsPOTD) ||
-            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH)){
+            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsHOH) ||
+            instanceName.includes(DDO.localeInformation.Languages[DDO.localeInformation.CurrentLanguage].ParseStrings.CurrentInstanceFloorsEO)
+            ){
                 DDO.currentFloor = parseInt(instanceName.substring(instanceName.lastIndexOf(' ') + 1,instanceName.lastIndexOf('-')));
                 DDO.currentInstance = instanceName.substring(0, instanceName.indexOf('(')).trim();
             }
@@ -108,7 +110,7 @@
         }
         function EnmityTargetData(data)
         {
-            if (data.Target != null && (DDO.currentInstance == 'the Palace of the Dead' || DDO.currentInstance == 'Heaven-on-High')){
+            if (data.Target != null && (DDO.currentInstance == 'the Palace of the Dead' || DDO.currentInstance == 'Heaven-on-High' || DDO.currentInstance == 'Eureka Orthos')){
                 DDO.DisplayTargetInfo(data);
             }
             else{

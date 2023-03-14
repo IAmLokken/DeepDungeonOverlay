@@ -21,6 +21,7 @@
         "NoTargetLabel": "Kein Ziel",
         "POTDButton": "Lösche PotD Infos",
         "HOHButton": "Lösche HoH Infos",
+        "EOButton" : "Clear EO Saves",
         "ButtonInfo": "Sofern man sich im Tiefen Gewölbe befindet, zeigt dieses Fenster Informationen zum Tiefen Gewölbe an. Außerhalb des Tiefen Gewölbes kannst du die folgenden Schaltflächen benutzen, um gespeicherte Informationen des Overlays zu Spielständen zu löschen.",
         "MapSettingInfo": "Kreuze dies an, falls du möchtest, dass die Berechnung deines Punktestands von einer vollständigen Aufdeckung der Karte ausgeht.",
         "DarkModeInfo": "Um zwischen Standard- und Nachtmodus umzuschalten, klicken Sie mit der rechten Maustaste auf das Overlay."
@@ -47,11 +48,14 @@
     {
         "CurrentInstancePOTD": "The Palace of the Dead",
         "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceEO": "Eureka Orthos",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "CurrentInstanceFloorsEO": "Eureka Orthos (Floors",
         "Floor": "EBENE",
         "HoHFloor": "EBENE",
         "PotDFloor": "EBENE",
+        "EOFloor": "EBENE",
         "ZoneIn": "EBENE",
         "BandedCoffer": "VERBORGENER SCHATZ",
         "QuiveringCoffer": "ZUCKENDE SCHNAPPTRUHE",
@@ -59,7 +63,7 @@
         "Korrigan": "KORRIGANE",
         "Mandragora": "MANDRAGORA",
         "Pygmaioi": "PYGMAIOI",
-
+        "OrthosKorrigan": "ORTHOS KORRIGAN",
 
         "Obtain": "DU HAST",
         "ThirtyMinutesRemaining": "DU HAST NOCH 30 MINUTEN ZEIT",
@@ -68,7 +72,9 @@
         "PhoenixDown": "PHÖNIXFEDER",
         "EmpyrianPotsherd": "EMPYREUM-SCHERBE",
         "GelmorranPotsherd": "GELMORRA-SCHERBE",
+        "OrthoseAetherpoolFramgent": "ORTHOS AETHERPOOL FRAGMENT",
         "Potsherd": "SCHERBE",
-        "Potion": "TRANK"
+        "Potion": "TRANK",
+        "Fragment": "FRAGMENT"
     }
 }

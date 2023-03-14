@@ -21,6 +21,7 @@
         "NoTargetLabel": "Pas de cible",
         "POTDButton": "Effacer les sauvegardes du PdM",
         "HOHButton": "Effacer les sauvegardes du PdC",
+        "EOButton" : "Clear EO Saves",
         "ButtonInfo": "Cette fenêtre affichera les informations relatives aux donjons sans fond lorsque vous y serez. En dehors, vous pouvez utiliser les boutons ci-dessous pour effacer les sauvegardes de chaque donjon.",
         "MapSettingInfo": "En cochant cette case, le score affiché inclura le bonus de révélation complète de tous les étages que vous avez visités jusqu'ici.",
         "DarkModeInfo": "Pour basculer entre le mode par défaut et le mode nuit, faites un clic droit sur la superposition."
@@ -47,11 +48,14 @@
     {
         "CurrentInstancePOTD": "The Palace of the Dead",
         "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceEO": "Eureka Orthos",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "CurrentInstanceFloorsEO": "Eureka Orthos (Floors",
         "Floor": "ÉTAGE",
         "HoHFloor": "ÉTAGE",
         "PotDFloor": "SOUS-SOL",
+        "EOFloor": "ÉTAGE",
         "ZoneIn": ")” COMMENCE.",
         "BandedCoffer": "TRÉSOR CACHÉ",
         "QuiveringCoffer": "COFFRE GIGOTANT",
@@ -59,7 +63,7 @@
         "Korrigan": "KORRIGAN",
         "Mandragora": "MANDRAGORA",
         "Pygmaioi": "PYGMAIOI",
-
+        "OrthosKorrigan": "ORTHOS KORRIGAN",
 
         "Obtain": "VOUS OBTENEZ",
         "ThirtyMinutesRemaining": "IL RESTE 30 MINUTES AVANT",
@@ -68,7 +72,9 @@
         "PhoenixDown": "QUEUE DE PHÉNIX",
         "EmpyrianPotsherd": "TESSON DE POTERIE EMPYRÉENNE",
         "GelmorranPotsherd": "TESSON DE POTERIE GELMORRAINE",
+        "OrthoseAetherpoolFramgent": "ORTHOS AETHERPOOL FRAGMENT",
         "Potsherd": "TESSON DE POTERIE",
-        "Potion": "POTION"
+        "Potion": "POTION",
+        "Fragment": "FRAGMENT"
     }
 }

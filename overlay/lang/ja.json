@@ -49,11 +49,14 @@
     {
         "CurrentInstancePOTD": "The Palace of the Dead",
         "CurrentInstanceHOH": "Heaven-on-High",
+        "CurrentInstanceEO": "Eureka Orthos",
         "CurrentInstanceFloorsPOTD": "the Palace of the Dead (Floors",
         "CurrentInstanceFloorsHOH": "Heaven-on-High  (Floors",
+        "CurrentInstanceFloorsEO": "Eureka Orthos (Floors",
         "Floor": "現在の階層",
         "HoHFloor": "層",
         "PotDFloor": "階",
+        "EOFloor": "層",
         "ZoneIn": "の攻略を開始した",
         "BandedCoffer": "埋もれた財宝",
         "QuiveringCoffer": "うごめく宝箱",
@@ -61,7 +64,7 @@
         "Korrigan": "コリガン",
         "Mandragora": "マンドラゴラ",
         "Pygmaioi": "ピグマイオイ",
-
+        "OrthosKorrigan": "ORTHOS KORRIGAN",
  
         "Obtain": "を手に入れた。",
         "ThirtyMinutesRemaining": "の終了まで、あと30分",
@@ -71,7 +74,8 @@
         "EmpyrianPotsherd": "天之土器片",
         "GelmorranPotsherd": "ゲルモラ土器片",
         "Potsherd": "土器片",
-        "Potion": "ポーション"
+        "Potion": "ポーション",
+        "Fragment": "FRAGMENT"
     }
 }
 
