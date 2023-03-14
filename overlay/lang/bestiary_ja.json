@@ -1941,11 +1941,11 @@
  ],
  "Eureka Orthos":[
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"MIMIC"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2013,17 +2013,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "GANCANAGH":{
+      "ガンカナグー":{
          "Notes":"Avoid circle AOE's that spawn at the points of electricity",
          "EnglishName":"GANCANAGH"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"MIMIC"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2091,17 +2091,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "CLONING NODE":{
+      "クローニングシステム":{
          "Notes":"Avoid arena wide AOE from teathered mobs by staying close to the mobs and paying attention to the order they are teathered in.",
          "EnglishName":"CLONING NODE"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2169,17 +2169,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "TIAMAT CLONE":{
+      "ティアマット・クローン":{
          "Notes":"Dragon head clones do low damage and apply vulns.  Wyrmtail is a center line AOE to avoid.  Wyrmwing is AOE lines on the outside, move to center to avoid.",
          "EnglishName":"TIAMAT CLONE"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2243,17 +2243,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "TWINTANIA CLONE":{
+      "ツインタニア・クローン":{
          "Notes":"Avoid twister by moving when cast bar completes. Avoid AOE's as they spawn and position near Twintania for turbine to be knocked back in a path that avoids the twisters. Watch for center arena dive when Twintania flys away.",
          "EnglishName":"TWINTANIA CLONE"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2317,17 +2317,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "SERVOMECHANICAL CHIMERA 14X":{
+      "サーヴォ・キマイラ14X":{
          "Notes":"Ability name telegraphs the order of rams voice and dragons voice.  Dodge to boss's left or right to avoid the 'breathed cold'. For cold thunder move teather far enough away to stretch it for minimal damage, move towards boss afterwards for next mechanic.",
          "EnglishName":"SERVOMECHANICAL CHIMERA 14X"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2395,17 +2395,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "SERVOMECHANICAL MINOTAUR 16":{
+      "サーヴォ・ミノタウロス16":{
          "Notes":"Octuple Swipe pay attention to order of swipes and avoid. Disorienting groan is a knockback from the boss, get close to avoid hitting the wall. Bullish swipe is a frontal cone, Bullish swing is a 360 cleave, move away to avoid.  Thundercall spawns orbs and he will do an Octuple Swipe during this but it is resolved the same way.",
          "EnglishName":"SERVOMECHANICAL MINOTAUR 16"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2473,17 +2473,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "AETURNA":{
+      "アエテルナエ":{
          "Notes":"Ferocity teather should be moved far enough away to minimize damage. Preternatural Turn is either safe in Aeturna's hitbox or outside a donut aoe around him.  No glow means get out, large glow means get in. Aeturna will combine Preternatural turn with crystals that will telegraph external cones away from the boss or aoe cirlces around them depending on which turn is chosen.",
          "EnglishName":"AETURNA"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"MIMIC"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2551,17 +2551,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "PROTO-KALIYA":{
+      "プロトカーリア":{
          "Notes":"Nerve gas is an aoe that fills a third of the arena in the direction indicated.  For attract/repel aim to be knocked next to the boss (but not on) to avoid the follow up donut nerve gas.",
          "EnglishName":"PROTO-KALIYA"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"MIMIC"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2629,17 +2629,17 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "ADMINISTRATOR":{
+      "アドミニストレーター":{
          "Notes":"Orb is a donut, blocks are column, and egg is conal, avoid in the order they are shown to resolve.  For all mechanics find the two eggs and move away from the one pointed sideways to the safe point. If both are pointed inward move between.",
          "EnglishName":"ADMINISTRATOR"
       }
    },
    {
-      "MIMIC":{
+      "ミミック":{
          "Notes":"*Good Luck*",
          "EnglishName":"QUIVERING COFFER"
       },
-      "ORTHOS KORRIGAN":{
+      "オルト・コリガン":{
          "Notes":"*Congratulations*",
          "EnglishName":"ORTHOS KORRIGAN"
       },
@@ -2703,7 +2703,7 @@
          "Notes":"You die.",
          "EnglishName":"DEMI-COCHMA"
       },
-      "EXCALIBUR":{
+      "闘神エクスカリバー":{
          "Notes":"Paradoxum will give you an element debuff, be on the opposite elements side for Elemental Divide.  Empty Sword is a donught AOE so stay close, Empty Soul is a close AOE so move away.",
          "EnglishName":"EXCALIBUR"
       }
