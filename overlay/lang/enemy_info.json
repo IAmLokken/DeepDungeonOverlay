@@ -1001,7 +1001,7 @@
          "ORTHOS PRIMELEPHAS":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS UNICORN":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS TOCO TOCO":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
-         "ORTHOS ORTHOKUNOICHI":{ "DangerLevel":"Caution", "AggroType":"Proximity", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
+         "ORTHOKUNOICHI":{ "DangerLevel":"Caution", "AggroType":"Proximity", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS GULO GULO":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS KARGAS":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS WOLF":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
