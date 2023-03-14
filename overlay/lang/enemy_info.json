@@ -936,7 +936,7 @@
         {
          "MIMIC":{ "DangerLevel":"Easy", "AggroType":"Proximity", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS KORRIGAN":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
-         "ORTHOS SPRITE":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
+         "ORTHOS ICE SPRITE":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS YMIR":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS ROCKFIN":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS OCEANUS":{ "DangerLevel":"Easy", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
