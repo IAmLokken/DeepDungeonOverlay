@@ -1065,6 +1065,7 @@
          "ORTHOS SPHINX":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS MITHRIDATES":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "SERVOMECHANICAL ORTHOCHIMERA":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
+         "SERVOMECHANICAL ORTHOTAUR":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS DURGA":{ "DangerLevel":"Caution", "AggroType":"Proximity", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHONAUGHT":{ "DangerLevel":"Caution", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
          "ORTHOS FITTER":{ "DangerLevel":"Scary", "AggroType":"Sight", "Stun":false, "Sleep":false, "Slow":false, "Heavy":false, "Bind":false, "Resolution":false },
