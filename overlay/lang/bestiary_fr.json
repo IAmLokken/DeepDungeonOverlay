@@ -1938,5 +1938,775 @@
           "EnglishName":"HEAVENLY DODO"
        }
     }
+ ],
+ "Eureka Orthos":[
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"MIMIC"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS IMP":{
+         "Notes":"",
+         "EnglishName":"ORTHOS IMP"
+      },
+      "ORTHOIRON CLAW":{
+         "Notes":"",
+         "EnglishName":"ORTHOS CLAW"
+      },
+      "ORTHOS SUCCUBUS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SUCCUBUS"
+      },
+      "ORTHOS DAHAK":{
+         "Notes":"",
+         "EnglishName":"ORTHOS DAHAK"
+      },
+      "ORTHOS GRENADE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GRENADE"
+      },
+      "ORTHOS VASSAGO":{
+         "Notes":"",
+         "EnglishName":"ORTHOS VASSAGO"
+      },
+      "ORTHOS DEMON":{
+         "Notes":"",
+         "EnglishName":"ORTHOS DEMON"
+      },
+      "ORTHOS BEHEMOTH":{
+         "Notes":"Casts ecliptic meteor, can be LOS'd",
+         "EnglishName":"ORTHOS BEHEMOTH"
+      },
+      "ORTHOS BHOOT":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BHOOT"
+      },
+      "ORTHOS WATER SPRITE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS WATER SPRITE"
+      },
+      "ORTHOS FACHAN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS FACHAN"
+      },
+      "ORTHOS THANATOS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS THANATOS"
+      },
+      "UNDEAD ORTHOS DRAGON":{
+         "Notes":"",
+         "EnglishName":"UNDEAD ORTHOS DRAGON"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "GANCANAGH":{
+         "Notes":"Avoid circle AOE's that spawn at the points of electricity",
+         "EnglishName":"GANCANAGH"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"MIMIC"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS SPIRULINA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SPIRULINA"
+      },
+      "GREAT ORTHOS MORBOL":{
+         "Notes":"",
+         "EnglishName":"GREAT ORTHOS MORBOL"
+      },
+      "ORTHOS NETZACH":{
+         "Notes":"",
+         "EnglishName":"ORTHOS NETZACH"
+      },
+      "ORTHOS KETER":{
+         "Notes":"",
+         "EnglishName":"ORTHOS KETER"
+      },
+      "ORTHOS MICROSYSTEM":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MICROSYSTEM"
+      },
+      "ORTHOS BELLADONNA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BELLADONNA"
+      },
+      "ORTHOS WOOD GOLEM":{
+         "Notes":"",
+         "EnglishName":"ORTHOS WOOD GOLEM"
+      },
+      "ORTHOSOLDIER":{
+         "Notes":"",
+         "EnglishName":"ORTHOSOLDIER"
+      },
+      "ORTHOS RAFFLESIA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS RAFFLESIA"
+      },
+      "ORTHOSYSTEM β":{
+         "Notes":"",
+         "EnglishName":"ORTHOSYSTEM β"
+      },
+      "ORTHOS GROUNDSKEEPER":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GROUNDSKEEPER"
+      },
+      "ORTHOHUNTER":{
+         "Notes":"",
+         "EnglishName":"ORTHOHUNTER"
+      },
+      "ORTHOS SAWTOOTH":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SAWTOOTH"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "CLONING NODE":{
+         "Notes":"Avoid arena wide AOE from teathered mobs by staying close to the mobs and paying attention to the order they are teathered in.",
+         "EnglishName":"CLONING NODE"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"QUIVERING COFFER"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHODEMOLISHER":{
+         "Notes":"",
+         "EnglishName":"ORTHODEMOLISHER"
+      },
+      "ORTHOS WYVERN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS WYVERN"
+      },
+      "ORTHOS BROBINYAK":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BROBINYAK"
+      },
+      "ORTHOGIANT":{
+         "Notes":"",
+         "EnglishName":"ORTHOGIANT"
+      },
+      "ORTHOKNIGHT":{
+         "Notes":"",
+         "EnglishName":"ORTHOKNIGHT"
+      },
+      "LESSER ORTHOS DRAGON":{
+         "Notes":"",
+         "EnglishName":"LESSER ORTHOS DRAGON"
+      },
+      "ORTHODROID":{
+         "Notes":"",
+         "EnglishName":"ORTHODROID"
+      },
+      "ORTHOBLUE DRAGON":{
+         "Notes":"",
+         "EnglishName":"ORTHOBLUE DRAGON"
+      },
+      "ORTHOS BIAST":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BIAST"
+      },
+      "ORTHOS VOUIVRE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS VOUIVRE"
+      },
+      "ORTHOS VANARA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS VANARA"
+      },
+      "ORTHOKALIYA":{
+         "Notes":"",
+         "EnglishName":"ORTHOKALIYA"
+      },
+      "ORTHOSHELLED DRAGON":{
+         "Notes":"",
+         "EnglishName":"ORTHOSHELLED DRAGON"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "TIAMAT CLONE":{
+         "Notes":"Dragon head clones do low damage and apply vulns.  Wyrmtail is a center line AOE to avoid.  Wyrmwing is AOE lines on the outside, move to center to avoid.",
+         "EnglishName":"TIAMAT CLONE"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"QUIVERING COFFER"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS MIRRORKNIGHT":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MIRRORKNIGHT"
+      },
+      "ORTHOS SHABTI":{
+         "Notes":"Buggy",
+         "EnglishName":"ORTHOS SHABTI"
+      },
+      "ORTHOBUG":{
+         "Notes":"",
+         "EnglishName":"ORTHOBUG"
+      },
+      "ORTHOSPIDER":{
+         "Notes":"",
+         "EnglishName":"ORTHOSPIDER"
+      },
+      "ORTHOS LAMIA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS LAMIA"
+      },
+      "ORTHONAGA":{
+         "Notes":"",
+         "EnglishName":"ORTHONAGA"
+      },
+      "ORTHOTAUR":{
+         "Notes":"",
+         "EnglishName":"ORTHOTAUR"
+      },
+      "PHANTOM ORTHORAY":{
+         "Notes":"",
+         "EnglishName":"PHANTOM ORTHORAY"
+      },
+      "ORTHOPREDATOR":{
+         "Notes":"",
+         "EnglishName":"ORTHOPREDATOR"
+      },
+      "ORTHOCHIMERA":{
+         "Notes":"",
+         "EnglishName":"ORTHOCHIMERA"
+      },
+      "ORTHOEMPUSE":{
+         "Notes":"",
+         "EnglishName":"ORTHOEMPUSE"
+      },
+      "ORTHOS RAPTOID":{
+         "Notes":"",
+         "EnglishName":"ORTHOS RAPTOID"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "TWINTANIA CLONE":{
+         "Notes":"Avoid twister by moving when cast bar completes. Avoid AOE's as they spawn and position near Twintania for turbine to be knocked back in a path that avoids the twisters. Watch for center arena dive when Twintania flys away.",
+         "EnglishName":"TWINTANIA CLONE"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"QUIVERING COFFER"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS BERGTHURS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BERGTHURS"
+      },
+      "ORTHOS ABAIA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ABAIA"
+      },
+      "ORTHOS ACHERON":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ACHERON"
+      },
+      "ORTHOS SPRIGGAN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SPRIGGAN"
+      },
+      "ORTHOS HEDETET":{
+         "Notes":"",
+         "EnglishName":"ORTHOS HEDETET"
+      },
+      "ORTHOS KELPIE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS KELPIE"
+      },
+      "ORTHOS GOOBBUE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GOOBBUE"
+      },
+      "ORTHOS KUKULKAN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS KUKULKAN"
+      },
+      "ORTHOS MUDMAN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MUDMAN"
+      },
+      "ORTHOS HOARHOUND":{
+         "Notes":"",
+         "EnglishName":"ORTHOS HOARHOUND"
+      },
+      "ORTHOS GELATO":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GELATO"
+      },
+      "ORTHOS APA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS APA"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "SERVOMECHANICAL CHIMERA 14X":{
+         "Notes":"Ability name telegraphs the order of rams voice and dragons voice.  Dodge to boss's left or right to avoid the 'breathed cold'. For cold thunder move teather far enough away to stretch it for minimal damage, move towards boss afterwards for next mechanic.",
+         "EnglishName":"SERVOMECHANICAL CHIMERA 14X"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"QUIVERING COFFER"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS SPRITE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SPRITE"
+      },
+      "ORTHOS YMIR":{
+         "Notes":"",
+         "EnglishName":"ORTHOS YMIR"
+      },
+      "ORTHOS ROCKFIN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ROCKFIN"
+      },
+      "ORTHOS OCEANUS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS OCEANUS"
+      },
+      "ORTHOS BANSHEE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BANSHEE"
+      },
+      "ORTHOS LEECH":{
+         "Notes":"",
+         "EnglishName":"ORTHOS LEECH"
+      },
+      "ORTHOS YABBY":{
+         "Notes":"",
+         "EnglishName":"ORTHOS YABBY"
+      },
+      "ORTHOS BIG CLAW":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BIG CLAW"
+      },
+      "ORTHOS CRAKLAW":{
+         "Notes":"",
+         "EnglishName":"ORTHOS CRAKLAW"
+      },
+      "ORTHOS MONK":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MONK"
+      },
+      "ORTHOS ZARATAN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ZARATAN"
+      },
+      "ORTHOS PIRANU":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PIRANU"
+      },
+      "ORTHOS STINGRAY":{
+         "Notes":"",
+         "EnglishName":"ORTHOS STINGRAY"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "SERVOMECHANICAL MINOTAUR 16":{
+         "Notes":"Octuple Swipe pay attention to order of swipes and avoid. Disorienting groan is a knockback from the boss, get close to avoid hitting the wall. Bullish swipe is a frontal cone, Bullish swing is a 360 cleave, move away to avoid.  Thundercall spawns orbs and he will do an Octuple Swipe during this but it is resolved the same way.",
+         "EnglishName":"SERVOMECHANICAL MINOTAUR 16"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"QUIVERING COFFER"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS PTEROC":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PTEROC"
+      },
+      "ORTHOS DIPLOCAULUS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS DIPLOCAULUS"
+      },
+      "ORTHOS COBRA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS COBRA"
+      },
+      "ORTHOS MATAMATA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MATAMATA"
+      },
+      "ORTHONINJA":{
+         "Notes":"",
+         "EnglishName":"ORTHONINJA"
+      },
+      "ORTHOS MONITOR":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MONITOR"
+      },
+      "ORTHOS GOWROW":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GOWROW"
+      },
+      "ORTHOS BASILISK":{
+         "Notes":"",
+         "EnglishName":"ORTHOS BASILISK"
+      },
+      "ORTHOS DRAKE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS DRAKE"
+      },
+      "ORTHOS ANALA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ANALA"
+      },
+      "ORTHOS PALLEON":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PALLEON"
+      },
+      "HAOKAH PERFECTED":{
+         "Notes":"",
+         "EnglishName":"HAOKAH PERFECTED"
+      },
+      "ORTHOS FALAK":{
+         "Notes":"",
+         "EnglishName":"ORTHOS FALAK"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "AETURNA":{
+         "Notes":"Ferocity teather should be moved far enough away to minimize damage. Preternatural Turn is either safe in Aeturna's hitbox or outside a donut aoe around him.  No glow means get out, large glow means get in. Aeturna will combine Preternatural turn with crystals that will telegraph external cones away from the boss or aoe cirlces around them depending on which turn is chosen.",
+         "EnglishName":"AETURNA"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"MIMIC"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOS COUERL":{
+         "Notes":"",
+         "EnglishName":"ORTHOS COUERL"
+      },
+      "ORTHOS PRIMELEPHAS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PRIMELEPHAS"
+      },
+      "ORTHOS UNICORN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS UNICORN"
+      },
+      "ORTHOS TOCO TOCO":{
+         "Notes":"",
+         "EnglishName":"ORTHOS TOCO TOCO"
+      },
+      "ORTHOS ORTHOKUNOICHI":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ORTHOKUNOICHI"
+      },
+      "ORTHOS GULO GULO":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GULO GULO"
+      },
+      "ORTHOS KARGAS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS KARGAS"
+      },
+      "ORTHOS WOLF":{
+         "Notes":"",
+         "EnglishName":"ORTHOS WOLF"
+      },
+      "ORTHOS THUNDERBEAST":{
+         "Notes":"",
+         "EnglishName":"ORTHOS THUNDERBEAST"
+      },
+      "ORTHOS SASQUATCH":{
+         "Notes":"EXTREMELY large OUT OF COMBAT AOE that will one shot from a room away.",
+         "EnglishName":"ORTHOS SASQUATCH"
+      },
+      "BIRD OF ORTHOS":{
+         "Notes":"",
+         "EnglishName":"BIRD OF ORTHOS"
+      },
+      "ORTHOS FLAMEBEAST":{
+         "Notes":"",
+         "EnglishName":"ORTHOS FLAMEBEAST"
+      },
+      "ORTHOS SKATENE":{
+         "Notes":"Chirp pacifies and follow up AOE kills you. Stunnable.",
+         "EnglishName":"ORTHOS SKATENE"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "PROTO-KALIYA":{
+         "Notes":"Nerve gas is an aoe that fills a third of the arena in the direction indicated.  For attract/repel aim to be knocked next to the boss (but not on) to avoid the follow up donut nerve gas.",
+         "EnglishName":"PROTO-KALIYA"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"MIMIC"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOIRON CORSE":{
+         "Notes":"",
+         "EnglishName":"ORTHOIRON CORSE"
+      },
+      "ORTHOS HECTEYES":{
+         "Notes":"",
+         "EnglishName":"ORTHOS HECTEYES"
+      },
+      "ORTHOS PERSONA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PERSONA"
+      },
+      "ORTHOS CATOBLEPAS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS CATOBLEPAS"
+      },
+      "ORTHOS DEEPEYE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS DEEPEYE"
+      },
+      "ORTHOS ABYSS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ABYSS"
+      },
+      "ORTHOS PUDDING":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PUDDING"
+      },
+      "ORTHOS GOURMAND":{
+         "Notes":"",
+         "EnglishName":"ORTHOS GOURMAND"
+      },
+      "ORTHOS SPARTOI":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SPARTOI"
+      },
+      "ORTHOS PEGASUS":{
+         "Notes":"",
+         "EnglishName":"ORTHOS PEGASUS"
+      },
+      "ORTHOS AHRIMAN":{
+         "Notes":"",
+         "EnglishName":"ORTHOS AHRIMAN"
+      },
+      "ORTHOS SPECTER":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SPECTER"
+      },
+      "ORTHOS WRAITH":{
+         "Notes":"Massive AOE untelegraphed with scream, run away when cast starts",
+         "EnglishName":"ORTHOS WRAITH"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "ADMINISTRATOR":{
+         "Notes":"Orb is a donut, blocks are column, and egg is conal, avoid in the order they are shown to resolve.  For all mechanics find the two eggs and move away from the one pointed sideways to the safe point. If both are pointed inward move between.",
+         "EnglishName":"ADMINISTRATOR"
+      }
+   },
+   {
+      "MIMIC":{
+         "Notes":"*Good Luck*",
+         "EnglishName":"QUIVERING COFFER"
+      },
+      "ORTHOS KORRIGAN":{
+         "Notes":"*Congratulations*",
+         "EnglishName":"ORTHOS KORRIGAN"
+      },
+      "ORTHOSYSTEM γ":{
+         "Notes":"",
+         "EnglishName":"ORTHOSYSTEM γ"
+      },
+      "ORTHOSYSTEM α":{
+         "Notes":"",
+         "EnglishName":"ORTHOSYSTEM α"
+      },
+      "ORTHOS MINING DRONE":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MINING DRONE"
+      },
+      "ORTHODRONE":{
+         "Notes":"",
+         "EnglishName":"ORTHODRONE"
+      },
+      "ORTHOS MOTHERBIT":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MOTHERBIT"
+      },
+      "ORTHOS SPHINX":{
+         "Notes":"",
+         "EnglishName":"ORTHOS SPHINX"
+      },
+      "ORTHOS MITHRIDATES":{
+         "Notes":"",
+         "EnglishName":"ORTHOS MITHRIDATES"
+      },
+      "SERVOMECHANICAL ORTHOCHIMERA":{
+         "Notes":"",
+         "EnglishName":"SERVOMECHANICAL ORTHOCHIMERA"
+      },
+      "ORTHOS DURGA":{
+         "Notes":"",
+         "EnglishName":"ORTHOS DURGA"
+      },
+      "ORTHONAUGHT":{
+         "Notes":"",
+         "EnglishName":"ORTHONAUGHT"
+      },
+      "ORTHOS FITTER":{
+         "Notes":"",
+         "EnglishName":"ORTHOS FITTER"
+      },
+      "ORTHOS ZAGHNAL":{
+         "Notes":"",
+         "EnglishName":"ORTHOS ZAGHNAL"
+      },
+      "MERACYDIAN CLONE":{
+         "Notes":"You die.",
+         "EnglishName":"MERACYDIAN CLONE"
+      },
+      "LAMIA QUEEN":{
+         "Notes":"You die.",
+         "EnglishName":"LAMIA QUEEN"
+      },
+      "DEMI-COCHMA":{
+         "Notes":"You die.",
+         "EnglishName":"DEMI-COCHMA"
+      },
+      "EXCALIBUR":{
+         "Notes":"Paradoxum will give you an element debuff, be on the opposite elements side for Elemental Divide.  Empty Sword is a donught AOE so stay close, Empty Soul is a close AOE so move away.",
+         "EnglishName":"EXCALIBUR"
+      }
+   }
  ]
 }
