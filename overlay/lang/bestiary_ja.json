@@ -1966,7 +1966,7 @@
          "EnglishName":"ORTHOS DAHAK"
       },
       "オルト・グレネード":{
-         "Notes":"",
+         "Notes":"Point blank Big Burst cast with late telegraph, massive damage.",
          "EnglishName":"ORTHOS GRENADE"
       },
       "オルト・バッサゴ":{
@@ -1978,7 +1978,7 @@
          "EnglishName":"ORTHOS DEMON"
       },
       "オルト・ベヒーモス":{
-         "Notes":"Casts ecliptic meteor, can be LOS'd",
+         "Notes":"Casts ecliptic meteor, can be LOS'd.",
          "EnglishName":"ORTHOS BEHEMOTH"
       },
       "オルト・ブフート":{
@@ -2106,7 +2106,7 @@
          "EnglishName":"ORTHOS KORRIGAN"
       },
       "オルト・デモリショナー":{
-         "Notes":"",
+         "Notes":"Enrages under 30% HP; massive range and can be LOS'd.",
          "EnglishName":"ORTHODEMOLISHER"
       },
       "オルト・ワイバーン":{
@@ -2122,11 +2122,11 @@
          "EnglishName":"ORTHOGIANT"
       },
       "オルト・ナイト":{
-         "Notes":"",
+         "Notes":"Casts Electromagnetism, a large point blank AoE that pulls in and does massive damage.",
          "EnglishName":"ORTHOKNIGHT"
       },
       "オルト・レッサードラゴン":{
-         "Notes":"",
+         "Notes":"Huge frontal conal AoE with late telegraph.",
          "EnglishName":"LESSER ORTHOS DRAGON"
       },
       "オルト・ドロイド":{
@@ -2146,7 +2146,7 @@
          "EnglishName":"ORTHOS VOUIVRE"
       },
       "オルト・ヴァナラ":{
-         "Notes":"",
+         "Notes":"Dangerous point black AoE that stuns and kills; late telegraph.",
          "EnglishName":"ORTHOS VANARA"
       },
       "オルト・カーリア":{
@@ -2196,7 +2196,7 @@
          "EnglishName":"ORTHOBUG"
       },
       "オルト・スパイダー":{
-         "Notes":"",
+         "Notes":"Late small point blank telegraph with Partical Collision.",
          "EnglishName":"ORTHOSPIDER"
       },
       "オルト・ラミア":{
@@ -2208,11 +2208,11 @@
          "EnglishName":"ORTHONAGA"
       },
       "オルト・ミノタウロス":{
-         "Notes":"",
+         "Notes":"111 ton swing is a big point blank AoE, 11 ton swing is a frontal conal.",
          "EnglishName":"ORTHOTAUR"
       },
       "オルト・ファントムレイ":{
-         "Notes":"",
+         "Notes":"Get behind when Forearming is cast. Get away from large point blank Atmospheric Displacement.",
          "EnglishName":"PHANTOM ORTHORAY"
       },
       "オルト・プレデター":{
@@ -2220,7 +2220,7 @@
          "EnglishName":"ORTHOPREDATOR"
       },
       "オルト・キマイラ":{
-         "Notes":"",
+         "Notes":"Dragon's Voice means stay close, Ram's Voice means get away from point blank AoE.",
          "EnglishName":"ORTHOCHIMERA"
       },
       "オルト・エンプーサ":{
@@ -2262,7 +2262,7 @@
          "EnglishName":"ORTHOS KORRIGAN"
       },
       "オルト・ベルグスルス":{
-         "Notes":"",
+         "Notes":"Casts a very fast Elbow Drop behind him, stay away from his back.",
          "EnglishName":"ORTHOS BERGTHURS"
       },
       "オルト・アバイ":{
@@ -2270,7 +2270,7 @@
          "EnglishName":"ORTHOS ABAIA"
       },
       "オルト・アケローン":{
-         "Notes":"",
+         "Notes":"Massive roomwide untelegraphed Quake cast; can be interrupted and LOS'd.",
          "EnglishName":"ORTHOS ACHERON"
       },
       "オルト・スプリガン":{
@@ -2278,11 +2278,11 @@
          "EnglishName":"ORTHOS SPRIGGAN"
       },
       "オルト・ヘデテト":{
-         "Notes":"",
+         "Notes":"Buffs with haste, then does high damage.",
          "EnglishName":"ORTHOS HEDETET"
       },
       "オルト・ケルピー":{
-         "Notes":"",
+         "Notes":"Run away from large point blank AoE once it charges.",
          "EnglishName":"ORTHOS KELPIE"
       },
       "オルト・フワシ":{
@@ -2290,7 +2290,7 @@
          "EnglishName":"ORTHOS HUWASI" 
       },
       "オルト・グゥーブー":{
-         "Notes":"",
+         "Notes":"Get behind quickly after being sucked in, very fast frontal cast follows it.",
          "EnglishName":"ORTHOS GOOBBUE"
       },
       "オルト・ククルカン":{
@@ -2302,11 +2302,11 @@
          "EnglishName":"ORTHOS MUDMAN"
       },
       "オルト・ホアハウンド":{
-         "Notes":"",
+         "Notes":"Need space to LOS Abyssal Cry, stuns and one shots otherwise.",
          "EnglishName":"ORTHOS HOARHOUND"
       },
       "オルト・ジェラート":{
-         "Notes":"",
+         "Notes":"Roomwide Explosion cast when under 30%; can be LOS'd.",
          "EnglishName":"ORTHOS GELATO"
       },
       "オルト・アーパス":{
@@ -2340,7 +2340,7 @@
          "EnglishName":"ORTHOS KORRIGAN"
       },
       "オルト・アイススプライト":{
-         "Notes":"",
+         "Notes":"Get away quickly once it dies; channels a point blank explosive AoE.",
          "EnglishName":"ORTHOS ICE SPRITE"
        },
       "オルト・ボムフィッシュ":{
@@ -2348,11 +2348,11 @@
          "EnglishName":"ORTHOS BOMBFISH"
       },
       "オルト・ユミール":{
-         "Notes":"",
+         "Notes":"Do not use melee autos/actions during Ice Spikes; will one shot.",
          "EnglishName":"ORTHOS YMIR"
       },
       "オルト・ロックフィン":{
-         "Notes":"",
+         "Notes":"Have space to LOS Aqua Spear; will die otherwise.",
          "EnglishName":"ORTHOS ROCKFIN"
       },
       "オルト・オケアノス":{
@@ -2368,11 +2368,11 @@
          "EnglishName":"ORTHOS LEECH"
       },
       "オルト・タラシナ":{
-         "Notes":"",
+         "Notes":"Move as soon as you get heavy to avoid telegraph circle AoE that follows.",
          "EnglishName":"ORTHOS YABBY"
       },
       "オルト・ビッグクロウ":{
-         "Notes":"",
+         "Notes":"Avoid getting behind; untelegraphed Crab Dribble.",
          "EnglishName":"ORTHOS BIG CLAW"
       },
       "オルト・クラックロー":{
@@ -2380,11 +2380,11 @@
          "EnglishName":"ORTHOS CRAKLAW"
       },
       "オルト・モンク":{
-         "Notes":"",
+         "Notes":"As soon as it sucks you in, walk away to avoid fast point blank AoE.",
          "EnglishName":"ORTHOS MONK"
       },
       "オルト・ザラタン":{
-         "Notes":"",
+         "Notes":"Half circle AoE, immediately move into it once it finishes as it does another in the opposite direction.",
          "EnglishName":"ORTHOS ZARATAN"
       },
       "オルト・ピラヌー":{
@@ -2392,7 +2392,7 @@
          "EnglishName":"ORTHOS PIRANU"
       },
       "オルト・スティングレイ":{
-         "Notes":"",
+         "Notes":"Jumps and inflicts big knockback jump. Get ready to stay in for doughnut, or walk away for point blank.",
          "EnglishName":"ORTHOS STINGRAY"
       },
       "メラシディアン・クローン":{
@@ -2426,11 +2426,11 @@
          "EnglishName":"ORTHOS PTEROC"
       },
       "オルト・ディプロカウルス":{
-         "Notes":"",
+         "Notes":"Gives other enemies a massive evasion up for a few minutes; avoid pulling multiple.",
          "EnglishName":"ORTHOS DIPLOCAULUS"
       },
       "オルト・コブラ":{
-         "Notes":"",
+         "Notes":"Don't get behind him. Inflicts heavy vuln upon death.",
          "EnglishName":"ORTHOS COBRA"
       },
       "オルト・マタマタ":{
@@ -2438,7 +2438,7 @@
          "EnglishName":"ORTHOS MATAMATA"
       },
       "オルト・ニンジャ":{
-         "Notes":"",
+         "Notes":"Will assassinate out of combat if HP is ever under 20%",
          "EnglishName":"ORTHONINJA"
       },
       "オルト・モニター":{
@@ -2446,7 +2446,7 @@
          "EnglishName":"ORTHOS MONITOR"
       },
       "オルト・ガウロウ":{
-         "Notes":"",
+         "Notes":"Walk away from frontal untelegraphed claw attack. Will do an untelegraphed tail attack if behind.",
          "EnglishName":"ORTHOS GOWROW"
       },
       "オルト・バジリスク":{
@@ -2454,7 +2454,7 @@
          "EnglishName":"ORTHOS BASILISK"
       },
       "オルト・ドレイク":{
-         "Notes":"",
+         "Notes":"Avoid melee autos/actions during Flame Spikes; will kill otherwise.",
          "EnglishName":"ORTHOS DRAKE"
       },
       "オルト・アナラ":{
@@ -2462,7 +2462,7 @@
          "EnglishName":"ORTHOS ANALA"
       },
       "オルト・パレオン":{
-         "Notes":"",
+         "Notes":"Pulls in, then does a very quick point blank AoE. Get away.",
          "EnglishName":"ORTHOS PALLEON"
       },
       "オルト・ハオカー":{
@@ -2470,7 +2470,7 @@
          "EnglishName":"HAOKAH PERFECTED"
       },
       "オルト・ファラク":{
-         "Notes":"",
+         "Notes":"Stay close; casts a massive doughnut AoE otherwise.",
          "EnglishName":"ORTHOS FALAK"
       },
       "メラシディアン・クローン":{
@@ -2500,31 +2500,31 @@
          "EnglishName":"ORTHOS KORRIGAN"
       },
       "オルト・クァール":{
-         "Notes":"",
+         "Notes":"Massive frontal cone AoE; has Tail Swing back conal attack if behind.",
          "EnglishName":"ORTHOS COUERL"
       },
       "オルト・プリメレファス":{
-         "Notes":"",
+         "Notes":"Get away after it charges to avoid point blank AoE. Avoid stunning cast as it will queue it after.",
          "EnglishName":"ORTHOS PRIMELEPHAS"
       },
       "オルト・ユニコーン":{
-         "Notes":"",
+         "Notes":"Get away after it charges to avoid point blank AoE. Avoid stunning cast as it will queue it after.",
          "EnglishName":"ORTHOS UNICORN"
       },
       "オルト・トコトコ":{
-         "Notes":"",
+         "Notes":"Late frontal cone telegraph.",
          "EnglishName":"ORTHOS TOCO TOCO"
       },
       "オルト・クノイチ":{
-         "Notes":"",
+         "Notes":"Will asssassinate even out of combat if HP is under 20%.",
          "EnglishName":"ORTHOKUNOICHI"
       },
       "オルト・グログロ":{
-         "Notes":"",
+         "Notes":"The Killing Paw does a frontal swipe, then a second after. Avoid lethargy/arm's length storing the second; will lead to an instant one shot.",
          "EnglishName":"ORTHOS GULO GULO"
       },
       "オルト・カルガス":{
-         "Notes":"",
+         "Notes":"Must stun or LOS Winds of Winter cast; usually after 2 Freefall casts.",
          "EnglishName":"ORTHOS KARGAS"
       },
       "オルト・ウルフ":{
@@ -2532,7 +2532,7 @@
          "EnglishName":"ORTHOS WOLF"
       },
       "オルト・サンダービースト":{
-         "Notes":"",
+         "Notes":"Scythe Tail is an untelegraphed big point blank AoE, get away when it readies its animation. Will cast Spark doughnut if far away.",
          "EnglishName":"ORTHOS THUNDERBEAST"
       },
       "オルト・サスカッチ":{
@@ -2544,7 +2544,7 @@
          "EnglishName":"BIRD OF ORTHOS"
       },
       "オルト・フレイムビースト":{
-         "Notes":"",
+         "Notes":"Get behind to avoid massive frontal line AoE. Cannot LOS this cast.",
          "EnglishName":"ORTHOS FLAMEBEAST"
       },
       "オルト・スカネテ":{
@@ -2578,23 +2578,23 @@
          "EnglishName":"ORTHOS KORRIGAN"
       },
       "オルト・アイアンコース":{
-         "Notes":"",
+         "Notes":"Glass punch is a small frontal cone; easiest to just get behind.",
          "EnglishName":"ORTHOIRON CORSE"
       },
       "オルト・ヘクトアイズ":{
-         "Notes":"",
+         "Notes":"Massive roomwide point blank AOE, can get out in time.",
          "EnglishName":"ORTHOS HECTEYES"
       },
       "オルト・ペルソナ":{
-         "Notes":"",
+         "Notes":"Don't stray far for big conal AoE.",
          "EnglishName":"ORTHOS PERSONA"
       },
       "オルト・カトブレパス":{
-         "Notes":"",
+         "Notes":"Casts a roomwide petrifying eye mechanic out of combat; trivial to pull.",
          "EnglishName":"ORTHOS CATOBLEPAS"
       },
       "オルト・ディープアイ":{
-         "Notes":"",
+         "Notes":"Casts an AoE vuln.",
          "EnglishName":"ORTHOS DEEPEYE"
       },
       "オルト・アビス":{
@@ -2602,27 +2602,27 @@
          "EnglishName":"ORTHOS ABYSS"
       },
       "オルト・プリン":{
-         "Notes":"",
+         "Notes":"Huge conal AoE; don't stray far.",
          "EnglishName":"ORTHOS PUDDING"
       },
       "オルト・グルマン":{
-         "Notes":"",
+         "Notes":"Quickly get behind once it pulls in; fast frontal conal cast follows.",
          "EnglishName":"ORTHOS GOURMAND"
       },
       "オルト・スパルトイ":{
-         "Notes":"",
+         "Notes":"Targeted circle AoE. Fairly large frontal conal after.",
          "EnglishName":"ORTHOS SPARTOI"
       },
       "オルト・ブラックペガサス":{
-         "Notes":"",
+         "Notes":"Charges, casts large point blank AoE Nicker after.",
          "EnglishName":"ORTHOS PEGASUS"
       },
       "オルト・アーリマン":{
-         "Notes":"",
+         "Notes":"Big line AoE.",
          "EnglishName":"ORTHOS AHRIMAN"
       },
       "オルト・スペクター":{
-         "Notes":"",
+         "Notes":"Ringing Burst= Stay close; Surrounding Burst= Get away; Left/Right Sweep, get to the other side quickly.",
          "EnglishName":"ORTHOS SPECTER"
       },
       "オルト・レイス":{
@@ -2656,55 +2656,55 @@
          "EnglishName":"ORTHOS KORRIGAN"
       },
       "オルト・システムγ":{
-         "Notes":"",
+         "Notes":"High Voltage is a huge interruptable point blank AoE. Repelling Cannons also point blank AoE. Ring Cannon is a doughnut, get close.",
          "EnglishName":"ORTHOSYSTEM γ"
       },
       "オルト・システムα":{
-         "Notes":"",
+         "Notes":"Massive delayed frontal conal.",
          "EnglishName":"ORTHOSYSTEM α"
       },
       "オルト・マイニングドローン":{
-         "Notes":"",
+         "Notes":"4 knockbacks, then large half circle AoE in front.",
          "EnglishName":"ORTHOS MINING DRONE"
       },
       "オルト・ドローン":{
-         "Notes":"",
+         "Notes":"Quickly get away when it dies; self destructs similar to Ice Sprites on death.",
          "EnglishName":"ORTHODRONE"
       },
       "オルト・マザービット":{
-         "Notes":"",
+         "Notes":"Citadel Buster is a line AoE with a late telegraph.",
          "EnglishName":"ORTHOS MOTHERBIT"
       },
       "オルト・スフィンクス":{
-         "Notes":"",
+         "Notes":"Swinge is a large frontal conal. Gaze is also a frontal conal mechanic.",
          "EnglishName":"ORTHOS SPHINX"
       },
       "オルト・ミトリダテス":{
-         "Notes":"",
+         "Notes":"Get directly behind to avoid very wide frontal AoE; sides are not safe.",
          "EnglishName":"ORTHOS MITHRIDATES"
       },
       "オルト・サーヴォキマイラ":{
-         "Notes":"",
+         "Notes":"Get in for Dragon's Voice, Get out for Ram's Voice. Dragon's Breath attack front left, Engulfing Ice big upper right, Scorpion Sting attacks from behind.",
          "EnglishName":"SERVOMECHANICAL ORTHOCHIMERA"
       },
       "オルト・サーヴォミノタウロス":{
-         "Notes":"",
+         "Notes":"Charges and 128-tonze swing, point blank AoE to get away from. 32-tonze swing is a huge frontal conal.",
          "EnglishName":"SERVOMECHANICAL ORTHOTAUR"
       },
       "オルト・ドゥルガー":{
-         "Notes":"",
+         "Notes":"Telegraphed big frontal conal AoE. Get ready to run away from targeted AoE once Brainjack effect wears off.",
          "EnglishName":"ORTHOS DURGA"
       },
       "オルト・ドレッドノート":{
-         "Notes":"",
+         "Notes":"Rotoswipe is a fairly big frontal conal. Can buff itself with Steam Clean.",
          "EnglishName":"ORTHONAUGHT"
       },
       "オルト・フィッター":{
-         "Notes":"",
+         "Notes":"Dangerous roomwide AoE out of combat.",
          "EnglishName":"ORTHOS FITTER"
       },
       "オルト・ザグナル":{
-         "Notes":"",
+         "Notes":"Dangerous lethal roomwide Aoe out of combat.",
          "EnglishName":"ORTHOS ZAGHNAL"
       },
       "メラシディアン・クローン":{
