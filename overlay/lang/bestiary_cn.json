@@ -1,0 +1,1942 @@
+{
+"Nothing Notable": "无特殊信息。",
+"Rare Monster": "请注意！<b>形态变化无效！</b><br/>这是一个稀有怪物，只会进行自动攻击，伤害却很高。",
+"Congratulations": "恭喜你！",
+"Good Luck": "祝你好运！",
+"the Palace of the Dead":[
+    {
+       "MIMIC":{
+          "Notes":"它们会以比玩家高出许多的等级出现。祝你好运。",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "PALACE DEATHMOUSE":{
+          "Notes":"",
+          "EnglishName":"PALACE DEATHMOUSE"
+       },
+       "PALACE ANTELOPE":{
+          "Notes":"",
+          "EnglishName":"PALACE ANTELOPE"
+       },
+       "PALACE SPRITE":{
+          "Notes":"",
+          "EnglishName":"PALACE SPRITE"
+       },
+       "PALACE ZIZ":{
+          "Notes":"",
+          "EnglishName":"PALACE ZIZ"
+       },
+       "PALACE COBLYN":{
+          "Notes":"",
+          "EnglishName":"PALACE COBLYN"
+       },
+       "PALACE BAT":{
+          "Notes":"",
+          "EnglishName":"PALACE BAT"
+       },
+       "PALACE HIPPOCERF":{
+          "Notes":"",
+          "EnglishName":"PALACE HIPPOCERF"
+       },
+       "PALACE BEETLE":{
+          "Notes":"",
+          "EnglishName":"PALACE BEETLE"
+       },
+       "PALACE HORNET":{
+          "Notes":"如果你没有及时的击杀，它会读条造成大量伤害的终极针。你需要远离它一段距离来规避这次伤害。",
+          "EnglishName":"PALACE HORNET"
+       },
+       "PALACE YARZON":{
+          "Notes":"",
+          "EnglishName":"PALACE YARZON"
+       },
+       "PALACE DUNG BEETLE":{
+          "Notes":"",
+          "EnglishName":"PALACE DUNG BEETLE"
+       },
+       "LOST GOBLIN":{
+          "Notes":"",
+          "EnglishName":"LOST GOBLIN"
+       },
+       "PALACE DEATHGAZE":{
+          "Notes":"这个BOSS很简单，但是在单挑时也不能低估他的伤害(注意在战斗中需要时刻保持移动)。 <br/> 总体策略 - 使用魔陶器 梦魔化在低层可以造成巨量伤害，这是因为易伤的潜在价值比大部分低级技能都要高。如果你的职业可以风筝BOSS，那你可以绕着场地边缘跑来躲掉的爆裂尾。",
+          "EnglishName":"PALACE DEATHGAZE"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"它们会以比玩家高出许多的等级出现。祝你好运。",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "SPEAR-SHAKING ADVENTURER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"SPEAR-SHAKING ADVENTURER"
+       },
+       "STAFF-SPINNING ADVENTURER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"STAFF-SPINNING ADVENTURER"
+       },
+       "SWORD-SWINGING ADVENTURER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"SWORD-SWINGING ADVENTURER"
+       },
+       "LIVING WHELK":{
+          "Notes":"",
+          "EnglishName":"LIVING WHELK"
+       },
+       "PALACE URAGNITE":{
+          "Notes":"",
+          "EnglishName":"PALACE URAGNITE"
+       },
+       "PALACE TOAD":{
+          "Notes":"",
+          "EnglishName":"PALACE TOAD"
+       },
+       "PALACE PUDDING":{
+          "Notes":"",
+          "EnglishName":"PALACE PUDDING"
+       },
+       "PALACE SLIME":{
+          "Notes":"如果不及时杀死，会大范围爆炸并杀死所有人。单人时切记不要在房间中乱动，如果你恰好踩到蛙变陷阱，你的这次旅途可能就到此为止了。(虽然你变蛙后也可能风筝它，或在变蛙前那一刻用出魔陶器 形态变化，然而…)",
+          "EnglishName":"PALACE SLIME"
+       },
+       "PALACE NANKA":{
+          "Notes":"",
+          "EnglishName":"PALACE NANKA"
+       },
+       "PALACE NINKI NANKA":{
+          "Notes":"",
+          "EnglishName":"PALACE NINKI NANKA"
+       },
+       "PALACE OCHU":{
+          "Notes":"",
+          "EnglishName":"PALACE OCHU"
+       },
+       "PALACE BILOKO":{
+          "Notes":"",
+          "EnglishName":"PALACE BILOKO"
+       },
+       "PALACE SEEDLING":{
+          "Notes":"",
+          "EnglishName":"PALACE SEEDLING"
+       },
+       "PALACE MORBOL":{
+          "Notes":"",
+          "EnglishName":"PALACE MORBOL"
+       },
+       "PALACE COBRA":{
+          "Notes":"如果你恰好猜到了蛙变陷阱，地宫眼镜蛇会使用特殊技能 捕食 直接吃掉你这只蛙蛙。遇到它时，千万不要乱动。",
+          "EnglishName":"PALACE COBRA"
+       },
+       "SPURGE":{
+          "Notes":"这个BOSS也很简单，攻击模式类似于10层BOSS。但是请不要低估它的大伤害技能, <b>血腥的爱抚</b>。 技能顺序大致为血腥的爱抚-以自身为圆心的AOE-点名圆形AOE-全场AOE。全场AOE之后，它将会去场地最北边同时召唤两个地宫黄蜂。必须第一时间击杀小怪否则他们将会读条终极针让某位玩家当场去世。同时，BOSS会读条使用一个伤害极高的直线AOE<b>腐烂恶臭</b>。<br/>总体策略 - 使用魔陶器 梦魔化来击杀BOSS和他召唤出的小怪(在它召唤时对着BOSS使用，可以通过AOE同时打到BOSS和小怪)。需要注意的是单人时可以使用<b>生者秘药</b>，它的伤害还是很高的。",
+          "EnglishName":"SPURGE"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"它们会以比玩家高出许多的等级出现。祝你好运。",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "FRENZIED FREEBOOTER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"FRENZIED FREEBOOTER"
+       },
+       "ISHGARDIAN PIKEMAN":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"ISHGARDIAN PIKEMAN"
+       },
+       "ROUGHSPUN RUFFIAN":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"ROUGHSPUN RUFFIAN"
+       },
+       "PALACE PUK":{
+          "Notes":"",
+          "EnglishName":"PALACE PUK"
+       },
+       "PALACE DRAKE":{
+          "Notes":"",
+          "EnglishName":"PALACE DRAKE"
+       },
+       "PALACE ADAMANTOISE":{
+          "Notes":"",
+          "EnglishName":"PALACE ADAMANTOISE"
+       },
+       "PALACE DULLAHAN":{
+          "Notes":"",
+          "EnglishName":"PALACE DULLAHAN"
+       },
+       "PALACE WIVRE":{
+          "Notes":"",
+          "EnglishName":"PALACE WIVRE"
+       },
+       "PALACE PEISTE":{
+          "Notes":"",
+          "EnglishName":"PALACE PEISTE"
+       },
+       "PALACE SPRIGGAN":{
+          "Notes":"",
+          "EnglishName":"PALACE SPRIGGAN"
+       },
+       "PALACE EFFIGY":{
+          "Notes":"",
+          "EnglishName":"PALACE EFFIGY"
+       },
+       "PALACE MAROLITH":{
+          "Notes":"",
+          "EnglishName":"PALACE MAROLITH"
+       },
+       "PALACE CENTAUR":{
+          "Notes":"",
+          "EnglishName":"PALACE CENTAUR"
+       },
+       "PALACE MINOTAUR":{
+          "Notes":"这个怪物会施放<b>百十一吨回旋</b>，这是一个以其自身为圆心没有范围提示的高伤害击退AOE。可被眩晕打断。",
+          "EnglishName":"PALACE MINOTAUR"
+       },
+       "PALACE SKATENE":{
+          "Notes":"虽然简单，但它也值得一提，它会释放<b>唧唧咋咋</b> 来使所有人沉睡15秒。因为在你睡着后他会马上把你打醒，所以在单人时较容易处理。但是要小心你睡着时会被其他怪物点名场地AOE。",
+          "EnglishName":"PALACE SKATENE"
+       },
+       "NINGISHZIDA":{
+          "Notes":"一句话攻略 - 站在场边，引导火球-冰球-火球-冰球，走到场地中央。<br/>这个BOSS除了会造成一个顺劈之外，还会对随机玩家点名顺序为火球，冰球，火球，冰球的场地AOE。这些AOE会在场上持续存在并会造成减速，因此你要站在场边引导。在放完第二个冰球后，BOSS会走到场中央并释放<b>恐惧迷雾</b>。他会对你造成高额伤害并使你获得恐惧DEBUFF，所以你需要在它吟唱时提前走到BOSS圈中间。",
+          "EnglishName":"NINGISHZIDA"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"它们会以比玩家高出许多的等级出现。祝你好运。",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "IMMORTAL FLAME":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"IMMORTAL FLAME"
+       },
+       "NIGHTMARE MONK":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MONK"
+       },
+       "NIGHTMARE DAHAK":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DAHAK"
+       },
+       "NIGHTMARE CATOBLEPAS":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE CATOBLEPAS"
+       },
+       "NIGHTMARE OGRE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE OGRE"
+       },
+       "NIGHTMARE BOGY":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE BOGY"
+       },
+       "NIGHTMARE HECTEYES":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HECTEYES"
+       },
+       "NIGHTMARE EYE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE EYE"
+       },
+       "NIGHTMARE GOURMAND":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GOURMAND"
+       },
+       "NIGHTMARE MUMMY":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MUMMY"
+       },
+       "NIGHTMARE HAAGENTI":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HAAGENTI"
+       },
+       "NIGHTMARE TROUBADOUR":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE TROUBADOUR"
+       },
+       "NIGHTMARE GNAT":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GNAT"
+       },
+       "NIGHTMARE SUCCUBUS":{
+          "Notes":"在释放<b>虚空烈炎</b> 后会释放<b>暗黑雾</b>，一个会对受到伤害的单位附加恐惧的AOE，所以请确保站在判定圈外。",
+          "EnglishName":"NIGHTMARE SUCCUBUS"
+       },
+       "IXTAB":{
+          "Notes":"一句话攻略 - 杀光小怪<br/>这个BOSS会施放4次在地上持续存在的AOE，然后召唤两只<b>噩梦浮灵</b>。躲避来自BOSS的AOE同时尽量快速的击杀小怪。在BOSS吟唱全场AOE<b>尖啸</b>后，小怪会向你使用<b>龙卷</b>(基本上你就凉了)，尤其在尖啸之后紧接一次<b>暗影核爆</b>的情况。",
+          "EnglishName":"IXTAB"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DUSKWIGHT LANCER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"DUSKWIGHT LANCER"
+       },
+       "NIGHTMARE GRAVEKEEPER":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GRAVEKEEPER"
+       },
+       "NIGHTMARE BLOODGUARD":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE BLOODGUARD"
+       },
+       "NIGHTMARE DRAGON":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DRAGON"
+       },
+       "NIGHTMARE WRAITH":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE WRAITH"
+       },
+       "NIGHTMARE KNIGHT":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE KNIGHT"
+       },
+       "NIGHTMARE MANTICORE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE MANTICORE"
+       },
+       "NIGHTMARE HELLHOUND":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE HELLHOUND"
+       },
+       "NIGHTMARE GARGOYLE":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GARGOYLE"
+       },
+       "NIGHTMARE DEMON":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE DEMON"
+       },
+       "NIGHTMARE GNAT":{
+          "Notes":"",
+          "EnglishName":"NIGHTMARE GNAT"
+       },
+       "NIGHTMARE BHOOT":{
+          "Notes":"它们会读条麻痹，如果你在进行大范围拉怪请一定要小心。",
+          "EnglishName":"NIGHTMARE BHOOT"
+       },
+       "NIGHTMARE PERSONA":{
+          "Notes":"它们会读条麻痹，如果你在进行大范围拉怪请一定要小心。",
+          "EnglishName":"NIGHTMARE PERSONA"
+       },
+       "EDDA BLACKBOSOM":{
+          "Notes":"一句话攻略 - 贴紧BOSS来躲环形AOE<b>身体健康</b>。<br/>如果你正确处理每个机制，这个BOSS会很简单。他会释放两种<b>身体健康</b>，一种将要求你远离她，另一种将覆盖整个战斗区域除去她身下的一个小区域。因此请尽量靠近她来避开这个技能。这个技能除了本身的伤害之后，每个被此技能击中的敌人都会点亮一个地板上的符文，这会增加全屏AOE<b>冥婚蜜月</b>的伤害。除此之外，她有时会释放<b>病入膏肓</b>，它会立即对目标造成<b>病弱</b>DEBUFF，但由于她的技能释放顺序，你永远不必担心因为病弱的速度减缓而难以躲避<b>身体健康</b>。",
+          "EnglishName":"EDDA BLACKBOSOM"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "MOLDERING MERCHANT":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"MOLDERING MERCHANT"
+       },
+       "BLACKENING MARKETEER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"BLACKENING MARKETEER"
+       },
+       "PALACE IMP":{
+          "Notes":"",
+          "EnglishName":"PALACE IMP"
+       },
+       "PALACE GREMLIN":{
+          "Notes":"",
+          "EnglishName":"PALACE GREMLIN"
+       },
+       "PALACE IDOL":{
+          "Notes":"",
+          "EnglishName":"PALACE IDOL"
+       },
+       "PALACE VODORIGA":{
+          "Notes":"",
+          "EnglishName":"PALACE VODORIGA"
+       },
+       "PALACE ARCH DEMON":{
+          "Notes":"",
+          "EnglishName":"PALACE ARCH DEMON"
+       },
+       "PALACE DEEPEYE":{
+          "Notes":"",
+          "EnglishName":"PALACE DEEPEYE"
+       },
+       "PALACE ANUBYS":{
+          "Notes":"",
+          "EnglishName":"PALACE ANUBYS"
+       },
+       "PALACE TAURUS":{
+          "Notes":"",
+          "EnglishName":"PALACE TAURUS"
+       },
+       "PALACE PUDDING":{
+          "Notes":"",
+          "EnglishName":"PALACE PUDDING"
+       },
+       "PALACE SOULFLAYER":{
+          "Notes":"",
+          "EnglishName":"PALACE SOULFLAYER"
+       },
+       "PALACE POT":{
+          "Notes":"",
+          "EnglishName":"PALACE POT"
+       },
+       "THE BLACK RIDER":{
+          "Notes":"一句话攻略 - 记得卡位，保证被点名击退后不要飞进持续地板AOE。",
+          "EnglishName":"THE BLACK RIDER"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "BLOATED PUGILIST":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"BLOATED PUGILIST"
+       },
+       "BLOATED ARCHER":{
+         "Notes":"*稀有怪物*",
+         "EnglishName":"BLOATED ARCHER"
+       },
+       "BLOATED CONJURER":{
+         "Notes":"*稀有怪物*",
+         "EnglishName":"BLOATED CONJURER"
+      },
+       "PALACE TYRANNOSAUR":{
+          "Notes":"",
+          "EnglishName":"PALACE TYRANNOSAUR"
+       },
+       "PALACE MYLODON":{
+          "Notes":"",
+          "EnglishName":"PALACE MYLODON"
+       },
+       "PALACE PTERANODON":{
+          "Notes":"",
+          "EnglishName":"PALACE PTERANODON"
+       },
+       "PALACE ELBST":{
+          "Notes":"",
+          "EnglishName":"PALACE ELBST"
+       },
+       "PALACE WIVRE":{
+          "Notes":"",
+          "EnglishName":"PALACE WIVRE"
+       },
+       "PALACE CROC":{
+          "Notes":"",
+          "EnglishName":"PALACE CROC"
+       },
+       "PALACE DIPLOCAULUS":{
+          "Notes":"",
+          "EnglishName":"PALACE DIPLOCAULUS"
+       },
+       "PALACE BLADE":{
+          "Notes":"",
+          "EnglishName":"PALACE BLADE"
+       },
+       "PALACE SARCOSUCHUS":{
+          "Notes":"",
+          "EnglishName":"PALACE SARCOSUCHUS"
+       },
+       "PALACE TRICERATOPS":{
+          "Notes":"",
+          "EnglishName":"PALACE TRICERATOPS"
+       },
+       "PALACE RAPTOR":{
+          "Notes":"",
+          "EnglishName":"PALACE RAPTOR"
+       },
+       "YAQUARU":{
+          "Notes":"一句话攻略 - 当BOSS吟唱浸泡时，把他完全拉出范围，否则他会得到加速BUFF。",
+          "EnglishName":"YAQUARU"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "EMACIATED ENGINEER":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"EMACIATED ENGINEER"
+       },
+       "PUTRID PLUTOCRAT":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"PUTRID PLUTOCRAT"
+       },
+       "PALACE BEAR":{
+          "Notes":"",
+          "EnglishName":"PALACE BEAR"
+       },
+       "PALACE COEURL":{
+          "Notes":"",
+          "EnglishName":"PALACE COEURL"
+       },
+       "PALACE BANDERSNATCH":{
+          "Notes":"",
+          "EnglishName":"PALACE BANDERSNATCH"
+       },
+       "PALACE WOLF":{
+          "Notes":"",
+          "EnglishName":"PALACE WOLF"
+       },
+       "PALACE DHALMEL":{
+          "Notes":"",
+          "EnglishName":"PALACE DHALMEL"
+       },
+       "PALACE LION":{
+          "Notes":"",
+          "EnglishName":"PALACE LION"
+       },
+       "PALACE CYCLOPS":{
+          "Notes":"",
+          "EnglishName":"PALACE CYCLOPS"
+       },
+       "PALACE SASQUATCH":{
+          "Notes":"",
+          "EnglishName":"PALACE SASQUATCH"
+       },
+       "PALACE ANZU":{
+          "Notes":"",
+          "EnglishName":"PALACE ANZU"
+       },
+       "PALACE AUROCHS":{
+          "Notes":"",
+          "EnglishName":"PALACE AUROCHS"
+       },
+       "BIRD OF THE PALACE":{
+          "Notes":"",
+          "EnglishName":"BIRD OF THE PALACE"
+       },
+       "GUDANNA":{
+          "Notes":"一句话攻略 - 远离BOSS施放的旋风，他们会将略大于他们视觉范围的人吸入并造成伤害。他会在边缘施放会施加易伤的大伤害AOE<b>呵斥</b>，所以当他跑去边缘时，一起跟着跑过去。他的HP在18%之后就会不断吟唱<b>黄道陨石</b>，一发就能造成你最大血量80%的伤害。因此，把爆发留到这个时候并尽快RUSH掉它。",
+          "EnglishName":"GUDANNA"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "INSENTIENT INQUISITOR":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"INSENTIENT INQUISITOR"
+       },
+       "NECROSE KNIGHT":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"NECROSE KNIGHT"
+       },
+       "PALACE ERUCA":{
+          "Notes":"",
+          "EnglishName":"PALACE ERUCA"
+       },
+       "PALACE GALLIMIMUS":{
+          "Notes":"",
+          "EnglishName":"PALACE GALLIMIMUS"
+       },
+       "PALACE CLAW":{
+          "Notes":"",
+          "EnglishName":"PALACE CLAW"
+       },
+       "PALACE WORM":{
+          "Notes":"",
+          "EnglishName":"PALACE WORM"
+       },
+       "PALACE BOMB":{
+          "Notes":"如果你没有及时击杀它，他会<b>自爆</b>。组队模式时小心不要拉太多的爆弹怪。鉴于变蛙陷阱和沉默陷阱，单人模式时不要直接走进房间",
+          "EnglishName":"PALACE BOMB"
+       },
+       "PALACE CHIMERA":{
+          "Notes":"",
+          "EnglishName":"PALACE CHIMERA"
+       },
+       "FLAME DRAGON":{
+          "Notes":"",
+          "EnglishName":"FLAME DRAGON"
+       },
+       "PALACE WAMOURACAMPA":{
+          "Notes":"",
+          "EnglishName":"PALACE WAMOURACAMPA"
+       },
+       "PALACE VINEGAROON":{
+          "Notes":"",
+          "EnglishName":"PALACE VINEGAROON"
+       },
+       "PALACE WAMOURA":{
+          "Notes":"",
+          "EnglishName":"PALACE WAMOURA"
+       },
+       "PALACE HAPALIT":{
+          "Notes":"",
+          "EnglishName":"PALACE HAPALIT"
+       },
+       "THE GODMOTHER":{
+          "Notes":"一句话攻略 - 把橘色小怪直接打死，把蓝色小怪推到BOSS边(所有技能都能推走它)。<br/>打这个BOSS比上一个更需要一些小技巧。有时它会召唤一群不可选中的小爆弹，他们会一轮轮的各自释放一个以自身为圆心的AOE。同时你也需要在<b>熔岩爆弹怪</b>爆炸之前杀死它。它也会在吟唱<b>特大爆炸</b>时召唤一只<b>眩晕爆弹怪</b>，使用技能把他推到BOSS边，否则你要承受一个最大HP99%的伤害(减伤无效，所以不要想着用T的LB来硬抗！)。",
+          "EnglishName":"THE GODMOTHER"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "MORTIFYING MAGNATE":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"MORTIFYING MAGNATE"
+       },
+       "PALACE HIPPOCERF":{
+          "Notes":"",
+          "EnglishName":"PALACE HIPPOCERF"
+       },
+       "PALACE GOURMAND":{
+          "Notes":"",
+          "EnglishName":"PALACE GOURMAND"
+       },
+       "PALACE WRAITH":{
+          "Notes":"",
+          "EnglishName":"PALACE WRAITH"
+       },
+       "PALACE CORSE":{
+          "Notes":"",
+          "EnglishName":"PALACE CORSE"
+       },
+       "PALACE IRON CORSE":{
+          "Notes":"",
+          "EnglishName":"PALACE IRON CORSE"
+       },
+       "DARK DRAGON":{
+          "Notes":"",
+          "EnglishName":"DARK DRAGON"
+       },
+       "PALACE SWARM":{
+          "Notes":"",
+          "EnglishName":"PALACE SWARM"
+       },
+       "PALACE MUMMY":{
+          "Notes":"",
+          "EnglishName":"PALACE MUMMY"
+       },
+       "PALACE ROSELET":{
+          "Notes":"",
+          "EnglishName":"PALACE ROSELET"
+       },
+       "PALACE KNIGHT":{
+          "Notes":"",
+          "EnglishName":"PALACE KNIGHT"
+       },
+       "PALACE GRAVEKEEPER":{
+          "Notes":"",
+          "EnglishName":"PALACE GRAVEKEEPER"
+       },
+       "NYBETH OBDILORD":{
+          "Notes":"这个BOSS对大部分团队都很简单，大部分情况你甚至不需要用魔陶器 基路伯化。<br/>单人 - 用魔陶器 强化自身、魔陶器 强化防御、生者秘药和魔陶器 梦魔化，大胆的用<b>虚空烈焰</b>怼BOSS吧，他会小怪焚化殆尽。变身时间结束后，再用一个<b>生者秘药</b>和魔陶器 基路伯化，用<b>天罚</b>怼爆BOSS和地上的小怪。<br/>团队 - 一个人使用魔陶器 梦魔化，其余人集火BOSS，<b>虚空烈焰</b>杀死小怪后，BOSS也应该奄奄一息了。",
+          "EnglishName":"NYBETH OBDILORD"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "CORRUPTED CENTURION":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"CORRUPTED CENTURION"
+       },
+       "DEEP PALACE HORNET":{
+          "Notes":"如果你没有及时的击杀，地宫黄蜂会读条造成大量伤害的<b>终极针</b>。你需要远离它一段距离来规避这次伤害。",
+          "EnglishName":"DEEP PALACE HORNET"
+       },
+       "DEEP PALACE LADYBUG":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LADYBUG"
+       },
+       "DEEP PALACE HIPPOGRYPH":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HIPPOGRYPH"
+       },
+       "DEEP PALACE DUNG BEETLE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DUNG BEETLE"
+       },
+       "DEEP PALACE GAELICAT":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GAELICAT"
+       },
+       "DEEP PALACE DOBLYN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DOBLYN"
+       },
+       "DEEP PALACE ZIZ":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ZIZ"
+       },
+       "DEEP PALACE YARZON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE YARZON"
+       },
+       "DEEP PALACE SQUIRREL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SQUIRREL"
+       },
+       "DEEP PALACE STAG":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE STAG"
+       },
+       "DEEP PALACE SPRITE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SPRITE"
+       },
+       "GOBLIN ADVENTURER":{
+          "Notes":"",
+          "EnglishName":"GOBLIN ADVENTURER"
+       },
+       "ALICANTO":{
+          "Notes":"这个BOSS的技巧和10层的相似，但是锤人更疼了，好好分工吧。",
+          "EnglishName":"ALICANTO"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE LEECH":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LEECH"
+       },
+       "DEEP PALACE MORBOL":{
+          "Notes":"战斗一开始就会使用一个会造成睡眠和迟缓的范围AOE，然后接着使用<b>臭气</b>。建议站在近战范围打它，一来可以在睡眠结束后马上走出AOE范围，二来它可以马上拍你一下来把你搞醒。",
+          "EnglishName":"DEEP PALACE MORBOL"
+       },
+       "DEEP PALACE GIGANTOAD":{
+          "Notes":"用舌头把你吸走之后，会紧接着使用可以造成6000以上伤害的<b>吃力跳跃</b>。如果你靠的太近，这根舌头会让你眩晕5秒。在单人的时候对这些要很小心，尤其是旁边还有别的怪时。",
+          "EnglishName":"DEEP PALACE GIGANTOAD"
+       },
+       "DEEP PALACE BILOKO":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BILOKO"
+       },
+       "DEEP PALACE COBRA":{
+          "Notes":"和11-20层的地宫眼镜蛇一样，但是会使用伤害可观的<b>喷毒</b>来使你中毒。尤其注意蛇蛇吃蛙蛙的COMBO。",
+          "EnglishName":"DEEP PALACE COBRA"
+       },
+       "DEEP PALACE BIFERICERAS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BIFERICERAS"
+       },
+       "DEEP PALACE SEEDLING":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SEEDLING"
+       },
+       "DEEP PALACE SLIME":{
+          "Notes":"这些粘液怪会给你上物理易伤DEBUFF(尽管他们的攻击是魔法伤害)。他们还是会像11-20层时一样爆炸，但是会晚些自爆。",
+          "EnglishName":"DEEP PALACE SLIME"
+       },
+       "DEEP PALACE SALAMANDER":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SALAMANDER"
+       },
+       "DEEP PALACE OCHU":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE OCHU"
+       },
+       "DEEP PALACE PUDDING":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PUDDING"
+       },
+       "DEEP PALACE NANKA":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE NANKA"
+       },
+       "KIRTIMUKHA":{
+          "Notes":"一句话攻略 - 躲开AOE，杀死小蜜蜂。<br/>这个BOSS和20层的类似,但<b>腐烂恶臭</b>可以秒杀你了，所以躲开那些范围AOE。最简单的做法是把蜜蜂和BOSS拉在一起，然后用魔陶器 梦魔化把它们一网打尽。",
+          "EnglishName":"KIRTIMUKHA"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "GANGRENOUS GIGANT":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"GANGRENOUS GIGANT"
+       },
+       "DEEP PALACE DULLAHAN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DULLAHAN"
+       },
+       "DEEP PALACE EFFIGY":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE EFFIGY"
+       },
+       "DEEP PALACE CENTAUR":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE CENTAUR"
+       },
+       "DEEP PALACE BASILISK":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BASILISK"
+       },
+       "DEEP PALACE BIAST":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BIAST"
+       },
+       "DEEP PALACE ADAMANTOISE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ADAMANTOISE"
+       },
+       "DEEP PALACE UROLITH":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE UROLITH"
+       },
+       "DEEP PALACE WIVRE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE WIVRE"
+       },
+       "DEEP PALACE SPRIGGAN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SPRIGGAN"
+       },
+       "DEEP PALACE PTEROC":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PTEROC"
+       },
+       "DEEP PALACE MINOTAUR":{
+          "Notes":"这个怪物会施放<b>百十一吨回旋</b>，这是一个以其自身为圆心没有范围提示的高伤害击退AOE。可被眩晕打断。",
+          "EnglishName":"DEEP PALACE MINOTAUR"
+       },
+       "DEEP PALACE SKATENE":{
+          "Notes":"虽然简单，但它也值得一提，它会释放<b>唧唧咋咋</b>来使所有人沉睡15秒。因为在你睡着后他会马上把你打醒，所以在单人时较容易处理。但是要小心你睡着时会被其他怪物点名场地AOE。",
+          "EnglishName":"DEEP PALACE SKATENE"
+       },
+       "ALFARD":{
+          "Notes":"一句话攻略 - 站在场边，引导火球-冰球-火球-冰球，跑到中间。<br/>和30层的BOSS差不多，除了他的<b>恐惧迷雾</b>会吟唱的更快，在第二个冰球后马上跑到场地中间并确保所有人提前站好，这样你就不会被减速了。",
+          "EnglishName":"ALFARD"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "HALF-CRACKED CAPTAIN":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"HALF-CRACKED CAPTAIN"
+       },
+       "DEEP PALACE GUARD":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GUARD"
+       },
+       "DEEP PALACE HECTEYES":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HECTEYES"
+       },
+       "DEEP PALACE GOURMAND":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GOURMAND"
+       },
+       "DEEP PALACE CATOBLEPAS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE CATOBLEPAS"
+       },
+       "DEEP PALACE DAHAK":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DAHAK"
+       },
+       "DEEP PALACE TAURUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TAURUS"
+       },
+       "DEEP PALACE TROUBADOR":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TROUBADOR"
+       },
+       "DEEP PALACE SOUL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SOUL"
+       },
+       "DEEP PALACE MUMMY":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MUMMY"
+       },
+       "DEEP PALACE OGRE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE OGRE"
+       },
+       "DEEP PALACE MONK":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MONK"
+       },
+       "DEEP PALACE AHRIMAN":{
+          "Notes":"5级石化<b>5级石化</b>。这个会造成15秒的石化，单人脸吃基本就凉了。",
+          "EnglishName":"DEEP PALACE AHRIMAN"
+       },
+       "AH PUCH":{
+          "Notes":"<b>魔陶器 基路伯化<b/>对这个BOSS有奇效(用了魔陶器 强化自身之后可以一发3w)。如果单挑的话，推荐你用魔陶器 强化自身+魔陶器 强化防御+魔陶器 基路伯化套餐。你也可以不用魔陶器 强化防御，那你可能就需要手动解除基路伯状态，吃个生者秘药，再用另一个魔陶器 基路伯化。",
+          "EnglishName":"AH PUCH"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE KED":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KED"
+       },
+       "DEEP PALACE HELLHOUND":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE HELLHOUND"
+       },
+       "DEEP PALACE GARGOYLE":{
+          "Notes":"他的毒和劈斩会对DPS造成大量伤害，你不用生者秘药和魔陶器 强化防御的话会很困难。",
+          "EnglishName":"DEEP PALACE GARGOYLE"
+       },
+       "DEEP PALACE BHOOT":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BHOOT"
+       },
+       "DEEP PALACE DEMON":{
+          "Notes":"如果你不及时杀死他，它会吟唱一个<b>大漩涡</b>把你HP清空。",
+          "EnglishName":"DEEP PALACE DEMON"
+       },
+       "DEEP PALACE SUCCUBUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SUCCUBUS"
+       },
+       "DEEP PALACE MANTICORE":{
+          "Notes":"它会使用物理攻击提升BUFF，然后使用一个无范围提示的AOE<b>撕裂利爪</b>，这个技能真的很疼。建议要么尾行他，要么绕路走。",
+          "EnglishName":"DEEP PALACE MANTICORE"
+       },
+       "DEEP PALACE PERSONA":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PERSONA"
+       },
+       "DEEP PALACE KNIGHT":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KNIGHT"
+       },
+       "ONYX DRAGON":{
+          "Notes":"",
+          "EnglishName":"ONYX DRAGON"
+       },
+       "DEEP PALACE WRAITH":{
+          "Notes":"他的大范围AOE<b>尖啸</b>会让你被迫走进房间，从而可能就会踩到陷阱或拉到怪。不过你可以眩晕和沉默它。",
+          "EnglishName":"DEEP PALACE WRAITH"
+       },
+       "DEEP PALACE KEEPER":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE KEEPER"
+       },
+       "TISIPHONE":{
+          "Notes":"这个BOSS对远程还算友好，但是对近战尤其困难。<br/>一句话攻略 - 风筝并杀死僵尸小怪(不要让他们摸到你)，梦魔小怪不是必须杀死的。<br/>除了躲开范围AOE，你还有些别的要注意的。在第二次施放后<b>暗黑召唤</b>后。它会在房间的四角召唤四个<b>盲信僵尸</b>，每只僵尸会分别追一个人。他们会缓慢的爬向你，在接近你之后你会被僵尸止步，这会导致你被迫踩到致命AOE。这些小怪很害怕风系魔法,赤魔的<b>赤疾风</b>可以做到一发一个。这个BOSS也会召唤一些<b>盲信梦魔</b>。这种怪会释放一个高额伤害的顺劈。他有60k的血，所以不如无视掉它(你们通常可以通过易伤来尽快的击杀BOSS),如果你不杀死这只怪，BOSS会吃掉梦魔，然后恢复60k的血。一小会儿时间之后，BOSS会施放全屏AOE血雨，不使用魔陶器 强化防御的话会造成13k的伤害。老老实实的回复吧，接下来就进入循环了。",
+          "EnglishName":"TISIPHONE"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "SUNKEN CAPTAIN":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"SUNKEN CAPTAIN"
+       },
+       "DEEP PALACE GREMLIN":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GREMLIN"
+       },
+       "DEEP PALACE DEVILET":{
+          "Notes":"它会施放<b>虚空冰结</b>造成长时间的减速，以及<b>冰棘屏障</b>使任何自动攻击或技能都会对你造成高伤害反伤。推荐打断<b>虚空冰结</b>并且在<b>冰棘屏障</b>持续期间取消选中以防止自动攻击造成反伤。",
+          "EnglishName":"DEEP PALACE DEVILET"
+       },
+       "DEEP PALACE DEEPEYE":{
+          "Notes":"会使用顺劈连击，注意他们的大伤害，必要时记得用生者秘药。",
+          "EnglishName":"DEEP PALACE DEEPEYE"
+       },
+       "DEEP PALACE ABAIA":{
+          "Notes":"如果存活时间足够长的话，会使用狂暴技能获得轻微的伤害加成。",
+          "EnglishName":"DEEP PALACE ABAIA"
+       },
+       "DEEP PALACE SOULFLAYER":{
+          "Notes":"吸血双平A。打起来非常烦人。",
+          "EnglishName":"DEEP PALACE SOULFLAYER"
+       },
+       "DEEP PALACE PUDDING":{
+          "Notes":"会使用顺劈连击，注意他们的大伤害，必要时记得用生者秘药。",
+          "EnglishName":"DEEP PALACE PUDDING"
+       },
+       "DEEP PALACE SHABTI":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SHABTI"
+       },
+       "DEEP PALACE POT":{
+          "Notes":"会使用顺劈连击，注意他们的大伤害，必要时记得用生者秘药。",
+          "EnglishName":"DEEP PALACE POT"
+       },
+       "DEEP PALACE TAURUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TAURUS"
+       },
+       "DEEP PALACE MAROLITH":{
+          "Notes":"会使用顺劈连击，注意他们的大伤害，必要时记得用生者秘药。",
+          "EnglishName":"DEEP PALACE MAROLITH"
+       },
+       "DEEP PALACE ARCH DEMON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE ARCH DEMON"
+       },
+       "TODESRITTER":{
+          "Notes":"尽管长得像是个60层BOSS的换色版，现在这个可以把你顶上天。虽然你不用魔陶器 强化防御也可以单打的过(至少赤魔打的过)我还是十分建议你提前用一个。你一旦踩进由悔恨殿制作出的流血区域，就是一跳5k的大伤害。除此之外，确定你不会被顶到爆炸球AOE中，否则BOSS紧接一刀你就死了。",
+          "EnglishName":"TODESRITTER"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "FLYBLOWN PRAEFECTUS":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"FLYBLOWN PRAEFECTUS"
+       },
+       "DEEP PALACE MYLODON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MYLODON"
+       },
+       "DEEP PALACE PTERANODON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE PTERANODON"
+       },
+       "DEEP PALACE LINDWURM":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE LINDWURM"
+       },
+       "DEEP PALACE CROC":{
+          "Notes":"这些怪有顺劈，而且很疼。",
+          "EnglishName":"DEEP PALACE CROC"
+       },
+       "DEEP PALACE DIPLOCAULUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DIPLOCAULUS"
+       },
+       "DEEP PALACE ARCHAEOSAUR":{
+          "Notes":"会使用顺劈或双平A。即使在有治疗和生者秘药的情况下，也能暴击杀死非坦克玩家。要非常谨慎并考虑使用魔陶器 强化防御。",
+          "EnglishName":"DEEP PALACE ARCHAEOSAUR"
+       },
+       "DEEP PALACE WIVRE":{
+          "Notes":"这些怪有顺劈，而且很疼。此外，犀蜴和三角龙是<b>靠近感知</b>类型，因此你不能从背后偷袭它们。",
+          "EnglishName":"DEEP PALACE WIVRE"
+       },
+       "DEEP PALACE VINEGAROON":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE VINEGAROON"
+       },
+       "DEEP PALACE TRICERATOPS":{
+          "Notes":"这些怪有顺劈，而且很疼。此外，犀蜴和三角龙是<b>靠近感知</b>类型，因此你不能从背后偷袭它们。",
+          "EnglishName":"DEEP PALACE TRICERATOPS"
+       },
+       "DEEP PALACE TURSUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TURSUS"
+       },
+       "DEEP PALACE SARCOSUCHUS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE SARCOSUCHUS"
+       },
+       "YULUNGGU":{
+          "Notes":"这个BOSS和70层的很相似，但现在他的水塘还会额外提供一个物理伤害上升BUFF。此时T需要拉着BOSS绕着场地跑，以确保他一直不在水池里。<br/>单人 - 在第一个<b>沉重</b>效果慢慢衰减时预留一个疾跑或打断，这是因为你需要用这个来逃过随之而来的<b>生物电</b>AOE(在沉重还有7秒时用疾跑)。",
+          "EnglishName":"YULUNGGU"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE BEAR":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BEAR"
+       },
+       "DEEP PALACE BLACK COEURL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE BLACK COEURL"
+       },
+       "DEEP PALACE BANDERSNATCH":{
+          "Notes":"他们都有顺劈/连击，单人时尤其注意。",
+          "EnglishName":"DEEP PALACE BANDERSNATCH"
+       },
+       "DEEP PALACE ANZU":{
+          "Notes":"会点名随机小队成员造成附带DOT的范围顺劈<b>狂乱</b>，造成大量AOE伤害，永远永远永远不要在单人时去碰它！",
+          "EnglishName":"DEEP PALACE ANZU"
+       },
+       "DEEP PALACE DHALMEL":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE DHALMEL"
+       },
+       "DEEP PALACE LION":{
+          "Notes":"他们都有顺劈/连击，单人时尤其注意。",
+          "EnglishName":"DEEP PALACE LION"
+       },
+       "DEEP PALACE WOLF":{
+          "Notes":"有一个附带DOT的顺劈，准备好用康复驱散它。<br/>不要在使用施法职业时碰它们。远程DPS可以在不使用任何道具的情况下干掉他们。",
+          "EnglishName":"DEEP PALACE WOLF"
+       },
+       "DEEP PALACE SASQUATCH":{
+          "Notes":"它是靠近感知的怪物，会有两个在非战斗状态下使用的技能<b>吃香蕉</b>和<b>捶胸</b>。吃香蕉会给他自己一个物理增伤BUFF，并会多次使用。捶胸，以一个房间大小的范围造成物理AOE和物理易伤。所以，不要在附近有深宫大脚巨猿时去打怪。也<b>永远不要打一个有增伤BUFF的深宫大脚巨猿</b>，否则你会被一击必杀。<br/>因此，等到BUFF结束后再上。他的殴打暴击能造成13k的伤害，所以单人时强烈建议使用魔陶器 强化防御，否则一个连击你就死了。",
+          "EnglishName":"DEEP PALACE SASQUATCH"
+       },
+       "BIRD OF THE DEEP PALACE":{
+          "Notes":"顺劈会造成大量伤害，但你也要也要注意他们的<b>天启</b>。这个技能会造成范围伤害和混乱。它进入战斗一段时间后，他们会使用<b>极乐之风</b>，获得加速和提升伤害的BUFF。这段时间内的天启都是秒杀的，你可以打断它的BUFF吟唱或用减速抵消它的加速。",
+          "EnglishName":"BIRD OF THE DEEP PALACE"
+       },
+       "DEEP PALACE WISENT":{
+          "Notes":"尽管这种怪很好杀，但是他有DPS CHECK，如果不及时击杀的话，他会把所有人吸入，并附加一个大概95%-99%的减速DEBUFF。接着会跺一脚，造成DPS的HP90%的伤害并造成麻痹。如果你一下子拉到好几只的话，也要多加小心。",
+          "EnglishName":"DEEP PALACE WISENT"
+       },
+       "DEEP PALACE SNOWCLOPS":{
+          "Notes":"有两个没有提示的一击必杀的范围技能，<b>怒视</b> and <b>百吨回转</b>。怒视是一个几乎瞬发的正面直线AOE。百吨回转则是一个圆形AOE(所以走出这个范围就行)。这些都是可以被眩晕打断的",
+          "EnglishName":"DEEP PALACE SNOWCLOPS"
+       },
+       "DENDAINSONNE":{
+          "Notes":"用魔陶器 梦魔化打到20-21%的血量，然后缓慢打到15%。在BOSS血量15%之后，使用自动攻击或几个较弱能力技将其从15.9%左右打到尽可能接近15.0%(实际上你看不到这个数字，所以你需要小心一点)。等待BOSS使用技能(通常是等待呵斥之后的两次大漩涡)，然后开始你的爆发循环。治疗职业和赤魔打起来容易一些，但其他职业需要准备好治疗技能(内丹、上级恢复药、浴血等)，并且要准时打爆发。",
+          "EnglishName":"DENDAINSONNE"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "JAUNDICED TRIBUNUS":{
+          "Notes":"*稀有怪物*",
+          "EnglishName":"JAUNDICED TRIBUNUS"
+       },
+       "DEEP PALACE GRENADE":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE GRENADE"
+       },
+       "DEEP PALACE SPRITE":{
+          "Notes":"远程DPS和没吃生者秘药的施法职业千万别碰它！",
+          "EnglishName":"DEEP PALACE SPRITE"
+       },
+       "DEEP PALACE CLAW":{
+          "Notes":"会把人吸入然后造成大量伤害。同时也会施放会造成减速的大伤害点名AOE<b>螺旋尾</b>。如果你用魔陶器 强化防御的话，赤魔或奶妈都可以单挑得过。<br/><b>击退免疫对吸入无效</b>。",
+          "EnglishName":"DEEP PALACE CLAW"
+       },
+       "DEEP PALACE CRAWLER":{
+          "Notes":"会施放7k伤害的瞬时伤害(顺劈就5k)。此外，它们还会使用3k一跳的瞬时AOE毒。打这个怪的时候尽量分散并使用康复。<br/>它们是声音感知类型，小心地走过去吧。",
+          "EnglishName":"DEEP PALACE CRAWLER"
+       },
+       "DEEP PALACE ARCHAEOSAUR":{
+          "Notes":"有一个顺劈/连击。一旦暴击，即使你及时治疗自己并使用生者秘药，也可以杀死一个非T职业。保持警惕并考虑使用魔陶器 强化防御。深宫瓦魔蛾幼虫是靠近感知类型，但是可以听到你。所以可以走着绕过他们。当你风筝着打深宫瓦魔蛾幼虫时，他也没有那么可怕。但是如果可以的话，我也不会去拉深宫古恐龙。",
+          "EnglishName":"DEEP PALACE ARCHAEOSAUR"
+       },
+       "DEEP PALACE WORM":{
+          "Notes":"在半个房间大小的区域内随机点名并释放AOE。有一个连击和30s的DPS CHECK。一旦失败他会吸入所有人，并造成20k的伤害。他只要不暴击的话，赤魔或奶妈使用魔陶器 强化防御都可以磨死他。<br/>它们是声音感知类型，小心地走过去吧。",
+          "EnglishName":"DEEP PALACE WORM"
+       },
+       "DEEP PALACE WAMOURA":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE WAMOURA"
+       },
+       "DEEP PALACE WAMOURACAMPA":{
+          "Notes":"有一个顺劈/连击。一旦暴击，即使你及时治疗自己并使用生者秘药，也可以杀死一个非T职业。保持警惕并考虑使用魔陶器 强化防御。",
+          "EnglishName":"DEEP PALACE WAMOURACAMPA"
+       },
+       "DEEP PALACE VINDTHURS":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE VINDTHURS"
+       },
+       "FLOOD DRAGON":{
+          "Notes":"会释放一个瞬时的造成DOT伤害的毒，和深宫毛爬虫类似。记得用康复并注意分散站位。<br/>单人: 别碰它。",
+          "EnglishName":"FLOOD DRAGON"
+       },
+       "DEEP PALACE GARM":{
+          "Notes":"是靠近感知类型，有一大堆秒杀技能。主要是<b>雷电咆哮</b>和<b>寒冰咆哮</b>。雷电咆哮安全点在脚底，寒冰咆哮则需要远离。这两个技能都可以被沉默打断。以我的经验，吃冰的比吃雷的多了很多，所以一定要赶快远离BOSS。<br/>如果你是躲怪大师，那奇美拉是187-189最容易杀的怪了，但还是要注意注意再注意，他的普攻暴击有10k伤害！",
+          "EnglishName":"DEEP PALACE GARM"
+       },
+       "THE GODFATHER":{
+          "Notes":"<b>不要开着魔陶器 梦魔化开怪</b>，你可能会正好吃到个顺劈然后死掉。在BOSS连续两次释放地面爆破时会有短暂的窗口期，就在这时使用吧。这个BOSS和90层的类似，但是颜色是相反的。这也意味着你要杀死蓝色爆弹怪(治疗爆弹怪)并把红色爆弹怪(熔岩爆弹怪)打到BOSS边。注意如果你被地面爆破打到或蓝色爆弹怪炸到，你会被冻住，你没有魔陶器 强化防御的话基本就死了。这个BOSS的顺劈烈火怒骂超级疼，没有魔陶器 强化防御就是一下12k。所以你们不带T或你是单人的话一定要在下一个顺劈之前稳定好血线。",
+          "EnglishName":"THE GODFATHER"
+       }
+    },
+    {
+       "MIMIC":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"MIMIC"
+       },
+       "PYGMAIOI":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"PYGMAIOI"
+       },
+       "DEEP PALACE IRON CORSE":{
+          "Notes":"这几只怪的顺劈/连击都很疼，单人时没用魔陶器 强化防御别打他们。",
+          "EnglishName":"DEEP PALACE IRON CORSE"
+       },
+       "DEEP PALACE KEEPER":{
+          "Notes":"没什么可说的，他就是这里攻击力最高的怪。要么风筝他来躲开不必要的AOE，要么就走着绕过他。",
+          "EnglishName":"DEEP PALACE KEEPER"
+       },
+       "DEEP PALACE HIPPOGRYPH":{
+          "Notes":"这几只怪的顺劈/连击都很疼，单人时没用魔陶器 强化防御别打他们。",
+          "EnglishName":"DEEP PALACE HIPPOGRYPH"
+       },
+       "DEEP PALACE GOURMAND":{
+          "Notes":"这几只怪的顺劈/连击都很疼，单人时没用魔陶器 强化防御别打他们。",
+          "EnglishName":"DEEP PALACE GOURMAND"
+       },
+       "DEEP PALACE BICEPHALUS":{
+          "Notes":"这几只怪的顺劈/连击都很疼，单人时没用魔陶器 强化防御别打他们。",
+          "EnglishName":"DEEP PALACE BICEPHALUS"
+       },
+       "DEEP PALACE WRAITH":{
+          "Notes":"他们会隔着房间对你释放点名AOE，通常一下一个，在他们附近时，绝对不要打深宫骑士，因为他的AOE<b>瘟疫诅咒</b>会覆盖<b>死亡螺旋</b>的内圈安全范围，让你避无可避。",
+          "EnglishName":"DEEP PALACE WRAITH"
+       },
+       "DEEP PALACE MUMMY":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE MUMMY"
+       },
+       "DEEP PALACE TRAP":{
+          "Notes":"",
+          "EnglishName":"DEEP PALACE TRAP"
+       },
+       "DEEP PALACE KNIGHT":{
+          "Notes":"这只怪的伤害太高了，单人时千万别打。他们会释放一个环形<b>死亡螺旋</b>，对没有站在他们身边的人造成20k的伤害。<b>附近有深宫幽灵时绝对绝对绝对不要打深宫骑士。</b><br/>他们还会使用狂暴技能，<b>在短时间内伤害翻倍</b>，同时附加防御BUFF。这意味着他们在你使用了魔陶器 强化防御的情况下还能打出9.5K的伤害，并且你还打不动他们。",
+          "EnglishName":"DEEP PALACE KNIGHT"
+       },
+       "ONYX DRAGON":{
+          "Notes":"请注意，不像别的龙，这些龙是靠近感知的。小心邪眼，是一击必杀的，请务必回头。",
+          "EnglishName":"ONYX DRAGON"
+       },
+       "DEEP PALACE FACHAN":{
+          "Notes":"和131-140层的深宫冥鬼之眼相似，都有一个前方无范围提示的AOE。只不过现在这个叫<b>5级即死</b>。顾名思义，中了的后果你自己应该清楚。",
+          "EnglishName":"DEEP PALACE FACHAN"
+       }
+    }
+ ],
+ "Heaven-on-High":[
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY NAKED YUMEMI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NAKED YUMEMI"
+       },
+       "HEAVENLY MUTSU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MUTSU"
+       },
+       "HEAVENLY BOMBFISH":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY BOMBFISH"
+       },
+       "HEAVENLY ONRYO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ONRYO"
+       },
+       "HEAVENLY SHARK":{
+          "Notes":"利齿打人很疼。鲨鱼咬人也很疼。我是认真的，真的很疼。",
+          "EnglishName":"HEAVENLY SHARK"
+       },
+       "HEAVENLY AMIKIRI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AMIKIRI"
+       },
+       "HEAVENLY CORALSHELL":{
+          "Notes":"无范围提示前方睡眠AOE",
+          "EnglishName":"HEAVENLY CORALSHELL"
+       },
+       "HEAVENLY GYUKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GYUKI"
+       },
+       "HEAVENLY KRAKEN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KRAKEN"
+       },
+       "HEAVENLY UWABAMI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY UWABAMI"
+       },
+       "HEAVENLY ANGO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ANGO"
+       },
+       "HEAVENLY MATAMATA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MATAMATA"
+       },
+       "HEAVENLY YUMEMI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUMEMI"
+       },
+       "MOJABUNE":{
+          "Notes":"回到场中并使用全屏击退(无法用沉稳躲避)，紧跟一次半场AOE。",
+          "EnglishName":"MOJABUNE"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY KORPOKKUR":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KORPOKKUR"
+       },
+       "HEAVENLY SHIZUKU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIZUKU"
+       },
+       "HEAVENLY NAMAZU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NAMAZU"
+       },
+       "HEAVENLY SHIOMUSHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIOMUSHI"
+       },
+       "HEAVENLY HAKAGIRI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HAKAGIRI"
+       },
+       "HEAVENLY APA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY APA"
+       },
+       "HEAVENLY UNKIU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY UNKIU"
+       },
+       "HEAVENLY HAND":{
+          "Notes":"有一个房间大小(可能更大)的一仇顺劈",
+          "EnglishName":"HEAVENLY HAND"
+       },
+       "HEAVENLY OTOKAGE":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY OTOKAGE"
+       },
+       "HEAVENLY TATSUNOKO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TATSUNOKO"
+       },
+       "HEAVENLY AMAGOI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AMAGOI"
+       },
+       "HEAVENLY SHIONAME":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIONAME"
+       },
+       "HEAVENLY AOMINO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AOMINO"
+       },
+       "BECCHO":{
+          "Notes":"会使用各种技能来使你恐慌，同时在场地边缘召唤蝴蝶。蝴蝶会使用无范围提示自爆，恐惧会让你往墙上走，务必躲开！",
+          "EnglishName":"BECCHO"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY DHRUVA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DHRUVA"
+       },
+       "HEAVENLY HALGAI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HALGAI"
+       },
+       "HEAVENLY KATASHARIN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KATASHARIN"
+       },
+       "HEAVENLY SAI TAISUI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SAI TAISUI"
+       },
+       "HEAVENLY ONIBI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ONIBI"
+       },
+       "HEAVENLY HATAMOTO":{
+          "Notes":"会使用纷乱雪月花，造成15k的伤害。天下五剑是一个无范围提示击退。",
+          "EnglishName":"HEAVENLY HATAMOTO"
+       },
+       "HEAVENLY KEUKEGEN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KEUKEGEN"
+       },
+       "HEAVENLY TENAGA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TENAGA"
+       },
+       "HEAVENLY MENREIKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MENREIKI"
+       },
+       "HEAVENLY KOJA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KOJA"
+       },
+       "HEAVENLY TENGU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TENGU"
+       },
+       "HEAVENLY YUKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUKI"
+       },
+       "HEAVENLY WANYUDO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY WANYUDO"
+       },
+       "HIRUKO":{
+          "Notes":"召唤雷云并在一段时间后爆炸，同时在中心吟唱远离AOE。跑到边缘并避免被多个雷云劈中。如果你被击飞上天，雷云就会消失。他也会释放半场AOE，所以要保持一个始终的安全距离。",
+          "EnglishName":"HIRUKO"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY GEDAN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GEDAN"
+       },
+       "HEAVENLY HORNBILL":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HORNBILL"
+       },
+       "HEAVENLY ONMITSU":{
+          "Notes":"血量低于10%时会使用一个长读条<b>自爆</b>。",
+          "EnglishName":"HEAVENLY ONMITSU"
+       },
+       "HEAVENLY HARAKIRI":{
+          "Notes":"血量低于20%时会使用一个长读条<b>自爆</b>。",
+          "EnglishName":"HEAVENLY HARAKIRI"
+       },
+       "HEAVENLY HANYA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HANYA"
+       },
+       "HEAVENLY MOKO":{
+          "Notes":"一平A一顺劈。在低强化等级时需要注意。",
+          "EnglishName":"HEAVENLY MOKO"
+       },
+       "HEAVENLY VANARA":{
+          "Notes":"<b>无读条无范围提示</b>前方AOE顺劈。",
+          "EnglishName":"HEAVENLY VANARA"
+       },
+       "HEAVENLY KIYOFUSA":{
+          "Notes":"会使用一个分摊技能，然而这个技能也就7k伤害。",
+          "EnglishName":"HEAVENLY KIYOFUSA"
+       },
+       "HEAVENLY SHISHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHISHI"
+       },
+       "HEAVENLY MOKIN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MOKIN"
+       },
+       "HEAVENLY ASHIGARU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ASHIGARU"
+       },
+       "HEAVENLY DOGU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOGU"
+       },
+       "BHIMA":{
+          "Notes":"在场地边缘生成风时，他会回到中间使用击退AOE，把所有人推开，注意不要被推到AOE中。<b>沉稳和亲疏自行无效</b>。",
+          "EnglishName":"BHIMA"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY DHARA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DHARA"
+       },
+       "HEAVENLY GANSEKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GANSEKI"
+       },
+       "HEAVENLY SAIKORO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SAIKORO"
+       },
+       "HEAVENLY KURO-USAGI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KURO-USAGI"
+       },
+       "HEAVENLY SEKIBAN":{
+          "Notes":"会使用狂暴技能并且会快速攻击。",
+          "EnglishName":"HEAVENLY SEKIBAN"
+       },
+       "HEAVENLY SEKIZO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SEKIZO"
+       },
+       "HEAVENLY MIZUMIMIZU":{
+          "Notes":"和死宫181-189层的爬虫类似。如果你没有在大约30秒内击杀它，它会狂暴(把人吸入并大概率秒杀)。",
+          "EnglishName":"HEAVENLY MIZUMIMIZU"
+       },
+       "HEAVENLY AKA-ISHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY AKA-ISHI"
+       },
+       "HEAVENLY ISEKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ISEKI"
+       },
+       "HEAVENLY MONOIWA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MONOIWA"
+       },
+       "GOZU":{
+          "Notes":"有一个无范围，无读条有前摇横扫和直线攻击，如果你看到它突然转向T，请远离这条连线。<br/>他还有一个邪眼技能，并在召唤黑色AOE球时吟唱距离衰减AOE。单人时，恐惧<b>必定死亡</b>, 所以千万别贪！",
+          "EnglishName":"GOZU"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY KAMAKIRI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KAMAKIRI"
+       },
+       "HEAVENLY NAGA":{
+          "Notes":"会使用一个扇形邪眼技能，造成会被秒杀的石化DEBUFF。<br/>20%以下血量时会吟唱25k伤害的<b>enrage</b>技能，读条<b>非常快</b>！<br/>但可以打断。",
+          "EnglishName":"HEAVENLY NAGA"
+       },
+       "HEAVENLY TOKAGEKIBA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TOKAGEKIBA"
+       },
+       "HEAVENLY KAMANARI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KAMANARI"
+       },
+       "HEAVENLY KONGOREI":{
+          "Notes":"有一个顺发狂暴技能。单刷时拉到这只怪就不要轻易进入房间了，你一旦变獭了，就游戏结束了。",
+          "EnglishName":"HEAVENLY KONGOREI"
+       },
+       "HEAVENLY TESSO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TESSO"
+       },
+       "HEAVENLY TETSU-KYOJIN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY TETSU-KYOJIN"
+       },
+       "HEAVENLY MARUISHI":{
+          "Notes":"读条大粗条直线AOE，并同时还可以普攻。一下40k以上，可以秒杀DPS和奶妈，务必小心。",
+          "EnglishName":"HEAVENLY MARUISHI"
+       },
+       "HEAVENLY SHABTI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHABTI"
+       },
+       "HEAVENLY DOKYU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOKYU"
+       },
+       "HEAVENLY GOWAN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY GOWAN"
+       },
+       "HEAVENLY KARAKURI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KARAKURI"
+       },
+       "HEAVENLY RACHIMONAI":{
+          "Notes":"会造成无范围提示无读条的房间AOE。如果你旁边有这种怪，要么第一时间杀了他，要么乖乖绕路，因为他的随机伤害太烦人了。",
+          "EnglishName":"HEAVENLY RACHIMONAI"
+       },
+       "SUIKAZURA":{
+          "Notes":"范围提示，范围提示，各种范围提示。直线，圆形，甜甜圈形，随便你怎么叫吧！见招拆招就行。Boss读条全屏伤害后，法杖会向多个方向发射直线AOE。<br/>对全屏伤害前的法杖环形AOE来说，中间大多数时候安全，但需要注意先在别处引导烈焰再回到中间。躲在中间对于躲避后续八个方向的直线AOE也很简单。",
+          "EnglishName":"SUIKAZURA"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY ONRYO":{
+          "Notes":"会使用一个极高伤害的持续伤害爆发。",
+          "EnglishName":"HEAVENLY ONRYO"
+       },
+       "HEAVENLY WAKAKUSA":{
+          "Notes":"不要低估他持续30s的毒。在单人状态下会很疼，多人时无伤大雅。",
+          "EnglishName":"HEAVENLY WAKAKUSA"
+       },
+       "HEAVENLY JUBOKKO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY JUBOKKO"
+       },
+       "HEAVENLY MANNENSO":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MANNENSO"
+       },
+       "HEAVENLY IWAMUSHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY IWAMUSHI"
+       },
+       "HEAVENLY JELLYFISH":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY JELLYFISH"
+       },
+       "HEAVENLY DOGUZERI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY DOGUZERI"
+       },
+       "HEAVENLY KOSODEGAI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KOSODEGAI"
+       },
+       "HEAVENLY SHITAIBANA":{
+          "Notes":"会使用顺劈并造成较高持续伤害。单人时务必小心。可以通过远离来避免被毒到。",
+          "EnglishName":"HEAVENLY SHITAIBANA"
+       },
+       "HEAVENLY MORBOL":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY MORBOL"
+       },
+       "HEAVENLY CHIZAKURA":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY CHIZAKURA"
+       },
+       "HEAVENLY PENGHOU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY PENGHOU"
+       },
+       "HEAVENLY HASHIRI-DOKORO":{
+          "Notes":"会使用环形AOE，邪眼和一个全屏AOE伤害。除了这些，并不强。",
+          "EnglishName":"HEAVENLY HASHIRI-DOKORO"
+       },
+       "KENKO":{
+          "Notes":"每隔一段时间就会对一个玩家使用缩小球，并在地板上留下一滩口水。踩进口水会有缩小DEBUFF，你需要用这个DEBUFF来躲避他的地狱冲。如果你没有这个BUFF，那就会被秒杀。在BOSS撕咬完你之后，务必走出这摊口水，否则之后的AOE会很疼。<br/>同时，坦克也要注意无范围提示的前方顺劈，这个技能是循环的第一个技能。Boss如果咬死一名玩家，它就会获得伤害提升BUFF并回复较多血量。",
+          "EnglishName":"KENKO"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY ICHIJAMA":{
+          "Notes":"它们会从对面房间向你施放AOE，在大多数情况下会一击必杀。",
+          "EnglishName":"HEAVENLY ICHIJAMA"
+       },
+       "HEAVENLY SHIKUBI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHIKUBI"
+       },
+       "HEAVENLY NOYAGI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY NOYAGI"
+       },
+       "HEAVENLY HYOGA":{
+          "Notes":"前方扇形超大扇形秒杀AOE，附带恐惧效果。",
+          "EnglishName":"HEAVENLY HYOGA"
+       },
+       "HEAVENLY OKAMI":{
+          "Notes":"顺劈接平A并且会附加DOT伤害。单人时真的不好打，强化防御是必须的，最好还能有强化自身。",
+          "EnglishName":"HEAVENLY OKAMI"
+       },
+       "HEAVENLY YUKI-TOKAGE":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY YUKI-TOKAGE"
+       },
+       "HEAVENLY HYOZAN":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY HYOZAN"
+       },
+       "HEAVENLY MAMMOTH":{
+          "Notes":"不进入战斗状态也会使用半个房间大小的AOE(7k伤害)。<br/>使用<b>长毛吸气</b>把大家吸在一起后，立刻释放正前方180度的不可见范围的秒杀级伤害AOE<b>象牙冲撞</b>。",
+          "EnglishName":"HEAVENLY MAMMOTH"
+       },
+       "HEAVENLY JUJISHI":{
+          "Notes":"会在顺劈后接平A，并会使用一个<b>超快速读条狂暴技能“寒冬之风”</b>， 。这个技能会大概率灭团，同时给你一个DOT，也给狮鹫自身施加急速BUFF。可以通过<b>卡视野</b>来避免(卡一个墙角)。<br/>狂暴会出现在开怪<b>30秒后</b>。它可被<b>眩晕</b>。",
+          "EnglishName":"HEAVENLY JUJISHI"
+       },
+       "HEAVENLY SHIRO-JISHI":{
+          "Notes":"会使用超大范围可打断AOE和顺劈接平A。因此，单人时，我没有<b>强化防御</b>就不会去招惹它。",
+          "EnglishName":"HEAVENLY SHIRO-JISHI"
+       },
+       "HEAVENLY TOFU":{
+          "Notes":"一旦他们用金口舌强化自己，打人会很疼，尤其是在低强化等级时。他们不仅会吟唱也会平a，所以站在近战范围内会吃双重伤害。你可以<b>卡视野</b>躲避冰结，但请注意如果你离他们太近还是会吃到平A伤害。",
+          "EnglishName":"HEAVENLY TOFU"
+       },
+       "HEAVENLY YUKI-OTOKO":{
+          "Notes":"会使用超高伤害<b>可被打断</b>AOE<b>猛吹雪</b>。可以卡墙角躲避。还会使用前方超大范围超快读条的扇形AOE，所以不要躲得太远。",
+          "EnglishName":"HEAVENLY YUKI-OTOKO"
+       },
+       "HEAVENLY YAK":{
+          "Notes":"他们会先打一会儿你，再把你拉到脚下，给你一个减速debuff，最后吟唱狂暴。",
+          "EnglishName":"HEAVENLY YAK"
+       },
+       "KAJIGAKAKA":{
+          "Notes":"会召唤冰球，冰球在一段时间后无范围提示爆炸。与此同时，还会出现一根冰锥，刺向房间中央。<b>被刺中的球会爆炸，爆炸的球又会带动周围的球爆炸</b>。冰柱出现时，<b>一定要远离这些球</b>。BOSS吟唱<b>月下咆哮</b>时，会引爆其余冰球，单人时如果不慎被命中，就会被冻住然后死掉。月下咆哮之后会跳向一个目标，造成8k的伤害(冻住时秒杀)。除了以上这些，都很简单。",
+          "EnglishName":"KAJIGAKAKA"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY GARULA":{
+          "Notes":"先使用超大扇形AOE，再使用圆形AOE，最后连续吟唱大伤害AOE。你打这些怪一定要小心地去躲开这些技能。如果奶妈死了，你们又没有赤治疗或者深仁厚泽之类的回复技能，那就从头开始吧。单人时，站在大概5码内的近战距离，并准备好冲锋之后的回复。如果你站的太远，就会被冲锋接平a送回第一层。<br/>你可以通过<b卡视野</b>躲避地震伤害。",
+          "EnglishName":"HEAVENLY GARULA"
+       },
+       "HEAVENLY ROWAN":{
+          "Notes":"强化自身，然后捶胸来造成可穿房间的AOE。可以卡视野躲避。小心他的AOE可以把你从潜行中揪出来。",
+          "EnglishName":"HEAVENLY ROWAN"
+       },
+       "HEAVENLY MATANGA":{
+          "Notes":"跳跃伤害暴击可以造成90%血量的伤害，注意回复。之后的伤害并不疼(平a16k，暴击24k)。",
+          "EnglishName":"HEAVENLY MATANGA"
+       },
+       "HEAVENLY MUKAI-INU":{
+          "Notes":"<b>寒冰咆哮远离，雷电咆哮靠近</b>。",
+          "EnglishName":"HEAVENLY MUKAI-INU"
+       },
+       "HEAVENLY GOZU":{
+          "Notes":"对随机玩家的无范围提示攻击(十一吨横扫)，可以通过卡视野躲避，同时还有一个邪眼技能。",
+          "EnglishName":"HEAVENLY GOZU"
+       },
+       "HEAVENLY RYUKOTSU":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY RYUKOTSU"
+       },
+       "HEAVENLY RYUJIN":{
+          "Notes":"会使用对<b>后方</b>的<b>甩尾攻击</b>。<br/>还有一个对T大伤害技能，单人时决不能低估这个伤害。猿猴还有一个狂暴伤害BUFF。",
+          "EnglishName":"HEAVENLY RYUJIN"
+       },
+       "HEAVENLY SHINZEI":{
+          "Notes":"双重攻击造成大量伤害并附加DOT。震雷会对一个单位点名四次，一次8k。",
+          "EnglishName":"HEAVENLY SHINZEI"
+       },
+       "HEAVENLY HITOTSUME":{
+          "Notes":"使用无范围提示的圆形AOE百吨回旋，以及无范围提示前方直线aoe怒视。",
+          "EnglishName":"HEAVENLY HITOTSUME"
+       },
+       "HEAVENLY RAKSHASA":{
+          "Notes":"会BUFF自身伤害并会使用无范围提示前方顺劈。<br/>附加BUFF后平A暴击可以打出30k的伤害，务必务必务必小心的风筝。",
+          "EnglishName":"HEAVENLY RAKSHASA"
+       },
+       "HEAVENLY KOKI":{
+          "Notes":"使用几个范围技能后，再使用一个不可回避(？)弱点攻击和轻量伤害。很简单。",
+          "EnglishName":"HEAVENLY KOKI"
+       },
+       "HEAVENLY ENKO":{
+          "Notes":"会使用对<b>后方</b>的<b>甩尾攻击</b>。<br/>还有一个对T大伤害技能，单人时决不能低估这个伤害。猿猴还有一个狂暴伤害BUFF。",
+          "EnglishName":"HEAVENLY ENKO"
+       },
+       "HEAVENLY ARARAGI":{
+          "Notes":"AOE造成毒DOT。可以在合适的时机卡视野躲避。",
+          "EnglishName":"HEAVENLY ARARAGI"
+       },
+       "ONRA":{
+          "Notes":"在场地的东北角有一个安全点，因此坦克需要将boss拉在西南侧。当你看到古代爆震读条时，迅速跑到东北侧，那里永远不会有爆炸岩石。由于boss在西南侧，所以距离衰减aoe陨石冲击只会造成10k左右的伤害。",
+          "EnglishName":"ONRA"
+       }
+    },
+    {
+       "QUIVERING COFFER":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"QUIVERING COFFER"
+       },
+       "KORRIGAN":{
+          "Notes":"*恭喜你*",
+          "EnglishName":"KORRIGAN"
+       },
+       "HEAVENLY GOZU":{
+          "Notes":"会使用一个顺劈(大概20k伤害)，然后吟唱无范围提示前方横扫16吨横扫，最后是一个无范围提示AOE 128吨回转。<Br/>一旦进入战斗就会跳向目标，并很快使用双重攻击。",
+          "EnglishName":"HEAVENLY GOZU"
+       },
+       "HEAVENLY JAKI":{
+          "Notes":"会对单人使用范围AOE，可以卡视野，也可以被打断。会使用连续魔法AOE。",
+          "EnglishName":"HEAVENLY JAKI"
+       },
+       "HEAVENLY NUPPEPPO":{
+          "Notes":"战士: <b>单人绝对打不过</b>。一个超超超超疼的对坦克的4w大伤害。应对连续三次的击退冲锋，需要背靠墙来防止被推到房间。然后还会一下子冲到你脸前。<br/>武僧: 当心。它会对自身施加急促BUFF，在最后时双重平A并对你施加一个DOT。单人时，使用缚束来消耗掉他的BUFF，他没有BUFF就不会用上面那个技能。<br/>白魔: 小心。白魔肉人也很可怕。飞石暴击可以砸24k。你可以卡视野来躲飞石，但这需要技巧。",
+          "EnglishName":"HEAVENLY NUPPEPPO"
+       },
+       "HEAVENLY MIFUNE":{
+          "Notes":"没使用防御上升时吃到顺劈是20k伤害(不触发双重攻击)。直线AOE对非坦克职业造成55k伤害。<b>可以卡视野躲避</b>。",
+          "EnglishName":"HEAVENLY MIFUNE"
+       },
+       "HEAVENLY KUBINASHI":{
+          "Notes":"战斗开始后不久就会使用一个生命窃取技能，并且会使用一个25k伤害的前方顺劈。持续给自己施加可叠加伤害上升BUFF，最后用一个大伤害全图技能<b>暗黑星云</b>秒杀你。",
+          "EnglishName":"HEAVENLY KUBINASHI"
+       },
+       "HEAVENLY KYOZO":{
+          "Notes":"给自己附加防御BUFF。有趣的是，这与<b>妖雾</b>的防御BUFF重叠，当它消失时，真正的妖雾防御BUFF也会消失!",
+          "EnglishName":"HEAVENLY KYOZO"
+       },
+       "HEAVENLY ZENKI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY ZENKI"
+       },
+       "HEAVENLY SHABTI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY SHABTI"
+       },
+       "HEAVENLY JINBA":{
+          "Notes":"有一个永久叠加的伤害上升BUFF，会点名一个随机玩家使用一个超超超大范围AOE(比怨灵的AOE还要大一圈)。同时还有邪眼技能。",
+          "EnglishName":"HEAVENLY JINBA"
+       },
+       "HEAVENLY TENMA":{
+          "Notes":"点名一个随机玩家释放无范围提示前方直线AOE，也会使用一个超疼AOE。小心双重攻击。",
+          "EnglishName":"HEAVENLY TENMA"
+       },
+       "HEAVENLY KURO-KISHI":{
+          "Notes":"",
+          "EnglishName":"HEAVENLY KURO-KISHI"
+       },
+       "HEAVENLY DODO":{
+          "Notes":"*祝你好运*",
+          "EnglishName":"HEAVENLY DODO"
+       }
+    }
+ ]
+}
